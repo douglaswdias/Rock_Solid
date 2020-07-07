@@ -15,7 +15,8 @@ namespace Rock_Solid
 
 		private static SQLiteConnection ConnectionDB()
 		{
-			connection = new SQLiteConnection("Data Source = C:\\Users\\Anna\\Documents\\GitHub\\Rock_Solid\\Rock_Solid\\DataBase\\RockSolid.db");
+			//connection = new SQLiteConnection("Data Source = C:\\Users\\Anna\\Documents\\GitHub\\Rock_Solid\\Rock_Solid\\DataBase\\RockSolid.db");
+			connection = new SQLiteConnection("Data Source = C:\\Users\\Suporte\\Documents\\GitHub\\Rock_Solid\\Rock_Solid\\DataBase\\RockSolid.db");
 			connection.Open();
 			return connection;
 		}
