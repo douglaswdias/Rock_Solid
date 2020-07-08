@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,5 +12,8 @@ namespace Rock_Solid
 		public static string Version = "1.0";
 		public static Boolean logged = false;
 		public static int level = 0;
+		public static string path = System.Environment.CurrentDirectory;
+		public static string dbName = "RockSolid.db";
+		public static string dbPath = path+@"\DataBase\";
 	}
 }

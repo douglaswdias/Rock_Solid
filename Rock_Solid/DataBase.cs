@@ -15,48 +15,47 @@ namespace Rock_Solid
 
 		private static SQLiteConnection ConnectionDB()
 		{
-			//connection = new SQLiteConnection("Data Source = C:\\Users\\Anna\\Documents\\GitHub\\Rock_Solid\\Rock_Solid\\DataBase\\RockSolid.db");
-			connection = new SQLiteConnection("Data Source = C:\\Users\\Suporte\\Documents\\GitHub\\Rock_Solid\\Rock_Solid\\DataBase\\RockSolid.db");
+			//connection = new SQLiteConnection("Data Source = C:\\Users\\Anna\\Documents\\GitHub\\Rock_Solid\\Rock_Solid\\DataBase\\RockSolid.db"); \\Caminho Local para o Banco de Dados
+			connection = new SQLiteConnection("Data Source ="+ Global.dbPath + Global.dbName);//Caminho Relativo para o Banco de Dados
 			connection.Open();
 			return connection;
 		}
 
+//Faz a busca por todos os usuários no banco de dados
 		public static DataTable GetUsers()
 		{
 			SQLiteDataAdapter da = null;
 			DataTable dt = new DataTable();
 			try
 			{
-				using(var cmd = ConnectionDB().CreateCommand())
-				{
-					cmd.CommandText = "SELECT * FROM USER";
-					da = new SQLiteDataAdapter(cmd.CommandText, ConnectionDB());
-					da.Fill(dt);
-					ConnectionDB().Close();
-					return dt;
-				}
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "SELECT * FROM USER";
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
 			}
 			catch(Exception ex)
 			{
-				ConnectionDB().Close();
 				throw ex;
 			}
 		}
 
+//Verifica se há um usuário logado
 		public static DataTable CheckIn(string sql)
 		{
 			SQLiteDataAdapter da = null;
 			DataTable dt = new DataTable();
 			try
 			{
-				using (var cmd = ConnectionDB().CreateCommand())
-				{
-					cmd.CommandText = sql;
-					da = new SQLiteDataAdapter(cmd.CommandText, ConnectionDB());
-					da.Fill(dt);
-					ConnectionDB().Close();
-					return dt;
-				}
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = sql;
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
 			}
 			catch (Exception ex)
 			{
@@ -64,6 +63,7 @@ namespace Rock_Solid
 			}
 		}
 
+//Verifica se já existe o username já existe no banco de dados
 		public static bool UserTaken(User user)
 		{
 			bool res;
@@ -71,9 +71,10 @@ namespace Rock_Solid
 			SQLiteDataAdapter da = null;
 			DataTable dt = new DataTable();
 
-			var cmd = ConnectionDB().CreateCommand();
+			var vcon = ConnectionDB();
+			var cmd = vcon.CreateCommand();
 			cmd.CommandText = "SELECT USER_USERNAME FROM USER WHERE USER_USERNAME = '"+user.USER_USERNAME+"'";
-			da = new SQLiteDataAdapter(cmd.CommandText, ConnectionDB());
+			da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 			da.Fill(dt);
 			if(dt.Rows.Count > 0)
 			{
@@ -84,11 +85,13 @@ namespace Rock_Solid
 				res = false;
 			}
 
+			vcon.Close();
 			return res;
 		}
 
-		//Inicio das funções do formulário de novo usuário
+//Inicio das funções do formulário de novo usuário
 
+//Criação de novo usuário
 		public static void NewUser(User user)
 		{
 			if (UserTaken(user))
@@ -98,7 +101,8 @@ namespace Rock_Solid
 			}
 			try
 			{
-				var cmd = ConnectionDB().CreateCommand();
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
 				cmd.CommandText = "INSERT INTO USER (USER_NAME, USER_USERNAME, USER_PASSWORD, USER_STATUS, USER_LEVEL) VALUES (@NAME, @USERNAME, @PASSWORD, @STATUS, @LEVEL)";
 				cmd.Parameters.AddWithValue("@NAME", user.USER_NAME);
 				cmd.Parameters.AddWithValue("@USERNAME", user.USER_USERNAME);
@@ -107,15 +111,38 @@ namespace Rock_Solid
 				cmd.Parameters.AddWithValue("@LEVEL", user.USER_LEVEL);
 				cmd.ExecuteNonQuery();
 				MessageBox.Show("Usuário Cadastrado Com Sucesso");
-				ConnectionDB().Close();
+				vcon.Close();
 			}
 			catch(Exception ex)
 			{
 				MessageBox.Show("Erro ao Gravar Usuário");
-				ConnectionDB().Close();
 			}
 		}
 
 		//Fim das funções de novo usuário
+
+		//Inicio das funções do formulário de Consulta de Usuários
+
+		public static DataTable UserList()
+		{
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "SELECT USER_ID AS ID, USER_NAME AS NOME, USER_USERNAME AS USERNAME FROM USER";
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
+
+		//Consulta de usuários
 	}
 }

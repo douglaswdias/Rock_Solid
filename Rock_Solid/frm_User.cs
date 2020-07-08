@@ -45,5 +45,11 @@ namespace Rock_Solid
 		{
             Close();
 		}
-	}
+
+        private void btn_Search_Click(object sender, EventArgs e)
+        {
+            frm_UserList userList = new frm_UserList();
+            userList.ShowDialog();
+        }
+    }
 }
