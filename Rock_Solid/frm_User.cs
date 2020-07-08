@@ -16,5 +16,34 @@ namespace Rock_Solid
         {
             InitializeComponent();
         }
-    }
+
+		private void btn_Save_Click(object sender, EventArgs e)
+		{
+            User user = new User();
+            user.USER_NAME = tb_Name.Text;
+            user.USER_USERNAME = tb_Username.Text;
+            user.USER_PASSWORD = tb_Password.Text;
+            user.USER_STATUS = cb_Status.Text;
+            user.USER_LEVEL = Convert.ToInt32(Math.Round(tb_Level.Value, 0));
+
+            DataBase.NewUser(user);
+		}
+
+		private void btn_New_Click(object sender, EventArgs e)
+		{
+            {
+                tb_Name.Clear();
+                tb_Username.Clear();
+                tb_Password.Clear();
+                cb_Status.Text = "Ativo";
+                tb_Level.Value = 0;
+                tb_Name.Focus();
+            }
+        }
+
+		private void btn_Fechar_Click(object sender, EventArgs e)
+		{
+            Close();
+		}
+	}
 }
