@@ -206,6 +206,7 @@
             this.tb_ID.Name = "tb_ID";
             this.tb_ID.Size = new System.Drawing.Size(69, 20);
             this.tb_ID.TabIndex = 12;
+            this.tb_ID.Enter += new System.EventHandler(this.tb_ID_Enter);
             // 
             // btn_Search
             // 
@@ -241,6 +242,7 @@
             this.Name = "frm_User";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Usuários";
+            this.Activated += new System.EventHandler(this.tb_ID_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.tb_Level)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -265,7 +267,7 @@
         private System.Windows.Forms.Button btn_New;
 		private System.Windows.Forms.Button btn_Fechar;
         private System.Windows.Forms.Label lb_ID;
-        private System.Windows.Forms.TextBox tb_ID;
         private System.Windows.Forms.Button btn_Search;
+        public System.Windows.Forms.TextBox tb_ID;
     }
 }

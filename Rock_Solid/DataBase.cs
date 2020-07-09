@@ -99,6 +99,11 @@ namespace Rock_Solid
 				MessageBox.Show("Nome de Usuário Já Cadastrado");
 				return;
 			}
+			if(user.USER_NAME == "")
+            {
+				MessageBox.Show("Nome Precisa ser Preenchido");
+				return;
+            }
 			try
 			{
 				var vcon = ConnectionDB();
@@ -144,5 +149,25 @@ namespace Rock_Solid
 		}
 
 		//Consulta de usuários
+
+		public static DataTable GetUserList(string id)
+		{
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "SELECT * FROM USER WHERE USER_ID = "+id;
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
 	}
 }
