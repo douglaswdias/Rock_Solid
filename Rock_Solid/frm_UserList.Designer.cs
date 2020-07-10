@@ -83,6 +83,7 @@
             this.dgv_UserList.Size = new System.Drawing.Size(514, 272);
             this.dgv_UserList.TabIndex = 22;
             this.dgv_UserList.SelectionChanged += new System.EventHandler(this.dgv_UserList_SelectionChanged);
+            this.dgv_UserList.DoubleClick += new System.EventHandler(this.dgv_UserList_DoubleClick);
             // 
             // tb_Search
             // 

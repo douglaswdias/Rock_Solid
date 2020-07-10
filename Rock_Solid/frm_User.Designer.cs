@@ -207,6 +207,7 @@
             this.tb_ID.Size = new System.Drawing.Size(69, 20);
             this.tb_ID.TabIndex = 12;
             this.tb_ID.Enter += new System.EventHandler(this.tb_ID_Enter);
+            this.tb_ID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_ID_KeyDown);
             // 
             // btn_Search
             // 

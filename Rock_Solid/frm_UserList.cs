@@ -48,5 +48,10 @@ namespace Rock_Solid
         {
             Close();
         }
+
+        private void dgv_UserList_DoubleClick(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

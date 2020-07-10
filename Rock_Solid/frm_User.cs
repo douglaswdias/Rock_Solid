@@ -71,5 +71,35 @@ namespace Rock_Solid
             cb_Status.Text = Global.userStatus.ToString();
             tb_Level.Text = Global.userLevel.ToString();
         }
+
+        private void tb_ID_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                try
+                {
+                    DataTable dt = new DataTable();
+                    Global.userID = Convert.ToInt32(tb_ID.Text);
+                    dt = DataBase.GetUserList(tb_ID.Text);
+                    tb_Name.Text = dt.Rows[0].Field<string>("USER_NAME").ToString();
+                    tb_Username.Text = dt.Rows[0].Field<string>("USER_USERNAME").ToString();
+                    tb_Password.Text = dt.Rows[0].Field<string>("USER_PASSWORD").ToString();
+                    cb_Status.Text = dt.Rows[0].Field<string>("USER_STATUS").ToString();
+                    tb_Level.Text = dt.Rows[0].Field<Int64>("USER_LEVEL").ToString();
+                    tb_Name.Focus();
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Usuário não Cadastrado");
+                    tb_ID.Text = "0";
+                    tb_Name.Clear();
+                    tb_Username.Clear();
+                    tb_Password.Clear();
+                    cb_Status.Text = "Ativo";
+                    tb_Level.Text = "0";
+                    
+                }
+            }
+        }
     }
 }

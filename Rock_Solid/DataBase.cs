@@ -124,9 +124,9 @@ namespace Rock_Solid
 			}
 		}
 
-		//Fim das funções de novo usuário
+//Fim das funções de novo usuário
 
-		//Inicio das funções do formulário de Consulta de Usuários
+//Inicio das funções do formulário de Consulta de Usuários
 
 		public static DataTable UserList()
 		{
@@ -148,7 +148,7 @@ namespace Rock_Solid
 			}
 		}
 
-		//Consulta de usuários
+	//Consulta de usuários
 
 		public static DataTable GetUserList(string id)
 		{
