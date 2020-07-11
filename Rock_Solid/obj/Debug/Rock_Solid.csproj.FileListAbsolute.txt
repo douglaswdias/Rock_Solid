@@ -43,3 +43,4 @@ C:\Users\suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.pdb
 C:\Users\suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_User.resources
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_User.resources
 C:\Users\suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_UserList.resources
+C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_UserList.resources

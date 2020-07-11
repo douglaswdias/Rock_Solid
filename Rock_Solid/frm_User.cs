@@ -48,6 +48,7 @@ namespace Rock_Solid
             user.USER_LEVEL = Convert.ToInt32(Math.Round(tb_Level.Value, 0));
 
             DataBase.NewUser(user);
+            tb_Name.Focus();
         }
 
         private void btn_Fechar_Click(object sender, EventArgs e)
@@ -97,7 +98,6 @@ namespace Rock_Solid
                     tb_Password.Clear();
                     cb_Status.Text = "Ativo";
                     tb_Level.Text = "0";
-                    
                 }
             }
         }
