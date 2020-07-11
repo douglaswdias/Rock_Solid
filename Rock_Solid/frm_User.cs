@@ -30,6 +30,7 @@ namespace Rock_Solid
 		private void btn_New_Click(object sender, EventArgs e)
 		{
             {
+                tb_ID.Clear();
                 tb_Name.Clear();
                 tb_Username.Clear();
                 tb_Password.Clear();
@@ -91,15 +92,40 @@ namespace Rock_Solid
                 }
                 catch(Exception ex)
                 {
-                    MessageBox.Show("Usuário não Cadastrado");
-                    tb_ID.Text = "0";
-                    tb_Name.Clear();
-                    tb_Username.Clear();
-                    tb_Password.Clear();
-                    cb_Status.Text = "Ativo";
-                    tb_Level.Text = "0";
+                    if(Global.userID != 0)
+                    {
+                        MessageBox.Show("Usuário não Cadastrado");
+                        ClearGlobalUser();
+                    }
+                    
                 }
             }
+        }
+
+        private void tb_ID_Click(object sender, EventArgs e)
+        {
+            ClearGlobalUser();
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                tb_ID.Text = Global.userID.ToString();
+                DataTable dt = new DataTable();
+                Global.userID = Convert.ToInt32(tb_ID.Text);
+                dt = DataBase.DeleteUser(tb_ID.Text);
+                MessageBox.Show("Usuário Excluído com Sucesso");
+                ClearGlobalUser();
+                tb_ID.Focus();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Erro ao Excluir Usuário");
+                ClearGlobalUser();
+                tb_ID.Focus();
+            }
+            
         }
     }
 }

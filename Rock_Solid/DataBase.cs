@@ -104,24 +104,49 @@ namespace Rock_Solid
 				MessageBox.Show("Nome Precisa ser Preenchido");
 				return;
             }
-			try
-			{
-				var vcon = ConnectionDB();
-				var cmd = vcon.CreateCommand();
-				cmd.CommandText = "INSERT INTO USER (USER_NAME, USER_USERNAME, USER_PASSWORD, USER_STATUS, USER_LEVEL) VALUES (@NAME, @USERNAME, @PASSWORD, @STATUS, @LEVEL)";
-				cmd.Parameters.AddWithValue("@NAME", user.USER_NAME);
-				cmd.Parameters.AddWithValue("@USERNAME", user.USER_USERNAME);
-				cmd.Parameters.AddWithValue("@PASSWORD", user.USER_PASSWORD);
-				cmd.Parameters.AddWithValue("@STATUS", user.USER_STATUS);
-				cmd.Parameters.AddWithValue("@LEVEL", user.USER_LEVEL);
-				cmd.ExecuteNonQuery();
-				MessageBox.Show("Usuário Cadastrado Com Sucesso");
-				vcon.Close();
+			if(user.USER_ID.ToString() != "" || user.USER_ID != 0)
+            {
+				try
+				{
+					var vcon = ConnectionDB();
+					var cmd = vcon.CreateCommand();
+					cmd.CommandText = "INSERT INTO USER (USER_NAME, USER_USERNAME, USER_PASSWORD, USER_STATUS, USER_LEVEL) VALUES (@NAME, @USERNAME, @PASSWORD, @STATUS, @LEVEL)";
+					cmd.Parameters.AddWithValue("@NAME", user.USER_NAME);
+					cmd.Parameters.AddWithValue("@USERNAME", user.USER_USERNAME);
+					cmd.Parameters.AddWithValue("@PASSWORD", user.USER_PASSWORD);
+					cmd.Parameters.AddWithValue("@STATUS", user.USER_STATUS);
+					cmd.Parameters.AddWithValue("@LEVEL", user.USER_LEVEL);
+					cmd.ExecuteNonQuery();
+					MessageBox.Show("Usuário Cadastrado Com Sucesso");
+					vcon.Close();
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show("Erro ao Criar Usuário");
+				}
 			}
-			catch(Exception ex)
-			{
-				MessageBox.Show("Erro ao Gravar Usuário");
+            else
+            {
+				try
+				{
+					var vcon = ConnectionDB();
+					var cmd = vcon.CreateCommand();
+					cmd.CommandText = "UPDATE @NAME, @USERNAME, @PASSWORD, @STATUS, @LEVEL FROM USER WHERE USER_ID = "+user.USER_ID;
+					cmd.Parameters.AddWithValue("@NAME", user.USER_NAME);
+					cmd.Parameters.AddWithValue("@USERNAME", user.USER_USERNAME);
+					cmd.Parameters.AddWithValue("@PASSWORD", user.USER_PASSWORD);
+					cmd.Parameters.AddWithValue("@STATUS", user.USER_STATUS);
+					cmd.Parameters.AddWithValue("@LEVEL", user.USER_LEVEL);
+					cmd.ExecuteNonQuery();
+					MessageBox.Show("Alterações Salvas Com Sucesso");
+					vcon.Close();
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show("Erro ao Alterar Usuário");
+				}
 			}
+			
 		}
 
 //Fim das funções de novo usuário
@@ -136,7 +161,7 @@ namespace Rock_Solid
 			{
 				var vcon = ConnectionDB();
 				var cmd = vcon.CreateCommand();
-				cmd.CommandText = "SELECT USER_ID AS ID, USER_NAME AS NOME, USER_USERNAME AS USERNAME FROM USER";
+				cmd.CommandText = "SELECT USER_ID AS CÓDIGO, USER_NAME AS NOME, USER_USERNAME AS USERNAME FROM USER";
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				da.Fill(dt);
 				vcon.Close();
@@ -159,6 +184,28 @@ namespace Rock_Solid
 				var vcon = ConnectionDB();
 				var cmd = vcon.CreateCommand();
 				cmd.CommandText = "SELECT * FROM USER WHERE USER_ID = "+id;
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
+
+		public static DataTable DeleteUser(string id)
+		{
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
+				var cmd2 = vcon.CreateCommand();
+				cmd.CommandText = "DELETE FROM USER WHERE USER_ID = " + id;
+				cmd2.CommandText = "UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='USER'";
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				da.Fill(dt);
 				vcon.Close();

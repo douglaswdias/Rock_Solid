@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,12 @@ namespace Rock_Solid
         private void frm_UserList_Load(object sender, EventArgs e)
         {
             dgv_UserList.DataSource = DataBase.UserList();
-            dgv_UserList.Columns[0].Width = 41;
-            dgv_UserList.Columns[1].Width = 245;
-            dgv_UserList.Columns[2].Width = 225;
+            dgv_UserList.Columns[0].Width = 55;
+            dgv_UserList.Columns[1].Width = 225;
+            dgv_UserList.Columns[2].Width = 214;
+            Debug.WriteLine(dgv_UserList.Columns[0].Width);
+            Debug.WriteLine(dgv_UserList.Columns[1].Width);
+            Debug.WriteLine(dgv_UserList.Columns[2].Width);
         }
 
         private void dgv_UserList_SelectionChanged(object sender, EventArgs e)
@@ -40,7 +44,8 @@ namespace Rock_Solid
                 Global.userPassword = dt.Rows[0].Field<string>("USER_PASSWORD").ToString();
                 Global.userStatus = dt.Rows[0].Field<string>("USER_STATUS").ToString();
                 Global.userLevel = Convert.ToInt32(dt.Rows[0].Field<Int64>("USER_LEVEL"));
-
+                this.dgv_UserList.RowsDefaultCellStyle.BackColor = Color.WhiteSmoke;
+                this.dgv_UserList.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
             }
         }
 
