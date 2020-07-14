@@ -28,7 +28,7 @@ namespace Rock_Solid
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             lb_AccessText.Text = "0";
-            lb_UserName.Text = "Sem Usuário Logado";
+            lb_UserName.Text = "Nenhum Usuário Logado";
             pb_Login.Image = Properties.Resources.Red_Button;
             Global.level = 0;
             Global.logged = false;

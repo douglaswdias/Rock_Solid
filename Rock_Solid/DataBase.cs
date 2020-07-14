@@ -94,17 +94,12 @@ namespace Rock_Solid
 //Criação de novo usuário
 		public static void NewUser(User user)
 		{
-			if (UserTaken(user))
-			{
-				MessageBox.Show("Nome de Usuário Já Cadastrado");
-				return;
-			}
-			if(user.USER_NAME == "")
+			if(user.USER_USERNAME == "")
             {
 				MessageBox.Show("Nome Precisa ser Preenchido");
 				return;
             }
-			if(user.USER_ID.ToString() != "" || user.USER_ID != 0)
+			if(Global.userID.ToString() == "" || Global.userID == 0)
             {
 				try
 				{
@@ -123,6 +118,7 @@ namespace Rock_Solid
 				catch (Exception ex)
 				{
 					MessageBox.Show("Erro ao Criar Usuário");
+
 				}
 			}
             else
@@ -131,22 +127,24 @@ namespace Rock_Solid
 				{
 					var vcon = ConnectionDB();
 					var cmd = vcon.CreateCommand();
-					cmd.CommandText = "UPDATE @NAME, @USERNAME, @PASSWORD, @STATUS, @LEVEL FROM USER WHERE USER_ID = "+user.USER_ID;
-					cmd.Parameters.AddWithValue("@NAME", user.USER_NAME);
-					cmd.Parameters.AddWithValue("@USERNAME", user.USER_USERNAME);
-					cmd.Parameters.AddWithValue("@PASSWORD", user.USER_PASSWORD);
-					cmd.Parameters.AddWithValue("@STATUS", user.USER_STATUS);
-					cmd.Parameters.AddWithValue("@LEVEL", user.USER_LEVEL);
+					cmd.CommandText = "UPDATE USER SET USER_NAME = '" + user.USER_NAME + "', USER_USERNAME = '" + user.USER_USERNAME + "', USER_PASSWORD = '" + user.USER_PASSWORD + "', USER_STATUS = '" + user.USER_STATUS + "', USER_LEVEL = " + user.USER_LEVEL + " WHERE USER_ID = " + Global.userID;
 					cmd.ExecuteNonQuery();
 					MessageBox.Show("Alterações Salvas Com Sucesso");
 					vcon.Close();
 				}
 				catch (Exception ex)
 				{
-					MessageBox.Show("Erro ao Alterar Usuário");
+					if (UserTaken(user))
+					{
+						MessageBox.Show("Usuário Já Cadastrado");
+					}
+					else
+					{
+						MessageBox.Show("Erro ao Alterar Usuário");
+					}
+					
 				}
 			}
-			
 		}
 
 //Fim das funções de novo usuário
@@ -198,16 +196,19 @@ namespace Rock_Solid
 		public static DataTable DeleteUser(string id)
 		{
 			SQLiteDataAdapter da = null;
+			SQLiteDataAdapter da2 = null;
 			DataTable dt = new DataTable();
 			try
 			{
 				var vcon = ConnectionDB();
 				var cmd = vcon.CreateCommand();
 				var cmd2 = vcon.CreateCommand();
-				cmd.CommandText = "DELETE FROM USER WHERE USER_ID = " + id;
-				cmd2.CommandText = "UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='USER'";
+				cmd.CommandText = "DELETE FROM USER WHERE USER_ID = " + id + ";";
+				cmd2.CommandText = "UPDATE SQLITE_SEQUENCE SET SEQ = 0 WHERE NAME = 'USER';";
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da2 = new SQLiteDataAdapter(cmd2.CommandText, vcon);
 				da.Fill(dt);
+				da2.Fill(dt);
 				vcon.Close();
 				return dt;
 			}

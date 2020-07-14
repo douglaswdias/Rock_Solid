@@ -16,6 +16,7 @@ namespace Rock_Solid
 		public static string dbName = "RockSolid.db";
 		public static string dbPath = path+@"\DataBase\";
 
+//Variáveis de Usuário
 		public static int userID = 0;
 		public static string userName = "";
 		public static string userUsername = "";

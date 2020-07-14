@@ -23,19 +23,21 @@ namespace Rock_Solid
             Global.userName = "";
             Global.userUsername = "";
             Global.userPassword = "";
-            Global.userStatus = "";
+            Global.userStatus = "Ativo";
             Global.userLevel = 0;
         }
 
 		private void btn_New_Click(object sender, EventArgs e)
 		{
             {
-                tb_ID.Clear();
+                tb_ID.Text = "0";
                 tb_Name.Clear();
                 tb_Username.Clear();
                 tb_Password.Clear();
                 cb_Status.Text = "Ativo";
                 tb_Level.Value = 0;
+                ClearGlobalUser();
+                tb_Name.Focus();
             }
         }
 
@@ -49,7 +51,26 @@ namespace Rock_Solid
             user.USER_LEVEL = Convert.ToInt32(Math.Round(tb_Level.Value, 0));
 
             DataBase.NewUser(user);
+            ClearGlobalUser();
             tb_Name.Focus();
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                dt = DataBase.DeleteUser(tb_ID.Text);
+                MessageBox.Show("Usuário Excluído com Sucesso");
+                ClearGlobalUser();
+                tb_Name.Focus();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao Excluir Usuário");
+                ClearGlobalUser();
+                tb_Name.Focus();
+            }
         }
 
         private void btn_Fechar_Click(object sender, EventArgs e)
@@ -62,6 +83,11 @@ namespace Rock_Solid
         {
             frm_UserList userList = new frm_UserList();
             userList.ShowDialog();
+        }
+
+        private void tb_ID_Click(object sender, EventArgs e)
+        {
+            ClearGlobalUser();
         }
 
         private void tb_ID_Enter(object sender, EventArgs e)
@@ -81,13 +107,18 @@ namespace Rock_Solid
                 try
                 {
                     DataTable dt = new DataTable();
-                    Global.userID = Convert.ToInt32(tb_ID.Text);
                     dt = DataBase.GetUserList(tb_ID.Text);
                     tb_Name.Text = dt.Rows[0].Field<string>("USER_NAME").ToString();
                     tb_Username.Text = dt.Rows[0].Field<string>("USER_USERNAME").ToString();
                     tb_Password.Text = dt.Rows[0].Field<string>("USER_PASSWORD").ToString();
                     cb_Status.Text = dt.Rows[0].Field<string>("USER_STATUS").ToString();
                     tb_Level.Text = dt.Rows[0].Field<Int64>("USER_LEVEL").ToString();
+                    Global.userID = Convert.ToInt32(tb_ID.Text);
+                    Global.userName = tb_Name.Text;
+                    Global.userUsername = tb_Username.Text;
+                    Global.userPassword = tb_Password.Text;
+                    Global.userStatus = cb_Status.Text;
+                    Global.userLevel = Convert.ToInt32(tb_Level.Text);
                     tb_Name.Focus();
                 }
                 catch(Exception ex)
@@ -96,36 +127,10 @@ namespace Rock_Solid
                     {
                         MessageBox.Show("Usuário não Cadastrado");
                         ClearGlobalUser();
+                        tb_Name.Focus();
                     }
-                    
                 }
             }
         }
-
-        private void tb_ID_Click(object sender, EventArgs e)
-        {
-            ClearGlobalUser();
-        }
-
-        private void btn_Delete_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                tb_ID.Text = Global.userID.ToString();
-                DataTable dt = new DataTable();
-                Global.userID = Convert.ToInt32(tb_ID.Text);
-                dt = DataBase.DeleteUser(tb_ID.Text);
-                MessageBox.Show("Usuário Excluído com Sucesso");
-                ClearGlobalUser();
-                tb_ID.Focus();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Erro ao Excluir Usuário");
-                ClearGlobalUser();
-                tb_ID.Focus();
-            }
-            
-        }
-    }
+	}
 }
