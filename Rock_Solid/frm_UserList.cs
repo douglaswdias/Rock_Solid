@@ -58,5 +58,13 @@ namespace Rock_Solid
         {
             Close();
         }
-    }
+
+		private void tb_Search_KeyDown(object sender, KeyEventArgs e)
+		{
+            if (e.KeyCode == Keys.Enter)
+			{
+
+			}
+        }
+	}
 }

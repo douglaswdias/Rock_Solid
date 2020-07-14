@@ -217,5 +217,25 @@ namespace Rock_Solid
 				throw ex;
 			}
 		}
+
+		public static DataTable SearchUserList(string username)
+		{
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "SELECT * FROM USER WHERE USER_USERNAME like '" + username + "'";
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
 	}
 }
