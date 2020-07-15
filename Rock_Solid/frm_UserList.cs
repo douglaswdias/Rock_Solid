@@ -63,8 +63,8 @@ namespace Rock_Solid
 		{
             if (e.KeyCode == Keys.Enter)
 			{
-
-			}
+                dgv_UserList.DataSource = DataBase.SearchUserList(tb_Search.Text);
+            }
         }
 	}
 }

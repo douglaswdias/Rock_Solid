@@ -16,7 +16,8 @@ namespace Rock_Solid
 		{
 			InitializeComponent();
 			frm_Login login = new frm_Login(this);
-			login.ShowDialog();
+            lb_Version.Text = Global.Version;
+            login.ShowDialog();
 		}
 
         private void loginToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -111,10 +112,5 @@ namespace Rock_Solid
                 MessageBox.Show("Nenhum Usuário Logado");
             }
         }
-
-        private void manutençãoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-    }
+	}
 }

@@ -218,7 +218,7 @@ namespace Rock_Solid
 			}
 		}
 
-		public static DataTable SearchUserList(string username)
+		public static DataTable SearchUserList(string name)
 		{
 			SQLiteDataAdapter da = null;
 			DataTable dt = new DataTable();
@@ -226,7 +226,7 @@ namespace Rock_Solid
 			{
 				var vcon = ConnectionDB();
 				var cmd = vcon.CreateCommand();
-				cmd.CommandText = "SELECT * FROM USER WHERE USER_USERNAME like '" + username + "'";
+				cmd.CommandText = "SELECT USER_ID AS CÓDIGO, USER_NAME AS NOME, USER_USERNAME AS USERNAME FROM USER WHERE USER_NAME LIKE '%" + name + "%'";
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				da.Fill(dt);
 				vcon.Close();
