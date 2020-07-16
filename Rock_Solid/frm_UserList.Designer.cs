@@ -36,9 +36,6 @@
 			this.dgv_UserList = new System.Windows.Forms.DataGridView();
 			this.tb_Search = new System.Windows.Forms.TextBox();
 			this.lb_Search = new System.Windows.Forms.Label();
-			this.lb_Filter = new System.Windows.Forms.Label();
-			this.rb_Name = new System.Windows.Forms.RadioButton();
-			this.rb_CPF = new System.Windows.Forms.RadioButton();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgv_UserList)).BeginInit();
 			this.SuspendLayout();
@@ -85,7 +82,7 @@
 			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
 			this.dgv_UserList.DefaultCellStyle = dataGridViewCellStyle2;
 			this.dgv_UserList.EnableHeadersVisualStyles = false;
-			this.dgv_UserList.Location = new System.Drawing.Point(12, 71);
+			this.dgv_UserList.Location = new System.Drawing.Point(12, 49);
 			this.dgv_UserList.MultiSelect = false;
 			this.dgv_UserList.Name = "dgv_UserList";
 			this.dgv_UserList.ReadOnly = true;
@@ -99,14 +96,14 @@
 			this.dgv_UserList.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
 			this.dgv_UserList.RowHeadersVisible = false;
 			this.dgv_UserList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dgv_UserList.Size = new System.Drawing.Size(514, 283);
+			this.dgv_UserList.Size = new System.Drawing.Size(514, 349);
 			this.dgv_UserList.TabIndex = 22;
 			this.dgv_UserList.SelectionChanged += new System.EventHandler(this.dgv_UserList_SelectionChanged);
 			this.dgv_UserList.DoubleClick += new System.EventHandler(this.dgv_UserList_DoubleClick);
 			// 
 			// tb_Search
 			// 
-			this.tb_Search.Location = new System.Drawing.Point(89, 36);
+			this.tb_Search.Location = new System.Drawing.Point(89, 14);
 			this.tb_Search.Name = "tb_Search";
 			this.tb_Search.Size = new System.Drawing.Size(437, 20);
 			this.tb_Search.TabIndex = 23;
@@ -116,51 +113,17 @@
 			// 
 			this.lb_Search.AutoSize = true;
 			this.lb_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lb_Search.Location = new System.Drawing.Point(12, 36);
+			this.lb_Search.Location = new System.Drawing.Point(12, 14);
 			this.lb_Search.Name = "lb_Search";
 			this.lb_Search.Size = new System.Drawing.Size(71, 17);
 			this.lb_Search.TabIndex = 24;
 			this.lb_Search.Text = "Pesquisar";
-			// 
-			// lb_Filter
-			// 
-			this.lb_Filter.AutoSize = true;
-			this.lb_Filter.Location = new System.Drawing.Point(86, 13);
-			this.lb_Filter.Name = "lb_Filter";
-			this.lb_Filter.Size = new System.Drawing.Size(29, 13);
-			this.lb_Filter.TabIndex = 25;
-			this.lb_Filter.Text = "Filtro";
-			// 
-			// rb_Name
-			// 
-			this.rb_Name.AutoSize = true;
-			this.rb_Name.Checked = true;
-			this.rb_Name.Location = new System.Drawing.Point(131, 13);
-			this.rb_Name.Name = "rb_Name";
-			this.rb_Name.Size = new System.Drawing.Size(53, 17);
-			this.rb_Name.TabIndex = 26;
-			this.rb_Name.TabStop = true;
-			this.rb_Name.Text = "Nome";
-			this.rb_Name.UseVisualStyleBackColor = true;
-			// 
-			// rb_CPF
-			// 
-			this.rb_CPF.AutoSize = true;
-			this.rb_CPF.Location = new System.Drawing.Point(190, 13);
-			this.rb_CPF.Name = "rb_CPF";
-			this.rb_CPF.Size = new System.Drawing.Size(45, 17);
-			this.rb_CPF.TabIndex = 27;
-			this.rb_CPF.Text = "CPF";
-			this.rb_CPF.UseVisualStyleBackColor = true;
 			// 
 			// frm_UserList
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(538, 450);
-			this.Controls.Add(this.rb_CPF);
-			this.Controls.Add(this.rb_Name);
-			this.Controls.Add(this.lb_Filter);
 			this.Controls.Add(this.lb_Search);
 			this.Controls.Add(this.tb_Search);
 			this.Controls.Add(this.dgv_UserList);
@@ -184,9 +147,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Fechar;
         private System.Windows.Forms.Label lb_Search;
-        private System.Windows.Forms.Label lb_Filter;
-        private System.Windows.Forms.RadioButton rb_Name;
-        private System.Windows.Forms.RadioButton rb_CPF;
         public System.Windows.Forms.DataGridView dgv_UserList;
         public System.Windows.Forms.TextBox tb_Search;
     }

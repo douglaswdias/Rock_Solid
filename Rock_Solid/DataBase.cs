@@ -31,6 +31,7 @@ namespace Rock_Solid
 				var vcon = ConnectionDB();
 				var cmd = vcon.CreateCommand();
 				cmd.CommandText = "SELECT * FROM USER";
+
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				da.Fill(dt);
 				vcon.Close();
@@ -73,7 +74,15 @@ namespace Rock_Solid
 
 			var vcon = ConnectionDB();
 			var cmd = vcon.CreateCommand();
-			cmd.CommandText = "SELECT USER_USERNAME FROM USER WHERE USER_USERNAME = '"+user.USER_USERNAME+"'";
+			cmd.CommandText = @"
+				SELECT 
+					USER_USERNAME 
+				FROM 
+					USER 
+				WHERE 
+					USER_USERNAME = '"+user.USER_USERNAME+"'"
+			;
+
 			da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 			da.Fill(dt);
 			if(dt.Rows.Count > 0)
@@ -105,7 +114,13 @@ namespace Rock_Solid
 				{
 					var vcon = ConnectionDB();
 					var cmd = vcon.CreateCommand();
-					cmd.CommandText = "INSERT INTO USER (USER_NAME, USER_USERNAME, USER_PASSWORD, USER_STATUS, USER_LEVEL) VALUES (@NAME, @USERNAME, @PASSWORD, @STATUS, @LEVEL)";
+					cmd.CommandText = @"
+						INSERT INTO USER 
+							(USER_NAME, USER_USERNAME, USER_PASSWORD, USER_STATUS, USER_LEVEL) 
+						VALUES 
+							(@NAME, @USERNAME, @PASSWORD, @STATUS, @LEVEL)
+					";
+
 					cmd.Parameters.AddWithValue("@NAME", user.USER_NAME);
 					cmd.Parameters.AddWithValue("@USERNAME", user.USER_USERNAME);
 					cmd.Parameters.AddWithValue("@PASSWORD", user.USER_PASSWORD);
@@ -127,7 +142,17 @@ namespace Rock_Solid
 				{
 					var vcon = ConnectionDB();
 					var cmd = vcon.CreateCommand();
-					cmd.CommandText = "UPDATE USER SET USER_NAME = '" + user.USER_NAME + "', USER_USERNAME = '" + user.USER_USERNAME + "', USER_PASSWORD = '" + user.USER_PASSWORD + "', USER_STATUS = '" + user.USER_STATUS + "', USER_LEVEL = " + user.USER_LEVEL + " WHERE USER_ID = " + Global.userID;
+					cmd.CommandText = @"
+						UPDATE USER 
+						SET 
+							USER_NAME = '" + user.USER_NAME + "', " +
+							"USER_USERNAME = '" + user.USER_USERNAME + "', " +
+							"USER_PASSWORD = '" + user.USER_PASSWORD + "', " +
+							"USER_STATUS = '" + user.USER_STATUS + "', " +
+							"USER_LEVEL = " + user.USER_LEVEL + " " +
+						"WHERE USER_ID = " + Global.userID
+					;
+
 					cmd.ExecuteNonQuery();
 					MessageBox.Show("Alterações Salvas Com Sucesso");
 					vcon.Close();
@@ -159,7 +184,13 @@ namespace Rock_Solid
 			{
 				var vcon = ConnectionDB();
 				var cmd = vcon.CreateCommand();
-				cmd.CommandText = "SELECT USER_ID AS CÓDIGO, USER_NAME AS NOME, USER_USERNAME AS USERNAME FROM USER";
+				cmd.CommandText = @"
+					SELECT 
+						USER_ID AS CÓDIGO, USER_NAME AS NOME, USER_USERNAME AS USERNAME 
+					FROM 
+						USER
+				";
+
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				da.Fill(dt);
 				vcon.Close();
@@ -181,7 +212,11 @@ namespace Rock_Solid
 			{
 				var vcon = ConnectionDB();
 				var cmd = vcon.CreateCommand();
-				cmd.CommandText = "SELECT * FROM USER WHERE USER_ID = "+id;
+				cmd.CommandText = @"
+					SELECT * FROM USER 
+					WHERE USER_ID = "+id
+				;
+
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				da.Fill(dt);
 				vcon.Close();
@@ -203,8 +238,17 @@ namespace Rock_Solid
 				var vcon = ConnectionDB();
 				var cmd = vcon.CreateCommand();
 				var cmd2 = vcon.CreateCommand();
-				cmd.CommandText = "DELETE FROM USER WHERE USER_ID = " + id + ";";
-				cmd2.CommandText = "UPDATE SQLITE_SEQUENCE SET SEQ = 0 WHERE NAME = 'USER';";
+				cmd.CommandText = @"
+					DELETE FROM USER 
+					WHERE USER_ID = " + id + ";"
+				;
+
+				cmd2.CommandText = @"
+					UPDATE SQLITE_SEQUENCE 
+					SET SEQ = 0 
+					WHERE NAME = 'USER';"
+				;
+
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				da2 = new SQLiteDataAdapter(cmd2.CommandText, vcon);
 				da.Fill(dt);
@@ -226,7 +270,15 @@ namespace Rock_Solid
 			{
 				var vcon = ConnectionDB();
 				var cmd = vcon.CreateCommand();
-				cmd.CommandText = "SELECT USER_ID AS CÓDIGO, USER_NAME AS NOME, USER_USERNAME AS USERNAME FROM USER WHERE USER_NAME LIKE '%" + name + "%'";
+				cmd.CommandText = @"
+					SELECT 
+						USER_ID AS CÓDIGO, USER_NAME AS NOME, USER_USERNAME AS USERNAME 
+					FROM 
+						USER 
+					WHERE 
+						USER_NAME LIKE '%" + name + "%'"
+				;
+
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				da.Fill(dt);
 				vcon.Close();

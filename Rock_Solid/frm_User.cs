@@ -27,17 +27,24 @@ namespace Rock_Solid
             Global.userLevel = 0;
         }
 
-		private void btn_New_Click(object sender, EventArgs e)
+        public void ClearTB()
+        {
+            tb_ID.Text = "0";
+            tb_Name.Clear();
+            tb_Username.Clear();
+            tb_Password.Clear();
+            cb_Status.Text = "Ativo";
+            tb_Level.Value = 0;
+            ClearGlobalUser();
+            tb_Name.Focus();
+        }
+
+        private void btn_New_Click(object sender, EventArgs e)
 		{
-            {
-                tb_ID.Text = "0";
-                tb_Name.Clear();
-                tb_Username.Clear();
-                tb_Password.Clear();
-                cb_Status.Text = "Ativo";
-                tb_Level.Value = 0;
-                ClearGlobalUser();
-                tb_Name.Focus();
+            DialogResult res = MessageBox.Show("Criar Novo Usuário?", "NOVO", MessageBoxButtons.YesNo);
+            if(res == DialogResult.Yes)
+			{
+                ClearTB();
             }
         }
 
@@ -59,26 +66,30 @@ namespace Rock_Solid
         {
             if (Global.userID != 0)
             {
-                try
-                {
-                    DataTable dt = new DataTable();
-                    dt = DataBase.DeleteUser(tb_ID.Text);
-                    MessageBox.Show("Usuário Excluído com Sucesso");
-                    ClearGlobalUser();
-                    tb_Name.Focus();
+                DialogResult res = MessageBox.Show("Confirma Exclusão do Usuário?", "EXCLUIR", MessageBoxButtons.YesNo);
+                if(res == DialogResult.Yes)
+				{
+                    try
+                    {
+                        DataTable dt = new DataTable();
+                        dt = DataBase.DeleteUser(tb_ID.Text);
+                        MessageBox.Show("Usuário Excluído com Sucesso");
+                        tb_Name.Focus();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro ao Excluir Usuário");
+                        tb_Name.Focus();
+                        throw ex;
+                    }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Erro ao Excluir Usuário");
-                    ClearGlobalUser();
-                    tb_Name.Focus();
-                    throw ex;
-                }
+                ClearTB();
             }
 			else
 			{
                 MessageBox.Show("Nenhum Usuário Selecionado");
 			}
+            ClearGlobalUser();
         }
 
         private void btn_Fechar_Click(object sender, EventArgs e)
