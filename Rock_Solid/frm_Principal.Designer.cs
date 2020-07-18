@@ -47,6 +47,11 @@
 			this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.loginToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.financeiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.contasAReceberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.contasAPagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pb_Login)).BeginInit();
 			this.menuStrip1.SuspendLayout();
@@ -142,6 +147,9 @@
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroToolStripMenuItem,
             this.manutençãoToolStripMenuItem,
+            this.vendasToolStripMenuItem,
+            this.financeiroToolStripMenuItem,
+            this.relatóriosToolStripMenuItem,
             this.loginToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
@@ -163,27 +171,27 @@
 			// usuárioToolStripMenuItem
 			// 
 			this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-			this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+			this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.usuárioToolStripMenuItem.Text = "Usuário";
 			this.usuárioToolStripMenuItem.Click += new System.EventHandler(this.usuárioToolStripMenuItem_Click);
 			// 
 			// clienteToolStripMenuItem
 			// 
 			this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-			this.clienteToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+			this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.clienteToolStripMenuItem.Text = "Cliente";
 			this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
 			// 
 			// produtoToolStripMenuItem
 			// 
 			this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
-			this.produtoToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+			this.produtoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.produtoToolStripMenuItem.Text = "Produto";
 			// 
 			// equipamentoToolStripMenuItem
 			// 
 			this.equipamentoToolStripMenuItem.Name = "equipamentoToolStripMenuItem";
-			this.equipamentoToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+			this.equipamentoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.equipamentoToolStripMenuItem.Text = "Equipamento";
 			// 
 			// manutençãoToolStripMenuItem
@@ -197,7 +205,7 @@
 			// bancoDeDadosToolStripMenuItem
 			// 
 			this.bancoDeDadosToolStripMenuItem.Name = "bancoDeDadosToolStripMenuItem";
-			this.bancoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+			this.bancoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.bancoDeDadosToolStripMenuItem.Text = "Banco de Dados";
 			this.bancoDeDadosToolStripMenuItem.Click += new System.EventHandler(this.bancoDeDadosToolStripMenuItem_Click);
 			// 
@@ -213,16 +221,49 @@
 			// loginToolStripMenuItem1
 			// 
 			this.loginToolStripMenuItem1.Name = "loginToolStripMenuItem1";
-			this.loginToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+			this.loginToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
 			this.loginToolStripMenuItem1.Text = "Trocar Usuário";
 			this.loginToolStripMenuItem1.Click += new System.EventHandler(this.loginToolStripMenuItem1_Click);
 			// 
 			// logoutToolStripMenuItem
 			// 
 			this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-			this.logoutToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+			this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.logoutToolStripMenuItem.Text = "Logoff";
 			this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+			// 
+			// relatóriosToolStripMenuItem
+			// 
+			this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
+			this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+			this.relatóriosToolStripMenuItem.Text = "Relatórios";
+			// 
+			// vendasToolStripMenuItem
+			// 
+			this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
+			this.vendasToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+			this.vendasToolStripMenuItem.Text = "Vendas";
+			// 
+			// financeiroToolStripMenuItem
+			// 
+			this.financeiroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.contasAReceberToolStripMenuItem,
+            this.contasAPagarToolStripMenuItem});
+			this.financeiroToolStripMenuItem.Name = "financeiroToolStripMenuItem";
+			this.financeiroToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+			this.financeiroToolStripMenuItem.Text = "Financeiro";
+			// 
+			// contasAReceberToolStripMenuItem
+			// 
+			this.contasAReceberToolStripMenuItem.Name = "contasAReceberToolStripMenuItem";
+			this.contasAReceberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.contasAReceberToolStripMenuItem.Text = "Contas a Receber";
+			// 
+			// contasAPagarToolStripMenuItem
+			// 
+			this.contasAPagarToolStripMenuItem.Name = "contasAPagarToolStripMenuItem";
+			this.contasAPagarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.contasAPagarToolStripMenuItem.Text = "Contas a Pagar";
 			// 
 			// frm_Principal
 			// 
@@ -267,6 +308,11 @@
         private System.Windows.Forms.ToolStripMenuItem equipamentoToolStripMenuItem;
 		public System.Windows.Forms.Label lb_Version;
 		private System.Windows.Forms.Label lb_VersionTXT;
+		private System.Windows.Forms.ToolStripMenuItem vendasToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem financeiroToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem contasAReceberToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem contasAPagarToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
 	}
 }
 
