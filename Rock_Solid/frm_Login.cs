@@ -12,9 +12,9 @@ namespace Rock_Solid
 {
 	public partial class frm_Login : Form
 	{
-		frm_Principal principal;
+		frm_Initial principal;
 		DataTable dt = new DataTable();
-		public frm_Login(frm_Principal f)
+		public frm_Login(frm_Initial f)
 		{
 			InitializeComponent();
 			principal = f;

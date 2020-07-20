@@ -32,32 +32,33 @@
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.btn_Fechar = new System.Windows.Forms.Button();
+			this.btn_Select = new System.Windows.Forms.Button();
 			this.dgv_UserList = new System.Windows.Forms.DataGridView();
 			this.tb_Search = new System.Windows.Forms.TextBox();
 			this.lb_Search = new System.Windows.Forms.Label();
+			this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgv_UserList)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
 			// 
-			this.panel1.Controls.Add(this.btn_Fechar);
+			this.panel1.Controls.Add(this.btn_Select);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
 			this.panel1.Location = new System.Drawing.Point(0, 414);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(538, 36);
 			this.panel1.TabIndex = 21;
 			// 
-			// btn_Fechar
+			// btn_Select
 			// 
-			this.btn_Fechar.Location = new System.Drawing.Point(454, 1);
-			this.btn_Fechar.Name = "btn_Fechar";
-			this.btn_Fechar.Size = new System.Drawing.Size(72, 24);
-			this.btn_Fechar.TabIndex = 2;
-			this.btn_Fechar.Text = "Selecionar";
-			this.btn_Fechar.UseVisualStyleBackColor = true;
-			this.btn_Fechar.Click += new System.EventHandler(this.btn_Fechar_Click);
+			this.btn_Select.Location = new System.Drawing.Point(454, 1);
+			this.btn_Select.Name = "btn_Select";
+			this.btn_Select.Size = new System.Drawing.Size(72, 24);
+			this.btn_Select.TabIndex = 2;
+			this.btn_Select.Text = "Selecionar";
+			this.btn_Select.UseVisualStyleBackColor = true;
+			this.btn_Select.Click += new System.EventHandler(this.btn_Select_Click);
 			// 
 			// dgv_UserList
 			// 
@@ -119,11 +120,24 @@
 			this.lb_Search.TabIndex = 24;
 			this.lb_Search.Text = "Pesquisar";
 			// 
+			// vScrollBar1
+			// 
+			this.vScrollBar1.Enabled = false;
+			this.vScrollBar1.LargeChange = 0;
+			this.vScrollBar1.Location = new System.Drawing.Point(508, 49);
+			this.vScrollBar1.Maximum = 0;
+			this.vScrollBar1.Name = "vScrollBar1";
+			this.vScrollBar1.Size = new System.Drawing.Size(18, 349);
+			this.vScrollBar1.SmallChange = 0;
+			this.vScrollBar1.TabIndex = 25;
+			this.vScrollBar1.Visible = false;
+			// 
 			// frm_UserList
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(538, 450);
+			this.Controls.Add(this.vScrollBar1);
 			this.Controls.Add(this.lb_Search);
 			this.Controls.Add(this.tb_Search);
 			this.Controls.Add(this.dgv_UserList);
@@ -145,9 +159,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btn_Fechar;
+        private System.Windows.Forms.Button btn_Select;
         private System.Windows.Forms.Label lb_Search;
         public System.Windows.Forms.DataGridView dgv_UserList;
         public System.Windows.Forms.TextBox tb_Search;
-    }
+		private System.Windows.Forms.VScrollBar vScrollBar1;
+	}
 }

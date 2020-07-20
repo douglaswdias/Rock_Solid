@@ -49,7 +49,7 @@ namespace Rock_Solid
             }
         }
 
-        private void btn_Fechar_Click(object sender, EventArgs e)
+        private void btn_Select_Click(object sender, EventArgs e)
         {
             Close();
         }

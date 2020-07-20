@@ -2,7 +2,6 @@ C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\bin\Debug\Rock_Solid.exe.co
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\bin\Debug\Rock_Solid.exe
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\bin\Debug\Rock_Solid.pdb
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.csprojAssemblyReference.cache
-C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_Principal.resources
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.Properties.Resources.resources
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.csproj.GenerateResource.cache
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.csproj.CoreCompileInputs.cache
@@ -44,3 +43,5 @@ C:\Users\suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_User.resources
 C:\Users\suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_UserList.resources
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_UserList.resources
+C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_Initial.resources
+C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_Client.resources

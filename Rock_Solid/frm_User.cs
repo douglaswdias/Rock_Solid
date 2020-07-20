@@ -92,7 +92,7 @@ namespace Rock_Solid
             ClearGlobalUser();
         }
 
-        private void btn_Fechar_Click(object sender, EventArgs e)
+        private void btn_Close_Click(object sender, EventArgs e)
 		{
             Close();
             ClearGlobalUser();

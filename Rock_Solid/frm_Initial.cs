@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Rock_Solid
 {
-	public partial class frm_Principal : Form
+	public partial class frm_Initial : Form
 	{
-		public frm_Principal()
+		public frm_Initial()
 		{
 			InitializeComponent();
 			frm_Login login = new frm_Login(this);
@@ -20,13 +20,13 @@ namespace Rock_Solid
             login.ShowDialog();
 		}
 
-        private void loginToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void tsmi_UserChange_Click(object sender, EventArgs e)
         {
             frm_Login login = new frm_Login(this);
             login.ShowDialog();
         }
 
-        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void tsmi_LogOff_Click(object sender, EventArgs e)
         {
             lb_AccessText.Text = "0";
             lb_UserName.Text = "Nenhum Usuário Logado";
@@ -36,26 +36,12 @@ namespace Rock_Solid
             this.Close();
         }
 
-        private void bancoDeDadosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void tsmi_DataBase_Click(object sender, EventArgs e)
         {
-            if (Global.logged)
-            {
-                if(Global.level >= 3)
-                {
 
-                }
-                else
-                {
-                    MessageBox.Show("Acesso Negado \nUsuário Sem Permissão");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Nenhum Usuário Logado");
-            }
-        }
+		}
 
-        private void usuárioToolStripMenuItem_Click(object sender, EventArgs e)
+		private void tsmi_User_Click(object sender, EventArgs e)
         {
             if (Global.logged)
             {
@@ -75,32 +61,14 @@ namespace Rock_Solid
             }
         }
 
-        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void tsmi_Client_Click(object sender, EventArgs e)
         {
             if (Global.logged)
             {
                 if (Global.level >= 3)
                 {
-
-                }
-                else
-                {
-                    MessageBox.Show("Acesso Negado \nUsuário Sem Permissão");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Nenhum Usuário Logado");
-            }
-        }
-
-        private void alunosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (Global.logged)
-            {
-                if (Global.level >= 3)
-                {
-
+                    frm_Client client = new frm_Client();
+                    client.ShowDialog();
                 }
                 else
                 {

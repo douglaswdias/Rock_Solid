@@ -40,7 +40,7 @@
 			this.lb_Status = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.btn_Delete = new System.Windows.Forms.Button();
-			this.btn_Fechar = new System.Windows.Forms.Button();
+			this.btn_Close = new System.Windows.Forms.Button();
 			this.btn_Save = new System.Windows.Forms.Button();
 			this.btn_New = new System.Windows.Forms.Button();
 			this.lb_ID = new System.Windows.Forms.Label();
@@ -153,7 +153,7 @@
 			// panel1
 			// 
 			this.panel1.Controls.Add(this.btn_Delete);
-			this.panel1.Controls.Add(this.btn_Fechar);
+			this.panel1.Controls.Add(this.btn_Close);
 			this.panel1.Controls.Add(this.btn_Save);
 			this.panel1.Controls.Add(this.btn_New);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -172,15 +172,15 @@
 			this.btn_Delete.UseVisualStyleBackColor = true;
 			this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
 			// 
-			// btn_Fechar
+			// btn_Close
 			// 
-			this.btn_Fechar.Location = new System.Drawing.Point(330, 0);
-			this.btn_Fechar.Name = "btn_Fechar";
-			this.btn_Fechar.Size = new System.Drawing.Size(75, 24);
-			this.btn_Fechar.TabIndex = 1;
-			this.btn_Fechar.Text = "Fechar";
-			this.btn_Fechar.UseVisualStyleBackColor = true;
-			this.btn_Fechar.Click += new System.EventHandler(this.btn_Fechar_Click);
+			this.btn_Close.Location = new System.Drawing.Point(330, 0);
+			this.btn_Close.Name = "btn_Close";
+			this.btn_Close.Size = new System.Drawing.Size(75, 24);
+			this.btn_Close.TabIndex = 1;
+			this.btn_Close.Text = "Fechar";
+			this.btn_Close.UseVisualStyleBackColor = true;
+			this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
 			// 
 			// btn_Save
 			// 
@@ -277,7 +277,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_New;
-		private System.Windows.Forms.Button btn_Fechar;
+		private System.Windows.Forms.Button btn_Close;
         private System.Windows.Forms.Label lb_ID;
         private System.Windows.Forms.Button btn_Search;
         public System.Windows.Forms.TextBox tb_ID;
