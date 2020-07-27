@@ -83,13 +83,13 @@ namespace Rock_Solid
                         throw ex;
                     }
                 }
-                ClearTB();
             }
 			else
 			{
                 MessageBox.Show("Nenhum Usuário Selecionado");
 			}
             ClearGlobalUser();
+            ClearTB();
         }
 
         private void btn_Close_Click(object sender, EventArgs e)
@@ -152,5 +152,14 @@ namespace Rock_Solid
                 }
             }
         }
+
+		private void frm_User_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == (char)Keys.Enter) //Pode ser usado tambem (e.KeyCode == Keys.Enter)
+			{
+				this.ProcessTabKey(true);
+				e.Handled = true; //Retira o som do windos na tecla
+			}
+		}
 	}
 }

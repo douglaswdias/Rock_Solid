@@ -251,11 +251,13 @@
 			this.Controls.Add(this.tb_Name);
 			this.Controls.Add(this.lb_Name);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.KeyPreview = true;
 			this.MaximizeBox = false;
 			this.Name = "frm_User";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Cadastro de Usuários";
 			this.Activated += new System.EventHandler(this.tb_ID_Enter);
+			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frm_User_KeyPress);
 			((System.ComponentModel.ISupportInitialize)(this.tb_Level)).EndInit();
 			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
