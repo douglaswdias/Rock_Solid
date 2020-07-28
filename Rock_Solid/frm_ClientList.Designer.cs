@@ -59,6 +59,7 @@
 			this.tb_Search.Name = "tb_Search";
 			this.tb_Search.Size = new System.Drawing.Size(519, 20);
 			this.tb_Search.TabIndex = 28;
+			this.tb_Search.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_Search_KeyDown);
 			// 
 			// dgv_ClientList
 			// 

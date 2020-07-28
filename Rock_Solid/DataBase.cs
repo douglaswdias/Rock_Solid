@@ -1,4 +1,5 @@
 ﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -505,7 +506,7 @@ namespace Rock_Solid
 				var cmd = vcon.CreateCommand();
 				cmd.CommandText = @"
 					SELECT 
-						CLIENT_ID AS CÓDIGO, CLIENT_NAME AS NOME, CLIENT_RG AS RG__IE, CLIENT_CPF AS CPF__CNPJ, CLIENT_CITY AS CIDADE, CLIENT_STATE AS ESTADO
+						CLIENT_ID AS CÓDIGO, CLIENT_NAME AS NOME, CLIENT_RG AS RG__IE, CLIENT_CPF AS CPF__CNPJ, CLIENT_CITY AS CIDADE, CLIENT_STATE AS ESTADO, CLIENT_PROFILEIMGPATH AS FOTO
 					FROM 
 						CLIENT
 				";
@@ -532,9 +533,9 @@ namespace Rock_Solid
 				var cmd = vcon.CreateCommand();
 				cmd.CommandText = @"
 					SELECT 
-						CLIENT_ID AS CÓDIGO, CLIENT_NAME AS NOME, CLIENT_RG AS RG/IE, CLIENT_CPF AS CPF/CNPJ, CLIENT_CITY AS CIDADE, CLIENT_STATE AS ESTADO
+						CLIENT_ID AS CÓDIGO, CLIENT_NAME AS NOME, CLIENT_RG AS RG__IE, CLIENT_CPF AS CPF__CNPJ, CLIENT_CITY AS CIDADE, CLIENT_STATE AS ESTADO
 					FROM 
-						USER 
+						CLIENT 
 					WHERE 
 						CLIENT_NAME LIKE '%" + name + "%'"
 				;
@@ -560,9 +561,9 @@ namespace Rock_Solid
 				var cmd = vcon.CreateCommand();
 				cmd.CommandText = @"
 					SELECT 
-						CLIENT_ID AS CÓDIGO, CLIENT_NAME AS NOME, CLIENT_RG AS RG/IE, CLIENT_CPF AS CPF/CNPJ, CLIENT_CITY AS CIDADE, CLIENT_STATE AS ESTADO
+						CLIENT_ID AS CÓDIGO, CLIENT_NAME AS NOME, CLIENT_RG AS RG__IE, CLIENT_CPF AS CPF__CNPJ, CLIENT_CITY AS CIDADE, CLIENT_STATE AS ESTADO
 					FROM 
-						USER 
+						CLIENT 
 					WHERE 
 						CLIENT_CPF LIKE '%" + name + "%'"
 				;

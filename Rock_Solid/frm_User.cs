@@ -102,6 +102,7 @@ namespace Rock_Solid
         {
             frm_UserList userList = new frm_UserList();
             userList.ShowDialog();
+            tb_ID.Focus();
         }
 
         private void tb_ID_Click(object sender, EventArgs e)
@@ -147,7 +148,6 @@ namespace Rock_Solid
                         MessageBox.Show("Usuário não Cadastrado");
                         ClearGlobalUser();
                         tb_Name.Focus();
-                        throw ex;
                     }
                 }
             }

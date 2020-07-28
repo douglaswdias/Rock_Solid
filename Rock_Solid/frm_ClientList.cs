@@ -48,6 +48,7 @@ namespace Rock_Solid
 
 		private void frm_ClientList_Load(object sender, EventArgs e)
 		{
+			tb_Search.Focus();
 			dgv_ClientList.DataSource = DataBase.ClientListDGV();
 			dgv_ClientList.Columns[0].Width = 55;
 			dgv_ClientList.Columns[1].Width = 225;

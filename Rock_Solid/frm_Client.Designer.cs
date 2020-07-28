@@ -66,7 +66,6 @@
 			this.ofd_Client = new System.Windows.Forms.OpenFileDialog();
 			this.tb_RG = new System.Windows.Forms.MaskedTextBox();
 			this.lb_RG = new System.Windows.Forms.Label();
-			this.lb_ProfilePicPath = new System.Windows.Forms.Label();
 			this.pb_User = new System.Windows.Forms.PictureBox();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pb_User)).BeginInit();
@@ -263,6 +262,34 @@
 			// cb_State
 			// 
 			this.cb_State.FormattingEnabled = true;
+			this.cb_State.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO",
+            "DF"});
 			this.cb_State.Location = new System.Drawing.Point(389, 155);
 			this.cb_State.Name = "cb_State";
 			this.cb_State.Size = new System.Drawing.Size(71, 21);
@@ -414,15 +441,6 @@
 			this.lb_RG.TabIndex = 9;
 			this.lb_RG.Text = "RG";
 			// 
-			// lb_ProfilePicPath
-			// 
-			this.lb_ProfilePicPath.AutoSize = true;
-			this.lb_ProfilePicPath.Location = new System.Drawing.Point(263, 427);
-			this.lb_ProfilePicPath.Name = "lb_ProfilePicPath";
-			this.lb_ProfilePicPath.Size = new System.Drawing.Size(35, 13);
-			this.lb_ProfilePicPath.TabIndex = 0;
-			this.lb_ProfilePicPath.Text = "label1";
-			// 
 			// pb_User
 			// 
 			this.pb_User.Image = global::Rock_Solid.Properties.Resources.Profile;
@@ -438,7 +456,6 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(476, 481);
-			this.Controls.Add(this.lb_ProfilePicPath);
 			this.Controls.Add(this.tb_RG);
 			this.Controls.Add(this.lb_RG);
 			this.Controls.Add(this.btn_ProfilePicture);
@@ -529,6 +546,5 @@
 		private System.Windows.Forms.OpenFileDialog ofd_Client;
 		public System.Windows.Forms.MaskedTextBox tb_RG;
 		private System.Windows.Forms.Label lb_RG;
-		private System.Windows.Forms.Label lb_ProfilePicPath;
 	}
 }
