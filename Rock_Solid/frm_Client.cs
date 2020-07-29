@@ -149,8 +149,12 @@ namespace Rock_Solid
 				{
 					try
 					{
-						DataTable dt = new DataTable();
-						dt = DataBase.DeleteClient(tb_ID.Text);
+						if (File.Exists(pb_User.ImageLocation))//Verifica se o cliente possui foto
+						{
+							File.Delete(pb_User.ImageLocation);//Faz a exclusão da foto
+						}
+						DataTable dt = new DataTable();//Faz a conexão com o DB
+						dt = DataBase.DeleteClient(tb_ID.Text);//Chama o método de exclusão de cliente
 						MessageBox.Show("Cliente Excluído com Sucesso");
 						tb_Name.Focus();
 					}

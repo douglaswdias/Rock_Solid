@@ -52,6 +52,7 @@
 			this.tsmi_LogIn = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_UserChange = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_LogOff = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmi_SalesOrder = new System.Windows.Forms.ToolStripMenuItem();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pb_Login)).BeginInit();
 			this.ms_Initial.SuspendLayout();
@@ -171,27 +172,27 @@
 			// tsmi_User
 			// 
 			this.tsmi_User.Name = "tsmi_User";
-			this.tsmi_User.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_User.Size = new System.Drawing.Size(145, 22);
 			this.tsmi_User.Text = "Usuário";
 			this.tsmi_User.Click += new System.EventHandler(this.tsmi_User_Click);
 			// 
 			// tsmi_Client
 			// 
 			this.tsmi_Client.Name = "tsmi_Client";
-			this.tsmi_Client.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_Client.Size = new System.Drawing.Size(145, 22);
 			this.tsmi_Client.Text = "Cliente";
 			this.tsmi_Client.Click += new System.EventHandler(this.tsmi_Client_Click);
 			// 
 			// tsmi_Product
 			// 
 			this.tsmi_Product.Name = "tsmi_Product";
-			this.tsmi_Product.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_Product.Size = new System.Drawing.Size(145, 22);
 			this.tsmi_Product.Text = "Produto";
 			// 
 			// tsmi_Equipment
 			// 
 			this.tsmi_Equipment.Name = "tsmi_Equipment";
-			this.tsmi_Equipment.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_Equipment.Size = new System.Drawing.Size(145, 22);
 			this.tsmi_Equipment.Text = "Equipamento";
 			// 
 			// tsmi_Management
@@ -211,6 +212,8 @@
 			// 
 			// tsmi_Sale
 			// 
+			this.tsmi_Sale.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmi_SalesOrder});
 			this.tsmi_Sale.Name = "tsmi_Sale";
 			this.tsmi_Sale.Size = new System.Drawing.Size(56, 20);
 			this.tsmi_Sale.Text = "Vendas";
@@ -254,16 +257,23 @@
 			// tsmi_UserChange
 			// 
 			this.tsmi_UserChange.Name = "tsmi_UserChange";
-			this.tsmi_UserChange.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_UserChange.Size = new System.Drawing.Size(149, 22);
 			this.tsmi_UserChange.Text = "Trocar Usuário";
 			this.tsmi_UserChange.Click += new System.EventHandler(this.tsmi_UserChange_Click);
 			// 
 			// tsmi_LogOff
 			// 
 			this.tsmi_LogOff.Name = "tsmi_LogOff";
-			this.tsmi_LogOff.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_LogOff.Size = new System.Drawing.Size(149, 22);
 			this.tsmi_LogOff.Text = "Logoff";
 			this.tsmi_LogOff.Click += new System.EventHandler(this.tsmi_LogOff_Click);
+			// 
+			// tsmi_SalesOrder
+			// 
+			this.tsmi_SalesOrder.Name = "tsmi_SalesOrder";
+			this.tsmi_SalesOrder.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_SalesOrder.Text = "Pedidos de Venda";
+			this.tsmi_SalesOrder.Click += new System.EventHandler(this.tsmi_SalesOrder_Click);
 			// 
 			// frm_Initial
 			// 
@@ -313,6 +323,7 @@
 		private System.Windows.Forms.ToolStripMenuItem tsmi_AccountsReceivable;
 		private System.Windows.Forms.ToolStripMenuItem tsmi_AccountsPayable;
 		private System.Windows.Forms.ToolStripMenuItem tsmi_Report;
+		private System.Windows.Forms.ToolStripMenuItem tsmi_SalesOrder;
 	}
 }
 

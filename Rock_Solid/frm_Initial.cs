@@ -80,5 +80,11 @@ namespace Rock_Solid
                 MessageBox.Show("Nenhum Usuário Logado");
             }
         }
+
+		private void tsmi_SalesOrder_Click(object sender, EventArgs e)
+		{
+            frm_SalesOrder sales = new frm_SalesOrder();
+            sales.ShowDialog();
+        }
 	}
 }

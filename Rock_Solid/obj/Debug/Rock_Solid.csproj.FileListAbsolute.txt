@@ -47,3 +47,4 @@ C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_Cl
 C:\Users\Suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_Client.resources
 C:\Users\Suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_Initial.resources
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_ClientList.resources
+C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_SalesOrder.resources
