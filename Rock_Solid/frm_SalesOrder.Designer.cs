@@ -28,49 +28,69 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Produto Teste",
+            "7897897897897",
+            "2",
+            "0",
+            "15,00",
+            "30,00"}, -1);
+			System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Vencimento/1",
+            "25/10/2020",
+            "210,50",
+            "Dinheiro",
+            ""}, -1);
 			this.tc_SalesOrder = new System.Windows.Forms.TabControl();
 			this.tp_Product = new System.Windows.Forms.TabPage();
-			this.button2 = new System.Windows.Forms.Button();
-			this.label9 = new System.Windows.Forms.Label();
-			this.listView1 = new System.Windows.Forms.ListView();
+			this.btn_SaveProduct = new System.Windows.Forms.Button();
+			this.lb_Product = new System.Windows.Forms.Label();
+			this.lv_Products = new System.Windows.Forms.ListView();
 			this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.label8 = new System.Windows.Forms.Label();
-			this.textBox9 = new System.Windows.Forms.TextBox();
-			this.label7 = new System.Windows.Forms.Label();
-			this.textBox8 = new System.Windows.Forms.TextBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.textBox7 = new System.Windows.Forms.TextBox();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.label5 = new System.Windows.Forms.Label();
-			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.lb_Price = new System.Windows.Forms.Label();
+			this.tb_Price = new System.Windows.Forms.TextBox();
+			this.lb_Discount = new System.Windows.Forms.Label();
+			this.tb_Discount = new System.Windows.Forms.TextBox();
+			this.lb_Amount = new System.Windows.Forms.Label();
+			this.tb_Amount = new System.Windows.Forms.TextBox();
+			this.tb_Product = new System.Windows.Forms.TextBox();
+			this.lb_BarCode = new System.Windows.Forms.Label();
+			this.tb_BarCode = new System.Windows.Forms.TextBox();
 			this.tp_ExpirationDate = new System.Windows.Forms.TabPage();
-			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-			this.label13 = new System.Windows.Forms.Label();
-			this.textBox13 = new System.Windows.Forms.TextBox();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
-			this.textBox11 = new System.Windows.Forms.TextBox();
-			this.label10 = new System.Windows.Forms.Label();
-			this.btn_Close = new System.Windows.Forms.Button();
 			this.btn_Save = new System.Windows.Forms.Button();
-			this.btn_New = new System.Windows.Forms.Button();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
-			this.label4 = new System.Windows.Forms.Label();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.listView2 = new System.Windows.Forms.ListView();
-			this.button3 = new System.Windows.Forms.Button();
+			this.lv_Expirations = new System.Windows.Forms.ListView();
+			this.cb_PaymentMethod = new System.Windows.Forms.ComboBox();
+			this.dtp_ExpirationData = new System.Windows.Forms.DateTimePicker();
+			this.lb_DocNumber = new System.Windows.Forms.Label();
+			this.tb_DocNumber = new System.Windows.Forms.TextBox();
+			this.lb_PaymentMethod = new System.Windows.Forms.Label();
+			this.lb_Installments = new System.Windows.Forms.Label();
+			this.tb_Installments = new System.Windows.Forms.TextBox();
+			this.lb_ExpirationData = new System.Windows.Forms.Label();
+			this.btn_CloseOrder = new System.Windows.Forms.Button();
+			this.btn_SaveOrder = new System.Windows.Forms.Button();
+			this.btn_NewOrder = new System.Windows.Forms.Button();
+			this.tb_ID = new System.Windows.Forms.TextBox();
+			this.tb_Client = new System.Windows.Forms.TextBox();
+			this.tb_TotalOrder = new System.Windows.Forms.TextBox();
+			this.lb_ID = new System.Windows.Forms.Label();
+			this.lb_Client = new System.Windows.Forms.Label();
+			this.lb_TotalOrder = new System.Windows.Forms.Label();
+			this.btn_SerchClient = new System.Windows.Forms.Button();
+			this.lb_Order = new System.Windows.Forms.Label();
+			this.tb_Order = new System.Windows.Forms.TextBox();
+			this.btn_OrderClose = new System.Windows.Forms.Button();
+			this.btn_SearchProduct = new System.Windows.Forms.Button();
+			this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.tc_SalesOrder.SuspendLayout();
 			this.tp_Product.SuspendLayout();
 			this.tp_ExpirationDate.SuspendLayout();
@@ -90,18 +110,20 @@
 			// tp_Product
 			// 
 			this.tp_Product.BackColor = System.Drawing.SystemColors.Control;
-			this.tp_Product.Controls.Add(this.button2);
-			this.tp_Product.Controls.Add(this.label9);
-			this.tp_Product.Controls.Add(this.listView1);
-			this.tp_Product.Controls.Add(this.label8);
-			this.tp_Product.Controls.Add(this.textBox9);
-			this.tp_Product.Controls.Add(this.label7);
-			this.tp_Product.Controls.Add(this.textBox8);
-			this.tp_Product.Controls.Add(this.label6);
-			this.tp_Product.Controls.Add(this.textBox7);
-			this.tp_Product.Controls.Add(this.textBox6);
-			this.tp_Product.Controls.Add(this.label5);
-			this.tp_Product.Controls.Add(this.textBox5);
+			this.tp_Product.Controls.Add(this.btn_SearchProduct);
+			this.tp_Product.Controls.Add(this.btn_OrderClose);
+			this.tp_Product.Controls.Add(this.btn_SaveProduct);
+			this.tp_Product.Controls.Add(this.lb_Product);
+			this.tp_Product.Controls.Add(this.lv_Products);
+			this.tp_Product.Controls.Add(this.lb_Price);
+			this.tp_Product.Controls.Add(this.tb_Price);
+			this.tp_Product.Controls.Add(this.lb_Discount);
+			this.tp_Product.Controls.Add(this.tb_Discount);
+			this.tp_Product.Controls.Add(this.lb_Amount);
+			this.tp_Product.Controls.Add(this.tb_Amount);
+			this.tp_Product.Controls.Add(this.tb_Product);
+			this.tp_Product.Controls.Add(this.lb_BarCode);
+			this.tp_Product.Controls.Add(this.tb_BarCode);
 			this.tp_Product.Location = new System.Drawing.Point(4, 22);
 			this.tp_Product.Name = "tp_Product";
 			this.tp_Product.Padding = new System.Windows.Forms.Padding(3);
@@ -109,52 +131,54 @@
 			this.tp_Product.TabIndex = 0;
 			this.tp_Product.Text = "Produtos";
 			// 
-			// button2
+			// btn_SaveProduct
 			// 
-			this.button2.Location = new System.Drawing.Point(432, 72);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(109, 24);
-			this.button2.TabIndex = 10;
-			this.button2.Text = "Salvar Produto";
-			this.button2.UseVisualStyleBackColor = true;
+			this.btn_SaveProduct.Location = new System.Drawing.Point(432, 72);
+			this.btn_SaveProduct.Name = "btn_SaveProduct";
+			this.btn_SaveProduct.Size = new System.Drawing.Size(109, 24);
+			this.btn_SaveProduct.TabIndex = 10;
+			this.btn_SaveProduct.Text = "Salvar Produto";
+			this.btn_SaveProduct.UseVisualStyleBackColor = true;
 			// 
-			// label9
+			// lb_Product
 			// 
-			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(129, 13);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(110, 13);
-			this.label9.TabIndex = 20;
-			this.label9.Text = "Descrição do Produto";
+			this.lb_Product.AutoSize = true;
+			this.lb_Product.Location = new System.Drawing.Point(129, 13);
+			this.lb_Product.Name = "lb_Product";
+			this.lb_Product.Size = new System.Drawing.Size(110, 13);
+			this.lb_Product.TabIndex = 20;
+			this.lb_Product.Text = "Descrição do Produto";
 			// 
-			// listView1
+			// lv_Products
 			// 
-			this.listView1.AutoArrange = false;
-			this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+			this.lv_Products.AutoArrange = false;
+			this.lv_Products.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.lv_Products.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
-			this.listView1.FullRowSelect = true;
-			this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.listView1.HideSelection = false;
-			this.listView1.LabelWrap = false;
-			this.listView1.Location = new System.Drawing.Point(11, 100);
-			this.listView1.MultiSelect = false;
-			this.listView1.Name = "listView1";
-			this.listView1.Size = new System.Drawing.Size(650, 213);
-			this.listView1.TabIndex = 19;
-			this.listView1.TileSize = new System.Drawing.Size(180, 30);
-			this.listView1.UseCompatibleStateImageBehavior = false;
-			this.listView1.View = System.Windows.Forms.View.Details;
+			this.lv_Products.FullRowSelect = true;
+			this.lv_Products.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+			this.lv_Products.HideSelection = false;
+			this.lv_Products.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+			this.lv_Products.LabelWrap = false;
+			this.lv_Products.Location = new System.Drawing.Point(11, 100);
+			this.lv_Products.MultiSelect = false;
+			this.lv_Products.Name = "lv_Products";
+			this.lv_Products.Size = new System.Drawing.Size(650, 213);
+			this.lv_Products.TabIndex = 19;
+			this.lv_Products.TileSize = new System.Drawing.Size(180, 30);
+			this.lv_Products.UseCompatibleStateImageBehavior = false;
+			this.lv_Products.View = System.Windows.Forms.View.Details;
 			// 
 			// columnHeader1
 			// 
 			this.columnHeader1.Text = "Descrição";
-			this.columnHeader1.Width = 277;
+			this.columnHeader1.Width = 260;
 			// 
 			// columnHeader2
 			// 
@@ -181,90 +205,90 @@
 			this.columnHeader6.Text = "Total";
 			this.columnHeader6.Width = 75;
 			// 
-			// label8
+			// lb_Price
 			// 
-			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(242, 56);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(70, 13);
-			this.label8.TabIndex = 18;
-			this.label8.Text = "Valor Unitário";
+			this.lb_Price.AutoSize = true;
+			this.lb_Price.Location = new System.Drawing.Point(242, 56);
+			this.lb_Price.Name = "lb_Price";
+			this.lb_Price.Size = new System.Drawing.Size(70, 13);
+			this.lb_Price.TabIndex = 18;
+			this.lb_Price.Text = "Valor Unitário";
 			// 
-			// textBox9
+			// tb_Price
 			// 
-			this.textBox9.Location = new System.Drawing.Point(242, 75);
-			this.textBox9.Name = "textBox9";
-			this.textBox9.Size = new System.Drawing.Size(106, 20);
-			this.textBox9.TabIndex = 17;
+			this.tb_Price.Location = new System.Drawing.Point(242, 75);
+			this.tb_Price.Name = "tb_Price";
+			this.tb_Price.Size = new System.Drawing.Size(106, 20);
+			this.tb_Price.TabIndex = 17;
 			// 
-			// label7
+			// lb_Discount
 			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(126, 56);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(53, 13);
-			this.label7.TabIndex = 16;
-			this.label7.Text = "Desconto";
+			this.lb_Discount.AutoSize = true;
+			this.lb_Discount.Location = new System.Drawing.Point(126, 56);
+			this.lb_Discount.Name = "lb_Discount";
+			this.lb_Discount.Size = new System.Drawing.Size(53, 13);
+			this.lb_Discount.TabIndex = 16;
+			this.lb_Discount.Text = "Desconto";
 			// 
-			// textBox8
+			// tb_Discount
 			// 
-			this.textBox8.Location = new System.Drawing.Point(126, 75);
-			this.textBox8.Name = "textBox8";
-			this.textBox8.Size = new System.Drawing.Size(106, 20);
-			this.textBox8.TabIndex = 15;
+			this.tb_Discount.Location = new System.Drawing.Point(126, 75);
+			this.tb_Discount.Name = "tb_Discount";
+			this.tb_Discount.Size = new System.Drawing.Size(106, 20);
+			this.tb_Discount.TabIndex = 15;
 			// 
-			// label6
+			// lb_Amount
 			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(11, 56);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(62, 13);
-			this.label6.TabIndex = 14;
-			this.label6.Text = "Quantidade";
+			this.lb_Amount.AutoSize = true;
+			this.lb_Amount.Location = new System.Drawing.Point(11, 56);
+			this.lb_Amount.Name = "lb_Amount";
+			this.lb_Amount.Size = new System.Drawing.Size(62, 13);
+			this.lb_Amount.TabIndex = 14;
+			this.lb_Amount.Text = "Quantidade";
 			// 
-			// textBox7
+			// tb_Amount
 			// 
-			this.textBox7.Location = new System.Drawing.Point(11, 75);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(106, 20);
-			this.textBox7.TabIndex = 13;
+			this.tb_Amount.Location = new System.Drawing.Point(11, 75);
+			this.tb_Amount.Name = "tb_Amount";
+			this.tb_Amount.Size = new System.Drawing.Size(106, 20);
+			this.tb_Amount.TabIndex = 13;
 			// 
-			// textBox6
+			// tb_Product
 			// 
-			this.textBox6.Location = new System.Drawing.Point(129, 32);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(412, 20);
-			this.textBox6.TabIndex = 12;
+			this.tb_Product.Location = new System.Drawing.Point(129, 32);
+			this.tb_Product.Name = "tb_Product";
+			this.tb_Product.Size = new System.Drawing.Size(412, 20);
+			this.tb_Product.TabIndex = 12;
 			// 
-			// label5
+			// lb_BarCode
 			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(11, 13);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(88, 13);
-			this.label5.TabIndex = 11;
-			this.label5.Text = "Código de Barras";
+			this.lb_BarCode.AutoSize = true;
+			this.lb_BarCode.Location = new System.Drawing.Point(11, 13);
+			this.lb_BarCode.Name = "lb_BarCode";
+			this.lb_BarCode.Size = new System.Drawing.Size(88, 13);
+			this.lb_BarCode.TabIndex = 11;
+			this.lb_BarCode.Text = "Código de Barras";
 			// 
-			// textBox5
+			// tb_BarCode
 			// 
-			this.textBox5.Location = new System.Drawing.Point(11, 32);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(106, 20);
-			this.textBox5.TabIndex = 10;
+			this.tb_BarCode.Location = new System.Drawing.Point(11, 32);
+			this.tb_BarCode.Name = "tb_BarCode";
+			this.tb_BarCode.Size = new System.Drawing.Size(106, 20);
+			this.tb_BarCode.TabIndex = 10;
 			// 
 			// tp_ExpirationDate
 			// 
 			this.tp_ExpirationDate.BackColor = System.Drawing.SystemColors.Control;
-			this.tp_ExpirationDate.Controls.Add(this.button3);
-			this.tp_ExpirationDate.Controls.Add(this.listView2);
-			this.tp_ExpirationDate.Controls.Add(this.comboBox1);
-			this.tp_ExpirationDate.Controls.Add(this.dateTimePicker1);
-			this.tp_ExpirationDate.Controls.Add(this.label13);
-			this.tp_ExpirationDate.Controls.Add(this.textBox13);
-			this.tp_ExpirationDate.Controls.Add(this.label12);
-			this.tp_ExpirationDate.Controls.Add(this.label11);
-			this.tp_ExpirationDate.Controls.Add(this.textBox11);
-			this.tp_ExpirationDate.Controls.Add(this.label10);
+			this.tp_ExpirationDate.Controls.Add(this.btn_Save);
+			this.tp_ExpirationDate.Controls.Add(this.lv_Expirations);
+			this.tp_ExpirationDate.Controls.Add(this.cb_PaymentMethod);
+			this.tp_ExpirationDate.Controls.Add(this.dtp_ExpirationData);
+			this.tp_ExpirationDate.Controls.Add(this.lb_DocNumber);
+			this.tp_ExpirationDate.Controls.Add(this.tb_DocNumber);
+			this.tp_ExpirationDate.Controls.Add(this.lb_PaymentMethod);
+			this.tp_ExpirationDate.Controls.Add(this.lb_Installments);
+			this.tp_ExpirationDate.Controls.Add(this.tb_Installments);
+			this.tp_ExpirationDate.Controls.Add(this.lb_ExpirationData);
 			this.tp_ExpirationDate.Location = new System.Drawing.Point(4, 22);
 			this.tp_ExpirationDate.Name = "tp_ExpirationDate";
 			this.tp_ExpirationDate.Padding = new System.Windows.Forms.Padding(3);
@@ -272,218 +296,273 @@
 			this.tp_ExpirationDate.TabIndex = 1;
 			this.tp_ExpirationDate.Text = "Vencimentos";
 			// 
-			// dateTimePicker1
-			// 
-			this.dateTimePicker1.CustomFormat = "";
-			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dateTimePicker1.Location = new System.Drawing.Point(14, 30);
-			this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(106, 20);
-			this.dateTimePicker1.TabIndex = 18;
-			this.dateTimePicker1.Value = new System.DateTime(2020, 7, 28, 0, 0, 0, 0);
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Location = new System.Drawing.Point(372, 10);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(77, 13);
-			this.label13.TabIndex = 17;
-			this.label13.Text = "Nº Documento";
-			// 
-			// textBox13
-			// 
-			this.textBox13.Location = new System.Drawing.Point(372, 29);
-			this.textBox13.Name = "textBox13";
-			this.textBox13.Size = new System.Drawing.Size(96, 20);
-			this.textBox13.TabIndex = 16;
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Location = new System.Drawing.Point(231, 11);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(53, 13);
-			this.label12.TabIndex = 15;
-			this.label12.Text = "Cobrança";
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(135, 11);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(70, 13);
-			this.label11.TabIndex = 13;
-			this.label11.Text = "Valor Parcela";
-			// 
-			// textBox11
-			// 
-			this.textBox11.Location = new System.Drawing.Point(135, 30);
-			this.textBox11.Name = "textBox11";
-			this.textBox11.Size = new System.Drawing.Size(84, 20);
-			this.textBox11.TabIndex = 12;
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(8, 12);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(61, 13);
-			this.label10.TabIndex = 11;
-			this.label10.Text = "Data Venc.";
-			// 
-			// btn_Close
-			// 
-			this.btn_Close.Location = new System.Drawing.Point(565, 81);
-			this.btn_Close.Name = "btn_Close";
-			this.btn_Close.Size = new System.Drawing.Size(100, 24);
-			this.btn_Close.TabIndex = 1;
-			this.btn_Close.Text = "Fechar";
-			this.btn_Close.UseVisualStyleBackColor = true;
-			// 
 			// btn_Save
 			// 
-			this.btn_Save.Location = new System.Drawing.Point(565, 51);
+			this.btn_Save.Location = new System.Drawing.Point(483, 26);
 			this.btn_Save.Name = "btn_Save";
-			this.btn_Save.Size = new System.Drawing.Size(100, 24);
-			this.btn_Save.TabIndex = 0;
-			this.btn_Save.Text = "Salvar";
+			this.btn_Save.Size = new System.Drawing.Size(133, 23);
+			this.btn_Save.TabIndex = 21;
+			this.btn_Save.Text = "Lançar Vencimento";
 			this.btn_Save.UseVisualStyleBackColor = true;
 			// 
-			// btn_New
+			// lv_Expirations
 			// 
-			this.btn_New.Location = new System.Drawing.Point(565, 21);
-			this.btn_New.Name = "btn_New";
-			this.btn_New.Size = new System.Drawing.Size(100, 24);
-			this.btn_New.TabIndex = 2;
-			this.btn_New.Text = "Novo";
-			this.btn_New.UseVisualStyleBackColor = true;
+			this.lv_Expirations.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader11,
+            this.columnHeader10});
+			this.lv_Expirations.HideSelection = false;
+			this.lv_Expirations.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem2});
+			this.lv_Expirations.Location = new System.Drawing.Point(11, 67);
+			this.lv_Expirations.Name = "lv_Expirations";
+			this.lv_Expirations.Size = new System.Drawing.Size(650, 246);
+			this.lv_Expirations.TabIndex = 20;
+			this.lv_Expirations.UseCompatibleStateImageBehavior = false;
+			this.lv_Expirations.View = System.Windows.Forms.View.Details;
 			// 
-			// textBox1
+			// cb_PaymentMethod
 			// 
-			this.textBox1.Location = new System.Drawing.Point(15, 84);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(63, 20);
-			this.textBox1.TabIndex = 1;
+			this.cb_PaymentMethod.FormattingEnabled = true;
+			this.cb_PaymentMethod.Location = new System.Drawing.Point(234, 29);
+			this.cb_PaymentMethod.Name = "cb_PaymentMethod";
+			this.cb_PaymentMethod.Size = new System.Drawing.Size(121, 21);
+			this.cb_PaymentMethod.TabIndex = 19;
 			// 
-			// textBox2
+			// dtp_ExpirationData
 			// 
-			this.textBox2.Location = new System.Drawing.Point(85, 84);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(463, 20);
-			this.textBox2.TabIndex = 2;
+			this.dtp_ExpirationData.CustomFormat = "";
+			this.dtp_ExpirationData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+			this.dtp_ExpirationData.Location = new System.Drawing.Point(14, 30);
+			this.dtp_ExpirationData.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+			this.dtp_ExpirationData.Name = "dtp_ExpirationData";
+			this.dtp_ExpirationData.Size = new System.Drawing.Size(106, 20);
+			this.dtp_ExpirationData.TabIndex = 18;
+			this.dtp_ExpirationData.Value = new System.DateTime(2020, 7, 28, 0, 0, 0, 0);
 			// 
-			// textBox3
+			// lb_DocNumber
 			// 
-			this.textBox3.BackColor = System.Drawing.SystemColors.MenuBar;
-			this.textBox3.Location = new System.Drawing.Point(363, 28);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(112, 20);
-			this.textBox3.TabIndex = 3;
+			this.lb_DocNumber.AutoSize = true;
+			this.lb_DocNumber.Location = new System.Drawing.Point(372, 10);
+			this.lb_DocNumber.Name = "lb_DocNumber";
+			this.lb_DocNumber.Size = new System.Drawing.Size(77, 13);
+			this.lb_DocNumber.TabIndex = 17;
+			this.lb_DocNumber.Text = "Nº Documento";
 			// 
-			// label1
+			// tb_DocNumber
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(15, 65);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(40, 13);
-			this.label1.TabIndex = 4;
-			this.label1.Text = "Código";
+			this.tb_DocNumber.Location = new System.Drawing.Point(372, 29);
+			this.tb_DocNumber.Name = "tb_DocNumber";
+			this.tb_DocNumber.Size = new System.Drawing.Size(96, 20);
+			this.tb_DocNumber.TabIndex = 16;
 			// 
-			// label2
+			// lb_PaymentMethod
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(85, 64);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(39, 13);
-			this.label2.TabIndex = 5;
-			this.label2.Text = "Cliente";
+			this.lb_PaymentMethod.AutoSize = true;
+			this.lb_PaymentMethod.Location = new System.Drawing.Point(231, 11);
+			this.lb_PaymentMethod.Name = "lb_PaymentMethod";
+			this.lb_PaymentMethod.Size = new System.Drawing.Size(85, 13);
+			this.lb_PaymentMethod.TabIndex = 15;
+			this.lb_PaymentMethod.Text = "Tipo Pagamento";
 			// 
-			// label3
+			// lb_Installments
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(376, 9);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(82, 13);
-			this.label3.TabIndex = 6;
-			this.label3.Text = "Total do Pedido";
+			this.lb_Installments.AutoSize = true;
+			this.lb_Installments.Location = new System.Drawing.Point(135, 11);
+			this.lb_Installments.Name = "lb_Installments";
+			this.lb_Installments.Size = new System.Drawing.Size(70, 13);
+			this.lb_Installments.TabIndex = 13;
+			this.lb_Installments.Text = "Valor Parcela";
 			// 
-			// button1
+			// tb_Installments
 			// 
-			this.button1.Location = new System.Drawing.Point(473, 58);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 7;
-			this.button1.Text = "Pesquisar";
-			this.button1.UseVisualStyleBackColor = true;
+			this.tb_Installments.Location = new System.Drawing.Point(135, 30);
+			this.tb_Installments.Name = "tb_Installments";
+			this.tb_Installments.Size = new System.Drawing.Size(84, 20);
+			this.tb_Installments.TabIndex = 12;
 			// 
-			// label4
+			// lb_ExpirationData
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(15, 24);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(40, 13);
-			this.label4.TabIndex = 9;
-			this.label4.Text = "Pedido";
+			this.lb_ExpirationData.AutoSize = true;
+			this.lb_ExpirationData.Location = new System.Drawing.Point(8, 12);
+			this.lb_ExpirationData.Name = "lb_ExpirationData";
+			this.lb_ExpirationData.Size = new System.Drawing.Size(61, 13);
+			this.lb_ExpirationData.TabIndex = 11;
+			this.lb_ExpirationData.Text = "Data Venc.";
 			// 
-			// textBox4
+			// btn_CloseOrder
 			// 
-			this.textBox4.Location = new System.Drawing.Point(15, 43);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(63, 20);
-			this.textBox4.TabIndex = 8;
+			this.btn_CloseOrder.Location = new System.Drawing.Point(565, 81);
+			this.btn_CloseOrder.Name = "btn_CloseOrder";
+			this.btn_CloseOrder.Size = new System.Drawing.Size(100, 24);
+			this.btn_CloseOrder.TabIndex = 1;
+			this.btn_CloseOrder.Text = "Fechar";
+			this.btn_CloseOrder.UseVisualStyleBackColor = true;
 			// 
-			// comboBox1
+			// btn_SaveOrder
 			// 
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(234, 29);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(121, 21);
-			this.comboBox1.TabIndex = 19;
+			this.btn_SaveOrder.Location = new System.Drawing.Point(565, 51);
+			this.btn_SaveOrder.Name = "btn_SaveOrder";
+			this.btn_SaveOrder.Size = new System.Drawing.Size(100, 24);
+			this.btn_SaveOrder.TabIndex = 0;
+			this.btn_SaveOrder.Text = "Salvar";
+			this.btn_SaveOrder.UseVisualStyleBackColor = true;
 			// 
-			// listView2
+			// btn_NewOrder
 			// 
-			this.listView2.HideSelection = false;
-			this.listView2.Location = new System.Drawing.Point(11, 67);
-			this.listView2.Name = "listView2";
-			this.listView2.Size = new System.Drawing.Size(650, 246);
-			this.listView2.TabIndex = 20;
-			this.listView2.UseCompatibleStateImageBehavior = false;
+			this.btn_NewOrder.Location = new System.Drawing.Point(565, 21);
+			this.btn_NewOrder.Name = "btn_NewOrder";
+			this.btn_NewOrder.Size = new System.Drawing.Size(100, 24);
+			this.btn_NewOrder.TabIndex = 2;
+			this.btn_NewOrder.Text = "Novo";
+			this.btn_NewOrder.UseVisualStyleBackColor = true;
 			// 
-			// button3
+			// tb_ID
 			// 
-			this.button3.Location = new System.Drawing.Point(483, 26);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(133, 23);
-			this.button3.TabIndex = 21;
-			this.button3.Text = "Lançar Vencimento";
-			this.button3.UseVisualStyleBackColor = true;
+			this.tb_ID.Location = new System.Drawing.Point(15, 84);
+			this.tb_ID.Name = "tb_ID";
+			this.tb_ID.Size = new System.Drawing.Size(63, 20);
+			this.tb_ID.TabIndex = 1;
+			// 
+			// tb_Client
+			// 
+			this.tb_Client.Location = new System.Drawing.Point(85, 84);
+			this.tb_Client.Name = "tb_Client";
+			this.tb_Client.Size = new System.Drawing.Size(463, 20);
+			this.tb_Client.TabIndex = 2;
+			// 
+			// tb_TotalOrder
+			// 
+			this.tb_TotalOrder.BackColor = System.Drawing.SystemColors.MenuBar;
+			this.tb_TotalOrder.Location = new System.Drawing.Point(363, 28);
+			this.tb_TotalOrder.Name = "tb_TotalOrder";
+			this.tb_TotalOrder.ReadOnly = true;
+			this.tb_TotalOrder.Size = new System.Drawing.Size(112, 20);
+			this.tb_TotalOrder.TabIndex = 3;
+			this.tb_TotalOrder.WordWrap = false;
+			// 
+			// lb_ID
+			// 
+			this.lb_ID.AutoSize = true;
+			this.lb_ID.Location = new System.Drawing.Point(15, 65);
+			this.lb_ID.Name = "lb_ID";
+			this.lb_ID.Size = new System.Drawing.Size(40, 13);
+			this.lb_ID.TabIndex = 4;
+			this.lb_ID.Text = "Código";
+			// 
+			// lb_Client
+			// 
+			this.lb_Client.AutoSize = true;
+			this.lb_Client.Location = new System.Drawing.Point(85, 64);
+			this.lb_Client.Name = "lb_Client";
+			this.lb_Client.Size = new System.Drawing.Size(39, 13);
+			this.lb_Client.TabIndex = 5;
+			this.lb_Client.Text = "Cliente";
+			// 
+			// lb_TotalOrder
+			// 
+			this.lb_TotalOrder.AutoSize = true;
+			this.lb_TotalOrder.Location = new System.Drawing.Point(376, 9);
+			this.lb_TotalOrder.Name = "lb_TotalOrder";
+			this.lb_TotalOrder.Size = new System.Drawing.Size(82, 13);
+			this.lb_TotalOrder.TabIndex = 6;
+			this.lb_TotalOrder.Text = "Total do Pedido";
+			// 
+			// btn_SerchClient
+			// 
+			this.btn_SerchClient.Location = new System.Drawing.Point(473, 58);
+			this.btn_SerchClient.Name = "btn_SerchClient";
+			this.btn_SerchClient.Size = new System.Drawing.Size(75, 23);
+			this.btn_SerchClient.TabIndex = 7;
+			this.btn_SerchClient.Text = "Pesquisar";
+			this.btn_SerchClient.UseVisualStyleBackColor = true;
+			// 
+			// lb_Order
+			// 
+			this.lb_Order.AutoSize = true;
+			this.lb_Order.Location = new System.Drawing.Point(15, 9);
+			this.lb_Order.Name = "lb_Order";
+			this.lb_Order.Size = new System.Drawing.Size(40, 13);
+			this.lb_Order.TabIndex = 9;
+			this.lb_Order.Text = "Pedido";
+			// 
+			// tb_Order
+			// 
+			this.tb_Order.Location = new System.Drawing.Point(15, 28);
+			this.tb_Order.Name = "tb_Order";
+			this.tb_Order.Size = new System.Drawing.Size(63, 20);
+			this.tb_Order.TabIndex = 8;
+			// 
+			// btn_OrderClose
+			// 
+			this.btn_OrderClose.BackColor = System.Drawing.Color.MintCream;
+			this.btn_OrderClose.Location = new System.Drawing.Point(561, 32);
+			this.btn_OrderClose.Name = "btn_OrderClose";
+			this.btn_OrderClose.Size = new System.Drawing.Size(100, 62);
+			this.btn_OrderClose.TabIndex = 21;
+			this.btn_OrderClose.Text = "Finalizar Pedido";
+			this.btn_OrderClose.UseVisualStyleBackColor = false;
+			// 
+			// btn_SearchProduct
+			// 
+			this.btn_SearchProduct.Location = new System.Drawing.Point(469, 6);
+			this.btn_SearchProduct.Name = "btn_SearchProduct";
+			this.btn_SearchProduct.Size = new System.Drawing.Size(75, 23);
+			this.btn_SearchProduct.TabIndex = 10;
+			this.btn_SearchProduct.Text = "Pesquisar";
+			this.btn_SearchProduct.UseVisualStyleBackColor = true;
+			// 
+			// columnHeader7
+			// 
+			this.columnHeader7.Text = "Número Doc.";
+			this.columnHeader7.Width = 145;
+			// 
+			// columnHeader8
+			// 
+			this.columnHeader8.Text = "Dava Venc.";
+			this.columnHeader8.Width = 131;
+			// 
+			// columnHeader9
+			// 
+			this.columnHeader9.Text = "Valor Parcela";
+			this.columnHeader9.Width = 117;
+			// 
+			// columnHeader10
+			// 
+			this.columnHeader10.Text = "Data Baixa";
+			this.columnHeader10.Width = 109;
+			// 
+			// columnHeader11
+			// 
+			this.columnHeader11.Text = "Tipo Pagamento";
+			this.columnHeader11.Width = 127;
 			// 
 			// frm_SalesOrder
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(677, 458);
-			this.Controls.Add(this.btn_Close);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.btn_Save);
-			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.btn_New);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.btn_CloseOrder);
+			this.Controls.Add(this.lb_Order);
+			this.Controls.Add(this.btn_SaveOrder);
+			this.Controls.Add(this.tb_Order);
+			this.Controls.Add(this.btn_NewOrder);
+			this.Controls.Add(this.btn_SerchClient);
+			this.Controls.Add(this.lb_TotalOrder);
+			this.Controls.Add(this.lb_Client);
+			this.Controls.Add(this.lb_ID);
+			this.Controls.Add(this.tb_TotalOrder);
+			this.Controls.Add(this.tb_Client);
+			this.Controls.Add(this.tb_ID);
 			this.Controls.Add(this.tc_SalesOrder);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "frm_SalesOrder";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "frm_SalesOrder";
+			this.Text = "Pedido de Vendas";
 			this.tc_SalesOrder.ResumeLayout(false);
 			this.tp_Product.ResumeLayout(false);
 			this.tp_Product.PerformLayout();
@@ -499,45 +578,52 @@
 		private System.Windows.Forms.TabControl tc_SalesOrder;
 		private System.Windows.Forms.TabPage tp_Product;
 		private System.Windows.Forms.TabPage tp_ExpirationDate;
-		private System.Windows.Forms.ListView listView1;
+		private System.Windows.Forms.ListView lv_Products;
 		private System.Windows.Forms.ColumnHeader columnHeader1;
 		private System.Windows.Forms.ColumnHeader columnHeader2;
 		private System.Windows.Forms.ColumnHeader columnHeader3;
 		private System.Windows.Forms.ColumnHeader columnHeader4;
 		private System.Windows.Forms.ColumnHeader columnHeader5;
 		private System.Windows.Forms.ColumnHeader columnHeader6;
-		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.TextBox textBox9;
-		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.TextBox textBox8;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox textBox7;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.Label label9;
-		private System.Windows.Forms.Button btn_Close;
+		private System.Windows.Forms.Label lb_Price;
+		private System.Windows.Forms.TextBox tb_Price;
+		private System.Windows.Forms.Label lb_Discount;
+		private System.Windows.Forms.TextBox tb_Discount;
+		private System.Windows.Forms.Label lb_Amount;
+		private System.Windows.Forms.TextBox tb_Amount;
+		private System.Windows.Forms.TextBox tb_Product;
+		private System.Windows.Forms.Label lb_BarCode;
+		private System.Windows.Forms.TextBox tb_BarCode;
+		private System.Windows.Forms.TextBox tb_ID;
+		private System.Windows.Forms.TextBox tb_Client;
+		private System.Windows.Forms.TextBox tb_TotalOrder;
+		private System.Windows.Forms.Label lb_ID;
+		private System.Windows.Forms.Label lb_Client;
+		private System.Windows.Forms.Label lb_TotalOrder;
+		private System.Windows.Forms.Button btn_SerchClient;
+		private System.Windows.Forms.Label lb_Order;
+		private System.Windows.Forms.TextBox tb_Order;
+		private System.Windows.Forms.Label lb_Product;
+		private System.Windows.Forms.Button btn_CloseOrder;
+		private System.Windows.Forms.Button btn_SaveOrder;
+		private System.Windows.Forms.Button btn_NewOrder;
+		private System.Windows.Forms.Button btn_SaveProduct;
+		private System.Windows.Forms.DateTimePicker dtp_ExpirationData;
+		private System.Windows.Forms.Label lb_DocNumber;
+		private System.Windows.Forms.TextBox tb_DocNumber;
+		private System.Windows.Forms.Label lb_PaymentMethod;
+		private System.Windows.Forms.Label lb_Installments;
+		private System.Windows.Forms.TextBox tb_Installments;
+		private System.Windows.Forms.Label lb_ExpirationData;
 		private System.Windows.Forms.Button btn_Save;
-		private System.Windows.Forms.Button btn_New;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.DateTimePicker dateTimePicker1;
-		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.TextBox textBox13;
-		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Label label11;
-		private System.Windows.Forms.TextBox textBox11;
-		private System.Windows.Forms.Label label10;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.ListView listView2;
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.ListView lv_Expirations;
+		private System.Windows.Forms.ComboBox cb_PaymentMethod;
+		private System.Windows.Forms.Button btn_OrderClose;
+		private System.Windows.Forms.Button btn_SearchProduct;
+		private System.Windows.Forms.ColumnHeader columnHeader7;
+		private System.Windows.Forms.ColumnHeader columnHeader8;
+		private System.Windows.Forms.ColumnHeader columnHeader9;
+		private System.Windows.Forms.ColumnHeader columnHeader11;
+		private System.Windows.Forms.ColumnHeader columnHeader10;
 	}
 }
