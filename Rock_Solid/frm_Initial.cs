@@ -36,11 +36,6 @@ namespace Rock_Solid
             this.Close();
         }
 
-        private void tsmi_DataBase_Click(object sender, EventArgs e)
-        {
-
-		}
-
 		private void tsmi_User_Click(object sender, EventArgs e)
         {
             if (Global.logged)
@@ -59,6 +54,12 @@ namespace Rock_Solid
             {
                 MessageBox.Show("Nenhum Usuário Logado");
             }
+        }
+
+        private void tsmi_UserQuery_Click(object sender, EventArgs e)
+        {
+            frm_User user = new frm_User();
+            user.ShowDialog();
         }
 
         private void tsmi_Client_Click(object sender, EventArgs e)
@@ -81,10 +82,28 @@ namespace Rock_Solid
             }
         }
 
-		private void tsmi_SalesOrder_Click(object sender, EventArgs e)
+        private void tsmi_ClientQuery_Click(object sender, EventArgs e)
+        {
+            frm_ClientList client = new frm_ClientList();
+            client.ShowDialog();
+        }
+
+        private void tsmi_Product_Click(object sender, EventArgs e)
+        {
+            frm_Product product = new frm_Product();
+            product.ShowDialog();
+        }
+
+        private void tsmi_ProductQuery_Click(object sender, EventArgs e)
+        {
+            frm_Product product = new frm_Product();
+            product.ShowDialog();
+        }
+
+        private void tsmi_SalesOrder_Click(object sender, EventArgs e)
 		{
             frm_SalesOrder sales = new frm_SalesOrder();
             sales.ShowDialog();
         }
-	}
+    }
 }

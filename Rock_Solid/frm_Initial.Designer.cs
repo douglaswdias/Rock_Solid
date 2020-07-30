@@ -42,9 +42,10 @@
 			this.tsmi_Client = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_Product = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_Equipment = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmi_Management = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmi_DataBase = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmi_Query = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmi_ClientQuery = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_Sale = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmi_SalesOrder = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_Financial = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_AccountsReceivable = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_AccountsPayable = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,7 +53,8 @@
 			this.tsmi_LogIn = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_UserChange = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_LogOff = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmi_SalesOrder = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmi_UserQuery = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmi_ProductQuery = new System.Windows.Forms.ToolStripMenuItem();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pb_Login)).BeginInit();
 			this.ms_Initial.SuspendLayout();
@@ -147,7 +149,7 @@
 			// 
 			this.ms_Initial.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmi_Register,
-            this.tsmi_Management,
+            this.tsmi_Query,
             this.tsmi_Sale,
             this.tsmi_Financial,
             this.tsmi_Report,
@@ -172,43 +174,46 @@
 			// tsmi_User
 			// 
 			this.tsmi_User.Name = "tsmi_User";
-			this.tsmi_User.Size = new System.Drawing.Size(145, 22);
+			this.tsmi_User.Size = new System.Drawing.Size(180, 22);
 			this.tsmi_User.Text = "Usuário";
 			this.tsmi_User.Click += new System.EventHandler(this.tsmi_User_Click);
 			// 
 			// tsmi_Client
 			// 
 			this.tsmi_Client.Name = "tsmi_Client";
-			this.tsmi_Client.Size = new System.Drawing.Size(145, 22);
+			this.tsmi_Client.Size = new System.Drawing.Size(180, 22);
 			this.tsmi_Client.Text = "Cliente";
 			this.tsmi_Client.Click += new System.EventHandler(this.tsmi_Client_Click);
 			// 
 			// tsmi_Product
 			// 
 			this.tsmi_Product.Name = "tsmi_Product";
-			this.tsmi_Product.Size = new System.Drawing.Size(145, 22);
+			this.tsmi_Product.Size = new System.Drawing.Size(180, 22);
 			this.tsmi_Product.Text = "Produto";
+			this.tsmi_Product.Click += new System.EventHandler(this.tsmi_Product_Click);
 			// 
 			// tsmi_Equipment
 			// 
 			this.tsmi_Equipment.Name = "tsmi_Equipment";
-			this.tsmi_Equipment.Size = new System.Drawing.Size(145, 22);
+			this.tsmi_Equipment.Size = new System.Drawing.Size(180, 22);
 			this.tsmi_Equipment.Text = "Equipamento";
 			// 
-			// tsmi_Management
+			// tsmi_Query
 			// 
-			this.tsmi_Management.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmi_DataBase});
-			this.tsmi_Management.Name = "tsmi_Management";
-			this.tsmi_Management.Size = new System.Drawing.Size(86, 20);
-			this.tsmi_Management.Text = "Manutenção";
+			this.tsmi_Query.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmi_UserQuery,
+            this.tsmi_ClientQuery,
+            this.tsmi_ProductQuery});
+			this.tsmi_Query.Name = "tsmi_Query";
+			this.tsmi_Query.Size = new System.Drawing.Size(71, 20);
+			this.tsmi_Query.Text = "Consultas";
 			// 
-			// tsmi_DataBase
+			// tsmi_ClientQuery
 			// 
-			this.tsmi_DataBase.Name = "tsmi_DataBase";
-			this.tsmi_DataBase.Size = new System.Drawing.Size(159, 22);
-			this.tsmi_DataBase.Text = "Banco de Dados";
-			this.tsmi_DataBase.Click += new System.EventHandler(this.tsmi_DataBase_Click);
+			this.tsmi_ClientQuery.Name = "tsmi_ClientQuery";
+			this.tsmi_ClientQuery.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_ClientQuery.Text = "Clientes";
+			this.tsmi_ClientQuery.Click += new System.EventHandler(this.tsmi_ClientQuery_Click);
 			// 
 			// tsmi_Sale
 			// 
@@ -217,6 +222,13 @@
 			this.tsmi_Sale.Name = "tsmi_Sale";
 			this.tsmi_Sale.Size = new System.Drawing.Size(56, 20);
 			this.tsmi_Sale.Text = "Vendas";
+			// 
+			// tsmi_SalesOrder
+			// 
+			this.tsmi_SalesOrder.Name = "tsmi_SalesOrder";
+			this.tsmi_SalesOrder.Size = new System.Drawing.Size(167, 22);
+			this.tsmi_SalesOrder.Text = "Pedidos de Venda";
+			this.tsmi_SalesOrder.Click += new System.EventHandler(this.tsmi_SalesOrder_Click);
 			// 
 			// tsmi_Financial
 			// 
@@ -268,12 +280,19 @@
 			this.tsmi_LogOff.Text = "Logoff";
 			this.tsmi_LogOff.Click += new System.EventHandler(this.tsmi_LogOff_Click);
 			// 
-			// tsmi_SalesOrder
+			// tsmi_UserQuery
 			// 
-			this.tsmi_SalesOrder.Name = "tsmi_SalesOrder";
-			this.tsmi_SalesOrder.Size = new System.Drawing.Size(180, 22);
-			this.tsmi_SalesOrder.Text = "Pedidos de Venda";
-			this.tsmi_SalesOrder.Click += new System.EventHandler(this.tsmi_SalesOrder_Click);
+			this.tsmi_UserQuery.Name = "tsmi_UserQuery";
+			this.tsmi_UserQuery.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_UserQuery.Text = "Usuários";
+			this.tsmi_UserQuery.Click += new System.EventHandler(this.tsmi_UserQuery_Click);
+			// 
+			// tsmi_ProductQuery
+			// 
+			this.tsmi_ProductQuery.Name = "tsmi_ProductQuery";
+			this.tsmi_ProductQuery.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_ProductQuery.Text = "Produtos";
+			this.tsmi_ProductQuery.Click += new System.EventHandler(this.tsmi_ProductQuery_Click);
 			// 
 			// frm_Initial
 			// 
@@ -309,8 +328,8 @@
         private System.Windows.Forms.ToolStripMenuItem tsmi_LogIn;
         private System.Windows.Forms.ToolStripMenuItem tsmi_UserChange;
         private System.Windows.Forms.ToolStripMenuItem tsmi_LogOff;
-        private System.Windows.Forms.ToolStripMenuItem tsmi_Management;
-        private System.Windows.Forms.ToolStripMenuItem tsmi_DataBase;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_Query;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_ClientQuery;
         private System.Windows.Forms.ToolStripMenuItem tsmi_Register;
         private System.Windows.Forms.ToolStripMenuItem tsmi_User;
         private System.Windows.Forms.ToolStripMenuItem tsmi_Client;
@@ -324,6 +343,8 @@
 		private System.Windows.Forms.ToolStripMenuItem tsmi_AccountsPayable;
 		private System.Windows.Forms.ToolStripMenuItem tsmi_Report;
 		private System.Windows.Forms.ToolStripMenuItem tsmi_SalesOrder;
+		private System.Windows.Forms.ToolStripMenuItem tsmi_UserQuery;
+		private System.Windows.Forms.ToolStripMenuItem tsmi_ProductQuery;
 	}
 }
 
