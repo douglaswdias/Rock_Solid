@@ -52,3 +52,5 @@ C:\Users\Suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm
 C:\Users\Suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_SalesOrder.resources
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_Product.resources
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_ProductList.resources
+C:\Users\Suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_Product.resources
+C:\Users\Suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_ProductList.resources
