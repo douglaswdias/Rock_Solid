@@ -58,8 +58,8 @@ namespace Rock_Solid
 
         private void tsmi_UserQuery_Click(object sender, EventArgs e)
         {
-            frm_User user = new frm_User();
-            user.ShowDialog();
+            frm_UserList userList = new frm_UserList();
+            userList.ShowDialog();
         }
 
         private void tsmi_Client_Click(object sender, EventArgs e)
@@ -84,8 +84,8 @@ namespace Rock_Solid
 
         private void tsmi_ClientQuery_Click(object sender, EventArgs e)
         {
-            frm_ClientList client = new frm_ClientList();
-            client.ShowDialog();
+            frm_ClientList clientList = new frm_ClientList();
+            clientList.ShowDialog();
         }
 
         private void tsmi_Product_Click(object sender, EventArgs e)
@@ -96,8 +96,8 @@ namespace Rock_Solid
 
         private void tsmi_ProductQuery_Click(object sender, EventArgs e)
         {
-            frm_Product product = new frm_Product();
-            product.ShowDialog();
+            frm_ProductList productList = new frm_ProductList();
+            productList.ShowDialog();
         }
 
         private void tsmi_SalesOrder_Click(object sender, EventArgs e)

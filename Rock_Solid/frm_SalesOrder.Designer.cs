@@ -43,7 +43,10 @@
             ""}, -1);
 			this.tc_SalesOrder = new System.Windows.Forms.TabControl();
 			this.tp_Product = new System.Windows.Forms.TabPage();
-			this.btn_SaveProduct = new System.Windows.Forms.Button();
+			this.btn_DelProduct = new System.Windows.Forms.Button();
+			this.btn_SearchProduct = new System.Windows.Forms.Button();
+			this.btn_OrderClose = new System.Windows.Forms.Button();
+			this.btn_AddProduct = new System.Windows.Forms.Button();
 			this.lb_Product = new System.Windows.Forms.Label();
 			this.lv_Products = new System.Windows.Forms.ListView();
 			this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -62,8 +65,14 @@
 			this.lb_BarCode = new System.Windows.Forms.Label();
 			this.tb_BarCode = new System.Windows.Forms.TextBox();
 			this.tp_ExpirationDate = new System.Windows.Forms.TabPage();
-			this.btn_Save = new System.Windows.Forms.Button();
+			this.btn_DelExpiration = new System.Windows.Forms.Button();
+			this.btn_AddExpiration = new System.Windows.Forms.Button();
 			this.lv_Expirations = new System.Windows.Forms.ListView();
+			this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.cb_PaymentMethod = new System.Windows.Forms.ComboBox();
 			this.dtp_ExpirationData = new System.Windows.Forms.DateTimePicker();
 			this.lb_DocNumber = new System.Windows.Forms.Label();
@@ -81,16 +90,10 @@
 			this.lb_ID = new System.Windows.Forms.Label();
 			this.lb_Client = new System.Windows.Forms.Label();
 			this.lb_TotalOrder = new System.Windows.Forms.Label();
-			this.btn_SerchClient = new System.Windows.Forms.Button();
 			this.lb_Order = new System.Windows.Forms.Label();
 			this.tb_Order = new System.Windows.Forms.TextBox();
-			this.btn_OrderClose = new System.Windows.Forms.Button();
-			this.btn_SearchProduct = new System.Windows.Forms.Button();
-			this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.btn_SearchOrder = new System.Windows.Forms.Button();
+			this.btn_SearchClient = new System.Windows.Forms.Button();
 			this.tc_SalesOrder.SuspendLayout();
 			this.tp_Product.SuspendLayout();
 			this.tp_ExpirationDate.SuspendLayout();
@@ -110,9 +113,10 @@
 			// tp_Product
 			// 
 			this.tp_Product.BackColor = System.Drawing.SystemColors.Control;
+			this.tp_Product.Controls.Add(this.btn_DelProduct);
 			this.tp_Product.Controls.Add(this.btn_SearchProduct);
 			this.tp_Product.Controls.Add(this.btn_OrderClose);
-			this.tp_Product.Controls.Add(this.btn_SaveProduct);
+			this.tp_Product.Controls.Add(this.btn_AddProduct);
 			this.tp_Product.Controls.Add(this.lb_Product);
 			this.tp_Product.Controls.Add(this.lv_Products);
 			this.tp_Product.Controls.Add(this.lb_Price);
@@ -131,14 +135,55 @@
 			this.tp_Product.TabIndex = 0;
 			this.tp_Product.Text = "Produtos";
 			// 
-			// btn_SaveProduct
+			// btn_DelProduct
 			// 
-			this.btn_SaveProduct.Location = new System.Drawing.Point(432, 72);
-			this.btn_SaveProduct.Name = "btn_SaveProduct";
-			this.btn_SaveProduct.Size = new System.Drawing.Size(109, 24);
-			this.btn_SaveProduct.TabIndex = 10;
-			this.btn_SaveProduct.Text = "Salvar Produto";
-			this.btn_SaveProduct.UseVisualStyleBackColor = true;
+			this.btn_DelProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btn_DelProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_DelProduct.FlatAppearance.BorderSize = 0;
+			this.btn_DelProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_DelProduct.Image = global::Rock_Solid.Properties.Resources.Uncheck_Button;
+			this.btn_DelProduct.Location = new System.Drawing.Point(480, 68);
+			this.btn_DelProduct.Name = "btn_DelProduct";
+			this.btn_DelProduct.Size = new System.Drawing.Size(37, 27);
+			this.btn_DelProduct.TabIndex = 37;
+			this.btn_DelProduct.UseVisualStyleBackColor = true;
+			// 
+			// btn_SearchProduct
+			// 
+			this.btn_SearchProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btn_SearchProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_SearchProduct.FlatAppearance.BorderSize = 0;
+			this.btn_SearchProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_SearchProduct.Image = global::Rock_Solid.Properties.Resources.Search_Button;
+			this.btn_SearchProduct.Location = new System.Drawing.Point(520, 32);
+			this.btn_SearchProduct.Name = "btn_SearchProduct";
+			this.btn_SearchProduct.Size = new System.Drawing.Size(18, 20);
+			this.btn_SearchProduct.TabIndex = 36;
+			this.btn_SearchProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btn_SearchProduct.UseVisualStyleBackColor = true;
+			// 
+			// btn_OrderClose
+			// 
+			this.btn_OrderClose.BackColor = System.Drawing.Color.MintCream;
+			this.btn_OrderClose.Location = new System.Drawing.Point(561, 32);
+			this.btn_OrderClose.Name = "btn_OrderClose";
+			this.btn_OrderClose.Size = new System.Drawing.Size(100, 62);
+			this.btn_OrderClose.TabIndex = 21;
+			this.btn_OrderClose.Text = "Finalizar Pedido";
+			this.btn_OrderClose.UseVisualStyleBackColor = false;
+			// 
+			// btn_AddProduct
+			// 
+			this.btn_AddProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btn_AddProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_AddProduct.FlatAppearance.BorderSize = 0;
+			this.btn_AddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_AddProduct.Image = global::Rock_Solid.Properties.Resources.Check_Button;
+			this.btn_AddProduct.Location = new System.Drawing.Point(400, 68);
+			this.btn_AddProduct.Name = "btn_AddProduct";
+			this.btn_AddProduct.Size = new System.Drawing.Size(37, 27);
+			this.btn_AddProduct.TabIndex = 10;
+			this.btn_AddProduct.UseVisualStyleBackColor = true;
 			// 
 			// lb_Product
 			// 
@@ -257,7 +302,7 @@
 			// 
 			this.tb_Product.Location = new System.Drawing.Point(129, 32);
 			this.tb_Product.Name = "tb_Product";
-			this.tb_Product.Size = new System.Drawing.Size(412, 20);
+			this.tb_Product.Size = new System.Drawing.Size(391, 20);
 			this.tb_Product.TabIndex = 12;
 			// 
 			// lb_BarCode
@@ -279,7 +324,8 @@
 			// tp_ExpirationDate
 			// 
 			this.tp_ExpirationDate.BackColor = System.Drawing.SystemColors.Control;
-			this.tp_ExpirationDate.Controls.Add(this.btn_Save);
+			this.tp_ExpirationDate.Controls.Add(this.btn_DelExpiration);
+			this.tp_ExpirationDate.Controls.Add(this.btn_AddExpiration);
 			this.tp_ExpirationDate.Controls.Add(this.lv_Expirations);
 			this.tp_ExpirationDate.Controls.Add(this.cb_PaymentMethod);
 			this.tp_ExpirationDate.Controls.Add(this.dtp_ExpirationData);
@@ -296,14 +342,31 @@
 			this.tp_ExpirationDate.TabIndex = 1;
 			this.tp_ExpirationDate.Text = "Vencimentos";
 			// 
-			// btn_Save
+			// btn_DelExpiration
 			// 
-			this.btn_Save.Location = new System.Drawing.Point(483, 26);
-			this.btn_Save.Name = "btn_Save";
-			this.btn_Save.Size = new System.Drawing.Size(133, 23);
-			this.btn_Save.TabIndex = 21;
-			this.btn_Save.Text = "Lançar Vencimento";
-			this.btn_Save.UseVisualStyleBackColor = true;
+			this.btn_DelExpiration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btn_DelExpiration.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_DelExpiration.FlatAppearance.BorderSize = 0;
+			this.btn_DelExpiration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_DelExpiration.Image = global::Rock_Solid.Properties.Resources.Uncheck_Button;
+			this.btn_DelExpiration.Location = new System.Drawing.Point(592, 22);
+			this.btn_DelExpiration.Name = "btn_DelExpiration";
+			this.btn_DelExpiration.Size = new System.Drawing.Size(37, 27);
+			this.btn_DelExpiration.TabIndex = 39;
+			this.btn_DelExpiration.UseVisualStyleBackColor = true;
+			// 
+			// btn_AddExpiration
+			// 
+			this.btn_AddExpiration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btn_AddExpiration.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_AddExpiration.FlatAppearance.BorderSize = 0;
+			this.btn_AddExpiration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_AddExpiration.Image = global::Rock_Solid.Properties.Resources.Check_Button;
+			this.btn_AddExpiration.Location = new System.Drawing.Point(512, 22);
+			this.btn_AddExpiration.Name = "btn_AddExpiration";
+			this.btn_AddExpiration.Size = new System.Drawing.Size(37, 27);
+			this.btn_AddExpiration.TabIndex = 38;
+			this.btn_AddExpiration.UseVisualStyleBackColor = true;
 			// 
 			// lv_Expirations
 			// 
@@ -322,6 +385,31 @@
 			this.lv_Expirations.TabIndex = 20;
 			this.lv_Expirations.UseCompatibleStateImageBehavior = false;
 			this.lv_Expirations.View = System.Windows.Forms.View.Details;
+			// 
+			// columnHeader7
+			// 
+			this.columnHeader7.Text = "Número Doc.";
+			this.columnHeader7.Width = 145;
+			// 
+			// columnHeader8
+			// 
+			this.columnHeader8.Text = "Dava Venc.";
+			this.columnHeader8.Width = 131;
+			// 
+			// columnHeader9
+			// 
+			this.columnHeader9.Text = "Valor Parcela";
+			this.columnHeader9.Width = 117;
+			// 
+			// columnHeader11
+			// 
+			this.columnHeader11.Text = "Tipo Pagamento";
+			this.columnHeader11.Width = 127;
+			// 
+			// columnHeader10
+			// 
+			this.columnHeader10.Text = "Data Baixa";
+			this.columnHeader10.Width = 109;
 			// 
 			// cb_PaymentMethod
 			// 
@@ -430,7 +518,7 @@
 			// 
 			this.tb_Client.Location = new System.Drawing.Point(85, 84);
 			this.tb_Client.Name = "tb_Client";
-			this.tb_Client.Size = new System.Drawing.Size(463, 20);
+			this.tb_Client.Size = new System.Drawing.Size(439, 20);
 			this.tb_Client.TabIndex = 2;
 			// 
 			// tb_TotalOrder
@@ -470,15 +558,6 @@
 			this.lb_TotalOrder.TabIndex = 6;
 			this.lb_TotalOrder.Text = "Total do Pedido";
 			// 
-			// btn_SerchClient
-			// 
-			this.btn_SerchClient.Location = new System.Drawing.Point(473, 58);
-			this.btn_SerchClient.Name = "btn_SerchClient";
-			this.btn_SerchClient.Size = new System.Drawing.Size(75, 23);
-			this.btn_SerchClient.TabIndex = 7;
-			this.btn_SerchClient.Text = "Pesquisar";
-			this.btn_SerchClient.UseVisualStyleBackColor = true;
-			// 
 			// lb_Order
 			// 
 			this.lb_Order.AutoSize = true;
@@ -495,61 +574,46 @@
 			this.tb_Order.Size = new System.Drawing.Size(63, 20);
 			this.tb_Order.TabIndex = 8;
 			// 
-			// btn_OrderClose
+			// btn_SearchOrder
 			// 
-			this.btn_OrderClose.BackColor = System.Drawing.Color.MintCream;
-			this.btn_OrderClose.Location = new System.Drawing.Point(561, 32);
-			this.btn_OrderClose.Name = "btn_OrderClose";
-			this.btn_OrderClose.Size = new System.Drawing.Size(100, 62);
-			this.btn_OrderClose.TabIndex = 21;
-			this.btn_OrderClose.Text = "Finalizar Pedido";
-			this.btn_OrderClose.UseVisualStyleBackColor = false;
+			this.btn_SearchOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btn_SearchOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_SearchOrder.FlatAppearance.BorderSize = 0;
+			this.btn_SearchOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_SearchOrder.Image = global::Rock_Solid.Properties.Resources.Search_Button;
+			this.btn_SearchOrder.Location = new System.Drawing.Point(78, 28);
+			this.btn_SearchOrder.Name = "btn_SearchOrder";
+			this.btn_SearchOrder.Size = new System.Drawing.Size(18, 20);
+			this.btn_SearchOrder.TabIndex = 37;
+			this.btn_SearchOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btn_SearchOrder.UseVisualStyleBackColor = true;
 			// 
-			// btn_SearchProduct
+			// btn_SearchClient
 			// 
-			this.btn_SearchProduct.Location = new System.Drawing.Point(469, 6);
-			this.btn_SearchProduct.Name = "btn_SearchProduct";
-			this.btn_SearchProduct.Size = new System.Drawing.Size(75, 23);
-			this.btn_SearchProduct.TabIndex = 10;
-			this.btn_SearchProduct.Text = "Pesquisar";
-			this.btn_SearchProduct.UseVisualStyleBackColor = true;
-			// 
-			// columnHeader7
-			// 
-			this.columnHeader7.Text = "Número Doc.";
-			this.columnHeader7.Width = 145;
-			// 
-			// columnHeader8
-			// 
-			this.columnHeader8.Text = "Dava Venc.";
-			this.columnHeader8.Width = 131;
-			// 
-			// columnHeader9
-			// 
-			this.columnHeader9.Text = "Valor Parcela";
-			this.columnHeader9.Width = 117;
-			// 
-			// columnHeader10
-			// 
-			this.columnHeader10.Text = "Data Baixa";
-			this.columnHeader10.Width = 109;
-			// 
-			// columnHeader11
-			// 
-			this.columnHeader11.Text = "Tipo Pagamento";
-			this.columnHeader11.Width = 127;
+			this.btn_SearchClient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btn_SearchClient.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_SearchClient.FlatAppearance.BorderSize = 0;
+			this.btn_SearchClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_SearchClient.Image = global::Rock_Solid.Properties.Resources.Search_Button;
+			this.btn_SearchClient.Location = new System.Drawing.Point(524, 84);
+			this.btn_SearchClient.Name = "btn_SearchClient";
+			this.btn_SearchClient.Size = new System.Drawing.Size(18, 20);
+			this.btn_SearchClient.TabIndex = 36;
+			this.btn_SearchClient.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btn_SearchClient.UseVisualStyleBackColor = true;
 			// 
 			// frm_SalesOrder
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(677, 458);
+			this.Controls.Add(this.btn_SearchOrder);
+			this.Controls.Add(this.btn_SearchClient);
 			this.Controls.Add(this.btn_CloseOrder);
 			this.Controls.Add(this.lb_Order);
 			this.Controls.Add(this.btn_SaveOrder);
 			this.Controls.Add(this.tb_Order);
 			this.Controls.Add(this.btn_NewOrder);
-			this.Controls.Add(this.btn_SerchClient);
 			this.Controls.Add(this.lb_TotalOrder);
 			this.Controls.Add(this.lb_Client);
 			this.Controls.Add(this.lb_ID);
@@ -600,14 +664,13 @@
 		private System.Windows.Forms.Label lb_ID;
 		private System.Windows.Forms.Label lb_Client;
 		private System.Windows.Forms.Label lb_TotalOrder;
-		private System.Windows.Forms.Button btn_SerchClient;
 		private System.Windows.Forms.Label lb_Order;
 		private System.Windows.Forms.TextBox tb_Order;
 		private System.Windows.Forms.Label lb_Product;
 		private System.Windows.Forms.Button btn_CloseOrder;
 		private System.Windows.Forms.Button btn_SaveOrder;
 		private System.Windows.Forms.Button btn_NewOrder;
-		private System.Windows.Forms.Button btn_SaveProduct;
+		private System.Windows.Forms.Button btn_AddProduct;
 		private System.Windows.Forms.DateTimePicker dtp_ExpirationData;
 		private System.Windows.Forms.Label lb_DocNumber;
 		private System.Windows.Forms.TextBox tb_DocNumber;
@@ -615,15 +678,19 @@
 		private System.Windows.Forms.Label lb_Installments;
 		private System.Windows.Forms.TextBox tb_Installments;
 		private System.Windows.Forms.Label lb_ExpirationData;
-		private System.Windows.Forms.Button btn_Save;
 		private System.Windows.Forms.ListView lv_Expirations;
 		private System.Windows.Forms.ComboBox cb_PaymentMethod;
 		private System.Windows.Forms.Button btn_OrderClose;
-		private System.Windows.Forms.Button btn_SearchProduct;
 		private System.Windows.Forms.ColumnHeader columnHeader7;
 		private System.Windows.Forms.ColumnHeader columnHeader8;
 		private System.Windows.Forms.ColumnHeader columnHeader9;
 		private System.Windows.Forms.ColumnHeader columnHeader11;
 		private System.Windows.Forms.ColumnHeader columnHeader10;
+		private System.Windows.Forms.Button btn_SearchProduct;
+		private System.Windows.Forms.Button btn_SearchClient;
+		private System.Windows.Forms.Button btn_SearchOrder;
+		private System.Windows.Forms.Button btn_DelProduct;
+		private System.Windows.Forms.Button btn_DelExpiration;
+		private System.Windows.Forms.Button btn_AddExpiration;
 	}
 }

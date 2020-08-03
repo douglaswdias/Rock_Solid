@@ -50,7 +50,6 @@
 			this.tb_Cel = new System.Windows.Forms.MaskedTextBox();
 			this.lb_Cel = new System.Windows.Forms.Label();
 			this.cb_State = new System.Windows.Forms.ComboBox();
-			this.btn_Search = new System.Windows.Forms.Button();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.btn_Delete = new System.Windows.Forms.Button();
 			this.btn_Close = new System.Windows.Forms.Button();
@@ -67,6 +66,7 @@
 			this.tb_RG = new System.Windows.Forms.MaskedTextBox();
 			this.lb_RG = new System.Windows.Forms.Label();
 			this.pb_User = new System.Windows.Forms.PictureBox();
+			this.button1 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pb_User)).BeginInit();
 			this.SuspendLayout();
@@ -92,7 +92,7 @@
 			// lb_Name
 			// 
 			this.lb_Name.AutoSize = true;
-			this.lb_Name.Location = new System.Drawing.Point(84, 12);
+			this.lb_Name.Location = new System.Drawing.Point(80, 12);
 			this.lb_Name.Name = "lb_Name";
 			this.lb_Name.Size = new System.Drawing.Size(82, 13);
 			this.lb_Name.TabIndex = 2;
@@ -102,7 +102,7 @@
 			// 
 			this.tb_Name.Location = new System.Drawing.Point(83, 28);
 			this.tb_Name.Name = "tb_Name";
-			this.tb_Name.Size = new System.Drawing.Size(377, 20);
+			this.tb_Name.Size = new System.Drawing.Size(353, 20);
 			this.tb_Name.TabIndex = 2;
 			// 
 			// lb_Address
@@ -295,16 +295,6 @@
 			this.cb_State.Size = new System.Drawing.Size(71, 21);
 			this.cb_State.TabIndex = 8;
 			// 
-			// btn_Search
-			// 
-			this.btn_Search.Location = new System.Drawing.Point(385, 4);
-			this.btn_Search.Name = "btn_Search";
-			this.btn_Search.Size = new System.Drawing.Size(75, 23);
-			this.btn_Search.TabIndex = 19;
-			this.btn_Search.Text = "Pesquisar";
-			this.btn_Search.UseVisualStyleBackColor = true;
-			this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
-			// 
 			// panel1
 			// 
 			this.panel1.Controls.Add(this.btn_Delete);
@@ -451,11 +441,27 @@
 			this.pb_User.TabIndex = 29;
 			this.pb_User.TabStop = false;
 			// 
+			// button1
+			// 
+			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.button1.FlatAppearance.BorderSize = 0;
+			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button1.Image = global::Rock_Solid.Properties.Resources.Search_Button;
+			this.button1.Location = new System.Drawing.Point(436, 28);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(18, 20);
+			this.button1.TabIndex = 36;
+			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.btn_Search_Click);
+			// 
 			// frm_Client
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(476, 481);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.tb_RG);
 			this.Controls.Add(this.lb_RG);
 			this.Controls.Add(this.btn_ProfilePicture);
@@ -467,7 +473,6 @@
 			this.Controls.Add(this.lb_PostCode);
 			this.Controls.Add(this.tb_PostCode);
 			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.btn_Search);
 			this.Controls.Add(this.cb_State);
 			this.Controls.Add(this.tb_Cel);
 			this.Controls.Add(this.lb_Cel);
@@ -519,7 +524,6 @@
 		private System.Windows.Forms.Label lb_City;
 		private System.Windows.Forms.Label lb_Phone;
 		private System.Windows.Forms.Label lb_Cel;
-		private System.Windows.Forms.Button btn_Search;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Button btn_Delete;
 		private System.Windows.Forms.Button btn_Close;
@@ -546,5 +550,6 @@
 		private System.Windows.Forms.OpenFileDialog ofd_Client;
 		public System.Windows.Forms.MaskedTextBox tb_RG;
 		private System.Windows.Forms.Label lb_RG;
+		private System.Windows.Forms.Button button1;
 	}
 }

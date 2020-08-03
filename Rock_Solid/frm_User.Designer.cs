@@ -65,7 +65,7 @@
 			this.tb_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.tb_Name.Location = new System.Drawing.Point(73, 30);
 			this.tb_Name.Name = "tb_Name";
-			this.tb_Name.Size = new System.Drawing.Size(332, 20);
+			this.tb_Name.Size = new System.Drawing.Size(308, 20);
 			this.tb_Name.TabIndex = 3;
 			// 
 			// tb_Username
@@ -223,11 +223,16 @@
 			// 
 			// btn_Search
 			// 
-			this.btn_Search.Location = new System.Drawing.Point(293, 6);
+			this.btn_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btn_Search.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_Search.FlatAppearance.BorderSize = 0;
+			this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_Search.Image = global::Rock_Solid.Properties.Resources.Search_Button;
+			this.btn_Search.Location = new System.Drawing.Point(381, 30);
 			this.btn_Search.Name = "btn_Search";
-			this.btn_Search.Size = new System.Drawing.Size(112, 23);
-			this.btn_Search.TabIndex = 13;
-			this.btn_Search.Text = "Pesquisar";
+			this.btn_Search.Size = new System.Drawing.Size(18, 20);
+			this.btn_Search.TabIndex = 37;
+			this.btn_Search.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.btn_Search.UseVisualStyleBackColor = true;
 			this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
 			// 
@@ -281,9 +286,9 @@
         private System.Windows.Forms.Button btn_New;
 		private System.Windows.Forms.Button btn_Close;
         private System.Windows.Forms.Label lb_ID;
-        private System.Windows.Forms.Button btn_Search;
         public System.Windows.Forms.TextBox tb_ID;
         private System.Windows.Forms.TextBox tb_Name;
         private System.Windows.Forms.Button btn_Delete;
-    }
+		private System.Windows.Forms.Button btn_Search;
+	}
 }

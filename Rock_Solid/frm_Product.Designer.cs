@@ -28,398 +28,435 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.label1 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.label5 = new System.Windows.Forms.Label();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.textBox7 = new System.Windows.Forms.TextBox();
-			this.label7 = new System.Windows.Forms.Label();
-			this.textBox8 = new System.Windows.Forms.TextBox();
-			this.label8 = new System.Windows.Forms.Label();
-			this.textBox9 = new System.Windows.Forms.TextBox();
-			this.label9 = new System.Windows.Forms.Label();
-			this.textBox10 = new System.Windows.Forms.TextBox();
-			this.label10 = new System.Windows.Forms.Label();
-			this.textBox11 = new System.Windows.Forms.TextBox();
-			this.label11 = new System.Windows.Forms.Label();
-			this.tabControl1 = new System.Windows.Forms.TabControl();
-			this.tabPage1 = new System.Windows.Forms.TabPage();
-			this.label17 = new System.Windows.Forms.Label();
-			this.textBox17 = new System.Windows.Forms.TextBox();
-			this.label16 = new System.Windows.Forms.Label();
-			this.textBox16 = new System.Windows.Forms.TextBox();
-			this.label15 = new System.Windows.Forms.Label();
-			this.textBox15 = new System.Windows.Forms.TextBox();
-			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.textBox14 = new System.Windows.Forms.TextBox();
-			this.label14 = new System.Windows.Forms.Label();
-			this.textBox13 = new System.Windows.Forms.TextBox();
-			this.textBox12 = new System.Windows.Forms.TextBox();
-			this.label13 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
+			this.lb_ID = new System.Windows.Forms.Label();
+			this.tb_ID = new System.Windows.Forms.TextBox();
+			this.tb_Description = new System.Windows.Forms.TextBox();
+			this.lb_Description = new System.Windows.Forms.Label();
+			this.tb_Purchase = new System.Windows.Forms.TextBox();
+			this.lb_Purchase = new System.Windows.Forms.Label();
+			this.tb_MarkUp = new System.Windows.Forms.TextBox();
+			this.lb_MarkUp = new System.Windows.Forms.Label();
+			this.tb_Sell = new System.Windows.Forms.TextBox();
+			this.lb_Sell = new System.Windows.Forms.Label();
+			this.tb_Stock = new System.Windows.Forms.TextBox();
+			this.lb_Stock = new System.Windows.Forms.Label();
+			this.tb_BarCode = new System.Windows.Forms.TextBox();
+			this.lb_BarCode = new System.Windows.Forms.Label();
+			this.tb_Type = new System.Windows.Forms.TextBox();
+			this.lb_Type = new System.Windows.Forms.Label();
+			this.tb_Name = new System.Windows.Forms.TextBox();
+			this.lb_Name = new System.Windows.Forms.Label();
+			this.tb_CreatedAt = new System.Windows.Forms.TextBox();
+			this.lb_CreatedAt = new System.Windows.Forms.Label();
+			this.tb_UpdatedAt = new System.Windows.Forms.TextBox();
+			this.lb_UpdatedAt = new System.Windows.Forms.Label();
+			this.tc_Product = new System.Windows.Forms.TabControl();
+			this.tp_Product = new System.Windows.Forms.TabPage();
+			this.button2 = new System.Windows.Forms.Button();
+			this.lb_Weight = new System.Windows.Forms.Label();
+			this.tb_Weight = new System.Windows.Forms.TextBox();
+			this.lb_Color = new System.Windows.Forms.Label();
+			this.tb_Color = new System.Windows.Forms.TextBox();
+			this.lb_Size = new System.Windows.Forms.Label();
+			this.tb_Size = new System.Windows.Forms.TextBox();
+			this.tb_Price = new System.Windows.Forms.TabPage();
+			this.button1 = new System.Windows.Forms.Button();
+			this.pb_Product = new System.Windows.Forms.PictureBox();
+			this.tb_LastPurchase = new System.Windows.Forms.TextBox();
+			this.lb_LastPurchase = new System.Windows.Forms.Label();
+			this.tb_ProviderID = new System.Windows.Forms.TextBox();
+			this.tb_ProviderName = new System.Windows.Forms.TextBox();
+			this.lb_ProviderID = new System.Windows.Forms.Label();
+			this.lb_ProviderName = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.btn_Delete = new System.Windows.Forms.Button();
 			this.btn_Close = new System.Windows.Forms.Button();
 			this.btn_Save = new System.Windows.Forms.Button();
 			this.btn_New = new System.Windows.Forms.Button();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.pictureBox3 = new System.Windows.Forms.PictureBox();
-			this.tabControl1.SuspendLayout();
-			this.tabPage1.SuspendLayout();
-			this.tabPage2.SuspendLayout();
+			this.tc_Product.SuspendLayout();
+			this.tp_Product.SuspendLayout();
+			this.tb_Price.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pb_Product)).BeginInit();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(15, 15);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(18, 13);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "ID";
+			// lb_ID
+			// 
+			this.lb_ID.AutoSize = true;
+			this.lb_ID.Location = new System.Drawing.Point(15, 15);
+			this.lb_ID.Name = "lb_ID";
+			this.lb_ID.Size = new System.Drawing.Size(18, 13);
+			this.lb_ID.TabIndex = 0;
+			this.lb_ID.Text = "ID";
 			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(18, 32);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(63, 20);
-			this.textBox1.TabIndex = 1;
+			// tb_ID
+			// 
+			this.tb_ID.Location = new System.Drawing.Point(18, 32);
+			this.tb_ID.Name = "tb_ID";
+			this.tb_ID.Size = new System.Drawing.Size(63, 20);
+			this.tb_ID.TabIndex = 1;
 			// 
-			// textBox2
-			// 
-			this.textBox2.Location = new System.Drawing.Point(18, 72);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(333, 20);
-			this.textBox2.TabIndex = 3;
+			// tb_Description
+			// 
+			this.tb_Description.Location = new System.Drawing.Point(18, 72);
+			this.tb_Description.Name = "tb_Description";
+			this.tb_Description.Size = new System.Drawing.Size(333, 20);
+			this.tb_Description.TabIndex = 3;
 			// 
-			// label2
+			// lb_Description
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(15, 55);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(100, 13);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "Descrição Competa";
+			this.lb_Description.AutoSize = true;
+			this.lb_Description.Location = new System.Drawing.Point(15, 55);
+			this.lb_Description.Name = "lb_Description";
+			this.lb_Description.Size = new System.Drawing.Size(100, 13);
+			this.lb_Description.TabIndex = 2;
+			this.lb_Description.Text = "Descrição Competa";
 			// 
-			// textBox3
-			// 
-			this.textBox3.Location = new System.Drawing.Point(25, 28);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(100, 20);
-			this.textBox3.TabIndex = 5;
+			// tb_Purchase
+			// 
+			this.tb_Purchase.Location = new System.Drawing.Point(25, 28);
+			this.tb_Purchase.Name = "tb_Purchase";
+			this.tb_Purchase.Size = new System.Drawing.Size(100, 20);
+			this.tb_Purchase.TabIndex = 5;
 			// 
-			// label3
+			// lb_Purchase
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(22, 11);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(58, 13);
-			this.label3.TabIndex = 4;
-			this.label3.Text = "Vlr Compra";
+			this.lb_Purchase.AutoSize = true;
+			this.lb_Purchase.Location = new System.Drawing.Point(22, 11);
+			this.lb_Purchase.Name = "lb_Purchase";
+			this.lb_Purchase.Size = new System.Drawing.Size(58, 13);
+			this.lb_Purchase.TabIndex = 4;
+			this.lb_Purchase.Text = "Vlr Compra";
 			// 
-			// textBox4
-			// 
-			this.textBox4.Location = new System.Drawing.Point(131, 28);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(100, 20);
-			this.textBox4.TabIndex = 7;
+			// tb_MarkUp
+			// 
+			this.tb_MarkUp.Location = new System.Drawing.Point(131, 28);
+			this.tb_MarkUp.Name = "tb_MarkUp";
+			this.tb_MarkUp.Size = new System.Drawing.Size(100, 20);
+			this.tb_MarkUp.TabIndex = 7;
 			// 
-			// label4
+			// lb_MarkUp
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(128, 11);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(75, 13);
-			this.label4.TabIndex = 6;
-			this.label4.Text = "Margem Lucro";
+			this.lb_MarkUp.AutoSize = true;
+			this.lb_MarkUp.Location = new System.Drawing.Point(128, 11);
+			this.lb_MarkUp.Name = "lb_MarkUp";
+			this.lb_MarkUp.Size = new System.Drawing.Size(75, 13);
+			this.lb_MarkUp.TabIndex = 6;
+			this.lb_MarkUp.Text = "Margem Lucro";
 			// 
-			// textBox5
-			// 
-			this.textBox5.Location = new System.Drawing.Point(237, 28);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(100, 20);
-			this.textBox5.TabIndex = 9;
+			// tb_Sell
+			// 
+			this.tb_Sell.Location = new System.Drawing.Point(237, 28);
+			this.tb_Sell.Name = "tb_Sell";
+			this.tb_Sell.Size = new System.Drawing.Size(100, 20);
+			this.tb_Sell.TabIndex = 9;
+			// 
+			// lb_Sell
 			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(234, 11);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(51, 13);
-			this.label5.TabIndex = 8;
-			this.label5.Text = "Vr Venda";
-			// 
-			// textBox6
-			// 
-			this.textBox6.Location = new System.Drawing.Point(18, 194);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(100, 20);
-			this.textBox6.TabIndex = 11;
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(15, 177);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(46, 13);
-			this.label6.TabIndex = 10;
-			this.label6.Text = "Estoque";
-			// 
-			// textBox7
-			// 
-			this.textBox7.Location = new System.Drawing.Point(18, 114);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(110, 20);
-			this.textBox7.TabIndex = 13;
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(15, 97);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(62, 13);
-			this.label7.TabIndex = 12;
-			this.label7.Text = "Cód. Barras";
-			// 
-			// textBox8
-			// 
-			this.textBox8.Location = new System.Drawing.Point(251, 114);
-			this.textBox8.Name = "textBox8";
-			this.textBox8.Size = new System.Drawing.Size(100, 20);
-			this.textBox8.TabIndex = 15;
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(248, 97);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(83, 13);
-			this.label8.TabIndex = 14;
-			this.label8.Text = "Tipo do Produto";
-			// 
-			// textBox9
-			// 
-			this.textBox9.Location = new System.Drawing.Point(85, 32);
-			this.textBox9.Name = "textBox9";
-			this.textBox9.Size = new System.Drawing.Size(266, 20);
-			this.textBox9.TabIndex = 17;
-			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(82, 15);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(94, 13);
-			this.label9.TabIndex = 16;
-			this.label9.Text = "Descrição Simples";
-			// 
-			// textBox10
-			// 
-			this.textBox10.Location = new System.Drawing.Point(124, 194);
-			this.textBox10.Name = "textBox10";
-			this.textBox10.Size = new System.Drawing.Size(100, 20);
-			this.textBox10.TabIndex = 19;
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(121, 177);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(69, 13);
-			this.label10.TabIndex = 18;
-			this.label10.Text = "Data Criação";
-			// 
-			// textBox11
-			// 
-			this.textBox11.Location = new System.Drawing.Point(230, 194);
-			this.textBox11.Name = "textBox11";
-			this.textBox11.Size = new System.Drawing.Size(100, 20);
-			this.textBox11.TabIndex = 21;
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(227, 177);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(78, 13);
-			this.label11.TabIndex = 20;
-			this.label11.Text = "Data Alteração";
-			// 
-			// tabControl1
-			// 
-			this.tabControl1.Controls.Add(this.tabPage1);
-			this.tabControl1.Controls.Add(this.tabPage2);
-			this.tabControl1.Location = new System.Drawing.Point(12, 12);
-			this.tabControl1.Name = "tabControl1";
-			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(381, 263);
-			this.tabControl1.TabIndex = 26;
-			// 
-			// tabPage1
-			// 
-			this.tabPage1.Controls.Add(this.label17);
-			this.tabPage1.Controls.Add(this.textBox17);
-			this.tabPage1.Controls.Add(this.label16);
-			this.tabPage1.Controls.Add(this.textBox16);
-			this.tabPage1.Controls.Add(this.label15);
-			this.tabPage1.Controls.Add(this.textBox15);
-			this.tabPage1.Controls.Add(this.textBox1);
-			this.tabPage1.Controls.Add(this.label1);
-			this.tabPage1.Controls.Add(this.label2);
-			this.tabPage1.Controls.Add(this.textBox2);
-			this.tabPage1.Controls.Add(this.label6);
-			this.tabPage1.Controls.Add(this.textBox11);
-			this.tabPage1.Controls.Add(this.textBox6);
-			this.tabPage1.Controls.Add(this.label11);
-			this.tabPage1.Controls.Add(this.label7);
-			this.tabPage1.Controls.Add(this.textBox10);
-			this.tabPage1.Controls.Add(this.textBox7);
-			this.tabPage1.Controls.Add(this.label10);
-			this.tabPage1.Controls.Add(this.label8);
-			this.tabPage1.Controls.Add(this.textBox9);
-			this.tabPage1.Controls.Add(this.textBox8);
-			this.tabPage1.Controls.Add(this.label9);
-			this.tabPage1.Location = new System.Drawing.Point(4, 22);
-			this.tabPage1.Name = "tabPage1";
-			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage1.Size = new System.Drawing.Size(373, 237);
-			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "Produto";
-			this.tabPage1.UseVisualStyleBackColor = true;
-			// 
-			// label17
-			// 
-			this.label17.AutoSize = true;
-			this.label17.Location = new System.Drawing.Point(227, 137);
-			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(59, 13);
-			this.label17.TabIndex = 26;
-			this.label17.Text = "Qtde/Peso";
-			// 
-			// textBox17
-			// 
-			this.textBox17.Location = new System.Drawing.Point(230, 154);
-			this.textBox17.Name = "textBox17";
-			this.textBox17.Size = new System.Drawing.Size(100, 20);
-			this.textBox17.TabIndex = 27;
-			// 
-			// label16
-			// 
-			this.label16.AutoSize = true;
-			this.label16.Location = new System.Drawing.Point(121, 137);
-			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(23, 13);
-			this.label16.TabIndex = 24;
-			this.label16.Text = "Cor";
-			// 
-			// textBox16
-			// 
-			this.textBox16.Location = new System.Drawing.Point(124, 154);
-			this.textBox16.Name = "textBox16";
-			this.textBox16.Size = new System.Drawing.Size(100, 20);
-			this.textBox16.TabIndex = 25;
-			// 
-			// label15
-			// 
-			this.label15.AutoSize = true;
-			this.label15.Location = new System.Drawing.Point(15, 137);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(52, 13);
-			this.label15.TabIndex = 22;
-			this.label15.Text = "Tamanho";
-			// 
-			// textBox15
-			// 
-			this.textBox15.Location = new System.Drawing.Point(18, 154);
-			this.textBox15.Name = "textBox15";
-			this.textBox15.Size = new System.Drawing.Size(100, 20);
-			this.textBox15.TabIndex = 23;
-			// 
-			// tabPage2
-			// 
-			this.tabPage2.Controls.Add(this.pictureBox3);
-			this.tabPage2.Controls.Add(this.pictureBox2);
-			this.tabPage2.Controls.Add(this.pictureBox1);
-			this.tabPage2.Controls.Add(this.textBox14);
-			this.tabPage2.Controls.Add(this.label14);
-			this.tabPage2.Controls.Add(this.textBox13);
-			this.tabPage2.Controls.Add(this.textBox12);
-			this.tabPage2.Controls.Add(this.label13);
-			this.tabPage2.Controls.Add(this.label12);
-			this.tabPage2.Controls.Add(this.label3);
-			this.tabPage2.Controls.Add(this.textBox5);
-			this.tabPage2.Controls.Add(this.textBox3);
-			this.tabPage2.Controls.Add(this.label5);
-			this.tabPage2.Controls.Add(this.label4);
-			this.tabPage2.Controls.Add(this.textBox4);
-			this.tabPage2.Location = new System.Drawing.Point(4, 22);
-			this.tabPage2.Name = "tabPage2";
-			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(373, 237);
-			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "Preço";
-			this.tabPage2.UseVisualStyleBackColor = true;
-			// 
-			// textBox14
-			// 
-			this.textBox14.Location = new System.Drawing.Point(25, 68);
-			this.textBox14.Name = "textBox14";
-			this.textBox14.Size = new System.Drawing.Size(100, 20);
-			this.textBox14.TabIndex = 31;
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.Location = new System.Drawing.Point(22, 51);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(75, 13);
-			this.label14.TabIndex = 30;
-			this.label14.Text = "Ultima Compra";
-			// 
-			// textBox13
-			// 
-			this.textBox13.Location = new System.Drawing.Point(237, 107);
-			this.textBox13.Name = "textBox13";
-			this.textBox13.Size = new System.Drawing.Size(100, 20);
-			this.textBox13.TabIndex = 29;
-			// 
-			// textBox12
-			// 
-			this.textBox12.Location = new System.Drawing.Point(25, 108);
-			this.textBox12.Name = "textBox12";
-			this.textBox12.Size = new System.Drawing.Size(206, 20);
-			this.textBox12.TabIndex = 27;
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Location = new System.Drawing.Point(234, 90);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(91, 13);
-			this.label13.TabIndex = 28;
-			this.label13.Text = "CNPJ Fornecedor";
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Location = new System.Drawing.Point(22, 91);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(92, 13);
-			this.label12.TabIndex = 26;
-			this.label12.Text = "Nome Fornecedor";
+			this.lb_Sell.AutoSize = true;
+			this.lb_Sell.Location = new System.Drawing.Point(234, 11);
+			this.lb_Sell.Name = "lb_Sell";
+			this.lb_Sell.Size = new System.Drawing.Size(51, 13);
+			this.lb_Sell.TabIndex = 8;
+			this.lb_Sell.Text = "Vr Venda";
+			// 
+			// tb_Stock
+			// 
+			this.tb_Stock.Location = new System.Drawing.Point(18, 194);
+			this.tb_Stock.Name = "tb_Stock";
+			this.tb_Stock.Size = new System.Drawing.Size(100, 20);
+			this.tb_Stock.TabIndex = 11;
+			// 
+			// lb_Stock
+			// 
+			this.lb_Stock.AutoSize = true;
+			this.lb_Stock.Location = new System.Drawing.Point(15, 177);
+			this.lb_Stock.Name = "lb_Stock";
+			this.lb_Stock.Size = new System.Drawing.Size(46, 13);
+			this.lb_Stock.TabIndex = 10;
+			this.lb_Stock.Text = "Estoque";
+			// 
+			// tb_BarCode
+			// 
+			this.tb_BarCode.Location = new System.Drawing.Point(18, 114);
+			this.tb_BarCode.Name = "tb_BarCode";
+			this.tb_BarCode.Size = new System.Drawing.Size(110, 20);
+			this.tb_BarCode.TabIndex = 13;
+			// 
+			// lb_BarCode
+			// 
+			this.lb_BarCode.AutoSize = true;
+			this.lb_BarCode.Location = new System.Drawing.Point(15, 97);
+			this.lb_BarCode.Name = "lb_BarCode";
+			this.lb_BarCode.Size = new System.Drawing.Size(62, 13);
+			this.lb_BarCode.TabIndex = 12;
+			this.lb_BarCode.Text = "Cód. Barras";
+			// 
+			// tb_Type
+			// 
+			this.tb_Type.Location = new System.Drawing.Point(251, 114);
+			this.tb_Type.Name = "tb_Type";
+			this.tb_Type.Size = new System.Drawing.Size(100, 20);
+			this.tb_Type.TabIndex = 15;
+			// 
+			// lb_Type
+			// 
+			this.lb_Type.AutoSize = true;
+			this.lb_Type.Location = new System.Drawing.Point(248, 97);
+			this.lb_Type.Name = "lb_Type";
+			this.lb_Type.Size = new System.Drawing.Size(83, 13);
+			this.lb_Type.TabIndex = 14;
+			this.lb_Type.Text = "Tipo do Produto";
+			// 
+			// tb_Name
+			// 
+			this.tb_Name.Location = new System.Drawing.Point(85, 32);
+			this.tb_Name.Name = "tb_Name";
+			this.tb_Name.Size = new System.Drawing.Size(246, 20);
+			this.tb_Name.TabIndex = 17;
+			// 
+			// lb_Name
+			// 
+			this.lb_Name.AutoSize = true;
+			this.lb_Name.Location = new System.Drawing.Point(82, 15);
+			this.lb_Name.Name = "lb_Name";
+			this.lb_Name.Size = new System.Drawing.Size(94, 13);
+			this.lb_Name.TabIndex = 16;
+			this.lb_Name.Text = "Descrição Simples";
+			// 
+			// tb_CreatedAt
+			// 
+			this.tb_CreatedAt.Location = new System.Drawing.Point(124, 194);
+			this.tb_CreatedAt.Name = "tb_CreatedAt";
+			this.tb_CreatedAt.ReadOnly = true;
+			this.tb_CreatedAt.Size = new System.Drawing.Size(100, 20);
+			this.tb_CreatedAt.TabIndex = 19;
+			// 
+			// lb_CreatedAt
+			// 
+			this.lb_CreatedAt.AutoSize = true;
+			this.lb_CreatedAt.Location = new System.Drawing.Point(121, 177);
+			this.lb_CreatedAt.Name = "lb_CreatedAt";
+			this.lb_CreatedAt.Size = new System.Drawing.Size(69, 13);
+			this.lb_CreatedAt.TabIndex = 18;
+			this.lb_CreatedAt.Text = "Data Criação";
+			// 
+			// tb_UpdatedAt
+			// 
+			this.tb_UpdatedAt.Location = new System.Drawing.Point(230, 194);
+			this.tb_UpdatedAt.Name = "tb_UpdatedAt";
+			this.tb_UpdatedAt.ReadOnly = true;
+			this.tb_UpdatedAt.Size = new System.Drawing.Size(100, 20);
+			this.tb_UpdatedAt.TabIndex = 21;
+			// 
+			// lb_UpdatedAt
+			// 
+			this.lb_UpdatedAt.AutoSize = true;
+			this.lb_UpdatedAt.Location = new System.Drawing.Point(227, 177);
+			this.lb_UpdatedAt.Name = "lb_UpdatedAt";
+			this.lb_UpdatedAt.Size = new System.Drawing.Size(78, 13);
+			this.lb_UpdatedAt.TabIndex = 20;
+			this.lb_UpdatedAt.Text = "Data Alteração";
+			// 
+			// tc_Product
+			// 
+			this.tc_Product.Controls.Add(this.tp_Product);
+			this.tc_Product.Controls.Add(this.tb_Price);
+			this.tc_Product.Location = new System.Drawing.Point(12, 12);
+			this.tc_Product.Name = "tc_Product";
+			this.tc_Product.SelectedIndex = 0;
+			this.tc_Product.Size = new System.Drawing.Size(381, 263);
+			this.tc_Product.TabIndex = 26;
+			// 
+			// tp_Product
+			// 
+			this.tp_Product.Controls.Add(this.button2);
+			this.tp_Product.Controls.Add(this.lb_Weight);
+			this.tp_Product.Controls.Add(this.tb_Weight);
+			this.tp_Product.Controls.Add(this.lb_Color);
+			this.tp_Product.Controls.Add(this.tb_Color);
+			this.tp_Product.Controls.Add(this.lb_Size);
+			this.tp_Product.Controls.Add(this.tb_Size);
+			this.tp_Product.Controls.Add(this.tb_ID);
+			this.tp_Product.Controls.Add(this.lb_ID);
+			this.tp_Product.Controls.Add(this.lb_Description);
+			this.tp_Product.Controls.Add(this.tb_Description);
+			this.tp_Product.Controls.Add(this.lb_Stock);
+			this.tp_Product.Controls.Add(this.tb_UpdatedAt);
+			this.tp_Product.Controls.Add(this.tb_Stock);
+			this.tp_Product.Controls.Add(this.lb_UpdatedAt);
+			this.tp_Product.Controls.Add(this.lb_BarCode);
+			this.tp_Product.Controls.Add(this.tb_CreatedAt);
+			this.tp_Product.Controls.Add(this.tb_BarCode);
+			this.tp_Product.Controls.Add(this.lb_CreatedAt);
+			this.tp_Product.Controls.Add(this.lb_Type);
+			this.tp_Product.Controls.Add(this.tb_Name);
+			this.tp_Product.Controls.Add(this.tb_Type);
+			this.tp_Product.Controls.Add(this.lb_Name);
+			this.tp_Product.Location = new System.Drawing.Point(4, 22);
+			this.tp_Product.Name = "tp_Product";
+			this.tp_Product.Padding = new System.Windows.Forms.Padding(3);
+			this.tp_Product.Size = new System.Drawing.Size(373, 237);
+			this.tp_Product.TabIndex = 0;
+			this.tp_Product.Text = "Produto";
+			this.tp_Product.UseVisualStyleBackColor = true;
+			// 
+			// button2
+			// 
+			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.button2.FlatAppearance.BorderSize = 0;
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button2.Image = global::Rock_Solid.Properties.Resources.Search_Button;
+			this.button2.Location = new System.Drawing.Point(331, 32);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(18, 20);
+			this.button2.TabIndex = 36;
+			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.button2.UseVisualStyleBackColor = true;
+			// 
+			// lb_Weight
+			// 
+			this.lb_Weight.AutoSize = true;
+			this.lb_Weight.Location = new System.Drawing.Point(227, 137);
+			this.lb_Weight.Name = "lb_Weight";
+			this.lb_Weight.Size = new System.Drawing.Size(59, 13);
+			this.lb_Weight.TabIndex = 26;
+			this.lb_Weight.Text = "Qtde/Peso";
+			// 
+			// tb_Weight
+			// 
+			this.tb_Weight.Location = new System.Drawing.Point(230, 154);
+			this.tb_Weight.Name = "tb_Weight";
+			this.tb_Weight.Size = new System.Drawing.Size(100, 20);
+			this.tb_Weight.TabIndex = 27;
+			// 
+			// lb_Color
+			// 
+			this.lb_Color.AutoSize = true;
+			this.lb_Color.Location = new System.Drawing.Point(121, 137);
+			this.lb_Color.Name = "lb_Color";
+			this.lb_Color.Size = new System.Drawing.Size(23, 13);
+			this.lb_Color.TabIndex = 24;
+			this.lb_Color.Text = "Cor";
+			// 
+			// tb_Color
+			// 
+			this.tb_Color.Location = new System.Drawing.Point(124, 154);
+			this.tb_Color.Name = "tb_Color";
+			this.tb_Color.Size = new System.Drawing.Size(100, 20);
+			this.tb_Color.TabIndex = 25;
+			// 
+			// lb_Size
+			// 
+			this.lb_Size.AutoSize = true;
+			this.lb_Size.Location = new System.Drawing.Point(15, 137);
+			this.lb_Size.Name = "lb_Size";
+			this.lb_Size.Size = new System.Drawing.Size(52, 13);
+			this.lb_Size.TabIndex = 22;
+			this.lb_Size.Text = "Tamanho";
+			// 
+			// tb_Size
+			// 
+			this.tb_Size.Location = new System.Drawing.Point(18, 154);
+			this.tb_Size.Name = "tb_Size";
+			this.tb_Size.Size = new System.Drawing.Size(100, 20);
+			this.tb_Size.TabIndex = 23;
+			// 
+			// tb_Price
+			// 
+			this.tb_Price.Controls.Add(this.button1);
+			this.tb_Price.Controls.Add(this.pb_Product);
+			this.tb_Price.Controls.Add(this.tb_LastPurchase);
+			this.tb_Price.Controls.Add(this.lb_LastPurchase);
+			this.tb_Price.Controls.Add(this.tb_ProviderID);
+			this.tb_Price.Controls.Add(this.tb_ProviderName);
+			this.tb_Price.Controls.Add(this.lb_ProviderID);
+			this.tb_Price.Controls.Add(this.lb_ProviderName);
+			this.tb_Price.Controls.Add(this.lb_Purchase);
+			this.tb_Price.Controls.Add(this.tb_Sell);
+			this.tb_Price.Controls.Add(this.tb_Purchase);
+			this.tb_Price.Controls.Add(this.lb_Sell);
+			this.tb_Price.Controls.Add(this.lb_MarkUp);
+			this.tb_Price.Controls.Add(this.tb_MarkUp);
+			this.tb_Price.Location = new System.Drawing.Point(4, 22);
+			this.tb_Price.Name = "tb_Price";
+			this.tb_Price.Padding = new System.Windows.Forms.Padding(3);
+			this.tb_Price.Size = new System.Drawing.Size(373, 237);
+			this.tb_Price.TabIndex = 1;
+			this.tb_Price.Text = "Preço";
+			this.tb_Price.UseVisualStyleBackColor = true;
+			// 
+			// button1
+			// 
+			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.button1.FlatAppearance.BorderSize = 0;
+			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button1.Image = global::Rock_Solid.Properties.Resources.Search_Button;
+			this.button1.Location = new System.Drawing.Point(313, 107);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(18, 20);
+			this.button1.TabIndex = 35;
+			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// pb_Product
+			// 
+			this.pb_Product.Location = new System.Drawing.Point(131, 134);
+			this.pb_Product.Name = "pb_Product";
+			this.pb_Product.Size = new System.Drawing.Size(100, 92);
+			this.pb_Product.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pb_Product.TabIndex = 33;
+			this.pb_Product.TabStop = false;
+			// 
+			// tb_LastPurchase
+			// 
+			this.tb_LastPurchase.Location = new System.Drawing.Point(25, 68);
+			this.tb_LastPurchase.Name = "tb_LastPurchase";
+			this.tb_LastPurchase.Size = new System.Drawing.Size(100, 20);
+			this.tb_LastPurchase.TabIndex = 31;
+			// 
+			// lb_LastPurchase
+			// 
+			this.lb_LastPurchase.AutoSize = true;
+			this.lb_LastPurchase.Location = new System.Drawing.Point(22, 51);
+			this.lb_LastPurchase.Name = "lb_LastPurchase";
+			this.lb_LastPurchase.Size = new System.Drawing.Size(75, 13);
+			this.lb_LastPurchase.TabIndex = 30;
+			this.lb_LastPurchase.Text = "Ultima Compra";
+			// 
+			// tb_ProviderID
+			// 
+			this.tb_ProviderID.Location = new System.Drawing.Point(25, 108);
+			this.tb_ProviderID.Name = "tb_ProviderID";
+			this.tb_ProviderID.Size = new System.Drawing.Size(72, 20);
+			this.tb_ProviderID.TabIndex = 29;
+			// 
+			// tb_ProviderName
+			// 
+			this.tb_ProviderName.Location = new System.Drawing.Point(103, 108);
+			this.tb_ProviderName.Name = "tb_ProviderName";
+			this.tb_ProviderName.Size = new System.Drawing.Size(210, 20);
+			this.tb_ProviderName.TabIndex = 27;
+			// 
+			// lb_ProviderID
+			// 
+			this.lb_ProviderID.AutoSize = true;
+			this.lb_ProviderID.Location = new System.Drawing.Point(22, 91);
+			this.lb_ProviderID.Name = "lb_ProviderID";
+			this.lb_ProviderID.Size = new System.Drawing.Size(18, 13);
+			this.lb_ProviderID.TabIndex = 28;
+			this.lb_ProviderID.Text = "ID";
+			// 
+			// lb_ProviderName
+			// 
+			this.lb_ProviderName.AutoSize = true;
+			this.lb_ProviderName.Location = new System.Drawing.Point(100, 91);
+			this.lb_ProviderName.Name = "lb_ProviderName";
+			this.lb_ProviderName.Size = new System.Drawing.Size(92, 13);
+			this.lb_ProviderName.TabIndex = 26;
+			this.lb_ProviderName.Text = "Nome Fornecedor";
 			// 
 			// panel1
 			// 
@@ -469,105 +506,76 @@
 			this.btn_New.Text = "Novo";
 			this.btn_New.UseVisualStyleBackColor = true;
 			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Location = new System.Drawing.Point(25, 134);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(100, 92);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox1.TabIndex = 32;
-			this.pictureBox1.TabStop = false;
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Location = new System.Drawing.Point(131, 134);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(100, 92);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox2.TabIndex = 33;
-			this.pictureBox2.TabStop = false;
-			// 
-			// pictureBox3
-			// 
-			this.pictureBox3.Location = new System.Drawing.Point(237, 133);
-			this.pictureBox3.Name = "pictureBox3";
-			this.pictureBox3.Size = new System.Drawing.Size(100, 92);
-			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox3.TabIndex = 34;
-			this.pictureBox3.TabStop = false;
-			// 
 			// frm_Product
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(408, 319);
 			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.tabControl1);
+			this.Controls.Add(this.tc_Product);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "frm_Product";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Cadastro de Produtos";
-			this.tabControl1.ResumeLayout(false);
-			this.tabPage1.ResumeLayout(false);
-			this.tabPage1.PerformLayout();
-			this.tabPage2.ResumeLayout(false);
-			this.tabPage2.PerformLayout();
+			this.tc_Product.ResumeLayout(false);
+			this.tp_Product.ResumeLayout(false);
+			this.tp_Product.PerformLayout();
+			this.tb_Price.ResumeLayout(false);
+			this.tb_Price.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pb_Product)).EndInit();
 			this.panel1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
 
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox textBox7;
-		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.TextBox textBox8;
-		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.TextBox textBox9;
-		private System.Windows.Forms.Label label9;
-		private System.Windows.Forms.TextBox textBox10;
-		private System.Windows.Forms.Label label10;
-		private System.Windows.Forms.TextBox textBox11;
-		private System.Windows.Forms.Label label11;
-		private System.Windows.Forms.TabControl tabControl1;
-		private System.Windows.Forms.TabPage tabPage1;
-		private System.Windows.Forms.TabPage tabPage2;
-		private System.Windows.Forms.TextBox textBox14;
-		private System.Windows.Forms.Label label14;
-		private System.Windows.Forms.TextBox textBox13;
-		private System.Windows.Forms.TextBox textBox12;
-		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Label label17;
-		private System.Windows.Forms.TextBox textBox17;
-		private System.Windows.Forms.Label label16;
-		private System.Windows.Forms.TextBox textBox16;
-		private System.Windows.Forms.Label label15;
-		private System.Windows.Forms.TextBox textBox15;
+		private System.Windows.Forms.Label lb_ID;
+		private System.Windows.Forms.TextBox tb_ID;
+		private System.Windows.Forms.TextBox tb_Description;
+		private System.Windows.Forms.Label lb_Description;
+		private System.Windows.Forms.TextBox tb_Purchase;
+		private System.Windows.Forms.Label lb_Purchase;
+		private System.Windows.Forms.TextBox tb_MarkUp;
+		private System.Windows.Forms.Label lb_MarkUp;
+		private System.Windows.Forms.TextBox tb_Sell;
+		private System.Windows.Forms.Label lb_Sell;
+		private System.Windows.Forms.TextBox tb_Stock;
+		private System.Windows.Forms.Label lb_Stock;
+		private System.Windows.Forms.TextBox tb_BarCode;
+		private System.Windows.Forms.Label lb_BarCode;
+		private System.Windows.Forms.TextBox tb_Type;
+		private System.Windows.Forms.Label lb_Type;
+		private System.Windows.Forms.TextBox tb_Name;
+		private System.Windows.Forms.Label lb_Name;
+		private System.Windows.Forms.TextBox tb_CreatedAt;
+		private System.Windows.Forms.Label lb_CreatedAt;
+		private System.Windows.Forms.TextBox tb_UpdatedAt;
+		private System.Windows.Forms.Label lb_UpdatedAt;
+		private System.Windows.Forms.TabControl tc_Product;
+		private System.Windows.Forms.TabPage tp_Product;
+		private System.Windows.Forms.TabPage tb_Price;
+		private System.Windows.Forms.TextBox tb_LastPurchase;
+		private System.Windows.Forms.Label lb_LastPurchase;
+		private System.Windows.Forms.TextBox tb_ProviderID;
+		private System.Windows.Forms.TextBox tb_ProviderName;
+		private System.Windows.Forms.Label lb_ProviderID;
+		private System.Windows.Forms.Label lb_ProviderName;
+		private System.Windows.Forms.Label lb_Weight;
+		private System.Windows.Forms.TextBox tb_Weight;
+		private System.Windows.Forms.Label lb_Color;
+		private System.Windows.Forms.TextBox tb_Color;
+		private System.Windows.Forms.Label lb_Size;
+		private System.Windows.Forms.TextBox tb_Size;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Button btn_Delete;
 		private System.Windows.Forms.Button btn_Close;
 		private System.Windows.Forms.Button btn_Save;
 		private System.Windows.Forms.Button btn_New;
-		private System.Windows.Forms.PictureBox pictureBox3;
-		private System.Windows.Forms.PictureBox pictureBox2;
-		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox pb_Product;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button button2;
 	}
 }

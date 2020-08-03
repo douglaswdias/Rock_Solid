@@ -15,7 +15,7 @@ namespace Rock_Solid
 		public static string path = System.Environment.CurrentDirectory;
 		public static string dbName = "RockSolid.db";
 		public static string dbPath = path+@"\DataBase\";
-		public static string profilePicturePath = path+@"\Images\Profile\";
+		public static string profilePicturePath = path + @"\Images\Profile\";
 
 
 		//Variáveis de Usuário

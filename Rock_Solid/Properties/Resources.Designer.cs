@@ -73,6 +73,16 @@ namespace Rock_Solid.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Check_Button {
+            get {
+                object obj = ResourceManager.GetObject("Check_Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Green_Button {
             get {
                 object obj = ResourceManager.GetObject("Green Button", resourceCulture);
@@ -96,6 +106,26 @@ namespace Rock_Solid.Properties {
         internal static System.Drawing.Bitmap Red_Button {
             get {
                 object obj = ResourceManager.GetObject("Red Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Search_Button {
+            get {
+                object obj = ResourceManager.GetObject("Search_Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Uncheck_Button {
+            get {
+                object obj = ResourceManager.GetObject("Uncheck_Button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
