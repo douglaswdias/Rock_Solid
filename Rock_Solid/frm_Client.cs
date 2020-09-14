@@ -106,8 +106,13 @@ namespace Rock_Solid
 					return;
 				}
 			}
-			if(destiny != "")
+
+			if (destiny != "")
 			{
+				if (!Directory.Exists(fileDestiny))
+				{
+					Directory.CreateDirectory(fileDestiny);
+				}
 				System.IO.File.Copy(fileOrigin, destiny, true);
 				if (File.Exists(destiny))
 				{
