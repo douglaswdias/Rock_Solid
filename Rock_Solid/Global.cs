@@ -19,12 +19,12 @@ namespace Rock_Solid
 
 
 		//Variáveis de Usuário
-		public static int userID = 0;
-		public static string userName = "";
-		public static string userUsername = "";
-		public static string userPassword = "";
-		public static string userStatus = "Ativo";
-		public static int userLevel = 0;
+		//public static int userID = 0;
+		//public static string userName = "";
+		//public static string userUsername = "";
+		//public static string userPassword = "";
+		//public static string userStatus = "Ativo";
+		//public static int userLevel = 0;
 
 	}
 }

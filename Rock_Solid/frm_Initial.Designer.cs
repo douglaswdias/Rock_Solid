@@ -43,7 +43,9 @@
 			this.tsmi_Product = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_Equipment = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_Query = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmi_UserQuery = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_ClientQuery = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmi_ProductQuery = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_Sale = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_SalesOrder = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_Financial = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,8 +55,6 @@
 			this.tsmi_LogIn = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_UserChange = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_LogOff = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmi_UserQuery = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmi_ProductQuery = new System.Windows.Forms.ToolStripMenuItem();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pb_Login)).BeginInit();
 			this.ms_Initial.SuspendLayout();
@@ -174,28 +174,28 @@
 			// tsmi_User
 			// 
 			this.tsmi_User.Name = "tsmi_User";
-			this.tsmi_User.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_User.Size = new System.Drawing.Size(145, 22);
 			this.tsmi_User.Text = "Usuário";
 			this.tsmi_User.Click += new System.EventHandler(this.tsmi_User_Click);
 			// 
 			// tsmi_Client
 			// 
 			this.tsmi_Client.Name = "tsmi_Client";
-			this.tsmi_Client.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_Client.Size = new System.Drawing.Size(145, 22);
 			this.tsmi_Client.Text = "Cliente";
 			this.tsmi_Client.Click += new System.EventHandler(this.tsmi_Client_Click);
 			// 
 			// tsmi_Product
 			// 
 			this.tsmi_Product.Name = "tsmi_Product";
-			this.tsmi_Product.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_Product.Size = new System.Drawing.Size(145, 22);
 			this.tsmi_Product.Text = "Produto";
 			this.tsmi_Product.Click += new System.EventHandler(this.tsmi_Product_Click);
 			// 
 			// tsmi_Equipment
 			// 
 			this.tsmi_Equipment.Name = "tsmi_Equipment";
-			this.tsmi_Equipment.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_Equipment.Size = new System.Drawing.Size(145, 22);
 			this.tsmi_Equipment.Text = "Equipamento";
 			// 
 			// tsmi_Query
@@ -208,12 +208,26 @@
 			this.tsmi_Query.Size = new System.Drawing.Size(71, 20);
 			this.tsmi_Query.Text = "Consultas";
 			// 
+			// tsmi_UserQuery
+			// 
+			this.tsmi_UserQuery.Name = "tsmi_UserQuery";
+			this.tsmi_UserQuery.Size = new System.Drawing.Size(122, 22);
+			this.tsmi_UserQuery.Text = "Usuários";
+			this.tsmi_UserQuery.Click += new System.EventHandler(this.tsmi_UserQuery_Click);
+			// 
 			// tsmi_ClientQuery
 			// 
 			this.tsmi_ClientQuery.Name = "tsmi_ClientQuery";
-			this.tsmi_ClientQuery.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_ClientQuery.Size = new System.Drawing.Size(122, 22);
 			this.tsmi_ClientQuery.Text = "Clientes";
 			this.tsmi_ClientQuery.Click += new System.EventHandler(this.tsmi_ClientQuery_Click);
+			// 
+			// tsmi_ProductQuery
+			// 
+			this.tsmi_ProductQuery.Name = "tsmi_ProductQuery";
+			this.tsmi_ProductQuery.Size = new System.Drawing.Size(122, 22);
+			this.tsmi_ProductQuery.Text = "Produtos";
+			this.tsmi_ProductQuery.Click += new System.EventHandler(this.tsmi_ProductQuery_Click);
 			// 
 			// tsmi_Sale
 			// 
@@ -280,20 +294,6 @@
 			this.tsmi_LogOff.Text = "Logoff";
 			this.tsmi_LogOff.Click += new System.EventHandler(this.tsmi_LogOff_Click);
 			// 
-			// tsmi_UserQuery
-			// 
-			this.tsmi_UserQuery.Name = "tsmi_UserQuery";
-			this.tsmi_UserQuery.Size = new System.Drawing.Size(180, 22);
-			this.tsmi_UserQuery.Text = "Usuários";
-			this.tsmi_UserQuery.Click += new System.EventHandler(this.tsmi_UserQuery_Click);
-			// 
-			// tsmi_ProductQuery
-			// 
-			this.tsmi_ProductQuery.Name = "tsmi_ProductQuery";
-			this.tsmi_ProductQuery.Size = new System.Drawing.Size(180, 22);
-			this.tsmi_ProductQuery.Text = "Produtos";
-			this.tsmi_ProductQuery.Click += new System.EventHandler(this.tsmi_ProductQuery_Click);
-			// 
 			// frm_Initial
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,7 +305,7 @@
 			this.MainMenuStrip = this.ms_Initial;
 			this.Name = "frm_Initial";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Rock Solid Academy";
+			this.Text = "Rock Solid Gym";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();

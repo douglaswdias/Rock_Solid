@@ -29,12 +29,12 @@ namespace Rock_Solid
 		//Criação de novo usuário
 		public static void NewUser(User user)
 		{
-			if (user.USER_USERNAME == "")
+			if (User.USER_USERNAME == "")
 			{
 				MessageBox.Show("Nome Precisa ser Preenchido");
 				return;
 			}
-			if (Global.userID.ToString() == "" || Global.userID == 0)
+			if (User.USER_ID.ToString() == "" || User.USER_ID == 0)
 			{
 				try
 				{
@@ -47,11 +47,11 @@ namespace Rock_Solid
 							(@NAME, @USERNAME, @PASSWORD, @STATUS, @LEVEL)
 					";
 
-					cmd.Parameters.AddWithValue("@NAME", user.USER_NAME);
-					cmd.Parameters.AddWithValue("@USERNAME", user.USER_USERNAME);
-					cmd.Parameters.AddWithValue("@PASSWORD", user.USER_PASSWORD);
-					cmd.Parameters.AddWithValue("@STATUS", user.USER_STATUS);
-					cmd.Parameters.AddWithValue("@LEVEL", user.USER_LEVEL);
+					cmd.Parameters.AddWithValue("@NAME", User.USER_NAME);
+					cmd.Parameters.AddWithValue("@USERNAME", User.USER_USERNAME);
+					cmd.Parameters.AddWithValue("@PASSWORD", User.USER_PASSWORD);
+					cmd.Parameters.AddWithValue("@STATUS", User.USER_STATUS);
+					cmd.Parameters.AddWithValue("@LEVEL", User.USER_LEVEL);
 					cmd.ExecuteNonQuery();
 					MessageBox.Show("Usuário Cadastrado Com Sucesso");
 					vcon.Close();
@@ -71,12 +71,12 @@ namespace Rock_Solid
 					cmd.CommandText = @"
 						UPDATE USER 
 						SET 
-							USER_NAME = '" + user.USER_NAME + "', " +
-							"USER_USERNAME = '" + user.USER_USERNAME + "', " +
-							"USER_PASSWORD = '" + user.USER_PASSWORD + "', " +
-							"USER_STATUS = '" + user.USER_STATUS + "', " +
-							"USER_LEVEL = " + user.USER_LEVEL + " " +
-						"WHERE USER_ID = " + Global.userID
+							USER_NAME = '" + User.USER_NAME + "', " +
+							"USER_USERNAME = '" + User.USER_USERNAME + "', " +
+							"USER_PASSWORD = '" + User.USER_PASSWORD + "', " +
+							"USER_STATUS = '" + User.USER_STATUS + "', " +
+							"USER_LEVEL = " + User.USER_LEVEL + " " +
+						"WHERE USER_ID = " + User.USER_ID
 					;
 
 					cmd.ExecuteNonQuery();
@@ -157,7 +157,7 @@ namespace Rock_Solid
 				FROM 
 					USER 
 				WHERE 
-					USER_USERNAME = '" + user.USER_USERNAME + "'"
+					USER_USERNAME = '" + User.USER_USERNAME + "'"
 			;
 
 			da = new SQLiteDataAdapter(cmd.CommandText, vcon);
@@ -566,6 +566,302 @@ namespace Rock_Solid
 						CLIENT 
 					WHERE 
 						CLIENT_CPF LIKE '%" + name + "%'"
+				;
+
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
+
+		public static void NewProduct(Product product)
+		{
+			if (Product.PRODUCT_NAME == "" )
+			{
+				MessageBox.Show("Descrição Precisa ser Preenchida");
+				return;
+			}
+			if (Product.PRODUCT_BARCODE.ToString() == "")
+			{
+				MessageBox.Show("Código de Barras Precisa ser Preenchido");
+				return;
+			}
+			if (Product.PRODUCT_ID.ToString() == "" || Product.PRODUCT_ID == 0)
+			{
+				try
+				{
+					var vcon = ConnectionDB();
+					var cmd = vcon.CreateCommand();
+					cmd.CommandText = @"
+						INSERT INTO PRODUCT 
+							(PRODUCT_NAME, PRODUCT_DESCRIPTION, PRODUCT_BARCODE, PRODUCT_TYPE, PRODUCT_SIZE, PRODUCT_COLOR, 
+							PRODUCT_WEIGHT, PRODUCT_STOCK, PRODUCT_PURCHASEPRICE, PRODUCT_MARKUPPRICE, PRODUCT_SELLINGPRICE, 
+							PRODUCT_PROVIDERID, PRODUCT_IMAGE, PRODUCT_CREATEDAT, PRODUCT_LASTPURCHASE, PRODUCT_UPDATEDAT) 
+						VALUES 
+							(@NAME, @DESCRIPTION, @BARCODE, @TYPE, @SIZE, @COLOR, @WEIGHT, @STOCK, @PURCHASEPRICE, 
+							@MARKUPPRICE, @SELLINGPRICE, @PROVIDERID, @IMAGE, @CREATEDAT, @PRODUCT_LASTPURCHASE, @PRODUCT_UPDATEDAT)
+					";
+
+					cmd.Parameters.AddWithValue("@NAME", Product.PRODUCT_NAME);
+					cmd.Parameters.AddWithValue("@DESCRIPTION", Product.PRODUCT_DESCRIPTION);
+					cmd.Parameters.AddWithValue("@BARCODE", Product.PRODUCT_BARCODE);
+					cmd.Parameters.AddWithValue("@TYPE", Product.PRODUCT_TYPE);
+					cmd.Parameters.AddWithValue("@SIZE", Product.PRODUCT_SIZE);
+					cmd.Parameters.AddWithValue("@COLOR", Product.PRODUCT_COLOR);
+					cmd.Parameters.AddWithValue("@WEIGHT", Product.PRODUCT_WEIGHT);
+					cmd.Parameters.AddWithValue("@STOCK", Product.PRODUCT_STOCK);
+					cmd.Parameters.AddWithValue("@PURCHASEPRICE", Product.PRODUCT_PURCHASEPRICE);
+					cmd.Parameters.AddWithValue("@MARKUPPRICE", Product.PRODUCT_MARKUPPRICE);
+					cmd.Parameters.AddWithValue("@SELLINGPRICE", Product.PRODUCT_SELLINGPRICE);
+					cmd.Parameters.AddWithValue("@PROVIDERID", Product.PRODUCT_PROVIDERID);
+					cmd.Parameters.AddWithValue("@IMAGE", Product.PRODUCT_IMAGE);
+					cmd.Parameters.AddWithValue("@CREATEDAT", Product.PRODUCT_CREATEDAT);
+					cmd.Parameters.AddWithValue("@PRODUCT_LASTPURCHASE", "1990-01-01");
+					cmd.Parameters.AddWithValue("@PRODUCT_UPDATEDAT", "1990-01-01");
+
+					cmd.ExecuteNonQuery();
+					MessageBox.Show("Produto Cadastrado Com Sucesso");
+					vcon.Close();
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show("Erro ao Criar Produto");
+					throw (ex);
+				}
+			}
+			else
+			{
+				try
+				{
+					var vcon = ConnectionDB();
+					var cmd = vcon.CreateCommand();
+					cmd.CommandText = @"
+						UPDATE PRODUCT 
+						SET 
+							PRODUCT_NAME '" + Product.PRODUCT_NAME + "', " +
+							"PRODUCT_DESCRIPTION '" + Product.PRODUCT_DESCRIPTION + "', " +
+							"PRODUCT_BARCODE '" + Product.PRODUCT_BARCODE + "', " +
+							"PRODUCT_TYPE '" + Product.PRODUCT_TYPE + "', " +
+							"PRODUCT_SIZE '" + Product.PRODUCT_SIZE + "', " +
+							"PRODUCT_COLOR '" + Product.PRODUCT_COLOR + "', " +
+							"PRODUCT_WEIGHT '" + Product.PRODUCT_WEIGHT + "', " +
+							"PRODUCT_STOCK '" + Product.PRODUCT_STOCK + "', " +
+							"PRODUCT_PURCHASEPRICE '" + Product.PRODUCT_PURCHASEPRICE + "', " +
+							"PRODUCT_MARKUPPRICE '" + Product.PRODUCT_MARKUPPRICE + "', " +
+							"PRODUCT_SELLINGPRICE '" + Product.PRODUCT_SELLINGPRICE + "', " +
+							"PRODUCT_PROVIDERID '" + Product.PRODUCT_PROVIDERID + "', " +
+							"PRODUCT_IMAGE '" + Product.PRODUCT_IMAGE + "', " +
+							"PRODUCT_UPDATEDAT '" + Product.PRODUCT_UPDATEDAT + "', " +
+						"WHERE PRODUCT_ID = " + Product.PRODUCT_ID
+					;
+
+					cmd.ExecuteNonQuery();
+					MessageBox.Show("Alterações Salvas Com Sucesso");
+					vcon.Close();
+				}
+				catch (Exception ex)
+				{
+					if (ProductTaken(product))
+					{
+						MessageBox.Show("Produto Já Cadastrado");
+					}
+					else
+					{
+						MessageBox.Show("Erro ao Alterar Produto");
+						throw (ex);
+					}
+
+				}
+			}
+		}
+
+		public static bool ProductTaken(Product product)
+		{
+			bool res;
+
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+
+			var vcon = ConnectionDB();
+			var cmd = vcon.CreateCommand();
+			cmd.CommandText = @"
+				SELECT 
+					PRODUCT_BARCODE 
+				FROM 
+					PRODUCT 
+				WHERE 
+					PRODUCT_BARCODE = '" + Product.PRODUCT_BARCODE + "'"
+			;
+
+			da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+			da.Fill(dt);
+			if (dt.Rows.Count > 0)
+			{
+				res = true;
+			}
+			else
+			{
+				res = false;
+			}
+
+			vcon.Close();
+			return res;
+		}
+
+		public static DataTable DeleteProduct(string id)
+		{
+			SQLiteDataAdapter da = null;
+			SQLiteDataAdapter da2 = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
+				var cmd2 = vcon.CreateCommand();
+				cmd.CommandText = @"
+					DELETE FROM PRODUCT 
+					WHERE PRODUCT_ID = " + id + ";"
+				;
+
+				cmd2.CommandText = @"
+					UPDATE SQLITE_SEQUENCE 
+					SET SEQ = 0 
+					WHERE NAME = 'PRODUCT';"
+				;
+
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da2 = new SQLiteDataAdapter(cmd2.CommandText, vcon);
+				da.Fill(dt);
+				da2.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
+
+		public static DataTable GetProduct()
+		{
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "SELECT * FROM PRODUCT";
+
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
+
+		public static DataTable ProductList(string id)
+		{
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = @"
+					SELECT * FROM PRODUCT 
+					WHERE PRODUCT_ID = " + id
+				;
+
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
+
+		public static DataTable ProductListDGV()
+		{
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = @"
+					SELECT 
+						PRODUCT_ID AS CÓDIGO, PRODUCT_NAME AS DESCRIÇÃO, PRODUCT_BARCODE AS CÓDIGO_DE_BARRAS, PRODUCT_STOCK AS ESTOQUE
+					FROM 
+						PRODUCT
+				";
+
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
+
+		//Consulta de usuários
+		public static DataTable SearchProductDescription(string name)
+		{
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = @"
+					SELECT 
+						PRODUCT_ID AS CÓDIGO, PRODUCT_NAME AS DESCRIÇÃO, PRODUCT_BARCODE AS CÓDIGO_DE_BARRAS, PRODUCT_STOCK AS ESTOQUE
+					FROM 
+						PRODUCT 
+					WHERE 
+						PRODUCT_NAME LIKE '%" + name + "%'"
+				;
+
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
+
+		public static DataTable SearchProductBarCode(string name)
+		{
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConnectionDB();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = @"
+					SELECT 
+						PRODUCT_ID AS CÓDIGO, PRODUCT_NAME AS DESCRIÇÃO, PRODUCT_BARCODE AS CÓDIGO_DE_BARRAS, PRODUCT_STOCK AS ESTOQUE
+					FROM 
+						PRODUTO 
+					WHERE 
+						PRODUCT_BARCODE LIKE '%" + name + "%'"
 				;
 
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);

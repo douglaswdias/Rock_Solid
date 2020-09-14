@@ -38,8 +38,6 @@
 			this.lb_MarkUp = new System.Windows.Forms.Label();
 			this.tb_Sell = new System.Windows.Forms.TextBox();
 			this.lb_Sell = new System.Windows.Forms.Label();
-			this.tb_Stock = new System.Windows.Forms.TextBox();
-			this.lb_Stock = new System.Windows.Forms.Label();
 			this.tb_BarCode = new System.Windows.Forms.TextBox();
 			this.lb_BarCode = new System.Windows.Forms.Label();
 			this.tb_Type = new System.Windows.Forms.TextBox();
@@ -52,7 +50,7 @@
 			this.lb_UpdatedAt = new System.Windows.Forms.Label();
 			this.tc_Product = new System.Windows.Forms.TabControl();
 			this.tp_Product = new System.Windows.Forms.TabPage();
-			this.button2 = new System.Windows.Forms.Button();
+			this.btn_Search = new System.Windows.Forms.Button();
 			this.lb_Weight = new System.Windows.Forms.Label();
 			this.tb_Weight = new System.Windows.Forms.TextBox();
 			this.lb_Color = new System.Windows.Forms.Label();
@@ -60,6 +58,8 @@
 			this.lb_Size = new System.Windows.Forms.Label();
 			this.tb_Size = new System.Windows.Forms.TextBox();
 			this.tb_Price = new System.Windows.Forms.TabPage();
+			this.lb_Stock = new System.Windows.Forms.Label();
+			this.tb_Stock = new System.Windows.Forms.TextBox();
 			this.button1 = new System.Windows.Forms.Button();
 			this.pb_Product = new System.Windows.Forms.PictureBox();
 			this.tb_LastPurchase = new System.Windows.Forms.TextBox();
@@ -94,7 +94,10 @@
 			this.tb_ID.Location = new System.Drawing.Point(18, 32);
 			this.tb_ID.Name = "tb_ID";
 			this.tb_ID.Size = new System.Drawing.Size(63, 20);
-			this.tb_ID.TabIndex = 1;
+			this.tb_ID.TabIndex = 0;
+			this.tb_ID.Text = "0";
+			this.tb_ID.Enter += new System.EventHandler(this.tb_ID_Enter);
+			this.tb_ID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_ID_KeyDown);
 			// 
 			// tb_Description
 			// 
@@ -117,7 +120,8 @@
 			this.tb_Purchase.Location = new System.Drawing.Point(25, 28);
 			this.tb_Purchase.Name = "tb_Purchase";
 			this.tb_Purchase.Size = new System.Drawing.Size(100, 20);
-			this.tb_Purchase.TabIndex = 5;
+			this.tb_Purchase.TabIndex = 0;
+			this.tb_Purchase.Text = "0";
 			// 
 			// lb_Purchase
 			// 
@@ -133,7 +137,8 @@
 			this.tb_MarkUp.Location = new System.Drawing.Point(131, 28);
 			this.tb_MarkUp.Name = "tb_MarkUp";
 			this.tb_MarkUp.Size = new System.Drawing.Size(100, 20);
-			this.tb_MarkUp.TabIndex = 7;
+			this.tb_MarkUp.TabIndex = 1;
+			this.tb_MarkUp.Text = "0";
 			// 
 			// lb_MarkUp
 			// 
@@ -149,7 +154,8 @@
 			this.tb_Sell.Location = new System.Drawing.Point(237, 28);
 			this.tb_Sell.Name = "tb_Sell";
 			this.tb_Sell.Size = new System.Drawing.Size(100, 20);
-			this.tb_Sell.TabIndex = 9;
+			this.tb_Sell.TabIndex = 2;
+			this.tb_Sell.Text = "0";
 			// 
 			// lb_Sell
 			// 
@@ -160,28 +166,13 @@
 			this.lb_Sell.TabIndex = 8;
 			this.lb_Sell.Text = "Vr Venda";
 			// 
-			// tb_Stock
-			// 
-			this.tb_Stock.Location = new System.Drawing.Point(18, 194);
-			this.tb_Stock.Name = "tb_Stock";
-			this.tb_Stock.Size = new System.Drawing.Size(100, 20);
-			this.tb_Stock.TabIndex = 11;
-			// 
-			// lb_Stock
-			// 
-			this.lb_Stock.AutoSize = true;
-			this.lb_Stock.Location = new System.Drawing.Point(15, 177);
-			this.lb_Stock.Name = "lb_Stock";
-			this.lb_Stock.Size = new System.Drawing.Size(46, 13);
-			this.lb_Stock.TabIndex = 10;
-			this.lb_Stock.Text = "Estoque";
-			// 
 			// tb_BarCode
 			// 
 			this.tb_BarCode.Location = new System.Drawing.Point(18, 114);
 			this.tb_BarCode.Name = "tb_BarCode";
 			this.tb_BarCode.Size = new System.Drawing.Size(110, 20);
-			this.tb_BarCode.TabIndex = 13;
+			this.tb_BarCode.TabIndex = 4;
+			this.tb_BarCode.Text = "0";
 			// 
 			// lb_BarCode
 			// 
@@ -197,7 +188,7 @@
 			this.tb_Type.Location = new System.Drawing.Point(251, 114);
 			this.tb_Type.Name = "tb_Type";
 			this.tb_Type.Size = new System.Drawing.Size(100, 20);
-			this.tb_Type.TabIndex = 15;
+			this.tb_Type.TabIndex = 5;
 			// 
 			// lb_Type
 			// 
@@ -213,7 +204,7 @@
 			this.tb_Name.Location = new System.Drawing.Point(85, 32);
 			this.tb_Name.Name = "tb_Name";
 			this.tb_Name.Size = new System.Drawing.Size(246, 20);
-			this.tb_Name.TabIndex = 17;
+			this.tb_Name.TabIndex = 1;
 			// 
 			// lb_Name
 			// 
@@ -226,16 +217,17 @@
 			// 
 			// tb_CreatedAt
 			// 
-			this.tb_CreatedAt.Location = new System.Drawing.Point(124, 194);
+			this.tb_CreatedAt.Location = new System.Drawing.Point(18, 194);
 			this.tb_CreatedAt.Name = "tb_CreatedAt";
 			this.tb_CreatedAt.ReadOnly = true;
 			this.tb_CreatedAt.Size = new System.Drawing.Size(100, 20);
-			this.tb_CreatedAt.TabIndex = 19;
+			this.tb_CreatedAt.TabIndex = 9;
+			this.tb_CreatedAt.Text = "00/00/0000";
 			// 
 			// lb_CreatedAt
 			// 
 			this.lb_CreatedAt.AutoSize = true;
-			this.lb_CreatedAt.Location = new System.Drawing.Point(121, 177);
+			this.lb_CreatedAt.Location = new System.Drawing.Point(15, 177);
 			this.lb_CreatedAt.Name = "lb_CreatedAt";
 			this.lb_CreatedAt.Size = new System.Drawing.Size(69, 13);
 			this.lb_CreatedAt.TabIndex = 18;
@@ -243,16 +235,17 @@
 			// 
 			// tb_UpdatedAt
 			// 
-			this.tb_UpdatedAt.Location = new System.Drawing.Point(230, 194);
+			this.tb_UpdatedAt.Location = new System.Drawing.Point(124, 194);
 			this.tb_UpdatedAt.Name = "tb_UpdatedAt";
 			this.tb_UpdatedAt.ReadOnly = true;
 			this.tb_UpdatedAt.Size = new System.Drawing.Size(100, 20);
-			this.tb_UpdatedAt.TabIndex = 21;
+			this.tb_UpdatedAt.TabIndex = 10;
+			this.tb_UpdatedAt.Text = "00/00/0000";
 			// 
 			// lb_UpdatedAt
 			// 
 			this.lb_UpdatedAt.AutoSize = true;
-			this.lb_UpdatedAt.Location = new System.Drawing.Point(227, 177);
+			this.lb_UpdatedAt.Location = new System.Drawing.Point(121, 177);
 			this.lb_UpdatedAt.Name = "lb_UpdatedAt";
 			this.lb_UpdatedAt.Size = new System.Drawing.Size(78, 13);
 			this.lb_UpdatedAt.TabIndex = 20;
@@ -266,11 +259,11 @@
 			this.tc_Product.Name = "tc_Product";
 			this.tc_Product.SelectedIndex = 0;
 			this.tc_Product.Size = new System.Drawing.Size(381, 263);
-			this.tc_Product.TabIndex = 26;
+			this.tc_Product.TabIndex = 1;
 			// 
 			// tp_Product
 			// 
-			this.tp_Product.Controls.Add(this.button2);
+			this.tp_Product.Controls.Add(this.btn_Search);
 			this.tp_Product.Controls.Add(this.lb_Weight);
 			this.tp_Product.Controls.Add(this.tb_Weight);
 			this.tp_Product.Controls.Add(this.lb_Color);
@@ -281,9 +274,7 @@
 			this.tp_Product.Controls.Add(this.lb_ID);
 			this.tp_Product.Controls.Add(this.lb_Description);
 			this.tp_Product.Controls.Add(this.tb_Description);
-			this.tp_Product.Controls.Add(this.lb_Stock);
 			this.tp_Product.Controls.Add(this.tb_UpdatedAt);
-			this.tp_Product.Controls.Add(this.tb_Stock);
 			this.tp_Product.Controls.Add(this.lb_UpdatedAt);
 			this.tp_Product.Controls.Add(this.lb_BarCode);
 			this.tp_Product.Controls.Add(this.tb_CreatedAt);
@@ -301,19 +292,20 @@
 			this.tp_Product.Text = "Produto";
 			this.tp_Product.UseVisualStyleBackColor = true;
 			// 
-			// button2
+			// btn_Search
 			// 
-			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button2.FlatAppearance.BorderSize = 0;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button2.Image = global::Rock_Solid.Properties.Resources.Search_Button;
-			this.button2.Location = new System.Drawing.Point(331, 32);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(18, 20);
-			this.button2.TabIndex = 36;
-			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.button2.UseVisualStyleBackColor = true;
+			this.btn_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btn_Search.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_Search.FlatAppearance.BorderSize = 0;
+			this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_Search.Image = global::Rock_Solid.Properties.Resources.Search_Button;
+			this.btn_Search.Location = new System.Drawing.Point(331, 32);
+			this.btn_Search.Name = "btn_Search";
+			this.btn_Search.Size = new System.Drawing.Size(18, 20);
+			this.btn_Search.TabIndex = 2;
+			this.btn_Search.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.btn_Search.UseVisualStyleBackColor = true;
+			this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
 			// 
 			// lb_Weight
 			// 
@@ -329,7 +321,8 @@
 			this.tb_Weight.Location = new System.Drawing.Point(230, 154);
 			this.tb_Weight.Name = "tb_Weight";
 			this.tb_Weight.Size = new System.Drawing.Size(100, 20);
-			this.tb_Weight.TabIndex = 27;
+			this.tb_Weight.TabIndex = 8;
+			this.tb_Weight.Text = "0";
 			// 
 			// lb_Color
 			// 
@@ -345,7 +338,7 @@
 			this.tb_Color.Location = new System.Drawing.Point(124, 154);
 			this.tb_Color.Name = "tb_Color";
 			this.tb_Color.Size = new System.Drawing.Size(100, 20);
-			this.tb_Color.TabIndex = 25;
+			this.tb_Color.TabIndex = 7;
 			// 
 			// lb_Size
 			// 
@@ -361,10 +354,12 @@
 			this.tb_Size.Location = new System.Drawing.Point(18, 154);
 			this.tb_Size.Name = "tb_Size";
 			this.tb_Size.Size = new System.Drawing.Size(100, 20);
-			this.tb_Size.TabIndex = 23;
+			this.tb_Size.TabIndex = 6;
 			// 
 			// tb_Price
 			// 
+			this.tb_Price.Controls.Add(this.lb_Stock);
+			this.tb_Price.Controls.Add(this.tb_Stock);
 			this.tb_Price.Controls.Add(this.button1);
 			this.tb_Price.Controls.Add(this.pb_Product);
 			this.tb_Price.Controls.Add(this.tb_LastPurchase);
@@ -386,6 +381,22 @@
 			this.tb_Price.TabIndex = 1;
 			this.tb_Price.Text = "Preço";
 			this.tb_Price.UseVisualStyleBackColor = true;
+			// 
+			// lb_Stock
+			// 
+			this.lb_Stock.AutoSize = true;
+			this.lb_Stock.Location = new System.Drawing.Point(22, 51);
+			this.lb_Stock.Name = "lb_Stock";
+			this.lb_Stock.Size = new System.Drawing.Size(46, 13);
+			this.lb_Stock.TabIndex = 36;
+			this.lb_Stock.Text = "Estoque";
+			// 
+			// tb_Stock
+			// 
+			this.tb_Stock.Location = new System.Drawing.Point(25, 68);
+			this.tb_Stock.Name = "tb_Stock";
+			this.tb_Stock.Size = new System.Drawing.Size(100, 20);
+			this.tb_Stock.TabIndex = 3;
 			// 
 			// button1
 			// 
@@ -412,15 +423,17 @@
 			// 
 			// tb_LastPurchase
 			// 
-			this.tb_LastPurchase.Location = new System.Drawing.Point(25, 68);
+			this.tb_LastPurchase.Location = new System.Drawing.Point(131, 68);
 			this.tb_LastPurchase.Name = "tb_LastPurchase";
+			this.tb_LastPurchase.ReadOnly = true;
 			this.tb_LastPurchase.Size = new System.Drawing.Size(100, 20);
-			this.tb_LastPurchase.TabIndex = 31;
+			this.tb_LastPurchase.TabIndex = 4;
+			this.tb_LastPurchase.Text = "00/00/0000";
 			// 
 			// lb_LastPurchase
 			// 
 			this.lb_LastPurchase.AutoSize = true;
-			this.lb_LastPurchase.Location = new System.Drawing.Point(22, 51);
+			this.lb_LastPurchase.Location = new System.Drawing.Point(128, 51);
 			this.lb_LastPurchase.Name = "lb_LastPurchase";
 			this.lb_LastPurchase.Size = new System.Drawing.Size(75, 13);
 			this.lb_LastPurchase.TabIndex = 30;
@@ -431,23 +444,24 @@
 			this.tb_ProviderID.Location = new System.Drawing.Point(25, 108);
 			this.tb_ProviderID.Name = "tb_ProviderID";
 			this.tb_ProviderID.Size = new System.Drawing.Size(72, 20);
-			this.tb_ProviderID.TabIndex = 29;
+			this.tb_ProviderID.TabIndex = 5;
+			this.tb_ProviderID.Text = "0";
 			// 
 			// tb_ProviderName
 			// 
 			this.tb_ProviderName.Location = new System.Drawing.Point(103, 108);
 			this.tb_ProviderName.Name = "tb_ProviderName";
 			this.tb_ProviderName.Size = new System.Drawing.Size(210, 20);
-			this.tb_ProviderName.TabIndex = 27;
+			this.tb_ProviderName.TabIndex = 6;
 			// 
 			// lb_ProviderID
 			// 
 			this.lb_ProviderID.AutoSize = true;
 			this.lb_ProviderID.Location = new System.Drawing.Point(22, 91);
 			this.lb_ProviderID.Name = "lb_ProviderID";
-			this.lb_ProviderID.Size = new System.Drawing.Size(18, 13);
+			this.lb_ProviderID.Size = new System.Drawing.Size(75, 13);
 			this.lb_ProviderID.TabIndex = 28;
-			this.lb_ProviderID.Text = "ID";
+			this.lb_ProviderID.Text = "ID Fornecedor";
 			// 
 			// lb_ProviderName
 			// 
@@ -475,36 +489,40 @@
 			this.btn_Delete.Location = new System.Drawing.Point(97, 0);
 			this.btn_Delete.Name = "btn_Delete";
 			this.btn_Delete.Size = new System.Drawing.Size(75, 24);
-			this.btn_Delete.TabIndex = 18;
+			this.btn_Delete.TabIndex = 1;
 			this.btn_Delete.Text = "Excluir";
 			this.btn_Delete.UseVisualStyleBackColor = true;
+			this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
 			// 
 			// btn_Close
 			// 
 			this.btn_Close.Location = new System.Drawing.Point(314, 0);
 			this.btn_Close.Name = "btn_Close";
 			this.btn_Close.Size = new System.Drawing.Size(75, 24);
-			this.btn_Close.TabIndex = 16;
+			this.btn_Close.TabIndex = 3;
 			this.btn_Close.Text = "Fechar";
 			this.btn_Close.UseVisualStyleBackColor = true;
+			this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
 			// 
 			// btn_Save
 			// 
 			this.btn_Save.Location = new System.Drawing.Point(233, 0);
 			this.btn_Save.Name = "btn_Save";
 			this.btn_Save.Size = new System.Drawing.Size(75, 24);
-			this.btn_Save.TabIndex = 15;
+			this.btn_Save.TabIndex = 0;
 			this.btn_Save.Text = "Salvar";
 			this.btn_Save.UseVisualStyleBackColor = true;
+			this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
 			// 
 			// btn_New
 			// 
 			this.btn_New.Location = new System.Drawing.Point(16, 0);
 			this.btn_New.Name = "btn_New";
 			this.btn_New.Size = new System.Drawing.Size(75, 24);
-			this.btn_New.TabIndex = 17;
+			this.btn_New.TabIndex = 2;
 			this.btn_New.Text = "Novo";
 			this.btn_New.UseVisualStyleBackColor = true;
+			this.btn_New.Click += new System.EventHandler(this.btn_New_Click);
 			// 
 			// frm_Product
 			// 
@@ -514,11 +532,14 @@
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.tc_Product);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.KeyPreview = true;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "frm_Product";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Cadastro de Produtos";
+			this.Load += new System.EventHandler(this.frm_Product_Load);
+			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frm_Product_KeyPress);
 			this.tc_Product.ResumeLayout(false);
 			this.tp_Product.ResumeLayout(false);
 			this.tp_Product.PerformLayout();
@@ -533,49 +554,49 @@
 		#endregion
 
 		private System.Windows.Forms.Label lb_ID;
-		private System.Windows.Forms.TextBox tb_ID;
-		private System.Windows.Forms.TextBox tb_Description;
 		private System.Windows.Forms.Label lb_Description;
-		private System.Windows.Forms.TextBox tb_Purchase;
 		private System.Windows.Forms.Label lb_Purchase;
-		private System.Windows.Forms.TextBox tb_MarkUp;
 		private System.Windows.Forms.Label lb_MarkUp;
-		private System.Windows.Forms.TextBox tb_Sell;
 		private System.Windows.Forms.Label lb_Sell;
-		private System.Windows.Forms.TextBox tb_Stock;
-		private System.Windows.Forms.Label lb_Stock;
-		private System.Windows.Forms.TextBox tb_BarCode;
 		private System.Windows.Forms.Label lb_BarCode;
-		private System.Windows.Forms.TextBox tb_Type;
 		private System.Windows.Forms.Label lb_Type;
-		private System.Windows.Forms.TextBox tb_Name;
 		private System.Windows.Forms.Label lb_Name;
-		private System.Windows.Forms.TextBox tb_CreatedAt;
 		private System.Windows.Forms.Label lb_CreatedAt;
-		private System.Windows.Forms.TextBox tb_UpdatedAt;
 		private System.Windows.Forms.Label lb_UpdatedAt;
-		private System.Windows.Forms.TabControl tc_Product;
-		private System.Windows.Forms.TabPage tp_Product;
-		private System.Windows.Forms.TabPage tb_Price;
-		private System.Windows.Forms.TextBox tb_LastPurchase;
 		private System.Windows.Forms.Label lb_LastPurchase;
-		private System.Windows.Forms.TextBox tb_ProviderID;
-		private System.Windows.Forms.TextBox tb_ProviderName;
 		private System.Windows.Forms.Label lb_ProviderID;
 		private System.Windows.Forms.Label lb_ProviderName;
 		private System.Windows.Forms.Label lb_Weight;
-		private System.Windows.Forms.TextBox tb_Weight;
 		private System.Windows.Forms.Label lb_Color;
-		private System.Windows.Forms.TextBox tb_Color;
 		private System.Windows.Forms.Label lb_Size;
-		private System.Windows.Forms.TextBox tb_Size;
 		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Button btn_Delete;
-		private System.Windows.Forms.Button btn_Close;
-		private System.Windows.Forms.Button btn_Save;
-		private System.Windows.Forms.Button btn_New;
-		private System.Windows.Forms.PictureBox pb_Product;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button btn_Search;
+		public System.Windows.Forms.TextBox tb_ID;
+		public System.Windows.Forms.TextBox tb_Description;
+		public System.Windows.Forms.TextBox tb_Purchase;
+		public System.Windows.Forms.TextBox tb_MarkUp;
+		public System.Windows.Forms.TextBox tb_Sell;
+		public System.Windows.Forms.TextBox tb_BarCode;
+		public System.Windows.Forms.TextBox tb_Type;
+		public System.Windows.Forms.TextBox tb_Name;
+		public System.Windows.Forms.TextBox tb_CreatedAt;
+		public System.Windows.Forms.TextBox tb_UpdatedAt;
+		public System.Windows.Forms.TabControl tc_Product;
+		public System.Windows.Forms.TabPage tp_Product;
+		public System.Windows.Forms.TabPage tb_Price;
+		public System.Windows.Forms.TextBox tb_LastPurchase;
+		public System.Windows.Forms.TextBox tb_ProviderID;
+		public System.Windows.Forms.TextBox tb_ProviderName;
+		public System.Windows.Forms.TextBox tb_Weight;
+		public System.Windows.Forms.TextBox tb_Color;
+		public System.Windows.Forms.TextBox tb_Size;
+		public System.Windows.Forms.Button btn_Delete;
+		public System.Windows.Forms.Button btn_Close;
+		public System.Windows.Forms.Button btn_Save;
+		public System.Windows.Forms.Button btn_New;
+		public System.Windows.Forms.PictureBox pb_Product;
+		private System.Windows.Forms.Label lb_Stock;
+		public System.Windows.Forms.TextBox tb_Stock;
 	}
 }

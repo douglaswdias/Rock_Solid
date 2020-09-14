@@ -8,12 +8,11 @@ namespace Rock_Solid
 {
 	class User
 	{
-		public Int32 USER_ID;
-		public string USER_NAME;
-		public string USER_USERNAME;
-		public string USER_PASSWORD;
-		public string USER_STATUS;
-		public Int32 USER_LEVEL;
-
+		public static Int32 USER_ID = 0;
+		public static string USER_NAME = "";
+		public static string USER_USERNAME = "";
+		public static string USER_PASSWORD = "";
+		public static string USER_STATUS = "Ativo";
+		public static Int32 USER_LEVEL = 0;
 	}
 }

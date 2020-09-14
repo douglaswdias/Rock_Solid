@@ -38,12 +38,12 @@ namespace Rock_Solid
                 DataTable dt = new DataTable();
                 string vId = dgv.SelectedRows[0].Cells[0].Value.ToString();
                 dt = DataBase.GetUserList(vId);
-                Global.userID = Convert.ToInt32(dt.Rows[0].Field<Int64>("USER_ID"));
-                Global.userName = dt.Rows[0].Field<string>("USER_NAME").ToString();
-                Global.userUsername = dt.Rows[0].Field<string>("USER_USERNAME").ToString();
-                Global.userPassword = dt.Rows[0].Field<string>("USER_PASSWORD").ToString();
-                Global.userStatus = dt.Rows[0].Field<string>("USER_STATUS").ToString();
-                Global.userLevel = Convert.ToInt32(dt.Rows[0].Field<Int64>("USER_LEVEL"));
+                User.USER_ID = Convert.ToInt32(dt.Rows[0].Field<Int64>("USER_ID"));
+                User.USER_NAME = dt.Rows[0].Field<string>("USER_NAME").ToString();
+                User.USER_USERNAME = dt.Rows[0].Field<string>("USER_USERNAME").ToString();
+                User.USER_PASSWORD = dt.Rows[0].Field<string>("USER_PASSWORD").ToString();
+                User.USER_STATUS = dt.Rows[0].Field<string>("USER_STATUS").ToString();
+                User.USER_LEVEL = Convert.ToInt32(dt.Rows[0].Field<Int64>("USER_LEVEL"));
                 this.dgv_UserList.RowsDefaultCellStyle.BackColor = Color.WhiteSmoke;
                 this.dgv_UserList.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
             }

@@ -19,12 +19,12 @@ namespace Rock_Solid
 
         public static void ClearGlobalUser()
         {
-            Global.userID = 0;
-            Global.userName = "";
-            Global.userUsername = "";
-            Global.userPassword = "";
-            Global.userStatus = "Ativo";
-            Global.userLevel = 0;
+            User.USER_ID = 0;
+            User.USER_NAME = "";
+            User.USER_USERNAME = "";
+            User.USER_PASSWORD = "";
+            User.USER_STATUS = "Ativo";
+            User.USER_LEVEL = 0;
         }
 
         public void ClearTB()
@@ -51,11 +51,11 @@ namespace Rock_Solid
         private void btn_Save_Click(object sender, EventArgs e)
         {
             User user = new User();
-            user.USER_NAME = tb_Name.Text;
-            user.USER_USERNAME = tb_Username.Text;
-            user.USER_PASSWORD = tb_Password.Text;
-            user.USER_STATUS = cb_Status.Text;
-            user.USER_LEVEL = Convert.ToInt32(Math.Round(tb_Level.Value, 0));
+            User.USER_NAME = tb_Name.Text;
+            User.USER_USERNAME = tb_Username.Text;
+            User.USER_PASSWORD = tb_Password.Text;
+            User.USER_STATUS = cb_Status.Text;
+            User.USER_LEVEL = Convert.ToInt32(Math.Round(tb_Level.Value, 0));
 
             DataBase.NewUser(user);
             ClearGlobalUser();
@@ -64,7 +64,7 @@ namespace Rock_Solid
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            if (Global.userID != 0)
+            if (User.USER_ID != 0)
             {
                 DialogResult res = MessageBox.Show("Confirma Exclusão do Usuário?", "EXCLUIR", MessageBoxButtons.YesNo);
                 if(res == DialogResult.Yes)
@@ -112,12 +112,12 @@ namespace Rock_Solid
 
         private void tb_ID_Enter(object sender, EventArgs e)
         {
-            tb_ID.Text = Global.userID.ToString();
-            tb_Name.Text = Global.userName.ToString();
-            tb_Username.Text = Global.userUsername.ToString();
-            tb_Password.Text = Global.userPassword.ToString();
-            cb_Status.Text = Global.userStatus.ToString();
-            tb_Level.Text = Global.userLevel.ToString();
+            tb_ID.Text = User.USER_ID.ToString();
+            tb_Name.Text = User.USER_NAME.ToString();
+            tb_Username.Text = User.USER_USERNAME.ToString();
+            tb_Password.Text = User.USER_PASSWORD.ToString();
+            cb_Status.Text = User.USER_STATUS.ToString();
+            tb_Level.Text = User.USER_LEVEL.ToString();
         }
 
         private void tb_ID_KeyDown(object sender, KeyEventArgs e)
@@ -133,17 +133,17 @@ namespace Rock_Solid
                     tb_Password.Text = dt.Rows[0].Field<string>("USER_PASSWORD").ToString();
                     cb_Status.Text = dt.Rows[0].Field<string>("USER_STATUS").ToString();
                     tb_Level.Text = dt.Rows[0].Field<Int64>("USER_LEVEL").ToString();
-                    Global.userID = Convert.ToInt32(tb_ID.Text);
-                    Global.userName = tb_Name.Text;
-                    Global.userUsername = tb_Username.Text;
-                    Global.userPassword = tb_Password.Text;
-                    Global.userStatus = cb_Status.Text;
-                    Global.userLevel = Convert.ToInt32(tb_Level.Text);
+                    User.USER_ID = Convert.ToInt32(tb_ID.Text);
+                    User.USER_NAME = tb_Name.Text;
+                    User.USER_USERNAME = tb_Username.Text;
+                    User.USER_PASSWORD = tb_Password.Text;
+                    User.USER_STATUS = cb_Status.Text;
+                    User.USER_LEVEL = Convert.ToInt32(tb_Level.Text);
                     tb_Name.Focus();
                 }
                 catch(Exception ex)
                 {
-                    if(Global.userID != 0)
+                    if(User.USER_ID != 0)
                     {
                         MessageBox.Show("Usuário não Cadastrado");
                         ClearGlobalUser();
