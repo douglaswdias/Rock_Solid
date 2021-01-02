@@ -105,5 +105,11 @@ namespace Rock_Solid
             frm_SalesOrder sales = new frm_SalesOrder();
             sales.ShowDialog();
         }
-    }
+
+		private void tsmi_Equipment_Click(object sender, EventArgs e)
+		{
+            frm_Equipment equipment = new frm_Equipment();
+            equipment.ShowDialog();
+		}
+	}
 }

@@ -297,5 +297,11 @@ namespace Rock_Solid
 				e.Handled = true; //Retira o som do windos na tecla
 			}
 		}
+
+		private void btn_Workout_Click(object sender, EventArgs e)
+		{
+			frm_WorkOut workout = new frm_WorkOut();
+			workout.ShowDialog();
+		}
 	}
 }

@@ -20,10 +20,10 @@ namespace Rock_Solid
 		public static double PRODUCT_PURCHASEPRICE = 0;
 		public static double PRODUCT_MARKUPPRICE = 0;
 		public static double PRODUCT_SELLINGPRICE = 0;
-		public static DateTime PRODUCT_LASTPURCHASE = new DateTime(0000, 0, 0);
+		public static DateTime PRODUCT_LASTPURCHASE;
 		public static Int32 PRODUCT_PROVIDERID = 0;
 		public static string PRODUCT_IMAGE = "";
-		public static DateTime PRODUCT_CREATEDAT = new DateTime(0000, 0, 0);
-		public static DateTime PRODUCT_UPDATEDAT = new DateTime(0000, 0, 0);
+		public static DateTime PRODUCT_CREATEDAT;
+		public static DateTime PRODUCT_UPDATEDAT;
 	}
 }

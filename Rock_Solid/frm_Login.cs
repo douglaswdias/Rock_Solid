@@ -37,7 +37,7 @@ namespace Rock_Solid
 				return;
 			}
 
-			string sql = "SELECT * FROM USER WHERE USER_USERNAME = '"+username+"'AND USER_PASSWORD = '"+password+"'";
+			string sql = "SELECT * FROM USER WHERE USER_USERNAME = '" + username + "'AND USER_PASSWORD = '" + password + "'";
 			dt = DataBase.CheckIn(sql);
 			if(dt.Rows.Count == 1)
 			{

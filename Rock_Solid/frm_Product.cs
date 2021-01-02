@@ -212,7 +212,7 @@ namespace Rock_Solid
                 {
                     if (Client.CLIENT_ID != 0)
                     {
-                        MessageBox.Show("Usuário não Cadastrado");
+                        MessageBox.Show("Produto não Cadastrado");
                         ClearTB();
                         //ClearClient();
                         tb_Name.Focus();

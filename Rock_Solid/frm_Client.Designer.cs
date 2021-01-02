@@ -67,6 +67,7 @@
 			this.lb_RG = new System.Windows.Forms.Label();
 			this.pb_User = new System.Windows.Forms.PictureBox();
 			this.button1 = new System.Windows.Forms.Button();
+			this.btn_Workout = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pb_User)).BeginInit();
 			this.SuspendLayout();
@@ -302,7 +303,7 @@
 			this.panel1.Controls.Add(this.btn_Save);
 			this.panel1.Controls.Add(this.btn_New);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.panel1.Location = new System.Drawing.Point(0, 453);
+			this.panel1.Location = new System.Drawing.Point(0, 483);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(476, 28);
 			this.panel1.TabIndex = 33;
@@ -456,11 +457,22 @@
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.btn_Search_Click);
 			// 
+			// btn_Workout
+			// 
+			this.btn_Workout.Location = new System.Drawing.Point(10, 448);
+			this.btn_Workout.Name = "btn_Workout";
+			this.btn_Workout.Size = new System.Drawing.Size(450, 29);
+			this.btn_Workout.TabIndex = 37;
+			this.btn_Workout.Text = "Treino";
+			this.btn_Workout.UseVisualStyleBackColor = true;
+			this.btn_Workout.Click += new System.EventHandler(this.btn_Workout_Click);
+			// 
 			// frm_Client
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(476, 481);
+			this.ClientSize = new System.Drawing.Size(476, 511);
+			this.Controls.Add(this.btn_Workout);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.tb_RG);
 			this.Controls.Add(this.lb_RG);
@@ -551,5 +563,6 @@
 		public System.Windows.Forms.MaskedTextBox tb_RG;
 		private System.Windows.Forms.Label lb_RG;
 		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button btn_Workout;
 	}
 }
