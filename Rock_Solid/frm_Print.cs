@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Rock_Solid
 {
-	public partial class frm_WorkOut : Form
+	public partial class frm_Print : Form
 	{
-		public frm_WorkOut()
+		public frm_Print()
 		{
 			InitializeComponent();
-		}
-
-		private void btn_Close_Click(object sender, EventArgs e)
-		{
-			Close();
 		}
 	}
 }
