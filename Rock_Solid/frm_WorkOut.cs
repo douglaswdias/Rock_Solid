@@ -21,5 +21,11 @@ namespace Rock_Solid
 		{
 			Close();
 		}
+
+		private void btn_Print_Click(object sender, EventArgs e)
+		{
+			frm_Print print = new frm_Print();
+			print.ShowDialog();
+		}
 	}
 }

@@ -35,6 +35,7 @@
 			this.lb_User = new System.Windows.Forms.Label();
 			this.lb_AccessText = new System.Windows.Forms.Label();
 			this.lb_Access = new System.Windows.Forms.Label();
+			this.pb_Login = new System.Windows.Forms.PictureBox();
 			this.ms_Initial = new System.Windows.Forms.MenuStrip();
 			this.tsmi_Register = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_User = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,10 +55,9 @@
 			this.tsmi_LogIn = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_UserChange = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_LogOff = new System.Windows.Forms.ToolStripMenuItem();
-			this.pb_Login = new System.Windows.Forms.PictureBox();
 			this.panel1.SuspendLayout();
-			this.ms_Initial.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pb_Login)).BeginInit();
+			this.ms_Initial.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -135,6 +135,16 @@
 			this.lb_Access.TabIndex = 1;
 			this.lb_Access.Text = "Acesso:";
 			// 
+			// pb_Login
+			// 
+			this.pb_Login.Image = global::Rock_Solid.Properties.Resources.Red_Button;
+			this.pb_Login.Location = new System.Drawing.Point(12, 4);
+			this.pb_Login.Name = "pb_Login";
+			this.pb_Login.Size = new System.Drawing.Size(27, 22);
+			this.pb_Login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pb_Login.TabIndex = 0;
+			this.pb_Login.TabStop = false;
+			// 
 			// ms_Initial
 			// 
 			this.ms_Initial.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -164,28 +174,28 @@
 			// tsmi_User
 			// 
 			this.tsmi_User.Name = "tsmi_User";
-			this.tsmi_User.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_User.Size = new System.Drawing.Size(145, 22);
 			this.tsmi_User.Text = "Usuário";
 			this.tsmi_User.Click += new System.EventHandler(this.tsmi_User_Click);
 			// 
 			// tsmi_Client
 			// 
 			this.tsmi_Client.Name = "tsmi_Client";
-			this.tsmi_Client.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_Client.Size = new System.Drawing.Size(145, 22);
 			this.tsmi_Client.Text = "Cliente";
 			this.tsmi_Client.Click += new System.EventHandler(this.tsmi_Client_Click);
 			// 
 			// tsmi_Product
 			// 
 			this.tsmi_Product.Name = "tsmi_Product";
-			this.tsmi_Product.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_Product.Size = new System.Drawing.Size(145, 22);
 			this.tsmi_Product.Text = "Produto";
 			this.tsmi_Product.Click += new System.EventHandler(this.tsmi_Product_Click);
 			// 
 			// tsmi_Equipment
 			// 
 			this.tsmi_Equipment.Name = "tsmi_Equipment";
-			this.tsmi_Equipment.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_Equipment.Size = new System.Drawing.Size(145, 22);
 			this.tsmi_Equipment.Text = "Equipamento";
 			this.tsmi_Equipment.Click += new System.EventHandler(this.tsmi_Equipment_Click);
 			// 
@@ -285,16 +295,6 @@
 			this.tsmi_LogOff.Text = "Logoff";
 			this.tsmi_LogOff.Click += new System.EventHandler(this.tsmi_LogOff_Click);
 			// 
-			// pb_Login
-			// 
-			this.pb_Login.Image = global::Rock_Solid.Properties.Resources.Red_Button;
-			this.pb_Login.Location = new System.Drawing.Point(12, 4);
-			this.pb_Login.Name = "pb_Login";
-			this.pb_Login.Size = new System.Drawing.Size(27, 22);
-			this.pb_Login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pb_Login.TabIndex = 0;
-			this.pb_Login.TabStop = false;
-			// 
 			// frm_Initial
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,9 +310,9 @@
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pb_Login)).EndInit();
 			this.ms_Initial.ResumeLayout(false);
 			this.ms_Initial.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pb_Login)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

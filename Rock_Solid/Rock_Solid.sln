@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rock_Solid", "Rock_Solid.csproj", "{B3F71617-9E84-4875-BFC7-C3D3F19576DD}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Rock Solid", "Setup\Rock Solid\Rock Solid.vdproj", "{FC57037B-5875-45E4-B374-403BC8F05EED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{B3F71617-9E84-4875-BFC7-C3D3F19576DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3F71617-9E84-4875-BFC7-C3D3F19576DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3F71617-9E84-4875-BFC7-C3D3F19576DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC57037B-5875-45E4-B374-403BC8F05EED}.Debug|Any CPU.ActiveCfg = Debug
+		{FC57037B-5875-45E4-B374-403BC8F05EED}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

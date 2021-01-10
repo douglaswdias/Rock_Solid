@@ -16,5 +16,10 @@ namespace Rock_Solid
 		{
 			InitializeComponent();
 		}
+
+		private void btn_Close_Click(object sender, EventArgs e)
+		{
+			Close();
+		}
 	}
 }
