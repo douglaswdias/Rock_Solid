@@ -18,7 +18,7 @@ namespace Rock_Solid
 			InitializeComponent();
 		}
 
-		private void dgv_ClientList_SelectionChanged(object sender, EventArgs e)
+		public void dgv_ClientList_SelectionChanged(object sender, EventArgs e)
 		{
 			DataGridView dgv = (DataGridView)sender;
             int countRows = dgv.SelectedRows.Count;
@@ -37,6 +37,7 @@ namespace Rock_Solid
 				Client.CLIENT_STATE = dt.Rows[0].Field<string>("CLIENT_STATE").ToString();
 				Client.CLIENT_RG = dt.Rows[0].Field<string>("CLIENT_RG").ToString();
 				Client.CLIENT_CPF = dt.Rows[0].Field<string>("CLIENT_CPF").ToString();
+				Client.CLIENT_LEGAL = dt.Rows[0].Field<bool>("CLIENT_LEGAL");
 				Client.CLIENT_EMAIL = dt.Rows[0].Field<string>("CLIENT_EMAIL").ToString();
 				Client.CLIENT_PHONE = dt.Rows[0].Field<string>("CLIENT_PHONE").ToString();
 				Client.CLIENT_CEL = dt.Rows[0].Field<string>("CLIENT_CEL").ToString();

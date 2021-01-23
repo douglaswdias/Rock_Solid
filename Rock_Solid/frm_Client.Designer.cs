@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Client));
 			this.tb_ID = new System.Windows.Forms.TextBox();
 			this.lb_ID = new System.Windows.Forms.Label();
 			this.lb_Name = new System.Windows.Forms.Label();
@@ -41,7 +42,7 @@
 			this.lb_State = new System.Windows.Forms.Label();
 			this.lb_CPF = new System.Windows.Forms.Label();
 			this.tb_CPF = new System.Windows.Forms.MaskedTextBox();
-			this.rb_PhysicalPerson = new System.Windows.Forms.RadioButton();
+			this.rb_Individual = new System.Windows.Forms.RadioButton();
 			this.rb_LegalPerson = new System.Windows.Forms.RadioButton();
 			this.tb_City = new System.Windows.Forms.TextBox();
 			this.lb_City = new System.Windows.Forms.Label();
@@ -59,8 +60,6 @@
 			this.lb_PostCode = new System.Windows.Forms.Label();
 			this.tb_Email = new System.Windows.Forms.TextBox();
 			this.lb_Email = new System.Windows.Forms.Label();
-			this.clb_Phone = new System.Windows.Forms.CheckedListBox();
-			this.clb_Cel = new System.Windows.Forms.CheckedListBox();
 			this.btn_ProfilePicture = new System.Windows.Forms.Button();
 			this.ofd_Client = new System.Windows.Forms.OpenFileDialog();
 			this.tb_RG = new System.Windows.Forms.MaskedTextBox();
@@ -68,6 +67,8 @@
 			this.pb_User = new System.Windows.Forms.PictureBox();
 			this.button1 = new System.Windows.Forms.Button();
 			this.btn_Workout = new System.Windows.Forms.Button();
+			this.lbx_Phone = new System.Windows.Forms.ListBox();
+			this.lbx_Cel = new System.Windows.Forms.ListBox();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pb_User)).BeginInit();
 			this.SuspendLayout();
@@ -169,7 +170,7 @@
 			// lb_CPF
 			// 
 			this.lb_CPF.AutoSize = true;
-			this.lb_CPF.Location = new System.Drawing.Point(120, 184);
+			this.lb_CPF.Location = new System.Drawing.Point(301, 188);
 			this.lb_CPF.Name = "lb_CPF";
 			this.lb_CPF.Size = new System.Drawing.Size(27, 13);
 			this.lb_CPF.TabIndex = 10;
@@ -177,30 +178,30 @@
 			// 
 			// tb_CPF
 			// 
-			this.tb_CPF.Location = new System.Drawing.Point(123, 201);
-			this.tb_CPF.Mask = "000.000.000.00";
+			this.tb_CPF.Location = new System.Drawing.Point(304, 205);
+			this.tb_CPF.Mask = "000.000.000-00";
 			this.tb_CPF.Name = "tb_CPF";
 			this.tb_CPF.Size = new System.Drawing.Size(88, 20);
 			this.tb_CPF.TabIndex = 10;
 			this.tb_CPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
 			// 
-			// rb_PhysicalPerson
+			// rb_Individual
 			// 
-			this.rb_PhysicalPerson.AutoSize = true;
-			this.rb_PhysicalPerson.Checked = true;
-			this.rb_PhysicalPerson.Location = new System.Drawing.Point(246, 184);
-			this.rb_PhysicalPerson.Name = "rb_PhysicalPerson";
-			this.rb_PhysicalPerson.Size = new System.Drawing.Size(92, 17);
-			this.rb_PhysicalPerson.TabIndex = 20;
-			this.rb_PhysicalPerson.TabStop = true;
-			this.rb_PhysicalPerson.Text = "Pessoa Física";
-			this.rb_PhysicalPerson.UseVisualStyleBackColor = true;
-			this.rb_PhysicalPerson.Click += new System.EventHandler(this.rb_PhysicalPerson_Click);
+			this.rb_Individual.AutoSize = true;
+			this.rb_Individual.Checked = true;
+			this.rb_Individual.Location = new System.Drawing.Point(59, 188);
+			this.rb_Individual.Name = "rb_Individual";
+			this.rb_Individual.Size = new System.Drawing.Size(92, 17);
+			this.rb_Individual.TabIndex = 20;
+			this.rb_Individual.TabStop = true;
+			this.rb_Individual.Text = "Pessoa Física";
+			this.rb_Individual.UseVisualStyleBackColor = true;
+			this.rb_Individual.Click += new System.EventHandler(this.rb_Individual_Click);
 			// 
 			// rb_LegalPerson
 			// 
 			this.rb_LegalPerson.AutoSize = true;
-			this.rb_LegalPerson.Location = new System.Drawing.Point(246, 207);
+			this.rb_LegalPerson.Location = new System.Drawing.Point(59, 211);
 			this.rb_LegalPerson.Name = "rb_LegalPerson";
 			this.rb_LegalPerson.Size = new System.Drawing.Size(101, 17);
 			this.rb_LegalPerson.TabIndex = 21;
@@ -383,22 +384,6 @@
 			this.lb_Email.TabIndex = 11;
 			this.lb_Email.Text = "E-Mail";
 			// 
-			// clb_Phone
-			// 
-			this.clb_Phone.FormattingEnabled = true;
-			this.clb_Phone.Location = new System.Drawing.Point(10, 317);
-			this.clb_Phone.Name = "clb_Phone";
-			this.clb_Phone.Size = new System.Drawing.Size(100, 124);
-			this.clb_Phone.TabIndex = 31;
-			// 
-			// clb_Cel
-			// 
-			this.clb_Cel.FormattingEnabled = true;
-			this.clb_Cel.Location = new System.Drawing.Point(142, 317);
-			this.clb_Cel.Name = "clb_Cel";
-			this.clb_Cel.Size = new System.Drawing.Size(100, 124);
-			this.clb_Cel.TabIndex = 32;
-			// 
 			// btn_ProfilePicture
 			// 
 			this.btn_ProfilePicture.Location = new System.Drawing.Point(304, 244);
@@ -416,17 +401,17 @@
 			// 
 			// tb_RG
 			// 
-			this.tb_RG.Location = new System.Drawing.Point(10, 201);
+			this.tb_RG.Location = new System.Drawing.Point(191, 205);
 			this.tb_RG.Mask = "00.000.000-0";
 			this.tb_RG.Name = "tb_RG";
-			this.tb_RG.Size = new System.Drawing.Size(74, 20);
+			this.tb_RG.Size = new System.Drawing.Size(73, 20);
 			this.tb_RG.TabIndex = 9;
 			this.tb_RG.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
 			// 
 			// lb_RG
 			// 
 			this.lb_RG.AutoSize = true;
-			this.lb_RG.Location = new System.Drawing.Point(7, 184);
+			this.lb_RG.Location = new System.Drawing.Point(188, 188);
 			this.lb_RG.Name = "lb_RG";
 			this.lb_RG.Size = new System.Drawing.Size(23, 13);
 			this.lb_RG.TabIndex = 9;
@@ -434,7 +419,7 @@
 			// 
 			// pb_User
 			// 
-			this.pb_User.Image = global::Rock_Solid.Properties.Resources.Profile;
+			this.pb_User.Image = ((System.Drawing.Image)(resources.GetObject("pb_User.Image")));
 			this.pb_User.Location = new System.Drawing.Point(304, 274);
 			this.pb_User.Name = "pb_User";
 			this.pb_User.Size = new System.Drawing.Size(156, 167);
@@ -467,18 +452,34 @@
 			this.btn_Workout.UseVisualStyleBackColor = true;
 			this.btn_Workout.Click += new System.EventHandler(this.btn_Workout_Click);
 			// 
+			// lbx_Phone
+			// 
+			this.lbx_Phone.FormattingEnabled = true;
+			this.lbx_Phone.Location = new System.Drawing.Point(13, 322);
+			this.lbx_Phone.Name = "lbx_Phone";
+			this.lbx_Phone.Size = new System.Drawing.Size(97, 121);
+			this.lbx_Phone.TabIndex = 38;
+			// 
+			// lbx_Cel
+			// 
+			this.lbx_Cel.FormattingEnabled = true;
+			this.lbx_Cel.Location = new System.Drawing.Point(142, 322);
+			this.lbx_Cel.Name = "lbx_Cel";
+			this.lbx_Cel.Size = new System.Drawing.Size(97, 121);
+			this.lbx_Cel.TabIndex = 39;
+			// 
 			// frm_Client
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(476, 511);
+			this.Controls.Add(this.lbx_Cel);
+			this.Controls.Add(this.lbx_Phone);
 			this.Controls.Add(this.btn_Workout);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.tb_RG);
 			this.Controls.Add(this.lb_RG);
 			this.Controls.Add(this.btn_ProfilePicture);
-			this.Controls.Add(this.clb_Cel);
-			this.Controls.Add(this.clb_Phone);
 			this.Controls.Add(this.pb_User);
 			this.Controls.Add(this.tb_Email);
 			this.Controls.Add(this.lb_Email);
@@ -493,7 +494,7 @@
 			this.Controls.Add(this.tb_City);
 			this.Controls.Add(this.lb_City);
 			this.Controls.Add(this.rb_LegalPerson);
-			this.Controls.Add(this.rb_PhysicalPerson);
+			this.Controls.Add(this.rb_Individual);
 			this.Controls.Add(this.tb_CPF);
 			this.Controls.Add(this.lb_CPF);
 			this.Controls.Add(this.lb_State);
@@ -531,7 +532,7 @@
 		private System.Windows.Forms.Label lb_Neighborhood;
 		private System.Windows.Forms.Label lb_State;
 		private System.Windows.Forms.Label lb_CPF;
-		private System.Windows.Forms.RadioButton rb_PhysicalPerson;
+		private System.Windows.Forms.RadioButton rb_Individual;
 		private System.Windows.Forms.RadioButton rb_LegalPerson;
 		private System.Windows.Forms.Label lb_City;
 		private System.Windows.Forms.Label lb_Phone;
@@ -556,13 +557,13 @@
 		public System.Windows.Forms.MaskedTextBox tb_PostCode;
 		public System.Windows.Forms.TextBox tb_Email;
 		public System.Windows.Forms.PictureBox pb_User;
-		public System.Windows.Forms.CheckedListBox clb_Phone;
-		public System.Windows.Forms.CheckedListBox clb_Cel;
 		private System.Windows.Forms.Button btn_ProfilePicture;
 		private System.Windows.Forms.OpenFileDialog ofd_Client;
 		public System.Windows.Forms.MaskedTextBox tb_RG;
 		private System.Windows.Forms.Label lb_RG;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button btn_Workout;
+		private System.Windows.Forms.ListBox lbx_Phone;
+		private System.Windows.Forms.ListBox lbx_Cel;
 	}
 }

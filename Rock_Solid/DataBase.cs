@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,10 +21,7 @@ namespace Rock_Solid
 			return connection;
 		}
 
-
-
-		//Comandos de Usuário
-
+		#region Usuário
 		//Criação de novo usuário
 		public static void NewUser(User user)
 		{
@@ -141,7 +137,7 @@ namespace Rock_Solid
 			}
 		}
 
-		//Verifica se já existe o username já existe no banco de dados
+		//Verifica se o username já existe no banco de dados
 		public static bool UserTaken(User user)
 		{
 			bool res;
@@ -292,12 +288,8 @@ namespace Rock_Solid
 				throw ex;
 			}
 		}
-
-
-
-
-
-		//Comandos para Cliente
+		#endregion
+		# region Cliente
 		public static void NewClient(Client client)
 		{
 			if (Client.CLIENT_CPF == "")
@@ -314,9 +306,9 @@ namespace Rock_Solid
 					var cmd = vcon.CreateCommand();
 					cmd.CommandText = @"
 						INSERT INTO CLIENT 
-							(CLIENT_NAME, CLIENT_POSTCODE, CLIENT_ADDRESS, CLIENT_NUMBER, CLIENT_NEIGHBORHOOD, CLIENT_CITY, CLIENT_STATE, CLIENT_RG, CLIENT_CPF, CLIENT_EMAIL, CLIENT_PHONE, CLIENT_CEL, CLIENT_PROFILEIMGPATH) 
+							(CLIENT_NAME, CLIENT_POSTCODE, CLIENT_ADDRESS, CLIENT_NUMBER, CLIENT_NEIGHBORHOOD, CLIENT_CITY, CLIENT_STATE, CLIENT_RG, CLIENT_CPF, CLIENT_LEGAL, CLIENT_EMAIL, CLIENT_PHONE, CLIENT_CEL, CLIENT_PROFILEIMGPATH) 
 						VALUES 
-							(@NAME, @POSTCODE, @ADDRESS, @NUMBER, @NEIGHBORHOOD, @CITY, @STATE, @RG, @CPF, @EMAIL, @PHONE, @CEL, @PROFILEIMGPATH)
+							(@NAME, @POSTCODE, @ADDRESS, @NUMBER, @NEIGHBORHOOD, @CITY, @STATE, @RG, @CPF, @LEGAL, @EMAIL, @PHONE, @CEL, @PROFILEIMGPATH)
 					";
 
 					cmd.Parameters.AddWithValue("@NAME", Client.CLIENT_NAME);
@@ -328,6 +320,7 @@ namespace Rock_Solid
 					cmd.Parameters.AddWithValue("@STATE", Client.CLIENT_STATE);
 					cmd.Parameters.AddWithValue("@RG", Client.CLIENT_RG);
 					cmd.Parameters.AddWithValue("@CPF", Client.CLIENT_CPF);
+					cmd.Parameters.AddWithValue("@LEGAL", Client.CLIENT_LEGAL);
 					cmd.Parameters.AddWithValue("@EMAIL", Client.CLIENT_EMAIL);
 					cmd.Parameters.AddWithValue("@PHONE", Client.CLIENT_PHONE);
 					cmd.Parameters.AddWithValue("@CEL", Client.CLIENT_CEL);
@@ -338,7 +331,8 @@ namespace Rock_Solid
 				}
 				catch (Exception ex)
 				{
-					MessageBox.Show("Erro ao Criar Cliente");
+					//MessageBox.Show("Erro ao Criar Cliente");
+					throw ex;
 				}
 			}
 			else
@@ -359,6 +353,7 @@ namespace Rock_Solid
 							"CLIENT_STATE = '" + Client.CLIENT_STATE + "', " +
 							"CLIENT_RG = '" + Client.CLIENT_RG + "', " +
 							"CLIENT_CPF = '" + Client.CLIENT_CPF + "', " +
+							"CLIENT_LEGAL = '" + Client.CLIENT_LEGAL + "', " +
 							"CLIENT_EMAIL = '" + Client.CLIENT_EMAIL + "', " +
 							"CLIENT_PHONE = '" + Client.CLIENT_PHONE + "', " +
 							"CLIENT_CEL = '" + Client.CLIENT_CEL + "', " +
@@ -578,7 +573,8 @@ namespace Rock_Solid
 				throw ex;
 			}
 		}
-
+		#endregion
+		#region Produto
 		public static void NewProduct(Product product)
 		{
 			if (Product.PRODUCT_NAME == "" )
@@ -874,5 +870,6 @@ namespace Rock_Solid
 				throw ex;
 			}
 		}
+		#endregion
 	}
 }

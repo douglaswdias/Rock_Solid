@@ -221,6 +221,11 @@ namespace Rock_Solid
                 }
             }
         }
+
+		private void btn_ProfilePicture_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 
 }
