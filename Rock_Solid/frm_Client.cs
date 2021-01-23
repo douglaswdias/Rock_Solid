@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace Rock_Solid
 {
@@ -24,7 +23,8 @@ namespace Rock_Solid
 			cb_State.DropDownStyle = ComboBoxStyle.DropDownList;
 		}
 
-		public  void ClearTB()
+		#region Clear Buttons
+		public void ClearTB()
 		{
 			tb_ID.Clear();
 			tb_Name.Clear();
@@ -38,9 +38,9 @@ namespace Rock_Solid
 			tb_CPF.Clear();
 			tb_Email.Clear();
 			tb_Phone.Clear();
-			clb_Phone.Text = "";
+			lbx_Phone.Text = "";
 			tb_Cel.Clear();
-			clb_Cel.Text = "";
+			lbx_Cel.Text = "";
 			pb_User.ImageLocation = Global.profilePicturePath + "Default Profile.png";
 			tb_Name.Focus();
 		}
@@ -62,11 +62,17 @@ namespace Rock_Solid
 			Client.CLIENT_CEL = "";
 			Client.CLIENT_PROFILEIMGPATH = Global.profilePicturePath + "Default Profile.png";
 		}
+		#endregion
 
-		private void rb_PhysicalPerson_Click(object sender, EventArgs e)
+		private void rb_Individual_Click(object sender, EventArgs e)
 		{
-			tb_CPF.Clear();
-			tb_RG.Clear();
+			Individual();
+		}
+
+		private void Individual()
+		{
+			rb_Individual.Checked = true;
+			rb_LegalPerson.Checked = false;
 			tb_CPF.Size = new Size(88, 20);
 			lb_CPF.Text = "CFP";
 			tb_CPF.Mask = "000.000.000-00";
@@ -77,14 +83,20 @@ namespace Rock_Solid
 
 		private void rb_LegalPerson_Click(object sender, EventArgs e)
 		{
-			tb_CPF.Clear();
-			tb_RG.Clear();
+			Legal();
+		}
+
+		private void Legal()
+		{
+			rb_LegalPerson.Checked = true;
+			rb_Individual.Checked = false;
 			tb_CPF.Size = new Size(107, 20);
 			lb_CPF.Text = "CNPJ";
 			tb_CPF.Mask = "00.000.000/0000-00";
 			tb_RG.Size = new Size(88, 20);
 			lb_RG.Text = "IE";
 			tb_RG.Mask = "000.000.000.000";
+
 		}
 
 		private void btn_New_Click(object sender, EventArgs e)
@@ -113,11 +125,17 @@ namespace Rock_Solid
 				{
 					Directory.CreateDirectory(fileDestiny);
 				}
-				System.IO.File.Copy(fileOrigin, destiny, true);
+
+				if(File.Exists(pb_User.ImageLocation))
+				{
+					System.IO.File.Copy(pb_User.ImageLocation, destiny, true);
+				}
+				
 				if (File.Exists(destiny))
 				{
 					pb_User.ImageLocation = destiny;
 				}
+
 				else
 				{
 					if (MessageBox.Show("Erro ao Localizar Imagem, Deseja Continuar?", "ATENÇÃO", MessageBoxButtons.YesNo) == DialogResult.No)
@@ -138,6 +156,7 @@ namespace Rock_Solid
 			Client.CLIENT_RG = tb_RG.Text;
 			Client.CLIENT_CPF =tb_CPF.Text;
 			Client.CLIENT_EMAIL = tb_Email.Text;
+			Client.CLIENT_LEGAL = rb_LegalPerson.Checked;
 			Client.CLIENT_PHONE = tb_Phone.Text;
 			Client.CLIENT_CEL =tb_Cel.Text;
 			Client.CLIENT_PROFILEIMGPATH = destiny;
@@ -176,6 +195,7 @@ namespace Rock_Solid
 				MessageBox.Show("Nenhum Cliente Selecionado");
 			}
 			ClearTB();
+			ClearClient();
 		}
 
 		private void btn_Search_Click(object sender, EventArgs e)
@@ -217,6 +237,13 @@ namespace Rock_Solid
 
 		private void tb_ID_Enter(object sender, EventArgs e)
 		{
+			if (Client.CLIENT_LEGAL == false || tb_ID is null)
+			{
+				Individual();
+			}
+			else
+				Legal();
+
 			tb_ID.Text = Client.CLIENT_ID.ToString();
 			tb_Name.Text = Client.CLIENT_NAME;
 			tb_PostCode.Text = Client.CLIENT_POSTCODE;
@@ -227,6 +254,7 @@ namespace Rock_Solid
 			cb_State.Text = Client.CLIENT_STATE;
 			tb_RG.Text = Client.CLIENT_RG;
 			tb_CPF.Text = Client.CLIENT_CPF;
+			rb_LegalPerson.Checked = Client.CLIENT_LEGAL;
 			tb_Email.Text = Client.CLIENT_EMAIL;
 			tb_Phone.Text = Client.CLIENT_PHONE;
 			tb_Cel.Text = Client.CLIENT_CEL;
@@ -248,12 +276,22 @@ namespace Rock_Solid
 					tb_Neighborhood.Text = dt.Rows[0].Field<string>("CLIENT_NEIGHBORHOOD").ToString();
 					tb_City.Text = dt.Rows[0].Field<string>("CLIENT_CITY").ToString();
 					cb_State.Text = dt.Rows[0].Field<string>("CLIENT_STATE").ToString();
+					rb_LegalPerson.Checked = dt.Rows[0].Field<bool>("CLIENT_LEGAL");
+
+					if (rb_LegalPerson.Checked == false || tb_ID is null)
+					{
+						Individual();
+					}
+					else
+						Legal();
+					
 					tb_RG.Text = dt.Rows[0].Field<string>("CLIENT_RG").ToString();
 					tb_CPF.Text = dt.Rows[0].Field<string>("CLIENT_CPF").ToString();
 					tb_Email.Text = dt.Rows[0].Field<string>("CLIENT_EMAIL").ToString();
 					tb_Phone.Text = dt.Rows[0].Field<string>("CLIENT_PHONE").ToString();
 					tb_Cel.Text = dt.Rows[0].Field<string>("CLIENT_CEL").ToString();
 					pb_User.ImageLocation = dt.Rows[0].Field<string>("CLIENT_PROFILEIMGPATH").ToString();
+
 					Client.CLIENT_ID = Convert.ToInt32(tb_ID.Text);
 					Client.CLIENT_NAME = tb_Name.Text;
 					Client.CLIENT_POSTCODE = tb_PostCode.Text;
@@ -262,13 +300,13 @@ namespace Rock_Solid
 					Client.CLIENT_NEIGHBORHOOD = tb_Neighborhood.Text;
 					Client.CLIENT_CITY = tb_City.Text;
 					Client.CLIENT_STATE = cb_State.Text;
+					Client.CLIENT_LEGAL = rb_LegalPerson.Checked;
 					Client.CLIENT_RG = tb_RG.Text;
 					Client.CLIENT_CPF = tb_CPF.Text;
 					Client.CLIENT_EMAIL = tb_Email.Text;
 					Client.CLIENT_PHONE = tb_Phone.Text;
 					Client.CLIENT_CEL = tb_Cel.Text;
 					Client.CLIENT_PROFILEIMGPATH = pb_User.ImageLocation;
-					tb_Name.Focus();
 				}
 				catch (Exception ex)
 				{

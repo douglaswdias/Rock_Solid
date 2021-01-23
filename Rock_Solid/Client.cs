@@ -18,6 +18,7 @@ namespace Rock_Solid
 		public static string CLIENT_STATE;
 		public static string CLIENT_RG;
 		public static string CLIENT_CPF;
+		public static bool CLIENT_LEGAL;
 		public static string CLIENT_EMAIL;
 		public static string CLIENT_PHONE;
 		public static string CLIENT_CEL;
