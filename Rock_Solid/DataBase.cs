@@ -871,5 +871,11 @@ namespace Rock_Solid
 			}
 		}
 		#endregion
+		#region Workout
+		public static void NewWorkout(WorkOut workout)
+		{
+			
+		}
+		#endregion
 	}
 }

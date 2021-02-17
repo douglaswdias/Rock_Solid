@@ -128,7 +128,15 @@ namespace Rock_Solid
 
 				if(File.Exists(pb_User.ImageLocation))
 				{
-					System.IO.File.Copy(pb_User.ImageLocation, destiny, true);
+					try
+					{
+						System.IO.File.Copy(pb_User.ImageLocation, destiny, true);
+					}
+					catch(Exception ex)
+					{
+						MessageBox.Show("Não Foi Possível Salvar as Alterações");
+						return;
+					}
 				}
 				
 				if (File.Exists(destiny))

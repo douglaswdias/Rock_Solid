@@ -32,32 +32,32 @@ namespace Rock_Solid
 			this.tc_Workout = new System.Windows.Forms.TabControl();
 			this.tp_Biceps = new System.Windows.Forms.TabPage();
 			this.gb_CargaBiceps = new System.Windows.Forms.GroupBox();
-			this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RoscaSimultanea = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RoscaRoldana = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RoscaBilateral = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RoscaArticulada = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RoscaConcentrada = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RoscaMartelo = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RoscaAlternada = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RoscaDireta = new System.Windows.Forms.NumericUpDown();
 			this.gb_RepeticaoBiceps = new System.Windows.Forms.GroupBox();
-			this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown70 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown71 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown72 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown73 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown74 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown75 = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RoscaSimultanea = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RoscaRoldana = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RoscaBilateral = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RoscaArticulada = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RoscaConcentrada = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RoscaMartelo = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RoscaAlternada = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RoscaDireta = new System.Windows.Forms.NumericUpDown();
 			this.gb_SerieBiceps = new System.Windows.Forms.GroupBox();
-			this.numericUpDown83 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown84 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown85 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown86 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown87 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown88 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown89 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown90 = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RoscaSimultanea = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RoscaRoldana = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RoscaBilateral = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RoscaArticulada = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RoscaConcentrada = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RoscaMartelo = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RoscaAlternada = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RoscaDireta = new System.Windows.Forms.NumericUpDown();
 			this.gb_ExercicioBiceps = new System.Windows.Forms.GroupBox();
 			this.lb_RoscaSimultanea = new System.Windows.Forms.Label();
 			this.lb_RoscaRoldana = new System.Windows.Forms.Label();
@@ -77,32 +77,32 @@ namespace Rock_Solid
 			this.cb_RoscaDireta = new System.Windows.Forms.ComboBox();
 			this.tp_Triceps = new System.Windows.Forms.TabPage();
 			this.gb_CargaTriceps = new System.Windows.Forms.GroupBox();
-			this.numericUpDown98 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown99 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown100 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown101 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown102 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown103 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown104 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown105 = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Mergulho = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Invertido = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Coice = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RoscaSupinada = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RoscaFrancesa = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_PulleyCorda = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RoscaTesta = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Pulley = new System.Windows.Forms.NumericUpDown();
 			this.gb_RepeticaoTriceps = new System.Windows.Forms.GroupBox();
-			this.numericUpDown113 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown114 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown115 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown116 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown117 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown118 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown119 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown120 = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Mergulho = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Invertido = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Coice = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RoscaSupinada = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RoscaFrancesa = new System.Windows.Forms.NumericUpDown();
+			this.nRep_PulleyCorda = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RoscaTesta = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Pulley = new System.Windows.Forms.NumericUpDown();
 			this.gb_SerieTriceps = new System.Windows.Forms.GroupBox();
-			this.numericUpDown128 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown129 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown130 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown131 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown132 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown133 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown134 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown135 = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_ergulho = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Invertido = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Coice = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RoscaSupinada = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RoscaFrancesa = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_PulleyCorda = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RoscaTesta = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Pulley = new System.Windows.Forms.NumericUpDown();
 			this.gb_ExercicioTriceps = new System.Windows.Forms.GroupBox();
 			this.lb_Mergulho = new System.Windows.Forms.Label();
 			this.lb_Invertido = new System.Windows.Forms.Label();
@@ -122,29 +122,29 @@ namespace Rock_Solid
 			this.cb_Pulley = new System.Windows.Forms.ComboBox();
 			this.tp_Ombro = new System.Windows.Forms.TabPage();
 			this.gb_CargaOmbros = new System.Windows.Forms.GroupBox();
-			this.numericUpDown144 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown145 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown146 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown147 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown148 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown149 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown150 = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RemadaAlta = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_DesenvolvimentoDumbell = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_DesenvolvimentoFrente = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_DesenvolvimentoCostas = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_ElevacaoOmbro = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_ElevacaoFrontal = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_ElevacaoLateral = new System.Windows.Forms.NumericUpDown();
 			this.gb_RepeticaoOmbros = new System.Windows.Forms.GroupBox();
-			this.numericUpDown159 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown160 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown161 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown162 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown163 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown164 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown165 = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RemadaAlta = new System.Windows.Forms.NumericUpDown();
+			this.nRep_DesenvolvimentoDumbell = new System.Windows.Forms.NumericUpDown();
+			this.nRep_DesenvolvimentoFrente = new System.Windows.Forms.NumericUpDown();
+			this.nRep_DesenvolvimentoCostas = new System.Windows.Forms.NumericUpDown();
+			this.nRep_ElevacaoOmbro = new System.Windows.Forms.NumericUpDown();
+			this.nRep_ElevacaoFrontal = new System.Windows.Forms.NumericUpDown();
+			this.nRep_ElevacaoLateral = new System.Windows.Forms.NumericUpDown();
 			this.gb_SerieOmbros = new System.Windows.Forms.GroupBox();
-			this.numericUpDown174 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown175 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown176 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown177 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown178 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown179 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown180 = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RemadaAlta = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_DesenvolvimentoDumbell = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_DesenvolvimentoFrente = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_DesenvolvimentoCostas = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_ElevacaoOmbro = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_ElevacaoFrontal = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_ElevacaoLateral = new System.Windows.Forms.NumericUpDown();
 			this.gb_ExercicioOmbros = new System.Windows.Forms.GroupBox();
 			this.lb_RemadaAlta = new System.Windows.Forms.Label();
 			this.lb_DesenvolvimentoDumbell = new System.Windows.Forms.Label();
@@ -162,41 +162,41 @@ namespace Rock_Solid
 			this.cb_ElevacaoLateral = new System.Windows.Forms.ComboBox();
 			this.tp_Pernas = new System.Windows.Forms.TabPage();
 			this.gb_CargaPernas = new System.Windows.Forms.GroupBox();
-			this.numericUpDown58 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown59 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown60 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown61 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown63 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown64 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown65 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown66 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown67 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown68 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown69 = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Avanco = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Gluteo = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Stiff = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Panturrilha = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Hack = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_AgachamentoLivre = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_LegPress = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Abdutor = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Adutor = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_CadeiraFlexora = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_CadeiraExtensora = new System.Windows.Forms.NumericUpDown();
 			this.gb_RepeticaoPernas = new System.Windows.Forms.GroupBox();
-			this.numericUpDown28 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown29 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown30 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown31 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown33 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown34 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown35 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown36 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown37 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown38 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown39 = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Avanco = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Gluteo = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Stiff = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Panturrilha = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Hack = new System.Windows.Forms.NumericUpDown();
+			this.nRep_AgachamentoLivre = new System.Windows.Forms.NumericUpDown();
+			this.nRep_LegPress = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Abdutor = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Adutor = new System.Windows.Forms.NumericUpDown();
+			this.nRep_CadeiraFlexora = new System.Windows.Forms.NumericUpDown();
+			this.nRep_CadeiraExtensora = new System.Windows.Forms.NumericUpDown();
 			this.gb_SeriePernas = new System.Windows.Forms.GroupBox();
-			this.numericUpDown52 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown53 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown54 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown55 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown42 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown43 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown44 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown45 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown46 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown47 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown48 = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Avanco = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Gluteo = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Stiff = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Panturrilha = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Hack = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_AgachamentoLivre = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_LegPress = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Abdutor = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Adutor = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_CadeiraFlexora = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_CadeiraExtensorar = new System.Windows.Forms.NumericUpDown();
 			this.gb_ExercicioPernas = new System.Windows.Forms.GroupBox();
 			this.lb_Avanco = new System.Windows.Forms.Label();
 			this.lb_Gluteo = new System.Windows.Forms.Label();
@@ -222,32 +222,32 @@ namespace Rock_Solid
 			this.cb_CadeiraExtensora = new System.Windows.Forms.ComboBox();
 			this.tp_Peito = new System.Windows.Forms.TabPage();
 			this.gb_CargaPeito = new System.Windows.Forms.GroupBox();
-			this.numericUpDown188 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown189 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown190 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown191 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown192 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown193 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown194 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown195 = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_CrossOver = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Crucifixo = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_PeckDeck = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Peck = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_SupinoDumbell = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_SupinoSentado = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_SupinoInclinado = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_SupinoReto = new System.Windows.Forms.NumericUpDown();
 			this.gb_RepeticaoPeito = new System.Windows.Forms.GroupBox();
-			this.numericUpDown203 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown204 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown205 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown206 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown207 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown208 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown209 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown210 = new System.Windows.Forms.NumericUpDown();
+			this.nRep_CrossOver = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Crucifixo = new System.Windows.Forms.NumericUpDown();
+			this.nRep_PeckDeck = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Peck = new System.Windows.Forms.NumericUpDown();
+			this.nRep_SupinoDumbell = new System.Windows.Forms.NumericUpDown();
+			this.nRep_SupinoSentado = new System.Windows.Forms.NumericUpDown();
+			this.nRep_SupinoInclinado = new System.Windows.Forms.NumericUpDown();
+			this.nRep_SupinoReto = new System.Windows.Forms.NumericUpDown();
 			this.gb_SeriePeito = new System.Windows.Forms.GroupBox();
-			this.numericUpDown218 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown219 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown220 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown221 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown222 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown223 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown224 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown225 = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_CrossOver = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Crucifixo = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_PeckDeckPeito = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Peck = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_SupinoDumbell = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_SupinoSentado = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_SupinoInclinado = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_SupinoReto = new System.Windows.Forms.NumericUpDown();
 			this.gb_ExercicioPeito = new System.Windows.Forms.GroupBox();
 			this.lb_CrossOver = new System.Windows.Forms.Label();
 			this.lb_crucifixo = new System.Windows.Forms.Label();
@@ -267,41 +267,41 @@ namespace Rock_Solid
 			this.cb_SupinoReto = new System.Windows.Forms.ComboBox();
 			this.tp_Costas = new System.Windows.Forms.TabPage();
 			this.gb_CargaCostas = new System.Windows.Forms.GroupBox();
-			this.numericUpDown230 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown231 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown232 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown233 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown234 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown235 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown236 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown237 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown238 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown239 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown240 = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_VoadorInverso = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_BrraFixa = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_PullOverCostas = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_PeckDeckCostas = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_PuxadorArticulado = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RemadaCavalinho = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RemadaAlternada = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RemadaHorizontal = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_PulleyInvertido = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_PulleyFrente = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_PulleyCostas = new System.Windows.Forms.NumericUpDown();
 			this.gb_RepeticaoCostas = new System.Windows.Forms.GroupBox();
-			this.numericUpDown245 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown246 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown247 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown248 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown249 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown250 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown251 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown252 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown253 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown254 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown255 = new System.Windows.Forms.NumericUpDown();
+			this.nRep_VoadorInverso = new System.Windows.Forms.NumericUpDown();
+			this.nRep_BarraFixa = new System.Windows.Forms.NumericUpDown();
+			this.nRep_PullOverCostas = new System.Windows.Forms.NumericUpDown();
+			this.nRep_PeckDeckCostas = new System.Windows.Forms.NumericUpDown();
+			this.nRep_PuxadorArticulado = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RemadaCavalinho = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RemadaAlternada = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RemadaHorizontal = new System.Windows.Forms.NumericUpDown();
+			this.nRep_PulleyInvertido = new System.Windows.Forms.NumericUpDown();
+			this.nRep_PulleyFrente = new System.Windows.Forms.NumericUpDown();
+			this.nRep_PulleyCostas = new System.Windows.Forms.NumericUpDown();
 			this.gb_SerieCostas = new System.Windows.Forms.GroupBox();
-			this.numericUpDown260 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown261 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown262 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown263 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown264 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown265 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown266 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown267 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown268 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown269 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown270 = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_VoadorInverso = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_BarraFixa = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_PullOverCostas = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_PeckDeckCostas = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_PuxadorArticulado = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RemadaCavalinho = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RemadaAlternada = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RemadaHorizontal = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_PulleyInvertido = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_PulleyFrente = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_PulleyCostas = new System.Windows.Forms.NumericUpDown();
 			this.gb_ExercicioCostas = new System.Windows.Forms.GroupBox();
 			this.lb_VoadorInverso = new System.Windows.Forms.Label();
 			this.lb_BarraFixa = new System.Windows.Forms.Label();
@@ -327,23 +327,23 @@ namespace Rock_Solid
 			this.cb_PulleyCostas = new System.Windows.Forms.ComboBox();
 			this.tp_Abdomen = new System.Windows.Forms.TabPage();
 			this.gb_CargaAbdomen = new System.Windows.Forms.GroupBox();
-			this.numericUpDown281 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown282 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown283 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown284 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown285 = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_PranchaAbdomen = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_ParalelaFixa = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Obliquo = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Infra = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_RetoAbdomen = new System.Windows.Forms.NumericUpDown();
 			this.gb_RepeticaoAbdomen = new System.Windows.Forms.GroupBox();
-			this.numericUpDown296 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown297 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown298 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown299 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown300 = new System.Windows.Forms.NumericUpDown();
+			this.nRep_PranchaAbdomen = new System.Windows.Forms.NumericUpDown();
+			this.nRep_ParalelaFixa = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Obliquo = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Infra = new System.Windows.Forms.NumericUpDown();
+			this.nRep_RetoAbdomen = new System.Windows.Forms.NumericUpDown();
 			this.gb_SerieAbdomen = new System.Windows.Forms.GroupBox();
-			this.numericUpDown311 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown312 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown313 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown314 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown315 = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_PranchaAbdomen = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_ParalelaFixa = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Obliquo = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Infra = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_RetoAbdomen = new System.Windows.Forms.NumericUpDown();
 			this.gb_ExercicioAbdomen = new System.Windows.Forms.GroupBox();
 			this.cb_PranchaAbdomen = new System.Windows.Forms.ComboBox();
 			this.cb_ParalelaFixa = new System.Windows.Forms.ComboBox();
@@ -357,20 +357,20 @@ namespace Rock_Solid
 			this.lb_RetoAbdomen = new System.Windows.Forms.Label();
 			this.tp_Aquecimento = new System.Windows.Forms.TabPage();
 			this.gb_CargaAquecimento = new System.Windows.Forms.GroupBox();
-			this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown373 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown374 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown375 = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Corda = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Eliptico = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Bicicleta = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Esteira = new System.Windows.Forms.NumericUpDown();
 			this.gb_RepeticaoAquecimento = new System.Windows.Forms.GroupBox();
-			this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown388 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown389 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown390 = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Corda = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Eliptico = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Bicicleta = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Esteira = new System.Windows.Forms.NumericUpDown();
 			this.gb_SerieAquecimento = new System.Windows.Forms.GroupBox();
-			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown403 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown404 = new System.Windows.Forms.NumericUpDown();
-			this.numericUpDown405 = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Corda = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Eliptico = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Bicicleta = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Esteira = new System.Windows.Forms.NumericUpDown();
 			this.gb_ExercicioAquecimento = new System.Windows.Forms.GroupBox();
 			this.lb_Corda = new System.Windows.Forms.Label();
 			this.lb_Eliptico = new System.Windows.Forms.Label();
@@ -387,229 +387,229 @@ namespace Rock_Solid
 			this.tc_Workout.SuspendLayout();
 			this.tp_Biceps.SuspendLayout();
 			this.gb_CargaBiceps.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaSimultanea)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaRoldana)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaBilateral)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaArticulada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaConcentrada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaMartelo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaAlternada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaDireta)).BeginInit();
 			this.gb_RepeticaoBiceps.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown70)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown71)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown72)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown73)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown74)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown75)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaSimultanea)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaRoldana)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaBilateral)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaArticulada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaConcentrada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaMartelo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaAlternada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaDireta)).BeginInit();
 			this.gb_SerieBiceps.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown83)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown84)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown85)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown86)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown87)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown88)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown89)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown90)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaSimultanea)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaRoldana)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaBilateral)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaArticulada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaConcentrada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaMartelo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaAlternada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaDireta)).BeginInit();
 			this.gb_ExercicioBiceps.SuspendLayout();
 			this.tp_Triceps.SuspendLayout();
 			this.gb_CargaTriceps.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown98)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown99)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown100)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown101)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown102)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown103)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown104)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown105)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Mergulho)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Invertido)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Coice)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaSupinada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaFrancesa)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PulleyCorda)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaTesta)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Pulley)).BeginInit();
 			this.gb_RepeticaoTriceps.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown113)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown114)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown115)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown116)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown117)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown118)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown119)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown120)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Mergulho)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Invertido)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Coice)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaSupinada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaFrancesa)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PulleyCorda)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaTesta)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Pulley)).BeginInit();
 			this.gb_SerieTriceps.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown128)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown129)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown130)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown131)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown132)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown133)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown134)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown135)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_ergulho)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Invertido)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Coice)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaSupinada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaFrancesa)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PulleyCorda)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaTesta)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Pulley)).BeginInit();
 			this.gb_ExercicioTriceps.SuspendLayout();
 			this.tp_Ombro.SuspendLayout();
 			this.gb_CargaOmbros.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown144)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown145)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown146)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown147)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown148)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown149)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown150)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RemadaAlta)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_DesenvolvimentoDumbell)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_DesenvolvimentoFrente)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_DesenvolvimentoCostas)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_ElevacaoOmbro)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_ElevacaoFrontal)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_ElevacaoLateral)).BeginInit();
 			this.gb_RepeticaoOmbros.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown159)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown160)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown161)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown162)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown163)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown164)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown165)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RemadaAlta)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_DesenvolvimentoDumbell)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_DesenvolvimentoFrente)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_DesenvolvimentoCostas)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_ElevacaoOmbro)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_ElevacaoFrontal)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_ElevacaoLateral)).BeginInit();
 			this.gb_SerieOmbros.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown174)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown175)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown176)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown177)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown178)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown179)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown180)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RemadaAlta)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_DesenvolvimentoDumbell)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_DesenvolvimentoFrente)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_DesenvolvimentoCostas)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_ElevacaoOmbro)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_ElevacaoFrontal)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_ElevacaoLateral)).BeginInit();
 			this.gb_ExercicioOmbros.SuspendLayout();
 			this.tp_Pernas.SuspendLayout();
 			this.gb_CargaPernas.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown58)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown59)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown60)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown61)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown63)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown64)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown65)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown66)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown67)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown68)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown69)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Avanco)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Gluteo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Stiff)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Panturrilha)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Hack)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_AgachamentoLivre)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_LegPress)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Abdutor)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Adutor)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_CadeiraFlexora)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_CadeiraExtensora)).BeginInit();
 			this.gb_RepeticaoPernas.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown31)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown33)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown34)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown35)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown36)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown37)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown38)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown39)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Avanco)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Gluteo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Stiff)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Panturrilha)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Hack)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_AgachamentoLivre)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_LegPress)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Abdutor)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Adutor)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_CadeiraFlexora)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_CadeiraExtensora)).BeginInit();
 			this.gb_SeriePernas.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown52)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown53)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown54)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown55)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown42)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown46)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown47)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown48)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Avanco)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Gluteo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Stiff)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Panturrilha)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Hack)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_AgachamentoLivre)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_LegPress)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Abdutor)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Adutor)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_CadeiraFlexora)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_CadeiraExtensorar)).BeginInit();
 			this.gb_ExercicioPernas.SuspendLayout();
 			this.tp_Peito.SuspendLayout();
 			this.gb_CargaPeito.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown188)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown189)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown190)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown191)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown192)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown193)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown194)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown195)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_CrossOver)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Crucifixo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PeckDeck)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Peck)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_SupinoDumbell)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_SupinoSentado)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_SupinoInclinado)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_SupinoReto)).BeginInit();
 			this.gb_RepeticaoPeito.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown203)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown204)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown205)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown206)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown207)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown208)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown209)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown210)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_CrossOver)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Crucifixo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PeckDeck)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Peck)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_SupinoDumbell)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_SupinoSentado)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_SupinoInclinado)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_SupinoReto)).BeginInit();
 			this.gb_SeriePeito.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown218)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown219)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown220)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown221)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown222)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown223)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown224)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown225)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_CrossOver)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Crucifixo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PeckDeckPeito)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Peck)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_SupinoDumbell)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_SupinoSentado)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_SupinoInclinado)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_SupinoReto)).BeginInit();
 			this.gb_ExercicioPeito.SuspendLayout();
 			this.tp_Costas.SuspendLayout();
 			this.gb_CargaCostas.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown230)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown231)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown232)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown233)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown234)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown235)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown236)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown237)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown238)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown239)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown240)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_VoadorInverso)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_BrraFixa)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PullOverCostas)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PeckDeckCostas)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PuxadorArticulado)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RemadaCavalinho)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RemadaAlternada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RemadaHorizontal)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PulleyInvertido)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PulleyFrente)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PulleyCostas)).BeginInit();
 			this.gb_RepeticaoCostas.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown245)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown246)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown247)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown248)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown249)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown250)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown251)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown252)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown253)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown254)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown255)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_VoadorInverso)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_BarraFixa)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PullOverCostas)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PeckDeckCostas)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PuxadorArticulado)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RemadaCavalinho)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RemadaAlternada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RemadaHorizontal)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PulleyInvertido)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PulleyFrente)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PulleyCostas)).BeginInit();
 			this.gb_SerieCostas.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown260)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown261)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown262)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown263)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown264)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown265)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown266)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown267)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown268)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown269)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown270)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_VoadorInverso)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_BarraFixa)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PullOverCostas)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PeckDeckCostas)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PuxadorArticulado)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RemadaCavalinho)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RemadaAlternada)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RemadaHorizontal)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PulleyInvertido)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PulleyFrente)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PulleyCostas)).BeginInit();
 			this.gb_ExercicioCostas.SuspendLayout();
 			this.tp_Abdomen.SuspendLayout();
 			this.gb_CargaAbdomen.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown281)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown282)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown283)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown284)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown285)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PranchaAbdomen)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_ParalelaFixa)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Obliquo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Infra)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RetoAbdomen)).BeginInit();
 			this.gb_RepeticaoAbdomen.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown296)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown297)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown298)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown299)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown300)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PranchaAbdomen)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_ParalelaFixa)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Obliquo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Infra)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RetoAbdomen)).BeginInit();
 			this.gb_SerieAbdomen.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown311)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown312)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown313)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown314)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown315)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PranchaAbdomen)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_ParalelaFixa)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Obliquo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Infra)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RetoAbdomen)).BeginInit();
 			this.gb_ExercicioAbdomen.SuspendLayout();
 			this.tp_Aquecimento.SuspendLayout();
 			this.gb_CargaAquecimento.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown373)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown374)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown375)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Corda)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Eliptico)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Bicicleta)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Esteira)).BeginInit();
 			this.gb_RepeticaoAquecimento.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown388)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown389)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown390)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Corda)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Eliptico)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Bicicleta)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Esteira)).BeginInit();
 			this.gb_SerieAquecimento.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown403)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown404)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown405)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Corda)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Eliptico)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Bicicleta)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Esteira)).BeginInit();
 			this.gb_ExercicioAquecimento.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
@@ -646,14 +646,14 @@ namespace Rock_Solid
 			// 
 			// gb_CargaBiceps
 			// 
-			this.gb_CargaBiceps.Controls.Add(this.numericUpDown8);
-			this.gb_CargaBiceps.Controls.Add(this.numericUpDown9);
-			this.gb_CargaBiceps.Controls.Add(this.numericUpDown10);
-			this.gb_CargaBiceps.Controls.Add(this.numericUpDown11);
-			this.gb_CargaBiceps.Controls.Add(this.numericUpDown12);
-			this.gb_CargaBiceps.Controls.Add(this.numericUpDown13);
-			this.gb_CargaBiceps.Controls.Add(this.numericUpDown14);
-			this.gb_CargaBiceps.Controls.Add(this.numericUpDown15);
+			this.gb_CargaBiceps.Controls.Add(this.nCarga_RoscaSimultanea);
+			this.gb_CargaBiceps.Controls.Add(this.nCarga_RoscaRoldana);
+			this.gb_CargaBiceps.Controls.Add(this.nCarga_RoscaBilateral);
+			this.gb_CargaBiceps.Controls.Add(this.nCarga_RoscaArticulada);
+			this.gb_CargaBiceps.Controls.Add(this.nCarga_RoscaConcentrada);
+			this.gb_CargaBiceps.Controls.Add(this.nCarga_RoscaMartelo);
+			this.gb_CargaBiceps.Controls.Add(this.nCarga_RoscaAlternada);
+			this.gb_CargaBiceps.Controls.Add(this.nCarga_RoscaDireta);
 			this.gb_CargaBiceps.Location = new System.Drawing.Point(437, 20);
 			this.gb_CargaBiceps.Name = "gb_CargaBiceps";
 			this.gb_CargaBiceps.Size = new System.Drawing.Size(103, 310);
@@ -661,72 +661,72 @@ namespace Rock_Solid
 			this.gb_CargaBiceps.TabStop = false;
 			this.gb_CargaBiceps.Text = "Carga";
 			// 
-			// numericUpDown8
+			// nCarga_RoscaSimultanea
 			// 
-			this.numericUpDown8.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown8.Name = "numericUpDown8";
-			this.numericUpDown8.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown8.TabIndex = 32;
+			this.nCarga_RoscaSimultanea.Location = new System.Drawing.Point(12, 201);
+			this.nCarga_RoscaSimultanea.Name = "nCarga_RoscaSimultanea";
+			this.nCarga_RoscaSimultanea.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RoscaSimultanea.TabIndex = 32;
 			// 
-			// numericUpDown9
+			// nCarga_RoscaRoldana
 			// 
-			this.numericUpDown9.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown9.Name = "numericUpDown9";
-			this.numericUpDown9.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown9.TabIndex = 31;
+			this.nCarga_RoscaRoldana.Location = new System.Drawing.Point(12, 175);
+			this.nCarga_RoscaRoldana.Name = "nCarga_RoscaRoldana";
+			this.nCarga_RoscaRoldana.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RoscaRoldana.TabIndex = 31;
 			// 
-			// numericUpDown10
+			// nCarga_RoscaBilateral
 			// 
-			this.numericUpDown10.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown10.Name = "numericUpDown10";
-			this.numericUpDown10.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown10.TabIndex = 30;
+			this.nCarga_RoscaBilateral.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_RoscaBilateral.Name = "nCarga_RoscaBilateral";
+			this.nCarga_RoscaBilateral.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RoscaBilateral.TabIndex = 30;
 			// 
-			// numericUpDown11
+			// nCarga_RoscaArticulada
 			// 
-			this.numericUpDown11.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown11.Name = "numericUpDown11";
-			this.numericUpDown11.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown11.TabIndex = 29;
+			this.nCarga_RoscaArticulada.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_RoscaArticulada.Name = "nCarga_RoscaArticulada";
+			this.nCarga_RoscaArticulada.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RoscaArticulada.TabIndex = 29;
 			// 
-			// numericUpDown12
+			// nCarga_RoscaConcentrada
 			// 
-			this.numericUpDown12.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown12.Name = "numericUpDown12";
-			this.numericUpDown12.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown12.TabIndex = 28;
+			this.nCarga_RoscaConcentrada.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_RoscaConcentrada.Name = "nCarga_RoscaConcentrada";
+			this.nCarga_RoscaConcentrada.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RoscaConcentrada.TabIndex = 28;
 			// 
-			// numericUpDown13
+			// nCarga_RoscaMartelo
 			// 
-			this.numericUpDown13.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown13.Name = "numericUpDown13";
-			this.numericUpDown13.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown13.TabIndex = 27;
+			this.nCarga_RoscaMartelo.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_RoscaMartelo.Name = "nCarga_RoscaMartelo";
+			this.nCarga_RoscaMartelo.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RoscaMartelo.TabIndex = 27;
 			// 
-			// numericUpDown14
+			// nCarga_RoscaAlternada
 			// 
-			this.numericUpDown14.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown14.Name = "numericUpDown14";
-			this.numericUpDown14.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown14.TabIndex = 26;
+			this.nCarga_RoscaAlternada.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_RoscaAlternada.Name = "nCarga_RoscaAlternada";
+			this.nCarga_RoscaAlternada.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RoscaAlternada.TabIndex = 26;
 			// 
-			// numericUpDown15
+			// nCarga_RoscaDireta
 			// 
-			this.numericUpDown15.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown15.Name = "numericUpDown15";
-			this.numericUpDown15.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown15.TabIndex = 25;
+			this.nCarga_RoscaDireta.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_RoscaDireta.Name = "nCarga_RoscaDireta";
+			this.nCarga_RoscaDireta.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RoscaDireta.TabIndex = 25;
 			// 
 			// gb_RepeticaoBiceps
 			// 
-			this.gb_RepeticaoBiceps.Controls.Add(this.numericUpDown23);
-			this.gb_RepeticaoBiceps.Controls.Add(this.numericUpDown24);
-			this.gb_RepeticaoBiceps.Controls.Add(this.numericUpDown70);
-			this.gb_RepeticaoBiceps.Controls.Add(this.numericUpDown71);
-			this.gb_RepeticaoBiceps.Controls.Add(this.numericUpDown72);
-			this.gb_RepeticaoBiceps.Controls.Add(this.numericUpDown73);
-			this.gb_RepeticaoBiceps.Controls.Add(this.numericUpDown74);
-			this.gb_RepeticaoBiceps.Controls.Add(this.numericUpDown75);
+			this.gb_RepeticaoBiceps.Controls.Add(this.nRep_RoscaSimultanea);
+			this.gb_RepeticaoBiceps.Controls.Add(this.nRep_RoscaRoldana);
+			this.gb_RepeticaoBiceps.Controls.Add(this.nRep_RoscaBilateral);
+			this.gb_RepeticaoBiceps.Controls.Add(this.nRep_RoscaArticulada);
+			this.gb_RepeticaoBiceps.Controls.Add(this.nRep_RoscaConcentrada);
+			this.gb_RepeticaoBiceps.Controls.Add(this.nRep_RoscaMartelo);
+			this.gb_RepeticaoBiceps.Controls.Add(this.nRep_RoscaAlternada);
+			this.gb_RepeticaoBiceps.Controls.Add(this.nRep_RoscaDireta);
 			this.gb_RepeticaoBiceps.Location = new System.Drawing.Point(335, 20);
 			this.gb_RepeticaoBiceps.Name = "gb_RepeticaoBiceps";
 			this.gb_RepeticaoBiceps.Size = new System.Drawing.Size(103, 310);
@@ -734,72 +734,72 @@ namespace Rock_Solid
 			this.gb_RepeticaoBiceps.TabStop = false;
 			this.gb_RepeticaoBiceps.Text = "Repetição";
 			// 
-			// numericUpDown23
+			// nRep_RoscaSimultanea
 			// 
-			this.numericUpDown23.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown23.Name = "numericUpDown23";
-			this.numericUpDown23.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown23.TabIndex = 32;
+			this.nRep_RoscaSimultanea.Location = new System.Drawing.Point(12, 201);
+			this.nRep_RoscaSimultanea.Name = "nRep_RoscaSimultanea";
+			this.nRep_RoscaSimultanea.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RoscaSimultanea.TabIndex = 32;
 			// 
-			// numericUpDown24
+			// nRep_RoscaRoldana
 			// 
-			this.numericUpDown24.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown24.Name = "numericUpDown24";
-			this.numericUpDown24.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown24.TabIndex = 31;
+			this.nRep_RoscaRoldana.Location = new System.Drawing.Point(12, 175);
+			this.nRep_RoscaRoldana.Name = "nRep_RoscaRoldana";
+			this.nRep_RoscaRoldana.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RoscaRoldana.TabIndex = 31;
 			// 
-			// numericUpDown70
+			// nRep_RoscaBilateral
 			// 
-			this.numericUpDown70.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown70.Name = "numericUpDown70";
-			this.numericUpDown70.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown70.TabIndex = 30;
+			this.nRep_RoscaBilateral.Location = new System.Drawing.Point(12, 146);
+			this.nRep_RoscaBilateral.Name = "nRep_RoscaBilateral";
+			this.nRep_RoscaBilateral.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RoscaBilateral.TabIndex = 30;
 			// 
-			// numericUpDown71
+			// nRep_RoscaArticulada
 			// 
-			this.numericUpDown71.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown71.Name = "numericUpDown71";
-			this.numericUpDown71.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown71.TabIndex = 29;
+			this.nRep_RoscaArticulada.Location = new System.Drawing.Point(12, 120);
+			this.nRep_RoscaArticulada.Name = "nRep_RoscaArticulada";
+			this.nRep_RoscaArticulada.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RoscaArticulada.TabIndex = 29;
 			// 
-			// numericUpDown72
+			// nRep_RoscaConcentrada
 			// 
-			this.numericUpDown72.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown72.Name = "numericUpDown72";
-			this.numericUpDown72.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown72.TabIndex = 28;
+			this.nRep_RoscaConcentrada.Location = new System.Drawing.Point(12, 94);
+			this.nRep_RoscaConcentrada.Name = "nRep_RoscaConcentrada";
+			this.nRep_RoscaConcentrada.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RoscaConcentrada.TabIndex = 28;
 			// 
-			// numericUpDown73
+			// nRep_RoscaMartelo
 			// 
-			this.numericUpDown73.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown73.Name = "numericUpDown73";
-			this.numericUpDown73.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown73.TabIndex = 27;
+			this.nRep_RoscaMartelo.Location = new System.Drawing.Point(12, 68);
+			this.nRep_RoscaMartelo.Name = "nRep_RoscaMartelo";
+			this.nRep_RoscaMartelo.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RoscaMartelo.TabIndex = 27;
 			// 
-			// numericUpDown74
+			// nRep_RoscaAlternada
 			// 
-			this.numericUpDown74.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown74.Name = "numericUpDown74";
-			this.numericUpDown74.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown74.TabIndex = 26;
+			this.nRep_RoscaAlternada.Location = new System.Drawing.Point(12, 42);
+			this.nRep_RoscaAlternada.Name = "nRep_RoscaAlternada";
+			this.nRep_RoscaAlternada.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RoscaAlternada.TabIndex = 26;
 			// 
-			// numericUpDown75
+			// nRep_RoscaDireta
 			// 
-			this.numericUpDown75.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown75.Name = "numericUpDown75";
-			this.numericUpDown75.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown75.TabIndex = 25;
+			this.nRep_RoscaDireta.Location = new System.Drawing.Point(12, 16);
+			this.nRep_RoscaDireta.Name = "nRep_RoscaDireta";
+			this.nRep_RoscaDireta.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RoscaDireta.TabIndex = 25;
 			// 
 			// gb_SerieBiceps
 			// 
-			this.gb_SerieBiceps.Controls.Add(this.numericUpDown83);
-			this.gb_SerieBiceps.Controls.Add(this.numericUpDown84);
-			this.gb_SerieBiceps.Controls.Add(this.numericUpDown85);
-			this.gb_SerieBiceps.Controls.Add(this.numericUpDown86);
-			this.gb_SerieBiceps.Controls.Add(this.numericUpDown87);
-			this.gb_SerieBiceps.Controls.Add(this.numericUpDown88);
-			this.gb_SerieBiceps.Controls.Add(this.numericUpDown89);
-			this.gb_SerieBiceps.Controls.Add(this.numericUpDown90);
+			this.gb_SerieBiceps.Controls.Add(this.nSerie_RoscaSimultanea);
+			this.gb_SerieBiceps.Controls.Add(this.nSerie_RoscaRoldana);
+			this.gb_SerieBiceps.Controls.Add(this.nSerie_RoscaBilateral);
+			this.gb_SerieBiceps.Controls.Add(this.nSerie_RoscaArticulada);
+			this.gb_SerieBiceps.Controls.Add(this.nSerie_RoscaConcentrada);
+			this.gb_SerieBiceps.Controls.Add(this.nSerie_RoscaMartelo);
+			this.gb_SerieBiceps.Controls.Add(this.nSerie_RoscaAlternada);
+			this.gb_SerieBiceps.Controls.Add(this.nSerie_RoscaDireta);
 			this.gb_SerieBiceps.Location = new System.Drawing.Point(233, 20);
 			this.gb_SerieBiceps.Name = "gb_SerieBiceps";
 			this.gb_SerieBiceps.Size = new System.Drawing.Size(103, 310);
@@ -807,61 +807,61 @@ namespace Rock_Solid
 			this.gb_SerieBiceps.TabStop = false;
 			this.gb_SerieBiceps.Text = "Serie";
 			// 
-			// numericUpDown83
+			// nSerie_RoscaSimultanea
 			// 
-			this.numericUpDown83.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown83.Name = "numericUpDown83";
-			this.numericUpDown83.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown83.TabIndex = 17;
+			this.nSerie_RoscaSimultanea.Location = new System.Drawing.Point(12, 201);
+			this.nSerie_RoscaSimultanea.Name = "nSerie_RoscaSimultanea";
+			this.nSerie_RoscaSimultanea.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RoscaSimultanea.TabIndex = 17;
 			// 
-			// numericUpDown84
+			// nSerie_RoscaRoldana
 			// 
-			this.numericUpDown84.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown84.Name = "numericUpDown84";
-			this.numericUpDown84.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown84.TabIndex = 16;
+			this.nSerie_RoscaRoldana.Location = new System.Drawing.Point(12, 175);
+			this.nSerie_RoscaRoldana.Name = "nSerie_RoscaRoldana";
+			this.nSerie_RoscaRoldana.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RoscaRoldana.TabIndex = 16;
 			// 
-			// numericUpDown85
+			// nSerie_RoscaBilateral
 			// 
-			this.numericUpDown85.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown85.Name = "numericUpDown85";
-			this.numericUpDown85.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown85.TabIndex = 15;
+			this.nSerie_RoscaBilateral.Location = new System.Drawing.Point(12, 146);
+			this.nSerie_RoscaBilateral.Name = "nSerie_RoscaBilateral";
+			this.nSerie_RoscaBilateral.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RoscaBilateral.TabIndex = 15;
 			// 
-			// numericUpDown86
+			// nSerie_RoscaArticulada
 			// 
-			this.numericUpDown86.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown86.Name = "numericUpDown86";
-			this.numericUpDown86.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown86.TabIndex = 14;
+			this.nSerie_RoscaArticulada.Location = new System.Drawing.Point(12, 120);
+			this.nSerie_RoscaArticulada.Name = "nSerie_RoscaArticulada";
+			this.nSerie_RoscaArticulada.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RoscaArticulada.TabIndex = 14;
 			// 
-			// numericUpDown87
+			// nSerie_RoscaConcentrada
 			// 
-			this.numericUpDown87.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown87.Name = "numericUpDown87";
-			this.numericUpDown87.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown87.TabIndex = 13;
+			this.nSerie_RoscaConcentrada.Location = new System.Drawing.Point(12, 94);
+			this.nSerie_RoscaConcentrada.Name = "nSerie_RoscaConcentrada";
+			this.nSerie_RoscaConcentrada.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RoscaConcentrada.TabIndex = 13;
 			// 
-			// numericUpDown88
+			// nSerie_RoscaMartelo
 			// 
-			this.numericUpDown88.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown88.Name = "numericUpDown88";
-			this.numericUpDown88.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown88.TabIndex = 12;
+			this.nSerie_RoscaMartelo.Location = new System.Drawing.Point(12, 68);
+			this.nSerie_RoscaMartelo.Name = "nSerie_RoscaMartelo";
+			this.nSerie_RoscaMartelo.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RoscaMartelo.TabIndex = 12;
 			// 
-			// numericUpDown89
+			// nSerie_RoscaAlternada
 			// 
-			this.numericUpDown89.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown89.Name = "numericUpDown89";
-			this.numericUpDown89.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown89.TabIndex = 11;
+			this.nSerie_RoscaAlternada.Location = new System.Drawing.Point(12, 42);
+			this.nSerie_RoscaAlternada.Name = "nSerie_RoscaAlternada";
+			this.nSerie_RoscaAlternada.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RoscaAlternada.TabIndex = 11;
 			// 
-			// numericUpDown90
+			// nSerie_RoscaDireta
 			// 
-			this.numericUpDown90.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown90.Name = "numericUpDown90";
-			this.numericUpDown90.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown90.TabIndex = 0;
+			this.nSerie_RoscaDireta.Location = new System.Drawing.Point(12, 16);
+			this.nSerie_RoscaDireta.Name = "nSerie_RoscaDireta";
+			this.nSerie_RoscaDireta.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RoscaDireta.TabIndex = 0;
 			// 
 			// gb_ExercicioBiceps
 			// 
@@ -1096,14 +1096,14 @@ namespace Rock_Solid
 			// 
 			// gb_CargaTriceps
 			// 
-			this.gb_CargaTriceps.Controls.Add(this.numericUpDown98);
-			this.gb_CargaTriceps.Controls.Add(this.numericUpDown99);
-			this.gb_CargaTriceps.Controls.Add(this.numericUpDown100);
-			this.gb_CargaTriceps.Controls.Add(this.numericUpDown101);
-			this.gb_CargaTriceps.Controls.Add(this.numericUpDown102);
-			this.gb_CargaTriceps.Controls.Add(this.numericUpDown103);
-			this.gb_CargaTriceps.Controls.Add(this.numericUpDown104);
-			this.gb_CargaTriceps.Controls.Add(this.numericUpDown105);
+			this.gb_CargaTriceps.Controls.Add(this.nCarga_Mergulho);
+			this.gb_CargaTriceps.Controls.Add(this.nCarga_Invertido);
+			this.gb_CargaTriceps.Controls.Add(this.nCarga_Coice);
+			this.gb_CargaTriceps.Controls.Add(this.nCarga_RoscaSupinada);
+			this.gb_CargaTriceps.Controls.Add(this.nCarga_RoscaFrancesa);
+			this.gb_CargaTriceps.Controls.Add(this.nCarga_PulleyCorda);
+			this.gb_CargaTriceps.Controls.Add(this.nCarga_RoscaTesta);
+			this.gb_CargaTriceps.Controls.Add(this.nCarga_Pulley);
 			this.gb_CargaTriceps.Location = new System.Drawing.Point(437, 20);
 			this.gb_CargaTriceps.Name = "gb_CargaTriceps";
 			this.gb_CargaTriceps.Size = new System.Drawing.Size(103, 310);
@@ -1111,72 +1111,72 @@ namespace Rock_Solid
 			this.gb_CargaTriceps.TabStop = false;
 			this.gb_CargaTriceps.Text = "Carga";
 			// 
-			// numericUpDown98
+			// nCarga_Mergulho
 			// 
-			this.numericUpDown98.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown98.Name = "numericUpDown98";
-			this.numericUpDown98.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown98.TabIndex = 32;
+			this.nCarga_Mergulho.Location = new System.Drawing.Point(12, 201);
+			this.nCarga_Mergulho.Name = "nCarga_Mergulho";
+			this.nCarga_Mergulho.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Mergulho.TabIndex = 32;
 			// 
-			// numericUpDown99
+			// nCarga_Invertido
 			// 
-			this.numericUpDown99.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown99.Name = "numericUpDown99";
-			this.numericUpDown99.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown99.TabIndex = 31;
+			this.nCarga_Invertido.Location = new System.Drawing.Point(12, 175);
+			this.nCarga_Invertido.Name = "nCarga_Invertido";
+			this.nCarga_Invertido.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Invertido.TabIndex = 31;
 			// 
-			// numericUpDown100
+			// nCarga_Coice
 			// 
-			this.numericUpDown100.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown100.Name = "numericUpDown100";
-			this.numericUpDown100.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown100.TabIndex = 30;
+			this.nCarga_Coice.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_Coice.Name = "nCarga_Coice";
+			this.nCarga_Coice.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Coice.TabIndex = 30;
 			// 
-			// numericUpDown101
+			// nCarga_RoscaSupinada
 			// 
-			this.numericUpDown101.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown101.Name = "numericUpDown101";
-			this.numericUpDown101.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown101.TabIndex = 29;
+			this.nCarga_RoscaSupinada.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_RoscaSupinada.Name = "nCarga_RoscaSupinada";
+			this.nCarga_RoscaSupinada.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RoscaSupinada.TabIndex = 29;
 			// 
-			// numericUpDown102
+			// nCarga_RoscaFrancesa
 			// 
-			this.numericUpDown102.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown102.Name = "numericUpDown102";
-			this.numericUpDown102.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown102.TabIndex = 28;
+			this.nCarga_RoscaFrancesa.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_RoscaFrancesa.Name = "nCarga_RoscaFrancesa";
+			this.nCarga_RoscaFrancesa.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RoscaFrancesa.TabIndex = 28;
 			// 
-			// numericUpDown103
+			// nCarga_PulleyCorda
 			// 
-			this.numericUpDown103.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown103.Name = "numericUpDown103";
-			this.numericUpDown103.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown103.TabIndex = 27;
+			this.nCarga_PulleyCorda.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_PulleyCorda.Name = "nCarga_PulleyCorda";
+			this.nCarga_PulleyCorda.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_PulleyCorda.TabIndex = 27;
 			// 
-			// numericUpDown104
+			// nCarga_RoscaTesta
 			// 
-			this.numericUpDown104.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown104.Name = "numericUpDown104";
-			this.numericUpDown104.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown104.TabIndex = 26;
+			this.nCarga_RoscaTesta.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_RoscaTesta.Name = "nCarga_RoscaTesta";
+			this.nCarga_RoscaTesta.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RoscaTesta.TabIndex = 26;
 			// 
-			// numericUpDown105
+			// nCarga_Pulley
 			// 
-			this.numericUpDown105.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown105.Name = "numericUpDown105";
-			this.numericUpDown105.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown105.TabIndex = 25;
+			this.nCarga_Pulley.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_Pulley.Name = "nCarga_Pulley";
+			this.nCarga_Pulley.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Pulley.TabIndex = 25;
 			// 
 			// gb_RepeticaoTriceps
 			// 
-			this.gb_RepeticaoTriceps.Controls.Add(this.numericUpDown113);
-			this.gb_RepeticaoTriceps.Controls.Add(this.numericUpDown114);
-			this.gb_RepeticaoTriceps.Controls.Add(this.numericUpDown115);
-			this.gb_RepeticaoTriceps.Controls.Add(this.numericUpDown116);
-			this.gb_RepeticaoTriceps.Controls.Add(this.numericUpDown117);
-			this.gb_RepeticaoTriceps.Controls.Add(this.numericUpDown118);
-			this.gb_RepeticaoTriceps.Controls.Add(this.numericUpDown119);
-			this.gb_RepeticaoTriceps.Controls.Add(this.numericUpDown120);
+			this.gb_RepeticaoTriceps.Controls.Add(this.nRep_Mergulho);
+			this.gb_RepeticaoTriceps.Controls.Add(this.nRep_Invertido);
+			this.gb_RepeticaoTriceps.Controls.Add(this.nRep_Coice);
+			this.gb_RepeticaoTriceps.Controls.Add(this.nRep_RoscaSupinada);
+			this.gb_RepeticaoTriceps.Controls.Add(this.nRep_RoscaFrancesa);
+			this.gb_RepeticaoTriceps.Controls.Add(this.nRep_PulleyCorda);
+			this.gb_RepeticaoTriceps.Controls.Add(this.nRep_RoscaTesta);
+			this.gb_RepeticaoTriceps.Controls.Add(this.nRep_Pulley);
 			this.gb_RepeticaoTriceps.Location = new System.Drawing.Point(335, 20);
 			this.gb_RepeticaoTriceps.Name = "gb_RepeticaoTriceps";
 			this.gb_RepeticaoTriceps.Size = new System.Drawing.Size(103, 310);
@@ -1184,72 +1184,72 @@ namespace Rock_Solid
 			this.gb_RepeticaoTriceps.TabStop = false;
 			this.gb_RepeticaoTriceps.Text = "Repetição";
 			// 
-			// numericUpDown113
+			// nRep_Mergulho
 			// 
-			this.numericUpDown113.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown113.Name = "numericUpDown113";
-			this.numericUpDown113.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown113.TabIndex = 32;
+			this.nRep_Mergulho.Location = new System.Drawing.Point(12, 201);
+			this.nRep_Mergulho.Name = "nRep_Mergulho";
+			this.nRep_Mergulho.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Mergulho.TabIndex = 32;
 			// 
-			// numericUpDown114
+			// nRep_Invertido
 			// 
-			this.numericUpDown114.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown114.Name = "numericUpDown114";
-			this.numericUpDown114.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown114.TabIndex = 31;
+			this.nRep_Invertido.Location = new System.Drawing.Point(12, 175);
+			this.nRep_Invertido.Name = "nRep_Invertido";
+			this.nRep_Invertido.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Invertido.TabIndex = 31;
 			// 
-			// numericUpDown115
+			// nRep_Coice
 			// 
-			this.numericUpDown115.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown115.Name = "numericUpDown115";
-			this.numericUpDown115.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown115.TabIndex = 30;
+			this.nRep_Coice.Location = new System.Drawing.Point(12, 146);
+			this.nRep_Coice.Name = "nRep_Coice";
+			this.nRep_Coice.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Coice.TabIndex = 30;
 			// 
-			// numericUpDown116
+			// nRep_RoscaSupinada
 			// 
-			this.numericUpDown116.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown116.Name = "numericUpDown116";
-			this.numericUpDown116.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown116.TabIndex = 29;
+			this.nRep_RoscaSupinada.Location = new System.Drawing.Point(12, 120);
+			this.nRep_RoscaSupinada.Name = "nRep_RoscaSupinada";
+			this.nRep_RoscaSupinada.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RoscaSupinada.TabIndex = 29;
 			// 
-			// numericUpDown117
+			// nRep_RoscaFrancesa
 			// 
-			this.numericUpDown117.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown117.Name = "numericUpDown117";
-			this.numericUpDown117.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown117.TabIndex = 28;
+			this.nRep_RoscaFrancesa.Location = new System.Drawing.Point(12, 94);
+			this.nRep_RoscaFrancesa.Name = "nRep_RoscaFrancesa";
+			this.nRep_RoscaFrancesa.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RoscaFrancesa.TabIndex = 28;
 			// 
-			// numericUpDown118
+			// nRep_PulleyCorda
 			// 
-			this.numericUpDown118.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown118.Name = "numericUpDown118";
-			this.numericUpDown118.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown118.TabIndex = 27;
+			this.nRep_PulleyCorda.Location = new System.Drawing.Point(12, 68);
+			this.nRep_PulleyCorda.Name = "nRep_PulleyCorda";
+			this.nRep_PulleyCorda.Size = new System.Drawing.Size(80, 20);
+			this.nRep_PulleyCorda.TabIndex = 27;
 			// 
-			// numericUpDown119
+			// nRep_RoscaTesta
 			// 
-			this.numericUpDown119.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown119.Name = "numericUpDown119";
-			this.numericUpDown119.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown119.TabIndex = 26;
+			this.nRep_RoscaTesta.Location = new System.Drawing.Point(12, 42);
+			this.nRep_RoscaTesta.Name = "nRep_RoscaTesta";
+			this.nRep_RoscaTesta.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RoscaTesta.TabIndex = 26;
 			// 
-			// numericUpDown120
+			// nRep_Pulley
 			// 
-			this.numericUpDown120.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown120.Name = "numericUpDown120";
-			this.numericUpDown120.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown120.TabIndex = 25;
+			this.nRep_Pulley.Location = new System.Drawing.Point(12, 16);
+			this.nRep_Pulley.Name = "nRep_Pulley";
+			this.nRep_Pulley.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Pulley.TabIndex = 25;
 			// 
 			// gb_SerieTriceps
 			// 
-			this.gb_SerieTriceps.Controls.Add(this.numericUpDown128);
-			this.gb_SerieTriceps.Controls.Add(this.numericUpDown129);
-			this.gb_SerieTriceps.Controls.Add(this.numericUpDown130);
-			this.gb_SerieTriceps.Controls.Add(this.numericUpDown131);
-			this.gb_SerieTriceps.Controls.Add(this.numericUpDown132);
-			this.gb_SerieTriceps.Controls.Add(this.numericUpDown133);
-			this.gb_SerieTriceps.Controls.Add(this.numericUpDown134);
-			this.gb_SerieTriceps.Controls.Add(this.numericUpDown135);
+			this.gb_SerieTriceps.Controls.Add(this.nSerie_ergulho);
+			this.gb_SerieTriceps.Controls.Add(this.nSerie_Invertido);
+			this.gb_SerieTriceps.Controls.Add(this.nSerie_Coice);
+			this.gb_SerieTriceps.Controls.Add(this.nSerie_RoscaSupinada);
+			this.gb_SerieTriceps.Controls.Add(this.nSerie_RoscaFrancesa);
+			this.gb_SerieTriceps.Controls.Add(this.nSerie_PulleyCorda);
+			this.gb_SerieTriceps.Controls.Add(this.nSerie_RoscaTesta);
+			this.gb_SerieTriceps.Controls.Add(this.nSerie_Pulley);
 			this.gb_SerieTriceps.Location = new System.Drawing.Point(233, 20);
 			this.gb_SerieTriceps.Name = "gb_SerieTriceps";
 			this.gb_SerieTriceps.Size = new System.Drawing.Size(103, 310);
@@ -1257,61 +1257,61 @@ namespace Rock_Solid
 			this.gb_SerieTriceps.TabStop = false;
 			this.gb_SerieTriceps.Text = "Serie";
 			// 
-			// numericUpDown128
+			// nSerie_ergulho
 			// 
-			this.numericUpDown128.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown128.Name = "numericUpDown128";
-			this.numericUpDown128.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown128.TabIndex = 17;
+			this.nSerie_ergulho.Location = new System.Drawing.Point(12, 201);
+			this.nSerie_ergulho.Name = "nSerie_ergulho";
+			this.nSerie_ergulho.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_ergulho.TabIndex = 17;
 			// 
-			// numericUpDown129
+			// nSerie_Invertido
 			// 
-			this.numericUpDown129.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown129.Name = "numericUpDown129";
-			this.numericUpDown129.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown129.TabIndex = 16;
+			this.nSerie_Invertido.Location = new System.Drawing.Point(12, 175);
+			this.nSerie_Invertido.Name = "nSerie_Invertido";
+			this.nSerie_Invertido.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Invertido.TabIndex = 16;
 			// 
-			// numericUpDown130
+			// nSerie_Coice
 			// 
-			this.numericUpDown130.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown130.Name = "numericUpDown130";
-			this.numericUpDown130.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown130.TabIndex = 15;
+			this.nSerie_Coice.Location = new System.Drawing.Point(12, 146);
+			this.nSerie_Coice.Name = "nSerie_Coice";
+			this.nSerie_Coice.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Coice.TabIndex = 15;
 			// 
-			// numericUpDown131
+			// nSerie_RoscaSupinada
 			// 
-			this.numericUpDown131.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown131.Name = "numericUpDown131";
-			this.numericUpDown131.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown131.TabIndex = 14;
+			this.nSerie_RoscaSupinada.Location = new System.Drawing.Point(12, 120);
+			this.nSerie_RoscaSupinada.Name = "nSerie_RoscaSupinada";
+			this.nSerie_RoscaSupinada.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RoscaSupinada.TabIndex = 14;
 			// 
-			// numericUpDown132
+			// nSerie_RoscaFrancesa
 			// 
-			this.numericUpDown132.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown132.Name = "numericUpDown132";
-			this.numericUpDown132.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown132.TabIndex = 13;
+			this.nSerie_RoscaFrancesa.Location = new System.Drawing.Point(12, 94);
+			this.nSerie_RoscaFrancesa.Name = "nSerie_RoscaFrancesa";
+			this.nSerie_RoscaFrancesa.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RoscaFrancesa.TabIndex = 13;
 			// 
-			// numericUpDown133
+			// nSerie_PulleyCorda
 			// 
-			this.numericUpDown133.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown133.Name = "numericUpDown133";
-			this.numericUpDown133.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown133.TabIndex = 12;
+			this.nSerie_PulleyCorda.Location = new System.Drawing.Point(12, 68);
+			this.nSerie_PulleyCorda.Name = "nSerie_PulleyCorda";
+			this.nSerie_PulleyCorda.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_PulleyCorda.TabIndex = 12;
 			// 
-			// numericUpDown134
+			// nSerie_RoscaTesta
 			// 
-			this.numericUpDown134.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown134.Name = "numericUpDown134";
-			this.numericUpDown134.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown134.TabIndex = 11;
+			this.nSerie_RoscaTesta.Location = new System.Drawing.Point(12, 42);
+			this.nSerie_RoscaTesta.Name = "nSerie_RoscaTesta";
+			this.nSerie_RoscaTesta.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RoscaTesta.TabIndex = 11;
 			// 
-			// numericUpDown135
+			// nSerie_Pulley
 			// 
-			this.numericUpDown135.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown135.Name = "numericUpDown135";
-			this.numericUpDown135.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown135.TabIndex = 0;
+			this.nSerie_Pulley.Location = new System.Drawing.Point(12, 16);
+			this.nSerie_Pulley.Name = "nSerie_Pulley";
+			this.nSerie_Pulley.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Pulley.TabIndex = 0;
 			// 
 			// gb_ExercicioTriceps
 			// 
@@ -1546,13 +1546,13 @@ namespace Rock_Solid
 			// 
 			// gb_CargaOmbros
 			// 
-			this.gb_CargaOmbros.Controls.Add(this.numericUpDown144);
-			this.gb_CargaOmbros.Controls.Add(this.numericUpDown145);
-			this.gb_CargaOmbros.Controls.Add(this.numericUpDown146);
-			this.gb_CargaOmbros.Controls.Add(this.numericUpDown147);
-			this.gb_CargaOmbros.Controls.Add(this.numericUpDown148);
-			this.gb_CargaOmbros.Controls.Add(this.numericUpDown149);
-			this.gb_CargaOmbros.Controls.Add(this.numericUpDown150);
+			this.gb_CargaOmbros.Controls.Add(this.nCarga_RemadaAlta);
+			this.gb_CargaOmbros.Controls.Add(this.nCarga_DesenvolvimentoDumbell);
+			this.gb_CargaOmbros.Controls.Add(this.nCarga_DesenvolvimentoFrente);
+			this.gb_CargaOmbros.Controls.Add(this.nCarga_DesenvolvimentoCostas);
+			this.gb_CargaOmbros.Controls.Add(this.nCarga_ElevacaoOmbro);
+			this.gb_CargaOmbros.Controls.Add(this.nCarga_ElevacaoFrontal);
+			this.gb_CargaOmbros.Controls.Add(this.nCarga_ElevacaoLateral);
 			this.gb_CargaOmbros.Location = new System.Drawing.Point(437, 20);
 			this.gb_CargaOmbros.Name = "gb_CargaOmbros";
 			this.gb_CargaOmbros.Size = new System.Drawing.Size(103, 310);
@@ -1560,64 +1560,64 @@ namespace Rock_Solid
 			this.gb_CargaOmbros.TabStop = false;
 			this.gb_CargaOmbros.Text = "Carga";
 			// 
-			// numericUpDown144
+			// nCarga_RemadaAlta
 			// 
-			this.numericUpDown144.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown144.Name = "numericUpDown144";
-			this.numericUpDown144.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown144.TabIndex = 31;
+			this.nCarga_RemadaAlta.Location = new System.Drawing.Point(12, 175);
+			this.nCarga_RemadaAlta.Name = "nCarga_RemadaAlta";
+			this.nCarga_RemadaAlta.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RemadaAlta.TabIndex = 31;
 			// 
-			// numericUpDown145
+			// nCarga_DesenvolvimentoDumbell
 			// 
-			this.numericUpDown145.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown145.Name = "numericUpDown145";
-			this.numericUpDown145.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown145.TabIndex = 30;
+			this.nCarga_DesenvolvimentoDumbell.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_DesenvolvimentoDumbell.Name = "nCarga_DesenvolvimentoDumbell";
+			this.nCarga_DesenvolvimentoDumbell.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_DesenvolvimentoDumbell.TabIndex = 30;
 			// 
-			// numericUpDown146
+			// nCarga_DesenvolvimentoFrente
 			// 
-			this.numericUpDown146.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown146.Name = "numericUpDown146";
-			this.numericUpDown146.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown146.TabIndex = 29;
+			this.nCarga_DesenvolvimentoFrente.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_DesenvolvimentoFrente.Name = "nCarga_DesenvolvimentoFrente";
+			this.nCarga_DesenvolvimentoFrente.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_DesenvolvimentoFrente.TabIndex = 29;
 			// 
-			// numericUpDown147
+			// nCarga_DesenvolvimentoCostas
 			// 
-			this.numericUpDown147.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown147.Name = "numericUpDown147";
-			this.numericUpDown147.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown147.TabIndex = 28;
+			this.nCarga_DesenvolvimentoCostas.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_DesenvolvimentoCostas.Name = "nCarga_DesenvolvimentoCostas";
+			this.nCarga_DesenvolvimentoCostas.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_DesenvolvimentoCostas.TabIndex = 28;
 			// 
-			// numericUpDown148
+			// nCarga_ElevacaoOmbro
 			// 
-			this.numericUpDown148.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown148.Name = "numericUpDown148";
-			this.numericUpDown148.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown148.TabIndex = 27;
+			this.nCarga_ElevacaoOmbro.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_ElevacaoOmbro.Name = "nCarga_ElevacaoOmbro";
+			this.nCarga_ElevacaoOmbro.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_ElevacaoOmbro.TabIndex = 27;
 			// 
-			// numericUpDown149
+			// nCarga_ElevacaoFrontal
 			// 
-			this.numericUpDown149.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown149.Name = "numericUpDown149";
-			this.numericUpDown149.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown149.TabIndex = 26;
+			this.nCarga_ElevacaoFrontal.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_ElevacaoFrontal.Name = "nCarga_ElevacaoFrontal";
+			this.nCarga_ElevacaoFrontal.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_ElevacaoFrontal.TabIndex = 26;
 			// 
-			// numericUpDown150
+			// nCarga_ElevacaoLateral
 			// 
-			this.numericUpDown150.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown150.Name = "numericUpDown150";
-			this.numericUpDown150.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown150.TabIndex = 25;
+			this.nCarga_ElevacaoLateral.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_ElevacaoLateral.Name = "nCarga_ElevacaoLateral";
+			this.nCarga_ElevacaoLateral.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_ElevacaoLateral.TabIndex = 25;
 			// 
 			// gb_RepeticaoOmbros
 			// 
-			this.gb_RepeticaoOmbros.Controls.Add(this.numericUpDown159);
-			this.gb_RepeticaoOmbros.Controls.Add(this.numericUpDown160);
-			this.gb_RepeticaoOmbros.Controls.Add(this.numericUpDown161);
-			this.gb_RepeticaoOmbros.Controls.Add(this.numericUpDown162);
-			this.gb_RepeticaoOmbros.Controls.Add(this.numericUpDown163);
-			this.gb_RepeticaoOmbros.Controls.Add(this.numericUpDown164);
-			this.gb_RepeticaoOmbros.Controls.Add(this.numericUpDown165);
+			this.gb_RepeticaoOmbros.Controls.Add(this.nRep_RemadaAlta);
+			this.gb_RepeticaoOmbros.Controls.Add(this.nRep_DesenvolvimentoDumbell);
+			this.gb_RepeticaoOmbros.Controls.Add(this.nRep_DesenvolvimentoFrente);
+			this.gb_RepeticaoOmbros.Controls.Add(this.nRep_DesenvolvimentoCostas);
+			this.gb_RepeticaoOmbros.Controls.Add(this.nRep_ElevacaoOmbro);
+			this.gb_RepeticaoOmbros.Controls.Add(this.nRep_ElevacaoFrontal);
+			this.gb_RepeticaoOmbros.Controls.Add(this.nRep_ElevacaoLateral);
 			this.gb_RepeticaoOmbros.Location = new System.Drawing.Point(335, 20);
 			this.gb_RepeticaoOmbros.Name = "gb_RepeticaoOmbros";
 			this.gb_RepeticaoOmbros.Size = new System.Drawing.Size(103, 310);
@@ -1625,64 +1625,64 @@ namespace Rock_Solid
 			this.gb_RepeticaoOmbros.TabStop = false;
 			this.gb_RepeticaoOmbros.Text = "Repetição";
 			// 
-			// numericUpDown159
+			// nRep_RemadaAlta
 			// 
-			this.numericUpDown159.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown159.Name = "numericUpDown159";
-			this.numericUpDown159.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown159.TabIndex = 31;
+			this.nRep_RemadaAlta.Location = new System.Drawing.Point(12, 175);
+			this.nRep_RemadaAlta.Name = "nRep_RemadaAlta";
+			this.nRep_RemadaAlta.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RemadaAlta.TabIndex = 31;
 			// 
-			// numericUpDown160
+			// nRep_DesenvolvimentoDumbell
 			// 
-			this.numericUpDown160.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown160.Name = "numericUpDown160";
-			this.numericUpDown160.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown160.TabIndex = 30;
+			this.nRep_DesenvolvimentoDumbell.Location = new System.Drawing.Point(12, 146);
+			this.nRep_DesenvolvimentoDumbell.Name = "nRep_DesenvolvimentoDumbell";
+			this.nRep_DesenvolvimentoDumbell.Size = new System.Drawing.Size(80, 20);
+			this.nRep_DesenvolvimentoDumbell.TabIndex = 30;
 			// 
-			// numericUpDown161
+			// nRep_DesenvolvimentoFrente
 			// 
-			this.numericUpDown161.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown161.Name = "numericUpDown161";
-			this.numericUpDown161.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown161.TabIndex = 29;
+			this.nRep_DesenvolvimentoFrente.Location = new System.Drawing.Point(12, 120);
+			this.nRep_DesenvolvimentoFrente.Name = "nRep_DesenvolvimentoFrente";
+			this.nRep_DesenvolvimentoFrente.Size = new System.Drawing.Size(80, 20);
+			this.nRep_DesenvolvimentoFrente.TabIndex = 29;
 			// 
-			// numericUpDown162
+			// nRep_DesenvolvimentoCostas
 			// 
-			this.numericUpDown162.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown162.Name = "numericUpDown162";
-			this.numericUpDown162.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown162.TabIndex = 28;
+			this.nRep_DesenvolvimentoCostas.Location = new System.Drawing.Point(12, 94);
+			this.nRep_DesenvolvimentoCostas.Name = "nRep_DesenvolvimentoCostas";
+			this.nRep_DesenvolvimentoCostas.Size = new System.Drawing.Size(80, 20);
+			this.nRep_DesenvolvimentoCostas.TabIndex = 28;
 			// 
-			// numericUpDown163
+			// nRep_ElevacaoOmbro
 			// 
-			this.numericUpDown163.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown163.Name = "numericUpDown163";
-			this.numericUpDown163.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown163.TabIndex = 27;
+			this.nRep_ElevacaoOmbro.Location = new System.Drawing.Point(12, 68);
+			this.nRep_ElevacaoOmbro.Name = "nRep_ElevacaoOmbro";
+			this.nRep_ElevacaoOmbro.Size = new System.Drawing.Size(80, 20);
+			this.nRep_ElevacaoOmbro.TabIndex = 27;
 			// 
-			// numericUpDown164
+			// nRep_ElevacaoFrontal
 			// 
-			this.numericUpDown164.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown164.Name = "numericUpDown164";
-			this.numericUpDown164.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown164.TabIndex = 26;
+			this.nRep_ElevacaoFrontal.Location = new System.Drawing.Point(12, 42);
+			this.nRep_ElevacaoFrontal.Name = "nRep_ElevacaoFrontal";
+			this.nRep_ElevacaoFrontal.Size = new System.Drawing.Size(80, 20);
+			this.nRep_ElevacaoFrontal.TabIndex = 26;
 			// 
-			// numericUpDown165
+			// nRep_ElevacaoLateral
 			// 
-			this.numericUpDown165.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown165.Name = "numericUpDown165";
-			this.numericUpDown165.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown165.TabIndex = 25;
+			this.nRep_ElevacaoLateral.Location = new System.Drawing.Point(12, 16);
+			this.nRep_ElevacaoLateral.Name = "nRep_ElevacaoLateral";
+			this.nRep_ElevacaoLateral.Size = new System.Drawing.Size(80, 20);
+			this.nRep_ElevacaoLateral.TabIndex = 25;
 			// 
 			// gb_SerieOmbros
 			// 
-			this.gb_SerieOmbros.Controls.Add(this.numericUpDown174);
-			this.gb_SerieOmbros.Controls.Add(this.numericUpDown175);
-			this.gb_SerieOmbros.Controls.Add(this.numericUpDown176);
-			this.gb_SerieOmbros.Controls.Add(this.numericUpDown177);
-			this.gb_SerieOmbros.Controls.Add(this.numericUpDown178);
-			this.gb_SerieOmbros.Controls.Add(this.numericUpDown179);
-			this.gb_SerieOmbros.Controls.Add(this.numericUpDown180);
+			this.gb_SerieOmbros.Controls.Add(this.nSerie_RemadaAlta);
+			this.gb_SerieOmbros.Controls.Add(this.nSerie_DesenvolvimentoDumbell);
+			this.gb_SerieOmbros.Controls.Add(this.nSerie_DesenvolvimentoFrente);
+			this.gb_SerieOmbros.Controls.Add(this.nSerie_DesenvolvimentoCostas);
+			this.gb_SerieOmbros.Controls.Add(this.nSerie_ElevacaoOmbro);
+			this.gb_SerieOmbros.Controls.Add(this.nSerie_ElevacaoFrontal);
+			this.gb_SerieOmbros.Controls.Add(this.nSerie_ElevacaoLateral);
 			this.gb_SerieOmbros.Location = new System.Drawing.Point(233, 20);
 			this.gb_SerieOmbros.Name = "gb_SerieOmbros";
 			this.gb_SerieOmbros.Size = new System.Drawing.Size(103, 310);
@@ -1690,54 +1690,54 @@ namespace Rock_Solid
 			this.gb_SerieOmbros.TabStop = false;
 			this.gb_SerieOmbros.Text = "Serie";
 			// 
-			// numericUpDown174
+			// nSerie_RemadaAlta
 			// 
-			this.numericUpDown174.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown174.Name = "numericUpDown174";
-			this.numericUpDown174.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown174.TabIndex = 16;
+			this.nSerie_RemadaAlta.Location = new System.Drawing.Point(12, 175);
+			this.nSerie_RemadaAlta.Name = "nSerie_RemadaAlta";
+			this.nSerie_RemadaAlta.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RemadaAlta.TabIndex = 16;
 			// 
-			// numericUpDown175
+			// nSerie_DesenvolvimentoDumbell
 			// 
-			this.numericUpDown175.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown175.Name = "numericUpDown175";
-			this.numericUpDown175.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown175.TabIndex = 15;
+			this.nSerie_DesenvolvimentoDumbell.Location = new System.Drawing.Point(12, 146);
+			this.nSerie_DesenvolvimentoDumbell.Name = "nSerie_DesenvolvimentoDumbell";
+			this.nSerie_DesenvolvimentoDumbell.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_DesenvolvimentoDumbell.TabIndex = 15;
 			// 
-			// numericUpDown176
+			// nSerie_DesenvolvimentoFrente
 			// 
-			this.numericUpDown176.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown176.Name = "numericUpDown176";
-			this.numericUpDown176.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown176.TabIndex = 14;
+			this.nSerie_DesenvolvimentoFrente.Location = new System.Drawing.Point(12, 120);
+			this.nSerie_DesenvolvimentoFrente.Name = "nSerie_DesenvolvimentoFrente";
+			this.nSerie_DesenvolvimentoFrente.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_DesenvolvimentoFrente.TabIndex = 14;
 			// 
-			// numericUpDown177
+			// nSerie_DesenvolvimentoCostas
 			// 
-			this.numericUpDown177.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown177.Name = "numericUpDown177";
-			this.numericUpDown177.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown177.TabIndex = 13;
+			this.nSerie_DesenvolvimentoCostas.Location = new System.Drawing.Point(12, 94);
+			this.nSerie_DesenvolvimentoCostas.Name = "nSerie_DesenvolvimentoCostas";
+			this.nSerie_DesenvolvimentoCostas.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_DesenvolvimentoCostas.TabIndex = 13;
 			// 
-			// numericUpDown178
+			// nSerie_ElevacaoOmbro
 			// 
-			this.numericUpDown178.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown178.Name = "numericUpDown178";
-			this.numericUpDown178.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown178.TabIndex = 12;
+			this.nSerie_ElevacaoOmbro.Location = new System.Drawing.Point(12, 68);
+			this.nSerie_ElevacaoOmbro.Name = "nSerie_ElevacaoOmbro";
+			this.nSerie_ElevacaoOmbro.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_ElevacaoOmbro.TabIndex = 12;
 			// 
-			// numericUpDown179
+			// nSerie_ElevacaoFrontal
 			// 
-			this.numericUpDown179.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown179.Name = "numericUpDown179";
-			this.numericUpDown179.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown179.TabIndex = 11;
+			this.nSerie_ElevacaoFrontal.Location = new System.Drawing.Point(12, 42);
+			this.nSerie_ElevacaoFrontal.Name = "nSerie_ElevacaoFrontal";
+			this.nSerie_ElevacaoFrontal.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_ElevacaoFrontal.TabIndex = 11;
 			// 
-			// numericUpDown180
+			// nSerie_ElevacaoLateral
 			// 
-			this.numericUpDown180.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown180.Name = "numericUpDown180";
-			this.numericUpDown180.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown180.TabIndex = 0;
+			this.nSerie_ElevacaoLateral.Location = new System.Drawing.Point(12, 16);
+			this.nSerie_ElevacaoLateral.Name = "nSerie_ElevacaoLateral";
+			this.nSerie_ElevacaoLateral.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_ElevacaoLateral.TabIndex = 0;
 			// 
 			// gb_ExercicioOmbros
 			// 
@@ -1954,17 +1954,17 @@ namespace Rock_Solid
 			// 
 			// gb_CargaPernas
 			// 
-			this.gb_CargaPernas.Controls.Add(this.numericUpDown58);
-			this.gb_CargaPernas.Controls.Add(this.numericUpDown59);
-			this.gb_CargaPernas.Controls.Add(this.numericUpDown60);
-			this.gb_CargaPernas.Controls.Add(this.numericUpDown61);
-			this.gb_CargaPernas.Controls.Add(this.numericUpDown63);
-			this.gb_CargaPernas.Controls.Add(this.numericUpDown64);
-			this.gb_CargaPernas.Controls.Add(this.numericUpDown65);
-			this.gb_CargaPernas.Controls.Add(this.numericUpDown66);
-			this.gb_CargaPernas.Controls.Add(this.numericUpDown67);
-			this.gb_CargaPernas.Controls.Add(this.numericUpDown68);
-			this.gb_CargaPernas.Controls.Add(this.numericUpDown69);
+			this.gb_CargaPernas.Controls.Add(this.nCarga_Avanco);
+			this.gb_CargaPernas.Controls.Add(this.nCarga_Gluteo);
+			this.gb_CargaPernas.Controls.Add(this.nCarga_Stiff);
+			this.gb_CargaPernas.Controls.Add(this.nCarga_Panturrilha);
+			this.gb_CargaPernas.Controls.Add(this.nCarga_Hack);
+			this.gb_CargaPernas.Controls.Add(this.nCarga_AgachamentoLivre);
+			this.gb_CargaPernas.Controls.Add(this.nCarga_LegPress);
+			this.gb_CargaPernas.Controls.Add(this.nCarga_Abdutor);
+			this.gb_CargaPernas.Controls.Add(this.nCarga_Adutor);
+			this.gb_CargaPernas.Controls.Add(this.nCarga_CadeiraFlexora);
+			this.gb_CargaPernas.Controls.Add(this.nCarga_CadeiraExtensora);
 			this.gb_CargaPernas.Location = new System.Drawing.Point(437, 20);
 			this.gb_CargaPernas.Name = "gb_CargaPernas";
 			this.gb_CargaPernas.Size = new System.Drawing.Size(103, 310);
@@ -1972,96 +1972,96 @@ namespace Rock_Solid
 			this.gb_CargaPernas.TabStop = false;
 			this.gb_CargaPernas.Text = "Carga";
 			// 
-			// numericUpDown58
+			// nCarga_Avanco
 			// 
-			this.numericUpDown58.Location = new System.Drawing.Point(12, 279);
-			this.numericUpDown58.Name = "numericUpDown58";
-			this.numericUpDown58.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown58.TabIndex = 36;
+			this.nCarga_Avanco.Location = new System.Drawing.Point(12, 279);
+			this.nCarga_Avanco.Name = "nCarga_Avanco";
+			this.nCarga_Avanco.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Avanco.TabIndex = 36;
 			// 
-			// numericUpDown59
+			// nCarga_Gluteo
 			// 
-			this.numericUpDown59.Location = new System.Drawing.Point(12, 253);
-			this.numericUpDown59.Name = "numericUpDown59";
-			this.numericUpDown59.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown59.TabIndex = 35;
+			this.nCarga_Gluteo.Location = new System.Drawing.Point(12, 253);
+			this.nCarga_Gluteo.Name = "nCarga_Gluteo";
+			this.nCarga_Gluteo.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Gluteo.TabIndex = 35;
 			// 
-			// numericUpDown60
+			// nCarga_Stiff
 			// 
-			this.numericUpDown60.Location = new System.Drawing.Point(12, 227);
-			this.numericUpDown60.Name = "numericUpDown60";
-			this.numericUpDown60.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown60.TabIndex = 34;
+			this.nCarga_Stiff.Location = new System.Drawing.Point(12, 227);
+			this.nCarga_Stiff.Name = "nCarga_Stiff";
+			this.nCarga_Stiff.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Stiff.TabIndex = 34;
 			// 
-			// numericUpDown61
+			// nCarga_Panturrilha
 			// 
-			this.numericUpDown61.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown61.Name = "numericUpDown61";
-			this.numericUpDown61.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown61.TabIndex = 33;
+			this.nCarga_Panturrilha.Location = new System.Drawing.Point(12, 201);
+			this.nCarga_Panturrilha.Name = "nCarga_Panturrilha";
+			this.nCarga_Panturrilha.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Panturrilha.TabIndex = 33;
 			// 
-			// numericUpDown63
+			// nCarga_Hack
 			// 
-			this.numericUpDown63.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown63.Name = "numericUpDown63";
-			this.numericUpDown63.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown63.TabIndex = 31;
+			this.nCarga_Hack.Location = new System.Drawing.Point(12, 175);
+			this.nCarga_Hack.Name = "nCarga_Hack";
+			this.nCarga_Hack.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Hack.TabIndex = 31;
 			// 
-			// numericUpDown64
+			// nCarga_AgachamentoLivre
 			// 
-			this.numericUpDown64.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown64.Name = "numericUpDown64";
-			this.numericUpDown64.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown64.TabIndex = 30;
+			this.nCarga_AgachamentoLivre.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_AgachamentoLivre.Name = "nCarga_AgachamentoLivre";
+			this.nCarga_AgachamentoLivre.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_AgachamentoLivre.TabIndex = 30;
 			// 
-			// numericUpDown65
+			// nCarga_LegPress
 			// 
-			this.numericUpDown65.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown65.Name = "numericUpDown65";
-			this.numericUpDown65.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown65.TabIndex = 29;
+			this.nCarga_LegPress.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_LegPress.Name = "nCarga_LegPress";
+			this.nCarga_LegPress.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_LegPress.TabIndex = 29;
 			// 
-			// numericUpDown66
+			// nCarga_Abdutor
 			// 
-			this.numericUpDown66.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown66.Name = "numericUpDown66";
-			this.numericUpDown66.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown66.TabIndex = 28;
+			this.nCarga_Abdutor.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_Abdutor.Name = "nCarga_Abdutor";
+			this.nCarga_Abdutor.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Abdutor.TabIndex = 28;
 			// 
-			// numericUpDown67
+			// nCarga_Adutor
 			// 
-			this.numericUpDown67.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown67.Name = "numericUpDown67";
-			this.numericUpDown67.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown67.TabIndex = 27;
+			this.nCarga_Adutor.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_Adutor.Name = "nCarga_Adutor";
+			this.nCarga_Adutor.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Adutor.TabIndex = 27;
 			// 
-			// numericUpDown68
+			// nCarga_CadeiraFlexora
 			// 
-			this.numericUpDown68.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown68.Name = "numericUpDown68";
-			this.numericUpDown68.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown68.TabIndex = 26;
+			this.nCarga_CadeiraFlexora.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_CadeiraFlexora.Name = "nCarga_CadeiraFlexora";
+			this.nCarga_CadeiraFlexora.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_CadeiraFlexora.TabIndex = 26;
 			// 
-			// numericUpDown69
+			// nCarga_CadeiraExtensora
 			// 
-			this.numericUpDown69.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown69.Name = "numericUpDown69";
-			this.numericUpDown69.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown69.TabIndex = 25;
+			this.nCarga_CadeiraExtensora.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_CadeiraExtensora.Name = "nCarga_CadeiraExtensora";
+			this.nCarga_CadeiraExtensora.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_CadeiraExtensora.TabIndex = 25;
 			// 
 			// gb_RepeticaoPernas
 			// 
-			this.gb_RepeticaoPernas.Controls.Add(this.numericUpDown28);
-			this.gb_RepeticaoPernas.Controls.Add(this.numericUpDown29);
-			this.gb_RepeticaoPernas.Controls.Add(this.numericUpDown30);
-			this.gb_RepeticaoPernas.Controls.Add(this.numericUpDown31);
-			this.gb_RepeticaoPernas.Controls.Add(this.numericUpDown33);
-			this.gb_RepeticaoPernas.Controls.Add(this.numericUpDown34);
-			this.gb_RepeticaoPernas.Controls.Add(this.numericUpDown35);
-			this.gb_RepeticaoPernas.Controls.Add(this.numericUpDown36);
-			this.gb_RepeticaoPernas.Controls.Add(this.numericUpDown37);
-			this.gb_RepeticaoPernas.Controls.Add(this.numericUpDown38);
-			this.gb_RepeticaoPernas.Controls.Add(this.numericUpDown39);
+			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Avanco);
+			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Gluteo);
+			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Stiff);
+			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Panturrilha);
+			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Hack);
+			this.gb_RepeticaoPernas.Controls.Add(this.nRep_AgachamentoLivre);
+			this.gb_RepeticaoPernas.Controls.Add(this.nRep_LegPress);
+			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Abdutor);
+			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Adutor);
+			this.gb_RepeticaoPernas.Controls.Add(this.nRep_CadeiraFlexora);
+			this.gb_RepeticaoPernas.Controls.Add(this.nRep_CadeiraExtensora);
 			this.gb_RepeticaoPernas.Location = new System.Drawing.Point(335, 20);
 			this.gb_RepeticaoPernas.Name = "gb_RepeticaoPernas";
 			this.gb_RepeticaoPernas.Size = new System.Drawing.Size(103, 310);
@@ -2069,96 +2069,96 @@ namespace Rock_Solid
 			this.gb_RepeticaoPernas.TabStop = false;
 			this.gb_RepeticaoPernas.Text = "Repetição";
 			// 
-			// numericUpDown28
+			// nRep_Avanco
 			// 
-			this.numericUpDown28.Location = new System.Drawing.Point(12, 279);
-			this.numericUpDown28.Name = "numericUpDown28";
-			this.numericUpDown28.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown28.TabIndex = 36;
+			this.nRep_Avanco.Location = new System.Drawing.Point(12, 279);
+			this.nRep_Avanco.Name = "nRep_Avanco";
+			this.nRep_Avanco.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Avanco.TabIndex = 36;
 			// 
-			// numericUpDown29
+			// nRep_Gluteo
 			// 
-			this.numericUpDown29.Location = new System.Drawing.Point(12, 253);
-			this.numericUpDown29.Name = "numericUpDown29";
-			this.numericUpDown29.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown29.TabIndex = 35;
+			this.nRep_Gluteo.Location = new System.Drawing.Point(12, 253);
+			this.nRep_Gluteo.Name = "nRep_Gluteo";
+			this.nRep_Gluteo.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Gluteo.TabIndex = 35;
 			// 
-			// numericUpDown30
+			// nRep_Stiff
 			// 
-			this.numericUpDown30.Location = new System.Drawing.Point(12, 227);
-			this.numericUpDown30.Name = "numericUpDown30";
-			this.numericUpDown30.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown30.TabIndex = 34;
+			this.nRep_Stiff.Location = new System.Drawing.Point(12, 227);
+			this.nRep_Stiff.Name = "nRep_Stiff";
+			this.nRep_Stiff.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Stiff.TabIndex = 34;
 			// 
-			// numericUpDown31
+			// nRep_Panturrilha
 			// 
-			this.numericUpDown31.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown31.Name = "numericUpDown31";
-			this.numericUpDown31.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown31.TabIndex = 33;
+			this.nRep_Panturrilha.Location = new System.Drawing.Point(12, 201);
+			this.nRep_Panturrilha.Name = "nRep_Panturrilha";
+			this.nRep_Panturrilha.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Panturrilha.TabIndex = 33;
 			// 
-			// numericUpDown33
+			// nRep_Hack
 			// 
-			this.numericUpDown33.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown33.Name = "numericUpDown33";
-			this.numericUpDown33.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown33.TabIndex = 31;
+			this.nRep_Hack.Location = new System.Drawing.Point(12, 175);
+			this.nRep_Hack.Name = "nRep_Hack";
+			this.nRep_Hack.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Hack.TabIndex = 31;
 			// 
-			// numericUpDown34
+			// nRep_AgachamentoLivre
 			// 
-			this.numericUpDown34.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown34.Name = "numericUpDown34";
-			this.numericUpDown34.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown34.TabIndex = 30;
+			this.nRep_AgachamentoLivre.Location = new System.Drawing.Point(12, 146);
+			this.nRep_AgachamentoLivre.Name = "nRep_AgachamentoLivre";
+			this.nRep_AgachamentoLivre.Size = new System.Drawing.Size(80, 20);
+			this.nRep_AgachamentoLivre.TabIndex = 30;
 			// 
-			// numericUpDown35
+			// nRep_LegPress
 			// 
-			this.numericUpDown35.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown35.Name = "numericUpDown35";
-			this.numericUpDown35.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown35.TabIndex = 29;
+			this.nRep_LegPress.Location = new System.Drawing.Point(12, 120);
+			this.nRep_LegPress.Name = "nRep_LegPress";
+			this.nRep_LegPress.Size = new System.Drawing.Size(80, 20);
+			this.nRep_LegPress.TabIndex = 29;
 			// 
-			// numericUpDown36
+			// nRep_Abdutor
 			// 
-			this.numericUpDown36.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown36.Name = "numericUpDown36";
-			this.numericUpDown36.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown36.TabIndex = 28;
+			this.nRep_Abdutor.Location = new System.Drawing.Point(12, 94);
+			this.nRep_Abdutor.Name = "nRep_Abdutor";
+			this.nRep_Abdutor.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Abdutor.TabIndex = 28;
 			// 
-			// numericUpDown37
+			// nRep_Adutor
 			// 
-			this.numericUpDown37.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown37.Name = "numericUpDown37";
-			this.numericUpDown37.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown37.TabIndex = 27;
+			this.nRep_Adutor.Location = new System.Drawing.Point(12, 68);
+			this.nRep_Adutor.Name = "nRep_Adutor";
+			this.nRep_Adutor.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Adutor.TabIndex = 27;
 			// 
-			// numericUpDown38
+			// nRep_CadeiraFlexora
 			// 
-			this.numericUpDown38.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown38.Name = "numericUpDown38";
-			this.numericUpDown38.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown38.TabIndex = 26;
+			this.nRep_CadeiraFlexora.Location = new System.Drawing.Point(12, 42);
+			this.nRep_CadeiraFlexora.Name = "nRep_CadeiraFlexora";
+			this.nRep_CadeiraFlexora.Size = new System.Drawing.Size(80, 20);
+			this.nRep_CadeiraFlexora.TabIndex = 26;
 			// 
-			// numericUpDown39
+			// nRep_CadeiraExtensora
 			// 
-			this.numericUpDown39.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown39.Name = "numericUpDown39";
-			this.numericUpDown39.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown39.TabIndex = 25;
+			this.nRep_CadeiraExtensora.Location = new System.Drawing.Point(12, 16);
+			this.nRep_CadeiraExtensora.Name = "nRep_CadeiraExtensora";
+			this.nRep_CadeiraExtensora.Size = new System.Drawing.Size(80, 20);
+			this.nRep_CadeiraExtensora.TabIndex = 25;
 			// 
 			// gb_SeriePernas
 			// 
-			this.gb_SeriePernas.Controls.Add(this.numericUpDown52);
-			this.gb_SeriePernas.Controls.Add(this.numericUpDown53);
-			this.gb_SeriePernas.Controls.Add(this.numericUpDown54);
-			this.gb_SeriePernas.Controls.Add(this.numericUpDown55);
-			this.gb_SeriePernas.Controls.Add(this.numericUpDown42);
-			this.gb_SeriePernas.Controls.Add(this.numericUpDown43);
-			this.gb_SeriePernas.Controls.Add(this.numericUpDown44);
-			this.gb_SeriePernas.Controls.Add(this.numericUpDown45);
-			this.gb_SeriePernas.Controls.Add(this.numericUpDown46);
-			this.gb_SeriePernas.Controls.Add(this.numericUpDown47);
-			this.gb_SeriePernas.Controls.Add(this.numericUpDown48);
+			this.gb_SeriePernas.Controls.Add(this.nSerie_Avanco);
+			this.gb_SeriePernas.Controls.Add(this.nSerie_Gluteo);
+			this.gb_SeriePernas.Controls.Add(this.nSerie_Stiff);
+			this.gb_SeriePernas.Controls.Add(this.nSerie_Panturrilha);
+			this.gb_SeriePernas.Controls.Add(this.nSerie_Hack);
+			this.gb_SeriePernas.Controls.Add(this.nSerie_AgachamentoLivre);
+			this.gb_SeriePernas.Controls.Add(this.nSerie_LegPress);
+			this.gb_SeriePernas.Controls.Add(this.nSerie_Abdutor);
+			this.gb_SeriePernas.Controls.Add(this.nSerie_Adutor);
+			this.gb_SeriePernas.Controls.Add(this.nSerie_CadeiraFlexora);
+			this.gb_SeriePernas.Controls.Add(this.nSerie_CadeiraExtensorar);
 			this.gb_SeriePernas.Location = new System.Drawing.Point(233, 20);
 			this.gb_SeriePernas.Name = "gb_SeriePernas";
 			this.gb_SeriePernas.Size = new System.Drawing.Size(103, 310);
@@ -2166,82 +2166,82 @@ namespace Rock_Solid
 			this.gb_SeriePernas.TabStop = false;
 			this.gb_SeriePernas.Text = "Serie";
 			// 
-			// numericUpDown52
+			// nSerie_Avanco
 			// 
-			this.numericUpDown52.Location = new System.Drawing.Point(12, 279);
-			this.numericUpDown52.Name = "numericUpDown52";
-			this.numericUpDown52.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown52.TabIndex = 21;
+			this.nSerie_Avanco.Location = new System.Drawing.Point(12, 279);
+			this.nSerie_Avanco.Name = "nSerie_Avanco";
+			this.nSerie_Avanco.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Avanco.TabIndex = 21;
 			// 
-			// numericUpDown53
+			// nSerie_Gluteo
 			// 
-			this.numericUpDown53.Location = new System.Drawing.Point(12, 253);
-			this.numericUpDown53.Name = "numericUpDown53";
-			this.numericUpDown53.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown53.TabIndex = 20;
+			this.nSerie_Gluteo.Location = new System.Drawing.Point(12, 253);
+			this.nSerie_Gluteo.Name = "nSerie_Gluteo";
+			this.nSerie_Gluteo.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Gluteo.TabIndex = 20;
 			// 
-			// numericUpDown54
+			// nSerie_Stiff
 			// 
-			this.numericUpDown54.Location = new System.Drawing.Point(12, 227);
-			this.numericUpDown54.Name = "numericUpDown54";
-			this.numericUpDown54.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown54.TabIndex = 19;
+			this.nSerie_Stiff.Location = new System.Drawing.Point(12, 227);
+			this.nSerie_Stiff.Name = "nSerie_Stiff";
+			this.nSerie_Stiff.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Stiff.TabIndex = 19;
 			// 
-			// numericUpDown55
+			// nSerie_Panturrilha
 			// 
-			this.numericUpDown55.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown55.Name = "numericUpDown55";
-			this.numericUpDown55.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown55.TabIndex = 18;
+			this.nSerie_Panturrilha.Location = new System.Drawing.Point(12, 201);
+			this.nSerie_Panturrilha.Name = "nSerie_Panturrilha";
+			this.nSerie_Panturrilha.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Panturrilha.TabIndex = 18;
 			// 
-			// numericUpDown42
+			// nSerie_Hack
 			// 
-			this.numericUpDown42.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown42.Name = "numericUpDown42";
-			this.numericUpDown42.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown42.TabIndex = 16;
+			this.nSerie_Hack.Location = new System.Drawing.Point(12, 175);
+			this.nSerie_Hack.Name = "nSerie_Hack";
+			this.nSerie_Hack.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Hack.TabIndex = 16;
 			// 
-			// numericUpDown43
+			// nSerie_AgachamentoLivre
 			// 
-			this.numericUpDown43.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown43.Name = "numericUpDown43";
-			this.numericUpDown43.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown43.TabIndex = 15;
+			this.nSerie_AgachamentoLivre.Location = new System.Drawing.Point(12, 146);
+			this.nSerie_AgachamentoLivre.Name = "nSerie_AgachamentoLivre";
+			this.nSerie_AgachamentoLivre.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_AgachamentoLivre.TabIndex = 15;
 			// 
-			// numericUpDown44
+			// nSerie_LegPress
 			// 
-			this.numericUpDown44.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown44.Name = "numericUpDown44";
-			this.numericUpDown44.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown44.TabIndex = 14;
+			this.nSerie_LegPress.Location = new System.Drawing.Point(12, 120);
+			this.nSerie_LegPress.Name = "nSerie_LegPress";
+			this.nSerie_LegPress.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_LegPress.TabIndex = 14;
 			// 
-			// numericUpDown45
+			// nSerie_Abdutor
 			// 
-			this.numericUpDown45.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown45.Name = "numericUpDown45";
-			this.numericUpDown45.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown45.TabIndex = 13;
+			this.nSerie_Abdutor.Location = new System.Drawing.Point(12, 94);
+			this.nSerie_Abdutor.Name = "nSerie_Abdutor";
+			this.nSerie_Abdutor.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Abdutor.TabIndex = 13;
 			// 
-			// numericUpDown46
+			// nSerie_Adutor
 			// 
-			this.numericUpDown46.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown46.Name = "numericUpDown46";
-			this.numericUpDown46.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown46.TabIndex = 12;
+			this.nSerie_Adutor.Location = new System.Drawing.Point(12, 68);
+			this.nSerie_Adutor.Name = "nSerie_Adutor";
+			this.nSerie_Adutor.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Adutor.TabIndex = 12;
 			// 
-			// numericUpDown47
+			// nSerie_CadeiraFlexora
 			// 
-			this.numericUpDown47.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown47.Name = "numericUpDown47";
-			this.numericUpDown47.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown47.TabIndex = 11;
+			this.nSerie_CadeiraFlexora.Location = new System.Drawing.Point(12, 42);
+			this.nSerie_CadeiraFlexora.Name = "nSerie_CadeiraFlexora";
+			this.nSerie_CadeiraFlexora.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_CadeiraFlexora.TabIndex = 11;
 			// 
-			// numericUpDown48
+			// nSerie_CadeiraExtensorar
 			// 
-			this.numericUpDown48.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown48.Name = "numericUpDown48";
-			this.numericUpDown48.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown48.TabIndex = 0;
+			this.nSerie_CadeiraExtensorar.Location = new System.Drawing.Point(12, 16);
+			this.nSerie_CadeiraExtensorar.Name = "nSerie_CadeiraExtensorar";
+			this.nSerie_CadeiraExtensorar.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_CadeiraExtensorar.TabIndex = 0;
 			// 
 			// gb_ExercicioPernas
 			// 
@@ -2554,14 +2554,14 @@ namespace Rock_Solid
 			// 
 			// gb_CargaPeito
 			// 
-			this.gb_CargaPeito.Controls.Add(this.numericUpDown188);
-			this.gb_CargaPeito.Controls.Add(this.numericUpDown189);
-			this.gb_CargaPeito.Controls.Add(this.numericUpDown190);
-			this.gb_CargaPeito.Controls.Add(this.numericUpDown191);
-			this.gb_CargaPeito.Controls.Add(this.numericUpDown192);
-			this.gb_CargaPeito.Controls.Add(this.numericUpDown193);
-			this.gb_CargaPeito.Controls.Add(this.numericUpDown194);
-			this.gb_CargaPeito.Controls.Add(this.numericUpDown195);
+			this.gb_CargaPeito.Controls.Add(this.nCarga_CrossOver);
+			this.gb_CargaPeito.Controls.Add(this.nCarga_Crucifixo);
+			this.gb_CargaPeito.Controls.Add(this.nCarga_PeckDeck);
+			this.gb_CargaPeito.Controls.Add(this.nCarga_Peck);
+			this.gb_CargaPeito.Controls.Add(this.nCarga_SupinoDumbell);
+			this.gb_CargaPeito.Controls.Add(this.nCarga_SupinoSentado);
+			this.gb_CargaPeito.Controls.Add(this.nCarga_SupinoInclinado);
+			this.gb_CargaPeito.Controls.Add(this.nCarga_SupinoReto);
 			this.gb_CargaPeito.Location = new System.Drawing.Point(437, 20);
 			this.gb_CargaPeito.Name = "gb_CargaPeito";
 			this.gb_CargaPeito.Size = new System.Drawing.Size(103, 310);
@@ -2569,72 +2569,72 @@ namespace Rock_Solid
 			this.gb_CargaPeito.TabStop = false;
 			this.gb_CargaPeito.Text = "Carga";
 			// 
-			// numericUpDown188
+			// nCarga_CrossOver
 			// 
-			this.numericUpDown188.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown188.Name = "numericUpDown188";
-			this.numericUpDown188.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown188.TabIndex = 32;
+			this.nCarga_CrossOver.Location = new System.Drawing.Point(12, 201);
+			this.nCarga_CrossOver.Name = "nCarga_CrossOver";
+			this.nCarga_CrossOver.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_CrossOver.TabIndex = 32;
 			// 
-			// numericUpDown189
+			// nCarga_Crucifixo
 			// 
-			this.numericUpDown189.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown189.Name = "numericUpDown189";
-			this.numericUpDown189.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown189.TabIndex = 31;
+			this.nCarga_Crucifixo.Location = new System.Drawing.Point(12, 175);
+			this.nCarga_Crucifixo.Name = "nCarga_Crucifixo";
+			this.nCarga_Crucifixo.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Crucifixo.TabIndex = 31;
 			// 
-			// numericUpDown190
+			// nCarga_PeckDeck
 			// 
-			this.numericUpDown190.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown190.Name = "numericUpDown190";
-			this.numericUpDown190.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown190.TabIndex = 30;
+			this.nCarga_PeckDeck.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_PeckDeck.Name = "nCarga_PeckDeck";
+			this.nCarga_PeckDeck.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_PeckDeck.TabIndex = 30;
 			// 
-			// numericUpDown191
+			// nCarga_Peck
 			// 
-			this.numericUpDown191.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown191.Name = "numericUpDown191";
-			this.numericUpDown191.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown191.TabIndex = 29;
+			this.nCarga_Peck.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_Peck.Name = "nCarga_Peck";
+			this.nCarga_Peck.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Peck.TabIndex = 29;
 			// 
-			// numericUpDown192
+			// nCarga_SupinoDumbell
 			// 
-			this.numericUpDown192.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown192.Name = "numericUpDown192";
-			this.numericUpDown192.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown192.TabIndex = 28;
+			this.nCarga_SupinoDumbell.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_SupinoDumbell.Name = "nCarga_SupinoDumbell";
+			this.nCarga_SupinoDumbell.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_SupinoDumbell.TabIndex = 28;
 			// 
-			// numericUpDown193
+			// nCarga_SupinoSentado
 			// 
-			this.numericUpDown193.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown193.Name = "numericUpDown193";
-			this.numericUpDown193.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown193.TabIndex = 27;
+			this.nCarga_SupinoSentado.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_SupinoSentado.Name = "nCarga_SupinoSentado";
+			this.nCarga_SupinoSentado.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_SupinoSentado.TabIndex = 27;
 			// 
-			// numericUpDown194
+			// nCarga_SupinoInclinado
 			// 
-			this.numericUpDown194.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown194.Name = "numericUpDown194";
-			this.numericUpDown194.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown194.TabIndex = 26;
+			this.nCarga_SupinoInclinado.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_SupinoInclinado.Name = "nCarga_SupinoInclinado";
+			this.nCarga_SupinoInclinado.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_SupinoInclinado.TabIndex = 26;
 			// 
-			// numericUpDown195
+			// nCarga_SupinoReto
 			// 
-			this.numericUpDown195.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown195.Name = "numericUpDown195";
-			this.numericUpDown195.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown195.TabIndex = 25;
+			this.nCarga_SupinoReto.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_SupinoReto.Name = "nCarga_SupinoReto";
+			this.nCarga_SupinoReto.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_SupinoReto.TabIndex = 25;
 			// 
 			// gb_RepeticaoPeito
 			// 
-			this.gb_RepeticaoPeito.Controls.Add(this.numericUpDown203);
-			this.gb_RepeticaoPeito.Controls.Add(this.numericUpDown204);
-			this.gb_RepeticaoPeito.Controls.Add(this.numericUpDown205);
-			this.gb_RepeticaoPeito.Controls.Add(this.numericUpDown206);
-			this.gb_RepeticaoPeito.Controls.Add(this.numericUpDown207);
-			this.gb_RepeticaoPeito.Controls.Add(this.numericUpDown208);
-			this.gb_RepeticaoPeito.Controls.Add(this.numericUpDown209);
-			this.gb_RepeticaoPeito.Controls.Add(this.numericUpDown210);
+			this.gb_RepeticaoPeito.Controls.Add(this.nRep_CrossOver);
+			this.gb_RepeticaoPeito.Controls.Add(this.nRep_Crucifixo);
+			this.gb_RepeticaoPeito.Controls.Add(this.nRep_PeckDeck);
+			this.gb_RepeticaoPeito.Controls.Add(this.nRep_Peck);
+			this.gb_RepeticaoPeito.Controls.Add(this.nRep_SupinoDumbell);
+			this.gb_RepeticaoPeito.Controls.Add(this.nRep_SupinoSentado);
+			this.gb_RepeticaoPeito.Controls.Add(this.nRep_SupinoInclinado);
+			this.gb_RepeticaoPeito.Controls.Add(this.nRep_SupinoReto);
 			this.gb_RepeticaoPeito.Location = new System.Drawing.Point(335, 20);
 			this.gb_RepeticaoPeito.Name = "gb_RepeticaoPeito";
 			this.gb_RepeticaoPeito.Size = new System.Drawing.Size(103, 310);
@@ -2642,72 +2642,72 @@ namespace Rock_Solid
 			this.gb_RepeticaoPeito.TabStop = false;
 			this.gb_RepeticaoPeito.Text = "Repetição";
 			// 
-			// numericUpDown203
+			// nRep_CrossOver
 			// 
-			this.numericUpDown203.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown203.Name = "numericUpDown203";
-			this.numericUpDown203.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown203.TabIndex = 32;
+			this.nRep_CrossOver.Location = new System.Drawing.Point(12, 201);
+			this.nRep_CrossOver.Name = "nRep_CrossOver";
+			this.nRep_CrossOver.Size = new System.Drawing.Size(80, 20);
+			this.nRep_CrossOver.TabIndex = 32;
 			// 
-			// numericUpDown204
+			// nRep_Crucifixo
 			// 
-			this.numericUpDown204.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown204.Name = "numericUpDown204";
-			this.numericUpDown204.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown204.TabIndex = 31;
+			this.nRep_Crucifixo.Location = new System.Drawing.Point(12, 175);
+			this.nRep_Crucifixo.Name = "nRep_Crucifixo";
+			this.nRep_Crucifixo.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Crucifixo.TabIndex = 31;
 			// 
-			// numericUpDown205
+			// nRep_PeckDeck
 			// 
-			this.numericUpDown205.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown205.Name = "numericUpDown205";
-			this.numericUpDown205.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown205.TabIndex = 30;
+			this.nRep_PeckDeck.Location = new System.Drawing.Point(12, 146);
+			this.nRep_PeckDeck.Name = "nRep_PeckDeck";
+			this.nRep_PeckDeck.Size = new System.Drawing.Size(80, 20);
+			this.nRep_PeckDeck.TabIndex = 30;
 			// 
-			// numericUpDown206
+			// nRep_Peck
 			// 
-			this.numericUpDown206.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown206.Name = "numericUpDown206";
-			this.numericUpDown206.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown206.TabIndex = 29;
+			this.nRep_Peck.Location = new System.Drawing.Point(12, 120);
+			this.nRep_Peck.Name = "nRep_Peck";
+			this.nRep_Peck.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Peck.TabIndex = 29;
 			// 
-			// numericUpDown207
+			// nRep_SupinoDumbell
 			// 
-			this.numericUpDown207.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown207.Name = "numericUpDown207";
-			this.numericUpDown207.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown207.TabIndex = 28;
+			this.nRep_SupinoDumbell.Location = new System.Drawing.Point(12, 94);
+			this.nRep_SupinoDumbell.Name = "nRep_SupinoDumbell";
+			this.nRep_SupinoDumbell.Size = new System.Drawing.Size(80, 20);
+			this.nRep_SupinoDumbell.TabIndex = 28;
 			// 
-			// numericUpDown208
+			// nRep_SupinoSentado
 			// 
-			this.numericUpDown208.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown208.Name = "numericUpDown208";
-			this.numericUpDown208.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown208.TabIndex = 27;
+			this.nRep_SupinoSentado.Location = new System.Drawing.Point(12, 68);
+			this.nRep_SupinoSentado.Name = "nRep_SupinoSentado";
+			this.nRep_SupinoSentado.Size = new System.Drawing.Size(80, 20);
+			this.nRep_SupinoSentado.TabIndex = 27;
 			// 
-			// numericUpDown209
+			// nRep_SupinoInclinado
 			// 
-			this.numericUpDown209.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown209.Name = "numericUpDown209";
-			this.numericUpDown209.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown209.TabIndex = 26;
+			this.nRep_SupinoInclinado.Location = new System.Drawing.Point(12, 42);
+			this.nRep_SupinoInclinado.Name = "nRep_SupinoInclinado";
+			this.nRep_SupinoInclinado.Size = new System.Drawing.Size(80, 20);
+			this.nRep_SupinoInclinado.TabIndex = 26;
 			// 
-			// numericUpDown210
+			// nRep_SupinoReto
 			// 
-			this.numericUpDown210.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown210.Name = "numericUpDown210";
-			this.numericUpDown210.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown210.TabIndex = 25;
+			this.nRep_SupinoReto.Location = new System.Drawing.Point(12, 16);
+			this.nRep_SupinoReto.Name = "nRep_SupinoReto";
+			this.nRep_SupinoReto.Size = new System.Drawing.Size(80, 20);
+			this.nRep_SupinoReto.TabIndex = 25;
 			// 
 			// gb_SeriePeito
 			// 
-			this.gb_SeriePeito.Controls.Add(this.numericUpDown218);
-			this.gb_SeriePeito.Controls.Add(this.numericUpDown219);
-			this.gb_SeriePeito.Controls.Add(this.numericUpDown220);
-			this.gb_SeriePeito.Controls.Add(this.numericUpDown221);
-			this.gb_SeriePeito.Controls.Add(this.numericUpDown222);
-			this.gb_SeriePeito.Controls.Add(this.numericUpDown223);
-			this.gb_SeriePeito.Controls.Add(this.numericUpDown224);
-			this.gb_SeriePeito.Controls.Add(this.numericUpDown225);
+			this.gb_SeriePeito.Controls.Add(this.nSerie_CrossOver);
+			this.gb_SeriePeito.Controls.Add(this.nSerie_Crucifixo);
+			this.gb_SeriePeito.Controls.Add(this.nSerie_PeckDeckPeito);
+			this.gb_SeriePeito.Controls.Add(this.nSerie_Peck);
+			this.gb_SeriePeito.Controls.Add(this.nSerie_SupinoDumbell);
+			this.gb_SeriePeito.Controls.Add(this.nSerie_SupinoSentado);
+			this.gb_SeriePeito.Controls.Add(this.nSerie_SupinoInclinado);
+			this.gb_SeriePeito.Controls.Add(this.nSerie_SupinoReto);
 			this.gb_SeriePeito.Location = new System.Drawing.Point(233, 20);
 			this.gb_SeriePeito.Name = "gb_SeriePeito";
 			this.gb_SeriePeito.Size = new System.Drawing.Size(103, 310);
@@ -2715,61 +2715,61 @@ namespace Rock_Solid
 			this.gb_SeriePeito.TabStop = false;
 			this.gb_SeriePeito.Text = "Serie";
 			// 
-			// numericUpDown218
+			// nSerie_CrossOver
 			// 
-			this.numericUpDown218.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown218.Name = "numericUpDown218";
-			this.numericUpDown218.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown218.TabIndex = 17;
+			this.nSerie_CrossOver.Location = new System.Drawing.Point(12, 201);
+			this.nSerie_CrossOver.Name = "nSerie_CrossOver";
+			this.nSerie_CrossOver.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_CrossOver.TabIndex = 17;
 			// 
-			// numericUpDown219
+			// nSerie_Crucifixo
 			// 
-			this.numericUpDown219.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown219.Name = "numericUpDown219";
-			this.numericUpDown219.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown219.TabIndex = 16;
+			this.nSerie_Crucifixo.Location = new System.Drawing.Point(12, 175);
+			this.nSerie_Crucifixo.Name = "nSerie_Crucifixo";
+			this.nSerie_Crucifixo.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Crucifixo.TabIndex = 16;
 			// 
-			// numericUpDown220
+			// nSerie_PeckDeckPeito
 			// 
-			this.numericUpDown220.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown220.Name = "numericUpDown220";
-			this.numericUpDown220.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown220.TabIndex = 15;
+			this.nSerie_PeckDeckPeito.Location = new System.Drawing.Point(12, 146);
+			this.nSerie_PeckDeckPeito.Name = "nSerie_PeckDeckPeito";
+			this.nSerie_PeckDeckPeito.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_PeckDeckPeito.TabIndex = 15;
 			// 
-			// numericUpDown221
+			// nSerie_Peck
 			// 
-			this.numericUpDown221.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown221.Name = "numericUpDown221";
-			this.numericUpDown221.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown221.TabIndex = 14;
+			this.nSerie_Peck.Location = new System.Drawing.Point(12, 120);
+			this.nSerie_Peck.Name = "nSerie_Peck";
+			this.nSerie_Peck.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Peck.TabIndex = 14;
 			// 
-			// numericUpDown222
+			// nSerie_SupinoDumbell
 			// 
-			this.numericUpDown222.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown222.Name = "numericUpDown222";
-			this.numericUpDown222.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown222.TabIndex = 13;
+			this.nSerie_SupinoDumbell.Location = new System.Drawing.Point(12, 94);
+			this.nSerie_SupinoDumbell.Name = "nSerie_SupinoDumbell";
+			this.nSerie_SupinoDumbell.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_SupinoDumbell.TabIndex = 13;
 			// 
-			// numericUpDown223
+			// nSerie_SupinoSentado
 			// 
-			this.numericUpDown223.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown223.Name = "numericUpDown223";
-			this.numericUpDown223.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown223.TabIndex = 12;
+			this.nSerie_SupinoSentado.Location = new System.Drawing.Point(12, 68);
+			this.nSerie_SupinoSentado.Name = "nSerie_SupinoSentado";
+			this.nSerie_SupinoSentado.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_SupinoSentado.TabIndex = 12;
 			// 
-			// numericUpDown224
+			// nSerie_SupinoInclinado
 			// 
-			this.numericUpDown224.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown224.Name = "numericUpDown224";
-			this.numericUpDown224.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown224.TabIndex = 11;
+			this.nSerie_SupinoInclinado.Location = new System.Drawing.Point(12, 42);
+			this.nSerie_SupinoInclinado.Name = "nSerie_SupinoInclinado";
+			this.nSerie_SupinoInclinado.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_SupinoInclinado.TabIndex = 11;
 			// 
-			// numericUpDown225
+			// nSerie_SupinoReto
 			// 
-			this.numericUpDown225.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown225.Name = "numericUpDown225";
-			this.numericUpDown225.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown225.TabIndex = 0;
+			this.nSerie_SupinoReto.Location = new System.Drawing.Point(12, 16);
+			this.nSerie_SupinoReto.Name = "nSerie_SupinoReto";
+			this.nSerie_SupinoReto.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_SupinoReto.TabIndex = 0;
 			// 
 			// gb_ExercicioPeito
 			// 
@@ -3004,17 +3004,17 @@ namespace Rock_Solid
 			// 
 			// gb_CargaCostas
 			// 
-			this.gb_CargaCostas.Controls.Add(this.numericUpDown230);
-			this.gb_CargaCostas.Controls.Add(this.numericUpDown231);
-			this.gb_CargaCostas.Controls.Add(this.numericUpDown232);
-			this.gb_CargaCostas.Controls.Add(this.numericUpDown233);
-			this.gb_CargaCostas.Controls.Add(this.numericUpDown234);
-			this.gb_CargaCostas.Controls.Add(this.numericUpDown235);
-			this.gb_CargaCostas.Controls.Add(this.numericUpDown236);
-			this.gb_CargaCostas.Controls.Add(this.numericUpDown237);
-			this.gb_CargaCostas.Controls.Add(this.numericUpDown238);
-			this.gb_CargaCostas.Controls.Add(this.numericUpDown239);
-			this.gb_CargaCostas.Controls.Add(this.numericUpDown240);
+			this.gb_CargaCostas.Controls.Add(this.nCarga_VoadorInverso);
+			this.gb_CargaCostas.Controls.Add(this.nCarga_BrraFixa);
+			this.gb_CargaCostas.Controls.Add(this.nCarga_PullOverCostas);
+			this.gb_CargaCostas.Controls.Add(this.nCarga_PeckDeckCostas);
+			this.gb_CargaCostas.Controls.Add(this.nCarga_PuxadorArticulado);
+			this.gb_CargaCostas.Controls.Add(this.nCarga_RemadaCavalinho);
+			this.gb_CargaCostas.Controls.Add(this.nCarga_RemadaAlternada);
+			this.gb_CargaCostas.Controls.Add(this.nCarga_RemadaHorizontal);
+			this.gb_CargaCostas.Controls.Add(this.nCarga_PulleyInvertido);
+			this.gb_CargaCostas.Controls.Add(this.nCarga_PulleyFrente);
+			this.gb_CargaCostas.Controls.Add(this.nCarga_PulleyCostas);
 			this.gb_CargaCostas.Location = new System.Drawing.Point(437, 20);
 			this.gb_CargaCostas.Name = "gb_CargaCostas";
 			this.gb_CargaCostas.Size = new System.Drawing.Size(103, 310);
@@ -3022,96 +3022,96 @@ namespace Rock_Solid
 			this.gb_CargaCostas.TabStop = false;
 			this.gb_CargaCostas.Text = "Carga";
 			// 
-			// numericUpDown230
+			// nCarga_VoadorInverso
 			// 
-			this.numericUpDown230.Location = new System.Drawing.Point(12, 279);
-			this.numericUpDown230.Name = "numericUpDown230";
-			this.numericUpDown230.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown230.TabIndex = 35;
+			this.nCarga_VoadorInverso.Location = new System.Drawing.Point(12, 279);
+			this.nCarga_VoadorInverso.Name = "nCarga_VoadorInverso";
+			this.nCarga_VoadorInverso.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_VoadorInverso.TabIndex = 35;
 			// 
-			// numericUpDown231
+			// nCarga_BrraFixa
 			// 
-			this.numericUpDown231.Location = new System.Drawing.Point(12, 253);
-			this.numericUpDown231.Name = "numericUpDown231";
-			this.numericUpDown231.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown231.TabIndex = 34;
+			this.nCarga_BrraFixa.Location = new System.Drawing.Point(12, 253);
+			this.nCarga_BrraFixa.Name = "nCarga_BrraFixa";
+			this.nCarga_BrraFixa.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_BrraFixa.TabIndex = 34;
 			// 
-			// numericUpDown232
+			// nCarga_PullOverCostas
 			// 
-			this.numericUpDown232.Location = new System.Drawing.Point(12, 227);
-			this.numericUpDown232.Name = "numericUpDown232";
-			this.numericUpDown232.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown232.TabIndex = 33;
+			this.nCarga_PullOverCostas.Location = new System.Drawing.Point(12, 227);
+			this.nCarga_PullOverCostas.Name = "nCarga_PullOverCostas";
+			this.nCarga_PullOverCostas.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_PullOverCostas.TabIndex = 33;
 			// 
-			// numericUpDown233
+			// nCarga_PeckDeckCostas
 			// 
-			this.numericUpDown233.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown233.Name = "numericUpDown233";
-			this.numericUpDown233.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown233.TabIndex = 32;
+			this.nCarga_PeckDeckCostas.Location = new System.Drawing.Point(12, 201);
+			this.nCarga_PeckDeckCostas.Name = "nCarga_PeckDeckCostas";
+			this.nCarga_PeckDeckCostas.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_PeckDeckCostas.TabIndex = 32;
 			// 
-			// numericUpDown234
+			// nCarga_PuxadorArticulado
 			// 
-			this.numericUpDown234.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown234.Name = "numericUpDown234";
-			this.numericUpDown234.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown234.TabIndex = 31;
+			this.nCarga_PuxadorArticulado.Location = new System.Drawing.Point(12, 175);
+			this.nCarga_PuxadorArticulado.Name = "nCarga_PuxadorArticulado";
+			this.nCarga_PuxadorArticulado.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_PuxadorArticulado.TabIndex = 31;
 			// 
-			// numericUpDown235
+			// nCarga_RemadaCavalinho
 			// 
-			this.numericUpDown235.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown235.Name = "numericUpDown235";
-			this.numericUpDown235.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown235.TabIndex = 30;
+			this.nCarga_RemadaCavalinho.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_RemadaCavalinho.Name = "nCarga_RemadaCavalinho";
+			this.nCarga_RemadaCavalinho.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RemadaCavalinho.TabIndex = 30;
 			// 
-			// numericUpDown236
+			// nCarga_RemadaAlternada
 			// 
-			this.numericUpDown236.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown236.Name = "numericUpDown236";
-			this.numericUpDown236.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown236.TabIndex = 29;
+			this.nCarga_RemadaAlternada.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_RemadaAlternada.Name = "nCarga_RemadaAlternada";
+			this.nCarga_RemadaAlternada.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RemadaAlternada.TabIndex = 29;
 			// 
-			// numericUpDown237
+			// nCarga_RemadaHorizontal
 			// 
-			this.numericUpDown237.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown237.Name = "numericUpDown237";
-			this.numericUpDown237.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown237.TabIndex = 28;
+			this.nCarga_RemadaHorizontal.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_RemadaHorizontal.Name = "nCarga_RemadaHorizontal";
+			this.nCarga_RemadaHorizontal.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RemadaHorizontal.TabIndex = 28;
 			// 
-			// numericUpDown238
+			// nCarga_PulleyInvertido
 			// 
-			this.numericUpDown238.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown238.Name = "numericUpDown238";
-			this.numericUpDown238.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown238.TabIndex = 27;
+			this.nCarga_PulleyInvertido.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_PulleyInvertido.Name = "nCarga_PulleyInvertido";
+			this.nCarga_PulleyInvertido.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_PulleyInvertido.TabIndex = 27;
 			// 
-			// numericUpDown239
+			// nCarga_PulleyFrente
 			// 
-			this.numericUpDown239.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown239.Name = "numericUpDown239";
-			this.numericUpDown239.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown239.TabIndex = 26;
+			this.nCarga_PulleyFrente.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_PulleyFrente.Name = "nCarga_PulleyFrente";
+			this.nCarga_PulleyFrente.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_PulleyFrente.TabIndex = 26;
 			// 
-			// numericUpDown240
+			// nCarga_PulleyCostas
 			// 
-			this.numericUpDown240.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown240.Name = "numericUpDown240";
-			this.numericUpDown240.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown240.TabIndex = 25;
+			this.nCarga_PulleyCostas.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_PulleyCostas.Name = "nCarga_PulleyCostas";
+			this.nCarga_PulleyCostas.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_PulleyCostas.TabIndex = 25;
 			// 
 			// gb_RepeticaoCostas
 			// 
-			this.gb_RepeticaoCostas.Controls.Add(this.numericUpDown245);
-			this.gb_RepeticaoCostas.Controls.Add(this.numericUpDown246);
-			this.gb_RepeticaoCostas.Controls.Add(this.numericUpDown247);
-			this.gb_RepeticaoCostas.Controls.Add(this.numericUpDown248);
-			this.gb_RepeticaoCostas.Controls.Add(this.numericUpDown249);
-			this.gb_RepeticaoCostas.Controls.Add(this.numericUpDown250);
-			this.gb_RepeticaoCostas.Controls.Add(this.numericUpDown251);
-			this.gb_RepeticaoCostas.Controls.Add(this.numericUpDown252);
-			this.gb_RepeticaoCostas.Controls.Add(this.numericUpDown253);
-			this.gb_RepeticaoCostas.Controls.Add(this.numericUpDown254);
-			this.gb_RepeticaoCostas.Controls.Add(this.numericUpDown255);
+			this.gb_RepeticaoCostas.Controls.Add(this.nRep_VoadorInverso);
+			this.gb_RepeticaoCostas.Controls.Add(this.nRep_BarraFixa);
+			this.gb_RepeticaoCostas.Controls.Add(this.nRep_PullOverCostas);
+			this.gb_RepeticaoCostas.Controls.Add(this.nRep_PeckDeckCostas);
+			this.gb_RepeticaoCostas.Controls.Add(this.nRep_PuxadorArticulado);
+			this.gb_RepeticaoCostas.Controls.Add(this.nRep_RemadaCavalinho);
+			this.gb_RepeticaoCostas.Controls.Add(this.nRep_RemadaAlternada);
+			this.gb_RepeticaoCostas.Controls.Add(this.nRep_RemadaHorizontal);
+			this.gb_RepeticaoCostas.Controls.Add(this.nRep_PulleyInvertido);
+			this.gb_RepeticaoCostas.Controls.Add(this.nRep_PulleyFrente);
+			this.gb_RepeticaoCostas.Controls.Add(this.nRep_PulleyCostas);
 			this.gb_RepeticaoCostas.Location = new System.Drawing.Point(335, 20);
 			this.gb_RepeticaoCostas.Name = "gb_RepeticaoCostas";
 			this.gb_RepeticaoCostas.Size = new System.Drawing.Size(103, 310);
@@ -3119,96 +3119,96 @@ namespace Rock_Solid
 			this.gb_RepeticaoCostas.TabStop = false;
 			this.gb_RepeticaoCostas.Text = "Repetição";
 			// 
-			// numericUpDown245
+			// nRep_VoadorInverso
 			// 
-			this.numericUpDown245.Location = new System.Drawing.Point(12, 279);
-			this.numericUpDown245.Name = "numericUpDown245";
-			this.numericUpDown245.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown245.TabIndex = 35;
+			this.nRep_VoadorInverso.Location = new System.Drawing.Point(12, 279);
+			this.nRep_VoadorInverso.Name = "nRep_VoadorInverso";
+			this.nRep_VoadorInverso.Size = new System.Drawing.Size(80, 20);
+			this.nRep_VoadorInverso.TabIndex = 35;
 			// 
-			// numericUpDown246
+			// nRep_BarraFixa
 			// 
-			this.numericUpDown246.Location = new System.Drawing.Point(12, 253);
-			this.numericUpDown246.Name = "numericUpDown246";
-			this.numericUpDown246.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown246.TabIndex = 34;
+			this.nRep_BarraFixa.Location = new System.Drawing.Point(12, 253);
+			this.nRep_BarraFixa.Name = "nRep_BarraFixa";
+			this.nRep_BarraFixa.Size = new System.Drawing.Size(80, 20);
+			this.nRep_BarraFixa.TabIndex = 34;
 			// 
-			// numericUpDown247
+			// nRep_PullOverCostas
 			// 
-			this.numericUpDown247.Location = new System.Drawing.Point(12, 227);
-			this.numericUpDown247.Name = "numericUpDown247";
-			this.numericUpDown247.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown247.TabIndex = 33;
+			this.nRep_PullOverCostas.Location = new System.Drawing.Point(12, 227);
+			this.nRep_PullOverCostas.Name = "nRep_PullOverCostas";
+			this.nRep_PullOverCostas.Size = new System.Drawing.Size(80, 20);
+			this.nRep_PullOverCostas.TabIndex = 33;
 			// 
-			// numericUpDown248
+			// nRep_PeckDeckCostas
 			// 
-			this.numericUpDown248.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown248.Name = "numericUpDown248";
-			this.numericUpDown248.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown248.TabIndex = 32;
+			this.nRep_PeckDeckCostas.Location = new System.Drawing.Point(12, 201);
+			this.nRep_PeckDeckCostas.Name = "nRep_PeckDeckCostas";
+			this.nRep_PeckDeckCostas.Size = new System.Drawing.Size(80, 20);
+			this.nRep_PeckDeckCostas.TabIndex = 32;
 			// 
-			// numericUpDown249
+			// nRep_PuxadorArticulado
 			// 
-			this.numericUpDown249.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown249.Name = "numericUpDown249";
-			this.numericUpDown249.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown249.TabIndex = 31;
+			this.nRep_PuxadorArticulado.Location = new System.Drawing.Point(12, 175);
+			this.nRep_PuxadorArticulado.Name = "nRep_PuxadorArticulado";
+			this.nRep_PuxadorArticulado.Size = new System.Drawing.Size(80, 20);
+			this.nRep_PuxadorArticulado.TabIndex = 31;
 			// 
-			// numericUpDown250
+			// nRep_RemadaCavalinho
 			// 
-			this.numericUpDown250.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown250.Name = "numericUpDown250";
-			this.numericUpDown250.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown250.TabIndex = 30;
+			this.nRep_RemadaCavalinho.Location = new System.Drawing.Point(12, 146);
+			this.nRep_RemadaCavalinho.Name = "nRep_RemadaCavalinho";
+			this.nRep_RemadaCavalinho.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RemadaCavalinho.TabIndex = 30;
 			// 
-			// numericUpDown251
+			// nRep_RemadaAlternada
 			// 
-			this.numericUpDown251.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown251.Name = "numericUpDown251";
-			this.numericUpDown251.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown251.TabIndex = 29;
+			this.nRep_RemadaAlternada.Location = new System.Drawing.Point(12, 120);
+			this.nRep_RemadaAlternada.Name = "nRep_RemadaAlternada";
+			this.nRep_RemadaAlternada.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RemadaAlternada.TabIndex = 29;
 			// 
-			// numericUpDown252
+			// nRep_RemadaHorizontal
 			// 
-			this.numericUpDown252.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown252.Name = "numericUpDown252";
-			this.numericUpDown252.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown252.TabIndex = 28;
+			this.nRep_RemadaHorizontal.Location = new System.Drawing.Point(12, 94);
+			this.nRep_RemadaHorizontal.Name = "nRep_RemadaHorizontal";
+			this.nRep_RemadaHorizontal.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RemadaHorizontal.TabIndex = 28;
 			// 
-			// numericUpDown253
+			// nRep_PulleyInvertido
 			// 
-			this.numericUpDown253.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown253.Name = "numericUpDown253";
-			this.numericUpDown253.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown253.TabIndex = 27;
+			this.nRep_PulleyInvertido.Location = new System.Drawing.Point(12, 68);
+			this.nRep_PulleyInvertido.Name = "nRep_PulleyInvertido";
+			this.nRep_PulleyInvertido.Size = new System.Drawing.Size(80, 20);
+			this.nRep_PulleyInvertido.TabIndex = 27;
 			// 
-			// numericUpDown254
+			// nRep_PulleyFrente
 			// 
-			this.numericUpDown254.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown254.Name = "numericUpDown254";
-			this.numericUpDown254.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown254.TabIndex = 26;
+			this.nRep_PulleyFrente.Location = new System.Drawing.Point(12, 42);
+			this.nRep_PulleyFrente.Name = "nRep_PulleyFrente";
+			this.nRep_PulleyFrente.Size = new System.Drawing.Size(80, 20);
+			this.nRep_PulleyFrente.TabIndex = 26;
 			// 
-			// numericUpDown255
+			// nRep_PulleyCostas
 			// 
-			this.numericUpDown255.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown255.Name = "numericUpDown255";
-			this.numericUpDown255.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown255.TabIndex = 25;
+			this.nRep_PulleyCostas.Location = new System.Drawing.Point(12, 16);
+			this.nRep_PulleyCostas.Name = "nRep_PulleyCostas";
+			this.nRep_PulleyCostas.Size = new System.Drawing.Size(80, 20);
+			this.nRep_PulleyCostas.TabIndex = 25;
 			// 
 			// gb_SerieCostas
 			// 
-			this.gb_SerieCostas.Controls.Add(this.numericUpDown260);
-			this.gb_SerieCostas.Controls.Add(this.numericUpDown261);
-			this.gb_SerieCostas.Controls.Add(this.numericUpDown262);
-			this.gb_SerieCostas.Controls.Add(this.numericUpDown263);
-			this.gb_SerieCostas.Controls.Add(this.numericUpDown264);
-			this.gb_SerieCostas.Controls.Add(this.numericUpDown265);
-			this.gb_SerieCostas.Controls.Add(this.numericUpDown266);
-			this.gb_SerieCostas.Controls.Add(this.numericUpDown267);
-			this.gb_SerieCostas.Controls.Add(this.numericUpDown268);
-			this.gb_SerieCostas.Controls.Add(this.numericUpDown269);
-			this.gb_SerieCostas.Controls.Add(this.numericUpDown270);
+			this.gb_SerieCostas.Controls.Add(this.nSerie_VoadorInverso);
+			this.gb_SerieCostas.Controls.Add(this.nSerie_BarraFixa);
+			this.gb_SerieCostas.Controls.Add(this.nSerie_PullOverCostas);
+			this.gb_SerieCostas.Controls.Add(this.nSerie_PeckDeckCostas);
+			this.gb_SerieCostas.Controls.Add(this.nSerie_PuxadorArticulado);
+			this.gb_SerieCostas.Controls.Add(this.nSerie_RemadaCavalinho);
+			this.gb_SerieCostas.Controls.Add(this.nSerie_RemadaAlternada);
+			this.gb_SerieCostas.Controls.Add(this.nSerie_RemadaHorizontal);
+			this.gb_SerieCostas.Controls.Add(this.nSerie_PulleyInvertido);
+			this.gb_SerieCostas.Controls.Add(this.nSerie_PulleyFrente);
+			this.gb_SerieCostas.Controls.Add(this.nSerie_PulleyCostas);
 			this.gb_SerieCostas.Location = new System.Drawing.Point(233, 20);
 			this.gb_SerieCostas.Name = "gb_SerieCostas";
 			this.gb_SerieCostas.Size = new System.Drawing.Size(103, 310);
@@ -3216,82 +3216,82 @@ namespace Rock_Solid
 			this.gb_SerieCostas.TabStop = false;
 			this.gb_SerieCostas.Text = "Serie";
 			// 
-			// numericUpDown260
+			// nSerie_VoadorInverso
 			// 
-			this.numericUpDown260.Location = new System.Drawing.Point(12, 279);
-			this.numericUpDown260.Name = "numericUpDown260";
-			this.numericUpDown260.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown260.TabIndex = 20;
+			this.nSerie_VoadorInverso.Location = new System.Drawing.Point(12, 279);
+			this.nSerie_VoadorInverso.Name = "nSerie_VoadorInverso";
+			this.nSerie_VoadorInverso.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_VoadorInverso.TabIndex = 20;
 			// 
-			// numericUpDown261
+			// nSerie_BarraFixa
 			// 
-			this.numericUpDown261.Location = new System.Drawing.Point(12, 253);
-			this.numericUpDown261.Name = "numericUpDown261";
-			this.numericUpDown261.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown261.TabIndex = 19;
+			this.nSerie_BarraFixa.Location = new System.Drawing.Point(12, 253);
+			this.nSerie_BarraFixa.Name = "nSerie_BarraFixa";
+			this.nSerie_BarraFixa.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_BarraFixa.TabIndex = 19;
 			// 
-			// numericUpDown262
+			// nSerie_PullOverCostas
 			// 
-			this.numericUpDown262.Location = new System.Drawing.Point(12, 227);
-			this.numericUpDown262.Name = "numericUpDown262";
-			this.numericUpDown262.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown262.TabIndex = 18;
+			this.nSerie_PullOverCostas.Location = new System.Drawing.Point(12, 227);
+			this.nSerie_PullOverCostas.Name = "nSerie_PullOverCostas";
+			this.nSerie_PullOverCostas.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_PullOverCostas.TabIndex = 18;
 			// 
-			// numericUpDown263
+			// nSerie_PeckDeckCostas
 			// 
-			this.numericUpDown263.Location = new System.Drawing.Point(12, 201);
-			this.numericUpDown263.Name = "numericUpDown263";
-			this.numericUpDown263.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown263.TabIndex = 17;
+			this.nSerie_PeckDeckCostas.Location = new System.Drawing.Point(12, 201);
+			this.nSerie_PeckDeckCostas.Name = "nSerie_PeckDeckCostas";
+			this.nSerie_PeckDeckCostas.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_PeckDeckCostas.TabIndex = 17;
 			// 
-			// numericUpDown264
+			// nSerie_PuxadorArticulado
 			// 
-			this.numericUpDown264.Location = new System.Drawing.Point(12, 175);
-			this.numericUpDown264.Name = "numericUpDown264";
-			this.numericUpDown264.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown264.TabIndex = 16;
+			this.nSerie_PuxadorArticulado.Location = new System.Drawing.Point(12, 175);
+			this.nSerie_PuxadorArticulado.Name = "nSerie_PuxadorArticulado";
+			this.nSerie_PuxadorArticulado.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_PuxadorArticulado.TabIndex = 16;
 			// 
-			// numericUpDown265
+			// nSerie_RemadaCavalinho
 			// 
-			this.numericUpDown265.Location = new System.Drawing.Point(12, 146);
-			this.numericUpDown265.Name = "numericUpDown265";
-			this.numericUpDown265.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown265.TabIndex = 15;
+			this.nSerie_RemadaCavalinho.Location = new System.Drawing.Point(12, 146);
+			this.nSerie_RemadaCavalinho.Name = "nSerie_RemadaCavalinho";
+			this.nSerie_RemadaCavalinho.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RemadaCavalinho.TabIndex = 15;
 			// 
-			// numericUpDown266
+			// nSerie_RemadaAlternada
 			// 
-			this.numericUpDown266.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown266.Name = "numericUpDown266";
-			this.numericUpDown266.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown266.TabIndex = 14;
+			this.nSerie_RemadaAlternada.Location = new System.Drawing.Point(12, 120);
+			this.nSerie_RemadaAlternada.Name = "nSerie_RemadaAlternada";
+			this.nSerie_RemadaAlternada.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RemadaAlternada.TabIndex = 14;
 			// 
-			// numericUpDown267
+			// nSerie_RemadaHorizontal
 			// 
-			this.numericUpDown267.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown267.Name = "numericUpDown267";
-			this.numericUpDown267.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown267.TabIndex = 13;
+			this.nSerie_RemadaHorizontal.Location = new System.Drawing.Point(12, 94);
+			this.nSerie_RemadaHorizontal.Name = "nSerie_RemadaHorizontal";
+			this.nSerie_RemadaHorizontal.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RemadaHorizontal.TabIndex = 13;
 			// 
-			// numericUpDown268
+			// nSerie_PulleyInvertido
 			// 
-			this.numericUpDown268.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown268.Name = "numericUpDown268";
-			this.numericUpDown268.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown268.TabIndex = 12;
+			this.nSerie_PulleyInvertido.Location = new System.Drawing.Point(12, 68);
+			this.nSerie_PulleyInvertido.Name = "nSerie_PulleyInvertido";
+			this.nSerie_PulleyInvertido.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_PulleyInvertido.TabIndex = 12;
 			// 
-			// numericUpDown269
+			// nSerie_PulleyFrente
 			// 
-			this.numericUpDown269.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown269.Name = "numericUpDown269";
-			this.numericUpDown269.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown269.TabIndex = 11;
+			this.nSerie_PulleyFrente.Location = new System.Drawing.Point(12, 42);
+			this.nSerie_PulleyFrente.Name = "nSerie_PulleyFrente";
+			this.nSerie_PulleyFrente.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_PulleyFrente.TabIndex = 11;
 			// 
-			// numericUpDown270
+			// nSerie_PulleyCostas
 			// 
-			this.numericUpDown270.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown270.Name = "numericUpDown270";
-			this.numericUpDown270.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown270.TabIndex = 0;
+			this.nSerie_PulleyCostas.Location = new System.Drawing.Point(12, 16);
+			this.nSerie_PulleyCostas.Name = "nSerie_PulleyCostas";
+			this.nSerie_PulleyCostas.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_PulleyCostas.TabIndex = 0;
 			// 
 			// gb_ExercicioCostas
 			// 
@@ -3392,9 +3392,9 @@ namespace Rock_Solid
 			this.lb_RemadaHorizontal.AutoSize = true;
 			this.lb_RemadaHorizontal.Location = new System.Drawing.Point(6, 99);
 			this.lb_RemadaHorizontal.Name = "lb_RemadaHorizontal";
-			this.lb_RemadaHorizontal.Size = new System.Drawing.Size(93, 13);
+			this.lb_RemadaHorizontal.Size = new System.Drawing.Size(97, 13);
 			this.lb_RemadaHorizontal.TabIndex = 66;
-			this.lb_RemadaHorizontal.Text = "Remada Horizoltal";
+			this.lb_RemadaHorizontal.Text = "Remada Horizontal";
 			// 
 			// lb_PulleyInvertido
 			// 
@@ -3604,11 +3604,11 @@ namespace Rock_Solid
 			// 
 			// gb_CargaAbdomen
 			// 
-			this.gb_CargaAbdomen.Controls.Add(this.numericUpDown281);
-			this.gb_CargaAbdomen.Controls.Add(this.numericUpDown282);
-			this.gb_CargaAbdomen.Controls.Add(this.numericUpDown283);
-			this.gb_CargaAbdomen.Controls.Add(this.numericUpDown284);
-			this.gb_CargaAbdomen.Controls.Add(this.numericUpDown285);
+			this.gb_CargaAbdomen.Controls.Add(this.nCarga_PranchaAbdomen);
+			this.gb_CargaAbdomen.Controls.Add(this.nCarga_ParalelaFixa);
+			this.gb_CargaAbdomen.Controls.Add(this.nCarga_Obliquo);
+			this.gb_CargaAbdomen.Controls.Add(this.nCarga_Infra);
+			this.gb_CargaAbdomen.Controls.Add(this.nCarga_RetoAbdomen);
 			this.gb_CargaAbdomen.Location = new System.Drawing.Point(437, 20);
 			this.gb_CargaAbdomen.Name = "gb_CargaAbdomen";
 			this.gb_CargaAbdomen.Size = new System.Drawing.Size(103, 310);
@@ -3616,48 +3616,48 @@ namespace Rock_Solid
 			this.gb_CargaAbdomen.TabStop = false;
 			this.gb_CargaAbdomen.Text = "Carga";
 			// 
-			// numericUpDown281
+			// nCarga_PranchaAbdomen
 			// 
-			this.numericUpDown281.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown281.Name = "numericUpDown281";
-			this.numericUpDown281.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown281.TabIndex = 29;
+			this.nCarga_PranchaAbdomen.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_PranchaAbdomen.Name = "nCarga_PranchaAbdomen";
+			this.nCarga_PranchaAbdomen.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_PranchaAbdomen.TabIndex = 29;
 			// 
-			// numericUpDown282
+			// nCarga_ParalelaFixa
 			// 
-			this.numericUpDown282.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown282.Name = "numericUpDown282";
-			this.numericUpDown282.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown282.TabIndex = 28;
+			this.nCarga_ParalelaFixa.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_ParalelaFixa.Name = "nCarga_ParalelaFixa";
+			this.nCarga_ParalelaFixa.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_ParalelaFixa.TabIndex = 28;
 			// 
-			// numericUpDown283
+			// nCarga_Obliquo
 			// 
-			this.numericUpDown283.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown283.Name = "numericUpDown283";
-			this.numericUpDown283.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown283.TabIndex = 27;
+			this.nCarga_Obliquo.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_Obliquo.Name = "nCarga_Obliquo";
+			this.nCarga_Obliquo.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Obliquo.TabIndex = 27;
 			// 
-			// numericUpDown284
+			// nCarga_Infra
 			// 
-			this.numericUpDown284.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown284.Name = "numericUpDown284";
-			this.numericUpDown284.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown284.TabIndex = 26;
+			this.nCarga_Infra.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_Infra.Name = "nCarga_Infra";
+			this.nCarga_Infra.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Infra.TabIndex = 26;
 			// 
-			// numericUpDown285
+			// nCarga_RetoAbdomen
 			// 
-			this.numericUpDown285.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown285.Name = "numericUpDown285";
-			this.numericUpDown285.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown285.TabIndex = 25;
+			this.nCarga_RetoAbdomen.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_RetoAbdomen.Name = "nCarga_RetoAbdomen";
+			this.nCarga_RetoAbdomen.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_RetoAbdomen.TabIndex = 25;
 			// 
 			// gb_RepeticaoAbdomen
 			// 
-			this.gb_RepeticaoAbdomen.Controls.Add(this.numericUpDown296);
-			this.gb_RepeticaoAbdomen.Controls.Add(this.numericUpDown297);
-			this.gb_RepeticaoAbdomen.Controls.Add(this.numericUpDown298);
-			this.gb_RepeticaoAbdomen.Controls.Add(this.numericUpDown299);
-			this.gb_RepeticaoAbdomen.Controls.Add(this.numericUpDown300);
+			this.gb_RepeticaoAbdomen.Controls.Add(this.nRep_PranchaAbdomen);
+			this.gb_RepeticaoAbdomen.Controls.Add(this.nRep_ParalelaFixa);
+			this.gb_RepeticaoAbdomen.Controls.Add(this.nRep_Obliquo);
+			this.gb_RepeticaoAbdomen.Controls.Add(this.nRep_Infra);
+			this.gb_RepeticaoAbdomen.Controls.Add(this.nRep_RetoAbdomen);
 			this.gb_RepeticaoAbdomen.Location = new System.Drawing.Point(335, 20);
 			this.gb_RepeticaoAbdomen.Name = "gb_RepeticaoAbdomen";
 			this.gb_RepeticaoAbdomen.Size = new System.Drawing.Size(103, 310);
@@ -3665,48 +3665,48 @@ namespace Rock_Solid
 			this.gb_RepeticaoAbdomen.TabStop = false;
 			this.gb_RepeticaoAbdomen.Text = "Repetição";
 			// 
-			// numericUpDown296
+			// nRep_PranchaAbdomen
 			// 
-			this.numericUpDown296.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown296.Name = "numericUpDown296";
-			this.numericUpDown296.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown296.TabIndex = 29;
+			this.nRep_PranchaAbdomen.Location = new System.Drawing.Point(12, 120);
+			this.nRep_PranchaAbdomen.Name = "nRep_PranchaAbdomen";
+			this.nRep_PranchaAbdomen.Size = new System.Drawing.Size(80, 20);
+			this.nRep_PranchaAbdomen.TabIndex = 29;
 			// 
-			// numericUpDown297
+			// nRep_ParalelaFixa
 			// 
-			this.numericUpDown297.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown297.Name = "numericUpDown297";
-			this.numericUpDown297.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown297.TabIndex = 28;
+			this.nRep_ParalelaFixa.Location = new System.Drawing.Point(12, 94);
+			this.nRep_ParalelaFixa.Name = "nRep_ParalelaFixa";
+			this.nRep_ParalelaFixa.Size = new System.Drawing.Size(80, 20);
+			this.nRep_ParalelaFixa.TabIndex = 28;
 			// 
-			// numericUpDown298
+			// nRep_Obliquo
 			// 
-			this.numericUpDown298.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown298.Name = "numericUpDown298";
-			this.numericUpDown298.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown298.TabIndex = 27;
+			this.nRep_Obliquo.Location = new System.Drawing.Point(12, 68);
+			this.nRep_Obliquo.Name = "nRep_Obliquo";
+			this.nRep_Obliquo.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Obliquo.TabIndex = 27;
 			// 
-			// numericUpDown299
+			// nRep_Infra
 			// 
-			this.numericUpDown299.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown299.Name = "numericUpDown299";
-			this.numericUpDown299.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown299.TabIndex = 26;
+			this.nRep_Infra.Location = new System.Drawing.Point(12, 42);
+			this.nRep_Infra.Name = "nRep_Infra";
+			this.nRep_Infra.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Infra.TabIndex = 26;
 			// 
-			// numericUpDown300
+			// nRep_RetoAbdomen
 			// 
-			this.numericUpDown300.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown300.Name = "numericUpDown300";
-			this.numericUpDown300.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown300.TabIndex = 25;
+			this.nRep_RetoAbdomen.Location = new System.Drawing.Point(12, 16);
+			this.nRep_RetoAbdomen.Name = "nRep_RetoAbdomen";
+			this.nRep_RetoAbdomen.Size = new System.Drawing.Size(80, 20);
+			this.nRep_RetoAbdomen.TabIndex = 25;
 			// 
 			// gb_SerieAbdomen
 			// 
-			this.gb_SerieAbdomen.Controls.Add(this.numericUpDown311);
-			this.gb_SerieAbdomen.Controls.Add(this.numericUpDown312);
-			this.gb_SerieAbdomen.Controls.Add(this.numericUpDown313);
-			this.gb_SerieAbdomen.Controls.Add(this.numericUpDown314);
-			this.gb_SerieAbdomen.Controls.Add(this.numericUpDown315);
+			this.gb_SerieAbdomen.Controls.Add(this.nSerie_PranchaAbdomen);
+			this.gb_SerieAbdomen.Controls.Add(this.nSerie_ParalelaFixa);
+			this.gb_SerieAbdomen.Controls.Add(this.nSerie_Obliquo);
+			this.gb_SerieAbdomen.Controls.Add(this.nSerie_Infra);
+			this.gb_SerieAbdomen.Controls.Add(this.nSerie_RetoAbdomen);
 			this.gb_SerieAbdomen.Location = new System.Drawing.Point(233, 20);
 			this.gb_SerieAbdomen.Name = "gb_SerieAbdomen";
 			this.gb_SerieAbdomen.Size = new System.Drawing.Size(103, 310);
@@ -3714,40 +3714,40 @@ namespace Rock_Solid
 			this.gb_SerieAbdomen.TabStop = false;
 			this.gb_SerieAbdomen.Text = "Serie";
 			// 
-			// numericUpDown311
+			// nSerie_PranchaAbdomen
 			// 
-			this.numericUpDown311.Location = new System.Drawing.Point(12, 120);
-			this.numericUpDown311.Name = "numericUpDown311";
-			this.numericUpDown311.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown311.TabIndex = 14;
+			this.nSerie_PranchaAbdomen.Location = new System.Drawing.Point(12, 120);
+			this.nSerie_PranchaAbdomen.Name = "nSerie_PranchaAbdomen";
+			this.nSerie_PranchaAbdomen.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_PranchaAbdomen.TabIndex = 14;
 			// 
-			// numericUpDown312
+			// nSerie_ParalelaFixa
 			// 
-			this.numericUpDown312.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown312.Name = "numericUpDown312";
-			this.numericUpDown312.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown312.TabIndex = 13;
+			this.nSerie_ParalelaFixa.Location = new System.Drawing.Point(12, 94);
+			this.nSerie_ParalelaFixa.Name = "nSerie_ParalelaFixa";
+			this.nSerie_ParalelaFixa.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_ParalelaFixa.TabIndex = 13;
 			// 
-			// numericUpDown313
+			// nSerie_Obliquo
 			// 
-			this.numericUpDown313.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown313.Name = "numericUpDown313";
-			this.numericUpDown313.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown313.TabIndex = 12;
+			this.nSerie_Obliquo.Location = new System.Drawing.Point(12, 68);
+			this.nSerie_Obliquo.Name = "nSerie_Obliquo";
+			this.nSerie_Obliquo.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Obliquo.TabIndex = 12;
 			// 
-			// numericUpDown314
+			// nSerie_Infra
 			// 
-			this.numericUpDown314.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown314.Name = "numericUpDown314";
-			this.numericUpDown314.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown314.TabIndex = 11;
+			this.nSerie_Infra.Location = new System.Drawing.Point(12, 42);
+			this.nSerie_Infra.Name = "nSerie_Infra";
+			this.nSerie_Infra.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Infra.TabIndex = 11;
 			// 
-			// numericUpDown315
+			// nSerie_RetoAbdomen
 			// 
-			this.numericUpDown315.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown315.Name = "numericUpDown315";
-			this.numericUpDown315.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown315.TabIndex = 0;
+			this.nSerie_RetoAbdomen.Location = new System.Drawing.Point(12, 16);
+			this.nSerie_RetoAbdomen.Name = "nSerie_RetoAbdomen";
+			this.nSerie_RetoAbdomen.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_RetoAbdomen.TabIndex = 0;
 			// 
 			// gb_ExercicioAbdomen
 			// 
@@ -3904,10 +3904,10 @@ namespace Rock_Solid
 			// 
 			// gb_CargaAquecimento
 			// 
-			this.gb_CargaAquecimento.Controls.Add(this.numericUpDown3);
-			this.gb_CargaAquecimento.Controls.Add(this.numericUpDown373);
-			this.gb_CargaAquecimento.Controls.Add(this.numericUpDown374);
-			this.gb_CargaAquecimento.Controls.Add(this.numericUpDown375);
+			this.gb_CargaAquecimento.Controls.Add(this.nCarga_Corda);
+			this.gb_CargaAquecimento.Controls.Add(this.nCarga_Eliptico);
+			this.gb_CargaAquecimento.Controls.Add(this.nCarga_Bicicleta);
+			this.gb_CargaAquecimento.Controls.Add(this.nCarga_Esteira);
 			this.gb_CargaAquecimento.Location = new System.Drawing.Point(437, 20);
 			this.gb_CargaAquecimento.Name = "gb_CargaAquecimento";
 			this.gb_CargaAquecimento.Size = new System.Drawing.Size(103, 310);
@@ -3915,40 +3915,40 @@ namespace Rock_Solid
 			this.gb_CargaAquecimento.TabStop = false;
 			this.gb_CargaAquecimento.Text = "Carga";
 			// 
-			// numericUpDown3
+			// nCarga_Corda
 			// 
-			this.numericUpDown3.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown3.Name = "numericUpDown3";
-			this.numericUpDown3.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown3.TabIndex = 28;
+			this.nCarga_Corda.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_Corda.Name = "nCarga_Corda";
+			this.nCarga_Corda.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Corda.TabIndex = 28;
 			// 
-			// numericUpDown373
+			// nCarga_Eliptico
 			// 
-			this.numericUpDown373.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown373.Name = "numericUpDown373";
-			this.numericUpDown373.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown373.TabIndex = 27;
+			this.nCarga_Eliptico.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_Eliptico.Name = "nCarga_Eliptico";
+			this.nCarga_Eliptico.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Eliptico.TabIndex = 27;
 			// 
-			// numericUpDown374
+			// nCarga_Bicicleta
 			// 
-			this.numericUpDown374.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown374.Name = "numericUpDown374";
-			this.numericUpDown374.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown374.TabIndex = 26;
+			this.nCarga_Bicicleta.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_Bicicleta.Name = "nCarga_Bicicleta";
+			this.nCarga_Bicicleta.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Bicicleta.TabIndex = 26;
 			// 
-			// numericUpDown375
+			// nCarga_Esteira
 			// 
-			this.numericUpDown375.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown375.Name = "numericUpDown375";
-			this.numericUpDown375.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown375.TabIndex = 25;
+			this.nCarga_Esteira.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_Esteira.Name = "nCarga_Esteira";
+			this.nCarga_Esteira.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Esteira.TabIndex = 25;
 			// 
 			// gb_RepeticaoAquecimento
 			// 
-			this.gb_RepeticaoAquecimento.Controls.Add(this.numericUpDown2);
-			this.gb_RepeticaoAquecimento.Controls.Add(this.numericUpDown388);
-			this.gb_RepeticaoAquecimento.Controls.Add(this.numericUpDown389);
-			this.gb_RepeticaoAquecimento.Controls.Add(this.numericUpDown390);
+			this.gb_RepeticaoAquecimento.Controls.Add(this.nRep_Corda);
+			this.gb_RepeticaoAquecimento.Controls.Add(this.nRep_Eliptico);
+			this.gb_RepeticaoAquecimento.Controls.Add(this.nRep_Bicicleta);
+			this.gb_RepeticaoAquecimento.Controls.Add(this.nRep_Esteira);
 			this.gb_RepeticaoAquecimento.Location = new System.Drawing.Point(335, 20);
 			this.gb_RepeticaoAquecimento.Name = "gb_RepeticaoAquecimento";
 			this.gb_RepeticaoAquecimento.Size = new System.Drawing.Size(103, 310);
@@ -3956,40 +3956,40 @@ namespace Rock_Solid
 			this.gb_RepeticaoAquecimento.TabStop = false;
 			this.gb_RepeticaoAquecimento.Text = "Repetição";
 			// 
-			// numericUpDown2
+			// nRep_Corda
 			// 
-			this.numericUpDown2.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown2.Name = "numericUpDown2";
-			this.numericUpDown2.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown2.TabIndex = 28;
+			this.nRep_Corda.Location = new System.Drawing.Point(12, 94);
+			this.nRep_Corda.Name = "nRep_Corda";
+			this.nRep_Corda.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Corda.TabIndex = 28;
 			// 
-			// numericUpDown388
+			// nRep_Eliptico
 			// 
-			this.numericUpDown388.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown388.Name = "numericUpDown388";
-			this.numericUpDown388.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown388.TabIndex = 27;
+			this.nRep_Eliptico.Location = new System.Drawing.Point(12, 68);
+			this.nRep_Eliptico.Name = "nRep_Eliptico";
+			this.nRep_Eliptico.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Eliptico.TabIndex = 27;
 			// 
-			// numericUpDown389
+			// nRep_Bicicleta
 			// 
-			this.numericUpDown389.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown389.Name = "numericUpDown389";
-			this.numericUpDown389.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown389.TabIndex = 26;
+			this.nRep_Bicicleta.Location = new System.Drawing.Point(12, 42);
+			this.nRep_Bicicleta.Name = "nRep_Bicicleta";
+			this.nRep_Bicicleta.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Bicicleta.TabIndex = 26;
 			// 
-			// numericUpDown390
+			// nRep_Esteira
 			// 
-			this.numericUpDown390.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown390.Name = "numericUpDown390";
-			this.numericUpDown390.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown390.TabIndex = 25;
+			this.nRep_Esteira.Location = new System.Drawing.Point(12, 16);
+			this.nRep_Esteira.Name = "nRep_Esteira";
+			this.nRep_Esteira.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Esteira.TabIndex = 25;
 			// 
 			// gb_SerieAquecimento
 			// 
-			this.gb_SerieAquecimento.Controls.Add(this.numericUpDown1);
-			this.gb_SerieAquecimento.Controls.Add(this.numericUpDown403);
-			this.gb_SerieAquecimento.Controls.Add(this.numericUpDown404);
-			this.gb_SerieAquecimento.Controls.Add(this.numericUpDown405);
+			this.gb_SerieAquecimento.Controls.Add(this.nSerie_Corda);
+			this.gb_SerieAquecimento.Controls.Add(this.nSerie_Eliptico);
+			this.gb_SerieAquecimento.Controls.Add(this.nSerie_Bicicleta);
+			this.gb_SerieAquecimento.Controls.Add(this.nSerie_Esteira);
 			this.gb_SerieAquecimento.Location = new System.Drawing.Point(233, 20);
 			this.gb_SerieAquecimento.Name = "gb_SerieAquecimento";
 			this.gb_SerieAquecimento.Size = new System.Drawing.Size(103, 310);
@@ -3997,33 +3997,33 @@ namespace Rock_Solid
 			this.gb_SerieAquecimento.TabStop = false;
 			this.gb_SerieAquecimento.Text = "Serie";
 			// 
-			// numericUpDown1
+			// nSerie_Corda
 			// 
-			this.numericUpDown1.Location = new System.Drawing.Point(12, 94);
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown1.TabIndex = 13;
+			this.nSerie_Corda.Location = new System.Drawing.Point(12, 94);
+			this.nSerie_Corda.Name = "nSerie_Corda";
+			this.nSerie_Corda.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Corda.TabIndex = 13;
 			// 
-			// numericUpDown403
+			// nSerie_Eliptico
 			// 
-			this.numericUpDown403.Location = new System.Drawing.Point(12, 68);
-			this.numericUpDown403.Name = "numericUpDown403";
-			this.numericUpDown403.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown403.TabIndex = 12;
+			this.nSerie_Eliptico.Location = new System.Drawing.Point(12, 68);
+			this.nSerie_Eliptico.Name = "nSerie_Eliptico";
+			this.nSerie_Eliptico.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Eliptico.TabIndex = 12;
 			// 
-			// numericUpDown404
+			// nSerie_Bicicleta
 			// 
-			this.numericUpDown404.Location = new System.Drawing.Point(12, 42);
-			this.numericUpDown404.Name = "numericUpDown404";
-			this.numericUpDown404.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown404.TabIndex = 11;
+			this.nSerie_Bicicleta.Location = new System.Drawing.Point(12, 42);
+			this.nSerie_Bicicleta.Name = "nSerie_Bicicleta";
+			this.nSerie_Bicicleta.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Bicicleta.TabIndex = 11;
 			// 
-			// numericUpDown405
+			// nSerie_Esteira
 			// 
-			this.numericUpDown405.Location = new System.Drawing.Point(12, 16);
-			this.numericUpDown405.Name = "numericUpDown405";
-			this.numericUpDown405.Size = new System.Drawing.Size(80, 20);
-			this.numericUpDown405.TabIndex = 0;
+			this.nSerie_Esteira.Location = new System.Drawing.Point(12, 16);
+			this.nSerie_Esteira.Name = "nSerie_Esteira";
+			this.nSerie_Esteira.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Esteira.TabIndex = 0;
 			// 
 			// gb_ExercicioAquecimento
 			// 
@@ -4194,236 +4194,236 @@ namespace Rock_Solid
 			this.tc_Workout.ResumeLayout(false);
 			this.tp_Biceps.ResumeLayout(false);
 			this.gb_CargaBiceps.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaSimultanea)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaRoldana)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaBilateral)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaArticulada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaConcentrada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaMartelo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaAlternada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaDireta)).EndInit();
 			this.gb_RepeticaoBiceps.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown70)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown71)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown72)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown73)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown74)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown75)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaSimultanea)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaRoldana)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaBilateral)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaArticulada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaConcentrada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaMartelo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaAlternada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaDireta)).EndInit();
 			this.gb_SerieBiceps.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown83)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown84)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown85)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown86)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown87)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown88)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown89)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown90)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaSimultanea)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaRoldana)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaBilateral)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaArticulada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaConcentrada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaMartelo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaAlternada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaDireta)).EndInit();
 			this.gb_ExercicioBiceps.ResumeLayout(false);
 			this.gb_ExercicioBiceps.PerformLayout();
 			this.tp_Triceps.ResumeLayout(false);
 			this.gb_CargaTriceps.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown98)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown99)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown100)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown101)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown102)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown103)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown104)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown105)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Mergulho)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Invertido)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Coice)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaSupinada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaFrancesa)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PulleyCorda)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RoscaTesta)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Pulley)).EndInit();
 			this.gb_RepeticaoTriceps.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown113)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown114)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown115)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown116)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown117)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown118)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown119)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown120)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Mergulho)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Invertido)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Coice)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaSupinada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaFrancesa)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PulleyCorda)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaTesta)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Pulley)).EndInit();
 			this.gb_SerieTriceps.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown128)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown129)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown130)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown131)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown132)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown133)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown134)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown135)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_ergulho)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Invertido)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Coice)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaSupinada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaFrancesa)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PulleyCorda)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaTesta)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Pulley)).EndInit();
 			this.gb_ExercicioTriceps.ResumeLayout(false);
 			this.gb_ExercicioTriceps.PerformLayout();
 			this.tp_Ombro.ResumeLayout(false);
 			this.gb_CargaOmbros.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown144)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown145)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown146)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown147)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown148)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown149)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown150)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RemadaAlta)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_DesenvolvimentoDumbell)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_DesenvolvimentoFrente)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_DesenvolvimentoCostas)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_ElevacaoOmbro)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_ElevacaoFrontal)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_ElevacaoLateral)).EndInit();
 			this.gb_RepeticaoOmbros.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown159)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown160)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown161)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown162)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown163)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown164)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown165)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RemadaAlta)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_DesenvolvimentoDumbell)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_DesenvolvimentoFrente)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_DesenvolvimentoCostas)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_ElevacaoOmbro)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_ElevacaoFrontal)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_ElevacaoLateral)).EndInit();
 			this.gb_SerieOmbros.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown174)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown175)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown176)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown177)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown178)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown179)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown180)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RemadaAlta)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_DesenvolvimentoDumbell)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_DesenvolvimentoFrente)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_DesenvolvimentoCostas)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_ElevacaoOmbro)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_ElevacaoFrontal)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_ElevacaoLateral)).EndInit();
 			this.gb_ExercicioOmbros.ResumeLayout(false);
 			this.gb_ExercicioOmbros.PerformLayout();
 			this.tp_Pernas.ResumeLayout(false);
 			this.gb_CargaPernas.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown58)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown59)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown60)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown61)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown63)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown64)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown65)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown66)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown67)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown68)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown69)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Avanco)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Gluteo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Stiff)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Panturrilha)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Hack)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_AgachamentoLivre)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_LegPress)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Abdutor)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Adutor)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_CadeiraFlexora)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_CadeiraExtensora)).EndInit();
 			this.gb_RepeticaoPernas.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown31)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown33)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown34)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown35)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown36)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown37)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown38)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown39)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Avanco)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Gluteo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Stiff)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Panturrilha)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Hack)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_AgachamentoLivre)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_LegPress)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Abdutor)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Adutor)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_CadeiraFlexora)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_CadeiraExtensora)).EndInit();
 			this.gb_SeriePernas.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown52)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown53)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown54)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown55)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown42)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown46)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown47)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown48)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Avanco)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Gluteo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Stiff)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Panturrilha)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Hack)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_AgachamentoLivre)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_LegPress)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Abdutor)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Adutor)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_CadeiraFlexora)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_CadeiraExtensorar)).EndInit();
 			this.gb_ExercicioPernas.ResumeLayout(false);
 			this.gb_ExercicioPernas.PerformLayout();
 			this.tp_Peito.ResumeLayout(false);
 			this.gb_CargaPeito.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown188)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown189)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown190)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown191)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown192)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown193)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown194)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown195)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_CrossOver)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Crucifixo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PeckDeck)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Peck)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_SupinoDumbell)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_SupinoSentado)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_SupinoInclinado)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_SupinoReto)).EndInit();
 			this.gb_RepeticaoPeito.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown203)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown204)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown205)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown206)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown207)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown208)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown209)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown210)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_CrossOver)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Crucifixo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PeckDeck)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Peck)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_SupinoDumbell)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_SupinoSentado)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_SupinoInclinado)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_SupinoReto)).EndInit();
 			this.gb_SeriePeito.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown218)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown219)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown220)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown221)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown222)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown223)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown224)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown225)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_CrossOver)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Crucifixo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PeckDeckPeito)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Peck)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_SupinoDumbell)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_SupinoSentado)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_SupinoInclinado)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_SupinoReto)).EndInit();
 			this.gb_ExercicioPeito.ResumeLayout(false);
 			this.gb_ExercicioPeito.PerformLayout();
 			this.tp_Costas.ResumeLayout(false);
 			this.gb_CargaCostas.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown230)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown231)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown232)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown233)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown234)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown235)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown236)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown237)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown238)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown239)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown240)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_VoadorInverso)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_BrraFixa)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PullOverCostas)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PeckDeckCostas)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PuxadorArticulado)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RemadaCavalinho)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RemadaAlternada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RemadaHorizontal)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PulleyInvertido)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PulleyFrente)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PulleyCostas)).EndInit();
 			this.gb_RepeticaoCostas.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown245)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown246)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown247)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown248)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown249)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown250)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown251)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown252)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown253)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown254)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown255)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_VoadorInverso)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_BarraFixa)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PullOverCostas)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PeckDeckCostas)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PuxadorArticulado)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RemadaCavalinho)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RemadaAlternada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RemadaHorizontal)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PulleyInvertido)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PulleyFrente)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PulleyCostas)).EndInit();
 			this.gb_SerieCostas.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown260)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown261)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown262)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown263)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown264)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown265)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown266)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown267)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown268)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown269)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown270)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_VoadorInverso)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_BarraFixa)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PullOverCostas)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PeckDeckCostas)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PuxadorArticulado)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RemadaCavalinho)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RemadaAlternada)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RemadaHorizontal)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PulleyInvertido)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PulleyFrente)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PulleyCostas)).EndInit();
 			this.gb_ExercicioCostas.ResumeLayout(false);
 			this.gb_ExercicioCostas.PerformLayout();
 			this.tp_Abdomen.ResumeLayout(false);
 			this.gb_CargaAbdomen.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown281)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown282)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown283)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown284)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown285)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PranchaAbdomen)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_ParalelaFixa)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Obliquo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Infra)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_RetoAbdomen)).EndInit();
 			this.gb_RepeticaoAbdomen.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown296)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown297)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown298)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown299)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown300)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PranchaAbdomen)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_ParalelaFixa)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Obliquo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Infra)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_RetoAbdomen)).EndInit();
 			this.gb_SerieAbdomen.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown311)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown312)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown313)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown314)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown315)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_PranchaAbdomen)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_ParalelaFixa)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Obliquo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Infra)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_RetoAbdomen)).EndInit();
 			this.gb_ExercicioAbdomen.ResumeLayout(false);
 			this.gb_ExercicioAbdomen.PerformLayout();
 			this.tp_Aquecimento.ResumeLayout(false);
 			this.gb_CargaAquecimento.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown373)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown374)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown375)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Corda)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Eliptico)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Bicicleta)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Esteira)).EndInit();
 			this.gb_RepeticaoAquecimento.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown388)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown389)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown390)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Corda)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Eliptico)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Bicicleta)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Esteira)).EndInit();
 			this.gb_SerieAquecimento.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown403)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown404)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown405)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Corda)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Eliptico)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Bicicleta)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Esteira)).EndInit();
 			this.gb_ExercicioAquecimento.ResumeLayout(false);
 			this.gb_ExercicioAquecimento.PerformLayout();
 			this.panel1.ResumeLayout(false);
@@ -4433,360 +4433,360 @@ namespace Rock_Solid
 
 		#endregion
 
-		private System.Windows.Forms.TabControl tc_Workout;
-		private System.Windows.Forms.TabPage tp_Biceps;
-		private System.Windows.Forms.TabPage tp_Triceps;
-		private System.Windows.Forms.TabPage tp_Ombro;
-		private System.Windows.Forms.TabPage tp_Pernas;
-		private System.Windows.Forms.TabPage tp_Peito;
-		private System.Windows.Forms.TabPage tp_Costas;
-		private System.Windows.Forms.TabPage tp_Abdomen;
-		private System.Windows.Forms.TabPage tp_Aquecimento;
-		private System.Windows.Forms.Panel panel1;
+		public System.Windows.Forms.TabControl tc_Workout;
+		public System.Windows.Forms.TabPage tp_Biceps;
+		public System.Windows.Forms.TabPage tp_Triceps;
+		public System.Windows.Forms.TabPage tp_Ombro;
+		public System.Windows.Forms.TabPage tp_Pernas;
+		public System.Windows.Forms.TabPage tp_Peito;
+		public System.Windows.Forms.TabPage tp_Costas;
+		public System.Windows.Forms.TabPage tp_Abdomen;
+		public System.Windows.Forms.TabPage tp_Aquecimento;
+		public System.Windows.Forms.Panel panel1;
 		public System.Windows.Forms.Button btn_Close;
 		public System.Windows.Forms.Button btn_Save;
 		public System.Windows.Forms.Button btn_Print;
-		private System.Windows.Forms.GroupBox gb_CargaBiceps;
-		private System.Windows.Forms.NumericUpDown numericUpDown8;
-		private System.Windows.Forms.NumericUpDown numericUpDown9;
-		private System.Windows.Forms.NumericUpDown numericUpDown10;
-		private System.Windows.Forms.NumericUpDown numericUpDown11;
-		private System.Windows.Forms.NumericUpDown numericUpDown12;
-		private System.Windows.Forms.NumericUpDown numericUpDown13;
-		private System.Windows.Forms.NumericUpDown numericUpDown14;
-		private System.Windows.Forms.NumericUpDown numericUpDown15;
-		private System.Windows.Forms.GroupBox gb_RepeticaoBiceps;
-		private System.Windows.Forms.NumericUpDown numericUpDown23;
-		private System.Windows.Forms.NumericUpDown numericUpDown24;
-		private System.Windows.Forms.NumericUpDown numericUpDown70;
-		private System.Windows.Forms.NumericUpDown numericUpDown71;
-		private System.Windows.Forms.NumericUpDown numericUpDown72;
-		private System.Windows.Forms.NumericUpDown numericUpDown73;
-		private System.Windows.Forms.NumericUpDown numericUpDown74;
-		private System.Windows.Forms.NumericUpDown numericUpDown75;
-		private System.Windows.Forms.GroupBox gb_SerieBiceps;
-		private System.Windows.Forms.NumericUpDown numericUpDown83;
-		private System.Windows.Forms.NumericUpDown numericUpDown84;
-		private System.Windows.Forms.NumericUpDown numericUpDown85;
-		private System.Windows.Forms.NumericUpDown numericUpDown86;
-		private System.Windows.Forms.NumericUpDown numericUpDown87;
-		private System.Windows.Forms.NumericUpDown numericUpDown88;
-		private System.Windows.Forms.NumericUpDown numericUpDown89;
-		private System.Windows.Forms.NumericUpDown numericUpDown90;
-		private System.Windows.Forms.GroupBox gb_ExercicioBiceps;
-		private System.Windows.Forms.GroupBox gb_CargaTriceps;
-		private System.Windows.Forms.NumericUpDown numericUpDown98;
-		private System.Windows.Forms.NumericUpDown numericUpDown99;
-		private System.Windows.Forms.NumericUpDown numericUpDown100;
-		private System.Windows.Forms.NumericUpDown numericUpDown101;
-		private System.Windows.Forms.NumericUpDown numericUpDown102;
-		private System.Windows.Forms.NumericUpDown numericUpDown103;
-		private System.Windows.Forms.NumericUpDown numericUpDown104;
-		private System.Windows.Forms.NumericUpDown numericUpDown105;
-		private System.Windows.Forms.GroupBox gb_RepeticaoTriceps;
-		private System.Windows.Forms.NumericUpDown numericUpDown113;
-		private System.Windows.Forms.NumericUpDown numericUpDown114;
-		private System.Windows.Forms.NumericUpDown numericUpDown115;
-		private System.Windows.Forms.NumericUpDown numericUpDown116;
-		private System.Windows.Forms.NumericUpDown numericUpDown117;
-		private System.Windows.Forms.NumericUpDown numericUpDown118;
-		private System.Windows.Forms.NumericUpDown numericUpDown119;
-		private System.Windows.Forms.NumericUpDown numericUpDown120;
-		private System.Windows.Forms.GroupBox gb_SerieTriceps;
-		private System.Windows.Forms.NumericUpDown numericUpDown128;
-		private System.Windows.Forms.NumericUpDown numericUpDown129;
-		private System.Windows.Forms.NumericUpDown numericUpDown130;
-		private System.Windows.Forms.NumericUpDown numericUpDown131;
-		private System.Windows.Forms.NumericUpDown numericUpDown132;
-		private System.Windows.Forms.NumericUpDown numericUpDown133;
-		private System.Windows.Forms.NumericUpDown numericUpDown134;
-		private System.Windows.Forms.NumericUpDown numericUpDown135;
-		private System.Windows.Forms.GroupBox gb_ExercicioTriceps;
-		private System.Windows.Forms.GroupBox gb_CargaOmbros;
-		private System.Windows.Forms.NumericUpDown numericUpDown144;
-		private System.Windows.Forms.NumericUpDown numericUpDown145;
-		private System.Windows.Forms.NumericUpDown numericUpDown146;
-		private System.Windows.Forms.NumericUpDown numericUpDown147;
-		private System.Windows.Forms.NumericUpDown numericUpDown148;
-		private System.Windows.Forms.NumericUpDown numericUpDown149;
-		private System.Windows.Forms.NumericUpDown numericUpDown150;
-		private System.Windows.Forms.GroupBox gb_RepeticaoOmbros;
-		private System.Windows.Forms.NumericUpDown numericUpDown159;
-		private System.Windows.Forms.NumericUpDown numericUpDown160;
-		private System.Windows.Forms.NumericUpDown numericUpDown161;
-		private System.Windows.Forms.NumericUpDown numericUpDown162;
-		private System.Windows.Forms.NumericUpDown numericUpDown163;
-		private System.Windows.Forms.NumericUpDown numericUpDown164;
-		private System.Windows.Forms.NumericUpDown numericUpDown165;
-		private System.Windows.Forms.GroupBox gb_SerieOmbros;
-		private System.Windows.Forms.NumericUpDown numericUpDown174;
-		private System.Windows.Forms.NumericUpDown numericUpDown175;
-		private System.Windows.Forms.NumericUpDown numericUpDown176;
-		private System.Windows.Forms.NumericUpDown numericUpDown177;
-		private System.Windows.Forms.NumericUpDown numericUpDown178;
-		private System.Windows.Forms.NumericUpDown numericUpDown179;
-		private System.Windows.Forms.NumericUpDown numericUpDown180;
-		private System.Windows.Forms.GroupBox gb_ExercicioOmbros;
-		private System.Windows.Forms.GroupBox gb_CargaPernas;
-		private System.Windows.Forms.NumericUpDown numericUpDown58;
-		private System.Windows.Forms.NumericUpDown numericUpDown59;
-		private System.Windows.Forms.NumericUpDown numericUpDown60;
-		private System.Windows.Forms.NumericUpDown numericUpDown61;
-		private System.Windows.Forms.NumericUpDown numericUpDown63;
-		private System.Windows.Forms.NumericUpDown numericUpDown64;
-		private System.Windows.Forms.NumericUpDown numericUpDown65;
-		private System.Windows.Forms.NumericUpDown numericUpDown66;
-		private System.Windows.Forms.NumericUpDown numericUpDown67;
-		private System.Windows.Forms.NumericUpDown numericUpDown68;
-		private System.Windows.Forms.NumericUpDown numericUpDown69;
-		private System.Windows.Forms.GroupBox gb_RepeticaoPernas;
-		private System.Windows.Forms.NumericUpDown numericUpDown28;
-		private System.Windows.Forms.NumericUpDown numericUpDown29;
-		private System.Windows.Forms.NumericUpDown numericUpDown30;
-		private System.Windows.Forms.NumericUpDown numericUpDown31;
-		private System.Windows.Forms.NumericUpDown numericUpDown33;
-		private System.Windows.Forms.NumericUpDown numericUpDown34;
-		private System.Windows.Forms.NumericUpDown numericUpDown35;
-		private System.Windows.Forms.NumericUpDown numericUpDown36;
-		private System.Windows.Forms.NumericUpDown numericUpDown37;
-		private System.Windows.Forms.NumericUpDown numericUpDown38;
-		private System.Windows.Forms.NumericUpDown numericUpDown39;
-		private System.Windows.Forms.GroupBox gb_SeriePernas;
-		private System.Windows.Forms.NumericUpDown numericUpDown52;
-		private System.Windows.Forms.NumericUpDown numericUpDown53;
-		private System.Windows.Forms.NumericUpDown numericUpDown54;
-		private System.Windows.Forms.NumericUpDown numericUpDown55;
-		private System.Windows.Forms.NumericUpDown numericUpDown42;
-		private System.Windows.Forms.NumericUpDown numericUpDown43;
-		private System.Windows.Forms.NumericUpDown numericUpDown44;
-		private System.Windows.Forms.NumericUpDown numericUpDown45;
-		private System.Windows.Forms.NumericUpDown numericUpDown46;
-		private System.Windows.Forms.NumericUpDown numericUpDown47;
-		private System.Windows.Forms.NumericUpDown numericUpDown48;
-		private System.Windows.Forms.GroupBox gb_ExercicioPernas;
-		private System.Windows.Forms.GroupBox gb_CargaPeito;
-		private System.Windows.Forms.NumericUpDown numericUpDown188;
-		private System.Windows.Forms.NumericUpDown numericUpDown189;
-		private System.Windows.Forms.NumericUpDown numericUpDown190;
-		private System.Windows.Forms.NumericUpDown numericUpDown191;
-		private System.Windows.Forms.NumericUpDown numericUpDown192;
-		private System.Windows.Forms.NumericUpDown numericUpDown193;
-		private System.Windows.Forms.NumericUpDown numericUpDown194;
-		private System.Windows.Forms.NumericUpDown numericUpDown195;
-		private System.Windows.Forms.GroupBox gb_RepeticaoPeito;
-		private System.Windows.Forms.NumericUpDown numericUpDown203;
-		private System.Windows.Forms.NumericUpDown numericUpDown204;
-		private System.Windows.Forms.NumericUpDown numericUpDown205;
-		private System.Windows.Forms.NumericUpDown numericUpDown206;
-		private System.Windows.Forms.NumericUpDown numericUpDown207;
-		private System.Windows.Forms.NumericUpDown numericUpDown208;
-		private System.Windows.Forms.NumericUpDown numericUpDown209;
-		private System.Windows.Forms.NumericUpDown numericUpDown210;
-		private System.Windows.Forms.GroupBox gb_SeriePeito;
-		private System.Windows.Forms.NumericUpDown numericUpDown218;
-		private System.Windows.Forms.NumericUpDown numericUpDown219;
-		private System.Windows.Forms.NumericUpDown numericUpDown220;
-		private System.Windows.Forms.NumericUpDown numericUpDown221;
-		private System.Windows.Forms.NumericUpDown numericUpDown222;
-		private System.Windows.Forms.NumericUpDown numericUpDown223;
-		private System.Windows.Forms.NumericUpDown numericUpDown224;
-		private System.Windows.Forms.NumericUpDown numericUpDown225;
-		private System.Windows.Forms.GroupBox gb_ExercicioPeito;
-		private System.Windows.Forms.GroupBox gb_CargaCostas;
-		private System.Windows.Forms.NumericUpDown numericUpDown230;
-		private System.Windows.Forms.NumericUpDown numericUpDown231;
-		private System.Windows.Forms.NumericUpDown numericUpDown232;
-		private System.Windows.Forms.NumericUpDown numericUpDown233;
-		private System.Windows.Forms.NumericUpDown numericUpDown234;
-		private System.Windows.Forms.NumericUpDown numericUpDown235;
-		private System.Windows.Forms.NumericUpDown numericUpDown236;
-		private System.Windows.Forms.NumericUpDown numericUpDown237;
-		private System.Windows.Forms.NumericUpDown numericUpDown238;
-		private System.Windows.Forms.NumericUpDown numericUpDown239;
-		private System.Windows.Forms.NumericUpDown numericUpDown240;
-		private System.Windows.Forms.GroupBox gb_RepeticaoCostas;
-		private System.Windows.Forms.NumericUpDown numericUpDown245;
-		private System.Windows.Forms.NumericUpDown numericUpDown246;
-		private System.Windows.Forms.NumericUpDown numericUpDown247;
-		private System.Windows.Forms.NumericUpDown numericUpDown248;
-		private System.Windows.Forms.NumericUpDown numericUpDown249;
-		private System.Windows.Forms.NumericUpDown numericUpDown250;
-		private System.Windows.Forms.NumericUpDown numericUpDown251;
-		private System.Windows.Forms.NumericUpDown numericUpDown252;
-		private System.Windows.Forms.NumericUpDown numericUpDown253;
-		private System.Windows.Forms.NumericUpDown numericUpDown254;
-		private System.Windows.Forms.NumericUpDown numericUpDown255;
-		private System.Windows.Forms.GroupBox gb_SerieCostas;
-		private System.Windows.Forms.NumericUpDown numericUpDown260;
-		private System.Windows.Forms.NumericUpDown numericUpDown261;
-		private System.Windows.Forms.NumericUpDown numericUpDown262;
-		private System.Windows.Forms.NumericUpDown numericUpDown263;
-		private System.Windows.Forms.NumericUpDown numericUpDown264;
-		private System.Windows.Forms.NumericUpDown numericUpDown265;
-		private System.Windows.Forms.NumericUpDown numericUpDown266;
-		private System.Windows.Forms.NumericUpDown numericUpDown267;
-		private System.Windows.Forms.NumericUpDown numericUpDown268;
-		private System.Windows.Forms.NumericUpDown numericUpDown269;
-		private System.Windows.Forms.NumericUpDown numericUpDown270;
-		private System.Windows.Forms.GroupBox gb_ExercicioCostas;
-		private System.Windows.Forms.GroupBox gb_CargaAbdomen;
-		private System.Windows.Forms.NumericUpDown numericUpDown281;
-		private System.Windows.Forms.NumericUpDown numericUpDown282;
-		private System.Windows.Forms.NumericUpDown numericUpDown283;
-		private System.Windows.Forms.NumericUpDown numericUpDown284;
-		private System.Windows.Forms.NumericUpDown numericUpDown285;
-		private System.Windows.Forms.GroupBox gb_RepeticaoAbdomen;
-		private System.Windows.Forms.NumericUpDown numericUpDown296;
-		private System.Windows.Forms.NumericUpDown numericUpDown297;
-		private System.Windows.Forms.NumericUpDown numericUpDown298;
-		private System.Windows.Forms.NumericUpDown numericUpDown299;
-		private System.Windows.Forms.NumericUpDown numericUpDown300;
-		private System.Windows.Forms.GroupBox gb_SerieAbdomen;
-		private System.Windows.Forms.NumericUpDown numericUpDown311;
-		private System.Windows.Forms.NumericUpDown numericUpDown312;
-		private System.Windows.Forms.NumericUpDown numericUpDown313;
-		private System.Windows.Forms.NumericUpDown numericUpDown314;
-		private System.Windows.Forms.NumericUpDown numericUpDown315;
-		private System.Windows.Forms.GroupBox gb_ExercicioAbdomen;
-		private System.Windows.Forms.GroupBox gb_CargaAquecimento;
-		private System.Windows.Forms.NumericUpDown numericUpDown3;
-		private System.Windows.Forms.NumericUpDown numericUpDown373;
-		private System.Windows.Forms.NumericUpDown numericUpDown374;
-		private System.Windows.Forms.NumericUpDown numericUpDown375;
-		private System.Windows.Forms.GroupBox gb_RepeticaoAquecimento;
-		private System.Windows.Forms.NumericUpDown numericUpDown2;
-		private System.Windows.Forms.NumericUpDown numericUpDown388;
-		private System.Windows.Forms.NumericUpDown numericUpDown389;
-		private System.Windows.Forms.NumericUpDown numericUpDown390;
-		private System.Windows.Forms.GroupBox gb_SerieAquecimento;
-		private System.Windows.Forms.NumericUpDown numericUpDown1;
-		private System.Windows.Forms.NumericUpDown numericUpDown403;
-		private System.Windows.Forms.NumericUpDown numericUpDown404;
-		private System.Windows.Forms.NumericUpDown numericUpDown405;
-		private System.Windows.Forms.GroupBox gb_ExercicioAquecimento;
-		private System.Windows.Forms.ComboBox cb_Corda;
-		private System.Windows.Forms.ComboBox cb_Eliptico;
-		private System.Windows.Forms.ComboBox cb_Bicicleta;
-		private System.Windows.Forms.ComboBox cb_Esteira;
-		private System.Windows.Forms.ComboBox cb_RoscaSimultanea;
-		private System.Windows.Forms.ComboBox cb_RoscaRoldana;
-		private System.Windows.Forms.ComboBox cb_RoscaBilateral;
-		private System.Windows.Forms.ComboBox cb_RoscaArticulada;
-		private System.Windows.Forms.ComboBox cb_RoscaConcentrada;
-		private System.Windows.Forms.ComboBox cb_RoscaMartelo;
-		private System.Windows.Forms.ComboBox cb_RoscaAlternada;
-		private System.Windows.Forms.ComboBox cb_RoscaDireta;
-		private System.Windows.Forms.ComboBox cb_Mergulho;
-		private System.Windows.Forms.ComboBox cb_Invertido;
-		private System.Windows.Forms.ComboBox cb_Coice;
-		private System.Windows.Forms.ComboBox cb_RoscaSupinada;
-		private System.Windows.Forms.ComboBox cb_RoscaFrancesa;
-		private System.Windows.Forms.ComboBox cb_PulleyCorda;
-		private System.Windows.Forms.ComboBox cb_RoscaTesta;
-		private System.Windows.Forms.ComboBox cb_Pulley;
-		private System.Windows.Forms.ComboBox cb_RemadaAlta;
-		private System.Windows.Forms.ComboBox cb_DesenvolvimentoDumbell;
-		private System.Windows.Forms.ComboBox cb_DesenvolvimentoFrente;
-		private System.Windows.Forms.ComboBox cb_DesenvolvimentoCostas;
-		private System.Windows.Forms.ComboBox cb_ElevacaoOmbro;
-		private System.Windows.Forms.ComboBox cb_ElevacaoFrontal;
-		private System.Windows.Forms.ComboBox cb_ElevacaoLateral;
-		private System.Windows.Forms.ComboBox cb_CrossOver;
-		private System.Windows.Forms.ComboBox cb_crucifixo;
-		private System.Windows.Forms.ComboBox cb_PeckDeckPeito;
-		private System.Windows.Forms.ComboBox cb_Peck;
-		private System.Windows.Forms.ComboBox cb_SupinoDumbell;
-		private System.Windows.Forms.ComboBox cb_SupinoSentado;
-		private System.Windows.Forms.ComboBox cb_SupinoInclinado;
-		private System.Windows.Forms.ComboBox cb_SupinoReto;
-		private System.Windows.Forms.ComboBox cb_PeckDeckCostas;
-		private System.Windows.Forms.ComboBox cb_PuxadorArticulado;
-		private System.Windows.Forms.ComboBox cb_RemadaCavalinho;
-		private System.Windows.Forms.ComboBox cb_RemadaAlternada;
-		private System.Windows.Forms.ComboBox cb_RemadaHorizontal;
-		private System.Windows.Forms.ComboBox cb_PulleyInvertido;
-		private System.Windows.Forms.ComboBox cb_PulleyFrente;
-		private System.Windows.Forms.ComboBox cb_PulleyCostas;
-		private System.Windows.Forms.ComboBox cb_PranchaAbdomen;
-		private System.Windows.Forms.ComboBox cb_ParalelaFixa;
-		private System.Windows.Forms.ComboBox cb_Oblico;
-		private System.Windows.Forms.ComboBox cb_Infra;
-		private System.Windows.Forms.ComboBox cb_RetoAbdomen;
-		private System.Windows.Forms.Label lb_PranchaAbdomen;
-		private System.Windows.Forms.Label lb_ParalelaFixa;
-		private System.Windows.Forms.Label lb_Oblico;
-		private System.Windows.Forms.Label lb_Infra;
-		private System.Windows.Forms.Label lb_RetoAbdomen;
-		private System.Windows.Forms.Label lb_Corda;
-		private System.Windows.Forms.Label lb_Eliptico;
-		private System.Windows.Forms.Label lb_Bicicleta;
-		private System.Windows.Forms.Label lb_Esteira;
-		private System.Windows.Forms.ComboBox cb_Avanco;
-		private System.Windows.Forms.ComboBox cb_Gluteo;
-		private System.Windows.Forms.ComboBox cb_Stiff;
-		private System.Windows.Forms.ComboBox cb_Panturrilha;
-		private System.Windows.Forms.ComboBox cb_Hack;
-		private System.Windows.Forms.ComboBox cb_Agachamento;
-		private System.Windows.Forms.ComboBox cb_LegPress;
-		private System.Windows.Forms.ComboBox cb_Abdutor;
-		private System.Windows.Forms.ComboBox cb_Adutor;
-		private System.Windows.Forms.ComboBox cb_CadeiraFlexora;
-		private System.Windows.Forms.ComboBox cb_CadeiraExtensora;
-		private System.Windows.Forms.ComboBox cb_VoadorInverso;
-		private System.Windows.Forms.ComboBox cb_BarraFixa;
-		private System.Windows.Forms.ComboBox cb_PullOverCostas;
-		private System.Windows.Forms.Label lb_RoscaSimultanea;
-		private System.Windows.Forms.Label lb_RoscaRoldana;
-		private System.Windows.Forms.Label lb_RoscaBilateral;
-		private System.Windows.Forms.Label lb_RoscaArticulada;
-		private System.Windows.Forms.Label lb_RoscaConcentrada;
-		private System.Windows.Forms.Label lb_RoscaMartelo;
-		private System.Windows.Forms.Label lb_RoscaAlternada;
-		private System.Windows.Forms.Label lb_RoscaDireta;
-		private System.Windows.Forms.Label lb_Mergulho;
-		private System.Windows.Forms.Label lb_Invertido;
-		private System.Windows.Forms.Label lb_Coice;
-		private System.Windows.Forms.Label lb_RoscaSupinada;
-		private System.Windows.Forms.Label lb_RoscaFrancesa;
-		private System.Windows.Forms.Label lb_PulleyCorda;
-		private System.Windows.Forms.Label lb_RoscaTesta;
-		private System.Windows.Forms.Label lb_Pulley;
-		private System.Windows.Forms.Label lb_RemadaAlta;
-		private System.Windows.Forms.Label lb_DesenvolvimentoDumbell;
-		private System.Windows.Forms.Label lb_DesenvolvimentoFrente;
-		private System.Windows.Forms.Label lb_DesenvolvimentoCostas;
-		private System.Windows.Forms.Label lb_ElevacaoOmbro;
-		private System.Windows.Forms.Label lb_ElevacaoFrontal;
-		private System.Windows.Forms.Label lb_ElevacaoLateral;
-		private System.Windows.Forms.Label lb_Avanco;
-		private System.Windows.Forms.Label lb_Gluteo;
-		private System.Windows.Forms.Label lb_Stiff;
-		private System.Windows.Forms.Label lb_Panturrilha;
-		private System.Windows.Forms.Label lb_Hack;
-		private System.Windows.Forms.Label lb_Agachamento;
-		private System.Windows.Forms.Label lb_LegPress;
-		private System.Windows.Forms.Label lb_Abdutor;
-		private System.Windows.Forms.Label lb_Adutor;
-		private System.Windows.Forms.Label lb_CadeiraFlexora;
-		private System.Windows.Forms.Label lb_CadeiraExtensora;
-		private System.Windows.Forms.Label lb_CrossOver;
-		private System.Windows.Forms.Label lb_crucifixo;
-		private System.Windows.Forms.Label lb_PeckDeckPeito;
-		private System.Windows.Forms.Label lb_Peck;
-		private System.Windows.Forms.Label lb_SupinoDumbell;
-		private System.Windows.Forms.Label lb_SupinoSentado;
-		private System.Windows.Forms.Label lb_SupinoInclinado;
-		private System.Windows.Forms.Label lb_SupinoReto;
-		private System.Windows.Forms.Label lb_VoadorInverso;
-		private System.Windows.Forms.Label lb_BarraFixa;
-		private System.Windows.Forms.Label lb_PullOverCostas;
-		private System.Windows.Forms.Label lb_PeckDeckCostas;
-		private System.Windows.Forms.Label lb_PuxadorArticulado;
-		private System.Windows.Forms.Label lb_RemadaCavalinho;
-		private System.Windows.Forms.Label lb_RemadaAlternada;
-		private System.Windows.Forms.Label lb_RemadaHorizontal;
-		private System.Windows.Forms.Label lb_PulleyInvertido;
-		private System.Windows.Forms.Label lb_PulleyFrente;
-		private System.Windows.Forms.Label lb_PulleyCostas;
+		public System.Windows.Forms.GroupBox gb_CargaBiceps;
+		public System.Windows.Forms.NumericUpDown nCarga_RoscaSimultanea;
+		public System.Windows.Forms.NumericUpDown nCarga_RoscaRoldana;
+		public System.Windows.Forms.NumericUpDown nCarga_RoscaBilateral;
+		public System.Windows.Forms.NumericUpDown nCarga_RoscaArticulada;
+		public System.Windows.Forms.NumericUpDown nCarga_RoscaConcentrada;
+		public System.Windows.Forms.NumericUpDown nCarga_RoscaMartelo;
+		public System.Windows.Forms.NumericUpDown nCarga_RoscaAlternada;
+		public System.Windows.Forms.NumericUpDown nCarga_RoscaDireta;
+		public System.Windows.Forms.GroupBox gb_RepeticaoBiceps;
+		public System.Windows.Forms.NumericUpDown nRep_RoscaSimultanea;
+		public System.Windows.Forms.NumericUpDown nRep_RoscaRoldana;
+		public System.Windows.Forms.NumericUpDown nRep_RoscaBilateral;
+		public System.Windows.Forms.NumericUpDown nRep_RoscaArticulada;
+		public System.Windows.Forms.NumericUpDown nRep_RoscaConcentrada;
+		public System.Windows.Forms.NumericUpDown nRep_RoscaMartelo;
+		public System.Windows.Forms.NumericUpDown nRep_RoscaAlternada;
+		public System.Windows.Forms.NumericUpDown nRep_RoscaDireta;
+		public System.Windows.Forms.GroupBox gb_SerieBiceps;
+		public System.Windows.Forms.NumericUpDown nSerie_RoscaSimultanea;
+		public System.Windows.Forms.NumericUpDown nSerie_RoscaRoldana;
+		public System.Windows.Forms.NumericUpDown nSerie_RoscaBilateral;
+		public System.Windows.Forms.NumericUpDown nSerie_RoscaArticulada;
+		public System.Windows.Forms.NumericUpDown nSerie_RoscaConcentrada;
+		public System.Windows.Forms.NumericUpDown nSerie_RoscaMartelo;
+		public System.Windows.Forms.NumericUpDown nSerie_RoscaAlternada;
+		public System.Windows.Forms.NumericUpDown nSerie_RoscaDireta;
+		public System.Windows.Forms.GroupBox gb_ExercicioBiceps;
+		public System.Windows.Forms.GroupBox gb_CargaTriceps;
+		public System.Windows.Forms.NumericUpDown nCarga_Mergulho;
+		public System.Windows.Forms.NumericUpDown nCarga_Invertido;
+		public System.Windows.Forms.NumericUpDown nCarga_Coice;
+		public System.Windows.Forms.NumericUpDown nCarga_RoscaSupinada;
+		public System.Windows.Forms.NumericUpDown nCarga_RoscaFrancesa;
+		public System.Windows.Forms.NumericUpDown nCarga_PulleyCorda;
+		public System.Windows.Forms.NumericUpDown nCarga_RoscaTesta;
+		public System.Windows.Forms.NumericUpDown nCarga_Pulley;
+		public System.Windows.Forms.GroupBox gb_RepeticaoTriceps;
+		public System.Windows.Forms.NumericUpDown nRep_Mergulho;
+		public System.Windows.Forms.NumericUpDown nRep_Invertido;
+		public System.Windows.Forms.NumericUpDown nRep_Coice;
+		public System.Windows.Forms.NumericUpDown nRep_RoscaSupinada;
+		public System.Windows.Forms.NumericUpDown nRep_RoscaFrancesa;
+		public System.Windows.Forms.NumericUpDown nRep_PulleyCorda;
+		public System.Windows.Forms.NumericUpDown nRep_RoscaTesta;
+		public System.Windows.Forms.NumericUpDown nRep_Pulley;
+		public System.Windows.Forms.GroupBox gb_SerieTriceps;
+		public System.Windows.Forms.NumericUpDown nSerie_ergulho;
+		public System.Windows.Forms.NumericUpDown nSerie_Invertido;
+		public System.Windows.Forms.NumericUpDown nSerie_Coice;
+		public System.Windows.Forms.NumericUpDown nSerie_RoscaSupinada;
+		public System.Windows.Forms.NumericUpDown nSerie_RoscaFrancesa;
+		public System.Windows.Forms.NumericUpDown nSerie_PulleyCorda;
+		public System.Windows.Forms.NumericUpDown nSerie_RoscaTesta;
+		public System.Windows.Forms.NumericUpDown nSerie_Pulley;
+		public System.Windows.Forms.GroupBox gb_ExercicioTriceps;
+		public System.Windows.Forms.GroupBox gb_CargaOmbros;
+		public System.Windows.Forms.NumericUpDown nCarga_RemadaAlta;
+		public System.Windows.Forms.NumericUpDown nCarga_DesenvolvimentoDumbell;
+		public System.Windows.Forms.NumericUpDown nCarga_DesenvolvimentoFrente;
+		public System.Windows.Forms.NumericUpDown nCarga_DesenvolvimentoCostas;
+		public System.Windows.Forms.NumericUpDown nCarga_ElevacaoOmbro;
+		public System.Windows.Forms.NumericUpDown nCarga_ElevacaoFrontal;
+		public System.Windows.Forms.NumericUpDown nCarga_ElevacaoLateral;
+		public System.Windows.Forms.GroupBox gb_RepeticaoOmbros;
+		public System.Windows.Forms.NumericUpDown nRep_RemadaAlta;
+		public System.Windows.Forms.NumericUpDown nRep_DesenvolvimentoDumbell;
+		public System.Windows.Forms.NumericUpDown nRep_DesenvolvimentoFrente;
+		public System.Windows.Forms.NumericUpDown nRep_DesenvolvimentoCostas;
+		public System.Windows.Forms.NumericUpDown nRep_ElevacaoOmbro;
+		public System.Windows.Forms.NumericUpDown nRep_ElevacaoFrontal;
+		public System.Windows.Forms.NumericUpDown nRep_ElevacaoLateral;
+		public System.Windows.Forms.GroupBox gb_SerieOmbros;
+		public System.Windows.Forms.NumericUpDown nSerie_RemadaAlta;
+		public System.Windows.Forms.NumericUpDown nSerie_DesenvolvimentoDumbell;
+		public System.Windows.Forms.NumericUpDown nSerie_DesenvolvimentoFrente;
+		public System.Windows.Forms.NumericUpDown nSerie_DesenvolvimentoCostas;
+		public System.Windows.Forms.NumericUpDown nSerie_ElevacaoOmbro;
+		public System.Windows.Forms.NumericUpDown nSerie_ElevacaoFrontal;
+		public System.Windows.Forms.NumericUpDown nSerie_ElevacaoLateral;
+		public System.Windows.Forms.GroupBox gb_ExercicioOmbros;
+		public System.Windows.Forms.GroupBox gb_CargaPernas;
+		public System.Windows.Forms.NumericUpDown nCarga_Avanco;
+		public System.Windows.Forms.NumericUpDown nCarga_Gluteo;
+		public System.Windows.Forms.NumericUpDown nCarga_Stiff;
+		public System.Windows.Forms.NumericUpDown nCarga_Panturrilha;
+		public System.Windows.Forms.NumericUpDown nCarga_Hack;
+		public System.Windows.Forms.NumericUpDown nCarga_AgachamentoLivre;
+		public System.Windows.Forms.NumericUpDown nCarga_LegPress;
+		public System.Windows.Forms.NumericUpDown nCarga_Abdutor;
+		public System.Windows.Forms.NumericUpDown nCarga_Adutor;
+		public System.Windows.Forms.NumericUpDown nCarga_CadeiraFlexora;
+		public System.Windows.Forms.NumericUpDown nCarga_CadeiraExtensora;
+		public System.Windows.Forms.GroupBox gb_RepeticaoPernas;
+		public System.Windows.Forms.NumericUpDown nRep_Avanco;
+		public System.Windows.Forms.NumericUpDown nRep_Gluteo;
+		public System.Windows.Forms.NumericUpDown nRep_Stiff;
+		public System.Windows.Forms.NumericUpDown nRep_Panturrilha;
+		public System.Windows.Forms.NumericUpDown nRep_Hack;
+		public System.Windows.Forms.NumericUpDown nRep_AgachamentoLivre;
+		public System.Windows.Forms.NumericUpDown nRep_LegPress;
+		public System.Windows.Forms.NumericUpDown nRep_Abdutor;
+		public System.Windows.Forms.NumericUpDown nRep_Adutor;
+		public System.Windows.Forms.NumericUpDown nRep_CadeiraFlexora;
+		public System.Windows.Forms.NumericUpDown nRep_CadeiraExtensora;
+		public System.Windows.Forms.GroupBox gb_SeriePernas;
+		public System.Windows.Forms.NumericUpDown nSerie_Avanco;
+		public System.Windows.Forms.NumericUpDown nSerie_Gluteo;
+		public System.Windows.Forms.NumericUpDown nSerie_Stiff;
+		public System.Windows.Forms.NumericUpDown nSerie_Panturrilha;
+		public System.Windows.Forms.NumericUpDown nSerie_Hack;
+		public System.Windows.Forms.NumericUpDown nSerie_AgachamentoLivre;
+		public System.Windows.Forms.NumericUpDown nSerie_LegPress;
+		public System.Windows.Forms.NumericUpDown nSerie_Abdutor;
+		public System.Windows.Forms.NumericUpDown nSerie_Adutor;
+		public System.Windows.Forms.NumericUpDown nSerie_CadeiraFlexora;
+		public System.Windows.Forms.NumericUpDown nSerie_CadeiraExtensorar;
+		public System.Windows.Forms.GroupBox gb_ExercicioPernas;
+		public System.Windows.Forms.GroupBox gb_CargaPeito;
+		public System.Windows.Forms.NumericUpDown nCarga_CrossOver;
+		public System.Windows.Forms.NumericUpDown nCarga_Crucifixo;
+		public System.Windows.Forms.NumericUpDown nCarga_PeckDeck;
+		public System.Windows.Forms.NumericUpDown nCarga_Peck;
+		public System.Windows.Forms.NumericUpDown nCarga_SupinoDumbell;
+		public System.Windows.Forms.NumericUpDown nCarga_SupinoSentado;
+		public System.Windows.Forms.NumericUpDown nCarga_SupinoInclinado;
+		public System.Windows.Forms.NumericUpDown nCarga_SupinoReto;
+		public System.Windows.Forms.GroupBox gb_RepeticaoPeito;
+		public System.Windows.Forms.NumericUpDown nRep_CrossOver;
+		public System.Windows.Forms.NumericUpDown nRep_Crucifixo;
+		public System.Windows.Forms.NumericUpDown nRep_PeckDeck;
+		public System.Windows.Forms.NumericUpDown nRep_Peck;
+		public System.Windows.Forms.NumericUpDown nRep_SupinoDumbell;
+		public System.Windows.Forms.NumericUpDown nRep_SupinoSentado;
+		public System.Windows.Forms.NumericUpDown nRep_SupinoInclinado;
+		public System.Windows.Forms.NumericUpDown nRep_SupinoReto;
+		public System.Windows.Forms.GroupBox gb_SeriePeito;
+		public System.Windows.Forms.NumericUpDown nSerie_CrossOver;
+		public System.Windows.Forms.NumericUpDown nSerie_Crucifixo;
+		public System.Windows.Forms.NumericUpDown nSerie_PeckDeckPeito;
+		public System.Windows.Forms.NumericUpDown nSerie_Peck;
+		public System.Windows.Forms.NumericUpDown nSerie_SupinoDumbell;
+		public System.Windows.Forms.NumericUpDown nSerie_SupinoSentado;
+		public System.Windows.Forms.NumericUpDown nSerie_SupinoInclinado;
+		public System.Windows.Forms.NumericUpDown nSerie_SupinoReto;
+		public System.Windows.Forms.GroupBox gb_ExercicioPeito;
+		public System.Windows.Forms.GroupBox gb_CargaCostas;
+		public System.Windows.Forms.NumericUpDown nCarga_VoadorInverso;
+		public System.Windows.Forms.NumericUpDown nCarga_BrraFixa;
+		public System.Windows.Forms.NumericUpDown nCarga_PullOverCostas;
+		public System.Windows.Forms.NumericUpDown nCarga_PeckDeckCostas;
+		public System.Windows.Forms.NumericUpDown nCarga_PuxadorArticulado;
+		public System.Windows.Forms.NumericUpDown nCarga_RemadaCavalinho;
+		public System.Windows.Forms.NumericUpDown nCarga_RemadaAlternada;
+		public System.Windows.Forms.NumericUpDown nCarga_RemadaHorizontal;
+		public System.Windows.Forms.NumericUpDown nCarga_PulleyInvertido;
+		public System.Windows.Forms.NumericUpDown nCarga_PulleyFrente;
+		public System.Windows.Forms.NumericUpDown nCarga_PulleyCostas;
+		public System.Windows.Forms.GroupBox gb_RepeticaoCostas;
+		public System.Windows.Forms.NumericUpDown nRep_VoadorInverso;
+		public System.Windows.Forms.NumericUpDown nRep_BarraFixa;
+		public System.Windows.Forms.NumericUpDown nRep_PullOverCostas;
+		public System.Windows.Forms.NumericUpDown nRep_PeckDeckCostas;
+		public System.Windows.Forms.NumericUpDown nRep_PuxadorArticulado;
+		public System.Windows.Forms.NumericUpDown nRep_RemadaCavalinho;
+		public System.Windows.Forms.NumericUpDown nRep_RemadaAlternada;
+		public System.Windows.Forms.NumericUpDown nRep_RemadaHorizontal;
+		public System.Windows.Forms.NumericUpDown nRep_PulleyInvertido;
+		public System.Windows.Forms.NumericUpDown nRep_PulleyFrente;
+		public System.Windows.Forms.NumericUpDown nRep_PulleyCostas;
+		public System.Windows.Forms.GroupBox gb_SerieCostas;
+		public System.Windows.Forms.NumericUpDown nSerie_VoadorInverso;
+		public System.Windows.Forms.NumericUpDown nSerie_BarraFixa;
+		public System.Windows.Forms.NumericUpDown nSerie_PullOverCostas;
+		public System.Windows.Forms.NumericUpDown nSerie_PeckDeckCostas;
+		public System.Windows.Forms.NumericUpDown nSerie_PuxadorArticulado;
+		public System.Windows.Forms.NumericUpDown nSerie_RemadaCavalinho;
+		public System.Windows.Forms.NumericUpDown nSerie_RemadaAlternada;
+		public System.Windows.Forms.NumericUpDown nSerie_RemadaHorizontal;
+		public System.Windows.Forms.NumericUpDown nSerie_PulleyInvertido;
+		public System.Windows.Forms.NumericUpDown nSerie_PulleyFrente;
+		public System.Windows.Forms.NumericUpDown nSerie_PulleyCostas;
+		public System.Windows.Forms.GroupBox gb_ExercicioCostas;
+		public System.Windows.Forms.GroupBox gb_CargaAbdomen;
+		public System.Windows.Forms.NumericUpDown nCarga_PranchaAbdomen;
+		public System.Windows.Forms.NumericUpDown nCarga_ParalelaFixa;
+		public System.Windows.Forms.NumericUpDown nCarga_Obliquo;
+		public System.Windows.Forms.NumericUpDown nCarga_Infra;
+		public System.Windows.Forms.NumericUpDown nCarga_RetoAbdomen;
+		public System.Windows.Forms.GroupBox gb_RepeticaoAbdomen;
+		public System.Windows.Forms.NumericUpDown nRep_PranchaAbdomen;
+		public System.Windows.Forms.NumericUpDown nRep_ParalelaFixa;
+		public System.Windows.Forms.NumericUpDown nRep_Obliquo;
+		public System.Windows.Forms.NumericUpDown nRep_Infra;
+		public System.Windows.Forms.NumericUpDown nRep_RetoAbdomen;
+		public System.Windows.Forms.GroupBox gb_SerieAbdomen;
+		public System.Windows.Forms.NumericUpDown nSerie_PranchaAbdomen;
+		public System.Windows.Forms.NumericUpDown nSerie_ParalelaFixa;
+		public System.Windows.Forms.NumericUpDown nSerie_Obliquo;
+		public System.Windows.Forms.NumericUpDown nSerie_Infra;
+		public System.Windows.Forms.NumericUpDown nSerie_RetoAbdomen;
+		public System.Windows.Forms.GroupBox gb_ExercicioAbdomen;
+		public System.Windows.Forms.GroupBox gb_CargaAquecimento;
+		public System.Windows.Forms.NumericUpDown nCarga_Corda;
+		public System.Windows.Forms.NumericUpDown nCarga_Eliptico;
+		public System.Windows.Forms.NumericUpDown nCarga_Bicicleta;
+		public System.Windows.Forms.NumericUpDown nCarga_Esteira;
+		public System.Windows.Forms.GroupBox gb_RepeticaoAquecimento;
+		public System.Windows.Forms.NumericUpDown nRep_Corda;
+		public System.Windows.Forms.NumericUpDown nRep_Eliptico;
+		public System.Windows.Forms.NumericUpDown nRep_Bicicleta;
+		public System.Windows.Forms.NumericUpDown nRep_Esteira;
+		public System.Windows.Forms.GroupBox gb_SerieAquecimento;
+		public System.Windows.Forms.NumericUpDown nSerie_Corda;
+		public System.Windows.Forms.NumericUpDown nSerie_Eliptico;
+		public System.Windows.Forms.NumericUpDown nSerie_Bicicleta;
+		public System.Windows.Forms.NumericUpDown nSerie_Esteira;
+		public System.Windows.Forms.GroupBox gb_ExercicioAquecimento;
+		public System.Windows.Forms.ComboBox cb_Corda;
+		public System.Windows.Forms.ComboBox cb_Eliptico;
+		public System.Windows.Forms.ComboBox cb_Bicicleta;
+		public System.Windows.Forms.ComboBox cb_Esteira;
+		public System.Windows.Forms.ComboBox cb_RoscaSimultanea;
+		public System.Windows.Forms.ComboBox cb_RoscaRoldana;
+		public System.Windows.Forms.ComboBox cb_RoscaBilateral;
+		public System.Windows.Forms.ComboBox cb_RoscaArticulada;
+		public System.Windows.Forms.ComboBox cb_RoscaConcentrada;
+		public System.Windows.Forms.ComboBox cb_RoscaMartelo;
+		public System.Windows.Forms.ComboBox cb_RoscaAlternada;
+		public System.Windows.Forms.ComboBox cb_RoscaDireta;
+		public System.Windows.Forms.ComboBox cb_Mergulho;
+		public System.Windows.Forms.ComboBox cb_Invertido;
+		public System.Windows.Forms.ComboBox cb_Coice;
+		public System.Windows.Forms.ComboBox cb_RoscaSupinada;
+		public System.Windows.Forms.ComboBox cb_RoscaFrancesa;
+		public System.Windows.Forms.ComboBox cb_PulleyCorda;
+		public System.Windows.Forms.ComboBox cb_RoscaTesta;
+		public System.Windows.Forms.ComboBox cb_Pulley;
+		public System.Windows.Forms.ComboBox cb_RemadaAlta;
+		public System.Windows.Forms.ComboBox cb_DesenvolvimentoDumbell;
+		public System.Windows.Forms.ComboBox cb_DesenvolvimentoFrente;
+		public System.Windows.Forms.ComboBox cb_DesenvolvimentoCostas;
+		public System.Windows.Forms.ComboBox cb_ElevacaoOmbro;
+		public System.Windows.Forms.ComboBox cb_ElevacaoFrontal;
+		public System.Windows.Forms.ComboBox cb_ElevacaoLateral;
+		public System.Windows.Forms.ComboBox cb_CrossOver;
+		public System.Windows.Forms.ComboBox cb_crucifixo;
+		public System.Windows.Forms.ComboBox cb_PeckDeckPeito;
+		public System.Windows.Forms.ComboBox cb_Peck;
+		public System.Windows.Forms.ComboBox cb_SupinoDumbell;
+		public System.Windows.Forms.ComboBox cb_SupinoSentado;
+		public System.Windows.Forms.ComboBox cb_SupinoInclinado;
+		public System.Windows.Forms.ComboBox cb_SupinoReto;
+		public System.Windows.Forms.ComboBox cb_PeckDeckCostas;
+		public System.Windows.Forms.ComboBox cb_PuxadorArticulado;
+		public System.Windows.Forms.ComboBox cb_RemadaCavalinho;
+		public System.Windows.Forms.ComboBox cb_RemadaAlternada;
+		public System.Windows.Forms.ComboBox cb_RemadaHorizontal;
+		public System.Windows.Forms.ComboBox cb_PulleyInvertido;
+		public System.Windows.Forms.ComboBox cb_PulleyFrente;
+		public System.Windows.Forms.ComboBox cb_PulleyCostas;
+		public System.Windows.Forms.ComboBox cb_PranchaAbdomen;
+		public System.Windows.Forms.ComboBox cb_ParalelaFixa;
+		public System.Windows.Forms.ComboBox cb_Oblico;
+		public System.Windows.Forms.ComboBox cb_Infra;
+		public System.Windows.Forms.ComboBox cb_RetoAbdomen;
+		public System.Windows.Forms.Label lb_PranchaAbdomen;
+		public System.Windows.Forms.Label lb_ParalelaFixa;
+		public System.Windows.Forms.Label lb_Oblico;
+		public System.Windows.Forms.Label lb_Infra;
+		public System.Windows.Forms.Label lb_RetoAbdomen;
+		public System.Windows.Forms.Label lb_Corda;
+		public System.Windows.Forms.Label lb_Eliptico;
+		public System.Windows.Forms.Label lb_Bicicleta;
+		public System.Windows.Forms.Label lb_Esteira;
+		public System.Windows.Forms.ComboBox cb_Avanco;
+		public System.Windows.Forms.ComboBox cb_Gluteo;
+		public System.Windows.Forms.ComboBox cb_Stiff;
+		public System.Windows.Forms.ComboBox cb_Panturrilha;
+		public System.Windows.Forms.ComboBox cb_Hack;
+		public System.Windows.Forms.ComboBox cb_Agachamento;
+		public System.Windows.Forms.ComboBox cb_LegPress;
+		public System.Windows.Forms.ComboBox cb_Abdutor;
+		public System.Windows.Forms.ComboBox cb_Adutor;
+		public System.Windows.Forms.ComboBox cb_CadeiraFlexora;
+		public System.Windows.Forms.ComboBox cb_CadeiraExtensora;
+		public System.Windows.Forms.ComboBox cb_VoadorInverso;
+		public System.Windows.Forms.ComboBox cb_BarraFixa;
+		public System.Windows.Forms.ComboBox cb_PullOverCostas;
+		public System.Windows.Forms.Label lb_RoscaSimultanea;
+		public System.Windows.Forms.Label lb_RoscaRoldana;
+		public System.Windows.Forms.Label lb_RoscaBilateral;
+		public System.Windows.Forms.Label lb_RoscaArticulada;
+		public System.Windows.Forms.Label lb_RoscaConcentrada;
+		public System.Windows.Forms.Label lb_RoscaMartelo;
+		public System.Windows.Forms.Label lb_RoscaAlternada;
+		public System.Windows.Forms.Label lb_RoscaDireta;
+		public System.Windows.Forms.Label lb_Mergulho;
+		public System.Windows.Forms.Label lb_Invertido;
+		public System.Windows.Forms.Label lb_Coice;
+		public System.Windows.Forms.Label lb_RoscaSupinada;
+		public System.Windows.Forms.Label lb_RoscaFrancesa;
+		public System.Windows.Forms.Label lb_PulleyCorda;
+		public System.Windows.Forms.Label lb_RoscaTesta;
+		public System.Windows.Forms.Label lb_Pulley;
+		public System.Windows.Forms.Label lb_RemadaAlta;
+		public System.Windows.Forms.Label lb_DesenvolvimentoDumbell;
+		public System.Windows.Forms.Label lb_DesenvolvimentoFrente;
+		public System.Windows.Forms.Label lb_DesenvolvimentoCostas;
+		public System.Windows.Forms.Label lb_ElevacaoOmbro;
+		public System.Windows.Forms.Label lb_ElevacaoFrontal;
+		public System.Windows.Forms.Label lb_ElevacaoLateral;
+		public System.Windows.Forms.Label lb_Avanco;
+		public System.Windows.Forms.Label lb_Gluteo;
+		public System.Windows.Forms.Label lb_Stiff;
+		public System.Windows.Forms.Label lb_Panturrilha;
+		public System.Windows.Forms.Label lb_Hack;
+		public System.Windows.Forms.Label lb_Agachamento;
+		public System.Windows.Forms.Label lb_LegPress;
+		public System.Windows.Forms.Label lb_Abdutor;
+		public System.Windows.Forms.Label lb_Adutor;
+		public System.Windows.Forms.Label lb_CadeiraFlexora;
+		public System.Windows.Forms.Label lb_CadeiraExtensora;
+		public System.Windows.Forms.Label lb_CrossOver;
+		public System.Windows.Forms.Label lb_crucifixo;
+		public System.Windows.Forms.Label lb_PeckDeckPeito;
+		public System.Windows.Forms.Label lb_Peck;
+		public System.Windows.Forms.Label lb_SupinoDumbell;
+		public System.Windows.Forms.Label lb_SupinoSentado;
+		public System.Windows.Forms.Label lb_SupinoInclinado;
+		public System.Windows.Forms.Label lb_SupinoReto;
+		public System.Windows.Forms.Label lb_VoadorInverso;
+		public System.Windows.Forms.Label lb_BarraFixa;
+		public System.Windows.Forms.Label lb_PullOverCostas;
+		public System.Windows.Forms.Label lb_PeckDeckCostas;
+		public System.Windows.Forms.Label lb_PuxadorArticulado;
+		public System.Windows.Forms.Label lb_RemadaCavalinho;
+		public System.Windows.Forms.Label lb_RemadaAlternada;
+		public System.Windows.Forms.Label lb_RemadaHorizontal;
+		public System.Windows.Forms.Label lb_PulleyInvertido;
+		public System.Windows.Forms.Label lb_PulleyFrente;
+		public System.Windows.Forms.Label lb_PulleyCostas;
 	}
 }

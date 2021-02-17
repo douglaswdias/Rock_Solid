@@ -65,6 +65,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abs.cs" />
+    <Compile Include="Back.cs" />
+    <Compile Include="Biceps.cs" />
+    <Compile Include="Chest.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="DataBase.cs" />
     <Compile Include="frm_Client.cs">
@@ -146,6 +150,7 @@
       <DependentUpon>frm_WorkOutList.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="Legs.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -154,7 +159,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Shoulders.cs" />
+    <Compile Include="Triceps.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="WarmUp.cs" />
+    <Compile Include="WorkOut.cs" />
     <EmbeddedResource Include="frm_Client.resx">
       <DependentUpon>frm_Client.cs</DependentUpon>
     </EmbeddedResource>
