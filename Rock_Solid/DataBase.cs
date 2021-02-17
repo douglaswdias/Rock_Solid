@@ -874,7 +874,68 @@ namespace Rock_Solid
 		#region Workout
 		public static void NewWorkout(WorkOut workout)
 		{
-			
+			if (Client.CLIENT_ID.ToString() != "" || Client.CLIENT_ID != 0)
+			{
+				try
+				{
+					var vcon = ConnectionDB();
+					var cmd = vcon.CreateCommand();
+					cmd.CommandText = @"
+					INSERT INTO WORKOUT 
+						(WORKOUT_BICEPS, WORKOUT_TRICEPS, WORKOUT_SHOULDERS, WORKOUT_LEGS, WORKOUT_CHEST, WORKOUT_BACK, 
+						WORKOUT_ABS, WORKOUT_WARMUP) 
+					VALUES 
+						(@BICEPS, @TRICEPS, @SHOULDERS, @LEGS, @CHEST, @BACK, @ABS, @WARMUP)
+				";
+
+					cmd.Parameters.AddWithValue("@BICEPS", WorkOut.WORKOUT_BICEPS);
+					cmd.Parameters.AddWithValue("@TRICEPS", WorkOut.WORKOUT_TRICEPS);
+					cmd.Parameters.AddWithValue("@BASHOULDERSRCODE", WorkOut.WORKOUT_SHOULDERS);
+					cmd.Parameters.AddWithValue("@LEGS", WorkOut.WORKOUT_LEGS);
+					cmd.Parameters.AddWithValue("@CHEST", WorkOut.WORKOUT_CHEST);
+					cmd.Parameters.AddWithValue("@BACK", WorkOut.WORKOUT_BACK);
+					cmd.Parameters.AddWithValue("@ABS", WorkOut.WORKOUT_ABS);
+					cmd.Parameters.AddWithValue("@WARMUP", WorkOut.WORKOUT_WARMUP);
+
+					cmd.ExecuteNonQuery();
+					MessageBox.Show("Dados Salvos Com Sucesso");
+					vcon.Close();
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show("Erro ao Criar Treino");
+					throw (ex);
+				}
+			}
+			else
+			{
+				try
+				{
+					var vcon = ConnectionDB();
+					var cmd = vcon.CreateCommand();
+					cmd.CommandText = @"
+					UPDATE WORKOUT 
+					SET 
+						WORKOUT_BICEPS '" + WorkOut.WORKOUT_BICEPS + "', " +
+						"WORKOUT_TRICEPS '" + WorkOut.WORKOUT_TRICEPS + "', " +
+						"WORKOUT_SHOULDERS '" + WorkOut.WORKOUT_SHOULDERS + "', " +
+						"WORKOUT_LEGS '" + WorkOut.WORKOUT_LEGS + "', " +
+						"WORKOUT_CHEST '" + WorkOut.WORKOUT_CHEST + "', " +
+						"WORKOUT_BACK '" + WorkOut.WORKOUT_BACK + "', " +
+						"WORKOUT_ABS '" + WorkOut.WORKOUT_ABS + "', " +
+					"WHERE WORKOUT_ID = " + WorkOut.WORKOUT_ID
+					;
+
+					cmd.ExecuteNonQuery();
+					MessageBox.Show("Alterações Salvas Com Sucesso");
+					vcon.Close();
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show("Erro ao Alterar Treino");
+					throw (ex);
+				}
+			}
 		}
 		#endregion
 	}
