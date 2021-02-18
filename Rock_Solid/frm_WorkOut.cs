@@ -110,5 +110,19 @@ namespace Rock_Solid
 			frm_Print print = new frm_Print();
 			print.ShowDialog();
 		}
+
+		private void btn_Save_Click(object sender, EventArgs e)
+		{
+			WorkOut workout = new WorkOut();
+			WorkOut.WORKOUT_BICEPS = WorkOut.WORKOUT_ID;
+			WorkOut.WORKOUT_TRICEPS = WorkOut.WORKOUT_ID;
+			WorkOut.WORKOUT_SHOULDERS = WorkOut.WORKOUT_ID;
+			WorkOut.WORKOUT_LEGS= WorkOut.WORKOUT_ID;
+			WorkOut.WORKOUT_CHEST = WorkOut.WORKOUT_ID;
+			WorkOut.WORKOUT_BACK = WorkOut.WORKOUT_ID;
+			WorkOut.WORKOUT_ABS = WorkOut.WORKOUT_ID;
+			WorkOut.WORKOUT_WARMUP = WorkOut.WORKOUT_ID;
+			DataBase.NewWorkout(workout);
+		}
 	}
 }
