@@ -3619,6 +3619,11 @@ namespace Rock_Solid
 			// nCarga_PranchaAbdomen
 			// 
 			this.nCarga_PranchaAbdomen.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_PranchaAbdomen.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nCarga_PranchaAbdomen.Name = "nCarga_PranchaAbdomen";
 			this.nCarga_PranchaAbdomen.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_PranchaAbdomen.TabIndex = 29;
@@ -3626,6 +3631,11 @@ namespace Rock_Solid
 			// nCarga_ParalelaFixa
 			// 
 			this.nCarga_ParalelaFixa.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_ParalelaFixa.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nCarga_ParalelaFixa.Name = "nCarga_ParalelaFixa";
 			this.nCarga_ParalelaFixa.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_ParalelaFixa.TabIndex = 28;
@@ -3633,6 +3643,11 @@ namespace Rock_Solid
 			// nCarga_Obliquo
 			// 
 			this.nCarga_Obliquo.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_Obliquo.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nCarga_Obliquo.Name = "nCarga_Obliquo";
 			this.nCarga_Obliquo.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Obliquo.TabIndex = 27;
@@ -3640,6 +3655,11 @@ namespace Rock_Solid
 			// nCarga_Infra
 			// 
 			this.nCarga_Infra.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_Infra.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nCarga_Infra.Name = "nCarga_Infra";
 			this.nCarga_Infra.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Infra.TabIndex = 26;
@@ -3647,6 +3667,11 @@ namespace Rock_Solid
 			// nCarga_RetoAbdomen
 			// 
 			this.nCarga_RetoAbdomen.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_RetoAbdomen.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nCarga_RetoAbdomen.Name = "nCarga_RetoAbdomen";
 			this.nCarga_RetoAbdomen.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RetoAbdomen.TabIndex = 25;
@@ -3668,6 +3693,11 @@ namespace Rock_Solid
 			// nRep_PranchaAbdomen
 			// 
 			this.nRep_PranchaAbdomen.Location = new System.Drawing.Point(12, 120);
+			this.nRep_PranchaAbdomen.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_PranchaAbdomen.Name = "nRep_PranchaAbdomen";
 			this.nRep_PranchaAbdomen.Size = new System.Drawing.Size(80, 20);
 			this.nRep_PranchaAbdomen.TabIndex = 29;
@@ -3675,6 +3705,11 @@ namespace Rock_Solid
 			// nRep_ParalelaFixa
 			// 
 			this.nRep_ParalelaFixa.Location = new System.Drawing.Point(12, 94);
+			this.nRep_ParalelaFixa.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_ParalelaFixa.Name = "nRep_ParalelaFixa";
 			this.nRep_ParalelaFixa.Size = new System.Drawing.Size(80, 20);
 			this.nRep_ParalelaFixa.TabIndex = 28;
@@ -3682,6 +3717,11 @@ namespace Rock_Solid
 			// nRep_Obliquo
 			// 
 			this.nRep_Obliquo.Location = new System.Drawing.Point(12, 68);
+			this.nRep_Obliquo.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Obliquo.Name = "nRep_Obliquo";
 			this.nRep_Obliquo.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Obliquo.TabIndex = 27;
@@ -3689,6 +3729,11 @@ namespace Rock_Solid
 			// nRep_Infra
 			// 
 			this.nRep_Infra.Location = new System.Drawing.Point(12, 42);
+			this.nRep_Infra.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Infra.Name = "nRep_Infra";
 			this.nRep_Infra.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Infra.TabIndex = 26;
@@ -3696,6 +3741,11 @@ namespace Rock_Solid
 			// nRep_RetoAbdomen
 			// 
 			this.nRep_RetoAbdomen.Location = new System.Drawing.Point(12, 16);
+			this.nRep_RetoAbdomen.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RetoAbdomen.Name = "nRep_RetoAbdomen";
 			this.nRep_RetoAbdomen.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RetoAbdomen.TabIndex = 25;
@@ -3717,6 +3767,11 @@ namespace Rock_Solid
 			// nSerie_PranchaAbdomen
 			// 
 			this.nSerie_PranchaAbdomen.Location = new System.Drawing.Point(12, 120);
+			this.nSerie_PranchaAbdomen.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
 			this.nSerie_PranchaAbdomen.Name = "nSerie_PranchaAbdomen";
 			this.nSerie_PranchaAbdomen.Size = new System.Drawing.Size(80, 20);
 			this.nSerie_PranchaAbdomen.TabIndex = 14;
@@ -3724,6 +3779,11 @@ namespace Rock_Solid
 			// nSerie_ParalelaFixa
 			// 
 			this.nSerie_ParalelaFixa.Location = new System.Drawing.Point(12, 94);
+			this.nSerie_ParalelaFixa.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
 			this.nSerie_ParalelaFixa.Name = "nSerie_ParalelaFixa";
 			this.nSerie_ParalelaFixa.Size = new System.Drawing.Size(80, 20);
 			this.nSerie_ParalelaFixa.TabIndex = 13;
@@ -3731,6 +3791,11 @@ namespace Rock_Solid
 			// nSerie_Obliquo
 			// 
 			this.nSerie_Obliquo.Location = new System.Drawing.Point(12, 68);
+			this.nSerie_Obliquo.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
 			this.nSerie_Obliquo.Name = "nSerie_Obliquo";
 			this.nSerie_Obliquo.Size = new System.Drawing.Size(80, 20);
 			this.nSerie_Obliquo.TabIndex = 12;
@@ -3738,6 +3803,11 @@ namespace Rock_Solid
 			// nSerie_Infra
 			// 
 			this.nSerie_Infra.Location = new System.Drawing.Point(12, 42);
+			this.nSerie_Infra.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
 			this.nSerie_Infra.Name = "nSerie_Infra";
 			this.nSerie_Infra.Size = new System.Drawing.Size(80, 20);
 			this.nSerie_Infra.TabIndex = 11;
@@ -3745,6 +3815,11 @@ namespace Rock_Solid
 			// nSerie_RetoAbdomen
 			// 
 			this.nSerie_RetoAbdomen.Location = new System.Drawing.Point(12, 16);
+			this.nSerie_RetoAbdomen.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
 			this.nSerie_RetoAbdomen.Name = "nSerie_RetoAbdomen";
 			this.nSerie_RetoAbdomen.Size = new System.Drawing.Size(80, 20);
 			this.nSerie_RetoAbdomen.TabIndex = 0;

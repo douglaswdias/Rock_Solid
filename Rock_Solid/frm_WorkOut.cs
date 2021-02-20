@@ -114,15 +114,43 @@ namespace Rock_Solid
 		private void btn_Save_Click(object sender, EventArgs e)
 		{
 			WorkOut workout = new WorkOut();
-			WorkOut.WORKOUT_BICEPS = WorkOut.WORKOUT_ID;
-			WorkOut.WORKOUT_TRICEPS = WorkOut.WORKOUT_ID;
-			WorkOut.WORKOUT_SHOULDERS = WorkOut.WORKOUT_ID;
-			WorkOut.WORKOUT_LEGS= WorkOut.WORKOUT_ID;
-			WorkOut.WORKOUT_CHEST = WorkOut.WORKOUT_ID;
-			WorkOut.WORKOUT_BACK = WorkOut.WORKOUT_ID;
-			WorkOut.WORKOUT_ABS = WorkOut.WORKOUT_ID;
-			WorkOut.WORKOUT_WARMUP = WorkOut.WORKOUT_ID;
-			DataBase.NewWorkout(workout);
+			Abs abs = new Abs();
+			//WorkOut.WORKOUT_BICEPS = WorkOut.WORKOUT_ID;
+			//WorkOut.WORKOUT_TRICEPS = WorkOut.WORKOUT_ID;
+			//WorkOut.WORKOUT_SHOULDERS = WorkOut.WORKOUT_ID;
+			//WorkOut.WORKOUT_LEGS= WorkOut.WORKOUT_ID;
+			//WorkOut.WORKOUT_CHEST = WorkOut.WORKOUT_ID;
+			//WorkOut.WORKOUT_BACK = WorkOut.WORKOUT_ID;
+			//WorkOut.WORKOUT_ABS = Abs.ABS_ID;
+			//WorkOut.WORKOUT_WARMUP = WorkOut.WORKOUT_ID;
+
+			Abs.ABS_RETOABDOMEN = cb_RetoAbdomen.Text;
+			Abs.ABS_INFRA = cb_Infra.Text;
+			Abs.ABS_OBLIQUO = cb_Oblico.Text;
+			Abs.ABS_PARALELAFIXA = cb_ParalelaFixa.Text;
+			Abs.ABS_PRANCHAABDOMEN = cb_PranchaAbdomen.Text;
+
+			Abs.ABS_RETOABDOMEN_SERIE = Convert.ToInt32(nSerie_RetoAbdomen.Value);
+			Abs.ABS_INFRA_SERIE = Convert.ToInt32(nSerie_Infra.Value);
+			Abs.ABS_OBLIQUO_SERIE = Convert.ToInt32(nSerie_Obliquo.Value);
+			Abs.ABS_PARALELAFIXA_SERIE = Convert.ToInt32(nSerie_ParalelaFixa.Value);
+			Abs.ABS_PRANCHAABDOMEN_SERIE = Convert.ToInt32(nSerie_PranchaAbdomen.Value);
+
+			Abs.ABS_RETOABDOMEN_REP = Convert.ToInt32(nRep_RetoAbdomen.Value);
+			Abs.ABS_INFRA_REP = Convert.ToInt32(nRep_Infra.Value);
+			Abs.ABS_OBLIQUO_REP = Convert.ToInt32(nRep_Obliquo.Value);
+			Abs.ABS_PARALELAFIXA_REP = Convert.ToInt32(nRep_ParalelaFixa.Value);
+			Abs.ABS_PRANCHAABDOMEN_REP = Convert.ToInt32(nRep_PranchaAbdomen.Value);
+
+			Abs.ABS_RETOABDOMEN_CARGA = Convert.ToInt32(nCarga_RetoAbdomen.Value);
+			Abs.ABS_INFRA_CARGA = Convert.ToInt32(nCarga_Infra.Value);
+			Abs.ABS_OBLIQUO_CARGA = Convert.ToInt32(nCarga_Obliquo.Value);
+			Abs.ABS_PARALELAFIXA_CARGA = Convert.ToInt32(nCarga_ParalelaFixa.Value);
+			Abs.ABS_PRANCHAABDOMEN_CARGA = Convert.ToInt32(nCarga_PranchaAbdomen.Value);
+
+			Abs.ABS_WORKOUT = WorkOut.WORKOUT_ID;
+
+			DataBase.NewWorkout(workout, abs);
 		}
 	}
 }

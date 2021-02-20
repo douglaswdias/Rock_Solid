@@ -872,7 +872,7 @@ namespace Rock_Solid
 		}
 		#endregion
 		#region Workout
-		public static void NewWorkout(WorkOut workout)
+		public static void NewWorkout(WorkOut workout, Abs abs)
 		{
 			if (Client.CLIENT_ID.ToString() != "" || Client.CLIENT_ID != 0)
 			{
@@ -880,24 +880,70 @@ namespace Rock_Solid
 				{
 					var vcon = ConnectionDB();
 					var cmd = vcon.CreateCommand();
+
 					cmd.CommandText = @"
 					INSERT INTO WORKOUT 
-						(WORKOUT_BICEPS, WORKOUT_TRICEPS, WORKOUT_SHOULDERS, WORKOUT_LEGS, WORKOUT_CHEST, WORKOUT_BACK, 
+						(WORKOUT_ID, WORKOUT_BICEPS, WORKOUT_TRICEPS, WORKOUT_SHOULDERS, WORKOUT_LEGS, WORKOUT_CHEST, WORKOUT_BACK, 
 						WORKOUT_ABS, WORKOUT_WARMUP) 
 					VALUES 
-						(@BICEPS, @TRICEPS, @SHOULDERS, @LEGS, @CHEST, @BACK, @ABS, @WARMUP)
+						(@ID, @BICEPS, @TRICEPS, @SHOULDERS, @LEGS, @CHEST, @BACK, @ABS, @WARMUP)
 				";
 
+					cmd.Parameters.AddWithValue("@ID", WorkOut.WORKOUT_ID);
 					cmd.Parameters.AddWithValue("@BICEPS", WorkOut.WORKOUT_BICEPS);
 					cmd.Parameters.AddWithValue("@TRICEPS", WorkOut.WORKOUT_TRICEPS);
-					cmd.Parameters.AddWithValue("@BASHOULDERSRCODE", WorkOut.WORKOUT_SHOULDERS);
+					cmd.Parameters.AddWithValue("@SHOULDERS", WorkOut.WORKOUT_SHOULDERS);
 					cmd.Parameters.AddWithValue("@LEGS", WorkOut.WORKOUT_LEGS);
 					cmd.Parameters.AddWithValue("@CHEST", WorkOut.WORKOUT_CHEST);
 					cmd.Parameters.AddWithValue("@BACK", WorkOut.WORKOUT_BACK);
-					cmd.Parameters.AddWithValue("@ABS", WorkOut.WORKOUT_ABS);
+					cmd.Parameters.AddWithValue("@ABS", Abs.ABS_ID);
 					cmd.Parameters.AddWithValue("@WARMUP", WorkOut.WORKOUT_WARMUP);
 
 					cmd.ExecuteNonQuery();
+
+					cmd.CommandText = @"
+					INSERT INTO ABS 
+						(ABS_RETOABDOMEN, ABS_INFRA, ABS_OBLIQUO, ABS_PARALELAFIXA, ABS_PRANCHAABDOMEN, 
+						ABS_RETOABDOMEN_SERIE, ABS_INFRA_SERIE, ABS_OBLIQUO_SERIE, ABS_PARALELAFIXA_SERIE, 
+						ABS_PRANCHAABDOMEN_SERIE, ABS_RETOABDOMEN_REP, ABS_INFRA_REP, ABS_OBLIQUO_REP, 
+						ABS_PARALELAFIXA_REP, ABS_PRANCHAABDOMEN_REP, ABS_RETOABDOMEN_CARGA, ABS_INFRA_CARGA, 
+						ABS_OBLIQUO_CARGA, ABS_PARALELAFIXA_CARGA, ABS_PRANCHAABDOMEN_CARGA, ABS_WORKOUT) 
+					VALUES 
+						(@RETOABDOMEN, @INFRA, @OBLIQUO, @PARALELAFIXA, @PRANCHAABDOMEN, @RETOABDOMEN_SERIE, 
+						@INFRA_SERIE, @OBLIQUO_SERIE, @PARALELAFIXA_SERIE, @PRANCHAABDOMEN_SERIE, 
+						@RETOABDOMEN_REP, @INFRA_REP, @OBLIQUO_REP, @PARALELAFIXA_REP, @PRANCHAABDOMEN_REP, 
+						@RETOABDOMEN_CARGA, @INFRA_CARGA, @OBLIQUO_CARGA, @PARALELAFIXA_CARGA, 
+						@PRANCHAABDOMEN_CARGA, @ABS)
+				";
+
+					cmd.Parameters.AddWithValue("@RETOABDOMEN", Abs.ABS_RETOABDOMEN);
+					cmd.Parameters.AddWithValue("@INFRA", Abs.ABS_INFRA);
+					cmd.Parameters.AddWithValue("@OBLIQUO", Abs.ABS_OBLIQUO);
+					cmd.Parameters.AddWithValue("@PARALELAFIXA", Abs.ABS_PARALELAFIXA);
+					cmd.Parameters.AddWithValue("@PRANCHAABDOMEN", Abs.ABS_PRANCHAABDOMEN);
+
+					cmd.Parameters.AddWithValue("@RETOABDOMEN_SERIE", Abs.ABS_RETOABDOMEN_SERIE);
+					cmd.Parameters.AddWithValue("@INFRA_SERIE", Abs.ABS_INFRA_SERIE);
+					cmd.Parameters.AddWithValue("@OBLIQUO_SERIE", Abs.ABS_OBLIQUO_SERIE);
+					cmd.Parameters.AddWithValue("@PARALELAFIXA_SERIE", Abs.ABS_PARALELAFIXA_SERIE);
+					cmd.Parameters.AddWithValue("@PRANCHAABDOMEN_SERIE", Abs.ABS_PRANCHAABDOMEN_SERIE);
+
+					cmd.Parameters.AddWithValue("@RETOABDOMEN_REP", Abs.ABS_RETOABDOMEN_REP);
+					cmd.Parameters.AddWithValue("@INFRA_REP", Abs.ABS_INFRA_REP);
+					cmd.Parameters.AddWithValue("@OBLIQUO_REP", Abs.ABS_OBLIQUO_REP);
+					cmd.Parameters.AddWithValue("@PARALELAFIXA_REP", Abs.ABS_PARALELAFIXA_REP);
+					cmd.Parameters.AddWithValue("@PRANCHAABDOMEN_REP", Abs.ABS_PRANCHAABDOMEN_REP);
+
+					cmd.Parameters.AddWithValue("@RETOABDOMEN_CARGA", Abs.ABS_RETOABDOMEN_CARGA);
+					cmd.Parameters.AddWithValue("@INFRA_CARGA", Abs.ABS_INFRA_CARGA);
+					cmd.Parameters.AddWithValue("@OBLIQUO_CARGA", Abs.ABS_OBLIQUO_CARGA);
+					cmd.Parameters.AddWithValue("@PARALELAFIXA_CARGA", Abs.ABS_PARALELAFIXA_CARGA);
+					cmd.Parameters.AddWithValue("@PRANCHAABDOMEN_CARGA", Abs.ABS_PRANCHAABDOMEN_CARGA);
+
+					cmd.Parameters.AddWithValue("@ABS", WorkOut.WORKOUT_ID);
+
+					cmd.ExecuteNonQuery();
+
 					MessageBox.Show("Dados Salvos Com Sucesso");
 					vcon.Close();
 				}
