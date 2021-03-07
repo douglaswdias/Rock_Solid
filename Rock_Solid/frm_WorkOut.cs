@@ -115,15 +115,9 @@ namespace Rock_Solid
 		{
 			WorkOut workout = new WorkOut();
 			Abs abs = new Abs();
-			//WorkOut.WORKOUT_BICEPS = WorkOut.WORKOUT_ID;
-			//WorkOut.WORKOUT_TRICEPS = WorkOut.WORKOUT_ID;
-			//WorkOut.WORKOUT_SHOULDERS = WorkOut.WORKOUT_ID;
-			//WorkOut.WORKOUT_LEGS= WorkOut.WORKOUT_ID;
-			//WorkOut.WORKOUT_CHEST = WorkOut.WORKOUT_ID;
-			//WorkOut.WORKOUT_BACK = WorkOut.WORKOUT_ID;
-			//WorkOut.WORKOUT_ABS = Abs.ABS_ID;
-			//WorkOut.WORKOUT_WARMUP = WorkOut.WORKOUT_ID;
+			Back back = new Back();
 
+			#region Abs
 			Abs.ABS_RETOABDOMEN = cb_RetoAbdomen.Text;
 			Abs.ABS_INFRA = cb_Infra.Text;
 			Abs.ABS_OBLIQUO = cb_Oblico.Text;
@@ -149,8 +143,78 @@ namespace Rock_Solid
 			Abs.ABS_PRANCHAABDOMEN_CARGA = Convert.ToInt32(nCarga_PranchaAbdomen.Value);
 
 			Abs.ABS_WORKOUT = WorkOut.WORKOUT_ID;
+			#endregion
+			#region Back
+			Back.BACK_PULLEYCOSTAS = cb_PulleyCostas.Text;
+			Back.BACK_PULLEYFRENTE = cb_PulleyFrente.Text;
+			Back.BACK_PULLEYINVERTIDO = cb_PulleyInvertido.Text;
+			Back.BACK_REMADAHORIZONTAL = cb_RemadaHorizontal.Text;
+			Back.BACK_REMADAALTERNADA = cb_RemadaAlternada.Text;
+			Back.BACK_REMADACAVALINHO = cb_RemadaCavalinho.Text;
+			Back.BACK_PUXADORARTICULADO = cb_PuxadorArticulado.Text;
+			Back.BACK_PECKDECK = cb_PeckDeckCostas.Text;
+			Back.BACK_PULLOVER = cb_PullOverCostas.Text;
+			Back.BACK_BARRAFIXA = cb_BarraFixa.Text;
+			Back.BACK_VOADORINVERSO = cb_VoadorInverso.Text;
 
-			DataBase.NewWorkout(workout, abs);
+			Back.BACK_PULLEYCOSTAS_SERIE = Convert.ToInt32(nSerie_PulleyCostas.Value);
+			Back.BACK_PULLEYFRENTE_SERIE = Convert.ToInt32(nSerie_PulleyFrente.Value);
+			Back.BACK_PULLEYINVERTIDO_SERIE = Convert.ToInt32(nSerie_PulleyInvertido.Value);
+			Back.BACK_REMADAHORIZONTAL_SERIE = Convert.ToInt32(nSerie_RemadaHorizontal.Value);
+			Back.BACK_REMADAALTERNADA_SERIE = Convert.ToInt32(nSerie_RemadaAlternada.Value);
+			Back.BACK_REMADACAVALINHO_SERIE = Convert.ToInt32(nSerie_RemadaCavalinho.Value);
+			Back.BACK_PUXADORARTICULADO_SERIE = Convert.ToInt32(nSerie_PuxadorArticulado.Value);
+			Back.BACK_PECKDECK_SERIE = Convert.ToInt32(nSerie_PeckDeckCostas.Value);
+			Back.BACK_PULLOVER_SERIE = Convert.ToInt32(nSerie_PullOverCostas.Value);
+			Back.BACK_BARRAFIXA_SERIE = Convert.ToInt32(nSerie_BarraFixa.Value);
+			Back.BACK_VOADORINVERSO_SERIE = Convert.ToInt32(nSerie_VoadorInverso.Value);
+
+			Back.BACK_PULLEYCOSTAS_REP = Convert.ToInt32(nRep_PulleyCostas.Value);
+			Back.BACK_PULLEYFRENTE_REP = Convert.ToInt32(nRep_PulleyFrente.Value);
+			Back.BACK_PULLEYINVERTIDO_REP = Convert.ToInt32(nRep_PulleyInvertido.Value);
+			Back.BACK_REMADAHORIZONTAL_REP = Convert.ToInt32(nRep_RemadaHorizontal.Value);
+			Back.BACK_REMADAALTERNADA_REP = Convert.ToInt32(nRep_RemadaAlternada.Value);
+			Back.BACK_REMADACAVALINHO_REP = Convert.ToInt32(nRep_RemadaCavalinho.Value);
+			Back.BACK_PUXADORARTICULADO_REP = Convert.ToInt32(nRep_PuxadorArticulado.Value);
+			Back.BACK_PECKDECK_REP = Convert.ToInt32(nRep_PeckDeckCostas.Value);
+			Back.BACK_PULLOVER_REP = Convert.ToInt32(nRep_PullOverCostas.Value);
+			Back.BACK_BARRAFIXA_REP = Convert.ToInt32(nRep_BarraFixa.Value);
+			Back.BACK_VOADORINVERSO_REP = Convert.ToInt32(nRep_VoadorInverso.Value);
+
+			Back.BACK_PULLEYCOSTAS_CARGA = Convert.ToInt32(nCarga_PulleyCostas.Value);
+			Back.BACK_PULLEYFRENTE_CARGA = Convert.ToInt32(nCarga_PulleyFrente.Value);
+			Back.BACK_PULLEYINVERTIDO_CARGA = Convert.ToInt32(nCarga_PulleyInvertido.Value);
+			Back.BACK_REMADAHORIZONTAL_CARGA = Convert.ToInt32(nCarga_RemadaHorizontal.Value);
+			Back.BACK_REMADAALTERNADA_CARGA = Convert.ToInt32(nCarga_RemadaAlternada.Value);
+			Back.BACK_REMADACAVALINHO_CARGA = Convert.ToInt32(nCarga_RemadaCavalinho.Value);
+			Back.BACK_PUXADORARTICULADO_CARGA = Convert.ToInt32(nCarga_PuxadorArticulado.Value);
+			Back.BACK_PECKDECK_CARGA = Convert.ToInt32(nCarga_PeckDeckCostas.Value);
+			Back.BACK_PULLOVER_CARGA = Convert.ToInt32(nCarga_PullOverCostas.Value);
+			Back.BACK_BARRAFIXA_CARGA = Convert.ToInt32(nCarga_BarraFixa.Value);
+			Back.BACK_VOADORINVERSO_CARGA = Convert.ToInt32(nCarga_VoadorInverso.Value);
+
+			Back.BACK_BACK = WorkOut.WORKOUT_ID;
+			#endregion
+			#region Biceps
+
+			#endregion
+			#region Chest
+
+			#endregion
+			#region Legs
+
+			#endregion
+			#region Shoulders
+
+			#endregion
+			#region Triceps
+
+			#endregion
+			#region WarmUp
+
+			#endregion
+
+			DataBase.NewWorkout(workout, abs, back);
 		}
 	}
 }

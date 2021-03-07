@@ -268,7 +268,7 @@ namespace Rock_Solid
 			this.tp_Costas = new System.Windows.Forms.TabPage();
 			this.gb_CargaCostas = new System.Windows.Forms.GroupBox();
 			this.nCarga_VoadorInverso = new System.Windows.Forms.NumericUpDown();
-			this.nCarga_BrraFixa = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_BarraFixa = new System.Windows.Forms.NumericUpDown();
 			this.nCarga_PullOverCostas = new System.Windows.Forms.NumericUpDown();
 			this.nCarga_PeckDeckCostas = new System.Windows.Forms.NumericUpDown();
 			this.nCarga_PuxadorArticulado = new System.Windows.Forms.NumericUpDown();
@@ -539,7 +539,7 @@ namespace Rock_Solid
 			this.tp_Costas.SuspendLayout();
 			this.gb_CargaCostas.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_VoadorInverso)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nCarga_BrraFixa)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_BarraFixa)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_PullOverCostas)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_PeckDeckCostas)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_PuxadorArticulado)).BeginInit();
@@ -664,6 +664,11 @@ namespace Rock_Solid
 			// nCarga_RoscaSimultanea
 			// 
 			this.nCarga_RoscaSimultanea.Location = new System.Drawing.Point(12, 201);
+			this.nCarga_RoscaSimultanea.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RoscaSimultanea.Name = "nCarga_RoscaSimultanea";
 			this.nCarga_RoscaSimultanea.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RoscaSimultanea.TabIndex = 32;
@@ -671,6 +676,11 @@ namespace Rock_Solid
 			// nCarga_RoscaRoldana
 			// 
 			this.nCarga_RoscaRoldana.Location = new System.Drawing.Point(12, 175);
+			this.nCarga_RoscaRoldana.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RoscaRoldana.Name = "nCarga_RoscaRoldana";
 			this.nCarga_RoscaRoldana.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RoscaRoldana.TabIndex = 31;
@@ -678,6 +688,11 @@ namespace Rock_Solid
 			// nCarga_RoscaBilateral
 			// 
 			this.nCarga_RoscaBilateral.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_RoscaBilateral.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RoscaBilateral.Name = "nCarga_RoscaBilateral";
 			this.nCarga_RoscaBilateral.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RoscaBilateral.TabIndex = 30;
@@ -685,6 +700,11 @@ namespace Rock_Solid
 			// nCarga_RoscaArticulada
 			// 
 			this.nCarga_RoscaArticulada.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_RoscaArticulada.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RoscaArticulada.Name = "nCarga_RoscaArticulada";
 			this.nCarga_RoscaArticulada.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RoscaArticulada.TabIndex = 29;
@@ -692,6 +712,11 @@ namespace Rock_Solid
 			// nCarga_RoscaConcentrada
 			// 
 			this.nCarga_RoscaConcentrada.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_RoscaConcentrada.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RoscaConcentrada.Name = "nCarga_RoscaConcentrada";
 			this.nCarga_RoscaConcentrada.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RoscaConcentrada.TabIndex = 28;
@@ -699,6 +724,11 @@ namespace Rock_Solid
 			// nCarga_RoscaMartelo
 			// 
 			this.nCarga_RoscaMartelo.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_RoscaMartelo.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RoscaMartelo.Name = "nCarga_RoscaMartelo";
 			this.nCarga_RoscaMartelo.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RoscaMartelo.TabIndex = 27;
@@ -706,6 +736,11 @@ namespace Rock_Solid
 			// nCarga_RoscaAlternada
 			// 
 			this.nCarga_RoscaAlternada.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_RoscaAlternada.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RoscaAlternada.Name = "nCarga_RoscaAlternada";
 			this.nCarga_RoscaAlternada.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RoscaAlternada.TabIndex = 26;
@@ -713,6 +748,11 @@ namespace Rock_Solid
 			// nCarga_RoscaDireta
 			// 
 			this.nCarga_RoscaDireta.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_RoscaDireta.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RoscaDireta.Name = "nCarga_RoscaDireta";
 			this.nCarga_RoscaDireta.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RoscaDireta.TabIndex = 25;
@@ -737,6 +777,11 @@ namespace Rock_Solid
 			// nRep_RoscaSimultanea
 			// 
 			this.nRep_RoscaSimultanea.Location = new System.Drawing.Point(12, 201);
+			this.nRep_RoscaSimultanea.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RoscaSimultanea.Name = "nRep_RoscaSimultanea";
 			this.nRep_RoscaSimultanea.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RoscaSimultanea.TabIndex = 32;
@@ -744,6 +789,11 @@ namespace Rock_Solid
 			// nRep_RoscaRoldana
 			// 
 			this.nRep_RoscaRoldana.Location = new System.Drawing.Point(12, 175);
+			this.nRep_RoscaRoldana.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RoscaRoldana.Name = "nRep_RoscaRoldana";
 			this.nRep_RoscaRoldana.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RoscaRoldana.TabIndex = 31;
@@ -751,6 +801,11 @@ namespace Rock_Solid
 			// nRep_RoscaBilateral
 			// 
 			this.nRep_RoscaBilateral.Location = new System.Drawing.Point(12, 146);
+			this.nRep_RoscaBilateral.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RoscaBilateral.Name = "nRep_RoscaBilateral";
 			this.nRep_RoscaBilateral.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RoscaBilateral.TabIndex = 30;
@@ -758,6 +813,11 @@ namespace Rock_Solid
 			// nRep_RoscaArticulada
 			// 
 			this.nRep_RoscaArticulada.Location = new System.Drawing.Point(12, 120);
+			this.nRep_RoscaArticulada.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RoscaArticulada.Name = "nRep_RoscaArticulada";
 			this.nRep_RoscaArticulada.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RoscaArticulada.TabIndex = 29;
@@ -765,6 +825,11 @@ namespace Rock_Solid
 			// nRep_RoscaConcentrada
 			// 
 			this.nRep_RoscaConcentrada.Location = new System.Drawing.Point(12, 94);
+			this.nRep_RoscaConcentrada.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RoscaConcentrada.Name = "nRep_RoscaConcentrada";
 			this.nRep_RoscaConcentrada.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RoscaConcentrada.TabIndex = 28;
@@ -772,6 +837,11 @@ namespace Rock_Solid
 			// nRep_RoscaMartelo
 			// 
 			this.nRep_RoscaMartelo.Location = new System.Drawing.Point(12, 68);
+			this.nRep_RoscaMartelo.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RoscaMartelo.Name = "nRep_RoscaMartelo";
 			this.nRep_RoscaMartelo.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RoscaMartelo.TabIndex = 27;
@@ -779,6 +849,11 @@ namespace Rock_Solid
 			// nRep_RoscaAlternada
 			// 
 			this.nRep_RoscaAlternada.Location = new System.Drawing.Point(12, 42);
+			this.nRep_RoscaAlternada.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RoscaAlternada.Name = "nRep_RoscaAlternada";
 			this.nRep_RoscaAlternada.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RoscaAlternada.TabIndex = 26;
@@ -786,6 +861,11 @@ namespace Rock_Solid
 			// nRep_RoscaDireta
 			// 
 			this.nRep_RoscaDireta.Location = new System.Drawing.Point(12, 16);
+			this.nRep_RoscaDireta.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RoscaDireta.Name = "nRep_RoscaDireta";
 			this.nRep_RoscaDireta.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RoscaDireta.TabIndex = 25;
@@ -1114,6 +1194,11 @@ namespace Rock_Solid
 			// nCarga_Mergulho
 			// 
 			this.nCarga_Mergulho.Location = new System.Drawing.Point(12, 201);
+			this.nCarga_Mergulho.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Mergulho.Name = "nCarga_Mergulho";
 			this.nCarga_Mergulho.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Mergulho.TabIndex = 32;
@@ -1121,6 +1206,11 @@ namespace Rock_Solid
 			// nCarga_Invertido
 			// 
 			this.nCarga_Invertido.Location = new System.Drawing.Point(12, 175);
+			this.nCarga_Invertido.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Invertido.Name = "nCarga_Invertido";
 			this.nCarga_Invertido.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Invertido.TabIndex = 31;
@@ -1128,6 +1218,11 @@ namespace Rock_Solid
 			// nCarga_Coice
 			// 
 			this.nCarga_Coice.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_Coice.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Coice.Name = "nCarga_Coice";
 			this.nCarga_Coice.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Coice.TabIndex = 30;
@@ -1135,6 +1230,11 @@ namespace Rock_Solid
 			// nCarga_RoscaSupinada
 			// 
 			this.nCarga_RoscaSupinada.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_RoscaSupinada.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RoscaSupinada.Name = "nCarga_RoscaSupinada";
 			this.nCarga_RoscaSupinada.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RoscaSupinada.TabIndex = 29;
@@ -1142,6 +1242,11 @@ namespace Rock_Solid
 			// nCarga_RoscaFrancesa
 			// 
 			this.nCarga_RoscaFrancesa.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_RoscaFrancesa.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RoscaFrancesa.Name = "nCarga_RoscaFrancesa";
 			this.nCarga_RoscaFrancesa.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RoscaFrancesa.TabIndex = 28;
@@ -1149,6 +1254,11 @@ namespace Rock_Solid
 			// nCarga_PulleyCorda
 			// 
 			this.nCarga_PulleyCorda.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_PulleyCorda.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_PulleyCorda.Name = "nCarga_PulleyCorda";
 			this.nCarga_PulleyCorda.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_PulleyCorda.TabIndex = 27;
@@ -1156,6 +1266,11 @@ namespace Rock_Solid
 			// nCarga_RoscaTesta
 			// 
 			this.nCarga_RoscaTesta.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_RoscaTesta.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RoscaTesta.Name = "nCarga_RoscaTesta";
 			this.nCarga_RoscaTesta.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RoscaTesta.TabIndex = 26;
@@ -1163,6 +1278,11 @@ namespace Rock_Solid
 			// nCarga_Pulley
 			// 
 			this.nCarga_Pulley.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_Pulley.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Pulley.Name = "nCarga_Pulley";
 			this.nCarga_Pulley.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Pulley.TabIndex = 25;
@@ -1187,6 +1307,11 @@ namespace Rock_Solid
 			// nRep_Mergulho
 			// 
 			this.nRep_Mergulho.Location = new System.Drawing.Point(12, 201);
+			this.nRep_Mergulho.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Mergulho.Name = "nRep_Mergulho";
 			this.nRep_Mergulho.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Mergulho.TabIndex = 32;
@@ -1194,6 +1319,11 @@ namespace Rock_Solid
 			// nRep_Invertido
 			// 
 			this.nRep_Invertido.Location = new System.Drawing.Point(12, 175);
+			this.nRep_Invertido.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Invertido.Name = "nRep_Invertido";
 			this.nRep_Invertido.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Invertido.TabIndex = 31;
@@ -1201,6 +1331,11 @@ namespace Rock_Solid
 			// nRep_Coice
 			// 
 			this.nRep_Coice.Location = new System.Drawing.Point(12, 146);
+			this.nRep_Coice.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Coice.Name = "nRep_Coice";
 			this.nRep_Coice.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Coice.TabIndex = 30;
@@ -1208,6 +1343,11 @@ namespace Rock_Solid
 			// nRep_RoscaSupinada
 			// 
 			this.nRep_RoscaSupinada.Location = new System.Drawing.Point(12, 120);
+			this.nRep_RoscaSupinada.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RoscaSupinada.Name = "nRep_RoscaSupinada";
 			this.nRep_RoscaSupinada.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RoscaSupinada.TabIndex = 29;
@@ -1215,6 +1355,11 @@ namespace Rock_Solid
 			// nRep_RoscaFrancesa
 			// 
 			this.nRep_RoscaFrancesa.Location = new System.Drawing.Point(12, 94);
+			this.nRep_RoscaFrancesa.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RoscaFrancesa.Name = "nRep_RoscaFrancesa";
 			this.nRep_RoscaFrancesa.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RoscaFrancesa.TabIndex = 28;
@@ -1222,6 +1367,11 @@ namespace Rock_Solid
 			// nRep_PulleyCorda
 			// 
 			this.nRep_PulleyCorda.Location = new System.Drawing.Point(12, 68);
+			this.nRep_PulleyCorda.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_PulleyCorda.Name = "nRep_PulleyCorda";
 			this.nRep_PulleyCorda.Size = new System.Drawing.Size(80, 20);
 			this.nRep_PulleyCorda.TabIndex = 27;
@@ -1229,6 +1379,11 @@ namespace Rock_Solid
 			// nRep_RoscaTesta
 			// 
 			this.nRep_RoscaTesta.Location = new System.Drawing.Point(12, 42);
+			this.nRep_RoscaTesta.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RoscaTesta.Name = "nRep_RoscaTesta";
 			this.nRep_RoscaTesta.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RoscaTesta.TabIndex = 26;
@@ -1236,6 +1391,11 @@ namespace Rock_Solid
 			// nRep_Pulley
 			// 
 			this.nRep_Pulley.Location = new System.Drawing.Point(12, 16);
+			this.nRep_Pulley.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Pulley.Name = "nRep_Pulley";
 			this.nRep_Pulley.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Pulley.TabIndex = 25;
@@ -1563,6 +1723,11 @@ namespace Rock_Solid
 			// nCarga_RemadaAlta
 			// 
 			this.nCarga_RemadaAlta.Location = new System.Drawing.Point(12, 175);
+			this.nCarga_RemadaAlta.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RemadaAlta.Name = "nCarga_RemadaAlta";
 			this.nCarga_RemadaAlta.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RemadaAlta.TabIndex = 31;
@@ -1570,6 +1735,11 @@ namespace Rock_Solid
 			// nCarga_DesenvolvimentoDumbell
 			// 
 			this.nCarga_DesenvolvimentoDumbell.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_DesenvolvimentoDumbell.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_DesenvolvimentoDumbell.Name = "nCarga_DesenvolvimentoDumbell";
 			this.nCarga_DesenvolvimentoDumbell.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_DesenvolvimentoDumbell.TabIndex = 30;
@@ -1577,6 +1747,11 @@ namespace Rock_Solid
 			// nCarga_DesenvolvimentoFrente
 			// 
 			this.nCarga_DesenvolvimentoFrente.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_DesenvolvimentoFrente.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_DesenvolvimentoFrente.Name = "nCarga_DesenvolvimentoFrente";
 			this.nCarga_DesenvolvimentoFrente.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_DesenvolvimentoFrente.TabIndex = 29;
@@ -1584,6 +1759,11 @@ namespace Rock_Solid
 			// nCarga_DesenvolvimentoCostas
 			// 
 			this.nCarga_DesenvolvimentoCostas.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_DesenvolvimentoCostas.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_DesenvolvimentoCostas.Name = "nCarga_DesenvolvimentoCostas";
 			this.nCarga_DesenvolvimentoCostas.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_DesenvolvimentoCostas.TabIndex = 28;
@@ -1591,6 +1771,11 @@ namespace Rock_Solid
 			// nCarga_ElevacaoOmbro
 			// 
 			this.nCarga_ElevacaoOmbro.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_ElevacaoOmbro.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_ElevacaoOmbro.Name = "nCarga_ElevacaoOmbro";
 			this.nCarga_ElevacaoOmbro.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_ElevacaoOmbro.TabIndex = 27;
@@ -1598,6 +1783,11 @@ namespace Rock_Solid
 			// nCarga_ElevacaoFrontal
 			// 
 			this.nCarga_ElevacaoFrontal.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_ElevacaoFrontal.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_ElevacaoFrontal.Name = "nCarga_ElevacaoFrontal";
 			this.nCarga_ElevacaoFrontal.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_ElevacaoFrontal.TabIndex = 26;
@@ -1605,6 +1795,11 @@ namespace Rock_Solid
 			// nCarga_ElevacaoLateral
 			// 
 			this.nCarga_ElevacaoLateral.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_ElevacaoLateral.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_ElevacaoLateral.Name = "nCarga_ElevacaoLateral";
 			this.nCarga_ElevacaoLateral.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_ElevacaoLateral.TabIndex = 25;
@@ -1628,6 +1823,11 @@ namespace Rock_Solid
 			// nRep_RemadaAlta
 			// 
 			this.nRep_RemadaAlta.Location = new System.Drawing.Point(12, 175);
+			this.nRep_RemadaAlta.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RemadaAlta.Name = "nRep_RemadaAlta";
 			this.nRep_RemadaAlta.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RemadaAlta.TabIndex = 31;
@@ -1635,6 +1835,11 @@ namespace Rock_Solid
 			// nRep_DesenvolvimentoDumbell
 			// 
 			this.nRep_DesenvolvimentoDumbell.Location = new System.Drawing.Point(12, 146);
+			this.nRep_DesenvolvimentoDumbell.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_DesenvolvimentoDumbell.Name = "nRep_DesenvolvimentoDumbell";
 			this.nRep_DesenvolvimentoDumbell.Size = new System.Drawing.Size(80, 20);
 			this.nRep_DesenvolvimentoDumbell.TabIndex = 30;
@@ -1642,6 +1847,11 @@ namespace Rock_Solid
 			// nRep_DesenvolvimentoFrente
 			// 
 			this.nRep_DesenvolvimentoFrente.Location = new System.Drawing.Point(12, 120);
+			this.nRep_DesenvolvimentoFrente.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_DesenvolvimentoFrente.Name = "nRep_DesenvolvimentoFrente";
 			this.nRep_DesenvolvimentoFrente.Size = new System.Drawing.Size(80, 20);
 			this.nRep_DesenvolvimentoFrente.TabIndex = 29;
@@ -1649,6 +1859,11 @@ namespace Rock_Solid
 			// nRep_DesenvolvimentoCostas
 			// 
 			this.nRep_DesenvolvimentoCostas.Location = new System.Drawing.Point(12, 94);
+			this.nRep_DesenvolvimentoCostas.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_DesenvolvimentoCostas.Name = "nRep_DesenvolvimentoCostas";
 			this.nRep_DesenvolvimentoCostas.Size = new System.Drawing.Size(80, 20);
 			this.nRep_DesenvolvimentoCostas.TabIndex = 28;
@@ -1656,6 +1871,11 @@ namespace Rock_Solid
 			// nRep_ElevacaoOmbro
 			// 
 			this.nRep_ElevacaoOmbro.Location = new System.Drawing.Point(12, 68);
+			this.nRep_ElevacaoOmbro.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_ElevacaoOmbro.Name = "nRep_ElevacaoOmbro";
 			this.nRep_ElevacaoOmbro.Size = new System.Drawing.Size(80, 20);
 			this.nRep_ElevacaoOmbro.TabIndex = 27;
@@ -1663,6 +1883,11 @@ namespace Rock_Solid
 			// nRep_ElevacaoFrontal
 			// 
 			this.nRep_ElevacaoFrontal.Location = new System.Drawing.Point(12, 42);
+			this.nRep_ElevacaoFrontal.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_ElevacaoFrontal.Name = "nRep_ElevacaoFrontal";
 			this.nRep_ElevacaoFrontal.Size = new System.Drawing.Size(80, 20);
 			this.nRep_ElevacaoFrontal.TabIndex = 26;
@@ -1670,6 +1895,11 @@ namespace Rock_Solid
 			// nRep_ElevacaoLateral
 			// 
 			this.nRep_ElevacaoLateral.Location = new System.Drawing.Point(12, 16);
+			this.nRep_ElevacaoLateral.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_ElevacaoLateral.Name = "nRep_ElevacaoLateral";
 			this.nRep_ElevacaoLateral.Size = new System.Drawing.Size(80, 20);
 			this.nRep_ElevacaoLateral.TabIndex = 25;
@@ -1975,6 +2205,11 @@ namespace Rock_Solid
 			// nCarga_Avanco
 			// 
 			this.nCarga_Avanco.Location = new System.Drawing.Point(12, 279);
+			this.nCarga_Avanco.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Avanco.Name = "nCarga_Avanco";
 			this.nCarga_Avanco.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Avanco.TabIndex = 36;
@@ -1982,6 +2217,11 @@ namespace Rock_Solid
 			// nCarga_Gluteo
 			// 
 			this.nCarga_Gluteo.Location = new System.Drawing.Point(12, 253);
+			this.nCarga_Gluteo.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Gluteo.Name = "nCarga_Gluteo";
 			this.nCarga_Gluteo.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Gluteo.TabIndex = 35;
@@ -1989,6 +2229,11 @@ namespace Rock_Solid
 			// nCarga_Stiff
 			// 
 			this.nCarga_Stiff.Location = new System.Drawing.Point(12, 227);
+			this.nCarga_Stiff.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Stiff.Name = "nCarga_Stiff";
 			this.nCarga_Stiff.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Stiff.TabIndex = 34;
@@ -1996,6 +2241,11 @@ namespace Rock_Solid
 			// nCarga_Panturrilha
 			// 
 			this.nCarga_Panturrilha.Location = new System.Drawing.Point(12, 201);
+			this.nCarga_Panturrilha.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Panturrilha.Name = "nCarga_Panturrilha";
 			this.nCarga_Panturrilha.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Panturrilha.TabIndex = 33;
@@ -2003,6 +2253,11 @@ namespace Rock_Solid
 			// nCarga_Hack
 			// 
 			this.nCarga_Hack.Location = new System.Drawing.Point(12, 175);
+			this.nCarga_Hack.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Hack.Name = "nCarga_Hack";
 			this.nCarga_Hack.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Hack.TabIndex = 31;
@@ -2010,6 +2265,11 @@ namespace Rock_Solid
 			// nCarga_AgachamentoLivre
 			// 
 			this.nCarga_AgachamentoLivre.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_AgachamentoLivre.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_AgachamentoLivre.Name = "nCarga_AgachamentoLivre";
 			this.nCarga_AgachamentoLivre.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_AgachamentoLivre.TabIndex = 30;
@@ -2017,6 +2277,11 @@ namespace Rock_Solid
 			// nCarga_LegPress
 			// 
 			this.nCarga_LegPress.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_LegPress.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_LegPress.Name = "nCarga_LegPress";
 			this.nCarga_LegPress.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_LegPress.TabIndex = 29;
@@ -2024,6 +2289,11 @@ namespace Rock_Solid
 			// nCarga_Abdutor
 			// 
 			this.nCarga_Abdutor.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_Abdutor.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Abdutor.Name = "nCarga_Abdutor";
 			this.nCarga_Abdutor.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Abdutor.TabIndex = 28;
@@ -2031,6 +2301,11 @@ namespace Rock_Solid
 			// nCarga_Adutor
 			// 
 			this.nCarga_Adutor.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_Adutor.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Adutor.Name = "nCarga_Adutor";
 			this.nCarga_Adutor.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Adutor.TabIndex = 27;
@@ -2038,6 +2313,11 @@ namespace Rock_Solid
 			// nCarga_CadeiraFlexora
 			// 
 			this.nCarga_CadeiraFlexora.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_CadeiraFlexora.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_CadeiraFlexora.Name = "nCarga_CadeiraFlexora";
 			this.nCarga_CadeiraFlexora.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_CadeiraFlexora.TabIndex = 26;
@@ -2045,6 +2325,11 @@ namespace Rock_Solid
 			// nCarga_CadeiraExtensora
 			// 
 			this.nCarga_CadeiraExtensora.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_CadeiraExtensora.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_CadeiraExtensora.Name = "nCarga_CadeiraExtensora";
 			this.nCarga_CadeiraExtensora.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_CadeiraExtensora.TabIndex = 25;
@@ -2072,6 +2357,11 @@ namespace Rock_Solid
 			// nRep_Avanco
 			// 
 			this.nRep_Avanco.Location = new System.Drawing.Point(12, 279);
+			this.nRep_Avanco.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Avanco.Name = "nRep_Avanco";
 			this.nRep_Avanco.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Avanco.TabIndex = 36;
@@ -2079,6 +2369,11 @@ namespace Rock_Solid
 			// nRep_Gluteo
 			// 
 			this.nRep_Gluteo.Location = new System.Drawing.Point(12, 253);
+			this.nRep_Gluteo.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Gluteo.Name = "nRep_Gluteo";
 			this.nRep_Gluteo.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Gluteo.TabIndex = 35;
@@ -2086,6 +2381,11 @@ namespace Rock_Solid
 			// nRep_Stiff
 			// 
 			this.nRep_Stiff.Location = new System.Drawing.Point(12, 227);
+			this.nRep_Stiff.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Stiff.Name = "nRep_Stiff";
 			this.nRep_Stiff.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Stiff.TabIndex = 34;
@@ -2093,6 +2393,11 @@ namespace Rock_Solid
 			// nRep_Panturrilha
 			// 
 			this.nRep_Panturrilha.Location = new System.Drawing.Point(12, 201);
+			this.nRep_Panturrilha.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Panturrilha.Name = "nRep_Panturrilha";
 			this.nRep_Panturrilha.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Panturrilha.TabIndex = 33;
@@ -2100,6 +2405,11 @@ namespace Rock_Solid
 			// nRep_Hack
 			// 
 			this.nRep_Hack.Location = new System.Drawing.Point(12, 175);
+			this.nRep_Hack.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Hack.Name = "nRep_Hack";
 			this.nRep_Hack.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Hack.TabIndex = 31;
@@ -2107,6 +2417,11 @@ namespace Rock_Solid
 			// nRep_AgachamentoLivre
 			// 
 			this.nRep_AgachamentoLivre.Location = new System.Drawing.Point(12, 146);
+			this.nRep_AgachamentoLivre.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_AgachamentoLivre.Name = "nRep_AgachamentoLivre";
 			this.nRep_AgachamentoLivre.Size = new System.Drawing.Size(80, 20);
 			this.nRep_AgachamentoLivre.TabIndex = 30;
@@ -2114,6 +2429,11 @@ namespace Rock_Solid
 			// nRep_LegPress
 			// 
 			this.nRep_LegPress.Location = new System.Drawing.Point(12, 120);
+			this.nRep_LegPress.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_LegPress.Name = "nRep_LegPress";
 			this.nRep_LegPress.Size = new System.Drawing.Size(80, 20);
 			this.nRep_LegPress.TabIndex = 29;
@@ -2121,6 +2441,11 @@ namespace Rock_Solid
 			// nRep_Abdutor
 			// 
 			this.nRep_Abdutor.Location = new System.Drawing.Point(12, 94);
+			this.nRep_Abdutor.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Abdutor.Name = "nRep_Abdutor";
 			this.nRep_Abdutor.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Abdutor.TabIndex = 28;
@@ -2128,6 +2453,11 @@ namespace Rock_Solid
 			// nRep_Adutor
 			// 
 			this.nRep_Adutor.Location = new System.Drawing.Point(12, 68);
+			this.nRep_Adutor.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Adutor.Name = "nRep_Adutor";
 			this.nRep_Adutor.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Adutor.TabIndex = 27;
@@ -2135,6 +2465,11 @@ namespace Rock_Solid
 			// nRep_CadeiraFlexora
 			// 
 			this.nRep_CadeiraFlexora.Location = new System.Drawing.Point(12, 42);
+			this.nRep_CadeiraFlexora.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_CadeiraFlexora.Name = "nRep_CadeiraFlexora";
 			this.nRep_CadeiraFlexora.Size = new System.Drawing.Size(80, 20);
 			this.nRep_CadeiraFlexora.TabIndex = 26;
@@ -2142,6 +2477,11 @@ namespace Rock_Solid
 			// nRep_CadeiraExtensora
 			// 
 			this.nRep_CadeiraExtensora.Location = new System.Drawing.Point(12, 16);
+			this.nRep_CadeiraExtensora.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_CadeiraExtensora.Name = "nRep_CadeiraExtensora";
 			this.nRep_CadeiraExtensora.Size = new System.Drawing.Size(80, 20);
 			this.nRep_CadeiraExtensora.TabIndex = 25;
@@ -2572,6 +2912,11 @@ namespace Rock_Solid
 			// nCarga_CrossOver
 			// 
 			this.nCarga_CrossOver.Location = new System.Drawing.Point(12, 201);
+			this.nCarga_CrossOver.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_CrossOver.Name = "nCarga_CrossOver";
 			this.nCarga_CrossOver.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_CrossOver.TabIndex = 32;
@@ -2579,6 +2924,11 @@ namespace Rock_Solid
 			// nCarga_Crucifixo
 			// 
 			this.nCarga_Crucifixo.Location = new System.Drawing.Point(12, 175);
+			this.nCarga_Crucifixo.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Crucifixo.Name = "nCarga_Crucifixo";
 			this.nCarga_Crucifixo.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Crucifixo.TabIndex = 31;
@@ -2586,6 +2936,11 @@ namespace Rock_Solid
 			// nCarga_PeckDeck
 			// 
 			this.nCarga_PeckDeck.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_PeckDeck.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_PeckDeck.Name = "nCarga_PeckDeck";
 			this.nCarga_PeckDeck.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_PeckDeck.TabIndex = 30;
@@ -2593,6 +2948,11 @@ namespace Rock_Solid
 			// nCarga_Peck
 			// 
 			this.nCarga_Peck.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_Peck.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Peck.Name = "nCarga_Peck";
 			this.nCarga_Peck.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Peck.TabIndex = 29;
@@ -2600,6 +2960,11 @@ namespace Rock_Solid
 			// nCarga_SupinoDumbell
 			// 
 			this.nCarga_SupinoDumbell.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_SupinoDumbell.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_SupinoDumbell.Name = "nCarga_SupinoDumbell";
 			this.nCarga_SupinoDumbell.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_SupinoDumbell.TabIndex = 28;
@@ -2607,6 +2972,11 @@ namespace Rock_Solid
 			// nCarga_SupinoSentado
 			// 
 			this.nCarga_SupinoSentado.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_SupinoSentado.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_SupinoSentado.Name = "nCarga_SupinoSentado";
 			this.nCarga_SupinoSentado.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_SupinoSentado.TabIndex = 27;
@@ -2614,6 +2984,11 @@ namespace Rock_Solid
 			// nCarga_SupinoInclinado
 			// 
 			this.nCarga_SupinoInclinado.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_SupinoInclinado.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_SupinoInclinado.Name = "nCarga_SupinoInclinado";
 			this.nCarga_SupinoInclinado.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_SupinoInclinado.TabIndex = 26;
@@ -2621,6 +2996,11 @@ namespace Rock_Solid
 			// nCarga_SupinoReto
 			// 
 			this.nCarga_SupinoReto.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_SupinoReto.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_SupinoReto.Name = "nCarga_SupinoReto";
 			this.nCarga_SupinoReto.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_SupinoReto.TabIndex = 25;
@@ -2645,6 +3025,11 @@ namespace Rock_Solid
 			// nRep_CrossOver
 			// 
 			this.nRep_CrossOver.Location = new System.Drawing.Point(12, 201);
+			this.nRep_CrossOver.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_CrossOver.Name = "nRep_CrossOver";
 			this.nRep_CrossOver.Size = new System.Drawing.Size(80, 20);
 			this.nRep_CrossOver.TabIndex = 32;
@@ -2652,6 +3037,11 @@ namespace Rock_Solid
 			// nRep_Crucifixo
 			// 
 			this.nRep_Crucifixo.Location = new System.Drawing.Point(12, 175);
+			this.nRep_Crucifixo.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Crucifixo.Name = "nRep_Crucifixo";
 			this.nRep_Crucifixo.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Crucifixo.TabIndex = 31;
@@ -2659,6 +3049,11 @@ namespace Rock_Solid
 			// nRep_PeckDeck
 			// 
 			this.nRep_PeckDeck.Location = new System.Drawing.Point(12, 146);
+			this.nRep_PeckDeck.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_PeckDeck.Name = "nRep_PeckDeck";
 			this.nRep_PeckDeck.Size = new System.Drawing.Size(80, 20);
 			this.nRep_PeckDeck.TabIndex = 30;
@@ -2666,6 +3061,11 @@ namespace Rock_Solid
 			// nRep_Peck
 			// 
 			this.nRep_Peck.Location = new System.Drawing.Point(12, 120);
+			this.nRep_Peck.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Peck.Name = "nRep_Peck";
 			this.nRep_Peck.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Peck.TabIndex = 29;
@@ -2673,6 +3073,11 @@ namespace Rock_Solid
 			// nRep_SupinoDumbell
 			// 
 			this.nRep_SupinoDumbell.Location = new System.Drawing.Point(12, 94);
+			this.nRep_SupinoDumbell.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_SupinoDumbell.Name = "nRep_SupinoDumbell";
 			this.nRep_SupinoDumbell.Size = new System.Drawing.Size(80, 20);
 			this.nRep_SupinoDumbell.TabIndex = 28;
@@ -2680,6 +3085,11 @@ namespace Rock_Solid
 			// nRep_SupinoSentado
 			// 
 			this.nRep_SupinoSentado.Location = new System.Drawing.Point(12, 68);
+			this.nRep_SupinoSentado.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_SupinoSentado.Name = "nRep_SupinoSentado";
 			this.nRep_SupinoSentado.Size = new System.Drawing.Size(80, 20);
 			this.nRep_SupinoSentado.TabIndex = 27;
@@ -2687,6 +3097,11 @@ namespace Rock_Solid
 			// nRep_SupinoInclinado
 			// 
 			this.nRep_SupinoInclinado.Location = new System.Drawing.Point(12, 42);
+			this.nRep_SupinoInclinado.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_SupinoInclinado.Name = "nRep_SupinoInclinado";
 			this.nRep_SupinoInclinado.Size = new System.Drawing.Size(80, 20);
 			this.nRep_SupinoInclinado.TabIndex = 26;
@@ -2694,6 +3109,11 @@ namespace Rock_Solid
 			// nRep_SupinoReto
 			// 
 			this.nRep_SupinoReto.Location = new System.Drawing.Point(12, 16);
+			this.nRep_SupinoReto.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_SupinoReto.Name = "nRep_SupinoReto";
 			this.nRep_SupinoReto.Size = new System.Drawing.Size(80, 20);
 			this.nRep_SupinoReto.TabIndex = 25;
@@ -3005,7 +3425,7 @@ namespace Rock_Solid
 			// gb_CargaCostas
 			// 
 			this.gb_CargaCostas.Controls.Add(this.nCarga_VoadorInverso);
-			this.gb_CargaCostas.Controls.Add(this.nCarga_BrraFixa);
+			this.gb_CargaCostas.Controls.Add(this.nCarga_BarraFixa);
 			this.gb_CargaCostas.Controls.Add(this.nCarga_PullOverCostas);
 			this.gb_CargaCostas.Controls.Add(this.nCarga_PeckDeckCostas);
 			this.gb_CargaCostas.Controls.Add(this.nCarga_PuxadorArticulado);
@@ -3025,20 +3445,35 @@ namespace Rock_Solid
 			// nCarga_VoadorInverso
 			// 
 			this.nCarga_VoadorInverso.Location = new System.Drawing.Point(12, 279);
+			this.nCarga_VoadorInverso.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_VoadorInverso.Name = "nCarga_VoadorInverso";
 			this.nCarga_VoadorInverso.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_VoadorInverso.TabIndex = 35;
 			// 
-			// nCarga_BrraFixa
+			// nCarga_BarraFixa
 			// 
-			this.nCarga_BrraFixa.Location = new System.Drawing.Point(12, 253);
-			this.nCarga_BrraFixa.Name = "nCarga_BrraFixa";
-			this.nCarga_BrraFixa.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_BrraFixa.TabIndex = 34;
+			this.nCarga_BarraFixa.Location = new System.Drawing.Point(12, 253);
+			this.nCarga_BarraFixa.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
+			this.nCarga_BarraFixa.Name = "nCarga_BarraFixa";
+			this.nCarga_BarraFixa.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_BarraFixa.TabIndex = 34;
 			// 
 			// nCarga_PullOverCostas
 			// 
 			this.nCarga_PullOverCostas.Location = new System.Drawing.Point(12, 227);
+			this.nCarga_PullOverCostas.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_PullOverCostas.Name = "nCarga_PullOverCostas";
 			this.nCarga_PullOverCostas.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_PullOverCostas.TabIndex = 33;
@@ -3046,6 +3481,11 @@ namespace Rock_Solid
 			// nCarga_PeckDeckCostas
 			// 
 			this.nCarga_PeckDeckCostas.Location = new System.Drawing.Point(12, 201);
+			this.nCarga_PeckDeckCostas.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_PeckDeckCostas.Name = "nCarga_PeckDeckCostas";
 			this.nCarga_PeckDeckCostas.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_PeckDeckCostas.TabIndex = 32;
@@ -3053,6 +3493,11 @@ namespace Rock_Solid
 			// nCarga_PuxadorArticulado
 			// 
 			this.nCarga_PuxadorArticulado.Location = new System.Drawing.Point(12, 175);
+			this.nCarga_PuxadorArticulado.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_PuxadorArticulado.Name = "nCarga_PuxadorArticulado";
 			this.nCarga_PuxadorArticulado.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_PuxadorArticulado.TabIndex = 31;
@@ -3060,6 +3505,11 @@ namespace Rock_Solid
 			// nCarga_RemadaCavalinho
 			// 
 			this.nCarga_RemadaCavalinho.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_RemadaCavalinho.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RemadaCavalinho.Name = "nCarga_RemadaCavalinho";
 			this.nCarga_RemadaCavalinho.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RemadaCavalinho.TabIndex = 30;
@@ -3067,6 +3517,11 @@ namespace Rock_Solid
 			// nCarga_RemadaAlternada
 			// 
 			this.nCarga_RemadaAlternada.Location = new System.Drawing.Point(12, 120);
+			this.nCarga_RemadaAlternada.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RemadaAlternada.Name = "nCarga_RemadaAlternada";
 			this.nCarga_RemadaAlternada.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RemadaAlternada.TabIndex = 29;
@@ -3074,6 +3529,11 @@ namespace Rock_Solid
 			// nCarga_RemadaHorizontal
 			// 
 			this.nCarga_RemadaHorizontal.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_RemadaHorizontal.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_RemadaHorizontal.Name = "nCarga_RemadaHorizontal";
 			this.nCarga_RemadaHorizontal.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_RemadaHorizontal.TabIndex = 28;
@@ -3081,6 +3541,11 @@ namespace Rock_Solid
 			// nCarga_PulleyInvertido
 			// 
 			this.nCarga_PulleyInvertido.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_PulleyInvertido.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_PulleyInvertido.Name = "nCarga_PulleyInvertido";
 			this.nCarga_PulleyInvertido.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_PulleyInvertido.TabIndex = 27;
@@ -3088,6 +3553,11 @@ namespace Rock_Solid
 			// nCarga_PulleyFrente
 			// 
 			this.nCarga_PulleyFrente.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_PulleyFrente.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_PulleyFrente.Name = "nCarga_PulleyFrente";
 			this.nCarga_PulleyFrente.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_PulleyFrente.TabIndex = 26;
@@ -3095,6 +3565,11 @@ namespace Rock_Solid
 			// nCarga_PulleyCostas
 			// 
 			this.nCarga_PulleyCostas.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_PulleyCostas.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_PulleyCostas.Name = "nCarga_PulleyCostas";
 			this.nCarga_PulleyCostas.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_PulleyCostas.TabIndex = 25;
@@ -3122,6 +3597,11 @@ namespace Rock_Solid
 			// nRep_VoadorInverso
 			// 
 			this.nRep_VoadorInverso.Location = new System.Drawing.Point(12, 279);
+			this.nRep_VoadorInverso.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_VoadorInverso.Name = "nRep_VoadorInverso";
 			this.nRep_VoadorInverso.Size = new System.Drawing.Size(80, 20);
 			this.nRep_VoadorInverso.TabIndex = 35;
@@ -3129,6 +3609,11 @@ namespace Rock_Solid
 			// nRep_BarraFixa
 			// 
 			this.nRep_BarraFixa.Location = new System.Drawing.Point(12, 253);
+			this.nRep_BarraFixa.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_BarraFixa.Name = "nRep_BarraFixa";
 			this.nRep_BarraFixa.Size = new System.Drawing.Size(80, 20);
 			this.nRep_BarraFixa.TabIndex = 34;
@@ -3136,6 +3621,11 @@ namespace Rock_Solid
 			// nRep_PullOverCostas
 			// 
 			this.nRep_PullOverCostas.Location = new System.Drawing.Point(12, 227);
+			this.nRep_PullOverCostas.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_PullOverCostas.Name = "nRep_PullOverCostas";
 			this.nRep_PullOverCostas.Size = new System.Drawing.Size(80, 20);
 			this.nRep_PullOverCostas.TabIndex = 33;
@@ -3143,6 +3633,11 @@ namespace Rock_Solid
 			// nRep_PeckDeckCostas
 			// 
 			this.nRep_PeckDeckCostas.Location = new System.Drawing.Point(12, 201);
+			this.nRep_PeckDeckCostas.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_PeckDeckCostas.Name = "nRep_PeckDeckCostas";
 			this.nRep_PeckDeckCostas.Size = new System.Drawing.Size(80, 20);
 			this.nRep_PeckDeckCostas.TabIndex = 32;
@@ -3150,6 +3645,11 @@ namespace Rock_Solid
 			// nRep_PuxadorArticulado
 			// 
 			this.nRep_PuxadorArticulado.Location = new System.Drawing.Point(12, 175);
+			this.nRep_PuxadorArticulado.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_PuxadorArticulado.Name = "nRep_PuxadorArticulado";
 			this.nRep_PuxadorArticulado.Size = new System.Drawing.Size(80, 20);
 			this.nRep_PuxadorArticulado.TabIndex = 31;
@@ -3157,6 +3657,11 @@ namespace Rock_Solid
 			// nRep_RemadaCavalinho
 			// 
 			this.nRep_RemadaCavalinho.Location = new System.Drawing.Point(12, 146);
+			this.nRep_RemadaCavalinho.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RemadaCavalinho.Name = "nRep_RemadaCavalinho";
 			this.nRep_RemadaCavalinho.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RemadaCavalinho.TabIndex = 30;
@@ -3164,6 +3669,11 @@ namespace Rock_Solid
 			// nRep_RemadaAlternada
 			// 
 			this.nRep_RemadaAlternada.Location = new System.Drawing.Point(12, 120);
+			this.nRep_RemadaAlternada.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RemadaAlternada.Name = "nRep_RemadaAlternada";
 			this.nRep_RemadaAlternada.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RemadaAlternada.TabIndex = 29;
@@ -3171,6 +3681,11 @@ namespace Rock_Solid
 			// nRep_RemadaHorizontal
 			// 
 			this.nRep_RemadaHorizontal.Location = new System.Drawing.Point(12, 94);
+			this.nRep_RemadaHorizontal.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_RemadaHorizontal.Name = "nRep_RemadaHorizontal";
 			this.nRep_RemadaHorizontal.Size = new System.Drawing.Size(80, 20);
 			this.nRep_RemadaHorizontal.TabIndex = 28;
@@ -3178,6 +3693,11 @@ namespace Rock_Solid
 			// nRep_PulleyInvertido
 			// 
 			this.nRep_PulleyInvertido.Location = new System.Drawing.Point(12, 68);
+			this.nRep_PulleyInvertido.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_PulleyInvertido.Name = "nRep_PulleyInvertido";
 			this.nRep_PulleyInvertido.Size = new System.Drawing.Size(80, 20);
 			this.nRep_PulleyInvertido.TabIndex = 27;
@@ -3185,6 +3705,11 @@ namespace Rock_Solid
 			// nRep_PulleyFrente
 			// 
 			this.nRep_PulleyFrente.Location = new System.Drawing.Point(12, 42);
+			this.nRep_PulleyFrente.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_PulleyFrente.Name = "nRep_PulleyFrente";
 			this.nRep_PulleyFrente.Size = new System.Drawing.Size(80, 20);
 			this.nRep_PulleyFrente.TabIndex = 26;
@@ -3192,6 +3717,11 @@ namespace Rock_Solid
 			// nRep_PulleyCostas
 			// 
 			this.nRep_PulleyCostas.Location = new System.Drawing.Point(12, 16);
+			this.nRep_PulleyCostas.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_PulleyCostas.Name = "nRep_PulleyCostas";
 			this.nRep_PulleyCostas.Size = new System.Drawing.Size(80, 20);
 			this.nRep_PulleyCostas.TabIndex = 25;
@@ -3620,7 +4150,7 @@ namespace Rock_Solid
 			// 
 			this.nCarga_PranchaAbdomen.Location = new System.Drawing.Point(12, 120);
 			this.nCarga_PranchaAbdomen.Maximum = new decimal(new int[] {
-            1000,
+            3000,
             0,
             0,
             0});
@@ -3632,7 +4162,7 @@ namespace Rock_Solid
 			// 
 			this.nCarga_ParalelaFixa.Location = new System.Drawing.Point(12, 94);
 			this.nCarga_ParalelaFixa.Maximum = new decimal(new int[] {
-            1000,
+            3000,
             0,
             0,
             0});
@@ -3644,7 +4174,7 @@ namespace Rock_Solid
 			// 
 			this.nCarga_Obliquo.Location = new System.Drawing.Point(12, 68);
 			this.nCarga_Obliquo.Maximum = new decimal(new int[] {
-            1000,
+            3000,
             0,
             0,
             0});
@@ -3656,7 +4186,7 @@ namespace Rock_Solid
 			// 
 			this.nCarga_Infra.Location = new System.Drawing.Point(12, 42);
 			this.nCarga_Infra.Maximum = new decimal(new int[] {
-            1000,
+            3000,
             0,
             0,
             0});
@@ -3668,7 +4198,7 @@ namespace Rock_Solid
 			// 
 			this.nCarga_RetoAbdomen.Location = new System.Drawing.Point(12, 16);
 			this.nCarga_RetoAbdomen.Maximum = new decimal(new int[] {
-            1000,
+            3000,
             0,
             0,
             0});
@@ -3767,11 +4297,6 @@ namespace Rock_Solid
 			// nSerie_PranchaAbdomen
 			// 
 			this.nSerie_PranchaAbdomen.Location = new System.Drawing.Point(12, 120);
-			this.nSerie_PranchaAbdomen.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
 			this.nSerie_PranchaAbdomen.Name = "nSerie_PranchaAbdomen";
 			this.nSerie_PranchaAbdomen.Size = new System.Drawing.Size(80, 20);
 			this.nSerie_PranchaAbdomen.TabIndex = 14;
@@ -3779,11 +4304,6 @@ namespace Rock_Solid
 			// nSerie_ParalelaFixa
 			// 
 			this.nSerie_ParalelaFixa.Location = new System.Drawing.Point(12, 94);
-			this.nSerie_ParalelaFixa.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
 			this.nSerie_ParalelaFixa.Name = "nSerie_ParalelaFixa";
 			this.nSerie_ParalelaFixa.Size = new System.Drawing.Size(80, 20);
 			this.nSerie_ParalelaFixa.TabIndex = 13;
@@ -3791,11 +4311,6 @@ namespace Rock_Solid
 			// nSerie_Obliquo
 			// 
 			this.nSerie_Obliquo.Location = new System.Drawing.Point(12, 68);
-			this.nSerie_Obliquo.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
 			this.nSerie_Obliquo.Name = "nSerie_Obliquo";
 			this.nSerie_Obliquo.Size = new System.Drawing.Size(80, 20);
 			this.nSerie_Obliquo.TabIndex = 12;
@@ -3803,11 +4318,6 @@ namespace Rock_Solid
 			// nSerie_Infra
 			// 
 			this.nSerie_Infra.Location = new System.Drawing.Point(12, 42);
-			this.nSerie_Infra.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
 			this.nSerie_Infra.Name = "nSerie_Infra";
 			this.nSerie_Infra.Size = new System.Drawing.Size(80, 20);
 			this.nSerie_Infra.TabIndex = 11;
@@ -3815,11 +4325,6 @@ namespace Rock_Solid
 			// nSerie_RetoAbdomen
 			// 
 			this.nSerie_RetoAbdomen.Location = new System.Drawing.Point(12, 16);
-			this.nSerie_RetoAbdomen.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
 			this.nSerie_RetoAbdomen.Name = "nSerie_RetoAbdomen";
 			this.nSerie_RetoAbdomen.Size = new System.Drawing.Size(80, 20);
 			this.nSerie_RetoAbdomen.TabIndex = 0;
@@ -3993,6 +4498,11 @@ namespace Rock_Solid
 			// nCarga_Corda
 			// 
 			this.nCarga_Corda.Location = new System.Drawing.Point(12, 94);
+			this.nCarga_Corda.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Corda.Name = "nCarga_Corda";
 			this.nCarga_Corda.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Corda.TabIndex = 28;
@@ -4000,6 +4510,11 @@ namespace Rock_Solid
 			// nCarga_Eliptico
 			// 
 			this.nCarga_Eliptico.Location = new System.Drawing.Point(12, 68);
+			this.nCarga_Eliptico.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Eliptico.Name = "nCarga_Eliptico";
 			this.nCarga_Eliptico.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Eliptico.TabIndex = 27;
@@ -4007,6 +4522,11 @@ namespace Rock_Solid
 			// nCarga_Bicicleta
 			// 
 			this.nCarga_Bicicleta.Location = new System.Drawing.Point(12, 42);
+			this.nCarga_Bicicleta.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Bicicleta.Name = "nCarga_Bicicleta";
 			this.nCarga_Bicicleta.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Bicicleta.TabIndex = 26;
@@ -4014,6 +4534,11 @@ namespace Rock_Solid
 			// nCarga_Esteira
 			// 
 			this.nCarga_Esteira.Location = new System.Drawing.Point(12, 16);
+			this.nCarga_Esteira.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
 			this.nCarga_Esteira.Name = "nCarga_Esteira";
 			this.nCarga_Esteira.Size = new System.Drawing.Size(80, 20);
 			this.nCarga_Esteira.TabIndex = 25;
@@ -4034,6 +4559,11 @@ namespace Rock_Solid
 			// nRep_Corda
 			// 
 			this.nRep_Corda.Location = new System.Drawing.Point(12, 94);
+			this.nRep_Corda.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Corda.Name = "nRep_Corda";
 			this.nRep_Corda.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Corda.TabIndex = 28;
@@ -4041,6 +4571,11 @@ namespace Rock_Solid
 			// nRep_Eliptico
 			// 
 			this.nRep_Eliptico.Location = new System.Drawing.Point(12, 68);
+			this.nRep_Eliptico.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Eliptico.Name = "nRep_Eliptico";
 			this.nRep_Eliptico.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Eliptico.TabIndex = 27;
@@ -4048,6 +4583,11 @@ namespace Rock_Solid
 			// nRep_Bicicleta
 			// 
 			this.nRep_Bicicleta.Location = new System.Drawing.Point(12, 42);
+			this.nRep_Bicicleta.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Bicicleta.Name = "nRep_Bicicleta";
 			this.nRep_Bicicleta.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Bicicleta.TabIndex = 26;
@@ -4055,6 +4595,11 @@ namespace Rock_Solid
 			// nRep_Esteira
 			// 
 			this.nRep_Esteira.Location = new System.Drawing.Point(12, 16);
+			this.nRep_Esteira.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.nRep_Esteira.Name = "nRep_Esteira";
 			this.nRep_Esteira.Size = new System.Drawing.Size(80, 20);
 			this.nRep_Esteira.TabIndex = 25;
@@ -4427,7 +4972,7 @@ namespace Rock_Solid
 			this.tp_Costas.ResumeLayout(false);
 			this.gb_CargaCostas.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_VoadorInverso)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nCarga_BrraFixa)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_BarraFixa)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_PullOverCostas)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_PeckDeckCostas)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_PuxadorArticulado)).EndInit();
@@ -4670,7 +5215,7 @@ namespace Rock_Solid
 		public System.Windows.Forms.GroupBox gb_ExercicioPeito;
 		public System.Windows.Forms.GroupBox gb_CargaCostas;
 		public System.Windows.Forms.NumericUpDown nCarga_VoadorInverso;
-		public System.Windows.Forms.NumericUpDown nCarga_BrraFixa;
+		public System.Windows.Forms.NumericUpDown nCarga_BarraFixa;
 		public System.Windows.Forms.NumericUpDown nCarga_PullOverCostas;
 		public System.Windows.Forms.NumericUpDown nCarga_PeckDeckCostas;
 		public System.Windows.Forms.NumericUpDown nCarga_PuxadorArticulado;

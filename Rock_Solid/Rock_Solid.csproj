@@ -144,12 +144,6 @@
     <Compile Include="frm_WorkOut.Designer.cs">
       <DependentUpon>frm_WorkOut.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_WorkOutList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_WorkOutList.Designer.cs">
-      <DependentUpon>frm_WorkOutList.cs</DependentUpon>
-    </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Legs.cs" />
     <Compile Include="Product.cs" />
@@ -200,9 +194,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_WorkOut.resx">
       <DependentUpon>frm_WorkOut.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_WorkOutList.resx">
-      <DependentUpon>frm_WorkOutList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

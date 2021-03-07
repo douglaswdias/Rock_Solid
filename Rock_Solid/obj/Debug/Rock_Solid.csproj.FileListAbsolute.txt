@@ -56,7 +56,6 @@ C:\Users\Suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm
 C:\Users\Suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_ProductList.resources
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_Equipment.resources
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_WorkOut.resources
-C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_WorkOutList.resources
 C:\Users\Anna\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_Print.resources
 C:\Users\Suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_Equipment.resources
 C:\Users\Suporte\Documents\GitHub\Rock_Solid\Rock_Solid\obj\Debug\Rock_Solid.frm_Print.resources

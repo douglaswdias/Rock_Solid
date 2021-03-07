@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace Rock_Solid
 {
+
 	class DataBase
 	{
 		private static SQLiteConnection connection;
@@ -872,35 +873,29 @@ namespace Rock_Solid
 		}
 		#endregion
 		#region Workout
-		public static void NewWorkout(WorkOut workout, Abs abs)
+		public static void NewWorkout(WorkOut workout, Abs abs, Back back)
 		{
-			if (Client.CLIENT_ID.ToString() != "" || Client.CLIENT_ID != 0)
+			if (Client.CLIENT_ID.ToString() == "" || Client.CLIENT_ID == 0)
 			{
+				MessageBox.Show("Nenhum cliente selecionado");
+			}
+			else{
 				try
 				{
 					var vcon = ConnectionDB();
 					var cmd = vcon.CreateCommand();
 
+					#region Insert Workout
 					cmd.CommandText = @"
 					INSERT INTO WORKOUT 
-						(WORKOUT_ID, WORKOUT_BICEPS, WORKOUT_TRICEPS, WORKOUT_SHOULDERS, WORKOUT_LEGS, WORKOUT_CHEST, WORKOUT_BACK, 
-						WORKOUT_ABS, WORKOUT_WARMUP) 
+						(WORKOUT_CLIENT) 
 					VALUES 
-						(@ID, @BICEPS, @TRICEPS, @SHOULDERS, @LEGS, @CHEST, @BACK, @ABS, @WARMUP)
-				";
-
-					cmd.Parameters.AddWithValue("@ID", WorkOut.WORKOUT_ID);
-					cmd.Parameters.AddWithValue("@BICEPS", WorkOut.WORKOUT_BICEPS);
-					cmd.Parameters.AddWithValue("@TRICEPS", WorkOut.WORKOUT_TRICEPS);
-					cmd.Parameters.AddWithValue("@SHOULDERS", WorkOut.WORKOUT_SHOULDERS);
-					cmd.Parameters.AddWithValue("@LEGS", WorkOut.WORKOUT_LEGS);
-					cmd.Parameters.AddWithValue("@CHEST", WorkOut.WORKOUT_CHEST);
-					cmd.Parameters.AddWithValue("@BACK", WorkOut.WORKOUT_BACK);
-					cmd.Parameters.AddWithValue("@ABS", Abs.ABS_ID);
-					cmd.Parameters.AddWithValue("@WARMUP", WorkOut.WORKOUT_WARMUP);
-
+						(@CLIENT)
+					";
+					cmd.Parameters.AddWithValue("@CLIENT", Client.CLIENT_ID);
 					cmd.ExecuteNonQuery();
-
+					#endregion
+					#region Insert Abs
 					cmd.CommandText = @"
 					INSERT INTO ABS 
 						(ABS_RETOABDOMEN, ABS_INFRA, ABS_OBLIQUO, ABS_PARALELAFIXA, ABS_PRANCHAABDOMEN, 
@@ -913,8 +908,8 @@ namespace Rock_Solid
 						@INFRA_SERIE, @OBLIQUO_SERIE, @PARALELAFIXA_SERIE, @PRANCHAABDOMEN_SERIE, 
 						@RETOABDOMEN_REP, @INFRA_REP, @OBLIQUO_REP, @PARALELAFIXA_REP, @PRANCHAABDOMEN_REP, 
 						@RETOABDOMEN_CARGA, @INFRA_CARGA, @OBLIQUO_CARGA, @PARALELAFIXA_CARGA, 
-						@PRANCHAABDOMEN_CARGA, @ABS)
-				";
+						@PRANCHAABDOMEN_CARGA, (SELECT WORKOUT_ID FROM WORKOUT ORDER BY WORKOUT_ID DESC LIMIT 1))
+					";
 
 					cmd.Parameters.AddWithValue("@RETOABDOMEN", Abs.ABS_RETOABDOMEN);
 					cmd.Parameters.AddWithValue("@INFRA", Abs.ABS_INFRA);
@@ -939,10 +934,109 @@ namespace Rock_Solid
 					cmd.Parameters.AddWithValue("@OBLIQUO_CARGA", Abs.ABS_OBLIQUO_CARGA);
 					cmd.Parameters.AddWithValue("@PARALELAFIXA_CARGA", Abs.ABS_PARALELAFIXA_CARGA);
 					cmd.Parameters.AddWithValue("@PRANCHAABDOMEN_CARGA", Abs.ABS_PRANCHAABDOMEN_CARGA);
-
-					cmd.Parameters.AddWithValue("@ABS", WorkOut.WORKOUT_ID);
-
 					cmd.ExecuteNonQuery();
+					#endregion
+					#region Insert Back
+					cmd.CommandText = @"
+					INSERT INTO BACK 
+						(BACK_PULLEYCOSTAS, BACK_PULLEYFRENTE, BACK_PULLEYINVERTIDO, BACK_REMADAHORIZONTAL, 
+						BACK_REMADAALTERNADA, BACK_REMADACAVALINHO, BACK_PUXADORARTICULADO, BACK_PECKDECK, 
+						BACK_PULLOVER, BACK_BARRAFIXA, BACK_VOADORINVERSO, BACK_PULLEYCOSTAS_SERIE, 
+						BACK_PULLEYFRENTE_SERIE, BACK_PULLEYINVERTIDO_SERIE, BACK_REMADAHORIZONTAL_SERIE, 
+						BACK_REMADAALTERNADA_SERIE, BACK_REMADACAVALINHO_SERIE, BACK_PUXADORARTICULADO_SERIE, 
+						BACK_PECKDECK_SERIE, BACK_PULLOVER_SERIE, BACK_BARRAFIXA_SERIE, 
+						BACK_VOADORINVERSO_SERIE, BACK_PULLEYCOSTAS_REP, BACK_PULLEYFRENTE_REP, 
+						BACK_PULLEYINVERTIDO_REP, BACK_REMADAHORIZONTAL_REP, BACK_REMADAALTERNADA_REP, 
+						BACK_REMADACAVALINHO_REP, BACK_PUXADORARTICULADO_REP, BACK_PECKDECK_REP, 
+						BACK_PULLOVER_REP, BACK_BARRAFIXA_REP, BACK_VOADORINVERSO_REP, BACK_PULLEYCOSTAS_CARGA, 
+						BACK_PULLEYFRENTE_CARGA, BACK_PULLEYINVERTIDO_CARGA, BACK_REMADAHORIZONTAL_CARGA, 
+						BACK_REMADAALTERNADA_CARGA, BACK_REMADACAVALINHO_CARGA, BACK_PUXADORARTICULADO_CARGA, 
+						BACK_PECKDECK_CARGA, BACK_PULLOVER_CARGA, BACK_BARRAFIXA_CARGA, 
+						BACK_VOADORINVERSO_CARGA, BACK_BACK) 
+					VALUES 
+						(@BACK_PULLEYCOSTAS, @BACK_PULLEYFRENTE, @BACK_PULLEYINVERTIDO, @BACK_REMADAHORIZONTAL, 
+						@BACK_REMADAALTERNADA, @BACK_REMADACAVALINHO, @BACK_PUXADORARTICULADO, @BACK_PECKDECK, 
+						@BACK_PULLOVER, @BACK_BARRAFIXA, @BACK_VOADORINVERSO, @BACK_PULLEYCOSTAS_SERIE, 
+						@BACK_PULLEYFRENTE_SERIE, @BACK_PULLEYINVERTIDO_SERIE, @BACK_REMADAHORIZONTAL_SERIE, 
+						@BACK_REMADAALTERNADA_SERIE, @BACK_REMADACAVALINHO_SERIE, @BACK_PUXADORARTICULADO_SERIE, 
+						@BACK_PECKDECK_SERIE, @BACK_PULLOVER_SERIE, @BACK_BARRAFIXA_SERIE, 
+						@BACK_VOADORINVERSO_SERIE, @BACK_PULLEYCOSTAS_REP, @BACK_PULLEYFRENTE_REP, 
+						@BACK_PULLEYINVERTIDO_REP, @BACK_REMADAHORIZONTAL_REP, @BACK_REMADAALTERNADA_REP, 
+						@BACK_REMADACAVALINHO_REP, @BACK_PUXADORARTICULADO_REP, @BACK_PECKDECK_REP, 
+						@BACK_PULLOVER_REP, @BACK_BARRAFIXA_REP, @BACK_VOADORINVERSO_REP, 
+						@BACK_PULLEYCOSTAS_CARGA, @BACK_PULLEYFRENTE_CARGA, @BACK_PULLEYINVERTIDO_CARGA, 
+						@BACK_REMADAHORIZONTAL_CARGA, @BACK_REMADAALTERNADA_CARGA, @BACK_REMADACAVALINHO_CARGA, 
+						@BACK_PUXADORARTICULADO_CARGA, @BACK_PECKDECK_CARGA, @BACK_PULLOVER_CARGA, 
+						@BACK_BARRAFIXA_CARGA, @BACK_VOADORINVERSO_CARGA, 
+						(SELECT WORKOUT_ID FROM WORKOUT ORDER BY WORKOUT_ID DESC LIMIT 1))
+					";
+					cmd.Parameters.AddWithValue("@BACK_PULLEYCOSTAS", Back.BACK_PULLEYCOSTAS);
+					cmd.Parameters.AddWithValue("@BACK_PULLEYFRENTE", Back.BACK_PULLEYFRENTE);
+					cmd.Parameters.AddWithValue("@BACK_PULLEYINVERTIDO", Back.BACK_PULLEYINVERTIDO);
+					cmd.Parameters.AddWithValue("@BACK_REMADAHORIZONTAL", Back.BACK_REMADAHORIZONTAL);
+					cmd.Parameters.AddWithValue("@BACK_REMADAALTERNADA", Back.BACK_REMADAALTERNADA);
+					cmd.Parameters.AddWithValue("@BACK_REMADACAVALINHO", Back.BACK_REMADACAVALINHO);
+					cmd.Parameters.AddWithValue("@BACK_PUXADORARTICULADO", Back.BACK_PUXADORARTICULADO);
+					cmd.Parameters.AddWithValue("@BACK_PECKDECK", Back.BACK_PECKDECK);
+					cmd.Parameters.AddWithValue("@BACK_PULLOVER", Back.BACK_PULLOVER);
+					cmd.Parameters.AddWithValue("@BACK_BARRAFIXA", Back.BACK_BARRAFIXA);
+					cmd.Parameters.AddWithValue("@BACK_VOADORINVERSO", Back.BACK_VOADORINVERSO);
+
+					cmd.Parameters.AddWithValue("@BACK_PULLEYCOSTAS_SERIE", Back.BACK_PULLEYCOSTAS_SERIE);
+					cmd.Parameters.AddWithValue("@BACK_PULLEYFRENTE_SERIE", Back.BACK_PULLEYFRENTE_SERIE);
+					cmd.Parameters.AddWithValue("@BACK_PULLEYINVERTIDO_SERIE", Back.BACK_PULLEYINVERTIDO_SERIE);
+					cmd.Parameters.AddWithValue("@BACK_REMADAHORIZONTAL_SERIE", Back.BACK_REMADAHORIZONTAL_SERIE);
+					cmd.Parameters.AddWithValue("@BACK_REMADAALTERNADA_SERIE", Back.BACK_REMADAALTERNADA_SERIE);
+					cmd.Parameters.AddWithValue("@BACK_REMADACAVALINHO_SERIE", Back.BACK_REMADACAVALINHO_SERIE);
+					cmd.Parameters.AddWithValue("@BACK_PUXADORARTICULADO_SERIE", Back.BACK_PUXADORARTICULADO_SERIE);
+					cmd.Parameters.AddWithValue("@BACK_PECKDECK_SERIE", Back.BACK_PECKDECK_SERIE);
+					cmd.Parameters.AddWithValue("@BACK_PULLOVER_SERIE", Back.BACK_PULLOVER_SERIE);
+					cmd.Parameters.AddWithValue("@BACK_BARRAFIXA_SERIE", Back.BACK_BARRAFIXA_SERIE);
+					cmd.Parameters.AddWithValue("@BACK_VOADORINVERSO_SERIE", Back.BACK_VOADORINVERSO_SERIE);
+
+					cmd.Parameters.AddWithValue("@BACK_PULLEYCOSTAS_REP", Back.BACK_PULLEYCOSTAS_REP);
+					cmd.Parameters.AddWithValue("@BACK_PULLEYFRENTE_REP", Back.BACK_PULLEYFRENTE_REP);
+					cmd.Parameters.AddWithValue("@BACK_PULLEYINVERTIDO_REP", Back.BACK_PULLEYINVERTIDO_REP);
+					cmd.Parameters.AddWithValue("@BACK_REMADAHORIZONTAL_REP", Back.BACK_REMADAHORIZONTAL_REP);
+					cmd.Parameters.AddWithValue("@BACK_REMADAALTERNADA_REP", Back.BACK_REMADAALTERNADA_REP);
+					cmd.Parameters.AddWithValue("@BACK_REMADACAVALINHO_REP", Back.BACK_REMADACAVALINHO_REP);
+					cmd.Parameters.AddWithValue("@BACK_PUXADORARTICULADO_REP", Back.BACK_PUXADORARTICULADO_REP);
+					cmd.Parameters.AddWithValue("@BACK_PECKDECK_REP", Back.BACK_PECKDECK_REP);
+					cmd.Parameters.AddWithValue("@BACK_PULLOVER_REP", Back.BACK_PULLOVER_REP);
+					cmd.Parameters.AddWithValue("@BACK_BARRAFIXA_REP", Back.BACK_BARRAFIXA_REP);
+					cmd.Parameters.AddWithValue("@BACK_VOADORINVERSO_REP", Back.BACK_VOADORINVERSO_REP);
+
+					cmd.Parameters.AddWithValue("@BACK_PULLEYCOSTAS_CARGA", Back.BACK_PULLEYCOSTAS_CARGA);
+					cmd.Parameters.AddWithValue("@BACK_PULLEYFRENTE_CARGA", Back.BACK_PULLEYFRENTE_CARGA);
+					cmd.Parameters.AddWithValue("@BACK_PULLEYINVERTIDO_CARGA", Back.BACK_PULLEYINVERTIDO_CARGA);
+					cmd.Parameters.AddWithValue("@BACK_REMADAHORIZONTAL_CARGA", Back.BACK_REMADAHORIZONTAL_CARGA);
+					cmd.Parameters.AddWithValue("@BACK_REMADAALTERNADA_CARGA", Back.BACK_REMADAALTERNADA_CARGA);
+					cmd.Parameters.AddWithValue("@BACK_REMADACAVALINHO_CARGA", Back.BACK_REMADACAVALINHO_CARGA);
+					cmd.Parameters.AddWithValue("@BACK_PUXADORARTICULADO_CARGA", Back.BACK_PUXADORARTICULADO_CARGA);
+					cmd.Parameters.AddWithValue("@BACK_PECKDECK_CARGA", Back.BACK_PECKDECK_CARGA);
+					cmd.Parameters.AddWithValue("@BACK_PULLOVER_CARGA", Back.BACK_PULLOVER_CARGA);
+					cmd.Parameters.AddWithValue("@BACK_BARRAFIXA_CARGA", Back.BACK_BARRAFIXA_CARGA);
+					cmd.Parameters.AddWithValue("@BACK_VOADORINVERSO_CARGA", Back.BACK_VOADORINVERSO_CARGA);
+					cmd.ExecuteNonQuery();
+					#endregion
+					#region Insert Biceps
+
+					#endregion
+					#region Insert Chest
+
+					#endregion
+					#region Insert Legs
+
+					#endregion
+					#region Insert Shoulders
+
+					#endregion
+					#region Insert Triceps
+
+					#endregion
+					#region WarmUp 
+
+					#endregion
 
 					MessageBox.Show("Dados Salvos Com Sucesso");
 					vcon.Close();
@@ -950,35 +1044,6 @@ namespace Rock_Solid
 				catch (Exception ex)
 				{
 					MessageBox.Show("Erro ao Criar Treino");
-					throw (ex);
-				}
-			}
-			else
-			{
-				try
-				{
-					var vcon = ConnectionDB();
-					var cmd = vcon.CreateCommand();
-					cmd.CommandText = @"
-					UPDATE WORKOUT 
-					SET 
-						WORKOUT_BICEPS '" + WorkOut.WORKOUT_BICEPS + "', " +
-						"WORKOUT_TRICEPS '" + WorkOut.WORKOUT_TRICEPS + "', " +
-						"WORKOUT_SHOULDERS '" + WorkOut.WORKOUT_SHOULDERS + "', " +
-						"WORKOUT_LEGS '" + WorkOut.WORKOUT_LEGS + "', " +
-						"WORKOUT_CHEST '" + WorkOut.WORKOUT_CHEST + "', " +
-						"WORKOUT_BACK '" + WorkOut.WORKOUT_BACK + "', " +
-						"WORKOUT_ABS '" + WorkOut.WORKOUT_ABS + "', " +
-					"WHERE WORKOUT_ID = " + WorkOut.WORKOUT_ID
-					;
-
-					cmd.ExecuteNonQuery();
-					MessageBox.Show("Alterações Salvas Com Sucesso");
-					vcon.Close();
-				}
-				catch (Exception ex)
-				{
-					MessageBox.Show("Erro ao Alterar Treino");
 					throw (ex);
 				}
 			}
