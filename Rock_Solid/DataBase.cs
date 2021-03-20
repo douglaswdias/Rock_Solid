@@ -1020,22 +1020,64 @@ namespace Rock_Solid
 					cmd.ExecuteNonQuery();
 					#endregion
 					#region Insert Biceps
-
+					cmd.CommandText = @"
+					INSERT INTO BACK 
+						(BACK_BACK) 
+					VALUES 
+						((SELECT WORKOUT_ID FROM WORKOUT ORDER BY WORKOUT_ID DESC LIMIT 1))
+					";
+					cmd.Parameters.AddWithValue("@BACK_PULLEYCOSTAS", Back.BACK_PULLEYCOSTAS);
+					cmd.ExecuteNonQuery();
 					#endregion
 					#region Insert Chest
-
+					cmd.CommandText = @"
+					INSERT INTO BACK 
+						(BACK_BACK) 
+					VALUES 
+						((SELECT WORKOUT_ID FROM WORKOUT ORDER BY WORKOUT_ID DESC LIMIT 1))
+					";
+					cmd.Parameters.AddWithValue("@BACK_PULLEYCOSTAS", Back.BACK_PULLEYCOSTAS);
+					cmd.ExecuteNonQuery();
 					#endregion
 					#region Insert Legs
-
+					cmd.CommandText = @"
+					INSERT INTO BACK 
+						(BACK_BACK) 
+					VALUES 
+						((SELECT WORKOUT_ID FROM WORKOUT ORDER BY WORKOUT_ID DESC LIMIT 1))
+					";
+					cmd.Parameters.AddWithValue("@BACK_PULLEYCOSTAS", Back.BACK_PULLEYCOSTAS);
+					cmd.ExecuteNonQuery();
 					#endregion
 					#region Insert Shoulders
-
+					cmd.CommandText = @"
+					INSERT INTO BACK 
+						(BACK_BACK) 
+					VALUES 
+						((SELECT WORKOUT_ID FROM WORKOUT ORDER BY WORKOUT_ID DESC LIMIT 1))
+					";
+					cmd.Parameters.AddWithValue("@BACK_PULLEYCOSTAS", Back.BACK_PULLEYCOSTAS);
+					cmd.ExecuteNonQuery();
 					#endregion
 					#region Insert Triceps
-
+					cmd.CommandText = @"
+					INSERT INTO BACK 
+						(BACK_BACK) 
+					VALUES 
+						((SELECT WORKOUT_ID FROM WORKOUT ORDER BY WORKOUT_ID DESC LIMIT 1))
+					";
+					cmd.Parameters.AddWithValue("@BACK_PULLEYCOSTAS", Back.BACK_PULLEYCOSTAS);
+					cmd.ExecuteNonQuery();
 					#endregion
 					#region WarmUp 
-
+					cmd.CommandText = @"
+					INSERT INTO BACK 
+						(BACK_BACK) 
+					VALUES 
+						((SELECT WORKOUT_ID FROM WORKOUT ORDER BY WORKOUT_ID DESC LIMIT 1))
+					";
+					cmd.Parameters.AddWithValue("@BACK_PULLEYCOSTAS", Back.BACK_PULLEYCOSTAS);
+					cmd.ExecuteNonQuery();
 					#endregion
 
 					MessageBox.Show("Dados Salvos Com Sucesso");
