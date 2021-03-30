@@ -42,6 +42,6 @@ namespace Rock_Solid
 		public static Int32 SHOULDERS_DEVDUMBELL_CARGA = 0;
 		public static Int32 SHOULDERS_REMADAALTA_CARGA = 0;
 
-		public static Int32 SHOULDERS_SHOULDERS = 0;
+		public static Int32 SHOULDERS_WORKOUT = 0;
 	}
 }

@@ -50,7 +50,7 @@
 			this.tb_UserName.Location = new System.Drawing.Point(23, 55);
 			this.tb_UserName.Name = "tb_UserName";
 			this.tb_UserName.Size = new System.Drawing.Size(160, 20);
-			this.tb_UserName.TabIndex = 1;
+			this.tb_UserName.TabIndex = 0;
 			this.tb_UserName.Text = "Admin";
 			// 
 			// lb_Password
@@ -68,7 +68,7 @@
 			this.tb_Password.Name = "tb_Password";
 			this.tb_Password.PasswordChar = '*';
 			this.tb_Password.Size = new System.Drawing.Size(157, 20);
-			this.tb_Password.TabIndex = 3;
+			this.tb_Password.TabIndex = 1;
 			this.tb_Password.Text = "Admin";
 			// 
 			// btn_Login
@@ -76,7 +76,7 @@
 			this.btn_Login.Location = new System.Drawing.Point(45, 147);
 			this.btn_Login.Name = "btn_Login";
 			this.btn_Login.Size = new System.Drawing.Size(122, 23);
-			this.btn_Login.TabIndex = 4;
+			this.btn_Login.TabIndex = 2;
 			this.btn_Login.Text = "Entrar";
 			this.btn_Login.UseVisualStyleBackColor = true;
 			this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
@@ -86,7 +86,7 @@
 			this.btn_Logout.Location = new System.Drawing.Point(45, 188);
 			this.btn_Logout.Name = "btn_Logout";
 			this.btn_Logout.Size = new System.Drawing.Size(122, 23);
-			this.btn_Logout.TabIndex = 5;
+			this.btn_Logout.TabIndex = 3;
 			this.btn_Logout.Text = "Sair";
 			this.btn_Logout.UseVisualStyleBackColor = true;
 			this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
@@ -103,11 +103,13 @@
 			this.Controls.Add(this.tb_UserName);
 			this.Controls.Add(this.lb_UserName);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.KeyPreview = true;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "frm_Login";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Login";
+			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frm_Login_KeyPress);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

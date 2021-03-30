@@ -69,7 +69,7 @@ namespace Rock_Solid
 			cb_SupinoDumbell.DropDownStyle = ComboBoxStyle.DropDownList;
 			cb_Peck.DropDownStyle = ComboBoxStyle.DropDownList;
 			cb_PeckDeckPeito.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_crucifixo.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Crucifixo.DropDownStyle = ComboBoxStyle.DropDownList;
 			cb_CrossOver.DropDownStyle = ComboBoxStyle.DropDownList;
 			#endregion
 			#region Costas
@@ -116,6 +116,12 @@ namespace Rock_Solid
 			WorkOut workout = new WorkOut();
 			Abs abs = new Abs();
 			Back back = new Back();
+			Biceps biceps = new Biceps();
+			Chest chest = new Chest();
+			Legs legs = new Legs();
+			Shoulders shoulders = new Shoulders();
+			Triceps triceps = new Triceps();
+			WarmUp warmup = new WarmUp();
 
 			#region Abs
 			Abs.ABS_RETOABDOMEN = cb_RetoAbdomen.Text;
@@ -193,28 +199,251 @@ namespace Rock_Solid
 			Back.BACK_BARRAFIXA_CARGA = Convert.ToInt32(nCarga_BarraFixa.Value);
 			Back.BACK_VOADORINVERSO_CARGA = Convert.ToInt32(nCarga_VoadorInverso.Value);
 
-			Back.BACK_BACK = WorkOut.WORKOUT_ID;
+			Back.BACK_WORKOUT = WorkOut.WORKOUT_ID;
 			#endregion
 			#region Biceps
+			Biceps.BICEPS_ROSCADIRETA = cb_RoscaDireta.Text;
+			Biceps.BICEPS_ROSCAALTERNADA = cb_RoscaAlternada.Text;
+			Biceps.BICEPS_ROSCAMARTELO = cb_RoscaMartelo.Text;
+			Biceps.BICEPS_ROSCACONCENTRADA = cb_RoscaConcentrada.Text;
+			Biceps.BICEPS_ROSCAARTICULADA = cb_RoscaArticulada.Text;
+			Biceps.BICEPS_ROSCABILATERAL = cb_RoscaBilateral.Text;
+			Biceps.BICEPS_ROSCAROLDANA = cb_RoscaRoldana.Text;
+			Biceps.BICEPS_ROSCASIMULTANEA = cb_RoscaSimultanea.Text;
 
+			Biceps.BICEPS_ROSCADIRETA_SERIE = Convert.ToInt32(nSerie_RoscaDireta.Value);
+			Biceps.BICEPS_ROSCAALTERNADA_SERIE = Convert.ToInt32(nSerie_RoscaAlternada.Value);
+			Biceps.BICEPS_ROSCAMARTELO_SERIE = Convert.ToInt32(nSerie_RoscaMartelo.Value);
+			Biceps.BICEPS_ROSCACONCENTRADA_SERIE = Convert.ToInt32(nSerie_RoscaConcentrada.Value);
+			Biceps.BICEPS_ROSCAARTICULADA_SERIE = Convert.ToInt32(nSerie_RoscaArticulada.Value);
+			Biceps.BICEPS_ROSCABILATERAL_SERIE = Convert.ToInt32(nSerie_RoscaBilateral.Value);
+			Biceps.BICEPS_ROSCAROLDANA_SERIE = Convert.ToInt32(nSerie_RoscaRoldana.Value);
+			Biceps.BICEPS_ROSCASIMULTANEA_SERIE = Convert.ToInt32(nSerie_RoscaSimultanea.Value);
+
+			Biceps.BICEPS_ROSCADIRETA_REP = Convert.ToInt32(nRep_RoscaDireta.Value);
+			Biceps.BICEPS_ROSCAALTERNADA_REP = Convert.ToInt32(nRep_RoscaAlternada.Value);
+			Biceps.BICEPS_ROSCAMARTELO_REP = Convert.ToInt32(nRep_RoscaMartelo.Value);
+			Biceps.BICEPS_ROSCACONCENTRADA_REP = Convert.ToInt32(nRep_RoscaConcentrada.Value);
+			Biceps.BICEPS_ROSCAARTICULADA_REP = Convert.ToInt32(nRep_RoscaArticulada.Value);
+			Biceps.BICEPS_ROSCABILATERAL_REP = Convert.ToInt32(nRep_RoscaBilateral.Value);
+			Biceps.BICEPS_ROSCAROLDANA_REP = Convert.ToInt32(nRep_RoscaRoldana.Value);
+			Biceps.BICEPS_ROSCASIMULTANEA_REP = Convert.ToInt32(nRep_RoscaSimultanea.Value);
+
+			Biceps.BICEPS_ROSCADIRETA_CARGA = Convert.ToInt32(nCarga_RoscaDireta.Value);
+			Biceps.BICEPS_ROSCAALTERNADA_CARGA = Convert.ToInt32(nCarga_RoscaAlternada.Value);
+			Biceps.BICEPS_ROSCAMARTELO_CARGA = Convert.ToInt32(nCarga_RoscaMartelo.Value);
+			Biceps.BICEPS_ROSCACONCENTRADA_CARGA = Convert.ToInt32(nCarga_RoscaConcentrada.Value);
+			Biceps.BICEPS_ROSCAARTICULADA_CARGA = Convert.ToInt32(nCarga_RoscaBilateral.Value);
+			Biceps.BICEPS_ROSCABILATERAL_CARGA = Convert.ToInt32(nCarga_RoscaRoldana.Value);
+			Biceps.BICEPS_ROSCAROLDANA_CARGA = Convert.ToInt32(nCarga_RoscaRoldana.Value);
+			Biceps.BICEPS_ROSCASIMULTANEA_CARGA = Convert.ToInt32(nCarga_RoscaSimultanea.Value);
+
+			Biceps.BICEPS_WORKOUT = WorkOut.WORKOUT_ID;
 			#endregion
 			#region Chest
+			Chest.CHEST_SUPINORETO = cb_SupinoReto.Text;
+			Chest.CHEST_SUPINOINCLINADO = cb_SupinoInclinado.Text;
+			Chest.CHEST_SUPINOSENTADO = cb_SupinoSentado.Text;
+			Chest.CHEST_SUPINODUMBELL = cb_SupinoDumbell.Text;
+			Chest.CHEST_PECK = cb_Peck.Text;
+			Chest.CHEST_PECKDECK = cb_PeckDeckPeito.Text;
+			Chest.CHEST_CRUCIFIXO = cb_Crucifixo.Text;
+			Chest.CHEST_CROSSOVER = cb_CrossOver.Text;
 
+			Chest.CHEST_SUPINORETO_SERIE = Convert.ToInt32(nSerie_SupinoReto.Value);
+			Chest.CHEST_SUPINOINCLINADO_SERIE = Convert.ToInt32(nSerie_SupinoInclinado.Value);
+			Chest.CHEST_SUPINOSENTADO_SERIE = Convert.ToInt32(nSerie_SupinoSentado.Value);
+			Chest.CHEST_SUPINODUMBELL_SERIE = Convert.ToInt32(nSerie_SupinoDumbell.Value);
+			Chest.CHEST_PECK_SERIE = Convert.ToInt32(nSerie_Peck.Value);
+			Chest.CHEST_PECKDECK_SERIE = Convert.ToInt32(nSerie_PeckDeckPeito.Value);
+			Chest.CHEST_CRUCIFIXO_SERIE = Convert.ToInt32(nSerie_Crucifixo.Value);
+			Chest.CHEST_CROSSOVER_SERIE = Convert.ToInt32(nSerie_CrossOver.Value);
+
+			Chest.CHEST_SUPINORETO_REP = Convert.ToInt32(nRep_SupinoReto.Value);
+			Chest.CHEST_SUPINOINCLINADO_REP = Convert.ToInt32(nRep_SupinoInclinado.Value);
+			Chest.CHEST_SUPINOSENTADO_REP = Convert.ToInt32(nRep_SupinoSentado.Value);
+			Chest.CHEST_SUPINODUMBELL_REP = Convert.ToInt32(nRep_SupinoDumbell.Value);
+			Chest.CHEST_PECK_REP = Convert.ToInt32(nRep_Peck.Value);
+			Chest.CHEST_PECKDECK_REP = Convert.ToInt32(nRep_PeckDeckPeito.Value);
+			Chest.CHEST_CRUCIFIXO_REP = Convert.ToInt32(nRep_Crucifixo.Value);
+			Chest.CHEST_CROSSOVER_REP = Convert.ToInt32(nRep_CrossOver.Value);
+
+			Chest.CHEST_SUPINORETO_CARGA = Convert.ToInt32(nCarga_SupinoReto.Value);
+			Chest.CHEST_SUPINOINCLINADO_CARGA = Convert.ToInt32(nCarga_SupinoInclinado.Value);
+			Chest.CHEST_SUPINOSENTADO_CARGA = Convert.ToInt32(nCarga_SupinoSentado.Value);
+			Chest.CHEST_SUPINODUMBELL_CARGA = Convert.ToInt32(nCarga_SupinoDumbell.Value);
+			Chest.CHEST_PECK_CARGA = Convert.ToInt32(nCarga_Peck.Value);
+			Chest.CHEST_PECKDECK_CARGA = Convert.ToInt32(nCarga_PeckDeckPeito.Value);
+			Chest.CHEST_CRUCIFIXO_CARGA = Convert.ToInt32(nCarga_Crucifixo.Value);
+			Chest.CHEST_CROSSOVER_CARGA = Convert.ToInt32(nCarga_CrossOver.Value);
 			#endregion
 			#region Legs
+			Legs.LEGS_CADEIRAEXTENSORA = cb_CadeiraExtensora.Text;
+			Legs.LEGS_CADEIRAFLEXORA = cb_CadeiraFlexora.Text;
+			Legs.LEGS_ADUTOR = cb_Adutor.Text;
+			Legs.LEGS_ABDUTOR = cb_Abdutor.Text;
+			Legs.LEGS_LEGPRESS = cb_LegPress.Text;
+			Legs.LEGS_AGACHAMENTOLIVRE = cb_Agachamento.Text;
+			Legs.LEGS_HACK = cb_Hack.Text;
+			Legs.LEGS_PANTURRILHA = cb_Panturrilha.Text;
+			Legs.LEGS_STIFF = cb_Stiff.Text;
+			Legs.LEGS_GLUTEO = cb_Gluteo.Text;
+			Legs.LEGS_AVANCO = cb_Avanco.Text;
 
+			Legs.LEGS_CADEIRAEXTENSORA_SERIE = Convert.ToInt32(nSerie_CadeiraExtensorar.Value);
+			Legs.LEGS_CADEIRAFLEXORA_SERIE = Convert.ToInt32(nSerie_CadeiraFlexora.Value);
+			Legs.LEGS_ADUTOR_SERIE = Convert.ToInt32(nSerie_Adutor.Value);
+			Legs.LEGS_ABDUTOR_SERIE = Convert.ToInt32(nSerie_Abdutor.Value);
+			Legs.LEGS_LEGPRESS_SERIE = Convert.ToInt32(nSerie_LegPress.Value);
+			Legs.LEGS_AGACHAMENTOLIVRE_SERIE = Convert.ToInt32(nSerie_Agachamento.Value);
+			Legs.LEGS_HACK_SERIE = Convert.ToInt32(nSerie_Hack.Value);
+			Legs.LEGS_PANTURRILHA_SERIE = Convert.ToInt32(nSerie_Panturrilha.Value);
+			Legs.LEGS_STIFF_SERIE = Convert.ToInt32(nSerie_Stiff.Value);
+			Legs.LEGS_GLUTEO_SERIE = Convert.ToInt32(nSerie_Gluteo.Value);
+			Legs.LEGS_AVANCO_SERIE = Convert.ToInt32(nSerie_Avanco.Value);
+
+			Legs.LEGS_CADEIRAEXTENSORA_REP = Convert.ToInt32(nRep_CadeiraExtensora.Value);
+			Legs.LEGS_CADEIRAFLEXORA_REP = Convert.ToInt32(nRep_CadeiraFlexora.Value);
+			Legs.LEGS_ADUTOR_REP = Convert.ToInt32(nRep_Adutor.Value);
+			Legs.LEGS_ABDUTOR_REP = Convert.ToInt32(nRep_Abdutor.Value);
+			Legs.LEGS_LEGPRESS_REP = Convert.ToInt32(nRep_LegPress.Value);
+			Legs.LEGS_AGACHAMENTOLIVRE_REP = Convert.ToInt32(nRep_Agachamento.Value);
+			Legs.LEGS_HACK_REP = Convert.ToInt32(nRep_Hack.Value);
+			Legs.LEGS_PANTURRILHA_REP = Convert.ToInt32(nRep_Panturrilha.Value);
+			Legs.LEGS_STIFF_REP = Convert.ToInt32(nRep_Stiff.Value);
+			Legs.LEGS_GLUTEO_REP = Convert.ToInt32(nRep_Gluteo.Value);
+			Legs.LEGS_AVANCO_REP = Convert.ToInt32(nRep_Avanco.Value);
+
+			Legs.LEGS_CADEIRAEXTENSORA_CARGA = Convert.ToInt32(nCarga_CadeiraExtensora.Value);
+			Legs.LEGS_CADEIRAFLEXORA_CARGA = Convert.ToInt32(nCarga_CadeiraFlexora.Value);
+			Legs.LEGS_ADUTOR_CARGA = Convert.ToInt32(nCarga_Adutor.Value);
+			Legs.LEGS_ABDUTOR_CARGA = Convert.ToInt32(nCarga_Abdutor.Value);
+			Legs.LEGS_LEGPRESS_CARGA = Convert.ToInt32(nCarga_LegPress.Value);
+			Legs.LEGS_AGACHAMENTOLIVRE_CARGA = Convert.ToInt32(nCarga_Agachamento.Value);
+			Legs.LEGS_HACK_CARGA = Convert.ToInt32(nCarga_Hack.Value);
+			Legs.LEGS_PANTURRILHA_CARGA = Convert.ToInt32(nCarga_Panturrilha.Value);
+			Legs.LEGS_STIFF_CARGA = Convert.ToInt32(nCarga_Stiff.Value);
+			Legs.LEGS_GLUTEO_CARGA = Convert.ToInt32(nCarga_Gluteo.Value);
+			Legs.LEGS_AVANCO_CARGA = Convert.ToInt32(nCarga_Avanco.Value);
 			#endregion
 			#region Shoulders
+			Shoulders.SHOULDERS_ELEVACAOLATERAL = cb_ElevacaoLateral.Text;
+			Shoulders.SHOULDERS_ELEVACAOFRONTAL = cb_ElevacaoFrontal.Text;
+			Shoulders.SHOULDERS_ELEVACAOOMBRO = cb_ElevacaoOmbro.Text;
+			Shoulders.SHOULDERS_DEVCOSTAS = cb_DesenvolvimentoCostas.Text;
+			Shoulders.SHOULDERS_DEVFRENTE = cb_DesenvolvimentoFrente.Text;
+			Shoulders.SHOULDERS_DEVDUMBELL = cb_DesenvolvimentoDumbell.Text;
+			Shoulders.SHOULDERS_REMADAALTA = cb_RemadaAlta.Text;
 
+			Shoulders.SHOULDERS_ELEVACAOLATERAL_SERIE = Convert.ToInt32(nSerie_ElevacaoLateral.Value);
+			Shoulders.SHOULDERS_ELEVACAOFRONTAL_SERIE = Convert.ToInt32(nSerie_ElevacaoFrontal.Value);
+			Shoulders.SHOULDERS_ELEVACAOOMBRO_SERIE = Convert.ToInt32(nSerie_ElevacaoOmbro.Value);
+			Shoulders.SHOULDERS_DEVCOSTAS_SERIE = Convert.ToInt32(nSerie_DesenvolvimentoCostas.Value);
+			Shoulders.SHOULDERS_DEVFRENTE_SERIE = Convert.ToInt32(nSerie_DesenvolvimentoFrente.Value);
+			Shoulders.SHOULDERS_DEVDUMBELL_SERIE = Convert.ToInt32(nSerie_DesenvolvimentoDumbell.Value);
+			Shoulders.SHOULDERS_REMADAALTA_SERIE = Convert.ToInt32(nSerie_RemadaAlta.Value);
+
+			Shoulders.SHOULDERS_ELEVACAOLATERAL_REP = Convert.ToInt32(nRep_ElevacaoLateral.Value);
+			Shoulders.SHOULDERS_ELEVACAOFRONTAL_REP = Convert.ToInt32(nRep_ElevacaoFrontal.Value);
+			Shoulders.SHOULDERS_ELEVACAOOMBRO_REP = Convert.ToInt32(nRep_ElevacaoOmbro.Value);
+			Shoulders.SHOULDERS_DEVCOSTAS_REP = Convert.ToInt32(nRep_DesenvolvimentoCostas.Value);
+			Shoulders.SHOULDERS_DEVFRENTE_REP = Convert.ToInt32(nRep_DesenvolvimentoFrente.Value);
+			Shoulders.SHOULDERS_DEVDUMBELL_REP = Convert.ToInt32(nRep_DesenvolvimentoDumbell.Value);
+			Shoulders.SHOULDERS_REMADAALTA_REP = Convert.ToInt32(nRep_RemadaAlta.Value);
+
+			Shoulders.SHOULDERS_ELEVACAOLATERAL_CARGA = Convert.ToInt32(nCarga_ElevacaoLateral.Value);
+			Shoulders.SHOULDERS_ELEVACAOFRONTAL_CARGA = Convert.ToInt32(nCarga_ElevacaoFrontal.Value);
+			Shoulders.SHOULDERS_ELEVACAOOMBRO_CARGA = Convert.ToInt32(nCarga_ElevacaoOmbro.Value);
+			Shoulders.SHOULDERS_DEVCOSTAS_CARGA = Convert.ToInt32(nCarga_DesenvolvimentoCostas.Value);
+			Shoulders.SHOULDERS_DEVFRENTE_CARGA = Convert.ToInt32(nCarga_DesenvolvimentoFrente.Value);
+			Shoulders.SHOULDERS_DEVDUMBELL_CARGA = Convert.ToInt32(nCarga_DesenvolvimentoDumbell.Value);
+			Shoulders.SHOULDERS_REMADAALTA_CARGA = Convert.ToInt32(nCarga_RemadaAlta.Value);
+
+			Shoulders.SHOULDERS_WORKOUT = WorkOut.WORKOUT_ID;
 			#endregion
 			#region Triceps
+			Triceps.TRICEPS_PULLEY = cb_Pulley.Text;
+			Triceps.TRICEPS_ROSCATESTA = cb_RoscaTesta.Text;
+			Triceps.TRICEPS_PULLEYCORDA = cb_PulleyCorda.Text;
+			Triceps.TRICEPS_ROSCAFRANCESA = cb_RoscaFrancesa.Text;
+			Triceps.TRICEPS_ROSCASUPINADA = cb_RoscaSupinada.Text;
+			Triceps.TRICEPS_COICE = cb_Coice.Text;
+			Triceps.TRICEPS_INVERTIDO = cb_Invertido.Text;
+			Triceps.TRICEPS_MERGULHO = cb_Mergulho.Text;
 
+			Triceps.TRICEPS_PULLEY_SERIE = Convert.ToInt32(nSerie_Pulley.Value);
+			Triceps.TRICEPS_ROSCATESTA_SERIE = Convert.ToInt32(nSerie_RoscaTesta.Value);
+			Triceps.TRICEPS_PULLEYCORDA_SERIE = Convert.ToInt32(nSerie_PulleyCorda.Value);
+			Triceps.TRICEPS_ROSCAFRANCESA_SERIE = Convert.ToInt32(nSerie_RoscaFrancesa.Value);
+			Triceps.TRICEPS_ROSCASUPINADA_SERIE = Convert.ToInt32(nSerie_RoscaSupinada.Value);
+			Triceps.TRICEPS_COICE_SERIE = Convert.ToInt32(nSerie_Coice.Value);
+			Triceps.TRICEPS_INVERTIDO_SERIE = Convert.ToInt32(nSerie_Invertido.Value);
+			Triceps.TRICEPS_MERGULHO_SERIE = Convert.ToInt32(nSerie_Mergulho.Value);
+
+			Triceps.TRICEPS_PULLEY_REP = Convert.ToInt32(nRep_Pulley.Value);
+			Triceps.TRICEPS_ROSCATESTA_REP = Convert.ToInt32(nRep_RoscaTesta.Value);
+			Triceps.TRICEPS_PULLEYCORDA_REP = Convert.ToInt32(nRep_PulleyCorda.Value);
+			Triceps.TRICEPS_ROSCAFRANCESA_REP = Convert.ToInt32(nRep_RoscaFrancesa.Value);
+			Triceps.TRICEPS_ROSCASUPINADA_REP = Convert.ToInt32(nRep_RoscaSupinada.Value);
+			Triceps.TRICEPS_COICE_REP = Convert.ToInt32(nRep_Coice.Value);
+			Triceps.TRICEPS_INVERTIDO_REP = Convert.ToInt32(nRep_Invertido.Value);
+			Triceps.TRICEPS_MERGULHO_REP = Convert.ToInt32(nRep_Mergulho.Value);
+
+			Triceps.TRICEPS_PULLEY_CARGA = Convert.ToInt32(nCarga_Pulley.Value);
+			Triceps.TRICEPS_ROSCATESTA_CARGA = Convert.ToInt32(nCarga_RoscaTesta.Value);
+			Triceps.TRICEPS_PULLEYCORDA_CARGA = Convert.ToInt32(nCarga_PulleyCorda.Value);
+			Triceps.TRICEPS_ROSCAFRANCESA_CARGA = Convert.ToInt32(nCarga_RoscaFrancesa.Value);
+			Triceps.TRICEPS_ROSCASUPINADA_CARGA = Convert.ToInt32(nCarga_RoscaSupinada.Value);
+			Triceps.TRICEPS_COICE_CARGA = Convert.ToInt32(nCarga_Coice.Value);
+			Triceps.TRICEPS_INVERTIDO_CARGA = Convert.ToInt32(nCarga_Invertido.Value);
+			Triceps.TRICEPS_MERGULHO_CARGA = Convert.ToInt32(nCarga_Mergulho.Value);
+
+			Triceps.TRICEPS_WORKOUT = WorkOut.WORKOUT_ID;
 			#endregion
 			#region WarmUp
+			WarmUp.WARMUP_ESTEIRA = cb_Esteira.Text;
+			WarmUp.WARMUP_BICICLETA = cb_Bicicleta.Text;
+			WarmUp.WARMUP_ELIPTICO = cb_Eliptico.Text;
+			WarmUp.WARMUP_CORDA = cb_Corda.Text;
 
+			WarmUp.WARMUP_ESTEIRA_SERIE = Convert.ToInt32(nSerie_Esteira.Value);
+			WarmUp.WARMUP_BICICLETA_SERIE = Convert.ToInt32(nSerie_Bicicleta.Value);
+			WarmUp.WARMUP_ELIPTICO_SERIE = Convert.ToInt32(nSerie_Eliptico.Value);
+			WarmUp.WARMUP_CORDA_SERIE = Convert.ToInt32(nSerie_Corda.Value);
+
+			WarmUp.WARMUP_ESTEIRA_REP = Convert.ToInt32(nRep_Esteira.Value);
+			WarmUp.WARMUP_BICICLETA_REP = Convert.ToInt32(nRep_Bicicleta.Value);
+			WarmUp.WARMUP_ELIPTICO_REP = Convert.ToInt32(nRep_Eliptico.Value);
+			WarmUp.WARMUP_CORDA_REP = Convert.ToInt32(nRep_Corda.Value);
+
+			WarmUp.WARMUP_ESTEIRA_CARGA = Convert.ToInt32(nCarga_Esteira.Value);
+			WarmUp.WARMUP_BICICLETA_CARGA = Convert.ToInt32(nCarga_Bicicleta.Value);
+			WarmUp.WARMUP_ELIPTICO_CARGA = Convert.ToInt32(nCarga_Eliptico.Value);
+			WarmUp.WARMUP_CORDA_CARGA = Convert.ToInt32(nCarga_Corda.Value);
+
+			WarmUp.WARMUP_WORKOUT = WorkOut.WORKOUT_ID;
 			#endregion
 
-			DataBase.NewWorkout(workout, abs, back);
+			DataBase.NewWorkout(workout, abs, back, biceps, chest, legs, shoulders, triceps, warmup);
+		}
+
+		private void frm_WorkOut_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == (char)Keys.Enter) //Pode ser usado tambem (e.KeyCode == Keys.Enter)
+			{
+				this.ProcessTabKey(true);
+				e.Handled = true; //Retira o som do windos na tecla
+			}
+		}
+
+		private void frm_WorkOut_Load(object sender, EventArgs e)
+		{
+			cb_RetoAbdomen.Text = Abs.ABS_RETOABDOMEN.ToString();
+		}
+
+		private void frm_WorkOut_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			Abs.ABS_RETOABDOMEN = "";
 		}
 	}
 }

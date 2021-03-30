@@ -58,6 +58,6 @@ namespace Rock_Solid
 		public static Int32 LEGS_GLUTEO_CARGA = 0;
 		public static Int32 LEGS_AVANCO_CARGA = 0;
 
-		public static Int32 LEGS_LEGS = 0;
+		public static Int32 LEGS_WORKOUT = 0;
 	}
 }

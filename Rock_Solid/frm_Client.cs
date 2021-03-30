@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -346,6 +348,7 @@ namespace Rock_Solid
 
 		private void btn_Workout_Click(object sender, EventArgs e)
 		{
+			DataBase.SelectWorkOut();
 			frm_WorkOut workout = new frm_WorkOut();
 			workout.ShowDialog();
 		}

@@ -59,5 +59,14 @@ namespace Rock_Solid
 		{
 			this.Close();
 		}
+
+		private void frm_Login_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == (char)Keys.Enter) //Pode ser usado tambem (e.KeyCode == Keys.Enter)
+			{
+				this.ProcessTabKey(true);
+				e.Handled = true; //Retira o som do windos na tecla
+			}
+		}
 	}
 }

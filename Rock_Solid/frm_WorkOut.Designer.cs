@@ -95,7 +95,7 @@ namespace Rock_Solid
 			this.nRep_RoscaTesta = new System.Windows.Forms.NumericUpDown();
 			this.nRep_Pulley = new System.Windows.Forms.NumericUpDown();
 			this.gb_SerieTriceps = new System.Windows.Forms.GroupBox();
-			this.nSerie_ergulho = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Mergulho = new System.Windows.Forms.NumericUpDown();
 			this.nSerie_Invertido = new System.Windows.Forms.NumericUpDown();
 			this.nSerie_Coice = new System.Windows.Forms.NumericUpDown();
 			this.nSerie_RoscaSupinada = new System.Windows.Forms.NumericUpDown();
@@ -167,7 +167,7 @@ namespace Rock_Solid
 			this.nCarga_Stiff = new System.Windows.Forms.NumericUpDown();
 			this.nCarga_Panturrilha = new System.Windows.Forms.NumericUpDown();
 			this.nCarga_Hack = new System.Windows.Forms.NumericUpDown();
-			this.nCarga_AgachamentoLivre = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_Agachamento = new System.Windows.Forms.NumericUpDown();
 			this.nCarga_LegPress = new System.Windows.Forms.NumericUpDown();
 			this.nCarga_Abdutor = new System.Windows.Forms.NumericUpDown();
 			this.nCarga_Adutor = new System.Windows.Forms.NumericUpDown();
@@ -179,7 +179,7 @@ namespace Rock_Solid
 			this.nRep_Stiff = new System.Windows.Forms.NumericUpDown();
 			this.nRep_Panturrilha = new System.Windows.Forms.NumericUpDown();
 			this.nRep_Hack = new System.Windows.Forms.NumericUpDown();
-			this.nRep_AgachamentoLivre = new System.Windows.Forms.NumericUpDown();
+			this.nRep_Agachamento = new System.Windows.Forms.NumericUpDown();
 			this.nRep_LegPress = new System.Windows.Forms.NumericUpDown();
 			this.nRep_Abdutor = new System.Windows.Forms.NumericUpDown();
 			this.nRep_Adutor = new System.Windows.Forms.NumericUpDown();
@@ -191,7 +191,7 @@ namespace Rock_Solid
 			this.nSerie_Stiff = new System.Windows.Forms.NumericUpDown();
 			this.nSerie_Panturrilha = new System.Windows.Forms.NumericUpDown();
 			this.nSerie_Hack = new System.Windows.Forms.NumericUpDown();
-			this.nSerie_AgachamentoLivre = new System.Windows.Forms.NumericUpDown();
+			this.nSerie_Agachamento = new System.Windows.Forms.NumericUpDown();
 			this.nSerie_LegPress = new System.Windows.Forms.NumericUpDown();
 			this.nSerie_Abdutor = new System.Windows.Forms.NumericUpDown();
 			this.nSerie_Adutor = new System.Windows.Forms.NumericUpDown();
@@ -224,7 +224,7 @@ namespace Rock_Solid
 			this.gb_CargaPeito = new System.Windows.Forms.GroupBox();
 			this.nCarga_CrossOver = new System.Windows.Forms.NumericUpDown();
 			this.nCarga_Crucifixo = new System.Windows.Forms.NumericUpDown();
-			this.nCarga_PeckDeck = new System.Windows.Forms.NumericUpDown();
+			this.nCarga_PeckDeckPeito = new System.Windows.Forms.NumericUpDown();
 			this.nCarga_Peck = new System.Windows.Forms.NumericUpDown();
 			this.nCarga_SupinoDumbell = new System.Windows.Forms.NumericUpDown();
 			this.nCarga_SupinoSentado = new System.Windows.Forms.NumericUpDown();
@@ -233,7 +233,7 @@ namespace Rock_Solid
 			this.gb_RepeticaoPeito = new System.Windows.Forms.GroupBox();
 			this.nRep_CrossOver = new System.Windows.Forms.NumericUpDown();
 			this.nRep_Crucifixo = new System.Windows.Forms.NumericUpDown();
-			this.nRep_PeckDeck = new System.Windows.Forms.NumericUpDown();
+			this.nRep_PeckDeckPeito = new System.Windows.Forms.NumericUpDown();
 			this.nRep_Peck = new System.Windows.Forms.NumericUpDown();
 			this.nRep_SupinoDumbell = new System.Windows.Forms.NumericUpDown();
 			this.nRep_SupinoSentado = new System.Windows.Forms.NumericUpDown();
@@ -258,7 +258,7 @@ namespace Rock_Solid
 			this.lb_SupinoInclinado = new System.Windows.Forms.Label();
 			this.lb_SupinoReto = new System.Windows.Forms.Label();
 			this.cb_CrossOver = new System.Windows.Forms.ComboBox();
-			this.cb_crucifixo = new System.Windows.Forms.ComboBox();
+			this.cb_Crucifixo = new System.Windows.Forms.ComboBox();
 			this.cb_PeckDeckPeito = new System.Windows.Forms.ComboBox();
 			this.cb_Peck = new System.Windows.Forms.ComboBox();
 			this.cb_SupinoDumbell = new System.Windows.Forms.ComboBox();
@@ -434,7 +434,7 @@ namespace Rock_Solid
 			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaTesta)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Pulley)).BeginInit();
 			this.gb_SerieTriceps.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.nSerie_ergulho)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Mergulho)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Invertido)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Coice)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaSupinada)).BeginInit();
@@ -476,7 +476,7 @@ namespace Rock_Solid
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Stiff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Panturrilha)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Hack)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nCarga_AgachamentoLivre)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Agachamento)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_LegPress)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Abdutor)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Adutor)).BeginInit();
@@ -488,7 +488,7 @@ namespace Rock_Solid
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Stiff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Panturrilha)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Hack)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nRep_AgachamentoLivre)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Agachamento)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_LegPress)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Abdutor)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Adutor)).BeginInit();
@@ -500,7 +500,7 @@ namespace Rock_Solid
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Stiff)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Panturrilha)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Hack)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nSerie_AgachamentoLivre)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Agachamento)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_LegPress)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Abdutor)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Adutor)).BeginInit();
@@ -511,7 +511,7 @@ namespace Rock_Solid
 			this.gb_CargaPeito.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_CrossOver)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Crucifixo)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nCarga_PeckDeck)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PeckDeckPeito)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Peck)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_SupinoDumbell)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_SupinoSentado)).BeginInit();
@@ -520,7 +520,7 @@ namespace Rock_Solid
 			this.gb_RepeticaoPeito.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_CrossOver)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Crucifixo)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nRep_PeckDeck)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PeckDeckPeito)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Peck)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_SupinoDumbell)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_SupinoSentado)).BeginInit();
@@ -671,7 +671,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RoscaSimultanea.Name = "nCarga_RoscaSimultanea";
 			this.nCarga_RoscaSimultanea.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RoscaSimultanea.TabIndex = 32;
+			this.nCarga_RoscaSimultanea.TabIndex = 7;
 			// 
 			// nCarga_RoscaRoldana
 			// 
@@ -683,7 +683,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RoscaRoldana.Name = "nCarga_RoscaRoldana";
 			this.nCarga_RoscaRoldana.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RoscaRoldana.TabIndex = 31;
+			this.nCarga_RoscaRoldana.TabIndex = 6;
 			// 
 			// nCarga_RoscaBilateral
 			// 
@@ -695,7 +695,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RoscaBilateral.Name = "nCarga_RoscaBilateral";
 			this.nCarga_RoscaBilateral.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RoscaBilateral.TabIndex = 30;
+			this.nCarga_RoscaBilateral.TabIndex = 5;
 			// 
 			// nCarga_RoscaArticulada
 			// 
@@ -707,7 +707,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RoscaArticulada.Name = "nCarga_RoscaArticulada";
 			this.nCarga_RoscaArticulada.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RoscaArticulada.TabIndex = 29;
+			this.nCarga_RoscaArticulada.TabIndex = 4;
 			// 
 			// nCarga_RoscaConcentrada
 			// 
@@ -719,7 +719,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RoscaConcentrada.Name = "nCarga_RoscaConcentrada";
 			this.nCarga_RoscaConcentrada.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RoscaConcentrada.TabIndex = 28;
+			this.nCarga_RoscaConcentrada.TabIndex = 3;
 			// 
 			// nCarga_RoscaMartelo
 			// 
@@ -731,7 +731,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RoscaMartelo.Name = "nCarga_RoscaMartelo";
 			this.nCarga_RoscaMartelo.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RoscaMartelo.TabIndex = 27;
+			this.nCarga_RoscaMartelo.TabIndex = 2;
 			// 
 			// nCarga_RoscaAlternada
 			// 
@@ -743,7 +743,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RoscaAlternada.Name = "nCarga_RoscaAlternada";
 			this.nCarga_RoscaAlternada.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RoscaAlternada.TabIndex = 26;
+			this.nCarga_RoscaAlternada.TabIndex = 1;
 			// 
 			// nCarga_RoscaDireta
 			// 
@@ -755,7 +755,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RoscaDireta.Name = "nCarga_RoscaDireta";
 			this.nCarga_RoscaDireta.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RoscaDireta.TabIndex = 25;
+			this.nCarga_RoscaDireta.TabIndex = 0;
 			// 
 			// gb_RepeticaoBiceps
 			// 
@@ -784,7 +784,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RoscaSimultanea.Name = "nRep_RoscaSimultanea";
 			this.nRep_RoscaSimultanea.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RoscaSimultanea.TabIndex = 32;
+			this.nRep_RoscaSimultanea.TabIndex = 7;
 			// 
 			// nRep_RoscaRoldana
 			// 
@@ -796,7 +796,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RoscaRoldana.Name = "nRep_RoscaRoldana";
 			this.nRep_RoscaRoldana.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RoscaRoldana.TabIndex = 31;
+			this.nRep_RoscaRoldana.TabIndex = 6;
 			// 
 			// nRep_RoscaBilateral
 			// 
@@ -808,7 +808,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RoscaBilateral.Name = "nRep_RoscaBilateral";
 			this.nRep_RoscaBilateral.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RoscaBilateral.TabIndex = 30;
+			this.nRep_RoscaBilateral.TabIndex = 5;
 			// 
 			// nRep_RoscaArticulada
 			// 
@@ -820,7 +820,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RoscaArticulada.Name = "nRep_RoscaArticulada";
 			this.nRep_RoscaArticulada.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RoscaArticulada.TabIndex = 29;
+			this.nRep_RoscaArticulada.TabIndex = 4;
 			// 
 			// nRep_RoscaConcentrada
 			// 
@@ -832,7 +832,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RoscaConcentrada.Name = "nRep_RoscaConcentrada";
 			this.nRep_RoscaConcentrada.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RoscaConcentrada.TabIndex = 28;
+			this.nRep_RoscaConcentrada.TabIndex = 3;
 			// 
 			// nRep_RoscaMartelo
 			// 
@@ -844,7 +844,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RoscaMartelo.Name = "nRep_RoscaMartelo";
 			this.nRep_RoscaMartelo.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RoscaMartelo.TabIndex = 27;
+			this.nRep_RoscaMartelo.TabIndex = 2;
 			// 
 			// nRep_RoscaAlternada
 			// 
@@ -856,7 +856,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RoscaAlternada.Name = "nRep_RoscaAlternada";
 			this.nRep_RoscaAlternada.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RoscaAlternada.TabIndex = 26;
+			this.nRep_RoscaAlternada.TabIndex = 1;
 			// 
 			// nRep_RoscaDireta
 			// 
@@ -868,7 +868,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RoscaDireta.Name = "nRep_RoscaDireta";
 			this.nRep_RoscaDireta.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RoscaDireta.TabIndex = 25;
+			this.nRep_RoscaDireta.TabIndex = 0;
 			// 
 			// gb_SerieBiceps
 			// 
@@ -892,49 +892,49 @@ namespace Rock_Solid
 			this.nSerie_RoscaSimultanea.Location = new System.Drawing.Point(12, 201);
 			this.nSerie_RoscaSimultanea.Name = "nSerie_RoscaSimultanea";
 			this.nSerie_RoscaSimultanea.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RoscaSimultanea.TabIndex = 17;
+			this.nSerie_RoscaSimultanea.TabIndex = 7;
 			// 
 			// nSerie_RoscaRoldana
 			// 
 			this.nSerie_RoscaRoldana.Location = new System.Drawing.Point(12, 175);
 			this.nSerie_RoscaRoldana.Name = "nSerie_RoscaRoldana";
 			this.nSerie_RoscaRoldana.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RoscaRoldana.TabIndex = 16;
+			this.nSerie_RoscaRoldana.TabIndex = 6;
 			// 
 			// nSerie_RoscaBilateral
 			// 
 			this.nSerie_RoscaBilateral.Location = new System.Drawing.Point(12, 146);
 			this.nSerie_RoscaBilateral.Name = "nSerie_RoscaBilateral";
 			this.nSerie_RoscaBilateral.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RoscaBilateral.TabIndex = 15;
+			this.nSerie_RoscaBilateral.TabIndex = 5;
 			// 
 			// nSerie_RoscaArticulada
 			// 
 			this.nSerie_RoscaArticulada.Location = new System.Drawing.Point(12, 120);
 			this.nSerie_RoscaArticulada.Name = "nSerie_RoscaArticulada";
 			this.nSerie_RoscaArticulada.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RoscaArticulada.TabIndex = 14;
+			this.nSerie_RoscaArticulada.TabIndex = 4;
 			// 
 			// nSerie_RoscaConcentrada
 			// 
 			this.nSerie_RoscaConcentrada.Location = new System.Drawing.Point(12, 94);
 			this.nSerie_RoscaConcentrada.Name = "nSerie_RoscaConcentrada";
 			this.nSerie_RoscaConcentrada.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RoscaConcentrada.TabIndex = 13;
+			this.nSerie_RoscaConcentrada.TabIndex = 3;
 			// 
 			// nSerie_RoscaMartelo
 			// 
 			this.nSerie_RoscaMartelo.Location = new System.Drawing.Point(12, 68);
 			this.nSerie_RoscaMartelo.Name = "nSerie_RoscaMartelo";
 			this.nSerie_RoscaMartelo.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RoscaMartelo.TabIndex = 12;
+			this.nSerie_RoscaMartelo.TabIndex = 2;
 			// 
 			// nSerie_RoscaAlternada
 			// 
 			this.nSerie_RoscaAlternada.Location = new System.Drawing.Point(12, 42);
 			this.nSerie_RoscaAlternada.Name = "nSerie_RoscaAlternada";
 			this.nSerie_RoscaAlternada.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RoscaAlternada.TabIndex = 11;
+			this.nSerie_RoscaAlternada.TabIndex = 1;
 			// 
 			// nSerie_RoscaDireta
 			// 
@@ -1053,7 +1053,7 @@ namespace Rock_Solid
 			this.cb_RoscaSimultanea.Location = new System.Drawing.Point(150, 200);
 			this.cb_RoscaSimultanea.Name = "cb_RoscaSimultanea";
 			this.cb_RoscaSimultanea.Size = new System.Drawing.Size(50, 21);
-			this.cb_RoscaSimultanea.TabIndex = 36;
+			this.cb_RoscaSimultanea.TabIndex = 7;
 			// 
 			// cb_RoscaRoldana
 			// 
@@ -1068,7 +1068,7 @@ namespace Rock_Solid
 			this.cb_RoscaRoldana.Location = new System.Drawing.Point(150, 174);
 			this.cb_RoscaRoldana.Name = "cb_RoscaRoldana";
 			this.cb_RoscaRoldana.Size = new System.Drawing.Size(50, 21);
-			this.cb_RoscaRoldana.TabIndex = 35;
+			this.cb_RoscaRoldana.TabIndex = 6;
 			// 
 			// cb_RoscaBilateral
 			// 
@@ -1083,7 +1083,7 @@ namespace Rock_Solid
 			this.cb_RoscaBilateral.Location = new System.Drawing.Point(150, 145);
 			this.cb_RoscaBilateral.Name = "cb_RoscaBilateral";
 			this.cb_RoscaBilateral.Size = new System.Drawing.Size(50, 21);
-			this.cb_RoscaBilateral.TabIndex = 34;
+			this.cb_RoscaBilateral.TabIndex = 5;
 			// 
 			// cb_RoscaArticulada
 			// 
@@ -1098,7 +1098,7 @@ namespace Rock_Solid
 			this.cb_RoscaArticulada.Location = new System.Drawing.Point(150, 119);
 			this.cb_RoscaArticulada.Name = "cb_RoscaArticulada";
 			this.cb_RoscaArticulada.Size = new System.Drawing.Size(50, 21);
-			this.cb_RoscaArticulada.TabIndex = 33;
+			this.cb_RoscaArticulada.TabIndex = 4;
 			// 
 			// cb_RoscaConcentrada
 			// 
@@ -1113,7 +1113,7 @@ namespace Rock_Solid
 			this.cb_RoscaConcentrada.Location = new System.Drawing.Point(150, 93);
 			this.cb_RoscaConcentrada.Name = "cb_RoscaConcentrada";
 			this.cb_RoscaConcentrada.Size = new System.Drawing.Size(50, 21);
-			this.cb_RoscaConcentrada.TabIndex = 32;
+			this.cb_RoscaConcentrada.TabIndex = 3;
 			// 
 			// cb_RoscaMartelo
 			// 
@@ -1128,7 +1128,7 @@ namespace Rock_Solid
 			this.cb_RoscaMartelo.Location = new System.Drawing.Point(150, 67);
 			this.cb_RoscaMartelo.Name = "cb_RoscaMartelo";
 			this.cb_RoscaMartelo.Size = new System.Drawing.Size(50, 21);
-			this.cb_RoscaMartelo.TabIndex = 31;
+			this.cb_RoscaMartelo.TabIndex = 2;
 			// 
 			// cb_RoscaAlternada
 			// 
@@ -1143,7 +1143,7 @@ namespace Rock_Solid
 			this.cb_RoscaAlternada.Location = new System.Drawing.Point(150, 41);
 			this.cb_RoscaAlternada.Name = "cb_RoscaAlternada";
 			this.cb_RoscaAlternada.Size = new System.Drawing.Size(50, 21);
-			this.cb_RoscaAlternada.TabIndex = 30;
+			this.cb_RoscaAlternada.TabIndex = 1;
 			// 
 			// cb_RoscaDireta
 			// 
@@ -1158,7 +1158,7 @@ namespace Rock_Solid
 			this.cb_RoscaDireta.Location = new System.Drawing.Point(150, 15);
 			this.cb_RoscaDireta.Name = "cb_RoscaDireta";
 			this.cb_RoscaDireta.Size = new System.Drawing.Size(50, 21);
-			this.cb_RoscaDireta.TabIndex = 29;
+			this.cb_RoscaDireta.TabIndex = 0;
 			// 
 			// tp_Triceps
 			// 
@@ -1201,7 +1201,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Mergulho.Name = "nCarga_Mergulho";
 			this.nCarga_Mergulho.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Mergulho.TabIndex = 32;
+			this.nCarga_Mergulho.TabIndex = 7;
 			// 
 			// nCarga_Invertido
 			// 
@@ -1213,7 +1213,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Invertido.Name = "nCarga_Invertido";
 			this.nCarga_Invertido.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Invertido.TabIndex = 31;
+			this.nCarga_Invertido.TabIndex = 6;
 			// 
 			// nCarga_Coice
 			// 
@@ -1225,7 +1225,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Coice.Name = "nCarga_Coice";
 			this.nCarga_Coice.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Coice.TabIndex = 30;
+			this.nCarga_Coice.TabIndex = 5;
 			// 
 			// nCarga_RoscaSupinada
 			// 
@@ -1237,7 +1237,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RoscaSupinada.Name = "nCarga_RoscaSupinada";
 			this.nCarga_RoscaSupinada.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RoscaSupinada.TabIndex = 29;
+			this.nCarga_RoscaSupinada.TabIndex = 4;
 			// 
 			// nCarga_RoscaFrancesa
 			// 
@@ -1249,7 +1249,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RoscaFrancesa.Name = "nCarga_RoscaFrancesa";
 			this.nCarga_RoscaFrancesa.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RoscaFrancesa.TabIndex = 28;
+			this.nCarga_RoscaFrancesa.TabIndex = 3;
 			// 
 			// nCarga_PulleyCorda
 			// 
@@ -1261,7 +1261,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_PulleyCorda.Name = "nCarga_PulleyCorda";
 			this.nCarga_PulleyCorda.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_PulleyCorda.TabIndex = 27;
+			this.nCarga_PulleyCorda.TabIndex = 2;
 			// 
 			// nCarga_RoscaTesta
 			// 
@@ -1273,7 +1273,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RoscaTesta.Name = "nCarga_RoscaTesta";
 			this.nCarga_RoscaTesta.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RoscaTesta.TabIndex = 26;
+			this.nCarga_RoscaTesta.TabIndex = 1;
 			// 
 			// nCarga_Pulley
 			// 
@@ -1285,7 +1285,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Pulley.Name = "nCarga_Pulley";
 			this.nCarga_Pulley.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Pulley.TabIndex = 25;
+			this.nCarga_Pulley.TabIndex = 0;
 			// 
 			// gb_RepeticaoTriceps
 			// 
@@ -1314,7 +1314,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Mergulho.Name = "nRep_Mergulho";
 			this.nRep_Mergulho.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Mergulho.TabIndex = 32;
+			this.nRep_Mergulho.TabIndex = 7;
 			// 
 			// nRep_Invertido
 			// 
@@ -1326,7 +1326,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Invertido.Name = "nRep_Invertido";
 			this.nRep_Invertido.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Invertido.TabIndex = 31;
+			this.nRep_Invertido.TabIndex = 6;
 			// 
 			// nRep_Coice
 			// 
@@ -1338,7 +1338,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Coice.Name = "nRep_Coice";
 			this.nRep_Coice.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Coice.TabIndex = 30;
+			this.nRep_Coice.TabIndex = 5;
 			// 
 			// nRep_RoscaSupinada
 			// 
@@ -1350,7 +1350,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RoscaSupinada.Name = "nRep_RoscaSupinada";
 			this.nRep_RoscaSupinada.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RoscaSupinada.TabIndex = 29;
+			this.nRep_RoscaSupinada.TabIndex = 4;
 			// 
 			// nRep_RoscaFrancesa
 			// 
@@ -1362,7 +1362,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RoscaFrancesa.Name = "nRep_RoscaFrancesa";
 			this.nRep_RoscaFrancesa.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RoscaFrancesa.TabIndex = 28;
+			this.nRep_RoscaFrancesa.TabIndex = 3;
 			// 
 			// nRep_PulleyCorda
 			// 
@@ -1374,7 +1374,7 @@ namespace Rock_Solid
             0});
 			this.nRep_PulleyCorda.Name = "nRep_PulleyCorda";
 			this.nRep_PulleyCorda.Size = new System.Drawing.Size(80, 20);
-			this.nRep_PulleyCorda.TabIndex = 27;
+			this.nRep_PulleyCorda.TabIndex = 2;
 			// 
 			// nRep_RoscaTesta
 			// 
@@ -1386,7 +1386,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RoscaTesta.Name = "nRep_RoscaTesta";
 			this.nRep_RoscaTesta.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RoscaTesta.TabIndex = 26;
+			this.nRep_RoscaTesta.TabIndex = 1;
 			// 
 			// nRep_Pulley
 			// 
@@ -1398,11 +1398,11 @@ namespace Rock_Solid
             0});
 			this.nRep_Pulley.Name = "nRep_Pulley";
 			this.nRep_Pulley.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Pulley.TabIndex = 25;
+			this.nRep_Pulley.TabIndex = 0;
 			// 
 			// gb_SerieTriceps
 			// 
-			this.gb_SerieTriceps.Controls.Add(this.nSerie_ergulho);
+			this.gb_SerieTriceps.Controls.Add(this.nSerie_Mergulho);
 			this.gb_SerieTriceps.Controls.Add(this.nSerie_Invertido);
 			this.gb_SerieTriceps.Controls.Add(this.nSerie_Coice);
 			this.gb_SerieTriceps.Controls.Add(this.nSerie_RoscaSupinada);
@@ -1417,54 +1417,54 @@ namespace Rock_Solid
 			this.gb_SerieTriceps.TabStop = false;
 			this.gb_SerieTriceps.Text = "Serie";
 			// 
-			// nSerie_ergulho
+			// nSerie_Mergulho
 			// 
-			this.nSerie_ergulho.Location = new System.Drawing.Point(12, 201);
-			this.nSerie_ergulho.Name = "nSerie_ergulho";
-			this.nSerie_ergulho.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_ergulho.TabIndex = 17;
+			this.nSerie_Mergulho.Location = new System.Drawing.Point(12, 201);
+			this.nSerie_Mergulho.Name = "nSerie_Mergulho";
+			this.nSerie_Mergulho.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Mergulho.TabIndex = 7;
 			// 
 			// nSerie_Invertido
 			// 
 			this.nSerie_Invertido.Location = new System.Drawing.Point(12, 175);
 			this.nSerie_Invertido.Name = "nSerie_Invertido";
 			this.nSerie_Invertido.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Invertido.TabIndex = 16;
+			this.nSerie_Invertido.TabIndex = 6;
 			// 
 			// nSerie_Coice
 			// 
 			this.nSerie_Coice.Location = new System.Drawing.Point(12, 146);
 			this.nSerie_Coice.Name = "nSerie_Coice";
 			this.nSerie_Coice.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Coice.TabIndex = 15;
+			this.nSerie_Coice.TabIndex = 5;
 			// 
 			// nSerie_RoscaSupinada
 			// 
 			this.nSerie_RoscaSupinada.Location = new System.Drawing.Point(12, 120);
 			this.nSerie_RoscaSupinada.Name = "nSerie_RoscaSupinada";
 			this.nSerie_RoscaSupinada.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RoscaSupinada.TabIndex = 14;
+			this.nSerie_RoscaSupinada.TabIndex = 4;
 			// 
 			// nSerie_RoscaFrancesa
 			// 
 			this.nSerie_RoscaFrancesa.Location = new System.Drawing.Point(12, 94);
 			this.nSerie_RoscaFrancesa.Name = "nSerie_RoscaFrancesa";
 			this.nSerie_RoscaFrancesa.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RoscaFrancesa.TabIndex = 13;
+			this.nSerie_RoscaFrancesa.TabIndex = 3;
 			// 
 			// nSerie_PulleyCorda
 			// 
 			this.nSerie_PulleyCorda.Location = new System.Drawing.Point(12, 68);
 			this.nSerie_PulleyCorda.Name = "nSerie_PulleyCorda";
 			this.nSerie_PulleyCorda.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_PulleyCorda.TabIndex = 12;
+			this.nSerie_PulleyCorda.TabIndex = 2;
 			// 
 			// nSerie_RoscaTesta
 			// 
 			this.nSerie_RoscaTesta.Location = new System.Drawing.Point(12, 42);
 			this.nSerie_RoscaTesta.Name = "nSerie_RoscaTesta";
 			this.nSerie_RoscaTesta.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RoscaTesta.TabIndex = 11;
+			this.nSerie_RoscaTesta.TabIndex = 1;
 			// 
 			// nSerie_Pulley
 			// 
@@ -1583,7 +1583,7 @@ namespace Rock_Solid
 			this.cb_Mergulho.Location = new System.Drawing.Point(150, 200);
 			this.cb_Mergulho.Name = "cb_Mergulho";
 			this.cb_Mergulho.Size = new System.Drawing.Size(50, 21);
-			this.cb_Mergulho.TabIndex = 44;
+			this.cb_Mergulho.TabIndex = 7;
 			// 
 			// cb_Invertido
 			// 
@@ -1598,7 +1598,7 @@ namespace Rock_Solid
 			this.cb_Invertido.Location = new System.Drawing.Point(150, 174);
 			this.cb_Invertido.Name = "cb_Invertido";
 			this.cb_Invertido.Size = new System.Drawing.Size(50, 21);
-			this.cb_Invertido.TabIndex = 43;
+			this.cb_Invertido.TabIndex = 6;
 			// 
 			// cb_Coice
 			// 
@@ -1613,7 +1613,7 @@ namespace Rock_Solid
 			this.cb_Coice.Location = new System.Drawing.Point(150, 145);
 			this.cb_Coice.Name = "cb_Coice";
 			this.cb_Coice.Size = new System.Drawing.Size(50, 21);
-			this.cb_Coice.TabIndex = 42;
+			this.cb_Coice.TabIndex = 5;
 			// 
 			// cb_RoscaSupinada
 			// 
@@ -1628,7 +1628,7 @@ namespace Rock_Solid
 			this.cb_RoscaSupinada.Location = new System.Drawing.Point(150, 119);
 			this.cb_RoscaSupinada.Name = "cb_RoscaSupinada";
 			this.cb_RoscaSupinada.Size = new System.Drawing.Size(50, 21);
-			this.cb_RoscaSupinada.TabIndex = 41;
+			this.cb_RoscaSupinada.TabIndex = 4;
 			// 
 			// cb_RoscaFrancesa
 			// 
@@ -1643,7 +1643,7 @@ namespace Rock_Solid
 			this.cb_RoscaFrancesa.Location = new System.Drawing.Point(150, 93);
 			this.cb_RoscaFrancesa.Name = "cb_RoscaFrancesa";
 			this.cb_RoscaFrancesa.Size = new System.Drawing.Size(50, 21);
-			this.cb_RoscaFrancesa.TabIndex = 40;
+			this.cb_RoscaFrancesa.TabIndex = 3;
 			// 
 			// cb_PulleyCorda
 			// 
@@ -1658,7 +1658,7 @@ namespace Rock_Solid
 			this.cb_PulleyCorda.Location = new System.Drawing.Point(150, 67);
 			this.cb_PulleyCorda.Name = "cb_PulleyCorda";
 			this.cb_PulleyCorda.Size = new System.Drawing.Size(50, 21);
-			this.cb_PulleyCorda.TabIndex = 39;
+			this.cb_PulleyCorda.TabIndex = 2;
 			// 
 			// cb_RoscaTesta
 			// 
@@ -1673,7 +1673,7 @@ namespace Rock_Solid
 			this.cb_RoscaTesta.Location = new System.Drawing.Point(150, 41);
 			this.cb_RoscaTesta.Name = "cb_RoscaTesta";
 			this.cb_RoscaTesta.Size = new System.Drawing.Size(50, 21);
-			this.cb_RoscaTesta.TabIndex = 38;
+			this.cb_RoscaTesta.TabIndex = 1;
 			// 
 			// cb_Pulley
 			// 
@@ -1688,7 +1688,7 @@ namespace Rock_Solid
 			this.cb_Pulley.Location = new System.Drawing.Point(150, 15);
 			this.cb_Pulley.Name = "cb_Pulley";
 			this.cb_Pulley.Size = new System.Drawing.Size(50, 21);
-			this.cb_Pulley.TabIndex = 37;
+			this.cb_Pulley.TabIndex = 0;
 			// 
 			// tp_Ombro
 			// 
@@ -1730,7 +1730,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RemadaAlta.Name = "nCarga_RemadaAlta";
 			this.nCarga_RemadaAlta.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RemadaAlta.TabIndex = 31;
+			this.nCarga_RemadaAlta.TabIndex = 6;
 			// 
 			// nCarga_DesenvolvimentoDumbell
 			// 
@@ -1742,7 +1742,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_DesenvolvimentoDumbell.Name = "nCarga_DesenvolvimentoDumbell";
 			this.nCarga_DesenvolvimentoDumbell.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_DesenvolvimentoDumbell.TabIndex = 30;
+			this.nCarga_DesenvolvimentoDumbell.TabIndex = 5;
 			// 
 			// nCarga_DesenvolvimentoFrente
 			// 
@@ -1754,7 +1754,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_DesenvolvimentoFrente.Name = "nCarga_DesenvolvimentoFrente";
 			this.nCarga_DesenvolvimentoFrente.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_DesenvolvimentoFrente.TabIndex = 29;
+			this.nCarga_DesenvolvimentoFrente.TabIndex = 4;
 			// 
 			// nCarga_DesenvolvimentoCostas
 			// 
@@ -1766,7 +1766,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_DesenvolvimentoCostas.Name = "nCarga_DesenvolvimentoCostas";
 			this.nCarga_DesenvolvimentoCostas.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_DesenvolvimentoCostas.TabIndex = 28;
+			this.nCarga_DesenvolvimentoCostas.TabIndex = 3;
 			// 
 			// nCarga_ElevacaoOmbro
 			// 
@@ -1778,7 +1778,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_ElevacaoOmbro.Name = "nCarga_ElevacaoOmbro";
 			this.nCarga_ElevacaoOmbro.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_ElevacaoOmbro.TabIndex = 27;
+			this.nCarga_ElevacaoOmbro.TabIndex = 2;
 			// 
 			// nCarga_ElevacaoFrontal
 			// 
@@ -1790,7 +1790,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_ElevacaoFrontal.Name = "nCarga_ElevacaoFrontal";
 			this.nCarga_ElevacaoFrontal.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_ElevacaoFrontal.TabIndex = 26;
+			this.nCarga_ElevacaoFrontal.TabIndex = 1;
 			// 
 			// nCarga_ElevacaoLateral
 			// 
@@ -1802,7 +1802,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_ElevacaoLateral.Name = "nCarga_ElevacaoLateral";
 			this.nCarga_ElevacaoLateral.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_ElevacaoLateral.TabIndex = 25;
+			this.nCarga_ElevacaoLateral.TabIndex = 0;
 			// 
 			// gb_RepeticaoOmbros
 			// 
@@ -1830,7 +1830,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RemadaAlta.Name = "nRep_RemadaAlta";
 			this.nRep_RemadaAlta.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RemadaAlta.TabIndex = 31;
+			this.nRep_RemadaAlta.TabIndex = 6;
 			// 
 			// nRep_DesenvolvimentoDumbell
 			// 
@@ -1842,7 +1842,7 @@ namespace Rock_Solid
             0});
 			this.nRep_DesenvolvimentoDumbell.Name = "nRep_DesenvolvimentoDumbell";
 			this.nRep_DesenvolvimentoDumbell.Size = new System.Drawing.Size(80, 20);
-			this.nRep_DesenvolvimentoDumbell.TabIndex = 30;
+			this.nRep_DesenvolvimentoDumbell.TabIndex = 5;
 			// 
 			// nRep_DesenvolvimentoFrente
 			// 
@@ -1854,7 +1854,7 @@ namespace Rock_Solid
             0});
 			this.nRep_DesenvolvimentoFrente.Name = "nRep_DesenvolvimentoFrente";
 			this.nRep_DesenvolvimentoFrente.Size = new System.Drawing.Size(80, 20);
-			this.nRep_DesenvolvimentoFrente.TabIndex = 29;
+			this.nRep_DesenvolvimentoFrente.TabIndex = 4;
 			// 
 			// nRep_DesenvolvimentoCostas
 			// 
@@ -1866,7 +1866,7 @@ namespace Rock_Solid
             0});
 			this.nRep_DesenvolvimentoCostas.Name = "nRep_DesenvolvimentoCostas";
 			this.nRep_DesenvolvimentoCostas.Size = new System.Drawing.Size(80, 20);
-			this.nRep_DesenvolvimentoCostas.TabIndex = 28;
+			this.nRep_DesenvolvimentoCostas.TabIndex = 3;
 			// 
 			// nRep_ElevacaoOmbro
 			// 
@@ -1878,7 +1878,7 @@ namespace Rock_Solid
             0});
 			this.nRep_ElevacaoOmbro.Name = "nRep_ElevacaoOmbro";
 			this.nRep_ElevacaoOmbro.Size = new System.Drawing.Size(80, 20);
-			this.nRep_ElevacaoOmbro.TabIndex = 27;
+			this.nRep_ElevacaoOmbro.TabIndex = 2;
 			// 
 			// nRep_ElevacaoFrontal
 			// 
@@ -1890,7 +1890,7 @@ namespace Rock_Solid
             0});
 			this.nRep_ElevacaoFrontal.Name = "nRep_ElevacaoFrontal";
 			this.nRep_ElevacaoFrontal.Size = new System.Drawing.Size(80, 20);
-			this.nRep_ElevacaoFrontal.TabIndex = 26;
+			this.nRep_ElevacaoFrontal.TabIndex = 1;
 			// 
 			// nRep_ElevacaoLateral
 			// 
@@ -1902,7 +1902,7 @@ namespace Rock_Solid
             0});
 			this.nRep_ElevacaoLateral.Name = "nRep_ElevacaoLateral";
 			this.nRep_ElevacaoLateral.Size = new System.Drawing.Size(80, 20);
-			this.nRep_ElevacaoLateral.TabIndex = 25;
+			this.nRep_ElevacaoLateral.TabIndex = 0;
 			// 
 			// gb_SerieOmbros
 			// 
@@ -1925,42 +1925,42 @@ namespace Rock_Solid
 			this.nSerie_RemadaAlta.Location = new System.Drawing.Point(12, 175);
 			this.nSerie_RemadaAlta.Name = "nSerie_RemadaAlta";
 			this.nSerie_RemadaAlta.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RemadaAlta.TabIndex = 16;
+			this.nSerie_RemadaAlta.TabIndex = 6;
 			// 
 			// nSerie_DesenvolvimentoDumbell
 			// 
 			this.nSerie_DesenvolvimentoDumbell.Location = new System.Drawing.Point(12, 146);
 			this.nSerie_DesenvolvimentoDumbell.Name = "nSerie_DesenvolvimentoDumbell";
 			this.nSerie_DesenvolvimentoDumbell.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_DesenvolvimentoDumbell.TabIndex = 15;
+			this.nSerie_DesenvolvimentoDumbell.TabIndex = 5;
 			// 
 			// nSerie_DesenvolvimentoFrente
 			// 
 			this.nSerie_DesenvolvimentoFrente.Location = new System.Drawing.Point(12, 120);
 			this.nSerie_DesenvolvimentoFrente.Name = "nSerie_DesenvolvimentoFrente";
 			this.nSerie_DesenvolvimentoFrente.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_DesenvolvimentoFrente.TabIndex = 14;
+			this.nSerie_DesenvolvimentoFrente.TabIndex = 4;
 			// 
 			// nSerie_DesenvolvimentoCostas
 			// 
 			this.nSerie_DesenvolvimentoCostas.Location = new System.Drawing.Point(12, 94);
 			this.nSerie_DesenvolvimentoCostas.Name = "nSerie_DesenvolvimentoCostas";
 			this.nSerie_DesenvolvimentoCostas.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_DesenvolvimentoCostas.TabIndex = 13;
+			this.nSerie_DesenvolvimentoCostas.TabIndex = 3;
 			// 
 			// nSerie_ElevacaoOmbro
 			// 
 			this.nSerie_ElevacaoOmbro.Location = new System.Drawing.Point(12, 68);
 			this.nSerie_ElevacaoOmbro.Name = "nSerie_ElevacaoOmbro";
 			this.nSerie_ElevacaoOmbro.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_ElevacaoOmbro.TabIndex = 12;
+			this.nSerie_ElevacaoOmbro.TabIndex = 2;
 			// 
 			// nSerie_ElevacaoFrontal
 			// 
 			this.nSerie_ElevacaoFrontal.Location = new System.Drawing.Point(12, 42);
 			this.nSerie_ElevacaoFrontal.Name = "nSerie_ElevacaoFrontal";
 			this.nSerie_ElevacaoFrontal.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_ElevacaoFrontal.TabIndex = 11;
+			this.nSerie_ElevacaoFrontal.TabIndex = 1;
 			// 
 			// nSerie_ElevacaoLateral
 			// 
@@ -2076,7 +2076,7 @@ namespace Rock_Solid
 			this.cb_RemadaAlta.Location = new System.Drawing.Point(150, 174);
 			this.cb_RemadaAlta.Name = "cb_RemadaAlta";
 			this.cb_RemadaAlta.Size = new System.Drawing.Size(50, 21);
-			this.cb_RemadaAlta.TabIndex = 28;
+			this.cb_RemadaAlta.TabIndex = 6;
 			// 
 			// cb_DesenvolvimentoDumbell
 			// 
@@ -2091,7 +2091,7 @@ namespace Rock_Solid
 			this.cb_DesenvolvimentoDumbell.Location = new System.Drawing.Point(150, 145);
 			this.cb_DesenvolvimentoDumbell.Name = "cb_DesenvolvimentoDumbell";
 			this.cb_DesenvolvimentoDumbell.Size = new System.Drawing.Size(50, 21);
-			this.cb_DesenvolvimentoDumbell.TabIndex = 27;
+			this.cb_DesenvolvimentoDumbell.TabIndex = 5;
 			// 
 			// cb_DesenvolvimentoFrente
 			// 
@@ -2106,7 +2106,7 @@ namespace Rock_Solid
 			this.cb_DesenvolvimentoFrente.Location = new System.Drawing.Point(150, 119);
 			this.cb_DesenvolvimentoFrente.Name = "cb_DesenvolvimentoFrente";
 			this.cb_DesenvolvimentoFrente.Size = new System.Drawing.Size(50, 21);
-			this.cb_DesenvolvimentoFrente.TabIndex = 26;
+			this.cb_DesenvolvimentoFrente.TabIndex = 4;
 			// 
 			// cb_DesenvolvimentoCostas
 			// 
@@ -2121,7 +2121,7 @@ namespace Rock_Solid
 			this.cb_DesenvolvimentoCostas.Location = new System.Drawing.Point(150, 93);
 			this.cb_DesenvolvimentoCostas.Name = "cb_DesenvolvimentoCostas";
 			this.cb_DesenvolvimentoCostas.Size = new System.Drawing.Size(50, 21);
-			this.cb_DesenvolvimentoCostas.TabIndex = 25;
+			this.cb_DesenvolvimentoCostas.TabIndex = 3;
 			// 
 			// cb_ElevacaoOmbro
 			// 
@@ -2136,7 +2136,7 @@ namespace Rock_Solid
 			this.cb_ElevacaoOmbro.Location = new System.Drawing.Point(150, 67);
 			this.cb_ElevacaoOmbro.Name = "cb_ElevacaoOmbro";
 			this.cb_ElevacaoOmbro.Size = new System.Drawing.Size(50, 21);
-			this.cb_ElevacaoOmbro.TabIndex = 24;
+			this.cb_ElevacaoOmbro.TabIndex = 2;
 			// 
 			// cb_ElevacaoFrontal
 			// 
@@ -2151,7 +2151,7 @@ namespace Rock_Solid
 			this.cb_ElevacaoFrontal.Location = new System.Drawing.Point(150, 41);
 			this.cb_ElevacaoFrontal.Name = "cb_ElevacaoFrontal";
 			this.cb_ElevacaoFrontal.Size = new System.Drawing.Size(50, 21);
-			this.cb_ElevacaoFrontal.TabIndex = 23;
+			this.cb_ElevacaoFrontal.TabIndex = 1;
 			// 
 			// cb_ElevacaoLateral
 			// 
@@ -2166,7 +2166,7 @@ namespace Rock_Solid
 			this.cb_ElevacaoLateral.Location = new System.Drawing.Point(150, 15);
 			this.cb_ElevacaoLateral.Name = "cb_ElevacaoLateral";
 			this.cb_ElevacaoLateral.Size = new System.Drawing.Size(50, 21);
-			this.cb_ElevacaoLateral.TabIndex = 22;
+			this.cb_ElevacaoLateral.TabIndex = 0;
 			// 
 			// tp_Pernas
 			// 
@@ -2189,7 +2189,7 @@ namespace Rock_Solid
 			this.gb_CargaPernas.Controls.Add(this.nCarga_Stiff);
 			this.gb_CargaPernas.Controls.Add(this.nCarga_Panturrilha);
 			this.gb_CargaPernas.Controls.Add(this.nCarga_Hack);
-			this.gb_CargaPernas.Controls.Add(this.nCarga_AgachamentoLivre);
+			this.gb_CargaPernas.Controls.Add(this.nCarga_Agachamento);
 			this.gb_CargaPernas.Controls.Add(this.nCarga_LegPress);
 			this.gb_CargaPernas.Controls.Add(this.nCarga_Abdutor);
 			this.gb_CargaPernas.Controls.Add(this.nCarga_Adutor);
@@ -2212,7 +2212,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Avanco.Name = "nCarga_Avanco";
 			this.nCarga_Avanco.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Avanco.TabIndex = 36;
+			this.nCarga_Avanco.TabIndex = 10;
 			// 
 			// nCarga_Gluteo
 			// 
@@ -2224,7 +2224,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Gluteo.Name = "nCarga_Gluteo";
 			this.nCarga_Gluteo.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Gluteo.TabIndex = 35;
+			this.nCarga_Gluteo.TabIndex = 9;
 			// 
 			// nCarga_Stiff
 			// 
@@ -2236,7 +2236,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Stiff.Name = "nCarga_Stiff";
 			this.nCarga_Stiff.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Stiff.TabIndex = 34;
+			this.nCarga_Stiff.TabIndex = 8;
 			// 
 			// nCarga_Panturrilha
 			// 
@@ -2248,7 +2248,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Panturrilha.Name = "nCarga_Panturrilha";
 			this.nCarga_Panturrilha.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Panturrilha.TabIndex = 33;
+			this.nCarga_Panturrilha.TabIndex = 7;
 			// 
 			// nCarga_Hack
 			// 
@@ -2260,19 +2260,19 @@ namespace Rock_Solid
             0});
 			this.nCarga_Hack.Name = "nCarga_Hack";
 			this.nCarga_Hack.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Hack.TabIndex = 31;
+			this.nCarga_Hack.TabIndex = 6;
 			// 
-			// nCarga_AgachamentoLivre
+			// nCarga_Agachamento
 			// 
-			this.nCarga_AgachamentoLivre.Location = new System.Drawing.Point(12, 146);
-			this.nCarga_AgachamentoLivre.Maximum = new decimal(new int[] {
+			this.nCarga_Agachamento.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_Agachamento.Maximum = new decimal(new int[] {
             3000,
             0,
             0,
             0});
-			this.nCarga_AgachamentoLivre.Name = "nCarga_AgachamentoLivre";
-			this.nCarga_AgachamentoLivre.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_AgachamentoLivre.TabIndex = 30;
+			this.nCarga_Agachamento.Name = "nCarga_Agachamento";
+			this.nCarga_Agachamento.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_Agachamento.TabIndex = 5;
 			// 
 			// nCarga_LegPress
 			// 
@@ -2284,7 +2284,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_LegPress.Name = "nCarga_LegPress";
 			this.nCarga_LegPress.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_LegPress.TabIndex = 29;
+			this.nCarga_LegPress.TabIndex = 4;
 			// 
 			// nCarga_Abdutor
 			// 
@@ -2296,7 +2296,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Abdutor.Name = "nCarga_Abdutor";
 			this.nCarga_Abdutor.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Abdutor.TabIndex = 28;
+			this.nCarga_Abdutor.TabIndex = 3;
 			// 
 			// nCarga_Adutor
 			// 
@@ -2308,7 +2308,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Adutor.Name = "nCarga_Adutor";
 			this.nCarga_Adutor.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Adutor.TabIndex = 27;
+			this.nCarga_Adutor.TabIndex = 2;
 			// 
 			// nCarga_CadeiraFlexora
 			// 
@@ -2320,7 +2320,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_CadeiraFlexora.Name = "nCarga_CadeiraFlexora";
 			this.nCarga_CadeiraFlexora.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_CadeiraFlexora.TabIndex = 26;
+			this.nCarga_CadeiraFlexora.TabIndex = 1;
 			// 
 			// nCarga_CadeiraExtensora
 			// 
@@ -2332,7 +2332,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_CadeiraExtensora.Name = "nCarga_CadeiraExtensora";
 			this.nCarga_CadeiraExtensora.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_CadeiraExtensora.TabIndex = 25;
+			this.nCarga_CadeiraExtensora.TabIndex = 0;
 			// 
 			// gb_RepeticaoPernas
 			// 
@@ -2341,7 +2341,7 @@ namespace Rock_Solid
 			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Stiff);
 			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Panturrilha);
 			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Hack);
-			this.gb_RepeticaoPernas.Controls.Add(this.nRep_AgachamentoLivre);
+			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Agachamento);
 			this.gb_RepeticaoPernas.Controls.Add(this.nRep_LegPress);
 			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Abdutor);
 			this.gb_RepeticaoPernas.Controls.Add(this.nRep_Adutor);
@@ -2364,7 +2364,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Avanco.Name = "nRep_Avanco";
 			this.nRep_Avanco.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Avanco.TabIndex = 36;
+			this.nRep_Avanco.TabIndex = 10;
 			// 
 			// nRep_Gluteo
 			// 
@@ -2376,7 +2376,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Gluteo.Name = "nRep_Gluteo";
 			this.nRep_Gluteo.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Gluteo.TabIndex = 35;
+			this.nRep_Gluteo.TabIndex = 9;
 			// 
 			// nRep_Stiff
 			// 
@@ -2388,7 +2388,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Stiff.Name = "nRep_Stiff";
 			this.nRep_Stiff.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Stiff.TabIndex = 34;
+			this.nRep_Stiff.TabIndex = 8;
 			// 
 			// nRep_Panturrilha
 			// 
@@ -2400,7 +2400,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Panturrilha.Name = "nRep_Panturrilha";
 			this.nRep_Panturrilha.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Panturrilha.TabIndex = 33;
+			this.nRep_Panturrilha.TabIndex = 7;
 			// 
 			// nRep_Hack
 			// 
@@ -2412,19 +2412,19 @@ namespace Rock_Solid
             0});
 			this.nRep_Hack.Name = "nRep_Hack";
 			this.nRep_Hack.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Hack.TabIndex = 31;
+			this.nRep_Hack.TabIndex = 6;
 			// 
-			// nRep_AgachamentoLivre
+			// nRep_Agachamento
 			// 
-			this.nRep_AgachamentoLivre.Location = new System.Drawing.Point(12, 146);
-			this.nRep_AgachamentoLivre.Maximum = new decimal(new int[] {
+			this.nRep_Agachamento.Location = new System.Drawing.Point(12, 146);
+			this.nRep_Agachamento.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-			this.nRep_AgachamentoLivre.Name = "nRep_AgachamentoLivre";
-			this.nRep_AgachamentoLivre.Size = new System.Drawing.Size(80, 20);
-			this.nRep_AgachamentoLivre.TabIndex = 30;
+			this.nRep_Agachamento.Name = "nRep_Agachamento";
+			this.nRep_Agachamento.Size = new System.Drawing.Size(80, 20);
+			this.nRep_Agachamento.TabIndex = 5;
 			// 
 			// nRep_LegPress
 			// 
@@ -2436,7 +2436,7 @@ namespace Rock_Solid
             0});
 			this.nRep_LegPress.Name = "nRep_LegPress";
 			this.nRep_LegPress.Size = new System.Drawing.Size(80, 20);
-			this.nRep_LegPress.TabIndex = 29;
+			this.nRep_LegPress.TabIndex = 4;
 			// 
 			// nRep_Abdutor
 			// 
@@ -2448,7 +2448,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Abdutor.Name = "nRep_Abdutor";
 			this.nRep_Abdutor.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Abdutor.TabIndex = 28;
+			this.nRep_Abdutor.TabIndex = 3;
 			// 
 			// nRep_Adutor
 			// 
@@ -2460,7 +2460,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Adutor.Name = "nRep_Adutor";
 			this.nRep_Adutor.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Adutor.TabIndex = 27;
+			this.nRep_Adutor.TabIndex = 2;
 			// 
 			// nRep_CadeiraFlexora
 			// 
@@ -2472,7 +2472,7 @@ namespace Rock_Solid
             0});
 			this.nRep_CadeiraFlexora.Name = "nRep_CadeiraFlexora";
 			this.nRep_CadeiraFlexora.Size = new System.Drawing.Size(80, 20);
-			this.nRep_CadeiraFlexora.TabIndex = 26;
+			this.nRep_CadeiraFlexora.TabIndex = 1;
 			// 
 			// nRep_CadeiraExtensora
 			// 
@@ -2484,7 +2484,7 @@ namespace Rock_Solid
             0});
 			this.nRep_CadeiraExtensora.Name = "nRep_CadeiraExtensora";
 			this.nRep_CadeiraExtensora.Size = new System.Drawing.Size(80, 20);
-			this.nRep_CadeiraExtensora.TabIndex = 25;
+			this.nRep_CadeiraExtensora.TabIndex = 0;
 			// 
 			// gb_SeriePernas
 			// 
@@ -2493,7 +2493,7 @@ namespace Rock_Solid
 			this.gb_SeriePernas.Controls.Add(this.nSerie_Stiff);
 			this.gb_SeriePernas.Controls.Add(this.nSerie_Panturrilha);
 			this.gb_SeriePernas.Controls.Add(this.nSerie_Hack);
-			this.gb_SeriePernas.Controls.Add(this.nSerie_AgachamentoLivre);
+			this.gb_SeriePernas.Controls.Add(this.nSerie_Agachamento);
 			this.gb_SeriePernas.Controls.Add(this.nSerie_LegPress);
 			this.gb_SeriePernas.Controls.Add(this.nSerie_Abdutor);
 			this.gb_SeriePernas.Controls.Add(this.nSerie_Adutor);
@@ -2511,70 +2511,70 @@ namespace Rock_Solid
 			this.nSerie_Avanco.Location = new System.Drawing.Point(12, 279);
 			this.nSerie_Avanco.Name = "nSerie_Avanco";
 			this.nSerie_Avanco.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Avanco.TabIndex = 21;
+			this.nSerie_Avanco.TabIndex = 10;
 			// 
 			// nSerie_Gluteo
 			// 
 			this.nSerie_Gluteo.Location = new System.Drawing.Point(12, 253);
 			this.nSerie_Gluteo.Name = "nSerie_Gluteo";
 			this.nSerie_Gluteo.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Gluteo.TabIndex = 20;
+			this.nSerie_Gluteo.TabIndex = 9;
 			// 
 			// nSerie_Stiff
 			// 
 			this.nSerie_Stiff.Location = new System.Drawing.Point(12, 227);
 			this.nSerie_Stiff.Name = "nSerie_Stiff";
 			this.nSerie_Stiff.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Stiff.TabIndex = 19;
+			this.nSerie_Stiff.TabIndex = 8;
 			// 
 			// nSerie_Panturrilha
 			// 
 			this.nSerie_Panturrilha.Location = new System.Drawing.Point(12, 201);
 			this.nSerie_Panturrilha.Name = "nSerie_Panturrilha";
 			this.nSerie_Panturrilha.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Panturrilha.TabIndex = 18;
+			this.nSerie_Panturrilha.TabIndex = 7;
 			// 
 			// nSerie_Hack
 			// 
 			this.nSerie_Hack.Location = new System.Drawing.Point(12, 175);
 			this.nSerie_Hack.Name = "nSerie_Hack";
 			this.nSerie_Hack.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Hack.TabIndex = 16;
+			this.nSerie_Hack.TabIndex = 6;
 			// 
-			// nSerie_AgachamentoLivre
+			// nSerie_Agachamento
 			// 
-			this.nSerie_AgachamentoLivre.Location = new System.Drawing.Point(12, 146);
-			this.nSerie_AgachamentoLivre.Name = "nSerie_AgachamentoLivre";
-			this.nSerie_AgachamentoLivre.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_AgachamentoLivre.TabIndex = 15;
+			this.nSerie_Agachamento.Location = new System.Drawing.Point(12, 146);
+			this.nSerie_Agachamento.Name = "nSerie_Agachamento";
+			this.nSerie_Agachamento.Size = new System.Drawing.Size(80, 20);
+			this.nSerie_Agachamento.TabIndex = 5;
 			// 
 			// nSerie_LegPress
 			// 
 			this.nSerie_LegPress.Location = new System.Drawing.Point(12, 120);
 			this.nSerie_LegPress.Name = "nSerie_LegPress";
 			this.nSerie_LegPress.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_LegPress.TabIndex = 14;
+			this.nSerie_LegPress.TabIndex = 4;
 			// 
 			// nSerie_Abdutor
 			// 
 			this.nSerie_Abdutor.Location = new System.Drawing.Point(12, 94);
 			this.nSerie_Abdutor.Name = "nSerie_Abdutor";
 			this.nSerie_Abdutor.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Abdutor.TabIndex = 13;
+			this.nSerie_Abdutor.TabIndex = 3;
 			// 
 			// nSerie_Adutor
 			// 
 			this.nSerie_Adutor.Location = new System.Drawing.Point(12, 68);
 			this.nSerie_Adutor.Name = "nSerie_Adutor";
 			this.nSerie_Adutor.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Adutor.TabIndex = 12;
+			this.nSerie_Adutor.TabIndex = 2;
 			// 
 			// nSerie_CadeiraFlexora
 			// 
 			this.nSerie_CadeiraFlexora.Location = new System.Drawing.Point(12, 42);
 			this.nSerie_CadeiraFlexora.Name = "nSerie_CadeiraFlexora";
 			this.nSerie_CadeiraFlexora.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_CadeiraFlexora.TabIndex = 11;
+			this.nSerie_CadeiraFlexora.TabIndex = 1;
 			// 
 			// nSerie_CadeiraExtensorar
 			// 
@@ -2726,7 +2726,7 @@ namespace Rock_Solid
 			this.cb_Avanco.Location = new System.Drawing.Point(150, 278);
 			this.cb_Avanco.Name = "cb_Avanco";
 			this.cb_Avanco.Size = new System.Drawing.Size(50, 21);
-			this.cb_Avanco.TabIndex = 58;
+			this.cb_Avanco.TabIndex = 10;
 			// 
 			// cb_Gluteo
 			// 
@@ -2741,7 +2741,7 @@ namespace Rock_Solid
 			this.cb_Gluteo.Location = new System.Drawing.Point(150, 252);
 			this.cb_Gluteo.Name = "cb_Gluteo";
 			this.cb_Gluteo.Size = new System.Drawing.Size(50, 21);
-			this.cb_Gluteo.TabIndex = 57;
+			this.cb_Gluteo.TabIndex = 9;
 			// 
 			// cb_Stiff
 			// 
@@ -2756,7 +2756,7 @@ namespace Rock_Solid
 			this.cb_Stiff.Location = new System.Drawing.Point(150, 226);
 			this.cb_Stiff.Name = "cb_Stiff";
 			this.cb_Stiff.Size = new System.Drawing.Size(50, 21);
-			this.cb_Stiff.TabIndex = 56;
+			this.cb_Stiff.TabIndex = 8;
 			// 
 			// cb_Panturrilha
 			// 
@@ -2771,7 +2771,7 @@ namespace Rock_Solid
 			this.cb_Panturrilha.Location = new System.Drawing.Point(150, 200);
 			this.cb_Panturrilha.Name = "cb_Panturrilha";
 			this.cb_Panturrilha.Size = new System.Drawing.Size(50, 21);
-			this.cb_Panturrilha.TabIndex = 55;
+			this.cb_Panturrilha.TabIndex = 7;
 			// 
 			// cb_Hack
 			// 
@@ -2786,7 +2786,7 @@ namespace Rock_Solid
 			this.cb_Hack.Location = new System.Drawing.Point(150, 174);
 			this.cb_Hack.Name = "cb_Hack";
 			this.cb_Hack.Size = new System.Drawing.Size(50, 21);
-			this.cb_Hack.TabIndex = 54;
+			this.cb_Hack.TabIndex = 6;
 			// 
 			// cb_Agachamento
 			// 
@@ -2801,7 +2801,7 @@ namespace Rock_Solid
 			this.cb_Agachamento.Location = new System.Drawing.Point(150, 145);
 			this.cb_Agachamento.Name = "cb_Agachamento";
 			this.cb_Agachamento.Size = new System.Drawing.Size(50, 21);
-			this.cb_Agachamento.TabIndex = 53;
+			this.cb_Agachamento.TabIndex = 5;
 			// 
 			// cb_LegPress
 			// 
@@ -2816,7 +2816,7 @@ namespace Rock_Solid
 			this.cb_LegPress.Location = new System.Drawing.Point(150, 119);
 			this.cb_LegPress.Name = "cb_LegPress";
 			this.cb_LegPress.Size = new System.Drawing.Size(50, 21);
-			this.cb_LegPress.TabIndex = 52;
+			this.cb_LegPress.TabIndex = 4;
 			// 
 			// cb_Abdutor
 			// 
@@ -2831,7 +2831,7 @@ namespace Rock_Solid
 			this.cb_Abdutor.Location = new System.Drawing.Point(150, 93);
 			this.cb_Abdutor.Name = "cb_Abdutor";
 			this.cb_Abdutor.Size = new System.Drawing.Size(50, 21);
-			this.cb_Abdutor.TabIndex = 51;
+			this.cb_Abdutor.TabIndex = 3;
 			// 
 			// cb_Adutor
 			// 
@@ -2846,7 +2846,7 @@ namespace Rock_Solid
 			this.cb_Adutor.Location = new System.Drawing.Point(150, 67);
 			this.cb_Adutor.Name = "cb_Adutor";
 			this.cb_Adutor.Size = new System.Drawing.Size(50, 21);
-			this.cb_Adutor.TabIndex = 50;
+			this.cb_Adutor.TabIndex = 2;
 			// 
 			// cb_CadeiraFlexora
 			// 
@@ -2861,7 +2861,7 @@ namespace Rock_Solid
 			this.cb_CadeiraFlexora.Location = new System.Drawing.Point(150, 41);
 			this.cb_CadeiraFlexora.Name = "cb_CadeiraFlexora";
 			this.cb_CadeiraFlexora.Size = new System.Drawing.Size(50, 21);
-			this.cb_CadeiraFlexora.TabIndex = 49;
+			this.cb_CadeiraFlexora.TabIndex = 1;
 			// 
 			// cb_CadeiraExtensora
 			// 
@@ -2876,7 +2876,7 @@ namespace Rock_Solid
 			this.cb_CadeiraExtensora.Location = new System.Drawing.Point(150, 15);
 			this.cb_CadeiraExtensora.Name = "cb_CadeiraExtensora";
 			this.cb_CadeiraExtensora.Size = new System.Drawing.Size(50, 21);
-			this.cb_CadeiraExtensora.TabIndex = 48;
+			this.cb_CadeiraExtensora.TabIndex = 0;
 			// 
 			// tp_Peito
 			// 
@@ -2896,7 +2896,7 @@ namespace Rock_Solid
 			// 
 			this.gb_CargaPeito.Controls.Add(this.nCarga_CrossOver);
 			this.gb_CargaPeito.Controls.Add(this.nCarga_Crucifixo);
-			this.gb_CargaPeito.Controls.Add(this.nCarga_PeckDeck);
+			this.gb_CargaPeito.Controls.Add(this.nCarga_PeckDeckPeito);
 			this.gb_CargaPeito.Controls.Add(this.nCarga_Peck);
 			this.gb_CargaPeito.Controls.Add(this.nCarga_SupinoDumbell);
 			this.gb_CargaPeito.Controls.Add(this.nCarga_SupinoSentado);
@@ -2919,7 +2919,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_CrossOver.Name = "nCarga_CrossOver";
 			this.nCarga_CrossOver.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_CrossOver.TabIndex = 32;
+			this.nCarga_CrossOver.TabIndex = 7;
 			// 
 			// nCarga_Crucifixo
 			// 
@@ -2931,19 +2931,19 @@ namespace Rock_Solid
             0});
 			this.nCarga_Crucifixo.Name = "nCarga_Crucifixo";
 			this.nCarga_Crucifixo.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Crucifixo.TabIndex = 31;
+			this.nCarga_Crucifixo.TabIndex = 6;
 			// 
-			// nCarga_PeckDeck
+			// nCarga_PeckDeckPeito
 			// 
-			this.nCarga_PeckDeck.Location = new System.Drawing.Point(12, 146);
-			this.nCarga_PeckDeck.Maximum = new decimal(new int[] {
+			this.nCarga_PeckDeckPeito.Location = new System.Drawing.Point(12, 146);
+			this.nCarga_PeckDeckPeito.Maximum = new decimal(new int[] {
             3000,
             0,
             0,
             0});
-			this.nCarga_PeckDeck.Name = "nCarga_PeckDeck";
-			this.nCarga_PeckDeck.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_PeckDeck.TabIndex = 30;
+			this.nCarga_PeckDeckPeito.Name = "nCarga_PeckDeckPeito";
+			this.nCarga_PeckDeckPeito.Size = new System.Drawing.Size(80, 20);
+			this.nCarga_PeckDeckPeito.TabIndex = 5;
 			// 
 			// nCarga_Peck
 			// 
@@ -2955,7 +2955,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Peck.Name = "nCarga_Peck";
 			this.nCarga_Peck.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Peck.TabIndex = 29;
+			this.nCarga_Peck.TabIndex = 4;
 			// 
 			// nCarga_SupinoDumbell
 			// 
@@ -2967,7 +2967,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_SupinoDumbell.Name = "nCarga_SupinoDumbell";
 			this.nCarga_SupinoDumbell.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_SupinoDumbell.TabIndex = 28;
+			this.nCarga_SupinoDumbell.TabIndex = 3;
 			// 
 			// nCarga_SupinoSentado
 			// 
@@ -2979,7 +2979,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_SupinoSentado.Name = "nCarga_SupinoSentado";
 			this.nCarga_SupinoSentado.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_SupinoSentado.TabIndex = 27;
+			this.nCarga_SupinoSentado.TabIndex = 2;
 			// 
 			// nCarga_SupinoInclinado
 			// 
@@ -2991,7 +2991,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_SupinoInclinado.Name = "nCarga_SupinoInclinado";
 			this.nCarga_SupinoInclinado.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_SupinoInclinado.TabIndex = 26;
+			this.nCarga_SupinoInclinado.TabIndex = 1;
 			// 
 			// nCarga_SupinoReto
 			// 
@@ -3003,13 +3003,13 @@ namespace Rock_Solid
             0});
 			this.nCarga_SupinoReto.Name = "nCarga_SupinoReto";
 			this.nCarga_SupinoReto.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_SupinoReto.TabIndex = 25;
+			this.nCarga_SupinoReto.TabIndex = 0;
 			// 
 			// gb_RepeticaoPeito
 			// 
 			this.gb_RepeticaoPeito.Controls.Add(this.nRep_CrossOver);
 			this.gb_RepeticaoPeito.Controls.Add(this.nRep_Crucifixo);
-			this.gb_RepeticaoPeito.Controls.Add(this.nRep_PeckDeck);
+			this.gb_RepeticaoPeito.Controls.Add(this.nRep_PeckDeckPeito);
 			this.gb_RepeticaoPeito.Controls.Add(this.nRep_Peck);
 			this.gb_RepeticaoPeito.Controls.Add(this.nRep_SupinoDumbell);
 			this.gb_RepeticaoPeito.Controls.Add(this.nRep_SupinoSentado);
@@ -3032,7 +3032,7 @@ namespace Rock_Solid
             0});
 			this.nRep_CrossOver.Name = "nRep_CrossOver";
 			this.nRep_CrossOver.Size = new System.Drawing.Size(80, 20);
-			this.nRep_CrossOver.TabIndex = 32;
+			this.nRep_CrossOver.TabIndex = 7;
 			// 
 			// nRep_Crucifixo
 			// 
@@ -3044,19 +3044,19 @@ namespace Rock_Solid
             0});
 			this.nRep_Crucifixo.Name = "nRep_Crucifixo";
 			this.nRep_Crucifixo.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Crucifixo.TabIndex = 31;
+			this.nRep_Crucifixo.TabIndex = 6;
 			// 
-			// nRep_PeckDeck
+			// nRep_PeckDeckPeito
 			// 
-			this.nRep_PeckDeck.Location = new System.Drawing.Point(12, 146);
-			this.nRep_PeckDeck.Maximum = new decimal(new int[] {
+			this.nRep_PeckDeckPeito.Location = new System.Drawing.Point(12, 146);
+			this.nRep_PeckDeckPeito.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-			this.nRep_PeckDeck.Name = "nRep_PeckDeck";
-			this.nRep_PeckDeck.Size = new System.Drawing.Size(80, 20);
-			this.nRep_PeckDeck.TabIndex = 30;
+			this.nRep_PeckDeckPeito.Name = "nRep_PeckDeckPeito";
+			this.nRep_PeckDeckPeito.Size = new System.Drawing.Size(80, 20);
+			this.nRep_PeckDeckPeito.TabIndex = 5;
 			// 
 			// nRep_Peck
 			// 
@@ -3068,7 +3068,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Peck.Name = "nRep_Peck";
 			this.nRep_Peck.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Peck.TabIndex = 29;
+			this.nRep_Peck.TabIndex = 4;
 			// 
 			// nRep_SupinoDumbell
 			// 
@@ -3080,7 +3080,7 @@ namespace Rock_Solid
             0});
 			this.nRep_SupinoDumbell.Name = "nRep_SupinoDumbell";
 			this.nRep_SupinoDumbell.Size = new System.Drawing.Size(80, 20);
-			this.nRep_SupinoDumbell.TabIndex = 28;
+			this.nRep_SupinoDumbell.TabIndex = 3;
 			// 
 			// nRep_SupinoSentado
 			// 
@@ -3092,7 +3092,7 @@ namespace Rock_Solid
             0});
 			this.nRep_SupinoSentado.Name = "nRep_SupinoSentado";
 			this.nRep_SupinoSentado.Size = new System.Drawing.Size(80, 20);
-			this.nRep_SupinoSentado.TabIndex = 27;
+			this.nRep_SupinoSentado.TabIndex = 2;
 			// 
 			// nRep_SupinoInclinado
 			// 
@@ -3104,7 +3104,7 @@ namespace Rock_Solid
             0});
 			this.nRep_SupinoInclinado.Name = "nRep_SupinoInclinado";
 			this.nRep_SupinoInclinado.Size = new System.Drawing.Size(80, 20);
-			this.nRep_SupinoInclinado.TabIndex = 26;
+			this.nRep_SupinoInclinado.TabIndex = 1;
 			// 
 			// nRep_SupinoReto
 			// 
@@ -3116,7 +3116,7 @@ namespace Rock_Solid
             0});
 			this.nRep_SupinoReto.Name = "nRep_SupinoReto";
 			this.nRep_SupinoReto.Size = new System.Drawing.Size(80, 20);
-			this.nRep_SupinoReto.TabIndex = 25;
+			this.nRep_SupinoReto.TabIndex = 0;
 			// 
 			// gb_SeriePeito
 			// 
@@ -3140,49 +3140,49 @@ namespace Rock_Solid
 			this.nSerie_CrossOver.Location = new System.Drawing.Point(12, 201);
 			this.nSerie_CrossOver.Name = "nSerie_CrossOver";
 			this.nSerie_CrossOver.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_CrossOver.TabIndex = 17;
+			this.nSerie_CrossOver.TabIndex = 7;
 			// 
 			// nSerie_Crucifixo
 			// 
 			this.nSerie_Crucifixo.Location = new System.Drawing.Point(12, 175);
 			this.nSerie_Crucifixo.Name = "nSerie_Crucifixo";
 			this.nSerie_Crucifixo.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Crucifixo.TabIndex = 16;
+			this.nSerie_Crucifixo.TabIndex = 6;
 			// 
 			// nSerie_PeckDeckPeito
 			// 
 			this.nSerie_PeckDeckPeito.Location = new System.Drawing.Point(12, 146);
 			this.nSerie_PeckDeckPeito.Name = "nSerie_PeckDeckPeito";
 			this.nSerie_PeckDeckPeito.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_PeckDeckPeito.TabIndex = 15;
+			this.nSerie_PeckDeckPeito.TabIndex = 5;
 			// 
 			// nSerie_Peck
 			// 
 			this.nSerie_Peck.Location = new System.Drawing.Point(12, 120);
 			this.nSerie_Peck.Name = "nSerie_Peck";
 			this.nSerie_Peck.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Peck.TabIndex = 14;
+			this.nSerie_Peck.TabIndex = 4;
 			// 
 			// nSerie_SupinoDumbell
 			// 
 			this.nSerie_SupinoDumbell.Location = new System.Drawing.Point(12, 94);
 			this.nSerie_SupinoDumbell.Name = "nSerie_SupinoDumbell";
 			this.nSerie_SupinoDumbell.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_SupinoDumbell.TabIndex = 13;
+			this.nSerie_SupinoDumbell.TabIndex = 3;
 			// 
 			// nSerie_SupinoSentado
 			// 
 			this.nSerie_SupinoSentado.Location = new System.Drawing.Point(12, 68);
 			this.nSerie_SupinoSentado.Name = "nSerie_SupinoSentado";
 			this.nSerie_SupinoSentado.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_SupinoSentado.TabIndex = 12;
+			this.nSerie_SupinoSentado.TabIndex = 2;
 			// 
 			// nSerie_SupinoInclinado
 			// 
 			this.nSerie_SupinoInclinado.Location = new System.Drawing.Point(12, 42);
 			this.nSerie_SupinoInclinado.Name = "nSerie_SupinoInclinado";
 			this.nSerie_SupinoInclinado.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_SupinoInclinado.TabIndex = 11;
+			this.nSerie_SupinoInclinado.TabIndex = 1;
 			// 
 			// nSerie_SupinoReto
 			// 
@@ -3202,7 +3202,7 @@ namespace Rock_Solid
 			this.gb_ExercicioPeito.Controls.Add(this.lb_SupinoInclinado);
 			this.gb_ExercicioPeito.Controls.Add(this.lb_SupinoReto);
 			this.gb_ExercicioPeito.Controls.Add(this.cb_CrossOver);
-			this.gb_ExercicioPeito.Controls.Add(this.cb_crucifixo);
+			this.gb_ExercicioPeito.Controls.Add(this.cb_Crucifixo);
 			this.gb_ExercicioPeito.Controls.Add(this.cb_PeckDeckPeito);
 			this.gb_ExercicioPeito.Controls.Add(this.cb_Peck);
 			this.gb_ExercicioPeito.Controls.Add(this.cb_SupinoDumbell);
@@ -3301,22 +3301,22 @@ namespace Rock_Solid
 			this.cb_CrossOver.Location = new System.Drawing.Point(150, 200);
 			this.cb_CrossOver.Name = "cb_CrossOver";
 			this.cb_CrossOver.Size = new System.Drawing.Size(50, 21);
-			this.cb_CrossOver.TabIndex = 44;
+			this.cb_CrossOver.TabIndex = 7;
 			// 
-			// cb_crucifixo
+			// cb_Crucifixo
 			// 
-			this.cb_crucifixo.FormattingEnabled = true;
-			this.cb_crucifixo.Items.AddRange(new object[] {
+			this.cb_Crucifixo.FormattingEnabled = true;
+			this.cb_Crucifixo.Items.AddRange(new object[] {
             "",
             "A",
             "B",
             "C",
             "D",
             "E"});
-			this.cb_crucifixo.Location = new System.Drawing.Point(150, 174);
-			this.cb_crucifixo.Name = "cb_crucifixo";
-			this.cb_crucifixo.Size = new System.Drawing.Size(50, 21);
-			this.cb_crucifixo.TabIndex = 43;
+			this.cb_Crucifixo.Location = new System.Drawing.Point(150, 174);
+			this.cb_Crucifixo.Name = "cb_Crucifixo";
+			this.cb_Crucifixo.Size = new System.Drawing.Size(50, 21);
+			this.cb_Crucifixo.TabIndex = 6;
 			// 
 			// cb_PeckDeckPeito
 			// 
@@ -3331,7 +3331,7 @@ namespace Rock_Solid
 			this.cb_PeckDeckPeito.Location = new System.Drawing.Point(150, 145);
 			this.cb_PeckDeckPeito.Name = "cb_PeckDeckPeito";
 			this.cb_PeckDeckPeito.Size = new System.Drawing.Size(50, 21);
-			this.cb_PeckDeckPeito.TabIndex = 42;
+			this.cb_PeckDeckPeito.TabIndex = 5;
 			// 
 			// cb_Peck
 			// 
@@ -3346,7 +3346,7 @@ namespace Rock_Solid
 			this.cb_Peck.Location = new System.Drawing.Point(150, 119);
 			this.cb_Peck.Name = "cb_Peck";
 			this.cb_Peck.Size = new System.Drawing.Size(50, 21);
-			this.cb_Peck.TabIndex = 41;
+			this.cb_Peck.TabIndex = 4;
 			// 
 			// cb_SupinoDumbell
 			// 
@@ -3361,7 +3361,7 @@ namespace Rock_Solid
 			this.cb_SupinoDumbell.Location = new System.Drawing.Point(150, 93);
 			this.cb_SupinoDumbell.Name = "cb_SupinoDumbell";
 			this.cb_SupinoDumbell.Size = new System.Drawing.Size(50, 21);
-			this.cb_SupinoDumbell.TabIndex = 40;
+			this.cb_SupinoDumbell.TabIndex = 3;
 			// 
 			// cb_SupinoSentado
 			// 
@@ -3376,7 +3376,7 @@ namespace Rock_Solid
 			this.cb_SupinoSentado.Location = new System.Drawing.Point(150, 67);
 			this.cb_SupinoSentado.Name = "cb_SupinoSentado";
 			this.cb_SupinoSentado.Size = new System.Drawing.Size(50, 21);
-			this.cb_SupinoSentado.TabIndex = 39;
+			this.cb_SupinoSentado.TabIndex = 2;
 			// 
 			// cb_SupinoInclinado
 			// 
@@ -3391,7 +3391,7 @@ namespace Rock_Solid
 			this.cb_SupinoInclinado.Location = new System.Drawing.Point(150, 41);
 			this.cb_SupinoInclinado.Name = "cb_SupinoInclinado";
 			this.cb_SupinoInclinado.Size = new System.Drawing.Size(50, 21);
-			this.cb_SupinoInclinado.TabIndex = 38;
+			this.cb_SupinoInclinado.TabIndex = 1;
 			// 
 			// cb_SupinoReto
 			// 
@@ -3406,7 +3406,7 @@ namespace Rock_Solid
 			this.cb_SupinoReto.Location = new System.Drawing.Point(150, 15);
 			this.cb_SupinoReto.Name = "cb_SupinoReto";
 			this.cb_SupinoReto.Size = new System.Drawing.Size(50, 21);
-			this.cb_SupinoReto.TabIndex = 37;
+			this.cb_SupinoReto.TabIndex = 0;
 			// 
 			// tp_Costas
 			// 
@@ -3452,7 +3452,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_VoadorInverso.Name = "nCarga_VoadorInverso";
 			this.nCarga_VoadorInverso.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_VoadorInverso.TabIndex = 35;
+			this.nCarga_VoadorInverso.TabIndex = 10;
 			// 
 			// nCarga_BarraFixa
 			// 
@@ -3464,7 +3464,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_BarraFixa.Name = "nCarga_BarraFixa";
 			this.nCarga_BarraFixa.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_BarraFixa.TabIndex = 34;
+			this.nCarga_BarraFixa.TabIndex = 9;
 			// 
 			// nCarga_PullOverCostas
 			// 
@@ -3476,7 +3476,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_PullOverCostas.Name = "nCarga_PullOverCostas";
 			this.nCarga_PullOverCostas.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_PullOverCostas.TabIndex = 33;
+			this.nCarga_PullOverCostas.TabIndex = 8;
 			// 
 			// nCarga_PeckDeckCostas
 			// 
@@ -3488,7 +3488,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_PeckDeckCostas.Name = "nCarga_PeckDeckCostas";
 			this.nCarga_PeckDeckCostas.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_PeckDeckCostas.TabIndex = 32;
+			this.nCarga_PeckDeckCostas.TabIndex = 7;
 			// 
 			// nCarga_PuxadorArticulado
 			// 
@@ -3500,7 +3500,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_PuxadorArticulado.Name = "nCarga_PuxadorArticulado";
 			this.nCarga_PuxadorArticulado.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_PuxadorArticulado.TabIndex = 31;
+			this.nCarga_PuxadorArticulado.TabIndex = 6;
 			// 
 			// nCarga_RemadaCavalinho
 			// 
@@ -3512,7 +3512,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RemadaCavalinho.Name = "nCarga_RemadaCavalinho";
 			this.nCarga_RemadaCavalinho.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RemadaCavalinho.TabIndex = 30;
+			this.nCarga_RemadaCavalinho.TabIndex = 5;
 			// 
 			// nCarga_RemadaAlternada
 			// 
@@ -3524,7 +3524,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RemadaAlternada.Name = "nCarga_RemadaAlternada";
 			this.nCarga_RemadaAlternada.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RemadaAlternada.TabIndex = 29;
+			this.nCarga_RemadaAlternada.TabIndex = 4;
 			// 
 			// nCarga_RemadaHorizontal
 			// 
@@ -3536,7 +3536,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RemadaHorizontal.Name = "nCarga_RemadaHorizontal";
 			this.nCarga_RemadaHorizontal.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RemadaHorizontal.TabIndex = 28;
+			this.nCarga_RemadaHorizontal.TabIndex = 3;
 			// 
 			// nCarga_PulleyInvertido
 			// 
@@ -3548,7 +3548,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_PulleyInvertido.Name = "nCarga_PulleyInvertido";
 			this.nCarga_PulleyInvertido.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_PulleyInvertido.TabIndex = 27;
+			this.nCarga_PulleyInvertido.TabIndex = 2;
 			// 
 			// nCarga_PulleyFrente
 			// 
@@ -3560,7 +3560,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_PulleyFrente.Name = "nCarga_PulleyFrente";
 			this.nCarga_PulleyFrente.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_PulleyFrente.TabIndex = 26;
+			this.nCarga_PulleyFrente.TabIndex = 1;
 			// 
 			// nCarga_PulleyCostas
 			// 
@@ -3572,7 +3572,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_PulleyCostas.Name = "nCarga_PulleyCostas";
 			this.nCarga_PulleyCostas.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_PulleyCostas.TabIndex = 25;
+			this.nCarga_PulleyCostas.TabIndex = 0;
 			// 
 			// gb_RepeticaoCostas
 			// 
@@ -3604,7 +3604,7 @@ namespace Rock_Solid
             0});
 			this.nRep_VoadorInverso.Name = "nRep_VoadorInverso";
 			this.nRep_VoadorInverso.Size = new System.Drawing.Size(80, 20);
-			this.nRep_VoadorInverso.TabIndex = 35;
+			this.nRep_VoadorInverso.TabIndex = 10;
 			// 
 			// nRep_BarraFixa
 			// 
@@ -3616,7 +3616,7 @@ namespace Rock_Solid
             0});
 			this.nRep_BarraFixa.Name = "nRep_BarraFixa";
 			this.nRep_BarraFixa.Size = new System.Drawing.Size(80, 20);
-			this.nRep_BarraFixa.TabIndex = 34;
+			this.nRep_BarraFixa.TabIndex = 9;
 			// 
 			// nRep_PullOverCostas
 			// 
@@ -3628,7 +3628,7 @@ namespace Rock_Solid
             0});
 			this.nRep_PullOverCostas.Name = "nRep_PullOverCostas";
 			this.nRep_PullOverCostas.Size = new System.Drawing.Size(80, 20);
-			this.nRep_PullOverCostas.TabIndex = 33;
+			this.nRep_PullOverCostas.TabIndex = 8;
 			// 
 			// nRep_PeckDeckCostas
 			// 
@@ -3640,7 +3640,7 @@ namespace Rock_Solid
             0});
 			this.nRep_PeckDeckCostas.Name = "nRep_PeckDeckCostas";
 			this.nRep_PeckDeckCostas.Size = new System.Drawing.Size(80, 20);
-			this.nRep_PeckDeckCostas.TabIndex = 32;
+			this.nRep_PeckDeckCostas.TabIndex = 7;
 			// 
 			// nRep_PuxadorArticulado
 			// 
@@ -3652,7 +3652,7 @@ namespace Rock_Solid
             0});
 			this.nRep_PuxadorArticulado.Name = "nRep_PuxadorArticulado";
 			this.nRep_PuxadorArticulado.Size = new System.Drawing.Size(80, 20);
-			this.nRep_PuxadorArticulado.TabIndex = 31;
+			this.nRep_PuxadorArticulado.TabIndex = 6;
 			// 
 			// nRep_RemadaCavalinho
 			// 
@@ -3664,7 +3664,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RemadaCavalinho.Name = "nRep_RemadaCavalinho";
 			this.nRep_RemadaCavalinho.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RemadaCavalinho.TabIndex = 30;
+			this.nRep_RemadaCavalinho.TabIndex = 5;
 			// 
 			// nRep_RemadaAlternada
 			// 
@@ -3676,7 +3676,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RemadaAlternada.Name = "nRep_RemadaAlternada";
 			this.nRep_RemadaAlternada.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RemadaAlternada.TabIndex = 29;
+			this.nRep_RemadaAlternada.TabIndex = 4;
 			// 
 			// nRep_RemadaHorizontal
 			// 
@@ -3688,7 +3688,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RemadaHorizontal.Name = "nRep_RemadaHorizontal";
 			this.nRep_RemadaHorizontal.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RemadaHorizontal.TabIndex = 28;
+			this.nRep_RemadaHorizontal.TabIndex = 3;
 			// 
 			// nRep_PulleyInvertido
 			// 
@@ -3700,7 +3700,7 @@ namespace Rock_Solid
             0});
 			this.nRep_PulleyInvertido.Name = "nRep_PulleyInvertido";
 			this.nRep_PulleyInvertido.Size = new System.Drawing.Size(80, 20);
-			this.nRep_PulleyInvertido.TabIndex = 27;
+			this.nRep_PulleyInvertido.TabIndex = 2;
 			// 
 			// nRep_PulleyFrente
 			// 
@@ -3712,7 +3712,7 @@ namespace Rock_Solid
             0});
 			this.nRep_PulleyFrente.Name = "nRep_PulleyFrente";
 			this.nRep_PulleyFrente.Size = new System.Drawing.Size(80, 20);
-			this.nRep_PulleyFrente.TabIndex = 26;
+			this.nRep_PulleyFrente.TabIndex = 1;
 			// 
 			// nRep_PulleyCostas
 			// 
@@ -3724,7 +3724,7 @@ namespace Rock_Solid
             0});
 			this.nRep_PulleyCostas.Name = "nRep_PulleyCostas";
 			this.nRep_PulleyCostas.Size = new System.Drawing.Size(80, 20);
-			this.nRep_PulleyCostas.TabIndex = 25;
+			this.nRep_PulleyCostas.TabIndex = 0;
 			// 
 			// gb_SerieCostas
 			// 
@@ -3751,70 +3751,70 @@ namespace Rock_Solid
 			this.nSerie_VoadorInverso.Location = new System.Drawing.Point(12, 279);
 			this.nSerie_VoadorInverso.Name = "nSerie_VoadorInverso";
 			this.nSerie_VoadorInverso.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_VoadorInverso.TabIndex = 20;
+			this.nSerie_VoadorInverso.TabIndex = 10;
 			// 
 			// nSerie_BarraFixa
 			// 
 			this.nSerie_BarraFixa.Location = new System.Drawing.Point(12, 253);
 			this.nSerie_BarraFixa.Name = "nSerie_BarraFixa";
 			this.nSerie_BarraFixa.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_BarraFixa.TabIndex = 19;
+			this.nSerie_BarraFixa.TabIndex = 9;
 			// 
 			// nSerie_PullOverCostas
 			// 
 			this.nSerie_PullOverCostas.Location = new System.Drawing.Point(12, 227);
 			this.nSerie_PullOverCostas.Name = "nSerie_PullOverCostas";
 			this.nSerie_PullOverCostas.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_PullOverCostas.TabIndex = 18;
+			this.nSerie_PullOverCostas.TabIndex = 8;
 			// 
 			// nSerie_PeckDeckCostas
 			// 
 			this.nSerie_PeckDeckCostas.Location = new System.Drawing.Point(12, 201);
 			this.nSerie_PeckDeckCostas.Name = "nSerie_PeckDeckCostas";
 			this.nSerie_PeckDeckCostas.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_PeckDeckCostas.TabIndex = 17;
+			this.nSerie_PeckDeckCostas.TabIndex = 7;
 			// 
 			// nSerie_PuxadorArticulado
 			// 
 			this.nSerie_PuxadorArticulado.Location = new System.Drawing.Point(12, 175);
 			this.nSerie_PuxadorArticulado.Name = "nSerie_PuxadorArticulado";
 			this.nSerie_PuxadorArticulado.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_PuxadorArticulado.TabIndex = 16;
+			this.nSerie_PuxadorArticulado.TabIndex = 6;
 			// 
 			// nSerie_RemadaCavalinho
 			// 
 			this.nSerie_RemadaCavalinho.Location = new System.Drawing.Point(12, 146);
 			this.nSerie_RemadaCavalinho.Name = "nSerie_RemadaCavalinho";
 			this.nSerie_RemadaCavalinho.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RemadaCavalinho.TabIndex = 15;
+			this.nSerie_RemadaCavalinho.TabIndex = 5;
 			// 
 			// nSerie_RemadaAlternada
 			// 
 			this.nSerie_RemadaAlternada.Location = new System.Drawing.Point(12, 120);
 			this.nSerie_RemadaAlternada.Name = "nSerie_RemadaAlternada";
 			this.nSerie_RemadaAlternada.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RemadaAlternada.TabIndex = 14;
+			this.nSerie_RemadaAlternada.TabIndex = 4;
 			// 
 			// nSerie_RemadaHorizontal
 			// 
 			this.nSerie_RemadaHorizontal.Location = new System.Drawing.Point(12, 94);
 			this.nSerie_RemadaHorizontal.Name = "nSerie_RemadaHorizontal";
 			this.nSerie_RemadaHorizontal.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_RemadaHorizontal.TabIndex = 13;
+			this.nSerie_RemadaHorizontal.TabIndex = 3;
 			// 
 			// nSerie_PulleyInvertido
 			// 
 			this.nSerie_PulleyInvertido.Location = new System.Drawing.Point(12, 68);
 			this.nSerie_PulleyInvertido.Name = "nSerie_PulleyInvertido";
 			this.nSerie_PulleyInvertido.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_PulleyInvertido.TabIndex = 12;
+			this.nSerie_PulleyInvertido.TabIndex = 2;
 			// 
 			// nSerie_PulleyFrente
 			// 
 			this.nSerie_PulleyFrente.Location = new System.Drawing.Point(12, 42);
 			this.nSerie_PulleyFrente.Name = "nSerie_PulleyFrente";
 			this.nSerie_PulleyFrente.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_PulleyFrente.TabIndex = 11;
+			this.nSerie_PulleyFrente.TabIndex = 1;
 			// 
 			// nSerie_PulleyCostas
 			// 
@@ -3966,7 +3966,7 @@ namespace Rock_Solid
 			this.cb_VoadorInverso.Location = new System.Drawing.Point(150, 278);
 			this.cb_VoadorInverso.Name = "cb_VoadorInverso";
 			this.cb_VoadorInverso.Size = new System.Drawing.Size(50, 21);
-			this.cb_VoadorInverso.TabIndex = 47;
+			this.cb_VoadorInverso.TabIndex = 10;
 			// 
 			// cb_BarraFixa
 			// 
@@ -3981,7 +3981,7 @@ namespace Rock_Solid
 			this.cb_BarraFixa.Location = new System.Drawing.Point(150, 252);
 			this.cb_BarraFixa.Name = "cb_BarraFixa";
 			this.cb_BarraFixa.Size = new System.Drawing.Size(50, 21);
-			this.cb_BarraFixa.TabIndex = 46;
+			this.cb_BarraFixa.TabIndex = 9;
 			// 
 			// cb_PullOverCostas
 			// 
@@ -3996,7 +3996,7 @@ namespace Rock_Solid
 			this.cb_PullOverCostas.Location = new System.Drawing.Point(150, 226);
 			this.cb_PullOverCostas.Name = "cb_PullOverCostas";
 			this.cb_PullOverCostas.Size = new System.Drawing.Size(50, 21);
-			this.cb_PullOverCostas.TabIndex = 45;
+			this.cb_PullOverCostas.TabIndex = 8;
 			// 
 			// cb_PeckDeckCostas
 			// 
@@ -4011,7 +4011,7 @@ namespace Rock_Solid
 			this.cb_PeckDeckCostas.Location = new System.Drawing.Point(150, 200);
 			this.cb_PeckDeckCostas.Name = "cb_PeckDeckCostas";
 			this.cb_PeckDeckCostas.Size = new System.Drawing.Size(50, 21);
-			this.cb_PeckDeckCostas.TabIndex = 44;
+			this.cb_PeckDeckCostas.TabIndex = 7;
 			// 
 			// cb_PuxadorArticulado
 			// 
@@ -4026,7 +4026,7 @@ namespace Rock_Solid
 			this.cb_PuxadorArticulado.Location = new System.Drawing.Point(150, 174);
 			this.cb_PuxadorArticulado.Name = "cb_PuxadorArticulado";
 			this.cb_PuxadorArticulado.Size = new System.Drawing.Size(50, 21);
-			this.cb_PuxadorArticulado.TabIndex = 43;
+			this.cb_PuxadorArticulado.TabIndex = 6;
 			// 
 			// cb_RemadaCavalinho
 			// 
@@ -4041,7 +4041,7 @@ namespace Rock_Solid
 			this.cb_RemadaCavalinho.Location = new System.Drawing.Point(150, 145);
 			this.cb_RemadaCavalinho.Name = "cb_RemadaCavalinho";
 			this.cb_RemadaCavalinho.Size = new System.Drawing.Size(50, 21);
-			this.cb_RemadaCavalinho.TabIndex = 42;
+			this.cb_RemadaCavalinho.TabIndex = 5;
 			// 
 			// cb_RemadaAlternada
 			// 
@@ -4056,7 +4056,7 @@ namespace Rock_Solid
 			this.cb_RemadaAlternada.Location = new System.Drawing.Point(150, 119);
 			this.cb_RemadaAlternada.Name = "cb_RemadaAlternada";
 			this.cb_RemadaAlternada.Size = new System.Drawing.Size(50, 21);
-			this.cb_RemadaAlternada.TabIndex = 41;
+			this.cb_RemadaAlternada.TabIndex = 4;
 			// 
 			// cb_RemadaHorizontal
 			// 
@@ -4071,7 +4071,7 @@ namespace Rock_Solid
 			this.cb_RemadaHorizontal.Location = new System.Drawing.Point(150, 93);
 			this.cb_RemadaHorizontal.Name = "cb_RemadaHorizontal";
 			this.cb_RemadaHorizontal.Size = new System.Drawing.Size(50, 21);
-			this.cb_RemadaHorizontal.TabIndex = 40;
+			this.cb_RemadaHorizontal.TabIndex = 3;
 			// 
 			// cb_PulleyInvertido
 			// 
@@ -4086,7 +4086,7 @@ namespace Rock_Solid
 			this.cb_PulleyInvertido.Location = new System.Drawing.Point(150, 67);
 			this.cb_PulleyInvertido.Name = "cb_PulleyInvertido";
 			this.cb_PulleyInvertido.Size = new System.Drawing.Size(50, 21);
-			this.cb_PulleyInvertido.TabIndex = 39;
+			this.cb_PulleyInvertido.TabIndex = 2;
 			// 
 			// cb_PulleyFrente
 			// 
@@ -4101,7 +4101,7 @@ namespace Rock_Solid
 			this.cb_PulleyFrente.Location = new System.Drawing.Point(150, 41);
 			this.cb_PulleyFrente.Name = "cb_PulleyFrente";
 			this.cb_PulleyFrente.Size = new System.Drawing.Size(50, 21);
-			this.cb_PulleyFrente.TabIndex = 38;
+			this.cb_PulleyFrente.TabIndex = 1;
 			// 
 			// cb_PulleyCostas
 			// 
@@ -4116,7 +4116,7 @@ namespace Rock_Solid
 			this.cb_PulleyCostas.Location = new System.Drawing.Point(150, 15);
 			this.cb_PulleyCostas.Name = "cb_PulleyCostas";
 			this.cb_PulleyCostas.Size = new System.Drawing.Size(50, 21);
-			this.cb_PulleyCostas.TabIndex = 37;
+			this.cb_PulleyCostas.TabIndex = 0;
 			// 
 			// tp_Abdomen
 			// 
@@ -4156,7 +4156,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_PranchaAbdomen.Name = "nCarga_PranchaAbdomen";
 			this.nCarga_PranchaAbdomen.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_PranchaAbdomen.TabIndex = 29;
+			this.nCarga_PranchaAbdomen.TabIndex = 4;
 			// 
 			// nCarga_ParalelaFixa
 			// 
@@ -4168,7 +4168,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_ParalelaFixa.Name = "nCarga_ParalelaFixa";
 			this.nCarga_ParalelaFixa.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_ParalelaFixa.TabIndex = 28;
+			this.nCarga_ParalelaFixa.TabIndex = 3;
 			// 
 			// nCarga_Obliquo
 			// 
@@ -4180,7 +4180,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Obliquo.Name = "nCarga_Obliquo";
 			this.nCarga_Obliquo.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Obliquo.TabIndex = 27;
+			this.nCarga_Obliquo.TabIndex = 2;
 			// 
 			// nCarga_Infra
 			// 
@@ -4192,7 +4192,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Infra.Name = "nCarga_Infra";
 			this.nCarga_Infra.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Infra.TabIndex = 26;
+			this.nCarga_Infra.TabIndex = 1;
 			// 
 			// nCarga_RetoAbdomen
 			// 
@@ -4204,7 +4204,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_RetoAbdomen.Name = "nCarga_RetoAbdomen";
 			this.nCarga_RetoAbdomen.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_RetoAbdomen.TabIndex = 25;
+			this.nCarga_RetoAbdomen.TabIndex = 0;
 			// 
 			// gb_RepeticaoAbdomen
 			// 
@@ -4230,7 +4230,7 @@ namespace Rock_Solid
             0});
 			this.nRep_PranchaAbdomen.Name = "nRep_PranchaAbdomen";
 			this.nRep_PranchaAbdomen.Size = new System.Drawing.Size(80, 20);
-			this.nRep_PranchaAbdomen.TabIndex = 29;
+			this.nRep_PranchaAbdomen.TabIndex = 4;
 			// 
 			// nRep_ParalelaFixa
 			// 
@@ -4242,7 +4242,7 @@ namespace Rock_Solid
             0});
 			this.nRep_ParalelaFixa.Name = "nRep_ParalelaFixa";
 			this.nRep_ParalelaFixa.Size = new System.Drawing.Size(80, 20);
-			this.nRep_ParalelaFixa.TabIndex = 28;
+			this.nRep_ParalelaFixa.TabIndex = 3;
 			// 
 			// nRep_Obliquo
 			// 
@@ -4254,7 +4254,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Obliquo.Name = "nRep_Obliquo";
 			this.nRep_Obliquo.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Obliquo.TabIndex = 27;
+			this.nRep_Obliquo.TabIndex = 2;
 			// 
 			// nRep_Infra
 			// 
@@ -4266,7 +4266,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Infra.Name = "nRep_Infra";
 			this.nRep_Infra.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Infra.TabIndex = 26;
+			this.nRep_Infra.TabIndex = 1;
 			// 
 			// nRep_RetoAbdomen
 			// 
@@ -4278,7 +4278,7 @@ namespace Rock_Solid
             0});
 			this.nRep_RetoAbdomen.Name = "nRep_RetoAbdomen";
 			this.nRep_RetoAbdomen.Size = new System.Drawing.Size(80, 20);
-			this.nRep_RetoAbdomen.TabIndex = 25;
+			this.nRep_RetoAbdomen.TabIndex = 0;
 			// 
 			// gb_SerieAbdomen
 			// 
@@ -4299,28 +4299,28 @@ namespace Rock_Solid
 			this.nSerie_PranchaAbdomen.Location = new System.Drawing.Point(12, 120);
 			this.nSerie_PranchaAbdomen.Name = "nSerie_PranchaAbdomen";
 			this.nSerie_PranchaAbdomen.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_PranchaAbdomen.TabIndex = 14;
+			this.nSerie_PranchaAbdomen.TabIndex = 4;
 			// 
 			// nSerie_ParalelaFixa
 			// 
 			this.nSerie_ParalelaFixa.Location = new System.Drawing.Point(12, 94);
 			this.nSerie_ParalelaFixa.Name = "nSerie_ParalelaFixa";
 			this.nSerie_ParalelaFixa.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_ParalelaFixa.TabIndex = 13;
+			this.nSerie_ParalelaFixa.TabIndex = 3;
 			// 
 			// nSerie_Obliquo
 			// 
 			this.nSerie_Obliquo.Location = new System.Drawing.Point(12, 68);
 			this.nSerie_Obliquo.Name = "nSerie_Obliquo";
 			this.nSerie_Obliquo.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Obliquo.TabIndex = 12;
+			this.nSerie_Obliquo.TabIndex = 2;
 			// 
 			// nSerie_Infra
 			// 
 			this.nSerie_Infra.Location = new System.Drawing.Point(12, 42);
 			this.nSerie_Infra.Name = "nSerie_Infra";
 			this.nSerie_Infra.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Infra.TabIndex = 11;
+			this.nSerie_Infra.TabIndex = 1;
 			// 
 			// nSerie_RetoAbdomen
 			// 
@@ -4361,7 +4361,7 @@ namespace Rock_Solid
 			this.cb_PranchaAbdomen.Location = new System.Drawing.Point(150, 119);
 			this.cb_PranchaAbdomen.Name = "cb_PranchaAbdomen";
 			this.cb_PranchaAbdomen.Size = new System.Drawing.Size(50, 21);
-			this.cb_PranchaAbdomen.TabIndex = 21;
+			this.cb_PranchaAbdomen.TabIndex = 4;
 			// 
 			// cb_ParalelaFixa
 			// 
@@ -4376,7 +4376,7 @@ namespace Rock_Solid
 			this.cb_ParalelaFixa.Location = new System.Drawing.Point(150, 93);
 			this.cb_ParalelaFixa.Name = "cb_ParalelaFixa";
 			this.cb_ParalelaFixa.Size = new System.Drawing.Size(50, 21);
-			this.cb_ParalelaFixa.TabIndex = 20;
+			this.cb_ParalelaFixa.TabIndex = 3;
 			// 
 			// cb_Oblico
 			// 
@@ -4391,7 +4391,7 @@ namespace Rock_Solid
 			this.cb_Oblico.Location = new System.Drawing.Point(150, 67);
 			this.cb_Oblico.Name = "cb_Oblico";
 			this.cb_Oblico.Size = new System.Drawing.Size(50, 21);
-			this.cb_Oblico.TabIndex = 19;
+			this.cb_Oblico.TabIndex = 2;
 			// 
 			// cb_Infra
 			// 
@@ -4406,7 +4406,7 @@ namespace Rock_Solid
 			this.cb_Infra.Location = new System.Drawing.Point(150, 41);
 			this.cb_Infra.Name = "cb_Infra";
 			this.cb_Infra.Size = new System.Drawing.Size(50, 21);
-			this.cb_Infra.TabIndex = 18;
+			this.cb_Infra.TabIndex = 1;
 			// 
 			// cb_RetoAbdomen
 			// 
@@ -4421,7 +4421,7 @@ namespace Rock_Solid
 			this.cb_RetoAbdomen.Location = new System.Drawing.Point(150, 15);
 			this.cb_RetoAbdomen.Name = "cb_RetoAbdomen";
 			this.cb_RetoAbdomen.Size = new System.Drawing.Size(50, 21);
-			this.cb_RetoAbdomen.TabIndex = 17;
+			this.cb_RetoAbdomen.TabIndex = 0;
 			// 
 			// lb_PranchaAbdomen
 			// 
@@ -4505,7 +4505,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Corda.Name = "nCarga_Corda";
 			this.nCarga_Corda.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Corda.TabIndex = 28;
+			this.nCarga_Corda.TabIndex = 3;
 			// 
 			// nCarga_Eliptico
 			// 
@@ -4517,7 +4517,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Eliptico.Name = "nCarga_Eliptico";
 			this.nCarga_Eliptico.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Eliptico.TabIndex = 27;
+			this.nCarga_Eliptico.TabIndex = 2;
 			// 
 			// nCarga_Bicicleta
 			// 
@@ -4529,7 +4529,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Bicicleta.Name = "nCarga_Bicicleta";
 			this.nCarga_Bicicleta.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Bicicleta.TabIndex = 26;
+			this.nCarga_Bicicleta.TabIndex = 1;
 			// 
 			// nCarga_Esteira
 			// 
@@ -4541,7 +4541,7 @@ namespace Rock_Solid
             0});
 			this.nCarga_Esteira.Name = "nCarga_Esteira";
 			this.nCarga_Esteira.Size = new System.Drawing.Size(80, 20);
-			this.nCarga_Esteira.TabIndex = 25;
+			this.nCarga_Esteira.TabIndex = 0;
 			// 
 			// gb_RepeticaoAquecimento
 			// 
@@ -4566,7 +4566,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Corda.Name = "nRep_Corda";
 			this.nRep_Corda.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Corda.TabIndex = 28;
+			this.nRep_Corda.TabIndex = 3;
 			// 
 			// nRep_Eliptico
 			// 
@@ -4578,7 +4578,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Eliptico.Name = "nRep_Eliptico";
 			this.nRep_Eliptico.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Eliptico.TabIndex = 27;
+			this.nRep_Eliptico.TabIndex = 2;
 			// 
 			// nRep_Bicicleta
 			// 
@@ -4590,7 +4590,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Bicicleta.Name = "nRep_Bicicleta";
 			this.nRep_Bicicleta.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Bicicleta.TabIndex = 26;
+			this.nRep_Bicicleta.TabIndex = 1;
 			// 
 			// nRep_Esteira
 			// 
@@ -4602,7 +4602,7 @@ namespace Rock_Solid
             0});
 			this.nRep_Esteira.Name = "nRep_Esteira";
 			this.nRep_Esteira.Size = new System.Drawing.Size(80, 20);
-			this.nRep_Esteira.TabIndex = 25;
+			this.nRep_Esteira.TabIndex = 0;
 			// 
 			// gb_SerieAquecimento
 			// 
@@ -4622,21 +4622,21 @@ namespace Rock_Solid
 			this.nSerie_Corda.Location = new System.Drawing.Point(12, 94);
 			this.nSerie_Corda.Name = "nSerie_Corda";
 			this.nSerie_Corda.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Corda.TabIndex = 13;
+			this.nSerie_Corda.TabIndex = 3;
 			// 
 			// nSerie_Eliptico
 			// 
 			this.nSerie_Eliptico.Location = new System.Drawing.Point(12, 68);
 			this.nSerie_Eliptico.Name = "nSerie_Eliptico";
 			this.nSerie_Eliptico.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Eliptico.TabIndex = 12;
+			this.nSerie_Eliptico.TabIndex = 2;
 			// 
 			// nSerie_Bicicleta
 			// 
 			this.nSerie_Bicicleta.Location = new System.Drawing.Point(12, 42);
 			this.nSerie_Bicicleta.Name = "nSerie_Bicicleta";
 			this.nSerie_Bicicleta.Size = new System.Drawing.Size(80, 20);
-			this.nSerie_Bicicleta.TabIndex = 11;
+			this.nSerie_Bicicleta.TabIndex = 1;
 			// 
 			// nSerie_Esteira
 			// 
@@ -4711,7 +4711,7 @@ namespace Rock_Solid
 			this.cb_Corda.Location = new System.Drawing.Point(150, 93);
 			this.cb_Corda.Name = "cb_Corda";
 			this.cb_Corda.Size = new System.Drawing.Size(50, 21);
-			this.cb_Corda.TabIndex = 7;
+			this.cb_Corda.TabIndex = 3;
 			// 
 			// cb_Eliptico
 			// 
@@ -4726,7 +4726,7 @@ namespace Rock_Solid
 			this.cb_Eliptico.Location = new System.Drawing.Point(150, 67);
 			this.cb_Eliptico.Name = "cb_Eliptico";
 			this.cb_Eliptico.Size = new System.Drawing.Size(50, 21);
-			this.cb_Eliptico.TabIndex = 6;
+			this.cb_Eliptico.TabIndex = 2;
 			// 
 			// cb_Bicicleta
 			// 
@@ -4741,7 +4741,7 @@ namespace Rock_Solid
 			this.cb_Bicicleta.Location = new System.Drawing.Point(150, 41);
 			this.cb_Bicicleta.Name = "cb_Bicicleta";
 			this.cb_Bicicleta.Size = new System.Drawing.Size(50, 21);
-			this.cb_Bicicleta.TabIndex = 5;
+			this.cb_Bicicleta.TabIndex = 1;
 			// 
 			// cb_Esteira
 			// 
@@ -4756,7 +4756,7 @@ namespace Rock_Solid
 			this.cb_Esteira.Location = new System.Drawing.Point(150, 15);
 			this.cb_Esteira.Name = "cb_Esteira";
 			this.cb_Esteira.Size = new System.Drawing.Size(50, 21);
-			this.cb_Esteira.TabIndex = 4;
+			this.cb_Esteira.TabIndex = 0;
 			// 
 			// panel1
 			// 
@@ -4807,11 +4807,15 @@ namespace Rock_Solid
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.tc_Workout);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.KeyPreview = true;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "frm_WorkOut";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Lista de Treinos";
+			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_WorkOut_FormClosed);
+			this.Load += new System.EventHandler(this.frm_WorkOut_Load);
+			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frm_WorkOut_KeyPress);
 			this.tc_Workout.ResumeLayout(false);
 			this.tp_Biceps.ResumeLayout(false);
 			this.gb_CargaBiceps.ResumeLayout(false);
@@ -4863,7 +4867,7 @@ namespace Rock_Solid
 			((System.ComponentModel.ISupportInitialize)(this.nRep_RoscaTesta)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Pulley)).EndInit();
 			this.gb_SerieTriceps.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.nSerie_ergulho)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Mergulho)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Invertido)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Coice)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_RoscaSupinada)).EndInit();
@@ -4907,7 +4911,7 @@ namespace Rock_Solid
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Stiff)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Panturrilha)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Hack)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nCarga_AgachamentoLivre)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_Agachamento)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_LegPress)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Abdutor)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Adutor)).EndInit();
@@ -4919,7 +4923,7 @@ namespace Rock_Solid
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Stiff)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Panturrilha)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Hack)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nRep_AgachamentoLivre)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_Agachamento)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_LegPress)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Abdutor)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Adutor)).EndInit();
@@ -4931,7 +4935,7 @@ namespace Rock_Solid
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Stiff)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Panturrilha)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Hack)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nSerie_AgachamentoLivre)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nSerie_Agachamento)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_LegPress)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Abdutor)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nSerie_Adutor)).EndInit();
@@ -4943,7 +4947,7 @@ namespace Rock_Solid
 			this.gb_CargaPeito.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_CrossOver)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Crucifixo)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nCarga_PeckDeck)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nCarga_PeckDeckPeito)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_Peck)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_SupinoDumbell)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nCarga_SupinoSentado)).EndInit();
@@ -4952,7 +4956,7 @@ namespace Rock_Solid
 			this.gb_RepeticaoPeito.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.nRep_CrossOver)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Crucifixo)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nRep_PeckDeck)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nRep_PeckDeckPeito)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_Peck)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_SupinoDumbell)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nRep_SupinoSentado)).EndInit();
@@ -5114,7 +5118,7 @@ namespace Rock_Solid
 		public System.Windows.Forms.NumericUpDown nRep_RoscaTesta;
 		public System.Windows.Forms.NumericUpDown nRep_Pulley;
 		public System.Windows.Forms.GroupBox gb_SerieTriceps;
-		public System.Windows.Forms.NumericUpDown nSerie_ergulho;
+		public System.Windows.Forms.NumericUpDown nSerie_Mergulho;
 		public System.Windows.Forms.NumericUpDown nSerie_Invertido;
 		public System.Windows.Forms.NumericUpDown nSerie_Coice;
 		public System.Windows.Forms.NumericUpDown nSerie_RoscaSupinada;
@@ -5154,7 +5158,7 @@ namespace Rock_Solid
 		public System.Windows.Forms.NumericUpDown nCarga_Stiff;
 		public System.Windows.Forms.NumericUpDown nCarga_Panturrilha;
 		public System.Windows.Forms.NumericUpDown nCarga_Hack;
-		public System.Windows.Forms.NumericUpDown nCarga_AgachamentoLivre;
+		public System.Windows.Forms.NumericUpDown nCarga_Agachamento;
 		public System.Windows.Forms.NumericUpDown nCarga_LegPress;
 		public System.Windows.Forms.NumericUpDown nCarga_Abdutor;
 		public System.Windows.Forms.NumericUpDown nCarga_Adutor;
@@ -5166,7 +5170,7 @@ namespace Rock_Solid
 		public System.Windows.Forms.NumericUpDown nRep_Stiff;
 		public System.Windows.Forms.NumericUpDown nRep_Panturrilha;
 		public System.Windows.Forms.NumericUpDown nRep_Hack;
-		public System.Windows.Forms.NumericUpDown nRep_AgachamentoLivre;
+		public System.Windows.Forms.NumericUpDown nRep_Agachamento;
 		public System.Windows.Forms.NumericUpDown nRep_LegPress;
 		public System.Windows.Forms.NumericUpDown nRep_Abdutor;
 		public System.Windows.Forms.NumericUpDown nRep_Adutor;
@@ -5178,7 +5182,7 @@ namespace Rock_Solid
 		public System.Windows.Forms.NumericUpDown nSerie_Stiff;
 		public System.Windows.Forms.NumericUpDown nSerie_Panturrilha;
 		public System.Windows.Forms.NumericUpDown nSerie_Hack;
-		public System.Windows.Forms.NumericUpDown nSerie_AgachamentoLivre;
+		public System.Windows.Forms.NumericUpDown nSerie_Agachamento;
 		public System.Windows.Forms.NumericUpDown nSerie_LegPress;
 		public System.Windows.Forms.NumericUpDown nSerie_Abdutor;
 		public System.Windows.Forms.NumericUpDown nSerie_Adutor;
@@ -5188,7 +5192,7 @@ namespace Rock_Solid
 		public System.Windows.Forms.GroupBox gb_CargaPeito;
 		public System.Windows.Forms.NumericUpDown nCarga_CrossOver;
 		public System.Windows.Forms.NumericUpDown nCarga_Crucifixo;
-		public System.Windows.Forms.NumericUpDown nCarga_PeckDeck;
+		public System.Windows.Forms.NumericUpDown nCarga_PeckDeckPeito;
 		public System.Windows.Forms.NumericUpDown nCarga_Peck;
 		public System.Windows.Forms.NumericUpDown nCarga_SupinoDumbell;
 		public System.Windows.Forms.NumericUpDown nCarga_SupinoSentado;
@@ -5197,7 +5201,7 @@ namespace Rock_Solid
 		public System.Windows.Forms.GroupBox gb_RepeticaoPeito;
 		public System.Windows.Forms.NumericUpDown nRep_CrossOver;
 		public System.Windows.Forms.NumericUpDown nRep_Crucifixo;
-		public System.Windows.Forms.NumericUpDown nRep_PeckDeck;
+		public System.Windows.Forms.NumericUpDown nRep_PeckDeckPeito;
 		public System.Windows.Forms.NumericUpDown nRep_Peck;
 		public System.Windows.Forms.NumericUpDown nRep_SupinoDumbell;
 		public System.Windows.Forms.NumericUpDown nRep_SupinoSentado;
@@ -5313,7 +5317,7 @@ namespace Rock_Solid
 		public System.Windows.Forms.ComboBox cb_ElevacaoFrontal;
 		public System.Windows.Forms.ComboBox cb_ElevacaoLateral;
 		public System.Windows.Forms.ComboBox cb_CrossOver;
-		public System.Windows.Forms.ComboBox cb_crucifixo;
+		public System.Windows.Forms.ComboBox cb_Crucifixo;
 		public System.Windows.Forms.ComboBox cb_PeckDeckPeito;
 		public System.Windows.Forms.ComboBox cb_Peck;
 		public System.Windows.Forms.ComboBox cb_SupinoDumbell;

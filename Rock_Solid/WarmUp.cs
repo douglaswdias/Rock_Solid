@@ -30,6 +30,6 @@ namespace Rock_Solid
 		public static Int32 WARMUP_ELIPTICO_CARGA = 0;
 		public static Int32 WARMUP_CORDA_CARGA = 0;
 
-		public static Int32 WARMUP_WARMUP = 0;
+		public static Int32 WARMUP_WORKOUT = 0;
 	}
 }

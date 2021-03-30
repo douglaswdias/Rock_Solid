@@ -58,6 +58,6 @@ namespace Rock_Solid
 		public static Int32 BACK_BARRAFIXA_CARGA = 0;
 		public static Int32 BACK_VOADORINVERSO_CARGA = 0;
 
-		public static Int32 BACK_BACK = 0;
+		public static Int32 BACK_WORKOUT = 0;
 	}
 }

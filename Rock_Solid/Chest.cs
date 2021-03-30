@@ -46,6 +46,6 @@ namespace Rock_Solid
 		public static Int32 CHEST_CRUCIFIXO_CARGA = 0;
 		public static Int32 CHEST_CROSSOVER_CARGA = 0;
 
-		public static Int32 CHEST_CHEST = 0;
+		public static Int32 CHEST_WORKOUT = 0;
 	}
 }

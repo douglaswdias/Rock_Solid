@@ -19,6 +19,7 @@ namespace Rock_Solid
 		public static string BICEPS_ROSCAROLDANA = "0";
 		public static string BICEPS_ROSCASIMULTANEA = "0";
 
+		public static Int32 BICEPS_ROSCADIRETA_SERIE = 0;
 		public static Int32 BICEPS_ROSCAALTERNADA_SERIE = 0;
 		public static Int32 BICEPS_ROSCAMARTELO_SERIE = 0;
 		public static Int32 BICEPS_ROSCACONCENTRADA_SERIE = 0;
@@ -27,6 +28,7 @@ namespace Rock_Solid
 		public static Int32 BICEPS_ROSCAROLDANA_SERIE = 0;
 		public static Int32 BICEPS_ROSCASIMULTANEA_SERIE = 0;
 
+		public static Int32 BICEPS_ROSCADIRETA_REP = 0;
 		public static Int32 BICEPS_ROSCAALTERNADA_REP = 0;
 		public static Int32 BICEPS_ROSCAMARTELO_REP = 0;
 		public static Int32 BICEPS_ROSCACONCENTRADA_REP = 0;
@@ -35,6 +37,7 @@ namespace Rock_Solid
 		public static Int32 BICEPS_ROSCAROLDANA_REP = 0;
 		public static Int32 BICEPS_ROSCASIMULTANEA_REP = 0;
 
+		public static Int32 BICEPS_ROSCADIRETA_CARGA = 0;
 		public static Int32 BICEPS_ROSCAALTERNADA_CARGA = 0;
 		public static Int32 BICEPS_ROSCAMARTELO_CARGA = 0;
 		public static Int32 BICEPS_ROSCACONCENTRADA_CARGA = 0;
@@ -43,6 +46,6 @@ namespace Rock_Solid
 		public static Int32 BICEPS_ROSCAROLDANA_CARGA = 0;
 		public static Int32 BICEPS_ROSCASIMULTANEA_CARGA = 0;
 
-		public static Int32 BICEPS_BICEPS = 0;
+		public static Int32 BICEPS_WORKOUT = 0;
 	}
 }
