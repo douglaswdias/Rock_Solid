@@ -20,59 +20,14 @@ namespace Rock_Solid
 
 		private void DropDownLists()
 		{
-			#region Bíceps
-			cb_RoscaDireta.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_RoscaAlternada.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_RoscaMartelo.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_RoscaConcentrada.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_RoscaArticulada.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_RoscaBilateral.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_RoscaRoldana.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_RoscaSimultanea.DropDownStyle = ComboBoxStyle.DropDownList;
+			#region Abs
+			cb_RetoAbdomen.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Infra.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Oblico.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_ParalelaFixa.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_PranchaAbdomen.DropDownStyle = ComboBoxStyle.DropDownList;
 			#endregion
-			#region Tríceps
-			cb_Pulley.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_RoscaTesta.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_PulleyCorda.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_RoscaFrancesa.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_RoscaSupinada.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Coice.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Invertido.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Mergulho.DropDownStyle = ComboBoxStyle.DropDownList;
-			#endregion
-			#region Ombros
-			cb_ElevacaoLateral.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_ElevacaoFrontal.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_ElevacaoOmbro.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_DesenvolvimentoCostas.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_DesenvolvimentoFrente.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_DesenvolvimentoDumbell.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_RemadaAlta.DropDownStyle = ComboBoxStyle.DropDownList;
-			#endregion
-			#region Pernas
-			cb_CadeiraExtensora.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_CadeiraFlexora.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Adutor.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Abdutor.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_LegPress.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Agachamento.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Hack.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Panturrilha.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Stiff.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Gluteo.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Avanco.DropDownStyle = ComboBoxStyle.DropDownList;
-			#endregion
-			#region Peito
-			cb_SupinoReto.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_SupinoInclinado.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_SupinoSentado.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_SupinoDumbell.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Peck.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_PeckDeckPeito.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Crucifixo.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_CrossOver.DropDownStyle = ComboBoxStyle.DropDownList;
-			#endregion
-			#region Costas
+			#region Back
 			cb_PulleyCostas.DropDownStyle = ComboBoxStyle.DropDownList;
 			cb_PulleyFrente.DropDownStyle = ComboBoxStyle.DropDownList;
 			cb_PulleyInvertido.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -85,14 +40,59 @@ namespace Rock_Solid
 			cb_BarraFixa.DropDownStyle = ComboBoxStyle.DropDownList;
 			cb_VoadorInverso.DropDownStyle = ComboBoxStyle.DropDownList;
 			#endregion
-			#region Abdomen
-			cb_RetoAbdomen.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Infra.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_Oblico.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_ParalelaFixa.DropDownStyle = ComboBoxStyle.DropDownList;
-			cb_PranchaAbdomen.DropDownStyle = ComboBoxStyle.DropDownList;
+			#region Biceps
+			cb_RoscaDireta.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_RoscaAlternada.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_RoscaMartelo.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_RoscaConcentrada.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_RoscaArticulada.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_RoscaBilateral.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_RoscaRoldana.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_RoscaSimultanea.DropDownStyle = ComboBoxStyle.DropDownList;
 			#endregion
-			#region Aquecimento
+			#region Chest
+			cb_SupinoReto.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_SupinoInclinado.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_SupinoSentado.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_SupinoDumbell.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Peck.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_PeckDeckPeito.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Crucifixo.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_CrossOver.DropDownStyle = ComboBoxStyle.DropDownList;
+			#endregion
+			#region Legs
+			cb_CadeiraExtensora.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_CadeiraFlexora.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Adutor.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Abdutor.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_LegPress.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Agachamento.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Hack.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Panturrilha.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Stiff.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Gluteo.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Avanco.DropDownStyle = ComboBoxStyle.DropDownList;
+			#endregion
+			#region Shoulders
+			cb_ElevacaoLateral.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_ElevacaoFrontal.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_ElevacaoOmbro.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_DesenvolvimentoCostas.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_DesenvolvimentoFrente.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_DesenvolvimentoDumbell.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_RemadaAlta.DropDownStyle = ComboBoxStyle.DropDownList;
+			#endregion
+			#region Triceps
+			cb_Pulley.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_RoscaTesta.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_PulleyCorda.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_RoscaFrancesa.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_RoscaSupinada.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Coice.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Invertido.DropDownStyle = ComboBoxStyle.DropDownList;
+			cb_Mergulho.DropDownStyle = ComboBoxStyle.DropDownList;
+			#endregion
+			#region WarmUp
 			cb_Esteira.DropDownStyle = ComboBoxStyle.DropDownList;
 			cb_Bicicleta.DropDownStyle = ComboBoxStyle.DropDownList;
 			cb_Eliptico.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -550,13 +550,123 @@ namespace Rock_Solid
 			nCarga_RoscaSimultanea.Value = Biceps.BICEPS_ROSCASIMULTANEA_CARGA;
 			#endregion
 			#region Chest
+			cb_SupinoReto.Text = Chest.CHEST_SUPINORETO;
+			cb_SupinoInclinado.Text = Chest.CHEST_SUPINOINCLINADO;
+			cb_SupinoSentado.Text = Chest.CHEST_SUPINOSENTADO;
+			cb_SupinoDumbell.Text = Chest.CHEST_SUPINODUMBELL;
+			cb_Peck.Text = Chest.CHEST_PECK;
+			cb_PeckDeckPeito.Text = Chest.CHEST_PECKDECK;
+			cb_Crucifixo.Text = Chest.CHEST_CRUCIFIXO;
+			cb_CrossOver.Text = Chest.CHEST_CROSSOVER;
 
+			nSerie_SupinoReto.Value = Chest.CHEST_SUPINORETO_SERIE;
+			nSerie_SupinoInclinado.Value = Chest.CHEST_SUPINOINCLINADO_SERIE;
+			nSerie_SupinoSentado.Value = Chest.CHEST_SUPINOSENTADO_SERIE;
+			nSerie_SupinoDumbell.Value = Chest.CHEST_SUPINODUMBELL_SERIE;
+			nSerie_Peck.Value = Chest.CHEST_PECK_SERIE;
+			nSerie_PeckDeckPeito.Value = Chest.CHEST_PECKDECK_SERIE;
+			nSerie_Crucifixo.Value = Chest.CHEST_CRUCIFIXO_SERIE;
+			nSerie_CrossOver.Value = Chest.CHEST_CROSSOVER_SERIE;
+
+			nRep_SupinoReto.Value = Chest.CHEST_SUPINORETO_REP;
+			nRep_SupinoInclinado.Value = Chest.CHEST_SUPINOINCLINADO_REP;
+			nRep_SupinoSentado.Value = Chest.CHEST_SUPINOSENTADO_REP;
+			nRep_SupinoDumbell.Value = Chest.CHEST_SUPINODUMBELL_REP;
+			nRep_Peck.Value = Chest.CHEST_PECK_REP;
+			nRep_PeckDeckPeito.Value = Chest.CHEST_PECKDECK_REP;
+			nRep_Crucifixo.Value = Chest.CHEST_CRUCIFIXO_REP;
+			nRep_CrossOver.Value = Chest.CHEST_CROSSOVER_REP;
+
+			nCarga_SupinoReto.Value = Chest.CHEST_SUPINORETO_CARGA;
+			nCarga_SupinoInclinado.Value = Chest.CHEST_SUPINOINCLINADO_CARGA;
+			nCarga_SupinoSentado.Value = Chest.CHEST_SUPINOSENTADO_CARGA;
+			nCarga_SupinoDumbell.Value = Chest.CHEST_SUPINODUMBELL_CARGA;
+			nCarga_Peck.Value = Chest.CHEST_PECK_CARGA;
+			nCarga_PeckDeckPeito.Value = Chest.CHEST_PECKDECK_CARGA;
+			nCarga_Crucifixo.Value = Chest.CHEST_CRUCIFIXO_CARGA;
+			nCarga_CrossOver.Value = Chest.CHEST_CROSSOVER_CARGA;
 			#endregion
 			#region Legs
+			cb_CadeiraExtensora.Text = Legs.LEGS_CADEIRAEXTENSORA;
+			cb_CadeiraFlexora.Text = Legs.LEGS_CADEIRAFLEXORA;
+			cb_Adutor.Text = Legs.LEGS_ADUTOR;
+			cb_Abdutor.Text = Legs.LEGS_ABDUTOR;
+			cb_LegPress.Text = Legs.LEGS_LEGPRESS;
+			cb_Agachamento.Text = Legs.LEGS_AGACHAMENTOLIVRE;
+			cb_Hack.Text = Legs.LEGS_HACK;
+			cb_Panturrilha.Text = Legs.LEGS_PANTURRILHA;
+			cb_Stiff.Text = Legs.LEGS_STIFF;
+			cb_Gluteo.Text = Legs.LEGS_GLUTEO;
+			cb_Avanco.Text = Legs.LEGS_AVANCO;
 
+			nSerie_CadeiraExtensorar.Value = Legs.LEGS_CADEIRAEXTENSORA_SERIE;
+			nSerie_CadeiraFlexora.Value = Legs.LEGS_CADEIRAFLEXORA_SERIE;
+			nSerie_Adutor.Value = Legs.LEGS_ADUTOR_SERIE;
+			nSerie_Abdutor.Value = Legs.LEGS_ABDUTOR_SERIE;
+			nSerie_LegPress.Value = Legs.LEGS_LEGPRESS_SERIE;
+			nSerie_Agachamento.Value = Legs.LEGS_AGACHAMENTOLIVRE_SERIE;
+			nSerie_Hack.Value = Legs.LEGS_HACK_SERIE;
+			nSerie_Panturrilha.Value = Legs.LEGS_PANTURRILHA_SERIE;
+			nSerie_Stiff.Value = Legs.LEGS_STIFF_SERIE;
+			nSerie_Gluteo.Value = Legs.LEGS_GLUTEO_SERIE;
+			nSerie_Avanco.Value = Legs.LEGS_AVANCO_SERIE;
+
+			nRep_CadeiraExtensora.Value = Legs.LEGS_CADEIRAEXTENSORA_REP;
+			nRep_CadeiraFlexora.Value = Legs.LEGS_CADEIRAFLEXORA_REP;
+			nRep_Adutor.Value = Legs.LEGS_ADUTOR_REP;
+			nRep_Abdutor.Value = Legs.LEGS_ABDUTOR_REP;
+			nRep_LegPress.Value = Legs.LEGS_LEGPRESS_REP;
+			nRep_Agachamento.Value = Legs.LEGS_AGACHAMENTOLIVRE_REP;
+			nRep_Hack.Value = Legs.LEGS_HACK_REP;
+			nRep_Panturrilha.Value = Legs.LEGS_PANTURRILHA_REP;
+			nRep_Stiff.Value = Legs.LEGS_STIFF_REP;
+			nRep_Gluteo.Value = Legs.LEGS_GLUTEO_REP;
+			nRep_Avanco.Value = Legs.LEGS_AVANCO_REP;
+
+			nCarga_CadeiraExtensora.Value = Legs.LEGS_CADEIRAEXTENSORA_CARGA;
+			nCarga_CadeiraFlexora.Value = Legs.LEGS_CADEIRAFLEXORA_CARGA;
+			nCarga_Adutor.Value = Legs.LEGS_ADUTOR_CARGA;
+			nCarga_Abdutor.Value = Legs.LEGS_ABDUTOR_CARGA;
+			nCarga_LegPress.Value = Legs.LEGS_LEGPRESS_CARGA;
+			nCarga_Agachamento.Value = Legs.LEGS_AGACHAMENTOLIVRE_CARGA;
+			nCarga_Hack.Value = Legs.LEGS_HACK_CARGA;
+			nCarga_Panturrilha.Value = Legs.LEGS_PANTURRILHA_CARGA;
+			nCarga_Stiff.Value = Legs.LEGS_STIFF_CARGA;
+			nCarga_Gluteo.Value = Legs.LEGS_GLUTEO_CARGA;
+			nCarga_Avanco.Value = Legs.LEGS_AVANCO_CARGA;
 			#endregion
 			#region Shouders
+			cb_ElevacaoLateral.Text = Shoulders.SHOULDERS_ELEVACAOLATERAL;
+			cb_ElevacaoFrontal.Text = Shoulders.SHOULDERS_ELEVACAOFRONTAL;
+			cb_ElevacaoOmbro.Text = Shoulders.SHOULDERS_ELEVACAOOMBRO;
+			cb_DesenvolvimentoCostas.Text = Shoulders.SHOULDERS_DEVCOSTAS;
+			cb_DesenvolvimentoFrente.Text = Shoulders.SHOULDERS_DEVFRENTE;
+			cb_DesenvolvimentoDumbell.Text = Shoulders.SHOULDERS_DEVDUMBELL;
+			cb_RemadaAlta.Text = Shoulders.SHOULDERS_REMADAALTA;
 
+			nSerie_ElevacaoLateral.Value = Shoulders.SHOULDERS_ELEVACAOLATERAL_SERIE;
+			nSerie_ElevacaoFrontal.Value = Shoulders.SHOULDERS_ELEVACAOFRONTAL_SERIE;
+			nSerie_ElevacaoOmbro.Value = Shoulders.SHOULDERS_ELEVACAOOMBRO_SERIE;
+			nSerie_DesenvolvimentoCostas.Value = Shoulders.SHOULDERS_DEVCOSTAS_SERIE;
+			nSerie_DesenvolvimentoFrente.Value = Shoulders.SHOULDERS_DEVFRENTE_SERIE;
+			nSerie_DesenvolvimentoDumbell.Value = Shoulders.SHOULDERS_DEVDUMBELL_SERIE;
+			nSerie_RemadaAlta.Value = Shoulders.SHOULDERS_REMADAALTA_SERIE;
+
+			nRep_ElevacaoLateral.Value = Shoulders.SHOULDERS_ELEVACAOLATERAL_REP;
+			nRep_ElevacaoFrontal.Value = Shoulders.SHOULDERS_ELEVACAOFRONTAL_REP;
+			nRep_ElevacaoOmbro.Value = Shoulders.SHOULDERS_ELEVACAOOMBRO_REP;
+			nRep_DesenvolvimentoCostas.Value = Shoulders.SHOULDERS_DEVCOSTAS_REP;
+			nRep_DesenvolvimentoFrente.Value = Shoulders.SHOULDERS_DEVFRENTE_REP;
+			nRep_DesenvolvimentoDumbell.Value = Shoulders.SHOULDERS_DEVDUMBELL_REP;
+			nRep_RemadaAlta.Value = Shoulders.SHOULDERS_REMADAALTA_REP;
+
+			nCarga_ElevacaoLateral.Value = Shoulders.SHOULDERS_ELEVACAOLATERAL_CARGA;
+			nCarga_ElevacaoFrontal.Value = Shoulders.SHOULDERS_ELEVACAOFRONTAL_CARGA;
+			nCarga_ElevacaoOmbro.Value = Shoulders.SHOULDERS_ELEVACAOOMBRO_CARGA;
+			nCarga_DesenvolvimentoCostas.Value = Shoulders.SHOULDERS_DEVCOSTAS_CARGA;
+			nCarga_DesenvolvimentoFrente.Value = Shoulders.SHOULDERS_DEVFRENTE_CARGA;
+			nCarga_DesenvolvimentoDumbell.Value = Shoulders.SHOULDERS_DEVDUMBELL_CARGA;
+			nCarga_RemadaAlta.Value = Shoulders.SHOULDERS_REMADAALTA_CARGA;
 			#endregion
 			#region Triceps
 
