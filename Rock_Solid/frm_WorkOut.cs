@@ -438,12 +438,182 @@ namespace Rock_Solid
 
 		private void frm_WorkOut_Load(object sender, EventArgs e)
 		{
-			cb_RetoAbdomen.Text = Abs.ABS_RETOABDOMEN.ToString();
+			#region Abs
+			cb_RetoAbdomen.Text = Abs.ABS_RETOABDOMEN;
+			cb_Infra.Text = Abs.ABS_INFRA;
+			cb_Oblico.Text = Abs.ABS_OBLIQUO;
+			cb_ParalelaFixa.Text = Abs.ABS_PARALELAFIXA;
+			cb_PranchaAbdomen.Text = Abs.ABS_PRANCHAABDOMEN;
+
+			nSerie_RetoAbdomen.Value = Abs.ABS_RETOABDOMEN_SERIE;
+			nSerie_Infra.Value = Abs.ABS_INFRA_SERIE;
+			nSerie_Obliquo.Value = Abs.ABS_OBLIQUO_SERIE;
+			nSerie_ParalelaFixa.Value = Abs.ABS_PARALELAFIXA_SERIE;
+			nSerie_PranchaAbdomen.Value = Abs.ABS_PRANCHAABDOMEN_SERIE;
+
+			nRep_RetoAbdomen.Value = Abs.ABS_RETOABDOMEN_REP;
+			nRep_Infra.Value = Abs.ABS_INFRA_REP;
+			nRep_Obliquo.Value = Abs.ABS_OBLIQUO_REP;
+			nRep_ParalelaFixa.Value = Abs.ABS_PARALELAFIXA_REP;
+			nRep_PranchaAbdomen.Value = Abs.ABS_PRANCHAABDOMEN_REP;
+
+			nCarga_RetoAbdomen.Value = Abs.ABS_RETOABDOMEN_CARGA;
+			nCarga_Infra.Value = Abs.ABS_INFRA_CARGA;
+			nCarga_Obliquo.Value = Abs.ABS_OBLIQUO_CARGA;
+			nCarga_ParalelaFixa.Value = Abs.ABS_PARALELAFIXA_CARGA;
+			nCarga_PranchaAbdomen.Value = Abs.ABS_PRANCHAABDOMEN_CARGA;
+			#endregion
+			#region Back
+			cb_PulleyCostas.Text = Back.BACK_PULLEYCOSTAS;
+			cb_PulleyFrente.Text = Back.BACK_PULLEYFRENTE;
+			cb_PulleyInvertido.Text = Back.BACK_PULLEYINVERTIDO;
+			cb_RemadaHorizontal.Text = Back.BACK_REMADAHORIZONTAL;
+			cb_RemadaAlternada.Text = Back.BACK_REMADAALTERNADA;
+			cb_RemadaCavalinho.Text = Back.BACK_REMADACAVALINHO;
+			cb_PuxadorArticulado.Text = Back.BACK_PUXADORARTICULADO;
+			cb_PeckDeckCostas.Text = Back.BACK_PECKDECK;
+			cb_PullOverCostas.Text = Back.BACK_PULLOVER;
+			cb_BarraFixa.Text = Back.BACK_BARRAFIXA;
+			cb_VoadorInverso.Text = Back.BACK_VOADORINVERSO;
+
+			nSerie_PulleyCostas.Value = Back.BACK_PULLEYCOSTAS_SERIE;
+			nSerie_PulleyFrente.Value = Back.BACK_PULLEYFRENTE_SERIE;
+			nSerie_PulleyInvertido.Value = Back.BACK_PULLEYINVERTIDO_SERIE;
+			nSerie_RemadaHorizontal.Value = Back.BACK_REMADAHORIZONTAL_SERIE;
+			nSerie_RemadaAlternada.Value = Back.BACK_REMADAALTERNADA_SERIE;
+			nSerie_RemadaCavalinho.Value = Back.BACK_REMADACAVALINHO_SERIE;
+			nSerie_PuxadorArticulado.Value = Back.BACK_PUXADORARTICULADO_SERIE;
+			nSerie_PeckDeckCostas.Value = Back.BACK_PECKDECK_SERIE;
+			nSerie_PullOverCostas.Value = Back.BACK_PULLOVER_SERIE;
+			nSerie_BarraFixa.Value = Back.BACK_BARRAFIXA_SERIE;
+			nSerie_VoadorInverso.Value = Back.BACK_VOADORINVERSO_SERIE;
+
+			nRep_PulleyCostas.Value = Back.BACK_PULLEYCOSTAS_REP;
+			nRep_PulleyFrente.Value = Back.BACK_PULLEYFRENTE_REP;
+			nRep_PulleyInvertido.Value = Back.BACK_PULLEYINVERTIDO_REP;
+			nRep_RemadaHorizontal.Value = Back.BACK_REMADAHORIZONTAL_REP;
+			nRep_RemadaAlternada.Value = Back.BACK_REMADAALTERNADA_REP;
+			nRep_RemadaCavalinho.Value = Back.BACK_REMADACAVALINHO_REP;
+			nRep_PuxadorArticulado.Value = Back.BACK_PUXADORARTICULADO_REP;
+			nRep_PeckDeckCostas.Value = Back.BACK_PECKDECK_REP;
+			nRep_PullOverCostas.Value = Back.BACK_PULLOVER_REP;
+			nRep_BarraFixa.Value = Back.BACK_BARRAFIXA_REP;
+			nRep_VoadorInverso.Value = Back.BACK_VOADORINVERSO_REP;
+
+			nCarga_PulleyCostas.Value = Back.BACK_PULLEYCOSTAS_CARGA;
+			nCarga_PulleyFrente.Value = Back.BACK_PULLEYFRENTE_CARGA;
+			nCarga_PulleyInvertido.Value = Back.BACK_PULLEYINVERTIDO_CARGA;
+			nCarga_RemadaHorizontal.Value = Back.BACK_REMADAHORIZONTAL_CARGA;
+			nCarga_RemadaAlternada.Value = Back.BACK_REMADAALTERNADA_CARGA;
+			nCarga_RemadaCavalinho.Value = Back.BACK_REMADACAVALINHO_CARGA;
+			nCarga_PuxadorArticulado.Value = Back.BACK_PUXADORARTICULADO_CARGA;
+			nCarga_PeckDeckCostas.Value = Back.BACK_PECKDECK_CARGA;
+			nCarga_PullOverCostas.Value = Back.BACK_PULLOVER_CARGA;
+			nCarga_BarraFixa.Value = Back.BACK_BARRAFIXA_CARGA;
+			nCarga_VoadorInverso.Value = Back.BACK_VOADORINVERSO_CARGA;
+			#endregion
+			#region Biceps
+			cb_RoscaDireta.Text = Biceps.BICEPS_ROSCADIRETA;
+			cb_RoscaAlternada.Text = Biceps.BICEPS_ROSCAALTERNADA;
+			cb_RoscaMartelo.Text = Biceps.BICEPS_ROSCAMARTELO;
+			cb_RoscaConcentrada.Text = Biceps.BICEPS_ROSCACONCENTRADA;
+			cb_RoscaArticulada.Text = Biceps.BICEPS_ROSCAARTICULADA;
+			cb_RoscaBilateral.Text = Biceps.BICEPS_ROSCABILATERAL;
+			cb_RoscaRoldana.Text = Biceps.BICEPS_ROSCAROLDANA;
+			cb_RoscaSimultanea.Text = Biceps.BICEPS_ROSCASIMULTANEA;
+
+			nSerie_RoscaDireta.Value = Biceps.BICEPS_ROSCADIRETA_SERIE;
+			nSerie_RoscaAlternada.Value = Biceps.BICEPS_ROSCAALTERNADA_SERIE;
+			nSerie_RoscaMartelo.Value = Biceps.BICEPS_ROSCAMARTELO_SERIE;
+			nSerie_RoscaConcentrada.Value = Biceps.BICEPS_ROSCACONCENTRADA_SERIE;
+			nSerie_RoscaArticulada.Value = Biceps.BICEPS_ROSCAARTICULADA_SERIE;
+			nSerie_RoscaBilateral.Value = Biceps.BICEPS_ROSCABILATERAL_SERIE;
+			nSerie_RoscaRoldana.Value = Biceps.BICEPS_ROSCAROLDANA_SERIE;
+			nSerie_RoscaSimultanea.Value = Biceps.BICEPS_ROSCASIMULTANEA_SERIE;
+
+			nRep_RoscaDireta.Value = Biceps.BICEPS_ROSCADIRETA_REP;
+			nRep_RoscaAlternada.Value = Biceps.BICEPS_ROSCAALTERNADA_REP;
+			nRep_RoscaMartelo.Value = Biceps.BICEPS_ROSCAMARTELO_REP;
+			nRep_RoscaConcentrada.Value = Biceps.BICEPS_ROSCACONCENTRADA_REP;
+			nRep_RoscaArticulada.Value = Biceps.BICEPS_ROSCAARTICULADA_REP;
+			nRep_RoscaBilateral.Value = Biceps.BICEPS_ROSCABILATERAL_REP;
+			nRep_RoscaRoldana.Value = Biceps.BICEPS_ROSCAROLDANA_REP;
+			nRep_RoscaSimultanea.Value = Biceps.BICEPS_ROSCASIMULTANEA_REP;
+
+			nCarga_RoscaDireta.Value = Biceps.BICEPS_ROSCADIRETA_CARGA;
+			nCarga_RoscaAlternada.Value = Biceps.BICEPS_ROSCAALTERNADA_CARGA;
+			nCarga_RoscaMartelo.Value = Biceps.BICEPS_ROSCAMARTELO_CARGA;
+			nCarga_RoscaConcentrada.Value = Biceps.BICEPS_ROSCACONCENTRADA_CARGA;
+			nCarga_RoscaBilateral.Value = Biceps.BICEPS_ROSCAARTICULADA_CARGA;
+			nCarga_RoscaRoldana.Value = Biceps.BICEPS_ROSCABILATERAL_CARGA;
+			nCarga_RoscaRoldana.Value = Biceps.BICEPS_ROSCAROLDANA_CARGA;
+			nCarga_RoscaSimultanea.Value = Biceps.BICEPS_ROSCASIMULTANEA_CARGA;
+			#endregion
+			#region Chest
+
+			#endregion
+			#region Legs
+
+			#endregion
+			#region Shouders
+
+			#endregion
+			#region Triceps
+
+			#endregion
+			#region WarmUp
+
+			#endregion
 		}
 
 		private void frm_WorkOut_FormClosed(object sender, FormClosedEventArgs e)
 		{
+			#region Abs
 			Abs.ABS_RETOABDOMEN = "";
+			Abs.ABS_INFRA = "";
+			Abs.ABS_OBLIQUO = "";
+			Abs.ABS_PARALELAFIXA = "";
+			Abs.ABS_PRANCHAABDOMEN = "";
+
+			Abs.ABS_RETOABDOMEN_SERIE = 0;
+			Abs.ABS_INFRA_SERIE = 0;
+			Abs.ABS_OBLIQUO_SERIE = 0;
+			Abs.ABS_PARALELAFIXA_SERIE = 0;
+			Abs.ABS_PRANCHAABDOMEN_SERIE = 0;
+
+			Abs.ABS_RETOABDOMEN_REP = 0;
+			Abs.ABS_INFRA_REP = 0;
+			Abs.ABS_OBLIQUO_REP = 0;
+			Abs.ABS_PARALELAFIXA_REP = 0;
+			Abs.ABS_PRANCHAABDOMEN_REP = 0;
+
+			Abs.ABS_RETOABDOMEN_CARGA = 0;
+			Abs.ABS_INFRA_CARGA = 0;
+			Abs.ABS_OBLIQUO_CARGA = 0;
+			Abs.ABS_PARALELAFIXA_CARGA = 0;
+			Abs.ABS_PRANCHAABDOMEN_CARGA = 0;
+			#endregion
+			#region Back
+
+			#endregion
+			#region Biceps
+
+			#endregion
+			#region Chest
+
+			#endregion
+			#region Legs
+
+			#endregion
+			#region Shouders
+
+			#endregion
+			#region Triceps
+
+			#endregion
+			#region WarmUp
+
+			#endregion
 		}
 	}
 }

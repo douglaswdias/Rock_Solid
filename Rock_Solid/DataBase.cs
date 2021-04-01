@@ -1375,9 +1375,33 @@ namespace Rock_Solid
 			sql.Open();
 			SQLiteCommand cmd = new SQLiteCommand();
 			cmd.CommandText = @"
-					SELECT ABS_RETOABDOMEN 
-						FROM WORKOUT 
+					SELECT ABS_RETOABDOMEN, ABS_INFRA, ABS_OBLIQUO, ABS_PARALELAFIXA, ABS_PRANCHAABDOMEN, ABS_RETOABDOMEN_SERIE, ABS_INFRA_SERIE, 
+						ABS_OBLIQUO_SERIE, ABS_PARALELAFIXA_SERIE, ABS_PRANCHAABDOMEN_SERIE, ABS_RETOABDOMEN_REP, ABS_INFRA_REP, ABS_OBLIQUO_REP, 
+						ABS_PARALELAFIXA_REP, ABS_PRANCHAABDOMEN_REP, ABS_RETOABDOMEN_CARGA, ABS_INFRA_CARGA, ABS_OBLIQUO_CARGA, ABS_PARALELAFIXA_CARGA, 
+						ABS_PRANCHAABDOMEN_CARGA, BACK_PULLEYCOSTAS, BACK_PULLEYFRENTE, BACK_PULLEYINVERTIDO, BACK_REMADAHORIZONTAL, BACK_REMADAALTERNADA, 
+						BACK_REMADACAVALINHO, BACK_PUXADORARTICULADO, BACK_PECKDECK, BACK_PULLOVER, BACK_BARRAFIXA, BACK_VOADORINVERSO, 
+						BACK_PULLEYCOSTAS_SERIE, BACK_PULLEYFRENTE_SERIE, BACK_PULLEYINVERTIDO_SERIE, BACK_REMADAHORIZONTAL_SERIE, BACK_REMADAALTERNADA_SERIE, 
+						BACK_REMADACAVALINHO_SERIE, BACK_PUXADORARTICULADO_SERIE, BACK_PECKDECK_SERIE, BACK_PULLOVER_SERIE, BACK_BARRAFIXA_SERIE, 
+						BACK_VOADORINVERSO_SERIE, BACK_PULLEYCOSTAS_REP, BACK_PULLEYFRENTE_REP, BACK_PULLEYINVERTIDO_REP, BACK_REMADAHORIZONTAL_REP, 
+						BACK_REMADAALTERNADA_REP, BACK_REMADACAVALINHO_REP, BACK_PUXADORARTICULADO_REP, BACK_PECKDECK_REP, BACK_PULLOVER_REP, BACK_BARRAFIXA_REP, 
+						BACK_VOADORINVERSO_REP, BACK_PULLEYCOSTAS_CARGA, BACK_PULLEYFRENTE_CARGA, BACK_PULLEYINVERTIDO_CARGA, BACK_REMADAHORIZONTAL_CARGA, 
+						BACK_REMADAALTERNADA_CARGA, BACK_REMADACAVALINHO_CARGA, BACK_PUXADORARTICULADO_CARGA, BACK_PECKDECK_CARGA, BACK_PULLOVER_CARGA, 
+						BACK_BARRAFIXA_CARGA, BACK_VOADORINVERSO_CARGA, BICEPS_ROSCADIRETA, BICEPS_ROSCAALTERNADA, BICEPS_ROSCAMARTELO, BICEPS_ROSCACONCENTRADA, 
+						BICEPS_ROSCAARTICULADA, BICEPS_ROSCABILATERAL, BICEPS_ROSCAROLDANA, BICEPS_ROSCASIMULTANEA, BICEPS_ROSCADIRETA_SERIE, 
+						BICEPS_ROSCAALTERNADA_SERIE, BICEPS_ROSCAMARTELO_SERIE, BICEPS_ROSCACONCENTRADA_SERIE, BICEPS_ROSCAARTICULADA_SERIE, 
+						BICEPS_ROSCABILATERAL_SERIE, BICEPS_ROSCAROLDANA_SERIE, BICEPS_ROSCASIMULTANEA_SERIE, BICEPS_ROSCADIRETA_REP, BICEPS_ROSCAALTERNADA_REP, 
+						BICEPS_ROSCAMARTELO_REP, BICEPS_ROSCACONCENTRADA_REP, BICEPS_ROSCAARTICULADA_REP, BICEPS_ROSCABILATERAL_REP, BICEPS_ROSCAROLDANA_REP, 
+						BICEPS_ROSCASIMULTANEA_REP, BICEPS_ROSCADIRETA_CARGA, BICEPS_ROSCAALTERNADA_CARGA, BICEPS_ROSCAMARTELO_CARGA, BICEPS_ROSCACONCENTRADA_CARGA, 
+						BICEPS_ROSCAARTICULADA_CARGA, BICEPS_ROSCABILATERAL_CARGA, BICEPS_ROSCAROLDANA_CARGA, BICEPS_ROSCASIMULTANEA_CARGA
+					FROM WORKOUT 
 					INNER JOIN ABS ON ABS_WORKOUT = WORKOUT_ID
+					INNER JOIN BACK ON BACK_WORKOUT = WORKOUT_ID
+					INNER JOIN BICEPS ON BICEPS_WORKOUT = WORKOUT_ID
+					INNER JOIN CHEST ON CHEST_WORKOUT = WORKOUT_ID
+					INNER JOIN LEGS ON LEGS_WORKOUT = WORKOUT_ID
+					INNER JOIN SHOULDERS ON SHOULDERS_WORKOUT = WORKOUT_ID
+					INNER JOIN TRICEPS ON TRICEPS_WORKOUT = WORKOUT_ID
+					INNER JOIN WARMUP ON WARMUP_WORKOUT = WORKOUT_ID
 					WHERE 
 						WORKOUT_CLIENT =" + Client.CLIENT_ID + " and " +
 							"WORKOUT_ID = (SELECT WORKOUT_ID FROM WORKOUT ORDER BY WORKOUT_ID DESC LIMIT 1)"
@@ -1386,7 +1410,132 @@ namespace Rock_Solid
 			SQLiteDataReader reader = cmd.ExecuteReader();
 			while (reader.Read())
 			{
+				#region Abs
 				Abs.ABS_RETOABDOMEN = reader.GetValue(0).ToString();
+				Abs.ABS_INFRA = reader.GetValue(1).ToString();
+				Abs.ABS_OBLIQUO = reader.GetValue(2).ToString();
+				Abs.ABS_PARALELAFIXA = reader.GetValue(3).ToString();
+				Abs.ABS_PRANCHAABDOMEN = reader.GetValue(4).ToString();
+
+				Abs.ABS_RETOABDOMEN_SERIE = Convert.ToInt32(reader.GetValue(5));
+				Abs.ABS_INFRA_SERIE = Convert.ToInt32(reader.GetValue(6));
+				Abs.ABS_OBLIQUO_SERIE = Convert.ToInt32(reader.GetValue(7));
+				Abs.ABS_PARALELAFIXA_SERIE = Convert.ToInt32(reader.GetValue(8));
+				Abs.ABS_PRANCHAABDOMEN_SERIE = Convert.ToInt32(reader.GetValue(9));
+
+				Abs.ABS_RETOABDOMEN_REP = Convert.ToInt32(reader.GetValue(10));
+				Abs.ABS_INFRA_REP = Convert.ToInt32(reader.GetValue(11));
+				Abs.ABS_OBLIQUO_REP = Convert.ToInt32(reader.GetValue(12));
+				Abs.ABS_PARALELAFIXA_REP = Convert.ToInt32(reader.GetValue(13));
+				Abs.ABS_PRANCHAABDOMEN_REP = Convert.ToInt32(reader.GetValue(14));
+
+				Abs.ABS_RETOABDOMEN_CARGA = Convert.ToInt32(reader.GetValue(15));
+				Abs.ABS_INFRA_CARGA = Convert.ToInt32(reader.GetValue(16));
+				Abs.ABS_OBLIQUO_CARGA = Convert.ToInt32(reader.GetValue(17));
+				Abs.ABS_PARALELAFIXA_CARGA = Convert.ToInt32(reader.GetValue(18));
+				Abs.ABS_PRANCHAABDOMEN_CARGA = Convert.ToInt32(reader.GetValue(19));
+				#endregion
+				#region Back
+				Back.BACK_PULLEYCOSTAS = reader.GetValue(20).ToString();
+				Back.BACK_PULLEYFRENTE = reader.GetValue(21).ToString();
+				Back.BACK_PULLEYINVERTIDO = reader.GetValue(22).ToString();
+				Back.BACK_REMADAHORIZONTAL = reader.GetValue(23).ToString();
+				Back.BACK_REMADAALTERNADA = reader.GetValue(24).ToString();
+				Back.BACK_REMADACAVALINHO = reader.GetValue(25).ToString();
+				Back.BACK_PUXADORARTICULADO = reader.GetValue(26).ToString();
+				Back.BACK_PECKDECK = reader.GetValue(27).ToString();
+				Back.BACK_PULLOVER = reader.GetValue(28).ToString();
+				Back.BACK_BARRAFIXA = reader.GetValue(29).ToString();
+				Back.BACK_VOADORINVERSO = reader.GetValue(30).ToString();
+
+				Back.BACK_PULLEYCOSTAS_SERIE = Convert.ToInt32(reader.GetValue(31));
+				Back.BACK_PULLEYFRENTE_SERIE = Convert.ToInt32(reader.GetValue(32));
+				Back.BACK_PULLEYINVERTIDO_SERIE = Convert.ToInt32(reader.GetValue(33));
+				Back.BACK_REMADAHORIZONTAL_SERIE = Convert.ToInt32(reader.GetValue(34));
+				Back.BACK_REMADAALTERNADA_SERIE = Convert.ToInt32(reader.GetValue(35));
+				Back.BACK_REMADACAVALINHO_SERIE = Convert.ToInt32(reader.GetValue(36));
+				Back.BACK_PUXADORARTICULADO_SERIE = Convert.ToInt32(reader.GetValue(37));
+				Back.BACK_PECKDECK_SERIE = Convert.ToInt32(reader.GetValue(38));
+				Back.BACK_PULLOVER_SERIE = Convert.ToInt32(reader.GetValue(39));
+				Back.BACK_BARRAFIXA_SERIE = Convert.ToInt32(reader.GetValue(40));
+				Back.BACK_VOADORINVERSO_SERIE = Convert.ToInt32(reader.GetValue(41));
+
+				Back.BACK_PULLEYCOSTAS_REP = Convert.ToInt32(reader.GetValue(42));
+				Back.BACK_PULLEYFRENTE_REP = Convert.ToInt32(reader.GetValue(43));
+				Back.BACK_PULLEYINVERTIDO_REP = Convert.ToInt32(reader.GetValue(44));
+				Back.BACK_REMADAHORIZONTAL_REP = Convert.ToInt32(reader.GetValue(45));
+				Back.BACK_REMADAALTERNADA_REP = Convert.ToInt32(reader.GetValue(46));
+				Back.BACK_REMADACAVALINHO_REP = Convert.ToInt32(reader.GetValue(47));
+				Back.BACK_PUXADORARTICULADO_REP = Convert.ToInt32(reader.GetValue(48));
+				Back.BACK_PECKDECK_REP = Convert.ToInt32(reader.GetValue(49));
+				Back.BACK_PULLOVER_REP = Convert.ToInt32(reader.GetValue(50));
+				Back.BACK_BARRAFIXA_REP = Convert.ToInt32(reader.GetValue(51));
+				Back.BACK_VOADORINVERSO_REP = Convert.ToInt32(reader.GetValue(52));
+
+				Back.BACK_PULLEYCOSTAS_CARGA = Convert.ToInt32(reader.GetValue(53));
+				Back.BACK_PULLEYFRENTE_CARGA = Convert.ToInt32(reader.GetValue(54));
+				Back.BACK_PULLEYINVERTIDO_CARGA = Convert.ToInt32(reader.GetValue(55));
+				Back.BACK_REMADAHORIZONTAL_CARGA = Convert.ToInt32(reader.GetValue(56));
+				Back.BACK_REMADAALTERNADA_CARGA = Convert.ToInt32(reader.GetValue(57));
+				Back.BACK_REMADACAVALINHO_CARGA = Convert.ToInt32(reader.GetValue(58));
+				Back.BACK_PUXADORARTICULADO_CARGA = Convert.ToInt32(reader.GetValue(59));
+				Back.BACK_PECKDECK_CARGA = Convert.ToInt32(reader.GetValue(60));
+				Back.BACK_PULLOVER_CARGA = Convert.ToInt32(reader.GetValue(61));
+				Back.BACK_BARRAFIXA_CARGA = Convert.ToInt32(reader.GetValue(62));
+				Back.BACK_VOADORINVERSO_CARGA = Convert.ToInt32(reader.GetValue(63));
+				#endregion
+				#region Biceps
+				Biceps.BICEPS_ROSCADIRETA = reader.GetValue(64).ToString();
+				Biceps.BICEPS_ROSCAALTERNADA = reader.GetValue(65).ToString();
+				Biceps.BICEPS_ROSCAMARTELO = reader.GetValue(66).ToString();
+				Biceps.BICEPS_ROSCACONCENTRADA = reader.GetValue(67).ToString();
+				Biceps.BICEPS_ROSCAARTICULADA = reader.GetValue(68).ToString();
+				Biceps.BICEPS_ROSCABILATERAL = reader.GetValue(69).ToString();
+				Biceps.BICEPS_ROSCAROLDANA = reader.GetValue(70).ToString();
+				Biceps.BICEPS_ROSCASIMULTANEA = reader.GetValue(71).ToString();
+
+				Biceps.BICEPS_ROSCADIRETA_SERIE = Convert.ToInt32(reader.GetValue(72));
+				Biceps.BICEPS_ROSCAALTERNADA_SERIE = Convert.ToInt32(reader.GetValue(73));
+				Biceps.BICEPS_ROSCAMARTELO_SERIE = Convert.ToInt32(reader.GetValue(74));
+				Biceps.BICEPS_ROSCACONCENTRADA_SERIE = Convert.ToInt32(reader.GetValue(75));
+				Biceps.BICEPS_ROSCAARTICULADA_SERIE = Convert.ToInt32(reader.GetValue(76));
+				Biceps.BICEPS_ROSCABILATERAL_SERIE = Convert.ToInt32(reader.GetValue(77));
+				Biceps.BICEPS_ROSCAROLDANA_SERIE = Convert.ToInt32(reader.GetValue(78));
+				Biceps.BICEPS_ROSCASIMULTANEA_SERIE = Convert.ToInt32(reader.GetValue(79));
+
+				Biceps.BICEPS_ROSCADIRETA_REP = Convert.ToInt32(reader.GetValue(80));
+				Biceps.BICEPS_ROSCAALTERNADA_REP = Convert.ToInt32(reader.GetValue(81));
+				Biceps.BICEPS_ROSCAMARTELO_REP = Convert.ToInt32(reader.GetValue(82));
+				Biceps.BICEPS_ROSCACONCENTRADA_REP = Convert.ToInt32(reader.GetValue(83));
+				Biceps.BICEPS_ROSCAARTICULADA_REP = Convert.ToInt32(reader.GetValue(84));
+				Biceps.BICEPS_ROSCABILATERAL_REP = Convert.ToInt32(reader.GetValue(85));
+				Biceps.BICEPS_ROSCAROLDANA_REP = Convert.ToInt32(reader.GetValue(86));
+				Biceps.BICEPS_ROSCASIMULTANEA_REP = Convert.ToInt32(reader.GetValue(87));
+
+				Biceps.BICEPS_ROSCADIRETA_CARGA = Convert.ToInt32(reader.GetValue(88));
+				Biceps.BICEPS_ROSCAALTERNADA_CARGA = Convert.ToInt32(reader.GetValue(89));
+				Biceps.BICEPS_ROSCAMARTELO_CARGA = Convert.ToInt32(reader.GetValue(90));
+				Biceps.BICEPS_ROSCACONCENTRADA_CARGA = Convert.ToInt32(reader.GetValue(91));
+				Biceps.BICEPS_ROSCAARTICULADA_CARGA = Convert.ToInt32(reader.GetValue(92));
+				Biceps.BICEPS_ROSCABILATERAL_CARGA = Convert.ToInt32(reader.GetValue(93));
+				Biceps.BICEPS_ROSCAROLDANA_CARGA = Convert.ToInt32(reader.GetValue(94));
+				Biceps.BICEPS_ROSCASIMULTANEA_CARGA = Convert.ToInt32(reader.GetValue(95));
+				#endregion
+				#region Chest
+
+				#endregion
+				#region Legs
+
+				#endregion
+				#region Shoulders
+
+				#endregion
+				#region Triceps
+
+				#endregion
+				#region WarmUp
+
+				#endregion
 			}
 		}
 		#endregion

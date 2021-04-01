@@ -942,6 +942,7 @@ namespace Rock_Solid
 			this.nSerie_RoscaDireta.Name = "nSerie_RoscaDireta";
 			this.nSerie_RoscaDireta.Size = new System.Drawing.Size(80, 20);
 			this.nSerie_RoscaDireta.TabIndex = 0;
+			this.nSerie_RoscaDireta.ThousandsSeparator = true;
 			// 
 			// gb_ExercicioBiceps
 			// 
