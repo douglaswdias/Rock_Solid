@@ -515,6 +515,7 @@
 			this.Name = "frm_Client";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Cadastro de Clientes";
+			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_Client_FormClosed);
 			this.Load += new System.EventHandler(this.frm_Client_Load);
 			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frm_Client_KeyPress);
 			this.panel1.ResumeLayout(false);

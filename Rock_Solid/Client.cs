@@ -23,5 +23,23 @@ namespace Rock_Solid
 		public static string CLIENT_PHONE;
 		public static string CLIENT_CEL;
 		public static string CLIENT_PROFILEIMGPATH;
+	
+	public static void Clear()
+	{
+		CLIENT_ID = 0;
+		CLIENT_NAME = "";
+		CLIENT_POSTCODE = "";
+		CLIENT_ADDRESS = "";
+		CLIENT_NUMBER = "";
+		CLIENT_NEIGHBORHOOD = "";
+		CLIENT_CITY = "";
+		CLIENT_STATE = "";
+		CLIENT_RG = "";
+		CLIENT_CPF = "";
+		CLIENT_EMAIL = "";
+		CLIENT_PHONE = "";
+		CLIENT_CEL = "";
+		CLIENT_PROFILEIMGPATH = Global.profilePicturePath + "Default Profile.png";
+	}
 	}
 }

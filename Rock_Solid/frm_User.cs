@@ -17,16 +17,6 @@ namespace Rock_Solid
             InitializeComponent();
         }
 
-        public static void ClearGlobalUser()
-        {
-            User.USER_ID = 0;
-            User.USER_NAME = "";
-            User.USER_USERNAME = "";
-            User.USER_PASSWORD = "";
-            User.USER_STATUS = "Ativo";
-            User.USER_LEVEL = 0;
-        }
-
         public void ClearTB()
         {
             tb_ID.Text = "0";
@@ -35,7 +25,6 @@ namespace Rock_Solid
             tb_Password.Clear();
             cb_Status.Text = "Ativo";
             tb_Level.Value = 0;
-            ClearGlobalUser();
             tb_Name.Focus();
         }
 
@@ -45,6 +34,7 @@ namespace Rock_Solid
             if(res == DialogResult.Yes)
 			{
                 ClearTB();
+                User.Clear();
             }
         }
 
@@ -58,7 +48,7 @@ namespace Rock_Solid
             User.USER_LEVEL = Convert.ToInt32(Math.Round(tb_Level.Value, 0));
 
             DataBase.NewUser(user);
-            ClearGlobalUser();
+            User.Clear();
             tb_Name.Focus();
         }
 
@@ -88,14 +78,13 @@ namespace Rock_Solid
 			{
                 MessageBox.Show("Nenhum Usuário Selecionado");
 			}
-            ClearGlobalUser();
+            User.Clear();
             ClearTB();
         }
 
         private void btn_Close_Click(object sender, EventArgs e)
 		{
             Close();
-            ClearGlobalUser();
         }
 
         private void btn_Search_Click(object sender, EventArgs e)
@@ -107,7 +96,7 @@ namespace Rock_Solid
 
         private void tb_ID_Click(object sender, EventArgs e)
         {
-            ClearGlobalUser();
+            User.Clear();
         }
 
         private void tb_ID_Enter(object sender, EventArgs e)
@@ -146,7 +135,7 @@ namespace Rock_Solid
                     if(User.USER_ID != 0)
                     {
                         MessageBox.Show("Usuário não Cadastrado");
-                        ClearGlobalUser();
+                        User.Clear();
                         tb_Name.Focus();
                     }
                 }
@@ -160,6 +149,18 @@ namespace Rock_Solid
 				this.ProcessTabKey(true);
 				e.Handled = true; //Retira o som do windos na tecla
 			}
+		}
+
+        private void frm_User_Load(object sender, EventArgs e)
+        {
+			ClearTB();
+            User.Clear();
+        }
+
+        private void frm_User_FormClosed(object sender, FormClosedEventArgs e)
+		{
+            ClearTB();
+            User.Clear();
 		}
 	}
 }

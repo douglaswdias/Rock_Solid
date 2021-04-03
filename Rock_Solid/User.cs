@@ -14,5 +14,15 @@ namespace Rock_Solid
 		public static string USER_PASSWORD = "";
 		public static string USER_STATUS = "Ativo";
 		public static Int32 USER_LEVEL = 0;
+
+		public static void Clear()
+		{
+			USER_ID = 0;
+			USER_NAME = "";
+			USER_USERNAME = "";
+			USER_PASSWORD = "";
+			USER_STATUS = "Ativo";
+			USER_LEVEL = 0;
+		}
 	}
 }

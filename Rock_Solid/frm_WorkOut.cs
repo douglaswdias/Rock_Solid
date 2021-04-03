@@ -100,6 +100,15 @@ namespace Rock_Solid
 			#endregion
 		}
 
+		private void frm_WorkOut_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == (char)Keys.Enter) //Pode ser usado tambem (e.KeyCode == Keys.Enter)
+			{
+				this.ProcessTabKey(true);
+				e.Handled = true; //Retira o som do windos na tecla
+			}
+		}
+
 		private void btn_Close_Click(object sender, EventArgs e)
 		{
 			Close();
@@ -427,15 +436,6 @@ namespace Rock_Solid
 			DataBase.NewWorkout(workout, abs, back, biceps, chest, legs, shoulders, triceps, warmup);
 		}
 
-		private void frm_WorkOut_KeyPress(object sender, KeyPressEventArgs e)
-		{
-			if (e.KeyChar == (char)Keys.Enter) //Pode ser usado tambem (e.KeyCode == Keys.Enter)
-			{
-				this.ProcessTabKey(true);
-				e.Handled = true; //Retira o som do windos na tecla
-			}
-		}
-
 		private void frm_WorkOut_Load(object sender, EventArgs e)
 		{
 			#region Abs
@@ -730,294 +730,14 @@ namespace Rock_Solid
 
 		private void frm_WorkOut_FormClosed(object sender, FormClosedEventArgs e)
 		{
-			#region Abs
-			Abs.ABS_RETOABDOMEN = "";
-			Abs.ABS_INFRA = "";
-			Abs.ABS_OBLIQUO = "";
-			Abs.ABS_PARALELAFIXA = "";
-			Abs.ABS_PRANCHAABDOMEN = "";
-
-			Abs.ABS_RETOABDOMEN_SERIE = 0;
-			Abs.ABS_INFRA_SERIE = 0;
-			Abs.ABS_OBLIQUO_SERIE = 0;
-			Abs.ABS_PARALELAFIXA_SERIE = 0;
-			Abs.ABS_PRANCHAABDOMEN_SERIE = 0;
-
-			Abs.ABS_RETOABDOMEN_REP = 0;
-			Abs.ABS_INFRA_REP = 0;
-			Abs.ABS_OBLIQUO_REP = 0;
-			Abs.ABS_PARALELAFIXA_REP = 0;
-			Abs.ABS_PRANCHAABDOMEN_REP = 0;
-
-			Abs.ABS_RETOABDOMEN_CARGA = 0;
-			Abs.ABS_INFRA_CARGA = 0;
-			Abs.ABS_OBLIQUO_CARGA = 0;
-			Abs.ABS_PARALELAFIXA_CARGA = 0;
-			Abs.ABS_PRANCHAABDOMEN_CARGA = 0;
-			#endregion
-			#region Back
-			Back.BACK_PULLEYCOSTAS = "";
-			Back.BACK_PULLEYFRENTE = "";
-			Back.BACK_PULLEYINVERTIDO = "";
-			Back.BACK_REMADAHORIZONTAL = "";
-			Back.BACK_REMADAALTERNADA = "";
-			Back.BACK_REMADACAVALINHO = "";
-			Back.BACK_PUXADORARTICULADO = "";
-			Back.BACK_PECKDECK = "";
-			Back.BACK_PULLOVER = "";
-			Back.BACK_BARRAFIXA = "";
-			Back.BACK_VOADORINVERSO = "";
-
-			Back.BACK_PULLEYCOSTAS_SERIE = 0;
-			Back.BACK_PULLEYFRENTE_SERIE = 0;
-			Back.BACK_PULLEYINVERTIDO_SERIE = 0;
-			Back.BACK_REMADAHORIZONTAL_SERIE = 0;
-			Back.BACK_REMADAALTERNADA_SERIE = 0;
-			Back.BACK_REMADACAVALINHO_SERIE = 0;
-			Back.BACK_PUXADORARTICULADO_SERIE = 0;
-			Back.BACK_PECKDECK_SERIE = 0;
-			Back.BACK_PULLOVER_SERIE = 0;
-			Back.BACK_BARRAFIXA_SERIE = 0;
-			Back.BACK_VOADORINVERSO_SERIE = 0;
-
-			Back.BACK_PULLEYCOSTAS_REP = 0;
-			Back.BACK_PULLEYFRENTE_REP = 0;
-			Back.BACK_PULLEYINVERTIDO_REP = 0;
-			Back.BACK_REMADAHORIZONTAL_REP = 0;
-			Back.BACK_REMADAALTERNADA_REP = 0;
-			Back.BACK_REMADACAVALINHO_REP = 0;
-			Back.BACK_PUXADORARTICULADO_REP = 0;
-			Back.BACK_PECKDECK_REP = 0;
-			Back.BACK_PULLOVER_REP = 0;
-			Back.BACK_BARRAFIXA_REP = 0;
-			Back.BACK_VOADORINVERSO_REP = 0;
-
-			Back.BACK_PULLEYCOSTAS_CARGA = 0;
-			Back.BACK_PULLEYFRENTE_CARGA = 0;
-			Back.BACK_PULLEYINVERTIDO_CARGA = 0;
-			Back.BACK_REMADAHORIZONTAL_CARGA = 0;
-			Back.BACK_REMADAALTERNADA_CARGA = 0;
-			Back.BACK_REMADACAVALINHO_CARGA = 0;
-			Back.BACK_PUXADORARTICULADO_CARGA = 0;
-			Back.BACK_PECKDECK_CARGA = 0;
-			Back.BACK_PULLOVER_CARGA = 0;
-			Back.BACK_BARRAFIXA_CARGA = 0;
-			Back.BACK_VOADORINVERSO_CARGA = 0;
-			#endregion
-			#region Biceps
-			Biceps.BICEPS_ROSCADIRETA = "";
-			Biceps.BICEPS_ROSCAALTERNADA = "";
-			Biceps.BICEPS_ROSCAMARTELO = "";
-			Biceps.BICEPS_ROSCACONCENTRADA = "";
-			Biceps.BICEPS_ROSCAARTICULADA = "";
-			Biceps.BICEPS_ROSCABILATERAL = "";
-			Biceps.BICEPS_ROSCAROLDANA = "";
-			Biceps.BICEPS_ROSCASIMULTANEA = "";
-
-			Biceps.BICEPS_ROSCADIRETA_SERIE = 0;
-			Biceps.BICEPS_ROSCAALTERNADA_SERIE = 0;
-			Biceps.BICEPS_ROSCAMARTELO_SERIE = 0;
-			Biceps.BICEPS_ROSCACONCENTRADA_SERIE = 0;
-			Biceps.BICEPS_ROSCAARTICULADA_SERIE = 0;
-			Biceps.BICEPS_ROSCABILATERAL_SERIE = 0;
-			Biceps.BICEPS_ROSCAROLDANA_SERIE = 0;
-			Biceps.BICEPS_ROSCASIMULTANEA_SERIE = 0;
-
-			Biceps.BICEPS_ROSCADIRETA_REP = 0;
-			Biceps.BICEPS_ROSCAALTERNADA_REP = 0;
-			Biceps.BICEPS_ROSCAMARTELO_REP = 0;
-			Biceps.BICEPS_ROSCACONCENTRADA_REP = 0;
-			Biceps.BICEPS_ROSCAARTICULADA_REP = 0;
-			Biceps.BICEPS_ROSCABILATERAL_REP = 0;
-			Biceps.BICEPS_ROSCAROLDANA_REP = 0;
-			Biceps.BICEPS_ROSCASIMULTANEA_REP = 0;
-
-			Biceps.BICEPS_ROSCADIRETA_CARGA = 0;
-			Biceps.BICEPS_ROSCAALTERNADA_CARGA = 0;
-			Biceps.BICEPS_ROSCAMARTELO_CARGA = 0;
-			Biceps.BICEPS_ROSCACONCENTRADA_CARGA = 0;
-			Biceps.BICEPS_ROSCAARTICULADA_CARGA = 0;
-			Biceps.BICEPS_ROSCABILATERAL_CARGA = 0;
-			Biceps.BICEPS_ROSCAROLDANA_CARGA = 0;
-			Biceps.BICEPS_ROSCASIMULTANEA_CARGA = 0;
-			#endregion
-			#region Chest
-			Chest.CHEST_SUPINORETO = "";
-			Chest.CHEST_SUPINOINCLINADO = "";
-			Chest.CHEST_SUPINOSENTADO = "";
-			Chest.CHEST_SUPINODUMBELL = "";
-			Chest.CHEST_PECK = "";
-			Chest.CHEST_PECKDECK = "";
-			Chest.CHEST_CRUCIFIXO = "";
-			Chest.CHEST_CROSSOVER = "";
-
-			Chest.CHEST_SUPINORETO_SERIE = 0;
-			Chest.CHEST_SUPINOINCLINADO_SERIE = 0;
-			Chest.CHEST_SUPINOSENTADO_SERIE = 0;
-			Chest.CHEST_SUPINODUMBELL_SERIE = 0;
-			Chest.CHEST_PECK_SERIE = 0;
-			Chest.CHEST_PECKDECK_SERIE = 0;
-			Chest.CHEST_CRUCIFIXO_SERIE = 0;
-			Chest.CHEST_CROSSOVER_SERIE = 0;
-
-			Chest.CHEST_SUPINORETO_REP = 0;
-			Chest.CHEST_SUPINOINCLINADO_REP = 0;
-			Chest.CHEST_SUPINOSENTADO_REP = 0;
-			Chest.CHEST_SUPINODUMBELL_REP = 0;
-			Chest.CHEST_PECK_REP = 0;
-			Chest.CHEST_PECKDECK_REP = 0;
-			Chest.CHEST_CRUCIFIXO_REP = 0;
-			Chest.CHEST_CROSSOVER_REP = 0;
-
-			Chest.CHEST_SUPINORETO_CARGA = 0;
-			Chest.CHEST_SUPINOINCLINADO_CARGA = 0;
-			Chest.CHEST_SUPINOSENTADO_CARGA = 0;
-			Chest.CHEST_SUPINODUMBELL_CARGA = 0;
-			Chest.CHEST_PECK_CARGA = 0;
-			Chest.CHEST_PECKDECK_CARGA = 0;
-			Chest.CHEST_CRUCIFIXO_CARGA = 0;
-			Chest.CHEST_CROSSOVER_CARGA = 0;
-			#endregion
-			#region Legs
-			Legs.LEGS_CADEIRAEXTENSORA = "";
-			Legs.LEGS_CADEIRAFLEXORA = "";
-			Legs.LEGS_ADUTOR = "";
-			Legs.LEGS_ABDUTOR = "";
-			Legs.LEGS_LEGPRESS = "";
-			Legs.LEGS_AGACHAMENTOLIVRE = "";
-			Legs.LEGS_HACK = "";
-			Legs.LEGS_PANTURRILHA = "";
-			Legs.LEGS_STIFF = "";
-			Legs.LEGS_GLUTEO = "";
-			Legs.LEGS_AVANCO = "";
-
-			Legs.LEGS_CADEIRAEXTENSORA_SERIE = 0;
-			Legs.LEGS_CADEIRAFLEXORA_SERIE = 0;
-			Legs.LEGS_ADUTOR_SERIE = 0;
-			Legs.LEGS_ABDUTOR_SERIE = 0;
-			Legs.LEGS_LEGPRESS_SERIE = 0;
-			Legs.LEGS_AGACHAMENTOLIVRE_SERIE = 0;
-			Legs.LEGS_HACK_SERIE = 0;
-			Legs.LEGS_PANTURRILHA_SERIE = 0;
-			Legs.LEGS_STIFF_SERIE = 0;
-			Legs.LEGS_GLUTEO_SERIE = 0;
-			Legs.LEGS_AVANCO_SERIE = 0;
-
-			Legs.LEGS_CADEIRAEXTENSORA_REP = 0;
-			Legs.LEGS_CADEIRAFLEXORA_REP = 0;
-			Legs.LEGS_ADUTOR_REP = 0;
-			Legs.LEGS_ABDUTOR_REP = 0;
-			Legs.LEGS_LEGPRESS_REP = 0;
-			Legs.LEGS_AGACHAMENTOLIVRE_REP = 0;
-			Legs.LEGS_HACK_REP = 0;
-			Legs.LEGS_PANTURRILHA_REP = 0;
-			Legs.LEGS_STIFF_REP = 0;
-			Legs.LEGS_GLUTEO_REP = 0;
-			Legs.LEGS_AVANCO_REP = 0;
-
-			Legs.LEGS_CADEIRAEXTENSORA_CARGA = 0;
-			Legs.LEGS_CADEIRAFLEXORA_CARGA = 0;
-			Legs.LEGS_ADUTOR_CARGA = 0;
-			Legs.LEGS_ABDUTOR_CARGA = 0;
-			Legs.LEGS_LEGPRESS_CARGA = 0;
-			Legs.LEGS_AGACHAMENTOLIVRE_CARGA = 0;
-			Legs.LEGS_HACK_CARGA = 0;
-			Legs.LEGS_PANTURRILHA_CARGA = 0;
-			Legs.LEGS_STIFF_CARGA = 0;
-			Legs.LEGS_GLUTEO_CARGA = 0;
-			Legs.LEGS_AVANCO_CARGA = 0;
-			#endregion
-			#region Shouders
-			Shoulders.SHOULDERS_ELEVACAOLATERAL = "";
-			Shoulders.SHOULDERS_ELEVACAOFRONTAL = "";
-			Shoulders.SHOULDERS_ELEVACAOOMBRO = "";
-			Shoulders.SHOULDERS_DEVCOSTAS = "";
-			Shoulders.SHOULDERS_DEVFRENTE = "";
-			Shoulders.SHOULDERS_DEVDUMBELL = "";
-			Shoulders.SHOULDERS_REMADAALTA = "";
-
-			Shoulders.SHOULDERS_ELEVACAOLATERAL_SERIE = 0;
-			Shoulders.SHOULDERS_ELEVACAOFRONTAL_SERIE = 0;
-			Shoulders.SHOULDERS_ELEVACAOOMBRO_SERIE = 0;
-			Shoulders.SHOULDERS_DEVCOSTAS_SERIE = 0;
-			Shoulders.SHOULDERS_DEVFRENTE_SERIE = 0;
-			Shoulders.SHOULDERS_DEVDUMBELL_SERIE = 0;
-			Shoulders.SHOULDERS_REMADAALTA_SERIE = 0;
-
-			Shoulders.SHOULDERS_ELEVACAOLATERAL_REP = 0;
-			Shoulders.SHOULDERS_ELEVACAOFRONTAL_REP = 0;
-			Shoulders.SHOULDERS_ELEVACAOOMBRO_REP = 0;
-			Shoulders.SHOULDERS_DEVCOSTAS_REP = 0;
-			Shoulders.SHOULDERS_DEVFRENTE_REP = 0;
-			Shoulders.SHOULDERS_DEVDUMBELL_REP = 0;
-			Shoulders.SHOULDERS_REMADAALTA_REP = 0;
-
-			Shoulders.SHOULDERS_ELEVACAOLATERAL_CARGA = 0;
-			Shoulders.SHOULDERS_ELEVACAOFRONTAL_CARGA = 0;
-			Shoulders.SHOULDERS_ELEVACAOOMBRO_CARGA = 0;
-			Shoulders.SHOULDERS_DEVCOSTAS_CARGA = 0;
-			Shoulders.SHOULDERS_DEVFRENTE_CARGA = 0;
-			Shoulders.SHOULDERS_DEVDUMBELL_CARGA = 0;
-			Shoulders.SHOULDERS_REMADAALTA_CARGA = 0;
-			#endregion
-			#region Triceps
-			Triceps.TRICEPS_PULLEY = "";
-			Triceps.TRICEPS_ROSCATESTA = "";
-			Triceps.TRICEPS_PULLEYCORDA = "";
-			Triceps.TRICEPS_ROSCAFRANCESA = "";
-			Triceps.TRICEPS_ROSCASUPINADA = "";
-			Triceps.TRICEPS_COICE = "";
-			Triceps.TRICEPS_INVERTIDO = "";
-			Triceps.TRICEPS_MERGULHO = "";
-
-			Triceps.TRICEPS_PULLEY_SERIE = 0;
-			Triceps.TRICEPS_ROSCATESTA_SERIE = 0;
-			Triceps.TRICEPS_PULLEYCORDA_SERIE = 0;
-			Triceps.TRICEPS_ROSCAFRANCESA_SERIE = 0;
-			Triceps.TRICEPS_ROSCASUPINADA_SERIE = 0;
-			Triceps.TRICEPS_COICE_SERIE = 0;
-			Triceps.TRICEPS_INVERTIDO_SERIE = 0;
-			Triceps.TRICEPS_MERGULHO_SERIE = 0;
-
-			Triceps.TRICEPS_PULLEY_REP = 0;
-			Triceps.TRICEPS_ROSCATESTA_REP = 0;
-			Triceps.TRICEPS_PULLEYCORDA_REP = 0;
-			Triceps.TRICEPS_ROSCAFRANCESA_REP = 0;
-			Triceps.TRICEPS_ROSCASUPINADA_REP = 0;
-			Triceps.TRICEPS_COICE_REP = 0;
-			Triceps.TRICEPS_INVERTIDO_REP = 0;
-			Triceps.TRICEPS_MERGULHO_REP = 0;
-
-			Triceps.TRICEPS_PULLEY_CARGA = 0;
-			Triceps.TRICEPS_ROSCATESTA_CARGA = 0;
-			Triceps.TRICEPS_PULLEYCORDA_CARGA = 0;
-			Triceps.TRICEPS_ROSCAFRANCESA_CARGA = 0;
-			Triceps.TRICEPS_ROSCASUPINADA_CARGA = 0;
-			Triceps.TRICEPS_COICE_CARGA = 0;
-			Triceps.TRICEPS_INVERTIDO_CARGA = 0;
-			Triceps.TRICEPS_MERGULHO_CARGA = 0;
-			#endregion
-			#region WarmUp
-			WarmUp.WARMUP_ESTEIRA = "";
-			WarmUp.WARMUP_BICICLETA = "";
-			WarmUp.WARMUP_ELIPTICO = "";
-			WarmUp.WARMUP_CORDA = "";
-
-			WarmUp.WARMUP_ESTEIRA_SERIE = 0;
-			WarmUp.WARMUP_BICICLETA_SERIE = 0;
-			WarmUp.WARMUP_ELIPTICO_SERIE = 0;
-			WarmUp.WARMUP_CORDA_SERIE = 0;
-
-			WarmUp.WARMUP_ESTEIRA_REP = 0;
-			WarmUp.WARMUP_BICICLETA_REP = 0;
-			WarmUp.WARMUP_ELIPTICO_REP = 0;
-			WarmUp.WARMUP_CORDA_REP = 0;
-
-			WarmUp.WARMUP_ESTEIRA_CARGA = 0;
-			WarmUp.WARMUP_BICICLETA_CARGA = 0;
-			WarmUp.WARMUP_ELIPTICO_CARGA = 0;
-			WarmUp.WARMUP_CORDA_CARGA = 0;
-			#endregion
+			Abs.Clear();
+			Back.Clear();
+			Biceps.Clear();
+			Chest.Clear();
+			Legs.Clear();
+			Shoulders.Clear();
+			Triceps.Clear();
+			WarmUp.Clear();
 		}
 	}
 }

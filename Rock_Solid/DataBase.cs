@@ -885,7 +885,7 @@ namespace Rock_Solid
 				{
 					var vcon = ConnectionDB();
 					var cmd = vcon.CreateCommand();
-					#region Insert Workout
+					#region Insert Into Workout
 					cmd.CommandText = @"
 					INSERT INTO WORKOUT 
 						(WORKOUT_CLIENT) 
@@ -895,7 +895,7 @@ namespace Rock_Solid
 					cmd.Parameters.AddWithValue("@CLIENT", Client.CLIENT_ID);
 					cmd.ExecuteNonQuery();
 					#endregion
-					#region Insert Abs
+					#region Insert Into Abs
 					cmd.CommandText = @"
 					INSERT INTO ABS 
 						(ABS_RETOABDOMEN, ABS_INFRA, ABS_OBLIQUO, ABS_PARALELAFIXA, ABS_PRANCHAABDOMEN, 
@@ -936,7 +936,7 @@ namespace Rock_Solid
 					cmd.Parameters.AddWithValue("@PRANCHAABDOMEN_CARGA", Abs.ABS_PRANCHAABDOMEN_CARGA);
 					cmd.ExecuteNonQuery();
 					#endregion
-					#region Insert Back
+					#region Insert Into Back
 					cmd.CommandText = @"
 					INSERT INTO BACK 
 						(BACK_PULLEYCOSTAS, BACK_PULLEYFRENTE, BACK_PULLEYINVERTIDO, BACK_REMADAHORIZONTAL, 
@@ -1019,7 +1019,7 @@ namespace Rock_Solid
 					cmd.Parameters.AddWithValue("@BACK_VOADORINVERSO_CARGA", Back.BACK_VOADORINVERSO_CARGA);
 					cmd.ExecuteNonQuery();
 					#endregion
-					#region Insert Biceps
+					#region Insert Into Biceps
 					cmd.CommandText = @"
 					INSERT INTO BICEPS 
 						(BICEPS_ROSCADIRETA, BICEPS_ROSCAALTERNADA, BICEPS_ROSCAMARTELO, BICEPS_ROSCACONCENTRADA, BICEPS_ROSCAARTICULADA, 
@@ -1080,7 +1080,7 @@ namespace Rock_Solid
 					cmd.Parameters.AddWithValue("@BICEPS_ROSCASIMULTANEA_CARGA", Biceps.BICEPS_ROSCASIMULTANEA_CARGA);
 					cmd.ExecuteNonQuery();
 					#endregion
-					#region Insert Chest
+					#region Insert Into Chest
 					cmd.CommandText = @"
 					INSERT INTO CHEST 
 						(CHEST_SUPINORETO, CHEST_SUPINOINCLINADO, CHEST_SUPINOSENTADO, CHEST_SUPINODUMBELL, CHEST_PECK, CHEST_PECKDECK, 
@@ -1137,7 +1137,7 @@ namespace Rock_Solid
 					cmd.Parameters.AddWithValue("@CHEST_CROSSOVER_CARGA", Chest.CHEST_CROSSOVER_CARGA);
 					cmd.ExecuteNonQuery();
 					#endregion
-					#region Insert Legs
+					#region Insert Into Legs
 					cmd.CommandText = @"
 					INSERT INTO LEGS 
 						(LEGS_CADEIRAEXTENSORA, LEGS_CADEIRAFLEXORA, LEGS_ADUTOR, LEGS_ABDUTOR, LEGS_LEGPRESS, LEGS_AGACHAMENTOLIVRE, 
@@ -1210,7 +1210,7 @@ namespace Rock_Solid
 					cmd.Parameters.AddWithValue("@LEGS_AVANCO_CARGA", Legs.LEGS_AVANCO_CARGA);
 					cmd.ExecuteNonQuery();
 					#endregion
-					#region Insert Shoulders
+					#region Insert Into Shoulders
 					cmd.CommandText = @"
 					INSERT INTO SHOULDERS 
 						(SHOULDERS_ELEVACAOLATERAL, SHOULDERS_ELEVACAOFRONTAL, SHOULDERS_ELEVACAOOMBRO, SHOULDERS_DEVCOSTAS, 
@@ -1265,7 +1265,7 @@ namespace Rock_Solid
 					cmd.Parameters.AddWithValue("@SHOULDERS_REMADAALTA_CARGA", Shoulders.SHOULDERS_REMADAALTA_CARGA);
 					cmd.ExecuteNonQuery();
 					#endregion
-					#region Insert Triceps
+					#region Insert Into Triceps
 					cmd.CommandText = @"
 					INSERT INTO TRICEPS 
 						(TRICEPS_PULLEY, TRICEPS_ROSCATESTA, TRICEPS_PULLEYCORDA, TRICEPS_ROSCAFRANCESA, TRICEPS_ROSCASUPINADA, 
@@ -1322,7 +1322,7 @@ namespace Rock_Solid
 					cmd.Parameters.AddWithValue("@TRICEPS_MERGULHO_CARGA", Triceps.TRICEPS_MERGULHO_CARGA);
 					cmd.ExecuteNonQuery();
 					#endregion
-					#region WarmUp 
+					#region Insert Into WarmUp 
 					cmd.CommandText = @"
 					INSERT INTO WARMUP 
 						(WARMUP_ESTEIRA, WARMUP_BICICLETA, WARMUP_ELIPTICO, WARMUP_CORDA, WARMUP_ESTEIRA_SERIE, WARMUP_BICICLETA_SERIE, 

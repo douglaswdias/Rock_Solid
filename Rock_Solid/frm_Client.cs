@@ -25,7 +25,6 @@ namespace Rock_Solid
 			cb_State.DropDownStyle = ComboBoxStyle.DropDownList;
 		}
 
-		#region Clear Buttons
 		public void ClearTB()
 		{
 			tb_ID.Clear();
@@ -46,25 +45,6 @@ namespace Rock_Solid
 			pb_User.ImageLocation = Global.profilePicturePath + "Default Profile.png";
 			tb_Name.Focus();
 		}
-
-		public void ClearClient()
-		{
-			Client.CLIENT_ID = 0;
-			Client.CLIENT_NAME = "";
-			Client.CLIENT_POSTCODE = "";
-			Client.CLIENT_ADDRESS = "";
-			Client.CLIENT_NUMBER = "";
-			Client.CLIENT_NEIGHBORHOOD = "";
-			Client.CLIENT_CITY = "";
-			Client.CLIENT_STATE = "";
-			Client.CLIENT_RG = "";
-			Client.CLIENT_CPF = "";
-			Client.CLIENT_EMAIL = "";
-			Client.CLIENT_PHONE = "";
-			Client.CLIENT_CEL = "";
-			Client.CLIENT_PROFILEIMGPATH = Global.profilePicturePath + "Default Profile.png";
-		}
-		#endregion
 
 		private void rb_Individual_Click(object sender, EventArgs e)
 		{
@@ -107,7 +87,7 @@ namespace Rock_Solid
 			if (res == DialogResult.Yes)
 			{
 				ClearTB();
-				ClearClient();
+				Client.Clear();
 			}
 		}
 
@@ -205,7 +185,7 @@ namespace Rock_Solid
 				MessageBox.Show("Nenhum Cliente Selecionado");
 			}
 			ClearTB();
-			ClearClient();
+			Client.Clear();
 		}
 
 		private void btn_Search_Click(object sender, EventArgs e)
@@ -218,7 +198,6 @@ namespace Rock_Solid
 		private void btn_Close_Click(object sender, EventArgs e)
 		{
 			ClearTB();
-			ClearClient();
 			Close();
 		}
 
@@ -324,7 +303,7 @@ namespace Rock_Solid
 					{
 						MessageBox.Show("Usuário não Cadastrado");
 						ClearTB();
-						ClearClient();
+						Client.Clear();
 						tb_Name.Focus();
 						//throw ex;
 					}
@@ -335,6 +314,11 @@ namespace Rock_Solid
 		private void frm_Client_Load(object sender, EventArgs e)
 		{
 			tb_ID.Focus();
+			Client.Clear();
+		}
+		private void frm_Client_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			Client.Clear();
 		}
 
 		private void frm_Client_KeyPress(object sender, KeyPressEventArgs e)

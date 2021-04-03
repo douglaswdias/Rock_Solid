@@ -262,6 +262,8 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Cadastro de Usuários";
 			this.Activated += new System.EventHandler(this.tb_ID_Enter);
+			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frm_User_FormClosed);
+			this.Load += new System.EventHandler(this.frm_User_Load);
 			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frm_User_KeyPress);
 			((System.ComponentModel.ISupportInitialize)(this.tb_Level)).EndInit();
 			this.panel1.ResumeLayout(false);
