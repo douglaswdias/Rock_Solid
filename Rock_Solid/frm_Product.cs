@@ -17,26 +17,7 @@ namespace Rock_Solid
 			InitializeComponent();
 		}
 
-        public static void ClearProduct()
-        {
-            Product.PRODUCT_ID = 0;
-            Product.PRODUCT_NAME = "";
-            Product.PRODUCT_DESCRIPTION = "";
-            Product.PRODUCT_BARCODE = 0;
-            Product.PRODUCT_TYPE = "";
-            Product.PRODUCT_SIZE = "";
-            Product.PRODUCT_COLOR = "";
-            Product.PRODUCT_WEIGHT = 0;
-            Product.PRODUCT_STOCK = "";
-            Product.PRODUCT_PURCHASEPRICE = 0;
-            Product.PRODUCT_MARKUPPRICE = 0;
-            Product.PRODUCT_SELLINGPRICE = 0;
-            Product.PRODUCT_LASTPURCHASE = new DateTime(1900, 1, 1);
-            Product.PRODUCT_PROVIDERID = 0;
-            Product.PRODUCT_IMAGE = "";
-            Product.PRODUCT_CREATEDAT = new DateTime(1900, 1, 1);
-            Product.PRODUCT_UPDATEDAT = new DateTime(1900, 1, 1);
-        }
+
 
         public void ClearTB()
         {
@@ -64,7 +45,7 @@ namespace Rock_Solid
             if (res == DialogResult.Yes)
             {
                 ClearTB();
-                ClearProduct();
+                Product.Clear();
             }
         }
 
@@ -87,7 +68,7 @@ namespace Rock_Solid
             Product.PRODUCT_CREATEDAT = DateTime.Today;
             Product.PRODUCT_UPDATEDAT = DateTime.Today;
             DataBase.NewProduct(product);
-            tb_Name.Focus();
+            tb_ID.Focus();
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
@@ -102,12 +83,12 @@ namespace Rock_Solid
                         DataTable dt = new DataTable();
                         dt = DataBase.DeleteUser(tb_ID.Text);
                         MessageBox.Show("Usuário Excluído com Sucesso");
-                        tb_Name.Focus();
+                        tb_ID.Focus();
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show("Erro ao Excluir Usuário");
-                        tb_Name.Focus();
+                        tb_ID.Focus();
                         throw ex;
                     }
                 }
@@ -116,13 +97,13 @@ namespace Rock_Solid
             {
                 MessageBox.Show("Nenhum Usuário Selecionado");
             }
-            ClearProduct();
+            Product.Clear();
             ClearTB();
         }
 
         private void btn_Close_Click(object sender, EventArgs e)
         {
-            ClearProduct();
+            Product.Clear();
             ClearTB();
             Close();
         }
@@ -215,7 +196,7 @@ namespace Rock_Solid
                         MessageBox.Show("Produto não Cadastrado");
                         ClearTB();
                         //ClearClient();
-                        tb_Name.Focus();
+                        tb_ID.Focus();
                         //throw ex;
                     }
                 }
@@ -226,6 +207,19 @@ namespace Rock_Solid
 		{
 
 		}
+
+
+		private void tb_MarkUp_Leave(object sender, EventArgs e)
+		{
+            double sell = (Convert.ToDouble(tb_Purchase.Text) * Convert.ToDouble(tb_MarkUp.Text)) / 100;
+            tb_Sell.Text = (Convert.ToDouble(tb_Purchase.Text) + sell).ToString();
+        }
+
+		private void tb_Sell_Leave(object sender, EventArgs e)
+		{
+            double markUp = (Convert.ToDouble(tb_Sell.Text) - Convert.ToDouble(tb_Purchase.Text)) * 10;
+            tb_MarkUp.Text = markUp.ToString();
+        }
 	}
 
 }

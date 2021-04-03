@@ -25,5 +25,26 @@ namespace Rock_Solid
 		public static string PRODUCT_IMAGE = "";
 		public static DateTime PRODUCT_CREATEDAT;
 		public static DateTime PRODUCT_UPDATEDAT;
+
+		public static void Clear()
+		{
+			PRODUCT_ID = 0;
+			PRODUCT_NAME = "";
+			PRODUCT_DESCRIPTION = "";
+			PRODUCT_BARCODE = 0;
+			PRODUCT_TYPE = "";
+			PRODUCT_SIZE = "";
+			PRODUCT_COLOR = "";
+			PRODUCT_WEIGHT = 0;
+			PRODUCT_STOCK = "";
+			PRODUCT_PURCHASEPRICE = 0;
+			PRODUCT_MARKUPPRICE = 0;
+			PRODUCT_SELLINGPRICE = 0;
+			PRODUCT_LASTPURCHASE = new DateTime(1900, 1, 1);
+			PRODUCT_PROVIDERID = 0;
+			PRODUCT_IMAGE = "";
+			PRODUCT_CREATEDAT = new DateTime(1900, 1, 1);
+			PRODUCT_UPDATEDAT = new DateTime(1900, 1, 1);
+		}
 	}
 }

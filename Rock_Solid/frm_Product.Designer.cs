@@ -140,6 +140,7 @@
 			this.tb_MarkUp.Size = new System.Drawing.Size(100, 20);
 			this.tb_MarkUp.TabIndex = 1;
 			this.tb_MarkUp.Text = "0";
+			this.tb_MarkUp.Leave += new System.EventHandler(this.tb_MarkUp_Leave);
 			// 
 			// lb_MarkUp
 			// 
@@ -157,6 +158,7 @@
 			this.tb_Sell.Size = new System.Drawing.Size(100, 20);
 			this.tb_Sell.TabIndex = 2;
 			this.tb_Sell.Text = "0";
+			this.tb_Sell.Leave += new System.EventHandler(this.tb_Sell_Leave);
 			// 
 			// lb_Sell
 			// 
