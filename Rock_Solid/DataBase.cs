@@ -745,7 +745,31 @@ namespace Rock_Solid
 			}
 		}
 
-		public static DataTable GetProduct()
+		public static void Order(int id)
+		{
+			SQLiteConnection sql = new SQLiteConnection();
+			sql.ConnectionString = "Data Source =" + Global.dbPath + Global.dbName;
+			sql.Open();
+			SQLiteCommand cmd = new SQLiteCommand();
+			cmd.CommandText = @"
+					SELECT ORDER_ID, CLIENT_ID, CLIENT_NAME, ORDER_TOTAL
+					FROM ORDERR 
+					INNER JOIN CLIENT ON ORDER_CLIENTID = CLIENT_ID 
+					WHERE ORDER_ID = " + id + " ;"
+				;
+
+			cmd.Connection = sql;
+			SQLiteDataReader reader = cmd.ExecuteReader();
+			while (reader.Read())
+			{
+				Orderr.ORDER_ID = Convert.ToInt32(reader.GetValue(0));
+				Client.CLIENT_ID = Convert.ToInt32(reader.GetValue(1));
+				Client.CLIENT_NAME = reader.GetValue(2).ToString();
+				Orderr.ORDER_TOTAL = Convert.ToDecimal(reader.GetValue(3));
+			}
+		}
+
+		public static DataTable OrderItem(string id)
 		{
 			SQLiteDataAdapter da = null;
 			DataTable dt = new DataTable();
@@ -753,7 +777,10 @@ namespace Rock_Solid
 			{
 				var vcon = ConnectionDB();
 				var cmd = vcon.CreateCommand();
-				cmd.CommandText = "SELECT * FROM PRODUCT";
+				cmd.CommandText = @"
+					SELECT * FROM ORDERITEM 
+					WHERE ORDERI_ORDER = " + id
+				;
 
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				da.Fill(dt);

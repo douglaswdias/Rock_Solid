@@ -147,6 +147,9 @@
     </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Legs.cs" />
+    <Compile Include="Orderr.cs" />
+    <Compile Include="OrderDueDate.cs" />
+    <Compile Include="OrderItem.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
