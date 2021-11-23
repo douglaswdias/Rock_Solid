@@ -463,6 +463,8 @@
 			// lbx_Cel
 			// 
 			this.lbx_Cel.FormattingEnabled = true;
+			this.lbx_Cel.Items.AddRange(new object[] {
+            " "});
 			this.lbx_Cel.Location = new System.Drawing.Point(142, 322);
 			this.lbx_Cel.Name = "lbx_Cel";
 			this.lbx_Cel.Size = new System.Drawing.Size(97, 121);

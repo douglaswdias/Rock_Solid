@@ -111,5 +111,29 @@ namespace Rock_Solid
             frm_Equipment equipment = new frm_Equipment();
             equipment.ShowDialog();
 		}
+
+		private void tsmi_AccountsReceivable_Click(object sender, EventArgs e)
+		{
+            frm_Receivables receivables = new frm_Receivables();
+            receivables.ShowDialog();
+		}
+
+		private void tsmi_AccountsPayable_Click(object sender, EventArgs e)
+		{
+            frm_Payables payables = new frm_Payables();
+            payables.ShowDialog();
+		}
+
+        private void tsmi_Supplier_Click(object sender, EventArgs e)
+        {
+            frm_Supplier supplier = new frm_Supplier();
+            supplier.ShowDialog();
+		}
+
+		private void tsmi_Company_Click(object sender, EventArgs e)
+		{
+            frm_Company company = new frm_Company();
+            company.ShowDialog();
+        }
 	}
 }

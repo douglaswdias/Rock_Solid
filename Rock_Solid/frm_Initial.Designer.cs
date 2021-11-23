@@ -41,6 +41,7 @@
 			this.tsmi_User = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_Client = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_Product = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmi_Supplier = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_Equipment = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_Query = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_UserQuery = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,10 +52,10 @@
 			this.tsmi_Financial = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_AccountsReceivable = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_AccountsPayable = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmi_Report = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_LogIn = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_UserChange = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmi_LogOff = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmi_Company = new System.Windows.Forms.ToolStripMenuItem();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pb_Login)).BeginInit();
 			this.ms_Initial.SuspendLayout();
@@ -148,15 +149,15 @@
 			// ms_Initial
 			// 
 			this.ms_Initial.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmi_Company,
             this.tsmi_Register,
             this.tsmi_Query,
             this.tsmi_Sale,
             this.tsmi_Financial,
-            this.tsmi_Report,
             this.tsmi_LogIn});
 			this.ms_Initial.Location = new System.Drawing.Point(0, 0);
 			this.ms_Initial.Name = "ms_Initial";
-			this.ms_Initial.Size = new System.Drawing.Size(1264, 24);
+			this.ms_Initial.Size = new System.Drawing.Size(1264, 59);
 			this.ms_Initial.TabIndex = 1;
 			this.ms_Initial.Text = "menuStrip1";
 			// 
@@ -166,36 +167,46 @@
             this.tsmi_User,
             this.tsmi_Client,
             this.tsmi_Product,
+            this.tsmi_Supplier,
             this.tsmi_Equipment});
+			this.tsmi_Register.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.tsmi_Register.Name = "tsmi_Register";
-			this.tsmi_Register.Size = new System.Drawing.Size(71, 20);
+			this.tsmi_Register.Padding = new System.Windows.Forms.Padding(15);
+			this.tsmi_Register.Size = new System.Drawing.Size(113, 55);
 			this.tsmi_Register.Text = "Cadastros";
 			// 
 			// tsmi_User
 			// 
 			this.tsmi_User.Name = "tsmi_User";
-			this.tsmi_User.Size = new System.Drawing.Size(145, 22);
+			this.tsmi_User.Size = new System.Drawing.Size(180, 22);
 			this.tsmi_User.Text = "Usuário";
 			this.tsmi_User.Click += new System.EventHandler(this.tsmi_User_Click);
 			// 
 			// tsmi_Client
 			// 
 			this.tsmi_Client.Name = "tsmi_Client";
-			this.tsmi_Client.Size = new System.Drawing.Size(145, 22);
+			this.tsmi_Client.Size = new System.Drawing.Size(180, 22);
 			this.tsmi_Client.Text = "Cliente";
 			this.tsmi_Client.Click += new System.EventHandler(this.tsmi_Client_Click);
 			// 
 			// tsmi_Product
 			// 
 			this.tsmi_Product.Name = "tsmi_Product";
-			this.tsmi_Product.Size = new System.Drawing.Size(145, 22);
+			this.tsmi_Product.Size = new System.Drawing.Size(180, 22);
 			this.tsmi_Product.Text = "Produto";
 			this.tsmi_Product.Click += new System.EventHandler(this.tsmi_Product_Click);
+			// 
+			// tsmi_Supplier
+			// 
+			this.tsmi_Supplier.Name = "tsmi_Supplier";
+			this.tsmi_Supplier.Size = new System.Drawing.Size(180, 22);
+			this.tsmi_Supplier.Text = "Fornecedor";
+			this.tsmi_Supplier.Click += new System.EventHandler(this.tsmi_Supplier_Click);
 			// 
 			// tsmi_Equipment
 			// 
 			this.tsmi_Equipment.Name = "tsmi_Equipment";
-			this.tsmi_Equipment.Size = new System.Drawing.Size(145, 22);
+			this.tsmi_Equipment.Size = new System.Drawing.Size(180, 22);
 			this.tsmi_Equipment.Text = "Equipamento";
 			this.tsmi_Equipment.Click += new System.EventHandler(this.tsmi_Equipment_Click);
 			// 
@@ -205,8 +216,10 @@
             this.tsmi_UserQuery,
             this.tsmi_ClientQuery,
             this.tsmi_ProductQuery});
+			this.tsmi_Query.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.tsmi_Query.Name = "tsmi_Query";
-			this.tsmi_Query.Size = new System.Drawing.Size(71, 20);
+			this.tsmi_Query.Padding = new System.Windows.Forms.Padding(15);
+			this.tsmi_Query.Size = new System.Drawing.Size(112, 55);
 			this.tsmi_Query.Text = "Consultas";
 			// 
 			// tsmi_UserQuery
@@ -234,8 +247,10 @@
 			// 
 			this.tsmi_Sale.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmi_SalesOrder});
+			this.tsmi_Sale.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.tsmi_Sale.Name = "tsmi_Sale";
-			this.tsmi_Sale.Size = new System.Drawing.Size(56, 20);
+			this.tsmi_Sale.Padding = new System.Windows.Forms.Padding(15);
+			this.tsmi_Sale.Size = new System.Drawing.Size(94, 55);
 			this.tsmi_Sale.Text = "Vendas";
 			// 
 			// tsmi_SalesOrder
@@ -250,8 +265,10 @@
 			this.tsmi_Financial.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmi_AccountsReceivable,
             this.tsmi_AccountsPayable});
+			this.tsmi_Financial.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.tsmi_Financial.Name = "tsmi_Financial";
-			this.tsmi_Financial.Size = new System.Drawing.Size(74, 20);
+			this.tsmi_Financial.Padding = new System.Windows.Forms.Padding(15);
+			this.tsmi_Financial.Size = new System.Drawing.Size(116, 55);
 			this.tsmi_Financial.Text = "Financeiro";
 			// 
 			// tsmi_AccountsReceivable
@@ -259,26 +276,25 @@
 			this.tsmi_AccountsReceivable.Name = "tsmi_AccountsReceivable";
 			this.tsmi_AccountsReceivable.Size = new System.Drawing.Size(165, 22);
 			this.tsmi_AccountsReceivable.Text = "Contas a Receber";
+			this.tsmi_AccountsReceivable.Click += new System.EventHandler(this.tsmi_AccountsReceivable_Click);
 			// 
 			// tsmi_AccountsPayable
 			// 
 			this.tsmi_AccountsPayable.Name = "tsmi_AccountsPayable";
 			this.tsmi_AccountsPayable.Size = new System.Drawing.Size(165, 22);
 			this.tsmi_AccountsPayable.Text = "Contas a Pagar";
-			// 
-			// tsmi_Report
-			// 
-			this.tsmi_Report.Name = "tsmi_Report";
-			this.tsmi_Report.Size = new System.Drawing.Size(71, 20);
-			this.tsmi_Report.Text = "Relatórios";
+			this.tsmi_AccountsPayable.Click += new System.EventHandler(this.tsmi_AccountsPayable_Click);
 			// 
 			// tsmi_LogIn
 			// 
 			this.tsmi_LogIn.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmi_UserChange,
             this.tsmi_LogOff});
+			this.tsmi_LogIn.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.tsmi_LogIn.Margin = new System.Windows.Forms.Padding(15, 0, 0, 0);
 			this.tsmi_LogIn.Name = "tsmi_LogIn";
-			this.tsmi_LogIn.Size = new System.Drawing.Size(49, 20);
+			this.tsmi_LogIn.Padding = new System.Windows.Forms.Padding(15);
+			this.tsmi_LogIn.Size = new System.Drawing.Size(83, 55);
 			this.tsmi_LogIn.Text = "Login";
 			// 
 			// tsmi_UserChange
@@ -294,6 +310,16 @@
 			this.tsmi_LogOff.Size = new System.Drawing.Size(149, 22);
 			this.tsmi_LogOff.Text = "Logoff";
 			this.tsmi_LogOff.Click += new System.EventHandler(this.tsmi_LogOff_Click);
+			// 
+			// tsmi_Company
+			// 
+			this.tsmi_Company.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.tsmi_Company.Margin = new System.Windows.Forms.Padding(2, 0, 10, 0);
+			this.tsmi_Company.Name = "tsmi_Company";
+			this.tsmi_Company.Padding = new System.Windows.Forms.Padding(15);
+			this.tsmi_Company.Size = new System.Drawing.Size(104, 55);
+			this.tsmi_Company.Text = "Empresa";
+			this.tsmi_Company.Click += new System.EventHandler(this.tsmi_Company_Click);
 			// 
 			// frm_Initial
 			// 
@@ -342,10 +368,11 @@
 		private System.Windows.Forms.ToolStripMenuItem tsmi_Financial;
 		private System.Windows.Forms.ToolStripMenuItem tsmi_AccountsReceivable;
 		private System.Windows.Forms.ToolStripMenuItem tsmi_AccountsPayable;
-		private System.Windows.Forms.ToolStripMenuItem tsmi_Report;
 		private System.Windows.Forms.ToolStripMenuItem tsmi_SalesOrder;
 		private System.Windows.Forms.ToolStripMenuItem tsmi_UserQuery;
 		private System.Windows.Forms.ToolStripMenuItem tsmi_ProductQuery;
+		private System.Windows.Forms.ToolStripMenuItem tsmi_Supplier;
+		private System.Windows.Forms.ToolStripMenuItem tsmi_Company;
 	}
 }
 

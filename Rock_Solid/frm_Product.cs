@@ -41,7 +41,7 @@ namespace Rock_Solid
 
         private void btn_New_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Criar Novo Usuário?", "NOVO", MessageBoxButtons.YesNo);
+            DialogResult res = MessageBox.Show("Criar Novo Usuário?", "NOVO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (res == DialogResult.Yes)
             {
                 ClearTB();

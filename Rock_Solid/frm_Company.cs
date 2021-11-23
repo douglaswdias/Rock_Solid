@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Rock_Solid
 {
-	public partial class frm_Equipment : Form
+	public partial class frm_Company : Form
 	{
-		public frm_Equipment()
+		public frm_Company()
 		{
 			InitializeComponent();
 		}

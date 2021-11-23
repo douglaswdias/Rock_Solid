@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Rock_Solid
 {
-	public partial class frm_Equipment : Form
+	public partial class frm_Receivables : Form
 	{
-		public frm_Equipment()
+		public frm_Receivables()
 		{
 			InitializeComponent();
 		}
-
-        private void btn_Close_Click(object sender, EventArgs e)
-        {
-			Close();
-        }
-    }
+	}
 }

@@ -75,5 +75,10 @@ namespace Rock_Solid
 				}
             }
 		}
-	}
+
+        private void btn_CloseOrder_Click(object sender, EventArgs e)
+        {
+			Close();
+        }
+    }
 }

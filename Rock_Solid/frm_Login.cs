@@ -57,7 +57,11 @@ namespace Rock_Solid
 
 		private void btn_Logout_Click(object sender, EventArgs e)
 		{
-			this.Close();
+			DialogResult res = MessageBox.Show("Deseja Sair do Sistema?", "SAIR", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+			if (res == DialogResult.Yes)
+			{
+				Environment.Exit(0);
+			}
 		}
 
 		private void frm_Login_KeyPress(object sender, KeyPressEventArgs e)
