@@ -1,6 +1,7 @@
-﻿namespace Rock_Solid
+﻿
+namespace Rock_Solid
 {
-    partial class frm_UserList
+    partial class frm_SalesOrderList
     {
         /// <summary>
         /// Required designer variable.
@@ -32,12 +33,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_Select = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dgv_UserList = new System.Windows.Forms.DataGridView();
-            this.tb_Search = new System.Windows.Forms.TextBox();
             this.lb_Search = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.tb_Search = new System.Windows.Forms.TextBox();
+            this.dgv_UserList = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UserList)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Select
@@ -48,16 +49,23 @@
             this.btn_Select.TabIndex = 2;
             this.btn_Select.Text = "Fechar";
             this.btn_Select.UseVisualStyleBackColor = true;
-            this.btn_Select.Click += new System.EventHandler(this.btn_Select_Click);
             // 
-            // panel1
+            // lb_Search
             // 
-            this.panel1.Controls.Add(this.btn_Select);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 414);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(538, 36);
-            this.panel1.TabIndex = 21;
+            this.lb_Search.AutoSize = true;
+            this.lb_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Search.Location = new System.Drawing.Point(12, 7);
+            this.lb_Search.Name = "lb_Search";
+            this.lb_Search.Size = new System.Drawing.Size(71, 17);
+            this.lb_Search.TabIndex = 28;
+            this.lb_Search.Text = "Pesquisar";
+            // 
+            // tb_Search
+            // 
+            this.tb_Search.Location = new System.Drawing.Point(89, 7);
+            this.tb_Search.Name = "tb_Search";
+            this.tb_Search.Size = new System.Drawing.Size(437, 20);
+            this.tb_Search.TabIndex = 27;
             // 
             // dgv_UserList
             // 
@@ -82,7 +90,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_UserList.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_UserList.EnableHeadersVisualStyles = false;
-            this.dgv_UserList.Location = new System.Drawing.Point(12, 49);
+            this.dgv_UserList.Location = new System.Drawing.Point(12, 42);
             this.dgv_UserList.MultiSelect = false;
             this.dgv_UserList.Name = "dgv_UserList";
             this.dgv_UserList.ReadOnly = true;
@@ -97,58 +105,44 @@
             this.dgv_UserList.RowHeadersVisible = false;
             this.dgv_UserList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_UserList.Size = new System.Drawing.Size(514, 349);
-            this.dgv_UserList.TabIndex = 22;
-            this.dgv_UserList.SelectionChanged += new System.EventHandler(this.dgv_UserList_SelectionChanged);
-            this.dgv_UserList.DoubleClick += new System.EventHandler(this.dgv_UserList_DoubleClick);
+            this.dgv_UserList.TabIndex = 26;
             // 
-            // tb_Search
+            // panel1
             // 
-            this.tb_Search.Location = new System.Drawing.Point(89, 14);
-            this.tb_Search.Name = "tb_Search";
-            this.tb_Search.Size = new System.Drawing.Size(437, 20);
-            this.tb_Search.TabIndex = 23;
-            this.tb_Search.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_Search_KeyDown);
+            this.panel1.Controls.Add(this.btn_Select);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 397);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(542, 36);
+            this.panel1.TabIndex = 25;
             // 
-            // lb_Search
-            // 
-            this.lb_Search.AutoSize = true;
-            this.lb_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Search.Location = new System.Drawing.Point(12, 14);
-            this.lb_Search.Name = "lb_Search";
-            this.lb_Search.Size = new System.Drawing.Size(71, 17);
-            this.lb_Search.TabIndex = 24;
-            this.lb_Search.Text = "Pesquisar";
-            // 
-            // frm_UserList
+            // frm_SalesOrderList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 450);
+            this.ClientSize = new System.Drawing.Size(542, 433);
             this.ControlBox = false;
             this.Controls.Add(this.lb_Search);
             this.Controls.Add(this.tb_Search);
             this.Controls.Add(this.dgv_UserList);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "frm_UserList";
+            this.Name = "frm_SalesOrderList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Lista de Usuários";
-            this.Load += new System.EventHandler(this.frm_UserList_Load);
-            this.panel1.ResumeLayout(false);
+            this.Text = "frm_SalesOrderList";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UserList)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
-		#endregion
+        #endregion
 
-		private System.Windows.Forms.Button btn_Select;
-		private System.Windows.Forms.Panel panel1;
-		public System.Windows.Forms.DataGridView dgv_UserList;
-		public System.Windows.Forms.TextBox tb_Search;
-		private System.Windows.Forms.Label lb_Search;
-	}
+        private System.Windows.Forms.Button btn_Select;
+        private System.Windows.Forms.Label lb_Search;
+        public System.Windows.Forms.TextBox tb_Search;
+        public System.Windows.Forms.DataGridView dgv_UserList;
+        private System.Windows.Forms.Panel panel1;
+    }
 }

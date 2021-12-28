@@ -398,6 +398,7 @@ namespace Rock_Solid
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 371);
+            this.ControlBox = false;
             this.Controls.Add(this.tb_CreatedAt);
             this.Controls.Add(this.lb_CreatedAt);
             this.Controls.Add(this.textBox1);
@@ -430,6 +431,8 @@ namespace Rock_Solid
             this.Controls.Add(this.tb_ID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_Supplier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Fornecedor";

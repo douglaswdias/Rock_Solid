@@ -105,6 +105,12 @@
     <Compile Include="frm_Equipment.Designer.cs">
       <DependentUpon>frm_Equipment.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_EquipmentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EquipmentList.Designer.cs">
+      <DependentUpon>frm_EquipmentList.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,11 +159,23 @@
     <Compile Include="frm_SalesOrder.Designer.cs">
       <DependentUpon>frm_SalesOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_SalesOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SalesOrderList.Designer.cs">
+      <DependentUpon>frm_SalesOrderList.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Supplier.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_Supplier.Designer.cs">
       <DependentUpon>frm_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SupplierLIst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SupplierLIst.Designer.cs">
+      <DependentUpon>frm_SupplierLIst.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_User.cs">
       <SubType>Form</SubType>
@@ -207,6 +225,9 @@
     <EmbeddedResource Include="frm_Equipment.resx">
       <DependentUpon>frm_Equipment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_EquipmentList.resx">
+      <DependentUpon>frm_EquipmentList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,8 +252,14 @@
     <EmbeddedResource Include="frm_SalesOrder.resx">
       <DependentUpon>frm_SalesOrder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_SalesOrderList.resx">
+      <DependentUpon>frm_SalesOrderList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Supplier.resx">
       <DependentUpon>frm_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SupplierLIst.resx">
+      <DependentUpon>frm_SupplierLIst.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_User.resx">
       <DependentUpon>frm_User.cs</DependentUpon>

@@ -1,33 +1,34 @@
-﻿namespace Rock_Solid
+﻿
+namespace Rock_Solid
 {
-	partial class frm_ProductList
-	{
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class frm_EquipmentList
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -46,19 +47,19 @@
             // lb_Filter
             // 
             this.lb_Filter.AutoSize = true;
-            this.lb_Filter.Location = new System.Drawing.Point(86, 5);
+            this.lb_Filter.Location = new System.Drawing.Point(86, 4);
             this.lb_Filter.Name = "lb_Filter";
             this.lb_Filter.Size = new System.Drawing.Size(35, 13);
-            this.lb_Filter.TabIndex = 40;
+            this.lb_Filter.TabIndex = 47;
             this.lb_Filter.Text = "Filtro: ";
             // 
             // rb_BarCode
             // 
             this.rb_BarCode.AutoSize = true;
-            this.rb_BarCode.Location = new System.Drawing.Point(206, 3);
+            this.rb_BarCode.Location = new System.Drawing.Point(206, 2);
             this.rb_BarCode.Name = "rb_BarCode";
             this.rb_BarCode.Size = new System.Drawing.Size(106, 17);
-            this.rb_BarCode.TabIndex = 39;
+            this.rb_BarCode.TabIndex = 46;
             this.rb_BarCode.Text = "Código de Barras";
             this.rb_BarCode.UseVisualStyleBackColor = true;
             // 
@@ -66,10 +67,10 @@
             // 
             this.rb_Description.AutoSize = true;
             this.rb_Description.Checked = true;
-            this.rb_Description.Location = new System.Drawing.Point(127, 3);
+            this.rb_Description.Location = new System.Drawing.Point(127, 2);
             this.rb_Description.Name = "rb_Description";
             this.rb_Description.Size = new System.Drawing.Size(73, 17);
-            this.rb_Description.TabIndex = 38;
+            this.rb_Description.TabIndex = 45;
             this.rb_Description.TabStop = true;
             this.rb_Description.Text = "Descrição";
             this.rb_Description.UseVisualStyleBackColor = true;
@@ -78,18 +79,18 @@
             // 
             this.lb_Search.AutoSize = true;
             this.lb_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Search.Location = new System.Drawing.Point(12, 27);
+            this.lb_Search.Location = new System.Drawing.Point(12, 26);
             this.lb_Search.Name = "lb_Search";
             this.lb_Search.Size = new System.Drawing.Size(71, 17);
-            this.lb_Search.TabIndex = 37;
+            this.lb_Search.TabIndex = 44;
             this.lb_Search.Text = "Pesquisar";
             // 
             // tb_Search
             // 
-            this.tb_Search.Location = new System.Drawing.Point(89, 26);
+            this.tb_Search.Location = new System.Drawing.Point(89, 25);
             this.tb_Search.Name = "tb_Search";
             this.tb_Search.Size = new System.Drawing.Size(519, 20);
-            this.tb_Search.TabIndex = 36;
+            this.tb_Search.TabIndex = 43;
             // 
             // dgv_ProductList
             // 
@@ -114,7 +115,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_ProductList.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_ProductList.EnableHeadersVisualStyles = false;
-            this.dgv_ProductList.Location = new System.Drawing.Point(15, 51);
+            this.dgv_ProductList.Location = new System.Drawing.Point(15, 50);
             this.dgv_ProductList.MultiSelect = false;
             this.dgv_ProductList.Name = "dgv_ProductList";
             this.dgv_ProductList.ReadOnly = true;
@@ -129,18 +130,16 @@
             this.dgv_ProductList.RowHeadersVisible = false;
             this.dgv_ProductList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_ProductList.Size = new System.Drawing.Size(610, 386);
-            this.dgv_ProductList.TabIndex = 35;
-            this.dgv_ProductList.SelectionChanged += new System.EventHandler(this.dgv_ProductList_SelectionChanged);
-            this.dgv_ProductList.DoubleClick += new System.EventHandler(this.dgv_ProductList_DoubleClick);
+            this.dgv_ProductList.TabIndex = 42;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btn_Select);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 447);
+            this.panel1.Location = new System.Drawing.Point(0, 444);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(642, 36);
-            this.panel1.TabIndex = 34;
+            this.panel1.TabIndex = 41;
             // 
             // btn_Select
             // 
@@ -151,11 +150,11 @@
             this.btn_Select.Text = "Fechar";
             this.btn_Select.UseVisualStyleBackColor = true;
             // 
-            // frm_ProductList
+            // frm_EquipmentList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 483);
+            this.ClientSize = new System.Drawing.Size(642, 480);
             this.ControlBox = false;
             this.Controls.Add(this.lb_Filter);
             this.Controls.Add(this.rb_BarCode);
@@ -165,29 +164,25 @@
             this.Controls.Add(this.dgv_ProductList);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "frm_ProductList";
+            this.Name = "frm_EquipmentList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Consulta de Produtos";
-            this.Load += new System.EventHandler(this.frm_ProductList_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_Search_KeyDown);
+            this.Text = "frm_EquipmentList";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ProductList)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
-		}
+        }
 
-		#endregion
+        #endregion
 
-		private System.Windows.Forms.Label lb_Filter;
-		private System.Windows.Forms.RadioButton rb_BarCode;
-		private System.Windows.Forms.RadioButton rb_Description;
-		private System.Windows.Forms.Label lb_Search;
-		public System.Windows.Forms.TextBox tb_Search;
-		public System.Windows.Forms.DataGridView dgv_ProductList;
-		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Button btn_Select;
-	}
+        private System.Windows.Forms.Label lb_Filter;
+        private System.Windows.Forms.RadioButton rb_BarCode;
+        private System.Windows.Forms.RadioButton rb_Description;
+        private System.Windows.Forms.Label lb_Search;
+        public System.Windows.Forms.TextBox tb_Search;
+        public System.Windows.Forms.DataGridView dgv_ProductList;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_Select;
+    }
 }

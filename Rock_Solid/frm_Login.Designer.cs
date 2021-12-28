@@ -77,6 +77,7 @@
             // 
             // btn_Login
             // 
+            this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Login.Location = new System.Drawing.Point(41, 212);
             this.btn_Login.Name = "btn_Login";
@@ -88,6 +89,7 @@
             // 
             // btn_Logout
             // 
+            this.btn_Logout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Logout.Location = new System.Drawing.Point(41, 273);
             this.btn_Logout.Name = "btn_Logout";

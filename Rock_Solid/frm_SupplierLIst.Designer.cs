@@ -1,65 +1,96 @@
-﻿namespace Rock_Solid
+﻿
+namespace Rock_Solid
 {
-	partial class frm_ClientList
-	{
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class frm_SupplierList
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.lb_Filter = new System.Windows.Forms.Label();
+            this.rb_CPF = new System.Windows.Forms.RadioButton();
+            this.rb_Name = new System.Windows.Forms.RadioButton();
             this.lb_Search = new System.Windows.Forms.Label();
             this.tb_Search = new System.Windows.Forms.TextBox();
             this.dgv_ClientList = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Select = new System.Windows.Forms.Button();
-            this.rb_Name = new System.Windows.Forms.RadioButton();
-            this.rb_CPF = new System.Windows.Forms.RadioButton();
-            this.lb_Filter = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientList)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // lb_Filter
+            // 
+            this.lb_Filter.AutoSize = true;
+            this.lb_Filter.Location = new System.Drawing.Point(86, 5);
+            this.lb_Filter.Name = "lb_Filter";
+            this.lb_Filter.Size = new System.Drawing.Size(35, 13);
+            this.lb_Filter.TabIndex = 40;
+            this.lb_Filter.Text = "Filtro: ";
+            // 
+            // rb_CPF
+            // 
+            this.rb_CPF.AutoSize = true;
+            this.rb_CPF.Location = new System.Drawing.Point(189, 3);
+            this.rb_CPF.Name = "rb_CPF";
+            this.rb_CPF.Size = new System.Drawing.Size(77, 17);
+            this.rb_CPF.TabIndex = 39;
+            this.rb_CPF.Text = "CPF/CNPJ";
+            this.rb_CPF.UseVisualStyleBackColor = true;
+            // 
+            // rb_Name
+            // 
+            this.rb_Name.AutoSize = true;
+            this.rb_Name.Checked = true;
+            this.rb_Name.Location = new System.Drawing.Point(127, 3);
+            this.rb_Name.Name = "rb_Name";
+            this.rb_Name.Size = new System.Drawing.Size(53, 17);
+            this.rb_Name.TabIndex = 38;
+            this.rb_Name.TabStop = true;
+            this.rb_Name.Text = "Nome";
+            this.rb_Name.UseVisualStyleBackColor = true;
             // 
             // lb_Search
             // 
             this.lb_Search.AutoSize = true;
             this.lb_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Search.Location = new System.Drawing.Point(12, 29);
+            this.lb_Search.Location = new System.Drawing.Point(12, 27);
             this.lb_Search.Name = "lb_Search";
             this.lb_Search.Size = new System.Drawing.Size(71, 17);
-            this.lb_Search.TabIndex = 29;
+            this.lb_Search.TabIndex = 37;
             this.lb_Search.Text = "Pesquisar";
             // 
             // tb_Search
             // 
-            this.tb_Search.Location = new System.Drawing.Point(89, 28);
+            this.tb_Search.Location = new System.Drawing.Point(89, 26);
             this.tb_Search.Name = "tb_Search";
             this.tb_Search.Size = new System.Drawing.Size(519, 20);
-            this.tb_Search.TabIndex = 28;
-            this.tb_Search.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_Search_KeyDown);
+            this.tb_Search.TabIndex = 36;
             // 
             // dgv_ClientList
             // 
@@ -84,7 +115,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_ClientList.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_ClientList.EnableHeadersVisualStyles = false;
-            this.dgv_ClientList.Location = new System.Drawing.Point(15, 53);
+            this.dgv_ClientList.Location = new System.Drawing.Point(15, 51);
             this.dgv_ClientList.MultiSelect = false;
             this.dgv_ClientList.Name = "dgv_ClientList";
             this.dgv_ClientList.ReadOnly = true;
@@ -99,18 +130,16 @@
             this.dgv_ClientList.RowHeadersVisible = false;
             this.dgv_ClientList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_ClientList.Size = new System.Drawing.Size(610, 386);
-            this.dgv_ClientList.TabIndex = 27;
-            this.dgv_ClientList.SelectionChanged += new System.EventHandler(this.dgv_ClientList_SelectionChanged);
-            this.dgv_ClientList.DoubleClick += new System.EventHandler(this.dgv_ClientList_DoubleClick);
+            this.dgv_ClientList.TabIndex = 35;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btn_Select);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 445);
+            this.panel1.Location = new System.Drawing.Point(0, 451);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(639, 36);
-            this.panel1.TabIndex = 26;
+            this.panel1.Size = new System.Drawing.Size(640, 36);
+            this.panel1.TabIndex = 34;
             // 
             // btn_Select
             // 
@@ -120,44 +149,12 @@
             this.btn_Select.TabIndex = 2;
             this.btn_Select.Text = "Fechar";
             this.btn_Select.UseVisualStyleBackColor = true;
-            this.btn_Select.Click += new System.EventHandler(this.btn_Select_Click);
             // 
-            // rb_Name
-            // 
-            this.rb_Name.AutoSize = true;
-            this.rb_Name.Checked = true;
-            this.rb_Name.Location = new System.Drawing.Point(127, 5);
-            this.rb_Name.Name = "rb_Name";
-            this.rb_Name.Size = new System.Drawing.Size(53, 17);
-            this.rb_Name.TabIndex = 31;
-            this.rb_Name.TabStop = true;
-            this.rb_Name.Text = "Nome";
-            this.rb_Name.UseVisualStyleBackColor = true;
-            // 
-            // rb_CPF
-            // 
-            this.rb_CPF.AutoSize = true;
-            this.rb_CPF.Location = new System.Drawing.Point(189, 5);
-            this.rb_CPF.Name = "rb_CPF";
-            this.rb_CPF.Size = new System.Drawing.Size(77, 17);
-            this.rb_CPF.TabIndex = 32;
-            this.rb_CPF.Text = "CPF/CNPJ";
-            this.rb_CPF.UseVisualStyleBackColor = true;
-            // 
-            // lb_Filter
-            // 
-            this.lb_Filter.AutoSize = true;
-            this.lb_Filter.Location = new System.Drawing.Point(86, 7);
-            this.lb_Filter.Name = "lb_Filter";
-            this.lb_Filter.Size = new System.Drawing.Size(35, 13);
-            this.lb_Filter.TabIndex = 33;
-            this.lb_Filter.Text = "Filtro: ";
-            // 
-            // frm_ClientList
+            // frm_SupplierList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 481);
+            this.ClientSize = new System.Drawing.Size(640, 487);
             this.ControlBox = false;
             this.Controls.Add(this.lb_Filter);
             this.Controls.Add(this.rb_CPF);
@@ -167,27 +164,28 @@
             this.Controls.Add(this.dgv_ClientList);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frm_ClientList";
+            this.Name = "frm_SupplierList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Lista de Clientes";
-            this.Load += new System.EventHandler(this.frm_ClientList_Load);
+            this.Text = "Lista de Fornecedor";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientList)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
-		}
+        }
 
-		#endregion
-		private System.Windows.Forms.Label lb_Search;
-		public System.Windows.Forms.TextBox tb_Search;
-		public System.Windows.Forms.DataGridView dgv_ClientList;
-		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Button btn_Select;
-		private System.Windows.Forms.RadioButton rb_Name;
-		private System.Windows.Forms.RadioButton rb_CPF;
-		private System.Windows.Forms.Label lb_Filter;
+        #endregion
+
+        private System.Windows.Forms.Label lb_Filter;
+        private System.Windows.Forms.RadioButton rb_CPF;
+        private System.Windows.Forms.RadioButton rb_Name;
+        private System.Windows.Forms.Label lb_Search;
+        public System.Windows.Forms.TextBox tb_Search;
+        public System.Windows.Forms.DataGridView dgv_ClientList;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_Select;
     }
 }
