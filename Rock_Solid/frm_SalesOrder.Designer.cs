@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_SalesOrder));
             this.tc_SalesOrder = new System.Windows.Forms.TabControl();
             this.tp_Product = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
@@ -167,7 +168,7 @@
             this.btn_DelProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_DelProduct.FlatAppearance.BorderSize = 0;
             this.btn_DelProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DelProduct.Image = global::Rock_Solid.Properties.Resources.Uncheck_Button;
+            this.btn_DelProduct.Image = ((System.Drawing.Image)(resources.GetObject("btn_DelProduct.Image")));
             this.btn_DelProduct.Location = new System.Drawing.Point(596, 68);
             this.btn_DelProduct.Name = "btn_DelProduct";
             this.btn_DelProduct.Size = new System.Drawing.Size(37, 27);
@@ -180,7 +181,7 @@
             this.btn_SearchProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_SearchProduct.FlatAppearance.BorderSize = 0;
             this.btn_SearchProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SearchProduct.Image = global::Rock_Solid.Properties.Resources.Search_Button;
+            this.btn_SearchProduct.Image = ((System.Drawing.Image)(resources.GetObject("btn_SearchProduct.Image")));
             this.btn_SearchProduct.Location = new System.Drawing.Point(633, 33);
             this.btn_SearchProduct.Name = "btn_SearchProduct";
             this.btn_SearchProduct.Size = new System.Drawing.Size(18, 20);
@@ -194,7 +195,7 @@
             this.btn_AddProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_AddProduct.FlatAppearance.BorderSize = 0;
             this.btn_AddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_AddProduct.Image = global::Rock_Solid.Properties.Resources.Check_Button;
+            this.btn_AddProduct.Image = ((System.Drawing.Image)(resources.GetObject("btn_AddProduct.Image")));
             this.btn_AddProduct.Location = new System.Drawing.Point(516, 68);
             this.btn_AddProduct.Name = "btn_AddProduct";
             this.btn_AddProduct.Size = new System.Drawing.Size(37, 27);
@@ -316,7 +317,6 @@
             this.btn_DelExpiration.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_DelExpiration.FlatAppearance.BorderSize = 0;
             this.btn_DelExpiration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DelExpiration.Image = global::Rock_Solid.Properties.Resources.Uncheck_Button;
             this.btn_DelExpiration.Location = new System.Drawing.Point(592, 22);
             this.btn_DelExpiration.Name = "btn_DelExpiration";
             this.btn_DelExpiration.Size = new System.Drawing.Size(37, 27);
@@ -329,7 +329,6 @@
             this.btn_AddExpiration.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_AddExpiration.FlatAppearance.BorderSize = 0;
             this.btn_AddExpiration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_AddExpiration.Image = global::Rock_Solid.Properties.Resources.Check_Button;
             this.btn_AddExpiration.Location = new System.Drawing.Point(512, 22);
             this.btn_AddExpiration.Name = "btn_AddExpiration";
             this.btn_AddExpiration.Size = new System.Drawing.Size(37, 27);
@@ -507,7 +506,6 @@
             this.btn_SearchOrder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_SearchOrder.FlatAppearance.BorderSize = 0;
             this.btn_SearchOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SearchOrder.Image = global::Rock_Solid.Properties.Resources.Search_Button;
             this.btn_SearchOrder.Location = new System.Drawing.Point(78, 28);
             this.btn_SearchOrder.Name = "btn_SearchOrder";
             this.btn_SearchOrder.Size = new System.Drawing.Size(18, 20);
@@ -521,7 +519,6 @@
             this.btn_SearchClient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_SearchClient.FlatAppearance.BorderSize = 0;
             this.btn_SearchClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SearchClient.Image = global::Rock_Solid.Properties.Resources.Search_Button;
             this.btn_SearchClient.Location = new System.Drawing.Point(524, 84);
             this.btn_SearchClient.Name = "btn_SearchClient";
             this.btn_SearchClient.Size = new System.Drawing.Size(18, 20);

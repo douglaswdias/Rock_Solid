@@ -29,6 +29,7 @@ namespace Rock_Solid
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Equipment));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Delete = new System.Windows.Forms.Button();
             this.btn_Close = new System.Windows.Forms.Button();
@@ -225,7 +226,7 @@ namespace Rock_Solid
             // 
             // pb_User
             // 
-            this.pb_User.Image = global::Rock_Solid.Properties.Resources.Profile;
+            this.pb_User.Image = ((System.Drawing.Image)(resources.GetObject("pb_User.Image")));
             this.pb_User.Location = new System.Drawing.Point(230, 232);
             this.pb_User.Name = "pb_User";
             this.pb_User.Size = new System.Drawing.Size(140, 140);
@@ -239,7 +240,7 @@ namespace Rock_Solid
             this.btn_Search.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Search.FlatAppearance.BorderSize = 0;
             this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Search.Image = global::Rock_Solid.Properties.Resources.Search_Button;
+            this.btn_Search.Image = ((System.Drawing.Image)(resources.GetObject("btn_Search.Image")));
             this.btn_Search.Location = new System.Drawing.Point(331, 32);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(18, 20);

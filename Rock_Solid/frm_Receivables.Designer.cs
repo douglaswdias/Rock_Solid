@@ -29,6 +29,7 @@ namespace Rock_Solid
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Receivables));
             this.button1 = new System.Windows.Forms.Button();
             this.tb_Name = new System.Windows.Forms.TextBox();
             this.lb_Name = new System.Windows.Forms.Label();
@@ -36,9 +37,13 @@ namespace Rock_Solid
             this.tb_ID = new System.Windows.Forms.TextBox();
             this.tc_SalesOrder = new System.Windows.Forms.TabControl();
             this.tp_Product = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.lb_ProductID = new System.Windows.Forms.Label();
             this.tb_ProductID = new System.Windows.Forms.TextBox();
             this.dgv_OrderItem = new System.Windows.Forms.DataGridView();
+            this.Selected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.lb_BarCode = new System.Windows.Forms.Label();
             this.tb_BarCode = new System.Windows.Forms.TextBox();
             this.tp_ExpirationDate = new System.Windows.Forms.TabPage();
@@ -53,10 +58,6 @@ namespace Rock_Solid
             this.lb_Installments = new System.Windows.Forms.Label();
             this.tb_Installments = new System.Windows.Forms.TextBox();
             this.lb_ExpirationData = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Selected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tc_SalesOrder.SuspendLayout();
             this.tp_Product.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_OrderItem)).BeginInit();
@@ -70,7 +71,7 @@ namespace Rock_Solid
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::Rock_Solid.Properties.Resources.Search_Button;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(438, 28);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(18, 20);
@@ -139,6 +140,31 @@ namespace Rock_Solid
             this.tp_Product.TabIndex = 0;
             this.tp_Product.Text = "Documentos para Baixa";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(236, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 13);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Total";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(236, 33);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(106, 20);
+            this.textBox1.TabIndex = 42;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(468, 33);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(182, 23);
+            this.button2.TabIndex = 41;
+            this.button2.Text = "Baixar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // lb_ProductID
             // 
             this.lb_ProductID.AutoSize = true;
@@ -164,6 +190,11 @@ namespace Rock_Solid
             this.dgv_OrderItem.Name = "dgv_OrderItem";
             this.dgv_OrderItem.Size = new System.Drawing.Size(650, 212);
             this.dgv_OrderItem.TabIndex = 38;
+            // 
+            // Selected
+            // 
+            this.Selected.HeaderText = "Selecionado";
+            this.Selected.Name = "Selected";
             // 
             // lb_BarCode
             // 
@@ -216,7 +247,6 @@ namespace Rock_Solid
             this.btn_DelExpiration.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_DelExpiration.FlatAppearance.BorderSize = 0;
             this.btn_DelExpiration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DelExpiration.Image = global::Rock_Solid.Properties.Resources.Uncheck_Button;
             this.btn_DelExpiration.Location = new System.Drawing.Point(592, 22);
             this.btn_DelExpiration.Name = "btn_DelExpiration";
             this.btn_DelExpiration.Size = new System.Drawing.Size(37, 27);
@@ -229,7 +259,6 @@ namespace Rock_Solid
             this.btn_AddExpiration.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_AddExpiration.FlatAppearance.BorderSize = 0;
             this.btn_AddExpiration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_AddExpiration.Image = global::Rock_Solid.Properties.Resources.Check_Button;
             this.btn_AddExpiration.Location = new System.Drawing.Point(512, 22);
             this.btn_AddExpiration.Name = "btn_AddExpiration";
             this.btn_AddExpiration.Size = new System.Drawing.Size(37, 27);
@@ -304,36 +333,6 @@ namespace Rock_Solid
             this.lb_ExpirationData.Size = new System.Drawing.Size(61, 13);
             this.lb_ExpirationData.TabIndex = 11;
             this.lb_ExpirationData.Text = "Data Venc.";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(468, 33);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 23);
-            this.button2.TabIndex = 41;
-            this.button2.Text = "Baixar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(236, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
-            this.label1.TabIndex = 43;
-            this.label1.Text = "Total";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(236, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(106, 20);
-            this.textBox1.TabIndex = 42;
-            // 
-            // Selected
-            // 
-            this.Selected.HeaderText = "Selecionado";
-            this.Selected.Name = "Selected";
             // 
             // frm_Receivables
             // 

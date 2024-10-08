@@ -28,11 +28,12 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Initial));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_Version = new System.Windows.Forms.Label();
-            this.lb_VersionTXT = new System.Windows.Forms.Label();
             this.lb_UserName = new System.Windows.Forms.Label();
             this.lb_User = new System.Windows.Forms.Label();
+            this.lb_VersionTXT = new System.Windows.Forms.Label();
             this.lb_AccessText = new System.Windows.Forms.Label();
             this.lb_Access = new System.Windows.Forms.Label();
             this.pb_Login = new System.Windows.Forms.PictureBox();
@@ -48,6 +49,8 @@
             this.tsmi_UserQuery = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_ClientQuery = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_ProductQuery = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi_SupplierList = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi_EquipmentList = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_Sale = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_SalesOrder = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_Financial = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,8 +59,6 @@
             this.tsmi_LogIn = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_UserChange = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_LogOff = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmi_SupplierList = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmi_EquipmentList = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Login)).BeginInit();
             this.ms_Initial.SuspendLayout();
@@ -88,16 +89,6 @@
             this.lb_Version.Size = new System.Drawing.Size(0, 20);
             this.lb_Version.TabIndex = 6;
             // 
-            // lb_VersionTXT
-            // 
-            this.lb_VersionTXT.AutoSize = true;
-            this.lb_VersionTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_VersionTXT.Location = new System.Drawing.Point(501, 6);
-            this.lb_VersionTXT.Name = "lb_VersionTXT";
-            this.lb_VersionTXT.Size = new System.Drawing.Size(64, 20);
-            this.lb_VersionTXT.TabIndex = 5;
-            this.lb_VersionTXT.Text = "Versão:";
-            // 
             // lb_UserName
             // 
             this.lb_UserName.AutoSize = true;
@@ -117,6 +108,16 @@
             this.lb_User.Size = new System.Drawing.Size(68, 20);
             this.lb_User.TabIndex = 3;
             this.lb_User.Text = "Usuário:";
+            // 
+            // lb_VersionTXT
+            // 
+            this.lb_VersionTXT.AutoSize = true;
+            this.lb_VersionTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_VersionTXT.Location = new System.Drawing.Point(501, 6);
+            this.lb_VersionTXT.Name = "lb_VersionTXT";
+            this.lb_VersionTXT.Size = new System.Drawing.Size(64, 20);
+            this.lb_VersionTXT.TabIndex = 5;
+            this.lb_VersionTXT.Text = "Versão:";
             // 
             // lb_AccessText
             // 
@@ -140,7 +141,7 @@
             // 
             // pb_Login
             // 
-            this.pb_Login.Image = global::Rock_Solid.Properties.Resources.Red_Button;
+            this.pb_Login.Image = ((System.Drawing.Image)(resources.GetObject("pb_Login.Image")));
             this.pb_Login.Location = new System.Drawing.Point(12, 4);
             this.pb_Login.Name = "pb_Login";
             this.pb_Login.Size = new System.Drawing.Size(27, 22);
@@ -190,35 +191,35 @@
             // tsmi_User
             // 
             this.tsmi_User.Name = "tsmi_User";
-            this.tsmi_User.Size = new System.Drawing.Size(180, 26);
+            this.tsmi_User.Size = new System.Drawing.Size(172, 26);
             this.tsmi_User.Text = "Usuário";
             this.tsmi_User.Click += new System.EventHandler(this.tsmi_User_Click);
             // 
             // tsmi_Client
             // 
             this.tsmi_Client.Name = "tsmi_Client";
-            this.tsmi_Client.Size = new System.Drawing.Size(180, 26);
+            this.tsmi_Client.Size = new System.Drawing.Size(172, 26);
             this.tsmi_Client.Text = "Cliente";
             this.tsmi_Client.Click += new System.EventHandler(this.tsmi_Client_Click);
             // 
             // tsmi_Product
             // 
             this.tsmi_Product.Name = "tsmi_Product";
-            this.tsmi_Product.Size = new System.Drawing.Size(180, 26);
+            this.tsmi_Product.Size = new System.Drawing.Size(172, 26);
             this.tsmi_Product.Text = "Produto";
             this.tsmi_Product.Click += new System.EventHandler(this.tsmi_Product_Click);
             // 
             // tsmi_Supplier
             // 
             this.tsmi_Supplier.Name = "tsmi_Supplier";
-            this.tsmi_Supplier.Size = new System.Drawing.Size(180, 26);
+            this.tsmi_Supplier.Size = new System.Drawing.Size(172, 26);
             this.tsmi_Supplier.Text = "Fornecedor";
             this.tsmi_Supplier.Click += new System.EventHandler(this.tsmi_Supplier_Click);
             // 
             // tsmi_Equipment
             // 
             this.tsmi_Equipment.Name = "tsmi_Equipment";
-            this.tsmi_Equipment.Size = new System.Drawing.Size(180, 26);
+            this.tsmi_Equipment.Size = new System.Drawing.Size(172, 26);
             this.tsmi_Equipment.Text = "Equipamento";
             this.tsmi_Equipment.Click += new System.EventHandler(this.tsmi_Equipment_Click);
             // 
@@ -239,23 +240,35 @@
             // tsmi_UserQuery
             // 
             this.tsmi_UserQuery.Name = "tsmi_UserQuery";
-            this.tsmi_UserQuery.Size = new System.Drawing.Size(180, 26);
+            this.tsmi_UserQuery.Size = new System.Drawing.Size(172, 26);
             this.tsmi_UserQuery.Text = "Usuários";
             this.tsmi_UserQuery.Click += new System.EventHandler(this.tsmi_UserQuery_Click);
             // 
             // tsmi_ClientQuery
             // 
             this.tsmi_ClientQuery.Name = "tsmi_ClientQuery";
-            this.tsmi_ClientQuery.Size = new System.Drawing.Size(180, 26);
+            this.tsmi_ClientQuery.Size = new System.Drawing.Size(172, 26);
             this.tsmi_ClientQuery.Text = "Clientes";
             this.tsmi_ClientQuery.Click += new System.EventHandler(this.tsmi_ClientQuery_Click);
             // 
             // tsmi_ProductQuery
             // 
             this.tsmi_ProductQuery.Name = "tsmi_ProductQuery";
-            this.tsmi_ProductQuery.Size = new System.Drawing.Size(180, 26);
+            this.tsmi_ProductQuery.Size = new System.Drawing.Size(172, 26);
             this.tsmi_ProductQuery.Text = "Produtos";
             this.tsmi_ProductQuery.Click += new System.EventHandler(this.tsmi_ProductQuery_Click);
+            // 
+            // tsmi_SupplierList
+            // 
+            this.tsmi_SupplierList.Name = "tsmi_SupplierList";
+            this.tsmi_SupplierList.Size = new System.Drawing.Size(172, 26);
+            this.tsmi_SupplierList.Text = "Fornecedor";
+            // 
+            // tsmi_EquipmentList
+            // 
+            this.tsmi_EquipmentList.Name = "tsmi_EquipmentList";
+            this.tsmi_EquipmentList.Size = new System.Drawing.Size(172, 26);
+            this.tsmi_EquipmentList.Text = "Equipamento";
             // 
             // tsmi_Sale
             // 
@@ -324,18 +337,6 @@
             this.tsmi_LogOff.Size = new System.Drawing.Size(181, 26);
             this.tsmi_LogOff.Text = "Logoff";
             this.tsmi_LogOff.Click += new System.EventHandler(this.tsmi_LogOff_Click);
-            // 
-            // tsmi_SupplierList
-            // 
-            this.tsmi_SupplierList.Name = "tsmi_SupplierList";
-            this.tsmi_SupplierList.Size = new System.Drawing.Size(180, 26);
-            this.tsmi_SupplierList.Text = "Fornecedor";
-            // 
-            // tsmi_EquipmentList
-            // 
-            this.tsmi_EquipmentList.Name = "tsmi_EquipmentList";
-            this.tsmi_EquipmentList.Size = new System.Drawing.Size(180, 26);
-            this.tsmi_EquipmentList.Text = "Equipamento";
             // 
             // frm_Initial
             // 

@@ -29,6 +29,7 @@ namespace Rock_Solid
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Supplier));
             this.button1 = new System.Windows.Forms.Button();
             this.lb_PostCode = new System.Windows.Forms.Label();
             this.tb_PostCode = new System.Windows.Forms.MaskedTextBox();
@@ -72,7 +73,7 @@ namespace Rock_Solid
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::Rock_Solid.Properties.Resources.Search_Button;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(436, 26);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(18, 20);
